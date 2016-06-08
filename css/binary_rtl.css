@@ -607,6 +607,63 @@ ul.checked li {
   white-space: nowrap;
 }
 
+#japan-form .hint {
+  margin-bottom: 0;
+}
+
+.charting-page img.responsive {
+  width: 140px;
+  height: 140px;
+}
+
+.popup_page_overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.fake-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.light-yellow-background {
+  background-color: lightyellow;
+}
+
+.tooltip-content {
+  display: none;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+*:hover > .tooltip-content {
+  display: inline;
+}
+
+#session_limit .limit_message {
+  margin: 30px auto;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+_:-ms-fullscreen, :root #content-holder {
+  height: 100%;
+}
+
 *,
 *:after,
 *:before {
@@ -792,27 +849,7 @@ ul.checked li {
 #header #binary-logo-text {
   margin-top: 10px;
 }
-#header #login-form, #header #loginid-switch-form {
-  text-align: left;
-}
-#header #login-form #login-links, #header #loginid-switch-form #login-links {
-  margin: 5px 0 0 0;
-  display: block;
-}
-#header #login-form input, #header #loginid-switch-form input {
-  display: inline;
-  border-radius: 4px;
-  font-size: 11px;
-  margin: 0 0 0 5px;
-}
-#header #login-form input[type=text], #header #login-form input[type=password], #header #loginid-switch-form input[type=text], #header #loginid-switch-form input[type=password] {
-  background: #FEFEFE;
-  border: 0;
-  width: 50px;
-  color: #000000;
-  padding: 4px;
-}
-#header #login-form input[type=submit], #header #loginid-switch-form input[type=submit] {
+#header #client-logged-out #btn_login {
   color: white;
   text-decoration: none;
   text-align: center;
@@ -825,18 +862,22 @@ ul.checked li {
   letter-spacing: 0.75px;
   border: 0;
   text-transform: uppercase;
-  padding: 5px 3px;
-  word-break: break-all;
-  white-space: pre-wrap;
-  max-width: 60px;
-  letter-spacing: 0;
+  padding: 0px 10px;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: .8em;
+  line-height: 2em;
+  margin: 0.8em 0;
 }
-#header #login-form input[type=submit]:visited, #header #loginid-switch-form input[type=submit]:visited {
+#header #client-logged-out #btn_login:visited {
   color: white;
 }
-#header #login-form input[type=submit]:hover, #header #login-form input[type=submit]:active, #header #loginid-switch-form input[type=submit]:hover, #header #loginid-switch-form input[type=submit]:active {
+#header #client-logged-out #btn_login:hover, #header #client-logged-out #btn_login:active {
   text-decoration: none;
   background-color: #14602B;
+}
+#header #client-logged-out, #header #loginid-switch-form {
+  text-align: left;
 }
 #header a#lost-password, #header a#register {
   display: inline-block;
@@ -991,7 +1032,7 @@ ul.checked li {
   display: inline-block;
   top: 3px;
 }
-#footer #footer-regulatory #appcache-reload-message, #footer #footer-regulatory #ratelimit-error-message {
+#footer #footer-regulatory #ratelimit-error-message {
   display: none;
   position: fixed;
   top: 0;
@@ -1000,12 +1041,12 @@ ul.checked li {
   z-index: 999;
   text-align: center;
 }
-#footer #footer-regulatory #appcache-reload-message .message, #footer #footer-regulatory #ratelimit-error-message .message {
+#footer #footer-regulatory #ratelimit-error-message .message {
   margin: 12px;
   font-style: italic;
   color: #cc0033;
 }
-#footer #footer-regulatory #appcache-reload-message .message a, #footer #footer-regulatory #ratelimit-error-message .message a {
+#footer #footer-regulatory #ratelimit-error-message .message a {
   color: #2e8836;
 }
 #footer #footer-last {
@@ -1164,6 +1205,7 @@ ul.checked li {
   font-weight: normal;
   text-decoration: none;
   padding: 0;
+  outline: none;
 }
 #content ul.tm-ul li.active span.a-active, #content ul.tm-ul li.ui-tabs-active span.a-active {
   line-height: 2;
@@ -1231,6 +1273,7 @@ ul.checked li {
   font-weight: normal;
   text-decoration: none;
   padding: 0;
+  outline: none;
 }
 .has-tabs ul.ui-tabs-nav li.active span.a-active, .has-tabs ul.ui-tabs-nav li.ui-tabs-active span.a-active {
   line-height: 2;
@@ -1379,6 +1422,8 @@ ul.checked li {
   text-align: center;
   background-color: #fff;
   border-radius: .3em;
+  max-height: 80vh;
+  overflow: auto;
 }
 
 #reality-check-content, #balances-content {
@@ -1411,6 +1456,26 @@ ul.checked li {
   #reality-check-nav {
     width: 45% !important;
   }
+}
+
+@media screen and (max-width: 480px) {
+  #risk_classification.lightbox > div > div {
+    width: 95vw;
+  }
+}
+meter#password-meter {
+  width: 10.9em;
+  height: .5em;
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  vertical-align: top;
+  display: block;
+}
+
+meter#password-meter::-webkit-meter-bar {
+  background: #f5f5f5;
+  box-shadow: 0 5px 5px -5px #333 inset;
 }
 
 #tooltip {
@@ -1624,6 +1689,10 @@ abbr {
   width: 10%;
   margin: 0 1em;
 }
+.home-content .mena {
+  width: 10%;
+  margin: 0 1em;
+}
 .home-content .xcta {
   position: relative;
   bottom: 30px;
@@ -1721,6 +1790,9 @@ abbr {
   .home-content .small-image {
     width: 30%;
   }
+  .home-content .mena {
+    width: 32%;
+  }
 }
 #login #content {
   margin-top: 40px;
@@ -1741,42 +1813,42 @@ abbr {
 }
 
 /* GET-STARTED PAGES RULES */
-.get-started {
+.get-started, .get-started-jp {
   margin-top: 40px;
   overflow: hidden;
 }
-.get-started .sidebar-left ul {
+.get-started .sidebar-left ul, .get-started-jp .sidebar-left ul {
   font-size: 90%;
 }
-.get-started .sidebar-left ul li {
+.get-started .sidebar-left ul li, .get-started-jp .sidebar-left ul li {
   list-style-image: none;
   margin: 0;
   background: #f2f2f2;
   line-height: 150%;
   border-bottom: 1px solid #FFFFFF;
 }
-.get-started .sidebar-left ul li:hover {
+.get-started .sidebar-left ul li:hover, .get-started-jp .sidebar-left ul li:hover {
   background: #dedede;
 }
-.get-started .sidebar-left ul li a {
+.get-started .sidebar-left ul li a, .get-started-jp .sidebar-left ul li a {
   font-weight: normal;
   text-decoration: none;
   display: block;
   padding: 5px 5px 5px 10px;
   color: #2a3052;
 }
-.get-started .sidebar-left ul li.selected {
+.get-started .sidebar-left ul li.selected, .get-started-jp .sidebar-left ul li.selected {
   background: #2a3052;
 }
-.get-started .sidebar-left ul li.selected a {
+.get-started .sidebar-left ul li.selected a, .get-started-jp .sidebar-left ul li.selected a {
   color: white;
   text-decoration: none;
 }
-.get-started .sidebar-left .open-account {
+.get-started .sidebar-left .open-account, .get-started-jp .sidebar-left .open-account {
   background: #f2f2f2;
   padding: 20px;
 }
-.get-started .sidebar-left .open-account a {
+.get-started .sidebar-left .open-account a, .get-started-jp .sidebar-left .open-account a {
   color: white;
   text-decoration: none;
   text-align: center;
@@ -1789,33 +1861,33 @@ abbr {
   letter-spacing: 0.75px;
   display: block;
 }
-.get-started .sidebar-left .open-account a:visited {
+.get-started .sidebar-left .open-account a:visited, .get-started-jp .sidebar-left .open-account a:visited {
   color: white;
 }
-.get-started .sidebar-left .open-account a:hover, .get-started .sidebar-left .open-account a:active {
+.get-started .sidebar-left .open-account a:hover, .get-started .sidebar-left .open-account a:active, .get-started-jp .sidebar-left .open-account a:hover, .get-started-jp .sidebar-left .open-account a:active {
   text-decoration: none;
   background-color: #14602B;
 }
-.get-started .sidebar-right div {
+.get-started .sidebar-right div, .get-started-jp .sidebar-right div {
   background: #f2f2f2;
   border-bottom: #dedede;
   margin-bottom: 20px;
   padding: 20px;
   text-align: center;
 }
-.get-started .sidebar-right div p {
+.get-started .sidebar-right div p, .get-started-jp .sidebar-right div p {
   margin: 0;
 }
-.get-started .sidebar-right div a {
+.get-started .sidebar-right div a, .get-started-jp .sidebar-right div a {
   font-weight: normal;
 }
-.get-started .sidebar-right .open-account {
+.get-started .sidebar-right .open-account, .get-started-jp .sidebar-right .open-account {
   padding: 20px;
 }
-.get-started .sidebar-right .open-account p {
+.get-started .sidebar-right .open-account p, .get-started-jp .sidebar-right .open-account p {
   margin-bottom: 1em;
 }
-.get-started .sidebar-right .open-account a {
+.get-started .sidebar-right .open-account a, .get-started-jp .sidebar-right .open-account a {
   color: white;
   text-decoration: none;
   text-align: center;
@@ -1828,101 +1900,131 @@ abbr {
   letter-spacing: 0.75px;
   display: block;
 }
-.get-started .sidebar-right .open-account a:visited {
+.get-started .sidebar-right .open-account a:visited, .get-started-jp .sidebar-right .open-account a:visited {
   color: white;
 }
-.get-started .sidebar-right .open-account a:hover, .get-started .sidebar-right .open-account a:active {
+.get-started .sidebar-right .open-account a:hover, .get-started .sidebar-right .open-account a:active, .get-started-jp .sidebar-right .open-account a:hover, .get-started-jp .sidebar-right .open-account a:active {
   text-decoration: none;
   background-color: #14602B;
 }
-.get-started dl {
+.get-started dl, .get-started-jp dl {
   text-align: center;
 }
-.get-started dl .section {
+.get-started dl .section, .get-started-jp dl .section {
   min-height: 210px;
   background: #f2f2f2;
   margin: 0 20px 20px 0;
 }
-.get-started dl .section-header {
+.get-started dl .section.section-jp, .get-started-jp dl .section.section-jp {
+  min-height: 0;
+}
+.get-started dl .section-header, .get-started-jp dl .section-header {
   padding: 10px;
   font-weight: normal;
 }
-.get-started dl .section-info {
+.get-started dl .section-info, .get-started-jp dl .section-info {
   width: auto;
   text-align: center;
   padding: 10px;
   min-height: 50px;
   font-size: 90%;
 }
-.get-started dl a {
+.get-started dl a, .get-started-jp dl a {
   display: block;
   color: white;
   text-align: center;
   background: black;
   text-decoration: none;
 }
-.get-started dl a:hover {
+.get-started dl a.a-jp, .get-started-jp dl a.a-jp {
+  min-height: 160px;
+}
+.get-started dl a:hover, .get-started-jp dl a:hover {
   background: #14602b;
 }
-.get-started dl div#what-is-binary-trading {
+.get-started dl div#what-is-binary-trading, .get-started-jp dl div#what-is-binary-trading {
   height: 80px;
-  background: url("../images/pages/get-started/intro_1.png") no-repeat 0 0;
+  background: url("../images/pages/get-started/intro_2.png") no-repeat 0 0;
 }
-.get-started dl div#binary-options-basics {
+.get-started dl div#binary-options-basics, .get-started-jp dl div#binary-options-basics {
   height: 80px;
-  background: url("../images/pages/get-started/intro_1.png") no-repeat 100% 0;
+  background: url("../images/pages/get-started/intro_2.png") no-repeat 100% 0;
 }
-.get-started dl div#how-to-trade-binaries {
+.get-started dl div#how-to-trade-binaries, .get-started-jp dl div#how-to-trade-binaries {
   height: 80px;
-  background: url("../images/pages/get-started/intro_1.png") no-repeat 100% 24%;
+  background: url("../images/pages/get-started/intro_2.png") no-repeat 100% 24%;
 }
-.get-started dl div#types-of-trades {
+.get-started dl div#types-of-trades, .get-started-jp dl div#types-of-trades {
   height: 80px;
-  background: url("../images/pages/get-started/intro_1.png") no-repeat 0 47%;
+  background: url("../images/pages/get-started/intro_2.png") no-repeat 0 47%;
 }
-.get-started dl div#benefits-of-trading-binaries {
+.get-started dl div#benefits-of-trading-binaries, .get-started-jp dl div#benefits-of-trading-binaries {
   height: 80px;
-  background: url("../images/pages/get-started/intro_1.png") no-repeat 0 24%;
+  background: url("../images/pages/get-started/intro_2.png") no-repeat 0 24%;
 }
-.get-started dl div#beginners-faq {
+.get-started dl div#beginners-faq, .get-started-jp dl div#beginners-faq {
   height: 80px;
-  background: url("../images/pages/get-started/intro_1.png") no-repeat 0 71%;
+  background: url("../images/pages/get-started/intro_2.png") no-repeat 0 71%;
 }
-.get-started dl div#glossary {
+.get-started dl div#glossary, .get-started-jp dl div#glossary {
   height: 80px;
-  background: url("../images/pages/get-started/intro_1.png") no-repeat 100% 71%;
+  background: url("../images/pages/get-started/intro_2.png") no-repeat 100% 71%;
 }
-.get-started dl div#spread {
+.get-started dl div#spread, .get-started-jp dl div#spread {
   height: 80px;
   background: url("../images/pages/get-started/spread_bet.svg") no-repeat 100% 71%;
 }
-.get-started dl div#random-trades {
+.get-started dl div#random-trades, .get-started-jp dl div#random-trades {
   height: 80px;
-  background: url("../images/pages/get-started/intro_1.png") no-repeat 100% 93%;
+  background: url("../images/pages/get-started/intro_2.png") no-repeat 100% 93%;
 }
-.get-started dl div#smart-indices {
+.get-started dl div#smart-indices, .get-started-jp dl div#smart-indices {
   height: 80px;
   background: url("../images/pages/get-started/smart-indices.svg") no-repeat 50% 50%/20% #272825;
   background-size: 20%;
 }
-.get-started dl div#partners {
+.get-started dl div#partners, .get-started-jp dl div#partners {
   height: 80px;
   background: url("../images/pages/partners/partner.svg") no-repeat 50% 50%/50% #272825;
 }
-.get-started .section-content h2 {
+.get-started dl div#how-to-open-an-account-img, .get-started-jp dl div#how-to-open-an-account-img {
+  height: 80px;
+  background: url("../images/pages/get-started-jp/open_acc.svg") no-repeat;
+}
+.get-started dl div#options-basic-knowledge-img, .get-started-jp dl div#options-basic-knowledge-img {
+  height: 80px;
+  background: url("../images/pages/get-started-jp/knowledge.svg") no-repeat;
+}
+.get-started dl div#summary-of-specifications-img, .get-started-jp dl div#summary-of-specifications-img {
+  height: 80px;
+  background: url("../images/pages/get-started-jp/summary.svg") no-repeat;
+}
+.get-started dl div#identification-documents-img, .get-started-jp dl div#identification-documents-img {
+  height: 80px;
+  background: url("../images/pages/get-started-jp/id.svg") no-repeat;
+}
+.get-started dl div#trading-guide-img, .get-started-jp dl div#trading-guide-img {
+  height: 80px;
+  background: url("../images/pages/get-started-jp/guide.svg") no-repeat;
+}
+.get-started dl div#pre-contract-documents-img, .get-started-jp dl div#pre-contract-documents-img {
+  height: 80px;
+  background: url("../images/pages/get-started-jp/contract.svg") no-repeat;
+}
+.get-started .section-content h2, .get-started-jp .section-content h2 {
   color: #e98024;
   padding-top: 20px;
 }
-.get-started .section-content h2.center {
+.get-started .section-content h2.center, .get-started-jp .section-content h2.center {
   width: 63.8297872%;
 }
-.get-started .subsection-navigation {
+.get-started .subsection-navigation, .get-started-jp .subsection-navigation {
   clear: both;
   text-align: center;
   margin-top: 20px;
   padding-top: 10px;
 }
-.get-started .subsection-navigation a {
+.get-started .subsection-navigation a, .get-started-jp .subsection-navigation a {
   color: white;
   text-decoration: none;
   text-align: center;
@@ -1935,37 +2037,44 @@ abbr {
   letter-spacing: 0.75px;
   padding: 0.4375em 3.19149%;
 }
-.get-started .subsection-navigation a:visited {
+.get-started .subsection-navigation a:visited, .get-started-jp .subsection-navigation a:visited {
   color: white;
 }
-.get-started .subsection-navigation a:hover, .get-started .subsection-navigation a:active {
+.get-started .subsection-navigation a:hover, .get-started .subsection-navigation a:active, .get-started-jp .subsection-navigation a:hover, .get-started-jp .subsection-navigation a:active {
   text-decoration: none;
   background-color: #14602B;
 }
-.get-started .subsection-navigation a.disabled {
+.get-started .subsection-navigation a.disabled, .get-started-jp .subsection-navigation a.disabled {
   color: #c2c2c2;
   background: #f2f2f2;
   cursor: default;
 }
-.get-started .section-5 ol ol, .get-started .section-5 ul ol {
+.get-started .section-5 ol ol, .get-started .section-5 ul ol, .get-started-jp .section-5 ol ol, .get-started-jp .section-5 ul ol {
   list-style-type: lower-alpha;
 }
-.get-started .section-5 .subsection p .highlight {
+.get-started .section-5 .subsection p .highlight, .get-started-jp .section-5 .subsection p .highlight {
   font-style: italic;
   margin: 0.625em 0;
 }
-.get-started .section-7 h4 {
+.get-started .section-7 h4, .get-started-jp .section-7 h4 {
   font-weight: bold;
   margin-top: 1.875em;
 }
-.get-started .section-7 p {
+.get-started .section-7 p, .get-started-jp .section-7 p {
   margin: 0.625em 0 1.25em 0;
 }
-.get-started .section-7 a {
+.get-started .section-7 a, .get-started-jp .section-7 a {
   font-weight: bold;
 }
-.get-started .trade-type-flash {
+.get-started .trade-type-flash, .get-started-jp .trade-type-flash {
   padding-bottom: 25px;
+}
+
+.get-started-jp .link-size-box {
+  display: table-cell;
+  vertical-align: middle;
+  height: 35px;
+  width: 170px;
 }
 
 .tour {
@@ -2612,7 +2721,14 @@ a.close:hover {
 }
 
 #sell_popup_container.spread_popup {
-  width: 30%;
+  width: 300px;
+}
+#sell_popup_container.message_popup {
+  width: 500px;
+  line-height: 25px;
+}
+#sell_popup_container.tick_popup {
+  min-height: 460px;
 }
 
 #sell_popup_container {
@@ -2664,6 +2780,10 @@ a.close:hover {
 }
 #sell_popup_container .inpage_popup_content #sell_content_wrapper .extra-info {
   font-size: 85%;
+}
+#sell_popup_container .inpage_popup_content #sell_content_wrapper .extra-info td {
+  border: 0;
+  padding: 0;
 }
 #sell_popup_container .inpage_popup_content #sell_content_wrapper .contract_barriers {
   width: auto;
@@ -2734,6 +2854,85 @@ a.close:hover {
 #sell_popup_container .inpage_popup_content .account_balance {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.inpage_popup_container_ws {
+  border: 2px solid #2a3052;
+  border-top: 1px solid white;
+  background-color: white;
+}
+.inpage_popup_container_ws .inpage_popup_content_box {
+  border: 0px;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #contract_win_status {
+  line-height: 30px;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #contract_win_status.won {
+  background-color: rgba(46, 136, 54, 0.19608);
+}
+.inpage_popup_container_ws .inpage_popup_content_box #contract_win_status.lost {
+  background-color: rgba(204, 0, 0, 0.09804);
+}
+.inpage_popup_container_ws .inpage_popup_content_box .popup_bet_desc {
+  border: 0px;
+  padding: 5px;
+  line-height: 20px;
+  background-color: #2a3052;
+  color: white;
+}
+.inpage_popup_container_ws .inpage_popup_content_box td {
+  padding-right: 6%;
+  text-align: right;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #sell_details_chart_wrapper {
+  border-right: 1px solid #44484c;
+  margin-right: -1px;
+  padding: 0px;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #sell_details_chart_wrapper .chart-notice {
+  margin: 0px;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #sell_details_chart_wrapper .highcharts-container {
+  direction: ltr;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #sell_details_table {
+  padding: 0px;
+  border-left: 1px solid #44484c;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #sell_details_table th {
+  line-height: 24px;
+  border-bottom-color: #c2c2c2;
+  cursor: pointer;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #sell_details_table td {
+  border-bottom-width: 1px;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #sell_details_table #trade_details_profit_loss {
+  font-weight: bold;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #sell_details_table #trade_details_profit_loss span {
+  font-size: 10px;
+  padding-right: 7px;
+  font-weight: normal;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #sell_details_table .last_cell {
+  border-bottom: 0px;
+  min-height: 20px;
+  padding: 5px 15px;
+  text-align: center;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #sell_details_table #trade_details_message {
+  font-style: italic;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #sell_details_table #contract_sell_message {
+  font-size: 0.9em;
+  line-height: 20px;
+}
+.inpage_popup_container_ws .inpage_popup_content_box #sell_details_table #sell_at_market_wrapper .note {
+  line-height: 18px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  padding: 3px 10px;
 }
 
 .tab_menu_container.ui-corner-all {
@@ -2820,7 +3019,6 @@ a.close:hover {
   margin-bottom: 15px;
 }
 
-/* special notice (f_trade.cgi), currently align center */
 .centerText,
 .notice-1 {
   text-align: center;
@@ -2945,11 +3143,6 @@ a.close:hover {
 .disabled-link {
   color: #dedede !important;
   pointer-events: none;
-}
-
-#header_page #content {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 #popup {
@@ -3273,33 +3466,9 @@ input#duration_amount {
   background-image: url("../images/pages/logintrouble/chromelogo-icon_1.png");
 }
 
-#risefall {
-  background-image: url("../images/pages/contract_guide/rise-fall.svg");
-}
-
-#higherlower {
-  background-image: url("../images/pages/contract_guide/higher-lower.svg");
-}
-
-#touchnotouch {
-  background-image: url("../images/pages/contract_guide/touch-notouch.svg");
-}
-
-#inout {
-  background-image: url("../images/pages/contract_guide/in-out.svg");
-}
-
 /* Fixed width to match datepicker */
 #duration_amount {
   width: 95px;
-}
-
-/* Content of boxes is longer on Bet Guide page */
-#content #bet_guide_content {
-  background: none;
-}
-#content #bet_guide_content .li-2-boxes-content {
-  height: 10em;
 }
 
 #account_balance {
@@ -3309,12 +3478,10 @@ input#duration_amount {
   font-size: 100%;
   display: none;
 }
-
 #account_balance td {
   text-align: right;
   padding: 0;
 }
-
 #account_balance .currency {
   padding: 0 2px;
 }
@@ -3341,7 +3508,6 @@ input#duration_amount {
 #tradingform input[type="checkbox"] {
   border: none;
 }
-
 #tradingform select {
   width: 6.5em;
 }
@@ -4273,6 +4439,15 @@ table .loss, table .lower {
   margin-bottom: 40px;
 }
 
+#frmPersonalDetails .JpAcc, #frmPersonalDetails .hedge {
+  display: none;
+}
+
+#api_token abbr {
+  text-decoration: none;
+  margin-left: 15px;
+}
+
 .live_chart_wrapper {
   margin: 0 auto;
 }
@@ -4524,6 +4699,27 @@ table .loss, table .lower {
     font-size: 80% !important;
   }
 }
+#applications-ws-container table td, #applications-ws-container table th.flex-tr-child {
+  text-align: center !important;
+  vertical-align: middle !important;
+  line-height: 30px;
+}
+#applications-ws-container table td .button, #applications-ws-container table th.flex-tr-child .button {
+  margin: 3px 0px;
+}
+
+@media screen and (max-width: 480px) {
+  #applications-ws-container table td, #applications-ws-container table th {
+    font-size: 80%;
+  }
+  #applications-ws-container table button {
+    font-size: 80%;
+    padding: 10px 15px;
+  }
+  #applications-ws-container .errorfield {
+    font-size: 80% !important;
+  }
+}
 .career .xquote, .user_testing .xquote {
   background-color: #F2F2F2;
   padding: 20px 20px;
@@ -4613,7 +4809,7 @@ a.dynamic, span.dynamic, div.dynamic, p.dynamic, button.dynamic, table.dynamic {
 #portfolio td {
   padding: 10px 10px;
 }
-#portfolio td.indicative, #portfolio td.purchase {
+#portfolio td.indicative, #portfolio td.purchase, #portfolio .payout {
   white-space: nowrap;
 }
 #portfolio td.indicative.no_resale {
@@ -4635,7 +4831,7 @@ a.dynamic, span.dynamic, div.dynamic, p.dynamic, button.dynamic, table.dynamic {
   text-align: left !important;
 }
 @media screen and (max-width: 480px) {
-  #portfolio .details {
+  #portfolio .details, #portfolio .payout {
     display: none;
   }
 }
@@ -4974,10 +5170,11 @@ div.kineticjs-content {
 }
 
 #guideBtn {
-  display: inline-block;
+  display: none;
   background-color: #f2f2f2;
-  padding: 5px 20px;
+  padding: 4px 20px;
   position: relative;
+  margin-right: 15px;
 }
 #guideBtn span.close {
   display: none;
@@ -4996,7 +5193,7 @@ div.kineticjs-content {
   cursor: pointer;
   display: inline-block;
   white-space: nowrap;
-  line-height: 22px;
+  line-height: 20px;
 }
 #guideBtn strong span {
   display: inline-block;
@@ -5022,34 +5219,50 @@ div.kineticjs-content {
   float: left;
 }
 
-#androidApp {
+#app-container {
+  text-align: center;
+}
+
+#androidApp, #appstore {
   width: 100px;
   height: 30px;
   display: inline-block;
-  background: url("../images/pages/trade/google-play-badge.png") no-repeat;
-  background-size: 100px 30px;
   position: relative;
 }
 
+#appstore {
+  background: url("../images/pages/applications/appstore.svg") 0 0/100px 30px no-repeat;
+  margin-left: 10px;
+}
+
+#androidApp {
+  background: url("../images/pages/trade/google-play-badge.png") 0 0/100px 30px no-repeat;
+}
+
 /* trading page */
-#trading_socket_container #androidApp {
+#trading_socket_container #androidApp, #trading_socket_container #appstore {
   float: left;
 }
 @media (max-width: 768px) {
   #trading_socket_container #androidApp {
+    margin-left: 10px;
+  }
+  #trading_socket_container #appstore, #trading_socket_container #androidApp {
     margin: 0 auto;
     padding-bottom: 10px;
-    display: block;
     float: none;
   }
 }
 
-.open-positions .grd-grid-4:not(:first-child) {
+.open-positions .eq:not(:first-child) {
   border: 1px dashed #d9d9d9;
   border-width: 0 0 0 1px;
 }
-.open-positions .grd-grid-4:nth-child(3n+1) {
+.open-positions .eq:nth-child(3n+1) {
   border-width: 0;
+}
+.open-positions .one-line {
+  margin-bottom: 35px;
 }
 .open-positions .grd-grid-3 {
   text-align: center;
@@ -5066,15 +5279,16 @@ div.kineticjs-content {
   padding-left: 10px;
   padding-right: 10px;
 }
-.open-positions .title-section {
-  height: 2.5em;
+.open-positions .nowrap {
+  white-space: nowrap;
 }
-.open-positions .paragraph-section {
-  height: 10em;
-  overflow: visible;
+.open-positions .eq {
+  padding: 10px;
+  width: 30%;
 }
-.open-positions .top-margin {
-  margin-top: 40px;
+.open-positions .eqWrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .job-details .grd-grid-3 .grd-grid-12 {
@@ -5090,24 +5304,27 @@ div.kineticjs-content {
   width: 80%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+  .open-positions .eq {
+    width: 45%;
+  }
+  .open-positions .eq:nth-child(3n+1) {
+    border-width: 0 0 0 1px;
+  }
+  .open-positions .eq:nth-child(2n+1) {
+    border-width: 0;
+  }
   .open-positions .grd-grid-phablet-6 {
     border-width: 0 !important;
   }
   .open-positions .grd-grid-phablet-6:nth-child(even) {
     border-width: 0 0 0 1px !important;
   }
-  .open-positions .grd-grid-phablet-6.first, .open-positions .top-margin {
-    margin-top: 20px;
-  }
-  .open-positions .grd-grid-phablet-6.first .title-section {
-    height: 1.4em;
-  }
-  .open-positions .paragraph-section {
-    height: 9em;
-  }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 460px) {
+  .open-positions .eq {
+    width: 100%;
+  }
   .open-positions .grd-grid-mobile-12:not(:first-child) {
     padding-top: 20px;
     margin-top: auto !important;
@@ -5117,15 +5334,6 @@ div.kineticjs-content {
   }
   .open-positions img.responsive {
     width: 40%;
-  }
-  .open-positions .title-section {
-    height: 1em;
-  }
-  .open-positions .paragraph-section {
-    height: auto;
-  }
-  .open-positions .top-margin {
-    margin-top: auto;
   }
 }
 /* static pages */
@@ -5190,6 +5398,10 @@ div.kineticjs-content {
 }
 #trading_socket_container label {
   line-height: 28px;
+}
+#trading_socket_container #japan_unit_row,
+#trading_socket_container #japan_payout_row {
+  display: none;
 }
 #trading_socket_container #contract_market_form_container {
   height: 28px;
@@ -5324,12 +5536,99 @@ div.kineticjs-content {
 }
 #trading_socket_container #contract_prices_container .price_container .contract_purchase {
   margin-bottom: 6px;
+  width: 90%;
+  display: inline-flex;
 }
 #trading_socket_container #contract_prices_container .price_container .contract_purchase .purchase_button {
   cursor: pointer;
+  width: 100%;
 }
 #trading_socket_container #contract_form_content {
   padding: 0 10px;
+}
+#trading_socket_container .contract_heading {
+  text-transform: capitalize;
+  font-weight: bold;
+  padding-top: 2.4em;
+  text-align: center;
+}
+#trading_socket_container .contract_heading.ASIANU {
+  background: url("../images/pages/trade/asian-u_1.svg") no-repeat top center;
+}
+#trading_socket_container .contract_heading.ASIAND {
+  background: url("../images/pages/trade/asian-d_1.svg") no-repeat top center;
+}
+#trading_socket_container .contract_heading.DIGITDIFF {
+  background: url("../images/pages/trade/differs_1.svg") no-repeat top center;
+}
+#trading_socket_container .contract_heading.DIGITMATCH {
+  background: url("../images/pages/trade/matches_1.svg") no-repeat top center;
+}
+#trading_socket_container .contract_heading.CALLE {
+  background: url("../images/pages/trade/rise_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.PUTE {
+  background: url("../images/pages/trade/fall_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.DIGITEVEN {
+  background: url("../images/pages/trade/digits_even_1.svg") no-repeat no-repeat top center;
+  background-size: 40%;
+}
+#trading_socket_container .contract_heading.DIGITODD {
+  background: url("../images/pages/trade/digits_odd_1.svg") no-repeat no-repeat top center;
+  background-size: 40%;
+}
+#trading_socket_container .contract_heading.DIGITOVER {
+  background: url("../images/pages/trade/digits_over_1.svg") no-repeat no-repeat top center;
+  background-size: 40%;
+}
+#trading_socket_container .contract_heading.DIGITUNDER {
+  background: url("../images/pages/trade/digits_under_1.svg") no-repeat no-repeat top center;
+  background-size: 40%;
+}
+#trading_socket_container .contract_heading.CALL {
+  background: url("../images/pages/trade/rise_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.PUT {
+  background: url("../images/pages/trade/fall_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.CALLE {
+  background: url("../images/pages/trade/rise_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.PUTE {
+  background: url("../images/pages/trade/fall_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.ONETOUCH {
+  background: url("../images/pages/trade/touch_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.NOTOUCH {
+  background: url("../images/pages/trade/no-touch_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.RANGE {
+  background: url("../images/pages/trade/stay-in-between_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.UPORDOWN {
+  background: url("../images/pages/trade/stay-out_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.EXPIRYRANGEE {
+  background: url("../images/pages/trade/ends-between_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.EXPIRYMISSE {
+  background: url("../images/pages/trade/ends-outside_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.EXPIRYRANGE {
+  background: url("../images/pages/trade/ends-between_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.EXPIRYMISS {
+  background: url("../images/pages/trade/ends-outside_1.png") no-repeat top center;
+}
+#trading_socket_container .contract_heading.SPREADU {
+  background: url("../images/pages/trade/spreads.svg") no-repeat top center;
+  background-size: 40%;
+}
+#trading_socket_container .contract_heading.SPREADD {
+  background: url("../images/pages/trade/spreads_1.svg") no-repeat top center;
+  background-size: 40%;
 }
 #trading_socket_container #contract_prices_container #contract_purchase_reference {
   margin-bottom: 10px;
@@ -5397,69 +5696,23 @@ div.kineticjs-content {
 #trading_socket_container #contract_prices_container .contract_error {
   background-color: #fef1cf;
 }
-#trading_socket_container #contract_prices_container .contract_heading {
-  text-transform: capitalize;
-  font-weight: bold;
-  padding-top: 2.4em;
-  text-align: center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.ASIANU {
-  background: url("../images/pages/trade/asian-u_1.svg") no-repeat top center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.ASIAND {
-  background: url("../images/pages/trade/asian-d_1.svg") no-repeat top center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.DIGITDIFF {
-  background: url("../images/pages/trade/differs_1.svg") no-repeat top center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.DIGITMATCH {
-  background: url("../images/pages/trade/matches_1.svg") no-repeat top center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.CALL {
-  background: url("../images/pages/trade/rise_1.png") no-repeat top center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.PUT {
-  background: url("../images/pages/trade/fall_1.png") no-repeat top center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.ONETOUCH {
-  background: url("../images/pages/trade/touch_1.png") no-repeat top center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.NOTOUCH {
-  background: url("../images/pages/trade/no-touch_1.png") no-repeat top center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.RANGE {
-  background: url("../images/pages/trade/stay-in-between_1.png") no-repeat top center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.UPORDOWN {
-  background: url("../images/pages/trade/stay-out_1.png") no-repeat top center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.EXPIRYRANGE {
-  background: url("../images/pages/trade/ends-between_1.png") no-repeat top center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.EXPIRYMISS {
-  background: url("../images/pages/trade/ends-outside_1.png") no-repeat top center;
-}
-#trading_socket_container #contract_prices_container .contract_heading.SPREADU {
-  background: url("../images/pages/trade/spreads.svg") no-repeat top center;
-  background-size: 40%;
-}
-#trading_socket_container #contract_prices_container .contract_heading.SPREADD {
-  background: url("../images/pages/trade/spreads_1.svg") no-repeat top center;
-  background-size: 40%;
-}
-#trading_socket_container #contract_prices_container .contract_amount, #trading_socket_container #contract_prices_container .contract_description {
-  padding: 10px 5px 10px 10px;
+#trading_socket_container #contract_prices_container .contract_amount, #trading_socket_container #contract_prices_container .contract_payout, #trading_socket_container #contract_prices_container .payout, #trading_socket_container #contract_prices_container .stake {
+  padding: 3px;
   line-height: 1.5;
   font-size: 90%;
   flex: 1 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-#trading_socket_container #contract_prices_container .contract_amount {
+#trading_socket_container #contract_prices_container .stake, #trading_socket_container #contract_prices_container .payout {
+  padding: 0;
+  justify-content: flex-end;
+}
+#trading_socket_container #contract_prices_container .contract_amount, #trading_socket_container #contract_prices_container .contract_payout {
   font-weight: bold;
   font-size: 1.1rem;
   border-radius: 5px;
+  justify-content: center;
 }
 #trading_socket_container #expiry_type_duration {
   flex-wrap: wrap;
@@ -5491,7 +5744,9 @@ div.kineticjs-content {
 #trading_socket_container #contract_prices_container .price_container .price_wrapper {
   text-align: center;
   align-items: center;
-  width: 230px;
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 30px;
 }
 #trading_socket_container #contract_prices_container .price_container .price_wrapper.small {
   width: 95px;
@@ -5507,9 +5762,25 @@ div.kineticjs-content {
 }
 #trading_socket_container #contract_prices_container .price_container .price_wrapper .amount_wrapper {
   float: left;
+  width: 100%;
 }
-#trading_socket_container #contract_prices_container .price_container .price_wrapper .contract_amount {
+#trading_socket_container #contract_prices_container .price_container .price_wrapper .amount_wrapper .amount_wrapper_div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-bottom: 10px;
+}
+#trading_socket_container #contract_prices_container .price_container .price_wrapper .amount_wrapper .amount_wrapper_div div {
+  flex-grow: 1;
+}
+#trading_socket_container #contract_prices_container .price_container .price_wrapper .amount_wrapper .amount_wrapper_div .stake_wrapper {
+  margin-left: 20px;
+}
+#trading_socket_container #contract_prices_container .price_container .price_wrapper .amount_wrapper .amount_wrapper_div .payout_wrapper {
+  margin-right: 20px;
+}
+#trading_socket_container #contract_prices_container .price_container .price_wrapper .contract_amount, #trading_socket_container #contract_prices_container .price_container .price_wrapper .contract_payout, #trading_socket_container #contract_prices_container .price_container .price_wrapper .stake, #trading_socket_container #contract_prices_container .price_container .price_wrapper .payout {
+  display: inline-flex;
 }
 #trading_socket_container #period_row, #trading_socket_container #jbarrier_row, #trading_socket_container #jhigh_barrier_row, #trading_socket_container #jlow_barrier_row {
   display: none;
@@ -5568,6 +5839,189 @@ div.kineticjs-content {
 #trading_socket_container .radio_label {
   margin: 0 10px;
 }
+#trading_socket_container #contract_description1
+#contract_description2
+#pricing_table_container
+#open_positions_container {
+  display: none;
+}
+
+#open_positions_container {
+  display: none;
+}
+
+#trading_socket_container.japan {
+  min-width: 960px;
+}
+#trading_socket_container.japan .big-col {
+  flex: 3;
+}
+#trading_socket_container.japan #market_menu {
+  background: #FFF;
+  margin-left: 20px;
+}
+#trading_socket_container.japan #market_menu input {
+  margin-right: 5px;
+}
+#trading_socket_container.japan #contract_markets_container,
+#trading_socket_container.japan #contract_market_form_container {
+  display: none;
+}
+#trading_socket_container.japan #guideBtn {
+  display: none;
+}
+#trading_socket_container.japan #japan_unit {
+  width: 50px;
+}
+#trading_socket_container.japan .contract_heading {
+  float: left;
+  margin-top: 5px;
+  width: 62px;
+}
+#trading_socket_container.japan .contract_longcode {
+  float: left;
+  width: 220px;
+  line-height: 1.5;
+  margin-left: 10px;
+}
+#trading_socket_container.japan #contract_form_content {
+  float: left;
+  padding: 0;
+}
+#trading_socket_container.japan #contract_description1,
+#trading_socket_container.japan #contract_description2 {
+  float: left;
+  width: 301px;
+  border: 1px solid #dedede;
+  display: none;
+  height: 120px;
+  padding: 10px;
+  margin-left: 2px;
+}
+#trading_socket_container.japan #contract_description2 {
+  border-left: none;
+  margin-left: 0;
+  width: 302px;
+}
+#trading_socket_container.japan #pricing_table_container {
+  float: left;
+  width: 100%;
+}
+#trading_socket_container.japan .barrier {
+  flex: 2;
+}
+#trading_socket_container.japan #contract_prices_container {
+  display: none;
+}
+#trading_socket_container.japan #pricing_table {
+  width: 100%;
+}
+#trading_socket_container.japan .multiplier2 input {
+  width: 29px;
+}
+#trading_socket_container.japan .multiplier1 {
+  text-align: center;
+}
+#trading_socket_container.japan .col.pricing_table_cell,
+#trading_socket_container.japan .col.exercise_price,
+#trading_socket_container.japan .col.barrier {
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  display: flex;
+}
+#trading_socket_container.japan .col.barrier {
+  border: 1px solid #dedede;
+}
+#trading_socket_container.japan .col.buy_cell {
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+#trading_socket_container.japan .col.sell_cell {
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  text-align: right;
+}
+#trading_socket_container.japan .pricing_table_cell .button {
+  color: white;
+  padding: 6px;
+  margin: 0;
+  border-radius: 5px;
+}
+#trading_socket_container.japan .pricing_table_cell.buy_cell .button {
+  background: #2e8836;
+}
+#trading_socket_container.japan .pricing_table_cell.sell_cell .button {
+  background: #dedede;
+}
+#trading_socket_container.japan #contract_container #contract_form_container .col.button {
+  margin: 0;
+  text-align: center;
+}
+#trading_socket_container.japan #contract_container #contract_form_container .col.multiplier1 {
+  margin: 0 5px;
+}
+#trading_socket_container.japan #contract_container #contract_form_container .pricing_table_row > .col {
+  margin: 0;
+  padding: 5px 0;
+}
+#trading_socket_container.japan .pricing_table_row {
+  padding: 0;
+  margin-top: -1px;
+  clear: left;
+}
+#trading_socket_container.japan .pricing_table_row.row.heading {
+  float: left;
+  clear: left;
+  display: block;
+}
+#trading_socket_container.japan .pricing_table_row .exercise_price_h {
+  float: left;
+  width: 305px;
+  text-align: center;
+}
+#trading_socket_container.japan .pricing_table_row .prices_h {
+  float: left;
+  width: 163px;
+  text-align: center;
+}
+#trading_socket_container.japan #contract_container #contract_form_container .pricing_table_row .col.pricing_table_cell {
+  padding: 5px;
+}
+#trading_socket_container.japan #contract_form_content {
+  width: 310px;
+}
+#trading_socket_container.japan .pricing_table_cell.price_rise {
+  background: #cc0033;
+  color: white;
+}
+#trading_socket_container.japan .pricing_table_cell.price_fall {
+  background: #29abe2;
+  color: white;
+}
+#trading_socket_container.japan .pricing_table_cell {
+  position: relative;
+}
+#trading_socket_container.japan .inactive {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .8;
+  background: #f2f2f2;
+}
+#trading_socket_container.japan #period {
+  width: 200px;
+}
+#trading_socket_container.japan #payout_row {
+  display: none;
+}
+#trading_socket_container.japan #japan_unit_row,
+#trading_socket_container.japan #japan_payout_row {
+  display: flex;
+}
 
 @media all and (max-width: 480px) {
   #trading_socket_container #contract_market_form_container ul#contract_form_name_nav a.tm-a {
@@ -5578,6 +6032,9 @@ div.kineticjs-content {
   }
   #trading_socket_container #contract_form_content #duration_amount {
     margin-bottom: 5px;
+  }
+  #trading_socket_container .contract_purchase {
+    width: 70% !important;
   }
 }
 @media all and (max-width: 640px) {
@@ -5620,6 +6077,9 @@ div.kineticjs-content {
   }
   #trading_socket_container #contract_prices_container .price_wrapper.small {
     width: auto;
+  }
+  #trading_socket_container #contract_prices_container .price_wrapper .amount_wrapper {
+    width: 70%;
   }
   #trading_socket_container #contract_prices_container .row {
     flex-direction: column;
@@ -5712,6 +6172,15 @@ div.kineticjs-content {
 }
 #analysis_daily_prices_form input {
   margin: 0 10px;
+}
+
+#tab_portfolio-content .portfolio-header-margin {
+  display: none;
+}
+
+.error-field {
+  border-color: #cc0033;
+  color: #cc0033;
 }
 
 /*
@@ -5808,6 +6277,7 @@ div.kineticjs-content {
 #statement-ws-container .desc {
   flex: 2 1 100px;
   padding-right: 20px;
+  word-break: break-word;
 }
 #statement-ws-container .act {
   flex: 0.8 1 35px;
@@ -5849,29 +6319,46 @@ div.kineticjs-content {
     padding-right: 5px !important;
   }
 }
+.flex-table-container #statement-table .flex-tr > th.details, .flex-table-container #statement-table .flex-tr > td.details {
+  display: none !important;
+}
 @media (max-width: 600px) {
-  .flex-table-container #statement-table .flex-tr > th:nth-child(4) {
+  .flex-table-container #statement-table .flex-tr > th.desc, .flex-table-container #statement-table .flex-tr > td.desc {
     display: none !important;
   }
-  .flex-table-container #statement-table .flex-tr > td:nth-child(4) {
-    display: none !important;
+  .flex-table-container #statement-table .flex-tr > th.details, .flex-table-container #statement-table .flex-tr > td.details {
+    display: table-cell !important;
+  }
+  .flex-table-container #statement-table .flex-tr > th.details .button, .flex-table-container #statement-table .flex-tr > td.details .button {
+    padding: 8px 15px;
   }
   .flex-table-container #statement-table .flex-tr .flex-tr-child {
     font-size: 12px;
   }
 }
+.flex-table-container #profit-table .flex-tr > th.details, .flex-table-container #profit-table .flex-tr > td.details {
+  display: none !important;
+}
 @media (max-width: 600px) {
-  .flex-table-container #profit-table .flex-tr > th:nth-child(3) {
+  .flex-table-container #profit-table .flex-tr > th.contract, .flex-table-container #profit-table .flex-tr > td.contract {
     display: none !important;
   }
-  .flex-table-container #profit-table .flex-tr > td:nth-child(3) {
-    display: none !important;
+  .flex-table-container #profit-table .flex-tr > th.details, .flex-table-container #profit-table .flex-tr > td.details {
+    display: table-cell !important;
+  }
+  .flex-table-container #profit-table .flex-tr > th.details .button, .flex-table-container #profit-table .flex-tr > td.details .button {
+    padding: 8px 15px;
   }
   .flex-table-container #profit-table .flex-tr .flex-tr-child {
     font-size: 12px;
   }
 }
 
+@media (max-width: 600px) {
+  #profit-table-ws-container .flex-table-container, #statement-ws-container .flex-table-container {
+    overflow: auto;
+  }
+}
 .time_amount {
   width: 80%;
 }
@@ -5892,11 +6379,12 @@ tr#highchart_duration td:nth-child(2) {
   text-align: right;
 }
 
+#knowledge-test-msg {
+  white-space: pre-line;
+}
+
 #profit-table-ws-container th {
   padding-right: 8px;
-}
-#profit-table-ws-container th.buy-date {
-  white-space: pre;
 }
 #profit-table-ws-container td {
   padding-right: 8px;
@@ -5921,6 +6409,50 @@ tr#highchart_duration td:nth-child(2) {
 }
 #limits-ws-container td {
   padding: 3px 8px;
+}
+
+#reset-error {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.applications-page .application {
+  margin: 20px 0 40px;
+  padding-right: 30px !important;
+  line-height: 1.4em;
+}
+.applications-page .application img.image {
+  height: 180px;
+  width: auto !important;
+}
+.applications-page .application h2 {
+  color: #e98024;
+  font-weight: normal;
+  margin: 20px 0 15px;
+}
+.applications-page .application .desc {
+  padding: 0px;
+  margin: 20px 0;
+}
+.applications-page .application .icon {
+  margin-top: 10px;
+  padding: 0 0 0 15px;
+}
+.applications-page .application span.button {
+  font-weight: normal;
+  min-width: 111px;
+  padding: 10px;
+  line-height: 19px;
+}
+.applications-page .application.links {
+  line-height: 1.8em;
+}
+.applications-page .application .soon {
+  color: #c2c2c2;
 }
 
 #virtual-form input, #virtual-form select, #change-password input, #change-password select, .usersettingssecurityws-content input, .usersettingssecurityws-content select {
@@ -5949,11 +6481,23 @@ tr#highchart_duration td:nth-child(2) {
   margin: 0.5em 0;
 }
 
+.kv-pairs {
+  width: auto;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.kv-pairs td {
+  border: none;
+}
+
 /* Language based rules */
 /* Specific rules for languages */
 body .calls_recording {
   display: none;
   font-style: italic;
+}
+body .all-hide {
+  display: none !important;
 }
 
 body.EN .calls_recording {
@@ -5994,6 +6538,9 @@ body.JA #footer-regulatory .grd-grid-9, body.JA #footer-regulatory .grd-grid-pha
 }
 body.JA #bet_guide_content div:nth-child(1) {
   display: none !important;
+}
+body.JA #language_select {
+  display: none;
 }
 @media screen and (max-width: 845px) {
   body.JA #header #menu-top li a.smaller-font, body.JA #header ul#menu-top.smaller-font {
@@ -6063,6 +6610,9 @@ body.ID .id-hide {
 body.ID .extra-space {
   margin-top: 127px;
 }
+body.ID #language_select {
+  display: none;
+}
 @media screen and (max-width: 480px) {
   body.ID .empty-space {
     margin-top: 0 !important;
@@ -6097,11 +6647,14 @@ body.RU #trading_socket_container .contract_heading {
 body.RU .calls_recording {
   display: inline !important;
 }
+body.RU .ru-hide {
+  display: none !important;
+}
 
-body.PT a, body.PT button, body.PT .button, body.PT span, body.PT input {
+body.PT a, body.PT button, body.PT .button, body.PT span, body.PT input, body.RU a, body.RU button, body.RU .button, body.RU span, body.RU input {
   text-transform: initial !important;
 }
-body.PT h1, body.PT h2, body.PT h3, body.PT h4, body.PT h5, body.PT h6 {
+body.PT h1, body.PT h2, body.PT h3, body.PT h4, body.PT h5, body.PT h6, body.RU h1, body.RU h2, body.RU h3, body.RU h4, body.RU h5, body.RU h6 {
   text-transform: initial !important;
 }
 
@@ -6116,6 +6669,11 @@ body.PT h1, body.PT h2, body.PT h3, body.PT h4, body.PT h5, body.PT h6 {
     width: 100%;
     max-height: 100%;
     font-size: 70%;
+    max-height: 500px;
+    overflow: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
   }
 
   #footer-regulatory #social-networks {

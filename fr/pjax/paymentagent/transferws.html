@@ -1,0 +1,124 @@
+<div id="content">
+          <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MZWFF7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MZWFF7');</script>
+<!-- End Google Tag Manager -->
+          <div id="page_info" style="display:none;">
+              <title>Payment Agent Transfer | Binary.com</title>
+          </div>
+          
+          <div class="grd-container">
+          
+
+          <div class="grd-grid-12" id="pa-transfer-client">
+    <h1>Transfert de l'Agent de Paiement</h1>
+
+    <div id="pa_confirm_transfer" class="invisible">
+        <p>Veuillez confirmer les détails de la transaction afin de compléter le transfert:</p>
+        <table class="kv-pairs">
+            <tr>
+                <td>Transfert à: </td>
+                <td id="user-name"></td>
+            </tr>
+            <tr>
+                <td>Identifiant de connexion: </td>
+                <td id="login-id"></td>
+            </tr>
+            <tr>
+                <td>Montant: </td>
+                <td id="amount"></td>
+            </tr>
+        </table>
+        <p class="errorfield invisible"></p>
+        <span class="button button-focus">
+            <button id="back_transfer" class="button button-focus">Retour</button>
+        </span>
+        <span class="button button-focus">
+            <button id="confirm_transfer" class="button button-focus" type="submit">Confirmer</button>
+        </span>
+    </div>
+
+    <div id="pa_transfer_done" class="invisible">
+        <p id="confirm-msg" class="invisible"></p>
+        <p>
+            <a class="button" href="/binary-static/fr/user/statementws.html">
+                <span class="button">Voir votre extrait</span>
+            </a>
+        </p>
+    </div>
+
+    <div id="no_balance_error" class="invisible">
+        <p class="notice-msg">Please deposit before transfer to client.</p>
+        <a href="/cashier?l=EN">Dépôt</a>
+    </div>
+
+    <div id="virtual_error" class="invisible">
+        <p class="center notice-msg">This feature is not relevant to virtual-money accounts.</p>
+    </div>
+
+    <div id="not_pa_error" class="invisible">
+        <p class="center notice-msg">This feature is only relevant to payment agent accounts.</p>
+    </div>
+
+    <div id="paymentagent_transfer" class="invisible">
+        <p>Veuillez compléter votre Identifiant de connexion et le Montant que vous souhaitez transférer à votre Client dans le formulaire ci-dessous:</p>
+        <table class="kv-pairs">
+            <tr>
+                <td>
+                    <label for="client_id">Transfert à l'Identifiant de Connexion</label>
+                </td>
+                <td>
+                    <input type="text" name="client_id" id="client_id"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span class="errorfield invisible" id="transfer_error_client_id"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="amount">Montant</label>
+                </td>
+                <td>
+                    <input type="number" name="amount" min="10" max="2000"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <span class="errorfield invisible" id="transfer_error_amount">Veuillez entrer un montant valide.</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <span class="hint">Min: 10 Max: 2000</span>
+                </td>
+            </tr>
+        </table>
+        <p id="insufficient-balance-error" class="errorfield invisible">Insufficient balance</p>
+        <br/>
+        <span class="button button-focus">
+            <button class="button button-focus" id="submit" name="submit" type="submit" value="Submit">Envoyer</button>
+        </span>
+    </div>
+
+    <br>
+    <div id="paymentagent_transfer_notes" class="invisible">
+        <div>Notes:</div>
+        <ul>
+            <li>Our site does not charge any transfer fees.</li>
+            <li>Once you click the 'Submit' button, the funds will be withdrawn from your account and transferred to your Client's account.</li>
+            <li>Votre Client va recevoir un émail de notification l'informant que le transfert a été effectué.</li>
+        </ul>
+    </div>
+</div>
+          </div>
+      </div>
