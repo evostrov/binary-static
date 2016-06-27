@@ -63,8 +63,11 @@ pjax_config_page('/get-started', function() {
         onLoad: function() {
             if (!/jp/.test(window.location.pathname) && page.language().toLowerCase() === 'ja') {
               window.location.href = page.url.url_for('get-started-jp');
-            }
+            } else if (/jp/.test(window.location.pathname)) {
+              return;
+          } else {
             get_started_behaviour();
+          }
         },
         onUnload: function() {
             $(window).off('scroll');
@@ -75,6 +78,7 @@ pjax_config_page('/get-started', function() {
 pjax_config_page('/contact', function() {
     return {
         onLoad: function() {
+            $('#faq_url').attr('href', 'https://binary.desk.com/customer/' + page.language() + "/portal/articles");
             display_cs_contacts();
             show_live_chat_icon();
         },

@@ -20,7 +20,7 @@ var GTM = (function() {
             event     : 'page_load',
         };
         if(page.client.is_logged_in) {
-            data_layer_info['visitorID'] = page.client.loginid;
+            data_layer_info['visitorId'] = page.client.loginid;
         }
 
         $.extend(true, data_layer_info, data);
@@ -35,7 +35,7 @@ var GTM = (function() {
     };
 
     var push_data_layer = function(data) {
-        if (!gtm_applicable) return;
+        if (!gtm_applicable()) return;
         if(!(/logged_inws/i).test(window.location.pathname)) {
             var info = gtm_data_layer_info(data && typeof(data) === 'object' ? data : null);
             dataLayer[0] = info.data;
@@ -50,7 +50,7 @@ var GTM = (function() {
     };
 
     var event_handler = function(get_settings) {
-        if (!gtm_applicable) return;
+        if (!gtm_applicable()) return;
         var is_login      = localStorage.getItem('GTM_login')      === '1',
             is_newaccount = localStorage.getItem('GTM_newaccount') === '1';
         if(!is_login && !is_newaccount) {
@@ -66,7 +66,7 @@ var GTM = (function() {
         }
 
         var data = {
-            'visitorID'   : page.client.loginid,
+            'visitorId'   : page.client.loginid,
             'bom_country' : get_settings.country,
             'bom_email'   : get_settings.email,
             'url'         : window.location.href,
@@ -86,12 +86,12 @@ var GTM = (function() {
     };
 
     var set_login_flag = function() {
-        if (!gtm_applicable) return;
+        if (!gtm_applicable()) return;
         localStorage.setItem('GTM_login', '1');
     };
 
     var set_newaccount_flag = function() {
-        if (!gtm_applicable) return;
+        if (!gtm_applicable()) return;
         localStorage.setItem('GTM_newaccount', '1');
     };
 
@@ -108,7 +108,7 @@ var User = function() {
     this.email   =  $.cookie('email');
     var loginid_list = $.cookie('loginid_list');
 
-    if(!this.loginid || !loginid_list) {
+    if(!this.loginid || !loginid_list || !localStorage.getItem('client.tokens')) {
         this.is_logged_in = false;
     } else {
         this.is_logged_in = true;
@@ -146,14 +146,14 @@ var User = function() {
 var Client = function() {
     this.loginid      =  $.cookie('loginid');
     this.residence    =  $.cookie('residence');
-    this.is_logged_in = this.loginid && this.loginid.length > 0;
+    this.is_logged_in = this.loginid && this.loginid.length > 0 && localStorage.getItem('client.tokens');
 };
 
 Client.prototype = {
     show_login_if_logout: function(shouldReplacePageContents) {
         if(!this.is_logged_in) {
             if(shouldReplacePageContents) {
-                $('#content > .grd-container').addClass('center').empty()
+                $('#content > .container').addClass('center-text').empty()
                     .append($('<p/>', {class: 'notice-msg', html: text.localize('Please [_1] to view this page')
                         .replace('[_1]', '<a class="login_link" href="javascript:;">' + text.localize('login') + '</a>')}));
                 $('.login_link').click(function(){Login.redirect_to_login();});
@@ -840,115 +840,9 @@ Header.prototype = {
     },
 };
 
-var ToolTip = function() {
-    this.tooltip = $('#tooltip');
-
-    if (this.tooltip.length === 0) {
-        this.tooltip = $('<div id="tooltip"></div>');
-        this.tooltip.css('display', 'none')
-            .appendTo('body');
-    }
-
-    this.showing = {};
-    var that = this;
-    $(window).resize(function() { that.resize_tooltip(); });
-};
-
-ToolTip.prototype = {
-    attach: function() {
-        var that = this;
-        this.detach();
-
-        var targets = $( '[rel~=tooltip]' ),
-            target  = false,
-            tip     = false,
-            title   = false;
-
-        targets.on('mouseenter', function(e) {
-            tip = $(this).attr( 'title' ) || $(this).attr('data-title');
-
-            if( !tip || tip === '' )
-                return false;
-
-            that.showing.target = $(this);
-            that.showing.tip = tip;
-
-            that.showing.target.removeAttr( 'title' )
-                               .removeAttr( 'data-title' );
-
-            that.tooltip.html(tip);
-            that.resize_tooltip();
-            that.reposition_tooltip_for(that.showing.target);
-            that.show_tooltip($(this));
-        });
-
-        targets.on('mouseleave', function() {
-            if(that.showing.target && !that.showing.target.attr('data-title')) {
-                that.showing.target.attr( 'data-title', that.showing.tip );
-            }
-            that.hide_tooltip();
-        });
-
-        targets.on('click', function() {
-            if(that.showing.target && !that.showing.target.attr('data-title')) {
-                that.showing.target.attr( 'title', that.showing.tip );
-            }
-            that.hide_tooltip();
-        });
-    },
-    detach: function() {
-        $( '[rel~=tooltip]' ).off('mouseenter');
-        $( '[rel~=tooltip]' ).off('mouseleave');
-        this.tooltip.off('click');
-    },
-    show_tooltip: function(target) {
-        this.tooltip.css({ display: ''});
-        this.tooltip.zIndex(target.zIndex() + 100);
-    },
-    hide_tooltip: function(tooltip) {
-        this.tooltip.html("");
-        this.tooltip.css({ top: 0, left: 0, display: 'none'});
-        this.tooltip.addClass('invisible');
-    },
-    resize_tooltip: function() {
-        if( $( window ).width() < this.tooltip.outerWidth() * 1.5 )
-            this.tooltip.css( 'max-width', $( window ).width() / 2 );
-        else
-            this.tooltip.css( 'max-width', 340 );
-    },
-    reposition_tooltip_for: function(target) {
-        this.tooltip.removeClass('invisible');
-
-        var pos_left = target.offset().left + ( target.outerWidth() / 2 ) - ( this.tooltip.outerWidth() / 2 ),
-            pos_top = target.offset().top - (this.tooltip.outerHeight() + 10);
-
-        this.tooltip.removeClass( 'left' );
-        this.tooltip.removeClass( 'right' );
-        this.tooltip.removeClass( 'top' );
-
-        if( pos_left < 0 ) {
-            pos_left = target.offset().left + target.outerWidth() / 2 - 20;
-            this.tooltip.addClass( 'left' );
-        }
-
-        if( pos_left + this.tooltip.outerWidth() > $( window ).width() ) {
-            pos_left = target.offset().left - this.tooltip.outerWidth() + target.outerWidth() / 2 + 20;
-            this.tooltip.addClass( 'right' );
-        }
-
-        if( pos_top < 0 ) {
-            pos_top  = target.offset().top + target.outerHeight() + 20;
-            this.tooltip.addClass( 'top' );
-        }
-
-        this.tooltip.css( { left: pos_left, top: pos_top} );
-    },
-};
-
 var Contents = function(client, user) {
     this.client = client;
     this.user = user;
-    this.tooltip = new ToolTip();
 };
 
 Contents.prototype = {
@@ -956,11 +850,9 @@ Contents.prototype = {
         this.activate_by_client_type();
         this.topbar_message_visibility();
         this.update_content_class();
-        this.tooltip.attach();
         this.init_draggable();
     },
     on_unload: function() {
-        this.tooltip.detach();
         if ($('.unbind_later').length > 0) {
             $('.unbind_later').off();
         }
@@ -1078,9 +970,9 @@ Contents.prototype = {
                     }
                 }
                 if (show_financial) {
-                    $('.financial-upgrade-link').removeClass('invisible');
+                    $('.financial-upgrade-link').parent().removeClass('invisible');
                 } else {
-                    $('.financial-upgrade-link').addClass('invisible');
+                    $('.financial-upgrade-link').parent().addClass('invisible');
                 }
             }
         }
@@ -1244,7 +1136,24 @@ Page.prototype = {
             domain: '.' + location.hostname.split('.').slice(-2).join('.')
         });
     },
-    reload: function() {
-        window.location.reload();
+    reload: function(forcedReload) {
+        window.location.reload(forcedReload ? true : false);
+    },
+    check_new_release: function() { // calling this method is handled by GTM tags
+        var last_reload = localStorage.getItem('new_release_reload_time');
+        if(last_reload && last_reload * 1 + 10 * 60 * 1000 > moment().valueOf()) return; // prevent reload in less than 10 minutes
+        var currect_hash = $('script[src*="binary.min.js"],script[src*="binary.js"]').attr('src').split('?')[1];
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+                var latest_hash = xhttp.responseText;
+                if(latest_hash && latest_hash !== currect_hash) {
+                    localStorage.setItem('new_release_reload_time', moment().valueOf());
+                    page.reload(true);
+                }
+            }
+        };
+        xhttp.open('GET', page.url.url_for_static() + 'version?' + Math.random().toString(36).slice(2), true);
+        xhttp.send();
     },
 };

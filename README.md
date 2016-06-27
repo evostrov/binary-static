@@ -1,7 +1,7 @@
 Binary-Static
 =============
 
-This repository contains the static HTML/HAML, Javascript, CSS, and images content of the [Binary.com](http://www.binary.com) website.
+This repository contains the static HTML, Javascript, CSS, and images content of the [Binary.com](http://www.binary.com) website.
 
 ## Installation
 
@@ -10,10 +10,8 @@ In order to work on your own version of the Binary.com Javascript and CSS, pleas
 You will also need to install the following on your development machine:
 
 - Ruby, RubyGems
-- Sass version 3.3.13 (`sudo gem install sass -v 3.3.13`)
+- Sass (`sudo gem install sass`)
 - Node.js and NPM (see <https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager>)
-
-Please check your `sass` version, run `sass -v` and it should give you `Sass 3.3.13` but if it doesn't match then uninstall your version using `sudo gem uninstall sass --version '<yourversion>'` and execute `sudo gem install sass -v 3.3.13` again
 
 - Go to project root
 
@@ -55,19 +53,25 @@ How to work with this project
 3. Run `grunt dev`
 
 
-### Deploy js/css changes
-
-- `grunt deploy` 
-
-
-### Deploy template changes
-
-- `grunt dev --path=about-us`
-
-
 ### Deploy js/css and template changes together
 
-- `grunt dev`
+```
+grunt dev
+```
+
+
+### Deploy only js/css changes
+
+```
+grunt deploy
+```
+
+
+### Deploy some template changes
+
+```
+grunt dev --path=about-us
+```
 
 
 ### Using sub-folders
@@ -76,6 +80,15 @@ There are times that you're working on various branches at the same time, and yo
 This will deploy your changes to a sub-folder named: `br_branchname` and it can be browsed at: https://YOUR_GITHUB_USERNAME.github.io/binary-static/br_branchname/
 
 
-### Release to Production
+## Release to Production
 
-- `grunt release`
+```
+grunt release --staging|--production [--cleanup]
+```
+###Parameters:
+- `--staging` or `--production` (mandatory)
+  - In order to prevent accidentally releasing to the wrong target, it is mandatory to provide one of these parameters.
+  - Your remote origin will be checked to be the correct target of the given parameter.
+- `--cleanup` [optional]
+  - Create CNAME file with proper value according to remote origin
+  - Deploy to gh-pages with the option `add: false`

@@ -1,7 +1,7 @@
 .static_full {
     @include topspace;
     .sidebar {
-      @include menu-left;
+        @include menu-left;
     }
     @include section-separator;
     .section {
@@ -24,19 +24,11 @@
             display: block;
         }
     }
-    .code-sample {
-        background-color: $COLOR_LIGHT_GRAY;
-        overflow-x: auto;
-        width: 90%;
-        font-family: monospace;
-        white-space: pre;
-        padding: 18px;
-    }
 }
 
 .payment-agent {
     .faded {
-        color: #AFAFAF;
+        color: $COLOR_GRAY_SHADE;
         font-size: 90%;
         margin-bottom: 0;
     }
@@ -49,14 +41,7 @@
 }
 
 #frmPersonalDetails {
-  .JpAcc, .hedge {
-    display: none;
-  }
-}
-
-#api_token {
-  abbr {
-    text-decoration: none;
-    @include BIDIR_PROP(margin-right, margin-left, 15px);
-  }
+    .JpAcc, .hedge {
+        display: none;
+    }
 }

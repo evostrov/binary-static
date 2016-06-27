@@ -120,7 +120,7 @@ var TradingEvents = (function () {
             formNavElement.addEventListener('click', function(e) {
                 if (e.target && e.target.getAttribute('menuitem')) {
                     var clickedForm = e.target;
-                    var isFormActive = clickedForm.classList.contains('active');
+                    var isFormActive = clickedForm.classList.contains('active') || clickedForm.parentElement.classList.contains('active');
                     Defaults.set('formname', clickedForm.getAttribute('menuitem'));
 
                     setFormPlaceholderContent();
@@ -364,7 +364,6 @@ var TradingEvents = (function () {
                 BinarySocket.send(params);
                 Price.incrFormId();
                 processForgetProposals();
-                processForgetPriceStream();
             }
         };
 
@@ -434,7 +433,6 @@ var TradingEvents = (function () {
 
             predictionElement.addEventListener('change', debounce( function (e) {
                 Defaults.set('prediction', e.target.value);
-                page.contents.tooltip.hide_tooltip();
                 processPriceRequest();
                 submitForm(document.getElementById('websocket_form'));
             }));

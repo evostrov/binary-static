@@ -6,7 +6,7 @@ var StatementWS = (function(){
     //receive means receive from ws service
     //consume means consume by UI and displayed to page
 
-    var batchSize = 100;
+    var batchSize = 200;
     var chunkSize = batchSize/2;
 
     var noMoreData = false;
@@ -42,7 +42,7 @@ var StatementWS = (function(){
                 $('#statement-table tbody')
                     .append($('<tr/>', {class: "flex-tr"})
                         .append($('<td/>', {colspan: 7})
-                            .append($('<p/>', {class: "notice-msg center", text: text.localize("Your account has no trading activity.")})
+                            .append($('<p/>', {class: "notice-msg center-text", text: text.localize("Your account has no trading activity.")})
                             )
                         )
                     );

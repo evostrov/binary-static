@@ -15,6 +15,7 @@ use Format::Util::Numbers;
 our @EXPORT_OK = qw/
     root_path is_dev set_is_dev branch set_branch
     localize set_lang all_languages lang_display_name
+    get_static_hash set_static_hash
 
     root_url
 
@@ -100,9 +101,9 @@ sub url_for {
     return $__request{$LANG}->url_for(@_);
 }
 
-## tt2/haml
+## tt2
 sub tt2 {
-    my @include_path = (root_path() . '/src/templates/toolkit');
+    my @include_path = (root_path() . '/src/templates');
 
     state $request = BS::Request->new(language => $LANG);
     my $stash = Template::Stash->new({
@@ -130,6 +131,9 @@ sub tt2 {
 }
 
 our $static_hash = join('', map{('a'..'z',0..9)[rand 36]} 0..7);
+sub get_static_hash { return $static_hash; }
+sub set_static_hash { $static_hash = shift; }
+
 ## css/js/menu
 sub css_files {
     my @css;
@@ -259,7 +263,7 @@ sub menu {
         id         => 'topMenuAuthenticateAccount',
         url        => url_for('/user/authenticatews'),
         text       => localize('Authenticate'),
-        class      => 'by_client_type client_real',
+        class      => 'by_client_type client_real ja-hide',
         link_class => 'with_login_cookies pjaxload',
         };
     push @menu, $my_account_ref;
@@ -299,13 +303,14 @@ sub menu {
     $resources_items_ref->{'sub_items'} = [$asset_index_ref, $trading_times_ref];
     push @menu, $resources_items_ref;
 
-    # applications
+    # Portfolio
     push @menu,
         {
-        id         => 'topMenuApplications',
-        url        => url_for('/applications'),
-        text       => localize('Applications'),
-        link_class => 'ja-hide pjaxload',
+        id         => 'topMenuShop',
+        class      => 'ja-hide',
+        url        => 'https://shop.binary.com',
+        text       => localize('Shop'),
+        target     => '_blank'
         };
 
     # push @{$menu}, $self->_main_menu_trading();

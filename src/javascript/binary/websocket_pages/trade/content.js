@@ -72,7 +72,6 @@ var Content = (function() {
             textSalePrice: text.localize('Sale Price'),
             textProfitLoss: text.localize('Profit/Loss'),
             textTotalProfitLoss: text.localize('Total Profit/Loss'),
-            textLimits: text.localize('Trading and Withdrawal Limits'),
             textItem: text.localize('Item'),
             textLimit: text.localize('Limit'),
             textMaxOpenPosition: text.localize('Maximum number of open positions'),
@@ -83,8 +82,6 @@ var Content = (function() {
             textMaxDailyTurnoverTooltip: text.localize('Represents the maximum volume of contracts that you may purchase in any given trading day.'),
             textMaxAggregate: text.localize('Maximum aggregate payouts on open positions'),
             textMaxAggregateTooltip: text.localize('Presents the maximum aggregate payouts on outstanding contracts in your portfolio. If the maximum is attained, you may not purchase additional contracts without first closing out existing positions.'),
-            textTradingLimits: text.localize('Trading Limits'),
-            textWithdrawalTitle: text.localize('Withdrawal Limits'),
             textAuthenticatedWithdrawal: text.localize('Your account is fully authenticated and your withdrawal limits have been lifted.'),
             textWithdrawalLimits: text.localize('Your withdrawal limit is [_1] [_2].'),
             textWithdrawalLimitsEquivalant: text.localize('Your withdrawal limit is [_1] [_2] (or equivalent in other currency).'),
@@ -159,7 +156,7 @@ var Content = (function() {
         var minDurationTooltip = document.getElementById('duration_tooltip');
         if (minDurationTooltip) {
             minDurationTooltip.textContent = localize.textMinDuration;
-            minDurationTooltip.setAttribute('title', localize.textMinDurationTooltip);
+            minDurationTooltip.setAttribute('data-balloon', localize.textMinDurationTooltip);
         }
 
         var spotLabel = document.getElementById('spot_label');
@@ -170,7 +167,7 @@ var Content = (function() {
         var barrierTooltip = document.getElementById('barrier_tooltip');
         if (barrierTooltip) {
             barrierTooltip.textContent = localize.textBarrierOffset;
-            barrierTooltip.setAttribute('title', localize.textBarrierOffsetTooltip);
+            barrierTooltip.setAttribute('data-balloon', localize.textBarrierOffsetTooltip);
         }
 
         var barrierSpan = document.getElementById('barrier_span');
@@ -181,7 +178,7 @@ var Content = (function() {
         var barrierHighTooltip = document.getElementById('barrier_high_tooltip');
         if (barrierHighTooltip) {
             barrierHighTooltip.textContent = localize.textHighBarrierOffset;
-            barrierHighTooltip.setAttribute('title', localize.textBarrierOffsetTooltip);
+            barrierHighTooltip.setAttribute('data-balloon', localize.textBarrierOffsetTooltip);
         }
         var barrierHighSpan = document.getElementById('barrier_high_span');
         if (barrierHighSpan) {
@@ -191,7 +188,7 @@ var Content = (function() {
         var barrierLowTooltip = document.getElementById('barrier_low_tooltip');
         if (barrierLowTooltip) {
             barrierLowTooltip.textContent = localize.textLowBarrierOffset;
-            barrierLowTooltip.setAttribute('title', localize.textBarrierOffsetTooltip);
+            barrierLowTooltip.setAttribute('data-balloon', localize.textBarrierOffsetTooltip);
         }
         var barrierLowSpan = document.getElementById('barrier_low_span');
         if (barrierLowSpan) {
@@ -265,17 +262,17 @@ var Content = (function() {
 
         var indicative_barrier_tooltip = document.getElementById('indicative_barrier_tooltip');
         if (indicative_barrier_tooltip) {
-            indicative_barrier_tooltip.setAttribute('title', localize.textIndicativeBarrierTooltip);
+            indicative_barrier_tooltip.setAttribute('data-balloon', localize.textIndicativeBarrierTooltip);
         }
 
         var indicative_high_barrier_tooltip = document.getElementById('indicative_high_barrier_tooltip');
         if (indicative_high_barrier_tooltip) {
-            indicative_high_barrier_tooltip.setAttribute('title', localize.textIndicativeBarrierTooltip);
+            indicative_high_barrier_tooltip.setAttribute('data-balloon', localize.textIndicativeBarrierTooltip);
         }
 
         var indicative_low_barrier_tooltip = document.getElementById('indicative_low_barrier_tooltip');
         if (indicative_low_barrier_tooltip) {
-            indicative_low_barrier_tooltip.setAttribute('title', localize.textIndicativeBarrierTooltip);
+            indicative_low_barrier_tooltip.setAttribute('data-balloon', localize.textIndicativeBarrierTooltip);
         }
 
         var jpbarrier_label = document.getElementById('jbarrier_label');
@@ -302,21 +299,6 @@ var Content = (function() {
     var profitTableTranslation = function() {
         var titleElement = document.getElementById("profit-table-title").firstElementChild;
         titleElement.textContent = localize.textProfitTable;
-    };
-
-    var limitsTranslation = function() {
-        var titleElement = document.getElementById("limits-ws-container").firstElementChild;
-        titleElement.textContent = localize.textLimits;
-
-        if (page.client.is_logged_in && !page.client.is_virtual()) {
-            var loginId = page.client.loginid;
-
-            var tradingLimits = document.getElementById("trading-limits");
-            tradingLimits.textContent = loginId + " - " + localize.textTradingLimits;
-
-            var withdrawalTitle = document.getElementById("withdrawal-title");
-            withdrawalTitle.textContent = loginId + " - " + localize.textWithdrawalTitle;
-        }
     };
 
     var errorMessage = function(messageType, param) {
@@ -365,7 +347,6 @@ var Content = (function() {
         populate: populate,
         statementTranslation: statementTranslation,
         profitTableTranslation: profitTableTranslation,
-        limitsTranslation: limitsTranslation,
         errorMessage: errorMessage
     };
 
