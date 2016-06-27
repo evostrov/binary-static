@@ -752,7 +752,7 @@ function marketOrder(market){
             random_index:    19,
             random_daily:    20,
             random_nightly:  21
-    }; 
+    };
     return order[market];
 }
 
@@ -774,6 +774,7 @@ function displayTooltip(market, symbol){
         guide = document.getElementById('guideBtn'),
         app = document.getElementById('androidApp'),
         appstore = document.getElementById('appstore');
+    if (!market || !symbol) return;
     if (market.match(/^volidx/) || symbol.match(/^R/) || market.match(/^random_index/) || market.match(/^random_daily/)){
         if (guide) guide.hide();
         tip.show();

@@ -1,551 +1,697 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta charset='utf-8' />
-  <meta name='description' content='تعطى 1% الجميع وسيلة سهلة ومثيرة للمشاركة فى الأسواق المالية. يمكنك أن تتداول بداية من دولار أمريكى واحد، فى العملات الرئيسية والمؤشرات والسلع.' />
-  <meta name='keywords' content='&#x627;&#x644;&#x62E;&#x64A;&#x627;&#x631;&#x627;&#x62A; &#x627;&#x644;&#x62B;&#x646;&#x627;&#x626;&#x64A;&#x629;&#x60C; &#x627;&#x644;&#x641;&#x648;&#x631;&#x643;&#x633;&#x60C; &#x62A;&#x62F;&#x627;&#x648;&#x644; &#x627;&#x644;&#x639;&#x645;&#x644;&#x627;&#x62A; &#x627;&#x644;&#x623;&#x62C;&#x646;&#x628;&#x64A;&#x629;&#x60C; &#x627;&#x644;&#x62A;&#x62F;&#x627;&#x648;&#x644; &#x639;&#x644;&#x649; &#x634;&#x628;&#x643;&#x629; &#x627;&#x644;&#x627;&#x646;&#x62A;&#x631;&#x646;&#x62A;&#x60C; &#x627;&#x644;&#x62A;&#x62F;&#x627;&#x648;&#x644; &#x627;&#x644;&#x645;&#x627;&#x644;&#x64A;&#x60C; &#x627;&#x644;&#x62A;&#x62F;&#x627;&#x648;&#x644; &#x627;&#x644;&#x62B;&#x646;&#x627;&#x626;&#x64A;&#x60C; &#x62A;&#x62F;&#x627;&#x648;&#x644; &#x645;&#x624;&#x634;&#x631;&#x60C; &#x62A;&#x62F;&#x627;&#x648;&#x644; &#x627;&#x644;&#x645;&#x624;&#x634;&#x631;&#x627;&#x62A;&#x60C; &#x635;&#x641;&#x642;&#x627;&#x62A; &#x627;&#x644;&#x639;&#x645;&#x644;&#x627;&#x62A; &#x627;&#x644;&#x623;&#x62C;&#x646;&#x628;&#x64A;&#x629;&#x60C; &#x62A;&#x62F;&#x627;&#x648;&#x644; &#x627;&#x644;&#x633;&#x644;&#x639;&#x60C; &#x625;&#x633;&#x62A;&#x631;&#x627;&#x62A;&#x64A;&#x62C;&#x64A;&#x629; &#x627;&#x644;&#x62E;&#x64A;&#x627;&#x631;&#x627;&#x62A; &#x627;&#x644;&#x62B;&#x646;&#x627;&#x626;&#x64A;&#x629;&#x60C; &#x648;&#x633;&#x64A;&#x637; &#x62B;&#x646;&#x627;&#x626;&#x64A;&#x627;&#x62A;&#x60C; &#x627;&#x644;&#x631;&#x647;&#x627;&#x646; &#x639;&#x644;&#x649; &#x627;&#x644;&#x62B;&#x646;&#x627;&#x626;&#x64A;&#x627;&#x62A;&#x60C; &#x645;&#x646;&#x635;&#x629; &#x62A;&#x62F;&#x627;&#x648;&#x644; &#x627;&#x644;&#x62E;&#x64A;&#x627;&#x631;&#x627;&#x62A; &#x627;&#x644;&#x62B;&#x646;&#x627;&#x626;&#x64A;&#x629;&#x60C; &#x625;&#x633;&#x62A;&#x631;&#x627;&#x62A;&#x64A;&#x62C;&#x64A;&#x629; &#x62A;&#x62F;&#x627;&#x648;&#x644; &#x627;&#x644;&#x62B;&#x646;&#x627;&#x626;&#x64A;&#x627;&#x62A;&#x60C; &#x645;&#x627;&#x644;&#x64A;&#x629;&#x60C; &#x623;&#x633;&#x647;&#x645;&#x60C; &#x627;&#x633;&#x62A;&#x62B;&#x645;&#x627;&#x631;&#x60C; &#x62A;&#x62C;&#x627;&#x631;&#x629;' />
-  <meta name='author' content='Binary.com' />
-  <meta name='dcterms.rightsHolder' content='Binary.com' />
-  <meta name='dcterms.rights' content='Binary.com' />
-  <meta name='google-site-verification' content='roReCEK-wNa1EMA6ZM9a4zCOQOMqxfJjvfsZMC9qh_k' />
-  <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <meta property='og:title' content='Binary.com' />
-  <meta property='og:type' content='website' />
-  <meta property='og:image' content='/binary-static/images/common/og_image.gif' />
-  <title>المعاملات المفتوحة | Binary.com</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css' />
-  <link href='/binary-static/images/favicons/apple-touch-icon-57x57.png' rel='apple-touch-icon' sizes='57x57' />
-  <link href='/binary-static/images/favicons/apple-touch-icon-114x114.png' rel='apple-touch-icon' sizes='114x114' />
-  <link href='/binary-static/images/favicons/apple-touch-icon-72x72.png' rel='apple-touch-icon' sizes='72x72' />
-  <link href='/binary-static/images/favicons/apple-touch-icon-144x144.png' rel='apple-touch-icon' sizes='144x144' />
-  <link href='/binary-static/images/favicons/apple-touch-icon-60x60.png' rel='apple-touch-icon' sizes='60x60' />
-  <link href='/binary-static/images/favicons/apple-touch-icon-120x120.png' rel='apple-touch-icon' sizes='120x120' />
-  <link href='/binary-static/images/favicons/apple-touch-icon-76x76.png' rel='apple-touch-icon' sizes='76x76' />
-  <link href='/binary-static/images/favicons/apple-touch-icon-152x152.png' rel='apple-touch-icon' sizes='152x152' />
-  <link href='/binary-static/images/favicons/apple-touch-icon-180x180.png' rel='apple-touch-icon' sizes='180x180' />
-  <link href='/binary-static/images/favicons/favicon-192x192.png' rel='icon' sizes='192x192' type='image/png' />
-  <link href='/binary-static/images/favicons/favicon-160x160.png' rel='icon' sizes='160x160' type='image/png' />
-  <link href='/binary-static/images/favicons/favicon-96x96.png' rel='icon' sizes='96x96' type='image/png' />
-  <link href='/binary-static/images/favicons/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png' />
-  <link href='/binary-static/images/favicons/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png' />
-  <link rel='alternate' hreflang='EN' href='/binary-static/en/open-positions.html' />
-  <link rel='alternate' hreflang='IT' href='/binary-static/it/open-positions.html' />
-  <link rel='alternate' hreflang='RU' href='/binary-static/ru/open-positions.html' />
-  <link rel='alternate' hreflang='AR' href='/binary-static/ar/open-positions.html' />
-  <link rel='alternate' hreflang='ZH_TW' href='/binary-static/zh_tw/open-positions.html' />
-  <link rel='alternate' hreflang='VI' href='/binary-static/vi/open-positions.html' />
-  <link rel='alternate' hreflang='PT' href='/binary-static/pt/open-positions.html' />
-  <link rel='alternate' hreflang='DE' href='/binary-static/de/open-positions.html' />
-  <link rel='alternate' hreflang='PL' href='/binary-static/pl/open-positions.html' />
-  <link rel='alternate' hreflang='ID' href='/binary-static/id/open-positions.html' />
-  <link rel='alternate' hreflang='ES' href='/binary-static/es/open-positions.html' />
-  <link rel='alternate' hreflang='ZH_CN' href='/binary-static/zh_cn/open-positions.html' />
-  <link rel='alternate' hreflang='FR' href='/binary-static/fr/open-positions.html' />
-  <link rel='stylesheet' href='/binary-static/css/binary_rtl.min.css?y88kr7vv' />
-  <script type='text/javascript'>
-  window.page_params = { settings: {"arr_all_currencies":["USD","EUR","GBP","AUD"],"valid_loginids":"MX|MF|VRTC|MLT|CR|FOG|VRTJ|JP","broker":"CR","countries_list":{"uz":{"name":"Uzbekistan","financial_company":"costarica","gaming_company":"costarica"},"sy":{"financial_company":"costarica","gaming_company":"costarica","name":"Syrian Arab Republic"},"sn":{"name":"Senegal","gaming_company":"costarica","financial_company":"costarica"},"by":{"financial_company":"costarica","gaming_company":"costarica","name":"Belarus"},"tr":{"financial_company":"costarica","gaming_company":"costarica","name":"Turkey"},"np":{"financial_company":"costarica","gaming_company":"costarica","name":"Nepal"},"li":{"name":"Liechtenstein","financial_company":"costarica","gaming_company":"costarica"},"nf":{"name":"Norfolk Island","gaming_company":"costarica","financial_company":"costarica"},"zw":{"financial_company":"costarica","gaming_company":"costarica","name":"Zimbabwe"},"az":{"name":"Azerbaijan","gaming_company":"costarica","financial_company":"costarica"},"ec":{"name":"Ecuador","gaming_company":"costarica","financial_company":"costarica"},"gt":{"gaming_company":"costarica","financial_company":"costarica","name":"Guatemala"},"fr":{"financial_company":"maltainvest","gaming_company":"none","name":"France"},"kn":{"name":"Saint Kitts and Nevis","financial_company":"costarica","gaming_company":"costarica"},"tc":{"name":"Turks and Caicos Islands","gaming_company":"costarica","financial_company":"costarica"},"nu":{"gaming_company":"costarica","financial_company":"costarica","name":"Niue"},"mw":{"gaming_company":"costarica","financial_company":"costarica","name":"Malawi"},"tg":{"name":"Togo","financial_company":"costarica","gaming_company":"costarica"},"mu":{"name":"Mauritius","financial_company":"costarica","gaming_company":"costarica"},"rs":{"gaming_company":"costarica","financial_company":"costarica","name":"Serbia"},"qa":{"financial_company":"costarica","gaming_company":"costarica","name":"Qatar"},"my":{"gaming_company":"none","financial_company":"none","name":"Malaysia"},"ru":{"gaming_company":"costarica","financial_company":"costarica","name":"Russian Federation"},"pr":{"gaming_company":"costarica","financial_company":"costarica","name":"Puerto Rico"},"kz":{"gaming_company":"costarica","financial_company":"costarica","name":"Kazakhstan"},"eg":{"gaming_company":"costarica","financial_company":"costarica","name":"Egypt"},"es":{"name":"Spain","financial_company":"maltainvest","gaming_company":"none"},"gq":{"gaming_company":"costarica","financial_company":"costarica","name":"Equatorial Guinea"},"ar":{"name":"Argentina","financial_company":"costarica","gaming_company":"costarica"},"vi":{"name":"Virgin Islands, U.S.","financial_company":"none","gaming_company":"none"},"lb":{"financial_company":"costarica","gaming_company":"costarica","name":"Lebanon"},"eh":{"gaming_company":"costarica","financial_company":"costarica","name":"Western Sahara"},"no":{"name":"Norway","financial_company":"costarica","gaming_company":"costarica"},"om":{"name":"Oman","gaming_company":"costarica","financial_company":"costarica"},"gd":{"financial_company":"costarica","gaming_company":"costarica","name":"Grenada"},"sa":{"name":"Saudi Arabia","gaming_company":"costarica","financial_company":"costarica"},"sm":{"name":"San Marino","financial_company":"costarica","gaming_company":"costarica"},"iq":{"name":"Iraq","gaming_company":"none","financial_company":"none"},"vg":{"name":"Virgin Islands, British","gaming_company":"costarica","financial_company":"costarica"},"bs":{"name":"Bahamas","financial_company":"costarica","gaming_company":"costarica"},"gh":{"name":"Ghana","gaming_company":"costarica","financial_company":"costarica"},"ye":{"name":"Yemen","financial_company":"costarica","gaming_company":"costarica"},"cn":{"name":"China","financial_company":"costarica","gaming_company":"costarica"},"ci":{"financial_company":"costarica","gaming_company":"costarica","name":"Cote D'Ivoire"},"dz":{"name":"Algeria","financial_company":"costarica","gaming_company":"costarica"},"pm":{"name":"Saint Pierre and Miquelon","gaming_company":"costarica","financial_company":"costarica"},"pa":{"financial_company":"costarica","gaming_company":"costarica","name":"Panama"},"dk":{"name":"Denmark","financial_company":"maltainvest","gaming_company":"malta"},"af":{"financial_company":"costarica","gaming_company":"costarica","name":"Afghanistan"},"nc":{"name":"New Caledonia","financial_company":"costarica","gaming_company":"costarica"},"cd":{"gaming_company":"costarica","financial_company":"costarica","name":"Congo, The Democratic Republic of the"},"lr":{"financial_company":"costarica","gaming_company":"costarica","name":"Liberia"},"is":{"gaming_company":"costarica","financial_company":"costarica","name":"Iceland"},"tl":{"financial_company":"costarica","gaming_company":"costarica","name":"Timor-Leste"},"tf":{"gaming_company":"costarica","financial_company":"costarica","name":"French Southern Territories"},"ge":{"name":"Georgia","gaming_company":"costarica","financial_company":"costarica"},"lt":{"gaming_company":"malta","financial_company":"maltainvest","name":"Lithuania"},"sz":{"financial_company":"costarica","gaming_company":"costarica","name":"Swaziland"},"tk":{"name":"Tokelau","financial_company":"costarica","gaming_company":"costarica"},"ao":{"name":"Angola","gaming_company":"costarica","financial_company":"costarica"},"sc":{"name":"Seychelles","gaming_company":"costarica","financial_company":"costarica"},"ml":{"financial_company":"costarica","gaming_company":"costarica","name":"Mali"},"ke":{"financial_company":"costarica","gaming_company":"costarica","name":"Kenya"},"bw":{"financial_company":"costarica","gaming_company":"costarica","name":"Botswana"},"th":{"financial_company":"costarica","gaming_company":"costarica","name":"Thailand"},"bm":{"gaming_company":"costarica","financial_company":"costarica","name":"Bermuda"},"vn":{"financial_company":"costarica","gaming_company":"costarica","name":"Vietnam"},"au":{"name":"Australia","gaming_company":"costarica","financial_company":"costarica"},"bo":{"name":"Bolivia","gaming_company":"costarica","financial_company":"costarica"},"ca":{"name":"Canada","gaming_company":"costarica","financial_company":"costarica"},"cv":{"name":"Cape Verde","financial_company":"costarica","gaming_company":"costarica"},"cc":{"gaming_company":"costarica","financial_company":"costarica","name":"Cocos (Keeling) Islands"},"pl":{"name":"Poland","financial_company":"maltainvest","gaming_company":"malta"},"ie":{"name":"Ireland","financial_company":"maltainvest","gaming_company":"malta"},"wf":{"name":"Wallis and Futuna","gaming_company":"costarica","financial_company":"costarica"},"gi":{"name":"Gibraltar","financial_company":"costarica","gaming_company":"costarica"},"nz":{"name":"New Zealand","financial_company":"costarica","gaming_company":"costarica"},"at":{"name":"Austria","gaming_company":"malta","financial_company":"maltainvest"},"gg":{"name":"Guernsey","financial_company":"none","gaming_company":"none"},"jo":{"financial_company":"costarica","gaming_company":"costarica","name":"Jordan"},"bb":{"gaming_company":"costarica","financial_company":"costarica","name":"Barbados"},"gn":{"financial_company":"costarica","gaming_company":"costarica","name":"Guinea"},"to":{"financial_company":"costarica","gaming_company":"costarica","name":"Tonga"},"ma":{"financial_company":"costarica","gaming_company":"costarica","name":"Morocco"},"ht":{"gaming_company":"costarica","financial_company":"costarica","name":"Haiti"},"er":{"gaming_company":"costarica","financial_company":"costarica","name":"Eritrea"},"be":{"financial_company":"maltainvest","gaming_company":"malta","name":"Belgium"},"vc":{"name":"Saint Vincent and the Grenadines","gaming_company":"costarica","financial_company":"costarica"},"cf":{"name":"Central African Republic","financial_company":"costarica","gaming_company":"costarica"},"bv":{"financial_company":"costarica","gaming_company":"costarica","name":"Bouvet Island"},"lk":{"name":"Sri Lanka","gaming_company":"costarica","financial_company":"costarica"},"nl":{"gaming_company":"malta","financial_company":"maltainvest","name":"Netherlands"},"pg":{"name":"Papua New Guinea","financial_company":"costarica","gaming_company":"costarica"},"mm":{"name":"Myanmar","financial_company":"costarica","gaming_company":"costarica"},"zm":{"name":"Zambia","gaming_company":"costarica","financial_company":"costarica"},"cz":{"gaming_company":"malta","financial_company":"maltainvest","name":"Czech Republic"},"bn":{"name":"Brunei Darussalam","gaming_company":"costarica","financial_company":"costarica"},"hu":{"name":"Hungary","financial_company":"maltainvest","gaming_company":"malta"},"ug":{"name":"Uganda","financial_company":"costarica","gaming_company":"costarica"},"et":{"financial_company":"costarica","gaming_company":"costarica","name":"Ethiopia"},"za":{"name":"South Africa","gaming_company":"costarica","financial_company":"costarica"},"uy":{"name":"Uruguay","financial_company":"costarica","gaming_company":"costarica"},"se":{"financial_company":"maltainvest","gaming_company":"malta","name":"Sweden"},"pw":{"financial_company":"costarica","gaming_company":"costarica","name":"Palau"},"aw":{"gaming_company":"costarica","financial_company":"costarica","name":"Aruba"},"pt":{"name":"Portugal","financial_company":"maltainvest","gaming_company":"malta"},"co":{"name":"Colombia","gaming_company":"costarica","financial_company":"costarica"},"cr":{"name":"Costa Rica","gaming_company":"none","financial_company":"none"},"lu":{"financial_company":"maltainvest","gaming_company":"none","name":"Luxembourg"},"sl":{"financial_company":"costarica","gaming_company":"costarica","name":"Sierra Leone"},"sg":{"name":"Singapore","gaming_company":"none","financial_company":"costarica"},"sh":{"name":"Saint Helena","financial_company":"costarica","gaming_company":"costarica"},"ck":{"name":"Cook Islands","financial_company":"costarica","gaming_company":"costarica"},"gy":{"financial_company":"costarica","gaming_company":"costarica","name":"Guyana"},"cy":{"name":"Cyprus","gaming_company":"malta","financial_company":"maltainvest"},"re":{"financial_company":"costarica","gaming_company":"costarica","name":"Reunion"},"sb":{"financial_company":"costarica","gaming_company":"costarica","name":"Solomon Islands"},"gm":{"gaming_company":"costarica","financial_company":"costarica","name":"Gambia"},"gf":{"financial_company":"costarica","gaming_company":"costarica","name":"French Guiana"},"gs":{"name":"South Georgia and the South Sandwich Islands","financial_company":"costarica","gaming_company":"costarica"},"tz":{"gaming_company":"costarica","financial_company":"costarica","name":"Tanzania, United Republic of"},"mv":{"financial_company":"costarica","gaming_company":"costarica","name":"Maldives"},"fk":{"financial_company":"costarica","gaming_company":"costarica","name":"Falkland Islands (Malvinas)"},"sk":{"financial_company":"maltainvest","gaming_company":"malta","name":"Slovakia"},"mt":{"financial_company":"none","gaming_company":"none","name":"Malta"},"bz":{"name":"Belize","financial_company":"costarica","gaming_company":"costarica"},"lc":{"name":"Saint Lucia","financial_company":"costarica","gaming_company":"costarica"},"gb":{"gaming_company":"iom","financial_company":"iom","name":"United Kingdom"},"ai":{"name":"Anguilla","financial_company":"costarica","gaming_company":"costarica"},"bd":{"name":"Bangladesh","financial_company":"costarica","gaming_company":"costarica"},"ne":{"gaming_company":"costarica","financial_company":"costarica","name":"Niger"},"mn":{"name":"Mongolia","financial_company":"costarica","gaming_company":"costarica"},"dj":{"financial_company":"costarica","gaming_company":"costarica","name":"Djibouti"},"ws":{"name":"Samoa","gaming_company":"costarica","financial_company":"costarica"},"ps":{"name":"Palestinian Territory, Occupied","gaming_company":"costarica","financial_company":"costarica"},"cu":{"name":"Cuba","gaming_company":"costarica","financial_company":"costarica"},"hk":{"name":"Hong Kong","financial_company":"none","gaming_company":"none"},"pf":{"gaming_company":"costarica","financial_company":"costarica","name":"French Polynesia"},"um":{"name":"United States Minor Outlying Islands","financial_company":"none","gaming_company":"none"},"mz":{"name":"Mozambique","financial_company":"costarica","gaming_company":"costarica"},"al":{"name":"Albania","gaming_company":"costarica","financial_company":"costarica"},"gu":{"gaming_company":"costarica","financial_company":"costarica","name":"Guam"},"bt":{"name":"Bhutan","gaming_company":"costarica","financial_company":"costarica"},"si":{"gaming_company":"malta","financial_company":"maltainvest","name":"Slovenia"},"mc":{"gaming_company":"costarica","financial_company":"costarica","name":"Monaco"},"in":{"name":"India","financial_company":"costarica","gaming_company":"costarica"},"ch":{"name":"Switzerland","financial_company":"costarica","gaming_company":"costarica"},"va":{"financial_company":"costarica","gaming_company":"costarica","name":"Holy See (Vatican City State)"},"ua":{"name":"Ukraine","financial_company":"costarica","gaming_company":"costarica"},"fo":{"gaming_company":"costarica","financial_company":"costarica","name":"Faroe Islands"},"ls":{"gaming_company":"costarica","financial_company":"costarica","name":"Lesotho"},"me":{"name":"Montenegro","financial_company":"costarica","gaming_company":"costarica"},"it":{"name":"Italy","financial_company":"maltainvest","gaming_company":"none"},"id":{"name":"Indonesia","financial_company":"costarica","gaming_company":"costarica"},"na":{"gaming_company":"costarica","financial_company":"costarica","name":"Namibia"},"br":{"gaming_company":"costarica","financial_company":"costarica","name":"Brazil"},"bj":{"financial_company":"costarica","gaming_company":"costarica","name":"Benin"},"bi":{"name":"Burundi","financial_company":"costarica","gaming_company":"costarica"},"ms":{"name":"Montserrat","financial_company":"costarica","gaming_company":"costarica"},"ve":{"gaming_company":"costarica","financial_company":"costarica","name":"Venezuela"},"cg":{"name":"Congo","gaming_company":"costarica","financial_company":"costarica"},"bl":{"name":"Saint-Barthélemy","gaming_company":"costarica","financial_company":"costarica"},"mr":{"name":"Mauritania","gaming_company":"costarica","financial_company":"costarica"},"mq":{"name":"Martinique","financial_company":"costarica","gaming_company":"costarica"},"kg":{"financial_company":"costarica","gaming_company":"costarica","name":"Kyrgyzstan"},"km":{"name":"Comoros","gaming_company":"costarica","financial_company":"costarica"},"yt":{"gaming_company":"costarica","financial_company":"costarica","name":"Mayotte"},"kp":{"gaming_company":"none","financial_company":"none","name":"Korea, Democratic People's Republic of"},"gl":{"gaming_company":"costarica","financial_company":"costarica","name":"Greenland"},"ph":{"name":"Philippines","financial_company":"costarica","gaming_company":"costarica"},"bf":{"financial_company":"costarica","gaming_company":"costarica","name":"Burkina Faso"},"lv":{"financial_company":"maltainvest","gaming_company":"malta","name":"Latvia"},"sr":{"gaming_company":"costarica","financial_company":"costarica","name":"Suriname"},"mg":{"gaming_company":"costarica","financial_company":"costarica","name":"Madagascar"},"md":{"name":"Moldova, Republic of","financial_company":"costarica","gaming_company":"costarica"},"gp":{"financial_company":"costarica","gaming_company":"costarica","name":"Guadeloupe"},"fm":{"name":"Micronesia, Federated States of","financial_company":"costarica","gaming_company":"costarica"},"pe":{"gaming_company":"costarica","financial_company":"costarica","name":"Peru"},"ee":{"gaming_company":"malta","financial_company":"maltainvest","name":"Estonia"},"bh":{"name":"Bahrain","financial_company":"costarica","gaming_company":"costarica"},"io":{"name":"British Indian Ocean Territory","financial_company":"costarica","gaming_company":"costarica"},"hn":{"financial_company":"costarica","gaming_company":"costarica","name":"Honduras"},"ag":{"gaming_company":"costarica","financial_company":"costarica","name":"Antigua and Barbuda"},"mf":{"name":"Saint-Martin (French part)","financial_company":"costarica","gaming_company":"costarica"},"pk":{"gaming_company":"costarica","financial_company":"costarica","name":"Pakistan"},"tv":{"name":"Tuvalu","financial_company":"costarica","gaming_company":"costarica"},"ro":{"gaming_company":"malta","financial_company":"maltainvest","name":"Romania"},"kr":{"gaming_company":"costarica","financial_company":"costarica","name":"Korea, Republic of"},"mp":{"financial_company":"costarica","gaming_company":"costarica","name":"Northern Mariana Islands"},"la":{"name":"Lao People's Democratic Republic","financial_company":"costarica","gaming_company":"costarica"},"im":{"name":"Isle of Man","gaming_company":"iom","financial_company":"iom"},"cx":{"financial_company":"costarica","gaming_company":"costarica","name":"Christmas Island"},"ir":{"name":"Iran, Islamic Republic of","financial_company":"none","gaming_company":"none"},"sj":{"gaming_company":"costarica","financial_company":"costarica","name":"Svalbard and Jan Mayen"},"dm":{"financial_company":"costarica","gaming_company":"costarica","name":"Dominica"},"mx":{"financial_company":"costarica","gaming_company":"costarica","name":"Mexico"},"aq":{"name":"Antarctica","gaming_company":"costarica","financial_company":"costarica"},"cm":{"financial_company":"costarica","gaming_company":"costarica","name":"Cameroon"},"do":{"financial_company":"costarica","gaming_company":"costarica","name":"Dominican Republic"},"vu":{"financial_company":"costarica","gaming_company":"costarica","name":"Vanuatu"},"bg":{"name":"Bulgaria","financial_company":"maltainvest","gaming_company":"malta"},"tj":{"gaming_company":"costarica","financial_company":"costarica","name":"Tajikistan"},"ng":{"name":"Nigeria","financial_company":"costarica","gaming_company":"costarica"},"an":{"name":"Netherlands Antilles","financial_company":"costarica","gaming_company":"costarica"},"ax":{"financial_company":"costarica","gaming_company":"costarica","name":"Aland Islands"},"py":{"gaming_company":"costarica","financial_company":"costarica","name":"Paraguay"},"so":{"name":"Somalia","financial_company":"costarica","gaming_company":"costarica"},"de":{"financial_company":"maltainvest","gaming_company":"none","name":"Germany"},"pn":{"name":"Pitcairn","gaming_company":"costarica","financial_company":"costarica"},"mk":{"name":"Macedonia","gaming_company":"costarica","financial_company":"costarica"},"us":{"gaming_company":"none","financial_company":"none","name":"United States"},"mh":{"gaming_company":"costarica","financial_company":"costarica","name":"Marshall Islands"},"nr":{"gaming_company":"costarica","financial_company":"costarica","name":"Nauru"},"ga":{"name":"Gabon","gaming_company":"costarica","financial_company":"costarica"},"tm":{"financial_company":"costarica","gaming_company":"costarica","name":"Turkmenistan"},"sd":{"name":"Sudan","gaming_company":"costarica","financial_company":"costarica"},"tw":{"gaming_company":"costarica","financial_company":"costarica","name":"Taiwan, Province of China"},"ni":{"name":"Nicaragua","gaming_company":"costarica","financial_company":"costarica"},"cl":{"financial_company":"costarica","gaming_company":"costarica","name":"Chile"},"hr":{"name":"Croatia","financial_company":"maltainvest","gaming_company":"malta"},"fj":{"name":"Fiji","financial_company":"costarica","gaming_company":"costarica"},"kh":{"gaming_company":"costarica","financial_company":"costarica","name":"Cambodia"},"rw":{"name":"Rwanda","gaming_company":"costarica","financial_company":"costarica"},"tt":{"financial_company":"costarica","gaming_company":"costarica","name":"Trinidad and Tobago"},"ad":{"gaming_company":"costarica","financial_company":"costarica","name":"Andorra"},"ly":{"financial_company":"costarica","gaming_company":"costarica","name":"Libyan Arab Jamahiriya"},"jp":{"gaming_company":"none","financial_company":"japan","virtual_company":"japan-virtual","name":"Japan"},"gw":{"financial_company":"costarica","gaming_company":"costarica","name":"Guinea-Bissau"},"ae":{"gaming_company":"costarica","financial_company":"costarica","name":"United Arab Emirates"},"td":{"name":"Chad","gaming_company":"costarica","financial_company":"costarica"},"ky":{"name":"Cayman Islands","gaming_company":"costarica","financial_company":"costarica"},"kw":{"financial_company":"costarica","gaming_company":"costarica","name":"Kuwait"},"gr":{"name":"Greece","gaming_company":"none","financial_company":"maltainvest"},"jm":{"name":"Jamaica","gaming_company":"costarica","financial_company":"costarica"},"hm":{"name":"Heard Island and McDonald Islands","gaming_company":"costarica","financial_company":"costarica"},"ki":{"name":"Kiribati","financial_company":"costarica","gaming_company":"costarica"},"tn":{"name":"Tunisia","financial_company":"costarica","gaming_company":"costarica"},"je":{"name":"Jersey","financial_company":"none","gaming_company":"none"},"mo":{"name":"Macao","gaming_company":"costarica","financial_company":"costarica"},"fi":{"gaming_company":"malta","financial_company":"maltainvest","name":"Finland"},"as":{"name":"American Samoa","financial_company":"costarica","gaming_company":"costarica"},"st":{"name":"Sao Tome and Principe","financial_company":"costarica","gaming_company":"costarica"},"sv":{"name":"El Salvador","financial_company":"costarica","gaming_company":"costarica"},"am":{"name":"Armenia","gaming_company":"costarica","financial_company":"costarica"},"il":{"name":"Israel","gaming_company":"costarica","financial_company":"costarica"},"ba":{"financial_company":"costarica","gaming_company":"costarica","name":"Bosnia and Herzegovina"}},"image_link":{"livechaticon":"/binary-static/images/pages/contact/chat-icon.svg","calendar_icon":"/binary-static/images/common/calendar_icon_1.png","up":"/binary-static/images/javascript/up_arrow_1.gif","down":"/binary-static/images/javascript/down_arrow_1.gif","hourglass":"/binary-static/images/common/hourglass_1.gif"},"enable_relative_barrier":"true","streaming_server":"www.binary.com"}};
-</script>
-<script async='true' defer='true' src='/binary-static/js/binary.js?y88kr7vv'></script>
-<script async='true' defer='true' src='https://apis.google.com/js/platform.js'></script>
+    <head>
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+        <style id="antiClickjack">body{display:none !important;}</style>
+        <script type="text/javascript">
+            if (self === top) {
+                var antiClickjack = document.getElementById("antiClickjack");
+                antiClickjack.parentNode.removeChild(antiClickjack);
+            } else {
+                top.location = self.location;
+            }
+        </script>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="Content-Language" content="AR" />
+        <meta name="description" content=" تعطى 1% الجميع وسيلة سهلة ومثيرة للمشاركة فى الأسواق المالية. يمكنك أن تتداول بداية من دولار أمريكى واحد، فى العملات الرئيسية والمؤشرات والسلع." />
+        <meta name="keywords" content=" الخيارات الثنائية، الفوركس، تداول العملات الأجنبية، التداول على شبكة الانترنت، التداول المالي، التداول الثنائي، تداول مؤشر، تداول المؤشرات، صفقات العملات الأجنبية، تداول السلع، إستراتيجية الخيارات الثنائية، وسيط ثنائيات، الرهان على الثنائيات، منصة تداول الخيارات الثنائية، إستراتيجية تداول الثنائيات، مالية، أسهم، استثمار، تجارة" />
+        <meta name="author" content="Binary.com" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="dcterms.rightsHolder" content="Binary.com" />
+        <meta name="dcterms.rights" content="Binary.com" />
+        <meta name="google-site-verification" content="roReCEK-wNa1EMA6ZM9a4zCOQOMqxfJjvfsZMC9qh_k" />
+        <meta property="og:title" content="Binary.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/binary-static/images/common/og_image.gif" />
 
-</head>
+        <title>المعاملات المفتوحة | Binary.com</title>
 
-  <body class='AR'>
+        <link rel="apple-touch-icon" sizes="57x57" href="/binary-static/images/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/binary-static/images/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/binary-static/images/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/binary-static/images/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/binary-static/images/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/binary-static/images/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/binary-static/images/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/binary-static/images/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/binary-static/images/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/binary-static/images/favicons/favicon-192x192.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="/binary-static/images/favicons/favicon-160x160.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/binary-static/images/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/binary-static/images/favicons/favicon-16x16.png" >
+        <link rel="icon" type="image/png" sizes="32x32" href="/binary-static/images/favicons/favicon-32x32.png" >
+
+          <link rel="alternate" href="/binary-static/en/open-positions.html" hreflang="EN" /> 
+          <link rel="alternate" href="/binary-static/ar/open-positions.html?l=ar" hreflang="AR" /> 
+          <link rel="alternate" href="/binary-static/de/open-positions.html" hreflang="DE" /> 
+          <link rel="alternate" href="/binary-static/es/open-positions.html" hreflang="ES" /> 
+          <link rel="alternate" href="/binary-static/fr/open-positions.html" hreflang="FR" /> 
+          <link rel="alternate" href="/binary-static/id/open-positions.html" hreflang="ID" /> 
+          <link rel="alternate" href="/binary-static/it/open-positions.html" hreflang="IT" /> 
+          <link rel="alternate" href="/binary-static/pl/open-positions.html" hreflang="PL" /> 
+          <link rel="alternate" href="/binary-static/pt/open-positions.html" hreflang="PT" /> 
+          <link rel="alternate" href="/binary-static/ru/open-positions.html" hreflang="RU" /> 
+          <link rel="alternate" href="/binary-static/vi/open-positions.html" hreflang="VI" /> 
+         
+          <link rel="alternate" href="/binary-static/zh_cn/open-positions.html" hreflang="ZH_CN" /> 
+          <link rel="alternate" href="/binary-static/zh_tw/open-positions.html" hreflang="ZH_TW" /> 
+        
+         <link rel="stylesheet" href="/binary-static/css/binary_rtl.min.css?bpw7z2th">
+        
+        <link rel="stylesheet" href="https://style.binary.com/binary.css">
+        <script>
+    //A global variable required to initialize Page object.
+    window.page_params = {settings: {"valid_loginids":"MX|MF|VRTC|MLT|CR|FOG|VRTJ|JP","countries_list":{"cm":{"name":"Cameroon","financial_company":"costarica","gaming_company":"costarica"},"ba":{"gaming_company":"costarica","financial_company":"costarica","name":"Bosnia and Herzegovina"},"sc":{"gaming_company":"costarica","financial_company":"costarica","name":"Seychelles"},"lk":{"gaming_company":"costarica","financial_company":"costarica","name":"Sri Lanka"},"bh":{"name":"Bahrain","financial_company":"costarica","gaming_company":"costarica"},"lr":{"name":"Liberia","gaming_company":"costarica","financial_company":"costarica"},"dz":{"name":"Algeria","financial_company":"costarica","gaming_company":"costarica"},"va":{"name":"Holy See (Vatican City State)","financial_company":"costarica","gaming_company":"costarica"},"qa":{"financial_company":"costarica","gaming_company":"costarica","name":"Qatar"},"sv":{"name":"El Salvador","financial_company":"costarica","gaming_company":"costarica"},"bo":{"name":"Bolivia","financial_company":"costarica","gaming_company":"costarica"},"aq":{"name":"Antarctica","gaming_company":"costarica","financial_company":"costarica"},"ck":{"name":"Cook Islands","gaming_company":"costarica","financial_company":"costarica"},"cy":{"gaming_company":"malta","financial_company":"maltainvest","name":"Cyprus"},"kg":{"name":"Kyrgyzstan","gaming_company":"costarica","financial_company":"costarica"},"tt":{"financial_company":"costarica","gaming_company":"costarica","name":"Trinidad and Tobago"},"th":{"name":"Thailand","financial_company":"costarica","gaming_company":"costarica"},"lv":{"name":"Latvia","financial_company":"maltainvest","gaming_company":"malta"},"lu":{"gaming_company":"none","financial_company":"maltainvest","name":"Luxembourg"},"ls":{"name":"Lesotho","financial_company":"costarica","gaming_company":"costarica"},"ch":{"gaming_company":"costarica","financial_company":"costarica","name":"Switzerland"},"kz":{"gaming_company":"costarica","financial_company":"costarica","name":"Kazakhstan"},"bj":{"financial_company":"costarica","gaming_company":"costarica","name":"Benin"},"mx":{"name":"Mexico","financial_company":"costarica","gaming_company":"costarica"},"ag":{"financial_company":"costarica","gaming_company":"costarica","name":"Antigua and Barbuda"},"mh":{"name":"Marshall Islands","financial_company":"costarica","gaming_company":"costarica"},"me":{"financial_company":"costarica","gaming_company":"costarica","name":"Montenegro"},"ge":{"gaming_company":"costarica","financial_company":"costarica","name":"Georgia"},"ro":{"gaming_company":"malta","financial_company":"maltainvest","name":"Romania"},"ps":{"name":"Palestinian Territory, Occupied","financial_company":"costarica","gaming_company":"costarica"},"tc":{"name":"Turks and Caicos Islands","gaming_company":"costarica","financial_company":"costarica"},"at":{"financial_company":"maltainvest","gaming_company":"malta","name":"Austria"},"st":{"gaming_company":"costarica","financial_company":"costarica","name":"Sao Tome and Principe"},"bv":{"financial_company":"costarica","gaming_company":"costarica","name":"Bouvet Island"},"kw":{"name":"Kuwait","gaming_company":"costarica","financial_company":"costarica"},"iq":{"name":"Iraq","gaming_company":"none","financial_company":"none"},"am":{"financial_company":"costarica","gaming_company":"costarica","name":"Armenia"},"mp":{"gaming_company":"costarica","financial_company":"costarica","name":"Northern Mariana Islands"},"is":{"financial_company":"costarica","gaming_company":"costarica","name":"Iceland"},"kr":{"name":"Korea, Republic of","financial_company":"costarica","gaming_company":"costarica"},"gr":{"financial_company":"maltainvest","gaming_company":"none","name":"Greece"},"cc":{"name":"Cocos (Keeling) Islands","gaming_company":"costarica","financial_company":"costarica"},"ar":{"name":"Argentina","gaming_company":"costarica","financial_company":"costarica"},"nf":{"name":"Norfolk Island","financial_company":"costarica","gaming_company":"costarica"},"cv":{"gaming_company":"costarica","financial_company":"costarica","name":"Cape Verde"},"pe":{"name":"Peru","gaming_company":"costarica","financial_company":"costarica"},"nz":{"financial_company":"costarica","gaming_company":"costarica","name":"New Zealand"},"in":{"gaming_company":"costarica","financial_company":"costarica","name":"India"},"gy":{"name":"Guyana","gaming_company":"costarica","financial_company":"costarica"},"fo":{"name":"Faroe Islands","financial_company":"costarica","gaming_company":"costarica"},"ai":{"name":"Anguilla","financial_company":"costarica","gaming_company":"costarica"},"dk":{"financial_company":"maltainvest","gaming_company":"malta","name":"Denmark"},"ki":{"name":"Kiribati","gaming_company":"costarica","financial_company":"costarica"},"mc":{"name":"Monaco","financial_company":"costarica","gaming_company":"costarica"},"jp":{"name":"Japan","virtual_company":"japan-virtual","gaming_company":"none","financial_company":"japan"},"sb":{"financial_company":"costarica","gaming_company":"costarica","name":"Solomon Islands"},"cx":{"gaming_company":"costarica","financial_company":"costarica","name":"Christmas Island"},"tk":{"name":"Tokelau","financial_company":"costarica","gaming_company":"costarica"},"dj":{"gaming_company":"costarica","financial_company":"costarica","name":"Djibouti"},"cg":{"financial_company":"costarica","gaming_company":"costarica","name":"Congo"},"sm":{"gaming_company":"costarica","financial_company":"costarica","name":"San Marino"},"bl":{"name":"Saint-Barthélemy","gaming_company":"costarica","financial_company":"costarica"},"mw":{"financial_company":"costarica","gaming_company":"costarica","name":"Malawi"},"ly":{"gaming_company":"costarica","financial_company":"costarica","name":"Libyan Arab Jamahiriya"},"bd":{"financial_company":"costarica","gaming_company":"costarica","name":"Bangladesh"},"kn":{"name":"Saint Kitts and Nevis","financial_company":"costarica","gaming_company":"costarica"},"hk":{"name":"Hong Kong","gaming_company":"none","financial_company":"none"},"do":{"name":"Dominican Republic","gaming_company":"costarica","financial_company":"costarica"},"tg":{"name":"Togo","financial_company":"costarica","gaming_company":"costarica"},"bf":{"financial_company":"costarica","gaming_company":"costarica","name":"Burkina Faso"},"vi":{"name":"Virgin Islands, U.S.","gaming_company":"none","financial_company":"none"},"ie":{"name":"Ireland","financial_company":"maltainvest","gaming_company":"malta"},"mg":{"name":"Madagascar","financial_company":"costarica","gaming_company":"costarica"},"cd":{"gaming_company":"costarica","financial_company":"costarica","name":"Congo, The Democratic Republic of the"},"nl":{"financial_company":"maltainvest","gaming_company":"malta","name":"Netherlands"},"vg":{"gaming_company":"costarica","financial_company":"costarica","name":"Virgin Islands, British"},"tn":{"financial_company":"costarica","gaming_company":"costarica","name":"Tunisia"},"pg":{"name":"Papua New Guinea","gaming_company":"costarica","financial_company":"costarica"},"nc":{"gaming_company":"costarica","financial_company":"costarica","name":"New Caledonia"},"ms":{"financial_company":"costarica","gaming_company":"costarica","name":"Montserrat"},"si":{"name":"Slovenia","financial_company":"maltainvest","gaming_company":"malta"},"gs":{"financial_company":"costarica","gaming_company":"costarica","name":"South Georgia and the South Sandwich Islands"},"mf":{"name":"Saint-Martin (French part)","gaming_company":"costarica","financial_company":"costarica"},"gi":{"financial_company":"costarica","gaming_company":"costarica","name":"Gibraltar"},"hr":{"name":"Croatia","gaming_company":"malta","financial_company":"maltainvest"},"vn":{"financial_company":"costarica","gaming_company":"costarica","name":"Vietnam"},"pw":{"name":"Palau","gaming_company":"costarica","financial_company":"costarica"},"vu":{"name":"Vanuatu","gaming_company":"costarica","financial_company":"costarica"},"gh":{"name":"Ghana","financial_company":"costarica","gaming_company":"costarica"},"la":{"gaming_company":"costarica","financial_company":"costarica","name":"Lao People's Democratic Republic"},"td":{"name":"Chad","gaming_company":"costarica","financial_company":"costarica"},"re":{"name":"Reunion","gaming_company":"costarica","financial_company":"costarica"},"ee":{"name":"Estonia","gaming_company":"malta","financial_company":"maltainvest"},"co":{"name":"Colombia","financial_company":"costarica","gaming_company":"costarica"},"gq":{"gaming_company":"costarica","financial_company":"costarica","name":"Equatorial Guinea"},"es":{"name":"Spain","financial_company":"maltainvest","gaming_company":"none"},"fk":{"financial_company":"costarica","gaming_company":"costarica","name":"Falkland Islands (Malvinas)"},"tr":{"name":"Turkey","gaming_company":"costarica","financial_company":"costarica"},"gm":{"gaming_company":"costarica","financial_company":"costarica","name":"Gambia"},"ke":{"financial_company":"costarica","gaming_company":"costarica","name":"Kenya"},"pn":{"name":"Pitcairn","gaming_company":"costarica","financial_company":"costarica"},"gt":{"financial_company":"costarica","gaming_company":"costarica","name":"Guatemala"},"gl":{"name":"Greenland","financial_company":"costarica","gaming_company":"costarica"},"cn":{"gaming_company":"costarica","financial_company":"costarica","name":"China"},"mz":{"gaming_company":"costarica","financial_company":"costarica","name":"Mozambique"},"zw":{"financial_company":"costarica","gaming_company":"costarica","name":"Zimbabwe"},"cz":{"name":"Czech Republic","financial_company":"maltainvest","gaming_company":"malta"},"se":{"name":"Sweden","financial_company":"maltainvest","gaming_company":"malta"},"bn":{"name":"Brunei Darussalam","financial_company":"costarica","gaming_company":"costarica"},"lt":{"name":"Lithuania","financial_company":"maltainvest","gaming_company":"malta"},"bg":{"name":"Bulgaria","gaming_company":"malta","financial_company":"maltainvest"},"dm":{"name":"Dominica","financial_company":"costarica","gaming_company":"costarica"},"ve":{"name":"Venezuela","gaming_company":"costarica","financial_company":"costarica"},"al":{"financial_company":"costarica","gaming_company":"costarica","name":"Albania"},"mo":{"name":"Macao","gaming_company":"costarica","financial_company":"costarica"},"tm":{"gaming_company":"costarica","financial_company":"costarica","name":"Turkmenistan"},"sr":{"gaming_company":"costarica","financial_company":"costarica","name":"Suriname"},"gn":{"name":"Guinea","gaming_company":"costarica","financial_company":"costarica"},"ci":{"financial_company":"costarica","gaming_company":"costarica","name":"Cote D'Ivoire"},"eh":{"name":"Western Sahara","gaming_company":"costarica","financial_company":"costarica"},"gp":{"name":"Guadeloupe","gaming_company":"costarica","financial_company":"costarica"},"to":{"name":"Tonga","gaming_company":"costarica","financial_company":"costarica"},"bs":{"financial_company":"costarica","gaming_company":"costarica","name":"Bahamas"},"sg":{"gaming_company":"none","financial_company":"costarica","name":"Singapore"},"pm":{"financial_company":"costarica","gaming_company":"costarica","name":"Saint Pierre and Miquelon"},"ma":{"name":"Morocco","financial_company":"costarica","gaming_company":"costarica"},"jo":{"name":"Jordan","gaming_company":"costarica","financial_company":"costarica"},"eg":{"name":"Egypt","gaming_company":"costarica","financial_company":"costarica"},"my":{"name":"Malaysia","gaming_company":"none","financial_company":"none"},"ad":{"financial_company":"costarica","gaming_company":"costarica","name":"Andorra"},"uy":{"name":"Uruguay","gaming_company":"costarica","financial_company":"costarica"},"rw":{"financial_company":"costarica","gaming_company":"costarica","name":"Rwanda"},"gf":{"name":"French Guiana","financial_company":"costarica","gaming_company":"costarica"},"rs":{"gaming_company":"costarica","financial_company":"costarica","name":"Serbia"},"yt":{"gaming_company":"costarica","financial_company":"costarica","name":"Mayotte"},"so":{"gaming_company":"costarica","financial_company":"costarica","name":"Somalia"},"ga":{"gaming_company":"costarica","financial_company":"costarica","name":"Gabon"},"nu":{"name":"Niue","financial_company":"costarica","gaming_company":"costarica"},"bm":{"name":"Bermuda","gaming_company":"costarica","financial_company":"costarica"},"tv":{"financial_company":"costarica","gaming_company":"costarica","name":"Tuvalu"},"sy":{"name":"Syrian Arab Republic","gaming_company":"costarica","financial_company":"costarica"},"nr":{"financial_company":"costarica","gaming_company":"costarica","name":"Nauru"},"ph":{"name":"Philippines","gaming_company":"costarica","financial_company":"costarica"},"kh":{"gaming_company":"costarica","financial_company":"costarica","name":"Cambodia"},"gd":{"gaming_company":"costarica","financial_company":"costarica","name":"Grenada"},"il":{"name":"Israel","gaming_company":"costarica","financial_company":"costarica"},"ye":{"financial_company":"costarica","gaming_company":"costarica","name":"Yemen"},"an":{"gaming_company":"costarica","financial_company":"costarica","name":"Netherlands Antilles"},"pk":{"gaming_company":"costarica","financial_company":"costarica","name":"Pakistan"},"gu":{"financial_company":"costarica","gaming_company":"costarica","name":"Guam"},"bw":{"name":"Botswana","financial_company":"costarica","gaming_company":"costarica"},"gb":{"gaming_company":"iom","financial_company":"iom","name":"United Kingdom"},"pr":{"name":"Puerto Rico","gaming_company":"costarica","financial_company":"costarica"},"jm":{"gaming_company":"costarica","financial_company":"costarica","name":"Jamaica"},"ni":{"financial_company":"costarica","gaming_company":"costarica","name":"Nicaragua"},"uz":{"name":"Uzbekistan","financial_company":"costarica","gaming_company":"costarica"},"ws":{"gaming_company":"costarica","financial_company":"costarica","name":"Samoa"},"cl":{"gaming_company":"costarica","financial_company":"costarica","name":"Chile"},"mv":{"name":"Maldives","gaming_company":"costarica","financial_company":"costarica"},"mr":{"financial_company":"costarica","gaming_company":"costarica","name":"Mauritania"},"et":{"gaming_company":"costarica","financial_company":"costarica","name":"Ethiopia"},"ao":{"financial_company":"costarica","gaming_company":"costarica","name":"Angola"},"au":{"financial_company":"costarica","gaming_company":"costarica","name":"Australia"},"pt":{"name":"Portugal","gaming_company":"malta","financial_company":"maltainvest"},"im":{"gaming_company":"iom","financial_company":"iom","name":"Isle of Man"},"ec":{"name":"Ecuador","financial_company":"costarica","gaming_company":"costarica"},"bi":{"name":"Burundi","financial_company":"costarica","gaming_company":"costarica"},"za":{"name":"South Africa","gaming_company":"costarica","financial_company":"costarica"},"be":{"name":"Belgium","gaming_company":"malta","financial_company":"maltainvest"},"mq":{"gaming_company":"costarica","financial_company":"costarica","name":"Martinique"},"af":{"name":"Afghanistan","gaming_company":"costarica","financial_company":"costarica"},"sn":{"gaming_company":"costarica","financial_company":"costarica","name":"Senegal"},"pl":{"gaming_company":"malta","financial_company":"maltainvest","name":"Poland"},"hu":{"gaming_company":"malta","financial_company":"maltainvest","name":"Hungary"},"mt":{"name":"Malta","financial_company":"none","gaming_company":"none"},"as":{"name":"American Samoa","financial_company":"costarica","gaming_company":"costarica"},"lc":{"name":"Saint Lucia","financial_company":"costarica","gaming_company":"costarica"},"km":{"name":"Comoros","financial_company":"costarica","gaming_company":"costarica"},"cu":{"name":"Cuba","gaming_company":"costarica","financial_company":"costarica"},"cr":{"financial_company":"none","gaming_company":"none","name":"Costa Rica"},"zm":{"gaming_company":"costarica","financial_company":"costarica","name":"Zambia"},"bt":{"financial_company":"costarica","gaming_company":"costarica","name":"Bhutan"},"fm":{"name":"Micronesia, Federated States of","financial_company":"costarica","gaming_company":"costarica"},"it":{"gaming_company":"none","financial_company":"maltainvest","name":"Italy"},"hn":{"name":"Honduras","financial_company":"costarica","gaming_company":"costarica"},"de":{"name":"Germany","financial_company":"maltainvest","gaming_company":"none"},"ru":{"financial_company":"costarica","gaming_company":"costarica","name":"Russian Federation"},"ax":{"gaming_company":"costarica","financial_company":"costarica","name":"Aland Islands"},"cf":{"name":"Central African Republic","gaming_company":"costarica","financial_company":"costarica"},"aw":{"gaming_company":"costarica","financial_company":"costarica","name":"Aruba"},"lb":{"name":"Lebanon","gaming_company":"costarica","financial_company":"costarica"},"md":{"financial_company":"costarica","gaming_company":"costarica","name":"Moldova, Republic of"},"az":{"name":"Azerbaijan","financial_company":"costarica","gaming_company":"costarica"},"li":{"name":"Liechtenstein","financial_company":"costarica","gaming_company":"costarica"},"fj":{"name":"Fiji","financial_company":"costarica","gaming_company":"costarica"},"mu":{"financial_company":"costarica","gaming_company":"costarica","name":"Mauritius"},"sl":{"name":"Sierra Leone","financial_company":"costarica","gaming_company":"costarica"},"us":{"name":"United States","gaming_company":"none","financial_company":"none"},"ht":{"financial_company":"costarica","gaming_company":"costarica","name":"Haiti"},"vc":{"financial_company":"costarica","gaming_company":"costarica","name":"Saint Vincent and the Grenadines"},"mm":{"financial_company":"costarica","gaming_company":"costarica","name":"Myanmar"},"br":{"name":"Brazil","financial_company":"costarica","gaming_company":"costarica"},"bz":{"financial_company":"costarica","gaming_company":"costarica","name":"Belize"},"no":{"name":"Norway","financial_company":"costarica","gaming_company":"costarica"},"by":{"name":"Belarus","gaming_company":"costarica","financial_company":"costarica"},"ir":{"name":"Iran, Islamic Republic of","gaming_company":"none","financial_company":"none"},"sk":{"gaming_company":"malta","financial_company":"maltainvest","name":"Slovakia"},"ml":{"name":"Mali","financial_company":"costarica","gaming_company":"costarica"},"je":{"name":"Jersey","financial_company":"none","gaming_company":"none"},"ky":{"gaming_company":"costarica","financial_company":"costarica","name":"Cayman Islands"},"id":{"financial_company":"costarica","gaming_company":"costarica","name":"Indonesia"},"ug":{"gaming_company":"costarica","financial_company":"costarica","name":"Uganda"},"pa":{"name":"Panama","gaming_company":"costarica","financial_company":"costarica"},"na":{"financial_company":"costarica","gaming_company":"costarica","name":"Namibia"},"tl":{"gaming_company":"costarica","financial_company":"costarica","name":"Timor-Leste"},"mn":{"name":"Mongolia","financial_company":"costarica","gaming_company":"costarica"},"hm":{"name":"Heard Island and McDonald Islands","financial_company":"costarica","gaming_company":"costarica"},"sz":{"financial_company":"costarica","gaming_company":"costarica","name":"Swaziland"},"ng":{"name":"Nigeria","financial_company":"costarica","gaming_company":"costarica"},"ae":{"name":"United Arab Emirates","financial_company":"costarica","gaming_company":"costarica"},"sh":{"name":"Saint Helena","financial_company":"costarica","gaming_company":"costarica"},"bb":{"name":"Barbados","financial_company":"costarica","gaming_company":"costarica"},"ne":{"gaming_company":"costarica","financial_company":"costarica","name":"Niger"},"fi":{"name":"Finland","financial_company":"maltainvest","gaming_company":"malta"},"ua":{"gaming_company":"costarica","financial_company":"costarica","name":"Ukraine"},"gw":{"name":"Guinea-Bissau","financial_company":"costarica","gaming_company":"costarica"},"fr":{"name":"France","financial_company":"maltainvest","gaming_company":"none"},"pf":{"name":"French Polynesia","financial_company":"costarica","gaming_company":"costarica"},"ca":{"name":"Canada","financial_company":"costarica","gaming_company":"costarica"},"tw":{"gaming_company":"costarica","financial_company":"costarica","name":"Taiwan, Province of China"},"mk":{"name":"Macedonia","gaming_company":"costarica","financial_company":"costarica"},"tj":{"financial_company":"costarica","gaming_company":"costarica","name":"Tajikistan"},"tf":{"gaming_company":"costarica","financial_company":"costarica","name":"French Southern Territories"},"py":{"name":"Paraguay","financial_company":"costarica","gaming_company":"costarica"},"sd":{"name":"Sudan","financial_company":"costarica","gaming_company":"costarica"},"sa":{"financial_company":"costarica","gaming_company":"costarica","name":"Saudi Arabia"},"tz":{"name":"Tanzania, United Republic of","financial_company":"costarica","gaming_company":"costarica"},"np":{"name":"Nepal","financial_company":"costarica","gaming_company":"costarica"},"io":{"name":"British Indian Ocean Territory","gaming_company":"costarica","financial_company":"costarica"},"gg":{"name":"Guernsey","financial_company":"none","gaming_company":"none"},"sj":{"financial_company":"costarica","gaming_company":"costarica","name":"Svalbard and Jan Mayen"},"wf":{"name":"Wallis and Futuna","gaming_company":"costarica","financial_company":"costarica"},"kp":{"financial_company":"none","gaming_company":"none","name":"Korea, Democratic People's Republic of"},"er":{"name":"Eritrea","gaming_company":"costarica","financial_company":"costarica"},"um":{"gaming_company":"none","financial_company":"none","name":"United States Minor Outlying Islands"},"om":{"name":"Oman","gaming_company":"costarica","financial_company":"costarica"}},"broker":"CR","arr_all_currencies":["USD","EUR","GBP","AUD"],"streaming_server":"www.binary.com","enable_relative_barrier":"true","image_link":{"up":"/binary-static/images/javascript/up_arrow_1.gif","calendar_icon":"/binary-static/images/common/calendar_icon_1.png","hourglass":"/binary-static/images/common/hourglass_1.gif","down":"/binary-static/images/javascript/down_arrow_1.gif","livechaticon":"/binary-static/images/pages/contact/chat-icon.svg"}}};
+</script>  <script src='/binary-static/js/binary.js?bpw7z2th' defer async></script>  <script src="https://apis.google.com/js/platform.js" defer async></script>
+    </head>
+
+
+<body class="AR">
     <div id='page-wrapper'>
-      <div class='dark-blue' id='topbar'>
-  <div class='grd-container'>
-    <div class='grd-parent'>
-      <div class='by_client_type client_virtual grd-grid-6 grd-grid-mobile-12 upgrademessage' id='topbar-msg' style='display: none;'>
-        <span class='grd-hide-mobile'>
-          <span id='virtual-text'>أنت تستخدم حساب افتراضي.</span>
-        </span>
-        <a class='pjaxload pulser virtual-upgrade-link with_login_cookies' href='/binary-static/ar/new_account/realws.html'>الترقية لحساب حقيقي</a>
-        <a class='invisible pjaxload pulser vr-japan-upgrade-link with_login_cookies' href='/binary-static/ar/new_account/japanws.html'>الترقية لحساب حقيقي</a>
-        <a class='invisible pjaxload pulser vr-financial-upgrade-link with_login_cookies' href='/binary-static/ar/new_account/maltainvestws.html'>الترقية لحساب مالي</a>
-      </div>
-      <div class='by_client_type client_real grd-grid-6 grd-grid-mobile-12 upgrademessage' style='display: none;'>
-        <a class='financial-upgrade-link invisible pjaxload pulser with_login_cookies' href='/binary-static/ar/new_account/maltainvestws.html'>افتح حساب مالي</a>
-      </div>
-      <div class='grd-grid-6 grd-grid-mobile-12 grd-parent' id='topbar-info'>
-        <div class='grd-grid-5 grd-grid-mobile-7' id='gmt-clock'></div>
-        <div class='grd-grid-3 grd-hide-mobile' id='contact-us'>
-          <a class='pjaxload with_login_cookies' href='/binary-static/ar/contact.html'>اتصل بنا</a>
-        </div>
-        <div class='grd-grid-4 grd-grid-mobile-5'>
-          <span class='AR' id='language_select'>
-            <select>
-              <option class='AR' selected='selected'>Arabic</option>
-              <option class='DE'>Deutsch</option>
-              <option class='EN'>English</option>
-              <option class='ES'>Español</option>
-              <option class='FR'>Français</option>
-              <option class='ID'>Bahasa Indonesia</option>
-              <option class='IT'>Italiano</option>
-              <option class='PL'>Polish</option>
-              <option class='PT'>Português</option>
-              <option class='RU'>Русский</option>
-              <option class='VI'>Vietnamese</option>
-              <option class='ZH_CN'>简体中文</option>
-              <option class='ZH_TW'>繁體中文</option>
-            </select>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-      <div id='header'>
-  <div class='grd-container'>
-    <div class='grd-row-padding'>
-      <div class='grd-grid-3 grd-grid-mobile-2 grd-grid-phablet-1'>
-        <a id='logo' href='/binary-static/ar/home.html'>
-          <div class='grd-grid-3 grd-grid-mobile-12 grd-grid-phablet-12 grd-no-gutter'>
-            <img class='responsive grd-float-left' src='/binary-static/images/pages/binary-symbol-logo.svg' />
-          </div>
-          <div class='grd-grid-9 grd-hide-mobile grd-hide-phablet' id='binary-logo-text'>
-            <img class='responsive' src='/binary-static/images/pages/binary-type-logo.svg' />
-          </div>
-        </a>
-      </div>
-      <div class='grd-grid-6 grd-hide-mobile grd-hide-phablet'>
-        <div id='main-navigation'>
-  <ul id='menu-top'>
-    <li class=' '>
-      <a class='pjaxload smaller-font' href='/binary-static/ar/why-us.html'>لماذا نحن؟</a>
-    </li>
-    <li class=' ja-hide'>
-      <a class='pjaxload smaller-font' href='/binary-static/ar/get-started.html'>ابدأ</a>
-    </li>
-    <li class=' all-hide ja-show-block'>
-      <a class='pjaxload smaller-font' href='/binary-static/ar/get-started-jp.html'>ابدأ</a>
-    </li>
-    <li class=' '>
-      <a class='pjaxload smaller-font' href='/binary-static/ar/tour.html'>جولة</a>
-    </li>
-    <li>
-      <a class='pjaxload smaller-font' href='/binary-static/ar/trading.html'>التداول</a>
-    </li>
-  </ul>
-</div>
-
-      </div>
-      <div class='by_client_type client_real client_virtual grd-grid-3 grd-grid-mobile-9 grd-grid-phablet-10' id='client-logged-in' style='display: none;'>
-        <div id='logout'>
-          <form id='loginid-switch-form'>
-            <div id='login-fields'>
-              <select id='client_loginid' name='client_loginid'></select>
+    <div id="topbar">
+        <div class="container">
+            <div class="gr-row">
+                <div id="topbar-msg" class='gr-6 gr-5-t gr-12-p gr-12-m by_client_type client_virtual invisible upgrademessage'>
+                    <span class='gr-hide-m'>
+                        <span id='virtual-text'>أنت تستخدم حساب افتراضي.</span>
+                    </span>
+                    <a class="pjaxload with_login_cookies pulser virtual-upgrade-link" href="/binary-static/ar/new_account/realws.html">الترقية لحساب حقيقي</a>
+                    <a class="pjaxload with_login_cookies pulser vr-japan-upgrade-link" href="/binary-static/ar/new_account/japanws.html">الترقية لحساب حقيقي</a>
+                    <a class="invisible pjaxload with_login_cookies pulser vr-financial-upgrade-link" href="/binary-static/ar/new_account/maltainvestws.html">الترقية لحساب مالي</a>
+                </div>
+                <div class='gr-6 gr-5-t gr-12-p gr-12-m by_client_type client_real invisible upgrademessage'>
+                    <a class="pjaxload with_login_cookies pulse financial-upgrade-link" href="/binary-static/ar/new_account/maltainvestws.html">افتح حساب مالي</a>
+                </div>
+                <div class='gr-6 gr-7-t gr-12-p gr-12-m' id='topbar-info'>
+                    <div class="gr-row">
+                        <div class='gr-5 gr-7-m no-underline' id="gmt-clock" data-balloon-pos="down"></div>
+                        <div class='gr-3 gr-hide-m' id='contact-us'>
+                            <a class="pjaxload" href="/binary-static/ar/contact.html">اتصل بنا</a>
+                        </div>
+                        <div class='gr-4 gr-5-m'>
+                            <div class="AR" id='language_select'>
+                                <select>
+            <option class='EN'>English</option>
+                <option class='AR' selected='selected'>Arabic</option>
+                <option class='DE'>Deutsch</option>
+                <option class='ES'>Español</option>
+                <option class='FR'>Français</option>
+                <option class='ID'>Bahasa Indonesia</option>
+                <option class='IT'>Italiano</option>
+                <option class='PL'>Polish</option>
+                <option class='PT'>Português</option>
+                <option class='RU'>Русский</option>
+                <option class='VI'>Vietnamese</option>
+                    <option class='ZH_CN'>简体中文</option>
+                <option class='ZH_TW'>繁體中文</option>
+    </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id='balance'></div>
-            <a class='logout' href='javascript:;'>تسجيل الخروج</a>
-          </form>
         </div>
-      </div>
-      <div class='by_client_type client_logged_out grd-grid-3 grd-grid-mobile-9 grd-grid-phablet-10 grd-no-gutter-left invisible' id='client-logged-out'>
-        <div class='button' id='btn_login'>تسجيل الدخول</div>
-      </div>
-      <div class='grd-grid-1 grd-hide grd-no-gutter-mobile grd-show-mobile grd-show-phablet'>
-        <div id='mobile-menu-icon-container'>
-          <a id='mobile-menu-icon' href='#mobile-menu'>
-            <img class='responsive' src='/binary-static/images/pages/binary-mobile-menu.svg' />
-          </a>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
 
-      <div id='content-holder'>
-        <div class='hidden tab-menu' id='main-menu'>
-         <div class='grd-container grd-hide-mobile grd-hide-phablet tab-menu-wrap'>
-  <div class='grd-grid-12'>
-    <ul class='items'>
-      <li class='item' id='topMenuBetaInterface'>
-        <a class='pjaxload link' href='/binary-static/ar/trading.html' target=''>بدء التداول</a>
-      </li>
-      <li class='by_client_type client_real client_virtual item' id='topMenuMyAccount'>
-        <a class='with_login_cookies pjaxload link' href='/binary-static/ar/user/my_accountws.html' target=''>حسابي</a>
-        <ul class='sub_items'>
-          <li class='sub_item' id='topMenuPortfolio'>
-            <a class='with_login_cookies pjaxload link' href='/binary-static/ar/user/portfoliows.html' target=''>المحفظة</a>
-          </li>
-          <li class='sub_item' id='topMenuProfitTable'>
-            <a class='with_login_cookies pjaxload link' href='/binary-static/ar/user/profit_tablews.html' target=''>جدول الأرباح</a>
-          </li>
-          <li class='sub_item' id='topMenuStatement'>
-            <a class='with_login_cookies pjaxload link' href='/binary-static/ar/user/statementws.html' target=''>كشف الحساب</a>
-          </li>
-          <li class='sub_item' id='topMenuChangePassword'>
-            <a class='with_login_cookies pjaxload link' href='/binary-static/ar/user/change_passwordws.html' target=''>كلمة مرور</a>
-          </li>
-          <li class='sub_item' id='topMenuAccountSettings'>
-            <a class='with_login_cookies pjaxload link' href='/binary-static/ar/user/settingsws.html' target=''>الإعدادات</a>
-          </li>
-          <li class='ja-hide sub_item' id='topMenuBecomeAffiliate'>
-            <a class='pjaxload link' href='/binary-static/ar/affiliate/signup.html' target=''>الإنتساب</a>
-          </li>
-          <li class='by_client_type client_real sub_item' id='topMenuAuthenticateAccount'>
-            <a class='with_login_cookies pjaxload link' href='/binary-static/ar/user/authenticatews.html' target=''>التوثيق</a>
-          </li>
-        </ul>
-      </li>
-      <li class='item' id='topMenuCashier'>
-        <a class='pjaxload link' href='/binary-static/ar/cashier.html' target=''>الصراف</a>
-      </li>
-      <li class='item' id='topMenuResources'>
-        <a class='pjaxload link' href='/binary-static/ar/resources.html' target=''>مصادر</a>
-        <ul class='sub_items'>
-          <li class='ja-hide sub_item' id='topMenuAssetIndex'>
-            <a class='pjaxload link' href='/binary-static/ar/resources/asset_indexws.html' target=''>مؤشر الأصول</a>
-          </li>
-          <li class='sub_item' id='topMenuTradingTimes'>
-            <a class='pjaxload link' href='/binary-static/ar/resources/market_timesws.html' target=''>أوقات التداول</a>
-          </li>
-        </ul>
-      </li>
-      <li class='item' id='topMenuApplications'>
-        <a class='ja-hide pjaxload link' href='/binary-static/ar/applications.html' target=''>تطبيقات</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
+    <div id="header" class="dark-blue">
+        <div class='container'>
+            <div class='gr-12'>
+                <div class='gr-padding-10 gr-row'>
+                    <div class='gr-3 gr-2-m gr-2-p'>
+                        <a id="logo" href="/binary-static/ar/home.html">
+                            <div class='gr-row'>
+                                <div class='gr-3 gr-12-m gr-12-p gr-no-gutter'>
+                                    <img class='responsive' src="/binary-static/images/pages/binary-symbol-logo.svg" />
+                                </div>
+                                <div class='gr-9 gr-hide-m gr-hide-p' id='binary-logo-text'>
+                                    <img class='responsive' src="/binary-static/images/pages/binary-type-logo.svg" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class='gr-6 gr-hide-m gr-hide-p'>
+                        <div id='main-navigation'>
+                            <ul class="smaller-font" id="menu-top">
+                                <li>
+                                    <a class="smaller-font pjaxload" href="/binary-static/ar/why-us.html">لماذا نحن؟</a>
+                                </li>
+                                <li class="ja-hide">
+                                    <a class="smaller-font pjaxload" href="/binary-static/ar/get-started.html">ابدأ</a>
+                                </li>
+                                <li class="all-hide ja-show-block">
+                                  <a class="smaller-font pjaxload" href="/binary-static/ar/get-started-jp.html">ابدأ</a>
+                                </li>
+                                <li>
+                                    <a class="smaller-font pjaxload" href="/binary-static/ar/tour.html">جولة</a>
+                                </li>
+                                <li>
+                                    <a class="smaller-font pjaxload" href="/binary-static/ar/trading.html">التداول</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="client-logged-in" class="gr-3 gr-8-m gr-8-p gr-no-gutter by_client_type client_real client_virtual align-end" style="display: none">
+                      <div id="logout">
+                        <form id="loginid-switch-form">
+                            <div id="login-fields">
+                                <select id="client_loginid" name="client_loginid">
+                                </select>
+                            </div>
+                            <div id="balance"></div>
+                            <a id="btn_logout" class="logout" href="javascript:;">تسجيل الخروج</a>
+                        </form>
+                      </div>
+                    </div>
+                    <div id="client-logged-out" class="gr-3 gr-8-m gr-8-p gr-no-gutter by_client_type client_logged_out invisible">
+                        <div id="btn_login" class="button">تسجيل الدخول</div>
+                    </div>
+                    <div class='gr-hide gr-show-m gr-2-m gr-show-p gr-2-p gr-no-gutter-mobile align-end'>
+                        <div id='mobile-menu-icon-container'>
+                            <a href='#mobile-menu' id='mobile-menu-icon'>
+                                <img class='responsive' src="/binary-static/images/pages/binary-mobile-menu.svg"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class='grd-hide grd-show-mobile grd-show-phablet' id='mobile-menu-container'>
-  <div class='grd-hide' id='mobile-menu'>
-    <ul>
-      <li class=' '>
-        <a class='pjaxload' href='/binary-static/ar/why-us.html'>لماذا نحن؟</a>
-      </li>
-      <li class=' ja-hide'>
-        <a class='pjaxload' href='/binary-static/ar/get-started.html'>ابدأ</a>
-      </li>
-      <li class=' all-hide ja-show-block'>
-        <a class='pjaxload' href='/binary-static/ar/get-started-jp.html'>ابدأ</a>
-      </li>
-      <li class=' '>
-        <a class='pjaxload' href='/binary-static/ar/tour.html'>جولة</a>
-      </li>
-      <li class='item' id='topMenuBetaInterface'>
-        <a class='link pjaxload' href='/binary-static/ar/trading.html' target=''>بدء التداول</a>
-      </li>
-      <li class='item by_client_type client_real client_virtual' id='topMenuMyAccount'>
-        <a class='link with_login_cookies pjaxload' href='/binary-static/ar/user/my_accountws.html' target=''>حسابي</a>
-        <ul class='sub_items'>
-          <li class='sub_item' id='topMenuPortfolio'>
-            <a class='link with_login_cookies pjaxload' href='/binary-static/ar/user/portfoliows.html' target=''>المحفظة</a>
-          </li>
-          <li class='sub_item' id='topMenuProfitTable'>
-            <a class='link with_login_cookies pjaxload' href='/binary-static/ar/user/profit_tablews.html' target=''>جدول الأرباح</a>
-          </li>
-          <li class='sub_item' id='topMenuStatement'>
-            <a class='link with_login_cookies pjaxload' href='/binary-static/ar/user/statementws.html' target=''>كشف الحساب</a>
-          </li>
-          <li class='sub_item' id='topMenuChangePassword'>
-            <a class='link with_login_cookies pjaxload' href='/binary-static/ar/user/change_passwordws.html' target=''>كلمة مرور</a>
-          </li>
-          <li class='sub_item' id='topMenuAccountSettings'>
-            <a class='link with_login_cookies pjaxload' href='/binary-static/ar/user/settingsws.html' target=''>الإعدادات</a>
-          </li>
-          <li class='sub_item ja-hide' id='topMenuBecomeAffiliate'>
-            <a class='link pjaxload' href='/binary-static/ar/affiliate/signup.html' target=''>الإنتساب</a>
-          </li>
-          <li class='sub_item by_client_type client_real' id='topMenuAuthenticateAccount'>
-            <a class='link with_login_cookies pjaxload' href='/binary-static/ar/user/authenticatews.html' target=''>التوثيق</a>
-          </li>
-        </ul>
-      </li>
-      <li class='item' id='topMenuCashier'>
-        <a class='link pjaxload' href='/binary-static/ar/cashier.html' target=''>الصراف</a>
-      </li>
-      <li class='item' id='topMenuResources'>
-        <a class='link pjaxload' href='/binary-static/ar/resources.html' target=''>مصادر</a>
-        <ul class='sub_items'>
-          <li class='sub_item ja-hide' id='topMenuAssetIndex'>
-            <a class='link pjaxload' href='/binary-static/ar/resources/asset_indexws.html' target=''>مؤشر الأصول</a>
-          </li>
-          <li class='sub_item' id='topMenuTradingTimes'>
-            <a class='link pjaxload' href='/binary-static/ar/resources/market_timesws.html' target=''>أوقات التداول</a>
-          </li>
-        </ul>
-      </li>
-      <li class='item' id='topMenuApplications'>
-        <a class='link ja-hide pjaxload' href='/binary-static/ar/applications.html' target=''>تطبيقات</a>
-      </li>
-    </ul>
-  </div>
+    </div>
+    <div id="content-holder">
+    <div id="main-menu" class="tab-menu">
+    <div class="tab-menu-wrap container gr-hide-m gr-hide-p">
+        <div class="gr-12 gr-no-gutter">
+            <ul class="items">  <li id="topMenuBetaInterface" class="item ">
+                    <a class="link pjaxload" target="" href="/binary-static/ar/trading.html">بدء التداول</a>
+                    
+                </li>  <li id="topMenuMyAccount" class="item by_client_type client_real client_virtual">
+                    <a class="link with_login_cookies pjaxload" target="" href="/binary-static/ar/user/my_accountws.html">حسابي</a>
+                    
+                        <ul class="sub_items">  <li id="topMenuPortfolio" class="sub_item">
+                                <a class="link with_login_cookies pjaxload" target="" href="/binary-static/ar/user/portfoliows.html">المحفظة</a>
+                            </li>  <li id="topMenuProfitTable" class="sub_item">
+                                <a class="link with_login_cookies pjaxload" target="" href="/binary-static/ar/user/profit_tablews.html">جدول الأرباح</a>
+                            </li>  <li id="topMenuStatement" class="sub_item">
+                                <a class="link with_login_cookies pjaxload" target="" href="/binary-static/ar/user/statementws.html">كشف الحساب</a>
+                            </li>  <li id="topMenuChangePassword" class="sub_item">
+                                <a class="link with_login_cookies pjaxload" target="" href="/binary-static/ar/user/change_passwordws.html">كلمة مرور</a>
+                            </li>  <li id="topMenuAccountSettings" class="sub_item">
+                                <a class="link with_login_cookies pjaxload" target="" href="/binary-static/ar/user/settingsws.html">الإعدادات</a>
+                            </li>  <li id="topMenuBecomeAffiliate" class="sub_item ja-hide">
+                                <a class="link pjaxload" target="" href="/binary-static/ar/affiliate/signup.html">الإنتساب</a>
+                            </li>  <li id="topMenuAuthenticateAccount" class="sub_item by_client_type client_real ja-hide">
+                                <a class="link with_login_cookies pjaxload" target="" href="/binary-static/ar/user/authenticatews.html">التوثيق</a>
+                            </li>  </ul>
+                    
+                </li>  <li id="topMenuCashier" class="item ">
+                    <a class="link pjaxload" target="" href="/binary-static/ar/cashier.html">الصراف</a>
+                    
+                </li>  <li id="topMenuResources" class="item ">
+                    <a class="link pjaxload" target="" href="/binary-static/ar/resources.html">مصادر</a>
+                    
+                        <ul class="sub_items">  <li id="topMenuAssetIndex" class="sub_item ja-hide">
+                                <a class="link pjaxload" target="" href="/binary-static/ar/resources/asset_indexws.html">مؤشر الأصول</a>
+                            </li>  <li id="topMenuTradingTimes" class="sub_item">
+                                <a class="link pjaxload" target="" href="/binary-static/ar/resources/market_timesws.html">أوقات التداول</a>
+                            </li>  </ul>
+                    
+                </li>  <li id="topMenuShop" class="item ja-hide">
+                    <a class="link" target="_blank" href="https://shop.binary.com">Shop</a>
+                    
+                </li>  </ul>
+        </div>
+    </div>
 </div>
+    <div class='gr-hide gr-show-m gr-show-p' id='mobile-menu-container'>
+    <div class='gr-hide' id='mobile-menu'>
+        <ul>
+            <li>
+                <a class="pjaxload" href="/binary-static/ar/why-us.html">لماذا نحن؟</a>
+            </li>
+            <li class="ja-hide">
+              <a class="pjaxload" href="/binary-static/ar/get-started.html">ابدأ</a>
+            </li>
+            <li class="all-hide ja-show-block">
+                <a class="pjaxload" href="/binary-static/ar/get-started-jp.html">ابدأ</a>
+            </li>
+            <li>
+                <a class="pjaxload" href="/binary-static/ar/tour.html">جولة</a>
+            </li>  <li id="topMenuBetaInterface" class="item">
+                <a class="pjaxload link pjaxload" href="/binary-static/ar/trading.html">بدء التداول</a>
+                
+            </li>  <li id="topMenuMyAccount" class="item by_client_type client_real client_virtual">
+                <a class="pjaxload link with_login_cookies pjaxload" href="/binary-static/ar/user/my_accountws.html">حسابي</a>
+                
+                    <ul class="sub_items">  <li id="topMenuPortfolio" class="sub_item">
+                            <a class="pjaxload link with_login_cookies pjaxload" href="/binary-static/ar/user/portfoliows.html">المحفظة</a>
+                        </li>  <li id="topMenuProfitTable" class="sub_item">
+                            <a class="pjaxload link with_login_cookies pjaxload" href="/binary-static/ar/user/profit_tablews.html">جدول الأرباح</a>
+                        </li>  <li id="topMenuStatement" class="sub_item">
+                            <a class="pjaxload link with_login_cookies pjaxload" href="/binary-static/ar/user/statementws.html">كشف الحساب</a>
+                        </li>  <li id="topMenuChangePassword" class="sub_item">
+                            <a class="pjaxload link with_login_cookies pjaxload" href="/binary-static/ar/user/change_passwordws.html">كلمة مرور</a>
+                        </li>  <li id="topMenuAccountSettings" class="sub_item">
+                            <a class="pjaxload link with_login_cookies pjaxload" href="/binary-static/ar/user/settingsws.html">الإعدادات</a>
+                        </li>  <li id="topMenuBecomeAffiliate" class="sub_item ja-hide">
+                            <a class="pjaxload link pjaxload" href="/binary-static/ar/affiliate/signup.html">الإنتساب</a>
+                        </li>  <li id="topMenuAuthenticateAccount" class="sub_item by_client_type client_real ja-hide">
+                            <a class="pjaxload link with_login_cookies pjaxload" href="/binary-static/ar/user/authenticatews.html">التوثيق</a>
+                        </li>  </ul>
+                
+            </li>  <li id="topMenuCashier" class="item">
+                <a class="pjaxload link pjaxload" href="/binary-static/ar/cashier.html">الصراف</a>
+                
+            </li>  <li id="topMenuResources" class="item">
+                <a class="pjaxload link pjaxload" href="/binary-static/ar/resources.html">مصادر</a>
+                
+                    <ul class="sub_items">  <li id="topMenuAssetIndex" class="sub_item ja-hide">
+                            <a class="pjaxload link pjaxload" href="/binary-static/ar/resources/asset_indexws.html">مؤشر الأصول</a>
+                        </li>  <li id="topMenuTradingTimes" class="sub_item">
+                            <a class="pjaxload link pjaxload" href="/binary-static/ar/resources/market_timesws.html">أوقات التداول</a>
+                        </li>  </ul>
+                
+            </li>  <li id="topMenuShop" class="item ja-hide">
+                <a class="pjaxload link " href="https://shop.binary.com">Shop</a>
+                
+            </li>  </ul>
+    </div>
+</div>
+    <!-- FlushHead -->
 
-        <div class='open-positions-content' id='content'>
-  <noscript>
-  <iframe src='//www.googletagmanager.com/ns.html?id=GTM-MZWFF7' height='0' width='0' style='display:none;visibility:hidden;'></iframe>
-</noscript>
-<script data-cfasync='false'>
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <div id="content" class="open-positions-content">
+        <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MZWFF7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MZWFF7');
-</script>
+})(window,document,'script','dataLayer','GTM-MZWFF7');</script>
+<!-- End Google Tag Manager -->
+        <div id="page_info" style="display:none;">
+            <title>المعاملات المفتوحة | Binary.com</title>
+            <div id="content_class">open-positions-content</div>
+        </div>
 
-  <div id='page_info' style='display: none;'>
-  <title>المعاملات المفتوحة | Binary.com</title>
-  <div id='content_class'>open-positions-content</div>
-  </div>
 
-  <div class='grd-container open-positions'>
-  <div class='grd-grid-12 grd-parent static_full'>
-    <div class='grd-grid-12 grd-row-padding'>
+  <div class="open-positions container">
+  <div class="gr-parent static_full">
+    <div class="gr-padding-10">
       <h1>المعاملات المفتوحة</h1>
     </div>
-    <div class='grd-grid-12 grd-row-padding' id='Information_Technology'>
-      <div class='grd-grid-3 grd-grid-mobile-12'>
-        <div class='grd-grid-12 grd-row-padding'>
-          <h2>تكنولوجيا المعلومات</h2>
-          <img class='responsive' src='/binary-static/images/pages/careers/Information_Technology.svg' />
+    <div class="gr-row gr-padding-10" id="Information_Technology">
+      <div class="gr-3 gr-12-m">
+        <div class="gr-12 gr-padding-10 center-text">
+          <h2>
+            تكنولوجيا المعلومات
+          </h2>
+          <img class="responsive" src="/binary-static/images/pages/careers/Information_Technology.svg"/>
         </div>
       </div>
-      <div class='grd-grid-9 grd-grid-mobile-12'>
-        <div class='eqWrap'>
-          <div class='eq'>
-            <h3>رئيس فريق / مديرديفوبس</h3>
-            <p>المسؤوليات تشمل نشر الأجهزة والبرمجيات، أمن الشبكات، وكشف التسلل، وموازنة الحمل.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Information_Technology#section-one'>تعرف على المزيد</a>
+      <div class="gr-9 gr-12-m">
+        <div class="eqWrap">
+          <div class="eq">
+            <h3>
+              رئيس فريق / مديرديفوبس
+            </h3>
+            <p>
+              المسؤوليات تشمل نشر الأجهزة والبرمجيات، أمن الشبكات، وكشف التسلل، وموازنة الحمل.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Information_Technology#section-one">
+              تعرف على المزيد
+            </a>
           </div>
-          <div class='eq'>
-            <h3>كبير مطوري الفرنت-اند</h3>
-            <p>مكلف بكتابة كود قوي, عالي الجودة, جاهز للإنتاج وكذلك إعادة هيكلة وتحسين قاعدة أكواد كبيرة وقديمة ومعقدة.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Information_Technology#section-two'>تعرف على المزيد</a>
+          <div class="eq">
+            <h3>
+              كبير مطوري الفرنت-اند
+            </h3>
+            <p>
+              مكلف بكتابة كود قوي, عالي الجودة, جاهز للإنتاج وكذلك إعادة هيكلة وتحسين قاعدة أكواد كبيرة وقديمة ومعقدة.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Information_Technology#section-two">
+              تعرف على المزيد
+            </a>
           </div>
-          <div class='eq'>
-            <h3 class='nowrap one-line'>كبير مطوري بيرل</h3>
-            <p>مكلف بكتابة كود قوي, عالي الجودة, جاهز للإنتاج والمشاركة في أسلوب بناء يعمل على دفع حركة المرور العالية الخاصة بموقعنا على الأنترنت.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Information_Technology#section-three'>تعرف على المزيد</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='grd-grid-12 grd-hide-mobile'>
-      <div class='separator-line'></div>
-    </div>
-    <div class='grd-grid-12 grd-row-padding' id='Quality_Assurance'>
-      <div class='grd-grid-3 grd-grid-mobile-12'>
-        <div class='grd-grid-12 grd-row-padding'>
-          <h2>ضمان الجودة</h2>
-          <img class='responsive' src='/binary-static/images/pages/careers/Quality_Assurance.svg' />
-        </div>
-      </div>
-      <div class='grd-grid-9 grd-grid-mobile-12'>
-        <div class='eqWrap'>
-          <div class='eq'>
-            <h3 class='nowrap'>مهندس ضمان الجودة</h3>
-            <p>تنفيذ وتحديث خطط الاختبار اليدوي والآلي والتأكد من سلامة الإصدارات، والتحقيق فيها واستخراج القضايا المبلغة من العملاء.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Quality_Assurance#section-one'>تعرف على المزيد</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='grd-grid-12 grd-hide-mobile'>
-      <div class='separator-line'></div>
-    </div>
-    <div class='grd-grid-12 grd-row-padding' id='Quantitative_Analysis'>
-      <div class='grd-grid-3 grd-grid-mobile-12'>
-        <div class='grd-grid-12 grd-row-padding'>
-          <h2>التحليل الكمي</h2>
-          <img class='responsive' src='/binary-static/images/pages/careers/Quantitative_Analysis.svg' />
-        </div>
-      </div>
-      <div class='grd-grid-9 grd-grid-mobile-12'>
-        <div class='eqWrap'>
-          <div class='eq'>
-            <h3>مطور كمي</h3>
-            <p>مسؤول عن إدارة المخاطر وتسعير المشتقات المالية للشركة، بما في ذلك التنفيذ والصيانة.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Quantitative_Analysis#section-one'>تعرف على المزيد</a>
-          </div>
-          <div class='eq'>
-            <h3>محلل كمي</h3>
-            <p>المسؤولة عن تسعير الخيارات الثنائية المقدمة على الموقع Binary.com وإدارة المخاطر والربحية لكتاب الخيارات.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Quantitative_Analysis#section-two'>تعرف على المزيد</a>
+          <div class="eq">
+            <h3 class="one-line nowrap">
+              كبير مطوري بيرل
+            </h3>
+            <p>
+              مكلف بكتابة كود قوي, عالي الجودة, جاهز للإنتاج والمشاركة في أسلوب بناء يعمل على دفع حركة المرور العالية الخاصة بموقعنا على الأنترنت.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Information_Technology#section-three">
+              تعرف على المزيد
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class='grd-grid-12 grd-hide-mobile'>
-      <div class='separator-line'></div>
+    <div class="gr-12 gr-hide-m">
+      <div class="separator-line"></div>
     </div>
-    <div class='grd-grid-12 grd-row-padding' id='Marketing'>
-      <div class='grd-grid-3 grd-grid-mobile-12'>
-        <div class='grd-grid-12 grd-row-padding'>
-          <h2>التسويق</h2>
-          <img class='responsive' src='/binary-static/images/pages/careers/Marketing.svg' />
+    <div class="gr-row gr-padding-10" id="Quality_Assurance">
+      <div class="gr-3 gr-12-m">
+        <div class="gr-12 gr-padding-10 center-text">
+          <h2>
+            ضمان الجودة
+          </h2>
+          <img class="responsive" src="/binary-static/images/pages/careers/Quality_Assurance.svg"/>
         </div>
       </div>
-      <div class='grd-grid-9 grd-grid-mobile-12'>
-        <div class='eqWrap'>
-          <div class='eq'>
-            <h3>منسق مشروع التسويق</h3>
-            <p>العمل مع كبار الموظفين لتنسيق تنفيذ المشاريع; تطوير وتحديث الجداول; عمليات التوثيق; ودفع المبادرات الرامية إلى الإنتهاء بنجاح.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-one'>تعرف على المزيد</a>
-          </div>
-          <div class='eq'>
-            <h3>موظف وسائل الإعلام الاجتماعية</h3>
-            <p>تعزيز وإدارة جهود وسائل التواصل الإجتماعي الخاصة بالشركة على نحو إستباقي, باستخدام مجموعة متنوعة من القنوات لجذب وتغذية الآفاق, العملاء, الشركاء, والموظفين.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-two'>تعرف على المزيد</a>
-          </div>
-          <div class='eq'>
-            <h3>مدير فرع</h3>
-            <p>دفع النمو السريع من المناطق الرئيسية حول العالم, لتطبيق مجموعة متنوعة من القدرات التسويقية سواء المتصلة أو غير المتصلة بالأنترنت, لتوسيع نشاط الشبكة التابعة للشركة.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-three'>تعرف على المزيد</a>
-          </div>
-          <div class='eq'>
-            <h3>مصممو جرافيك</h3>
-            <p>التصميم الجذاب, المحتوى الملهم بصرياً لموقع الشركة على الأنترنت والعديد من أشكال وسائل الإعلام الأخرى, بما في ذلك المتصلة وغير المتصلة بالأنترنت.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-four'>تعرف على المزيد</a>
-          </div>
-          <div class='eq'>
-            <h3>مديري التسويق</h3>
-            <p>ساهم بإبداعك وقدراتك التسويقية لتعزيز جهود العلامة التجارية للشركة, لتنفيذ مجموعة واسعة من الحملات الترويجية.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-five'>تعرف على المزيد</a>
-          </div>
-          <div class='eq'>
-            <h3>المؤلف</h3>
-            <p>إنشاء محتوى واضح وموجز وجذاب للترويج بفاعلية لمنصة تداول الشركة وعروض المنتجات في مجموعة متنوعة من الأشكال.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-six'>تعرف على المزيد</a>
-          </div>
-          <div class='eq'>
-            <h3>المترجم</h3>
-            <p>Work with colleagues in IT, Customer Support, and Marketing to provide localised text for our global website, blog, social media outlets, and promotional materials.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-seven'>تعرف على المزيد</a>
-          </div>
-          <div class='eq'>
-            <h3>مصحّح</h3>
-            <p>تطبيق على عين دقيقة للتفاصيل في تصحيح التجارب المطبعية المحتوى الذي يظهر على موقع الشركة، والمدونات، وسائل الإعلام الاجتماعية ، ومواد التسويق.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-eight'>تعرف على المزيد</a>
+      <div class="gr-9 gr-12-m">
+        <div class="eqWrap">
+          <div class="eq">
+            <h3 class="nowrap">
+              مهندس ضمان الجودة
+            </h3>
+            <p>
+              تنفيذ وتحديث خطط الاختبار اليدوي والآلي والتأكد من سلامة الإصدارات، والتحقيق فيها واستخراج القضايا المبلغة من العملاء.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Quality_Assurance#section-one">
+              تعرف على المزيد
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class='grd-grid-12 grd-hide-mobile'>
-      <div class='separator-line'></div>
+    <div class="gr-12 gr-hide-m">
+      <div class="separator-line"></div>
     </div>
-    <div class='grd-grid-12 grd-row-padding' id='Accounting'>
-      <div class='grd-grid-3 grd-grid-mobile-12'>
-        <div class='grd-grid-12 grd-row-padding'>
-          <h2>المحاسبة</h2>
-          <img class='responsive' src='/binary-static/images/pages/careers/Accounting.svg' />
+    <div class="gr-row gr-padding-10" id="Quantitative_Analysis">
+      <div class="gr-3 gr-12-m">
+        <div class="gr-12 gr-padding-10 center-text">
+          <h2>
+            التحليل الكمي
+          </h2>
+          <img class="responsive" src="/binary-static/images/pages/careers/Quantitative_Analysis.svg"/>
         </div>
       </div>
-      <div class='grd-grid-9 grd-grid-mobile-12'>
-        <div class='eqWrap'>
-          <div class='eq'>
-            <h3>الحسابات والمدفوعات التنفيذية</h3>
-            <p>المسؤولة عن معالجة مدفوعات العميل، والمساعدة في إدارة حسابات الشركات داخل مجموعتنا، والمزيد.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Accounting#section-one'>تعرف على المزيد</a>
+      <div class="gr-9 gr-12-m">
+        <div class="eqWrap">
+          <div class="eq">
+            <h3>
+              مطور كمي
+            </h3>
+            <p>
+              مسؤول عن إدارة المخاطر وتسعير المشتقات المالية للشركة، بما في ذلك التنفيذ والصيانة.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Quantitative_Analysis#section-one">
+              تعرف على المزيد
+            </a>
+          </div>
+          <div class="eq">
+            <h3>
+              محلل كمي
+            </h3>
+            <p>
+              المسؤولة عن تسعير الخيارات الثنائية المقدمة على الموقع Binary.com وإدارة المخاطر والربحية لكتاب الخيارات.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Quantitative_Analysis#section-two">
+              تعرف على المزيد
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class='grd-grid-12 grd-hide-mobile'>
-      <div class='separator-line'></div>
+    <div class="gr-12 gr-hide-m">
+      <div class="separator-line"></div>
     </div>
-    <div class='grd-grid-12 grd-row-padding' id='Compliance'>
-      <div class='grd-grid-3 grd-grid-mobile-12'>
-        <div class='grd-grid-12 grd-row-padding'>
-          <h2>الامتثال</h2>
-          <img class='responsive' src='/binary-static/images/pages/careers/Compliance.svg' />
+    <div class="gr-row gr-padding-10" id="Marketing">
+      <div class="gr-3 gr-12-m">
+        <div class="gr-12 gr-padding-10 center-text">
+          <h2>
+            التسويق
+          </h2>
+          <img class="responsive" src="/binary-static/images/pages/careers/Marketing.svg"/>
         </div>
       </div>
-      <div class='grd-grid-9 grd-grid-mobile-12'>
-        <div class='eqWrap'>
-          <div class='eq'>
-            <h3>موظف امتثال تنفيذي</h3>
-            <p>ضمان أن مجموعة  شركات بيناري تمتثل بالكامل للنظم القانونية والتنظيمية التي تخضع لها.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Compliance#section-one'>تعرف على المزيد</a>
+      <div class="gr-9 gr-12-m">
+        <div class="eqWrap">
+          <div class="eq">
+            <h3>
+              منسق مشروع التسويق
+            </h3>
+            <p>
+              العمل مع كبار الموظفين لتنسيق تنفيذ المشاريع; تطوير وتحديث الجداول; عمليات التوثيق; ودفع المبادرات الرامية إلى الإنتهاء بنجاح.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-one">
+              تعرف على المزيد
+            </a>
           </div>
-          <div class='eq'>
-            <h3>موظف لمكافحة الغش</h3>
-            <p>ممارسة مهارات استثنائية لإدارة العلاقة مع العملاء لمنع الأنشطة الاحتيالية في تجهيز المدفوعات والمعاملات.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Compliance#section-two'>تعرف على المزيد</a>
+          <div class="eq">
+            <h3>
+              موظف وسائل الإعلام الاجتماعية
+            </h3>
+            <p>
+              تعزيز وإدارة جهود وسائل التواصل الإجتماعي الخاصة بالشركة على نحو إستباقي, باستخدام مجموعة متنوعة من القنوات لجذب وتغذية الآفاق, العملاء, الشركاء, والموظفين.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-two">
+              تعرف على المزيد
+            </a>
+          </div>
+          <div class="eq">
+            <h3>
+              مدير فرع
+            </h3>
+            <p>
+              دفع النمو السريع من المناطق الرئيسية حول العالم, لتطبيق مجموعة متنوعة من القدرات التسويقية سواء المتصلة أو غير المتصلة بالأنترنت, لتوسيع نشاط الشبكة التابعة للشركة.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-three">
+              تعرف على المزيد
+            </a>
+          </div>
+          <div class="eq">
+            <h3>
+              مصممو جرافيك
+            </h3>
+            <p>
+              التصميم الجذاب, المحتوى الملهم بصرياً لموقع الشركة على الأنترنت والعديد من أشكال وسائل الإعلام الأخرى, بما في ذلك المتصلة وغير المتصلة بالأنترنت.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-four">
+              تعرف على المزيد
+            </a>
+          </div>
+          <div class="eq">
+            <h3>
+              مديري التسويق
+            </h3>
+            <p>
+              Contribute your creativity and marketing capabilities to further the company's branding efforts, implementing a broad array of promotional campaigns.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-five">
+              تعرف على المزيد
+            </a>
+          </div>
+          <div class="eq">
+            <h3>
+              المؤلف
+            </h3>
+            <p>
+              Create clear, concise, and engaging content that effectively promotes the company's trading platform and product offerings in a variety of formats.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-six">
+              تعرف على المزيد
+            </a>
+          </div>
+          <div class="eq">
+            <h3>
+              المترجم
+            </h3>
+            <p>
+              العمل مع الزملاء في تكنولوجيا المعلومات ودعم العملاء والتسويق لتقديم النصوص المحددة لموقعنا العالمي على شبكة الأنترنت والمدونة ومنصات التواصل الإجتماعي والمواد الترويجية.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-seven">
+              تعرف على المزيد
+            </a>
+          </div>
+          <div class="eq">
+            <h3>
+              مصحّح
+            </h3>
+            <p>
+              Apply a meticulous eye for detail in proofreading the content that appears on the company's website, blog, social media outlets, and marketing materials.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Marketing#section-eight">
+              تعرف على المزيد
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class='grd-grid-12 grd-hide-mobile'>
-      <div class='separator-line'></div>
+    <div class="gr-12 gr-hide-m">
+      <div class="separator-line"></div>
     </div>
-    <div class='grd-grid-12 grd-row-padding' id='Customer_Support'>
-      <div class='grd-grid-3 grd-grid-mobile-12'>
-        <div class='grd-grid-12 grd-row-padding'>
-          <h2>دعم العملاء</h2>
-          <img class='responsive' src='/binary-static/images/pages/careers/Customer_Support.svg' />
+    <div class="gr-row gr-padding-10" id="Accounting">
+      <div class="gr-3 gr-12-m">
+        <div class="gr-12 gr-padding-10 center-text">
+          <h2>
+            المحاسبة
+          </h2>
+          <img class="responsive" src="/binary-static/images/pages/careers/Accounting.svg"/>
         </div>
       </div>
-      <div class='grd-grid-9 grd-grid-mobile-12'>
-        <div class='eqWrap'>
-          <div class='eq'>
-            <h3>ممثلي خدمة العملاء</h3>
-            <p>كعضو في فريق خدمة العملاء العالمية لدينا سوف تكون كصوت لعملائنا بحل، والحد من المشكلات المتعلقة بخدمة العملاء.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Customer_Support#section-one'>تعرف على المزيد</a>
+      <div class="gr-9 gr-12-m">
+        <div class="eqWrap">
+          <div class="eq">
+            <h3>
+              الحسابات والمدفوعات التنفيذية
+            </h3>
+            <p>
+              المسؤولة عن معالجة مدفوعات العميل، والمساعدة في إدارة حسابات الشركات داخل مجموعتنا، والمزيد.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Accounting#section-one">
+              تعرف على المزيد
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class='grd-grid-12 grd-hide-mobile'>
-      <div class='separator-line'></div>
+    <div class="gr-12 gr-hide-m">
+      <div class="separator-line"></div>
     </div>
-    <div class='grd-grid-12 grd-row-padding' id='Human_Resources'>
-      <div class='grd-grid-3 grd-grid-mobile-12'>
-        <div class='grd-grid-12 grd-row-padding'>
-          <h2>الموارد البشرية</h2>
-          <img class='responsive' src='/binary-static/images/pages/careers/Human_Resources.svg' />
+    <div class="gr-row gr-padding-10" id="Compliance">
+      <div class="gr-3 gr-12-m">
+        <div class="gr-12 gr-padding-10 center-text">
+          <h2>
+            الامتثال
+          </h2>
+          <img class="responsive" src="/binary-static/images/pages/careers/Compliance.svg"/>
         </div>
       </div>
-      <div class='grd-grid-9 grd-grid-mobile-12'>
-        <div class='eqWrap'>
-          <div class='eq'>
-            <h3>تنفيذي الموارد البشرية</h3>
-            <p>المسؤولية عن دعم احتياجات إدارة التوظيف والمواهب العالمية للمجموعة وكذلك مجموعة واسعة من المهام الإدارية المتعلقة بالموارد البشرية.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Human_Resources#section-one'>تعرف على المزيد</a>
+      <div class="gr-9 gr-12-m">
+        <div class="eqWrap">
+          <div class="eq">
+            <h3>
+              موظف امتثال تنفيذي
+            </h3>
+            <p>
+              ضمان أن مجموعة  شركات بيناري تمتثل بالكامل للنظم القانونية والتنظيمية التي تخضع لها.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Compliance#section-one">
+              تعرف على المزيد
+            </a>
+          </div>
+          <div class="eq">
+            <h3>
+              موظف لمكافحة الغش
+            </h3>
+            <p>
+              ممارسة مهارات استثنائية لإدارة العلاقة مع العملاء لمنع الأنشطة الاحتيالية في تجهيز المدفوعات والمعاملات.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Compliance#section-two">
+              تعرف على المزيد
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class='grd-grid-12 grd-hide-mobile'>
-      <div class='separator-line'></div>
+    <div class="gr-12 gr-hide-m">
+      <div class="separator-line"></div>
     </div>
-    <div class='grd-grid-12 grd-row-padding' id='Administrator'>
-      <div class='grd-grid-3 grd-grid-mobile-12'>
-        <div class='grd-grid-12 grd-row-padding'>
-          <h2>المسؤول</h2>
-          <img class='responsive' src='/binary-static/images/pages/careers/Administrator.svg' />
+    <div class="gr-row gr-padding-10" id="Customer_Support">
+      <div class="gr-3 gr-12-m">
+        <div class="gr-12 gr-padding-10 center-text">
+          <h2>
+            دعم العملاء
+          </h2>
+          <img class="responsive" src="/binary-static/images/pages/careers/Customer_Support.svg"/>
         </div>
       </div>
-      <div class='grd-grid-9 grd-grid-mobile-12'>
-        <div class='eqWrap'>
-          <div class='eq'>
-            <h3>التنفيذي الإداري</h3>
-            <p>تقديم الدعم الإداري في المجالات المتصلة بإدارة الموارد والتخطيط، والمحاسبة، وإدارة الموارد البشرية.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Administrator#section-one'>تعرف على المزيد</a>
+      <div class="gr-9 gr-12-m">
+        <div class="eqWrap">
+          <div class="eq">
+            <h3>
+              ممثلي خدمة العملاء
+            </h3>
+            <p>
+              كعضو في فريق خدمة العملاء العالمية لدينا سوف تكون كصوت لعملائنا بحل، والحد من المشكلات المتعلقة بخدمة العملاء.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Customer_Support#section-one">
+              تعرف على المزيد
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class='grd-grid-12 grd-hide-mobile'>
-      <div class='separator-line'></div>
+    <div class="gr-12 gr-hide-m">
+      <div class="separator-line"></div>
     </div>
-    <div class='grd-grid-12 grd-row-padding' id='Internal_Audit'>
-      <div class='grd-grid-3 grd-grid-mobile-12'>
-        <div class='grd-grid-12 grd-row-padding'>
-          <h2>المراجعة الداخلية</h2>
-          <img class='responsive' src='/binary-static/images/pages/careers/Internal_Audit.svg' />
+    <div class="gr-row gr-padding-10" id="Human_Resources">
+      <div class="gr-3 gr-12-m">
+        <div class="gr-12 gr-padding-10 center-text">
+          <h2>
+            الموارد البشرية
+          </h2>
+          <img class="responsive" src="/binary-static/images/pages/careers/Human_Resources.svg"/>
         </div>
       </div>
-      <div class='grd-grid-9 grd-grid-mobile-12'>
-        <div class='eqWrap'>
-          <div class='eq'>
-            <h3>مراجع حسابات داخلي</h3>
-            <p>المشاركة في تقييم إدارة المخاطر والامتثال التنظيمي. العمل مع رئيس الإدارات لتحسين العمليات التجارية.</p>
-            <a class='pjaxload' href='/binary-static/ar/open-positions/job-details.html?dept=Internal_Audit#section-one'>تعرف على المزيد</a>
+      <div class="gr-9 gr-12-m">
+        <div class="eqWrap">
+          <div class="eq">
+            <h3>
+              تنفيذي الموارد البشرية
+            </h3>
+            <p>
+              Responsible for supporting the Group's global recruiting and talent management needs and a broad array of HR-related administrative tasks.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Human_Resources#section-one">
+              تعرف على المزيد
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gr-12 gr-hide-m">
+      <div class="separator-line"></div>
+    </div>
+    <div class="gr-row gr-padding-10" id="Administrator">
+      <div class="gr-3 gr-12-m">
+        <div class="gr-12 gr-padding-10 center-text">
+          <h2>
+            المسؤول
+          </h2>
+          <img class="responsive" src="/binary-static/images/pages/careers/Administrator.svg"/>
+        </div>
+      </div>
+      <div class="gr-9 gr-12-m">
+        <div class="eqWrap">
+          <div class="eq">
+            <h3>
+              التنفيذي الإداري
+            </h3>
+            <p>
+              تقديم الدعم الإداري في المجالات المتصلة بإدارة الموارد والتخطيط، والمحاسبة، وإدارة الموارد البشرية.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Administrator#section-one">
+              تعرف على المزيد
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gr-12 gr-hide-m">
+      <div class="separator-line"></div>
+    </div>
+    <div class="gr-row gr-padding-10" id="Internal_Audit">
+      <div class="gr-3 gr-12-m">
+        <div class="gr-12 gr-padding-10 center-text">
+          <h2>
+            المراجعة الداخلية
+          </h2>
+          <img class="responsive" src="/binary-static/images/pages/careers/Internal_Audit.svg"/>
+        </div>
+      </div>
+      <div class="gr-9 gr-12-m">
+        <div class="eqWrap">
+          <div class="eq">
+            <h3>
+              مراجع حسابات داخلي
+            </h3>
+            <p>
+              المشاركة في تقييم إدارة المخاطر والامتثال التنظيمي. العمل مع رئيس الإدارات لتحسين العمليات التجارية.
+            </p>
+            <a class="pjaxload" href="/binary-static/ar/open-positions/job-details.html?dept=Internal_Audit#section-one">
+              تعرف على المزيد
+            </a>
           </div>
         </div>
       </div>
@@ -553,203 +699,217 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 </div>
 
-  <div class='push'></div>
+
+  </div> 
 </div>
-
-      </div>
-      <div id='footer'>
-  <div id='footer-menu'>
-    <div class='grd-container grd-default-container'>
-      <div class='grd-grid-6 grd-grid-mobile-12 grd-parent'>
-        <div class='grd-grid-4'>
-          <h1>شركتنا</h1>
-          <ul>
-            <li>
-              <a class='pjaxload pjaxload' href='/binary-static/ar/about-us.html'>من نحن</a>
-            </li>
-            <li>
-              <a class='ar-hide id-hide pjaxload pjaxload' href='/binary-static/ar/group-information.html'>معلومات عن المجموعة</a>
-            </li>
-            <li>
-              <a class='pjaxload pjaxload' href='/binary-static/ar/group-history.html'>تاريخ المجموعة</a>
-            </li>
-            <li class='ja-hide'>
-              <a class='pjaxload' href='/binary-static/ar/careers.html'>المهن</a>
-            </li>
-            <li class='ja-hide'>
-              <a href='http://binarycom.statuspage.io' target='_blank'>حالة الشبكة</a>
-            </li>
-            <li>
-              <a class='pjaxload' href='/binary-static/ar/contact.html'>اتصل بنا</a>
-            </li>
-          </ul>
+<div id="footer">
+    <div id="footer-menu">
+        <div class="container">
+            <div class="gr-row gr-padding-10">
+                <div class="gr-6 gr-12-m gr-parent">
+                    <div class="gr-row">
+                        <div class="gr-4">
+                            <h1>شركتنا</h1>
+                            <ul>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/ar/about-us.html">من نحن</a>
+                                </li>
+                                <li>
+                                    <a class="pjaxload id-hide ar-hide" href="/binary-static/ar/group-information.html">معلومات عن المجموعة</a>
+                                </li>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/ar/group-history.html">تاريخ المجموعة</a>
+                                </li>
+                                <li class="ja-hide">
+                                    <a class="pjaxload" href="/binary-static/ar/careers.html">المهن</a>
+                                </li>
+                                <li class="ja-hide">
+                                    <a href="http://binarycom.statuspage.io" target="_blank">حالة الشبكة</a>
+                                </li>
+                                <li class="ja-hide id-hide">
+                                    <a href="/binary-static/ar/legal/us_patents.html" class="us_patent_link pjaxload">براءات الأختراع</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gr-4">
+                            <h1>تعلم</h1>
+                            <ul>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/ar/why-us.html">لماذا نحن؟</a>
+                                </li>
+                                <li class="ja-hide">
+                                    <a class="pjaxload" href="/binary-static/ar/get-started.html">كيف تبدأ</a>
+                                </li>
+                                <li class="all-hide ja-show-block">
+                                    <a class="pjaxload" href="/binary-static/ar/get-started-jp.html">كيف تبدأ</a>
+                                </li>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/ar/tour.html">جولة في المنصة</a>
+                                </li>
+                                <li class="ja-hide id-hide">
+                                    <a href="http://www.gamcare.org.uk/" target="_blank">جامكير</a>
+                                </li>
+                                <li class="ja-hide blog">
+                                    <a href="http://blog.binary.com" target="_blank">المدونة</a>
+                                </li>
+                                <li class='ja-hide id-hide'>
+                                    <a href="http://blog.binary.com/en/webinar/" target="_blank">ندوات عبر الأنترنت</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gr-4">
+                            <h1 class="ja-hide">التداول</h1>
+                            <ul class="ja-hide">
+                                <li class="ja-hide">
+                                    <a class="pjaxload" href="/binary-static/ar/resources/asset_indexws.html">مؤشر الأصول</a>
+                                </li>
+                            </ul>
+                            <div class='gr-padding-10 gr-no-gutter'>
+                                <h1>مصرفي</h1>
+                                <ul>
+                                    <li>
+                                        <a class="pjaxload" href="/binary-static/ar/cashier.html">الصراف</a>
+                                    </li>
+                                    <li class="ja-hide">
+                                        <a class="pjaxload" href="/binary-static/ar/cashier/payment_methods.html">وسائل الدفع</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gr-6 gr-12-m gr-parent">
+                    <div class="gr-row">
+                        <div class="gr-4">
+                           <h1>الشروط</h1>
+                           <ul>
+                               <li class='ja-hide'>
+                                   <a class="pjaxload" href="/binary-static/ar/terms-and-conditions.html">الشروط والأحكام</a>
+                               </li>
+                               <li class='hidden ja-show-block'>
+                                   <a class="pjaxload" href="/binary-static/ar/terms-and-conditions-jp.html">الشروط والأحكام</a>
+                               </li>
+                               <li class='ja-hide'>
+                                   <a class="pjaxload"
+                                      href="/binary-static/ar/terms-and-conditions.html#privacy-tab">الأمان والخصوصية</a>
+                               </li>
+                               <li class='hidden ja-show-block'>
+                                   <a class="pjaxload"
+                                      href="/binary-static/ar/terms-and-conditions-jp.html?selected_tab=privacy-tab">الأمان والخصوصية</a>
+                               </li>
+                               <li class="ja-hide">
+                                   <a class="pjaxload" href="/binary-static/ar/responsible-trading.html">التداول المسؤول</a>
+                               </li>
+                               <li class="ja-hide">
+                               <a class="pjaxload" href="/binary-static/ar/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">شكاوي</a>
+                               </li>
+                               <li class="ja-hide id-hide ru-hide">
+                                   <a href="/binary-static/download/BIEL_Prospectus.pdf" target="_blank">BIEL Prospectus</a>
+                               </li>
+                               <li class="ja-hide id-hide ru-hide">
+                                   <a href="/binary-static/download/BIEL_Pillar_3_Report.pdf" target="_blank">BIEL Pillar III</a>
+                               </li>
+                           </ul>
+                       </div>
+                       <div class="gr-4">
+                           <h1>Charts</h1>
+                           <ul>
+                               <li class="ja-hide">
+                                   <a class="pjaxload" href="//webtrader.binary.com" target="_blank">ويب تريدر(Webtrader)</a>
+                               </li>
+                               <li>
+                                   <a class="pjaxload" href="//tradingview.binary.com" target="_blank">تريدينج فيو (TradingView)</a>
+                               </li>
+                           </ul>
+                       </div>
+                       <div class="gr-4">
+                           <h1 class="ja-hide">شريك معنا</h1>
+                           <ul class="ja-hide partner">
+                               <li>
+                                   <a class="pjaxload" href="/binary-static/ar/partners.html"><img id="iom_icon_footer" class="responsive" src="/binary-static/images/pages/footer/partner-icon.svg"/></a>
+                               </li>
+                           </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class='grd-grid-4'>
-          <h1>تعلم</h1>
-          <ul>
-            <li>
-              <a class='pjaxload pjaxload' href='/binary-static/ar/why-us.html'>لماذا نحن؟</a>
-            </li>
-            <li class='ja-hide'>
-              <a class='pjaxload pjaxload' href='/binary-static/ar/get-started.html'>كيف تبدأ</a>
-            </li>
-            <li class='all-hide ja-show-block'>
-              <a class='pjaxload pjaxload' href='/binary-static/ar/get-started-jp.html'>كيف تبدأ</a>
-            </li>
-            <li>
-              <a class='pjaxload pjaxload' href='/binary-static/ar/tour.html'>جولة في المنصة</a>
-            </li>
-            <li class='id-hide ja-hide'>
-              <a href='http://www.gamcare.org.uk/' target='_blank'>جامكير</a>
-            </li>
-            <li class='blog ja-hide'>
-              <a href='http://blog.binary.com' target='_blank'>المدونة</a>
-            </li>
-            <li class='id-hide ja-hide'>
-              <a href='http://blog.binary.com/en/webinar/' target='_blank'>ندوات عبر الأنترنت</a>
-            </li>
-          </ul>
-        </div>
-        <div class='grd-grid-4'>
-          <h1 class='ja-hide'>التداول</h1>
-          <ul class='ja-hide'>
-            <li class='ja-hide'>
-              <a class='pjaxload' href='/binary-static/ar/resources/asset_indexws.html'>مؤشر الأصول</a>
-            </li>
-          </ul>
-          <div class='grd-row-padding ja-no-padding'>
-            <h1>مصرفي</h1>
-            <ul>
-              <li>
-                <a class='pjaxload' href='/binary-static/ar/cashier.html'>الصراف</a>
-              </li>
-              <li class='ja-hide'>
-                <a class='pjaxload' href='/binary-static/ar/cashier/payment_methods.html'>وسائل الدفع</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class='grd-grid-6 grd-grid-mobile-12 grd-parent'>
-        <div class='grd-grid-4'>
-            <h1>الشروط</h1>
-              <ul>
-                <li class='ja-hide'>
-                  <a class='pjaxload' href='/binary-static/ar/terms-and-conditions.html'>الشروط والأحكام</a>
-                </li>
-                <li class='hidden ja-show-block'>
-                  <a class='pjaxload' href='/binary-static/ar/terms-and-conditions-jp.html'>الشروط والأحكام</a>
-                </li>
-                <li class='ja-hide'>
-                  <a class='pjaxload' href='/binary-static/ar/terms-and-conditions.html#privacy-tab'>الأمان والخصوصية</a>
-                </li>
-                <li class='hidden ja-show-block'>
-                  <a class='pjaxload' href='/binary-static/ar/terms-and-conditions-jp.html?selected_tab=privacy-tab'>الأمان والخصوصية</a>
-                </li>
-                <li class='ja-hide'>
-                  <a class='pjaxload' href='/binary-static/ar/responsible-trading.html'>التداول المسؤول</a>
-                </li>
-                <li class='ja-hide'>
-                  <a class='pjaxload' href='/binary-static/ar/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab'>شكاوي</a>
-                </li>
-                <li class='id-hide ja-hide ru-hide'>
-                  <a class='pjaxload' href='/binary-static/download/BIEL_Prospectus.pdf' target='_blank'>نشرة تمهيدية</a>
-                </li>
-                <li class='id-hide ja-hide'>
-                  <a class='pjaxload us_patent_link' href='/binary-static/ar/legal/us_patents.html'>براءات الأختراع</a>
-                </li>
-              </ul>
-        </div>
-        <div class='grd-grid-4'>
-          <h1>بيانات السوق</h1>
-          <ul>
-            <li class='ja-hide'>
-              <a class='pjaxload' href='//webtrader.binary.com' target='_blank'>ويب تريدر(Webtrader)</a>
-            </li>
-            <li>
-              <a class='pjaxload' href='//tradingview.binary.com' target='_blank'>تريدينج فيو (TradingView)</a>
-            </li>
-          </ul>
-        </div>
-        <div class='grd-grid-4'>
-          <h1 class='ja-hide'>شريك معنا</h1>
-            <ul class='ja-hide partner'>
-              <li>
-                <a class='pjaxload' href='/binary-static/ar/partners.html'>
-                  <img class='responsive' id='iom_icon_footer' src='/binary-static/images/pages/footer/partner-icon.svg' />
-                </a>
-              </li>
-            </ul>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class='ja-top-padding' id='footer-regulatory'>
-    <div class='grd-container grd-default-container'>
-      <div class='grd-grid-12 grd-parent id-hide regulatory-logo'>
-        <div class='grd-grid-2'>
-          <a href='http://www.gov.im/gambling/' target='_blank'>
-            <img class='responsive' id='iom_icon_footer' src='/binary-static/images/pages/footer/isle-of-man.png' />
-          </a>
-        </div>
-        <div class='center grd-grid-2'>
-          <a href='https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40' target='_blank'>
-            <img class='responsive' id='lga_icon_footer' src='/binary-static/images/pages/footer/mga-logo-footer.svg' />
-          </a>
-        </div>
-        <div class='center grd-grid-6'>
-          <a href='http://mfsa.com.mt/' target='_blank'>
-            <img class='responsive' id='mfsa_logo' src='/binary-static/images/pages/footer/mfsa-logo.svg' />
-          </a>
-        </div>
-        <div class='center grd-grid-2'>
-          <a href='http://mfsa.com.mt/' target='_blank'>
-            <img class='responsive' id='mifid_logo' src='/binary-static/images/pages/footer/mifid-logo.svg' />
-          </a>
-        </div>
-      </div>
-      <div class='grd-grid-12 grd-parent'>
-        <div class='grd-grid-9 grd-grid-mobile-12 grd-grid-phablet-7' id='regulatory-text'>يتم تسويق هذا الموقع في المملكة المتحدة وجزيرة آيل أوف مان، يتداول عملاؤنا عبر بيناري (آي أو إم) المحدودة. في الاتحاد الأوروبي (باستثناء المملكة المتحدة)، يتداولون من خلال بيناري (أوروبا) المحدودة وبيناري للاستثمارات (أوروبا) المحدودة. في بقية العالم، يتداولون من خلال بيناري (سي آر) شركة مساهمة.
+    <div id="footer-regulatory">
+        <div class="container">
+            <div>
+                <div class="gr-padding-10">
+                    <div class="gr-parent">
+                        <div class="gr-row ja-hide id-hide">
+                            <div class="gr-2">
+                                <a href="http://www.gov.im/gambling/" target="_blank">
+                                    <img id="iom_icon_footer" class="responsive" src="/binary-static/images/pages/footer/isle-of-man.png"/>
+                                </a>
+                            </div>
+                            <div class="gr-2 center-text">
+                                <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40" target="_blank">
+                                    <img id="lga_icon_footer" class="responsive" src="/binary-static/images/pages/footer/mga-logo-footer.svg"/>
+                                </a>
+                            </div>
+                            <div class="gr-6 center-text">
+                                <a href="http://mfsa.com.mt/" target="_blank">
+                                    <img id="mfsa_logo" class="responsive" src="/binary-static/images/pages/footer/mfsa-logo.svg"/>
+                                </a>
+                            </div>
+                            <div class="gr-2">
+                                <a href="http://mfsa.com.mt/" target="_blank">
+                                    <img id="mifid_logo" class="responsive" src="/binary-static/images/pages/footer/mifid-logo.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gr-parent">
+                        <div class="gr-row">
+                            <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p">
+                                يتم تسويق هذا الموقع في المملكة المتحدة وجزيرة آيل أوف مان، يتداول عملاؤنا عبر بيناري (آي أو إم) المحدودة. في الاتحاد الأوروبي (باستثناء المملكة المتحدة)، يتداولون من خلال بيناري (أوروبا) المحدودة وبيناري للاستثمارات (أوروبا) المحدودة. في بقية العالم، يتداولون من خلال بيناري (سي آر) شركة مساهمة.
 
-تداول الخيارات الثنائية قد لا يكون مناسبا للجميع، لذلك يرجى التأكد من أنك تدرك تماما المخاطر التي تنطوي عليها. يمكن لخسائرك أن تتجاوز إيداعك الأولي كذلك أنت لا تمتلك ولن يكون لك أي فوائد على الأصول التي تتداول عليها.</div>
-        <div class='grd-centered-mobile grd-grid-3 grd-grid-mobile-12 ja-hide' id='social-networks'>
-          <div id='fb-root'></div>
-<div class='social-icons'>
-  <a href='http://www.youtube.com/user/BinaryTradingVideos' target='_blank'>
-    <img class='responsive social-network-icon' src='/binary-static/images/pages/footer/youtube.svg' />
-  </a>
-  <a href='https://plus.google.com/106251151552682209951' target='_blank' rel='publisher'>
-    <img class='responsive social-network-icon' src='/binary-static/images/pages/footer/google-plus.svg' />
-  </a>
-  <a href='https://www.facebook.com/binarydotcom' target='_blank'>
-    <img class='responsive social-network-icon' src='/binary-static/images/pages/footer/facebook.svg' />
-  </a>
-  <a href='https://www.twitter.com/Binarydotcom' target='_blank'>
-    <img class='responsive social-network-icon' src='/binary-static/images/pages/footer/twitter.svg' />
-  </a>
-  <a href='https://www.linkedin.com/company/binary-com' target='_blank'>
-    <img class='responsive social-network-icon' src='/binary-static/images/pages/footer/linkedin.svg' />
-  </a>
+تداول الخيارات الثنائية قد لا يكون مناسبا للجميع، لذلك يرجى التأكد من أنك تدرك تماما المخاطر التي تنطوي عليها. يمكن لخسائرك أن تتجاوز إيداعك الأولي كذلك أنت لا تمتلك ولن يكون لك أي فوائد على الأصول التي تتداول عليها.
+                            </div>
+                            <div class="ja-hide gr-3 gr-12-m gr-5-p" id="social-networks">
+                                <div id="fb-root">
 </div>
+<div class="social-icons">
+    <a href="http://www.youtube.com/user/BinaryTradingVideos" target="_blank">
+        <img class="responsive social-network-icon" src="/binary-static/images/pages/footer/youtube.svg"/>
+    </a>
+    <a href="https://plus.google.com/106251151552682209951" rel="publisher" target="_blank">
+        <img class="responsive social-network-icon" src="/binary-static/images/pages/footer/google-plus.svg"/>
+    </a>
+    <a href="https://www.facebook.com/binarydotcom" target="_blank">
+        <img class="responsive social-network-icon" src="/binary-static/images/pages/footer/facebook.svg"/>
 
-        </div>
-      </div>
-    </div>
-    <div id='ratelimit-error-message'>
-      <div class='message'>
-        لقد وصلت إلى معدل الحد الأقصى من الطلبات في الثانية الواحدة. للمتابعة، الرجاء <a href='javascript:;' id='ratelimit-refresh-link'>تحديث</a> الصفحة.
-      </div>
-    </div>
-  </div>
-  <div id='footer-last'>
-    <div class='grd-container grd-default-container'>
-      <div class='grd-grid-12'>
-        <p class='gambling'>تداول الخيارات الثنائية قد لا يكون مناسبا للجميع، لذلك يرجى التأكد من إدراكك التام للمخاطر التي تنطوي عليها. يمكن لخسائرك أن تتجاوز إيداعك الأولي كما لن تمتلك أو يكون لديك أي فائدة في الأصول الموجودة. في ما يخص الخيارات الثنائية التي تعتبر منتجات لعب، تذكر أن اللعب يمكن أن يسبب الإدمان - يرجى اللعب بشكل مسؤول. <span class="ja-hide">اقرأ عن <a href="/binary-static/ar/responsible-trading.html" class="pjaxload">التداول المسؤول</a>.</span></p>
-      </div>
-    </div>
-  </div>
+    </a>
+    <a href="https://twitter.com/Binarydotcom" target="_blank">
+        <img class="responsive social-network-icon" src="/binary-static/images/pages/footer/twitter.svg"/>
+    </a>
+    <a href="https://www.linkedin.com/company/binary-com" target="_blank">
+        <img class="responsive social-network-icon" src="/binary-static/images/pages/footer/linkedin.svg"/>
+    </a>
 </div>
-
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ratelimit-error-message">
+            <div class="message">
+                لقد وصلت إلى معدل الحد الأقصى من الطلبات في الثانية الواحدة. للمتابعة، الرجاء <a href="javascript:;" id="ratelimit-refresh-link">تحديث</a> الصفحة.
+            </div>
+        </div>
     </div>
-  </body>
-</html>
+    <div id="footer-last">
+        <div class="container">
+            <div class="gr-padding-10">
+                <p class="gambling">
+                    تداول الخيارات الثنائية قد لا يكون مناسبا للجميع، لذلك يرجى التأكد من إدراكك التام للمخاطر التي تنطوي عليها. يمكن لخسائرك أن تتجاوز إيداعك الأولي كما لن تمتلك أو يكون لديك أي فائدة في الأصول الموجودة. في ما يخص الخيارات الثنائية التي تعتبر منتجات لعب، تذكر أن اللعب يمكن أن يسبب الإدمان - يرجى اللعب بشكل مسؤول. <span class="ja-hide">اقرأ عن <a href="/binary-static/ar/responsible-trading.html" class="pjaxload">التداول المسؤول</a>.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

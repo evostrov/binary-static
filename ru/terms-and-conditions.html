@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+        <style id="antiClickjack">body{display:none !important;}</style>
+        <script type="text/javascript">
+            if (self === top) {
+                var antiClickjack = document.getElementById("antiClickjack");
+                antiClickjack.parentNode.removeChild(antiClickjack);
+            } else {
+                top.location = self.location;
+            }
+        </script>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta http-equiv="Content-Language" content="RU" />
         <meta name="description" content=" Binary.com предлагает Вам простой и увлекательный способ работы на финансовых рынках. Контракты предлагаются на ведущих валютных парах, индексах и сырьевых рынках и начинаются всего с $1." />
@@ -15,8 +25,6 @@
         <meta property="og:image" content="/binary-static/images/common/og_image.gif" />
 
         <title>Правила и условия | Binary.com</title>
-
-        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 
         <link rel="apple-touch-icon" sizes="57x57" href="/binary-static/images/favicons/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="114x114" href="/binary-static/images/favicons/apple-touch-icon-114x114.png">
@@ -48,37 +56,41 @@
           <link rel="alternate" href="/binary-static/zh_cn/terms-and-conditions.html" hreflang="ZH_CN" /> 
           <link rel="alternate" href="/binary-static/zh_tw/terms-and-conditions.html" hreflang="ZH_TW" /> 
         
-         <link rel="stylesheet" href="/binary-static/css/binary.min.css?y88kr7vv">
+         <link rel="stylesheet" href="/binary-static/css/binary.min.css?bpw7z2th">
         
+        <link rel="stylesheet" href="https://style.binary.com/binary.css">
         <script>
     //A global variable required to initialize Page object.
-    window.page_params = {settings: {"arr_all_currencies":["USD","EUR","GBP","AUD"],"broker":"CR","valid_loginids":"MX|MF|VRTC|MLT|CR|FOG|VRTJ|JP","countries_list":{"za":{"name":"South Africa","gaming_company":"costarica","financial_company":"costarica"},"et":{"gaming_company":"costarica","financial_company":"costarica","name":"Ethiopia"},"pt":{"gaming_company":"malta","financial_company":"maltainvest","name":"Portugal"},"pw":{"name":"Palau","financial_company":"costarica","gaming_company":"costarica"},"aw":{"name":"Aruba","financial_company":"costarica","gaming_company":"costarica"},"se":{"name":"Sweden","financial_company":"maltainvest","gaming_company":"malta"},"uy":{"name":"Uruguay","financial_company":"costarica","gaming_company":"costarica"},"lk":{"name":"Sri Lanka","financial_company":"costarica","gaming_company":"costarica"},"bv":{"financial_company":"costarica","gaming_company":"costarica","name":"Bouvet Island"},"cf":{"name":"Central African Republic","financial_company":"costarica","gaming_company":"costarica"},"ug":{"gaming_company":"costarica","financial_company":"costarica","name":"Uganda"},"bn":{"gaming_company":"costarica","financial_company":"costarica","name":"Brunei Darussalam"},"hu":{"name":"Hungary","financial_company":"maltainvest","gaming_company":"malta"},"zm":{"financial_company":"costarica","gaming_company":"costarica","name":"Zambia"},"cz":{"name":"Czech Republic","gaming_company":"malta","financial_company":"maltainvest"},"mm":{"financial_company":"costarica","gaming_company":"costarica","name":"Myanmar"},"pg":{"gaming_company":"costarica","financial_company":"costarica","name":"Papua New Guinea"},"nl":{"name":"Netherlands","gaming_company":"malta","financial_company":"maltainvest"},"ht":{"financial_company":"costarica","gaming_company":"costarica","name":"Haiti"},"ma":{"financial_company":"costarica","gaming_company":"costarica","name":"Morocco"},"to":{"financial_company":"costarica","gaming_company":"costarica","name":"Tonga"},"bb":{"gaming_company":"costarica","financial_company":"costarica","name":"Barbados"},"gn":{"name":"Guinea","gaming_company":"costarica","financial_company":"costarica"},"vc":{"gaming_company":"costarica","financial_company":"costarica","name":"Saint Vincent and the Grenadines"},"be":{"gaming_company":"malta","financial_company":"maltainvest","name":"Belgium"},"er":{"gaming_company":"costarica","financial_company":"costarica","name":"Eritrea"},"pl":{"name":"Poland","gaming_company":"malta","financial_company":"maltainvest"},"cc":{"financial_company":"costarica","gaming_company":"costarica","name":"Cocos (Keeling) Islands"},"cv":{"financial_company":"costarica","gaming_company":"costarica","name":"Cape Verde"},"jo":{"name":"Jordan","financial_company":"costarica","gaming_company":"costarica"},"gg":{"gaming_company":"none","financial_company":"none","name":"Guernsey"},"gi":{"name":"Gibraltar","financial_company":"costarica","gaming_company":"costarica"},"wf":{"name":"Wallis and Futuna","financial_company":"costarica","gaming_company":"costarica"},"nz":{"financial_company":"costarica","gaming_company":"costarica","name":"New Zealand"},"at":{"name":"Austria","financial_company":"maltainvest","gaming_company":"malta"},"ie":{"name":"Ireland","gaming_company":"malta","financial_company":"maltainvest"},"cu":{"financial_company":"costarica","gaming_company":"costarica","name":"Cuba"},"ps":{"name":"Palestinian Territory, Occupied","gaming_company":"costarica","financial_company":"costarica"},"ws":{"financial_company":"costarica","gaming_company":"costarica","name":"Samoa"},"al":{"gaming_company":"costarica","financial_company":"costarica","name":"Albania"},"mz":{"gaming_company":"costarica","financial_company":"costarica","name":"Mozambique"},"um":{"financial_company":"none","gaming_company":"none","name":"United States Minor Outlying Islands"},"hk":{"name":"Hong Kong","financial_company":"none","gaming_company":"none"},"pf":{"name":"French Polynesia","financial_company":"costarica","gaming_company":"costarica"},"ai":{"name":"Anguilla","gaming_company":"costarica","financial_company":"costarica"},"gb":{"name":"United Kingdom","gaming_company":"iom","financial_company":"iom"},"lc":{"gaming_company":"costarica","financial_company":"costarica","name":"Saint Lucia"},"bz":{"gaming_company":"costarica","financial_company":"costarica","name":"Belize"},"dj":{"name":"Djibouti","gaming_company":"costarica","financial_company":"costarica"},"mn":{"name":"Mongolia","gaming_company":"costarica","financial_company":"costarica"},"bd":{"financial_company":"costarica","gaming_company":"costarica","name":"Bangladesh"},"ne":{"name":"Niger","gaming_company":"costarica","financial_company":"costarica"},"gs":{"financial_company":"costarica","gaming_company":"costarica","name":"South Georgia and the South Sandwich Islands"},"tz":{"financial_company":"costarica","gaming_company":"costarica","name":"Tanzania, United Republic of"},"gf":{"name":"French Guiana","gaming_company":"costarica","financial_company":"costarica"},"gm":{"gaming_company":"costarica","financial_company":"costarica","name":"Gambia"},"sb":{"gaming_company":"costarica","financial_company":"costarica","name":"Solomon Islands"},"re":{"gaming_company":"costarica","financial_company":"costarica","name":"Reunion"},"mt":{"gaming_company":"none","financial_company":"none","name":"Malta"},"sk":{"gaming_company":"malta","financial_company":"maltainvest","name":"Slovakia"},"fk":{"name":"Falkland Islands (Malvinas)","gaming_company":"costarica","financial_company":"costarica"},"mv":{"name":"Maldives","gaming_company":"costarica","financial_company":"costarica"},"co":{"gaming_company":"costarica","financial_company":"costarica","name":"Colombia"},"sl":{"financial_company":"costarica","gaming_company":"costarica","name":"Sierra Leone"},"sg":{"name":"Singapore","gaming_company":"none","financial_company":"costarica"},"sh":{"name":"Saint Helena","financial_company":"costarica","gaming_company":"costarica"},"cy":{"name":"Cyprus","financial_company":"maltainvest","gaming_company":"malta"},"gy":{"name":"Guyana","financial_company":"costarica","gaming_company":"costarica"},"ck":{"financial_company":"costarica","gaming_company":"costarica","name":"Cook Islands"},"cr":{"name":"Costa Rica","financial_company":"none","gaming_company":"none"},"lu":{"name":"Luxembourg","financial_company":"maltainvest","gaming_company":"none"},"es":{"gaming_company":"none","financial_company":"maltainvest","name":"Spain"},"eg":{"financial_company":"costarica","gaming_company":"costarica","name":"Egypt"},"gq":{"name":"Equatorial Guinea","financial_company":"costarica","gaming_company":"costarica"},"kz":{"name":"Kazakhstan","gaming_company":"costarica","financial_company":"costarica"},"pr":{"financial_company":"costarica","gaming_company":"costarica","name":"Puerto Rico"},"no":{"name":"Norway","financial_company":"costarica","gaming_company":"costarica"},"eh":{"name":"Western Sahara","gaming_company":"costarica","financial_company":"costarica"},"lb":{"name":"Lebanon","gaming_company":"costarica","financial_company":"costarica"},"ar":{"gaming_company":"costarica","financial_company":"costarica","name":"Argentina"},"vi":{"financial_company":"none","gaming_company":"none","name":"Virgin Islands, U.S."},"rs":{"gaming_company":"costarica","financial_company":"costarica","name":"Serbia"},"mu":{"gaming_company":"costarica","financial_company":"costarica","name":"Mauritius"},"tg":{"gaming_company":"costarica","financial_company":"costarica","name":"Togo"},"mw":{"financial_company":"costarica","gaming_company":"costarica","name":"Malawi"},"ru":{"name":"Russian Federation","gaming_company":"costarica","financial_company":"costarica"},"my":{"name":"Malaysia","gaming_company":"none","financial_company":"none"},"qa":{"name":"Qatar","gaming_company":"costarica","financial_company":"costarica"},"li":{"financial_company":"costarica","gaming_company":"costarica","name":"Liechtenstein"},"nu":{"name":"Niue","gaming_company":"costarica","financial_company":"costarica"},"tc":{"financial_company":"costarica","gaming_company":"costarica","name":"Turks and Caicos Islands"},"kn":{"name":"Saint Kitts and Nevis","gaming_company":"costarica","financial_company":"costarica"},"ec":{"name":"Ecuador","financial_company":"costarica","gaming_company":"costarica"},"fr":{"financial_company":"maltainvest","gaming_company":"none","name":"France"},"gt":{"name":"Guatemala","financial_company":"costarica","gaming_company":"costarica"},"az":{"name":"Azerbaijan","financial_company":"costarica","gaming_company":"costarica"},"zw":{"name":"Zimbabwe","financial_company":"costarica","gaming_company":"costarica"},"nf":{"name":"Norfolk Island","gaming_company":"costarica","financial_company":"costarica"},"by":{"financial_company":"costarica","gaming_company":"costarica","name":"Belarus"},"sn":{"name":"Senegal","financial_company":"costarica","gaming_company":"costarica"},"sy":{"name":"Syrian Arab Republic","gaming_company":"costarica","financial_company":"costarica"},"uz":{"financial_company":"costarica","gaming_company":"costarica","name":"Uzbekistan"},"np":{"financial_company":"costarica","gaming_company":"costarica","name":"Nepal"},"tr":{"financial_company":"costarica","gaming_company":"costarica","name":"Turkey"},"th":{"name":"Thailand","gaming_company":"costarica","financial_company":"costarica"},"ke":{"gaming_company":"costarica","financial_company":"costarica","name":"Kenya"},"bw":{"name":"Botswana","gaming_company":"costarica","financial_company":"costarica"},"ml":{"name":"Mali","financial_company":"costarica","gaming_company":"costarica"},"sc":{"name":"Seychelles","gaming_company":"costarica","financial_company":"costarica"},"ao":{"financial_company":"costarica","gaming_company":"costarica","name":"Angola"},"ca":{"name":"Canada","gaming_company":"costarica","financial_company":"costarica"},"bo":{"name":"Bolivia","financial_company":"costarica","gaming_company":"costarica"},"vn":{"name":"Vietnam","financial_company":"costarica","gaming_company":"costarica"},"au":{"name":"Australia","gaming_company":"costarica","financial_company":"costarica"},"bm":{"financial_company":"costarica","gaming_company":"costarica","name":"Bermuda"},"lt":{"financial_company":"maltainvest","gaming_company":"malta","name":"Lithuania"},"tf":{"name":"French Southern Territories","financial_company":"costarica","gaming_company":"costarica"},"tl":{"gaming_company":"costarica","financial_company":"costarica","name":"Timor-Leste"},"ge":{"name":"Georgia","gaming_company":"costarica","financial_company":"costarica"},"is":{"name":"Iceland","financial_company":"costarica","gaming_company":"costarica"},"sz":{"gaming_company":"costarica","financial_company":"costarica","name":"Swaziland"},"tk":{"financial_company":"costarica","gaming_company":"costarica","name":"Tokelau"},"ci":{"financial_company":"costarica","gaming_company":"costarica","name":"Cote D'Ivoire"},"dz":{"financial_company":"costarica","gaming_company":"costarica","name":"Algeria"},"ye":{"financial_company":"costarica","gaming_company":"costarica","name":"Yemen"},"cn":{"financial_company":"costarica","gaming_company":"costarica","name":"China"},"lr":{"name":"Liberia","gaming_company":"costarica","financial_company":"costarica"},"nc":{"name":"New Caledonia","financial_company":"costarica","gaming_company":"costarica"},"cd":{"gaming_company":"costarica","financial_company":"costarica","name":"Congo, The Democratic Republic of the"},"pa":{"financial_company":"costarica","gaming_company":"costarica","name":"Panama"},"pm":{"financial_company":"costarica","gaming_company":"costarica","name":"Saint Pierre and Miquelon"},"dk":{"name":"Denmark","gaming_company":"malta","financial_company":"maltainvest"},"af":{"name":"Afghanistan","gaming_company":"costarica","financial_company":"costarica"},"iq":{"gaming_company":"none","financial_company":"none","name":"Iraq"},"sm":{"name":"San Marino","gaming_company":"costarica","financial_company":"costarica"},"sa":{"gaming_company":"costarica","financial_company":"costarica","name":"Saudi Arabia"},"gd":{"gaming_company":"costarica","financial_company":"costarica","name":"Grenada"},"om":{"gaming_company":"costarica","financial_company":"costarica","name":"Oman"},"gh":{"name":"Ghana","gaming_company":"costarica","financial_company":"costarica"},"vg":{"name":"Virgin Islands, British","gaming_company":"costarica","financial_company":"costarica"},"bs":{"gaming_company":"costarica","financial_company":"costarica","name":"Bahamas"},"hr":{"financial_company":"maltainvest","gaming_company":"malta","name":"Croatia"},"tw":{"name":"Taiwan, Province of China","financial_company":"costarica","gaming_company":"costarica"},"ni":{"name":"Nicaragua","financial_company":"costarica","gaming_company":"costarica"},"cl":{"financial_company":"costarica","gaming_company":"costarica","name":"Chile"},"tm":{"gaming_company":"costarica","financial_company":"costarica","name":"Turkmenistan"},"sd":{"financial_company":"costarica","gaming_company":"costarica","name":"Sudan"},"mh":{"name":"Marshall Islands","gaming_company":"costarica","financial_company":"costarica"},"nr":{"name":"Nauru","financial_company":"costarica","gaming_company":"costarica"},"ga":{"gaming_company":"costarica","financial_company":"costarica","name":"Gabon"},"tt":{"gaming_company":"costarica","financial_company":"costarica","name":"Trinidad and Tobago"},"rw":{"name":"Rwanda","gaming_company":"costarica","financial_company":"costarica"},"kh":{"gaming_company":"costarica","financial_company":"costarica","name":"Cambodia"},"fj":{"gaming_company":"costarica","financial_company":"costarica","name":"Fiji"},"so":{"name":"Somalia","gaming_company":"costarica","financial_company":"costarica"},"py":{"name":"Paraguay","gaming_company":"costarica","financial_company":"costarica"},"ax":{"name":"Aland Islands","gaming_company":"costarica","financial_company":"costarica"},"an":{"financial_company":"costarica","gaming_company":"costarica","name":"Netherlands Antilles"},"us":{"gaming_company":"none","financial_company":"none","name":"United States"},"mk":{"name":"Macedonia","financial_company":"costarica","gaming_company":"costarica"},"pn":{"name":"Pitcairn","gaming_company":"costarica","financial_company":"costarica"},"de":{"financial_company":"maltainvest","gaming_company":"none","name":"Germany"},"tj":{"financial_company":"costarica","gaming_company":"costarica","name":"Tajikistan"},"ng":{"name":"Nigeria","gaming_company":"costarica","financial_company":"costarica"},"do":{"gaming_company":"costarica","financial_company":"costarica","name":"Dominican Republic"},"cm":{"financial_company":"costarica","gaming_company":"costarica","name":"Cameroon"},"bg":{"financial_company":"maltainvest","gaming_company":"malta","name":"Bulgaria"},"vu":{"financial_company":"costarica","gaming_company":"costarica","name":"Vanuatu"},"am":{"gaming_company":"costarica","financial_company":"costarica","name":"Armenia"},"sv":{"financial_company":"costarica","gaming_company":"costarica","name":"El Salvador"},"st":{"name":"Sao Tome and Principe","gaming_company":"costarica","financial_company":"costarica"},"as":{"financial_company":"costarica","gaming_company":"costarica","name":"American Samoa"},"mo":{"financial_company":"costarica","gaming_company":"costarica","name":"Macao"},"fi":{"name":"Finland","financial_company":"maltainvest","gaming_company":"malta"},"ba":{"name":"Bosnia and Herzegovina","financial_company":"costarica","gaming_company":"costarica"},"il":{"name":"Israel","gaming_company":"costarica","financial_company":"costarica"},"ki":{"financial_company":"costarica","gaming_company":"costarica","name":"Kiribati"},"hm":{"gaming_company":"costarica","financial_company":"costarica","name":"Heard Island and McDonald Islands"},"je":{"gaming_company":"none","financial_company":"none","name":"Jersey"},"tn":{"financial_company":"costarica","gaming_company":"costarica","name":"Tunisia"},"kw":{"name":"Kuwait","financial_company":"costarica","gaming_company":"costarica"},"jm":{"financial_company":"costarica","gaming_company":"costarica","name":"Jamaica"},"gr":{"gaming_company":"none","financial_company":"maltainvest","name":"Greece"},"td":{"name":"Chad","gaming_company":"costarica","financial_company":"costarica"},"gw":{"gaming_company":"costarica","financial_company":"costarica","name":"Guinea-Bissau"},"ae":{"name":"United Arab Emirates","financial_company":"costarica","gaming_company":"costarica"},"ly":{"name":"Libyan Arab Jamahiriya","financial_company":"costarica","gaming_company":"costarica"},"jp":{"name":"Japan","virtual_company":"japan-virtual","financial_company":"japan","gaming_company":"none"},"ad":{"financial_company":"costarica","gaming_company":"costarica","name":"Andorra"},"ky":{"name":"Cayman Islands","gaming_company":"costarica","financial_company":"costarica"},"mr":{"gaming_company":"costarica","financial_company":"costarica","name":"Mauritania"},"bl":{"gaming_company":"costarica","financial_company":"costarica","name":"Saint-Barthélemy"},"ve":{"name":"Venezuela","financial_company":"costarica","gaming_company":"costarica"},"cg":{"name":"Congo","gaming_company":"costarica","financial_company":"costarica"},"ms":{"financial_company":"costarica","gaming_company":"costarica","name":"Montserrat"},"kp":{"name":"Korea, Democratic People's Republic of","gaming_company":"none","financial_company":"none"},"km":{"name":"Comoros","financial_company":"costarica","gaming_company":"costarica"},"yt":{"name":"Mayotte","financial_company":"costarica","gaming_company":"costarica"},"mq":{"financial_company":"costarica","gaming_company":"costarica","name":"Martinique"},"kg":{"gaming_company":"costarica","financial_company":"costarica","name":"Kyrgyzstan"},"it":{"gaming_company":"none","financial_company":"maltainvest","name":"Italy"},"me":{"gaming_company":"costarica","financial_company":"costarica","name":"Montenegro"},"br":{"gaming_company":"costarica","financial_company":"costarica","name":"Brazil"},"bi":{"name":"Burundi","financial_company":"costarica","gaming_company":"costarica"},"bj":{"financial_company":"costarica","gaming_company":"costarica","name":"Benin"},"na":{"financial_company":"costarica","gaming_company":"costarica","name":"Namibia"},"id":{"financial_company":"costarica","gaming_company":"costarica","name":"Indonesia"},"ua":{"name":"Ukraine","financial_company":"costarica","gaming_company":"costarica"},"ls":{"name":"Lesotho","gaming_company":"costarica","financial_company":"costarica"},"fo":{"name":"Faroe Islands","financial_company":"costarica","gaming_company":"costarica"},"ch":{"gaming_company":"costarica","financial_company":"costarica","name":"Switzerland"},"in":{"gaming_company":"costarica","financial_company":"costarica","name":"India"},"si":{"name":"Slovenia","gaming_company":"malta","financial_company":"maltainvest"},"mc":{"financial_company":"costarica","gaming_company":"costarica","name":"Monaco"},"gu":{"gaming_company":"costarica","financial_company":"costarica","name":"Guam"},"bt":{"financial_company":"costarica","gaming_company":"costarica","name":"Bhutan"},"va":{"gaming_company":"costarica","financial_company":"costarica","name":"Holy See (Vatican City State)"},"dm":{"name":"Dominica","gaming_company":"costarica","financial_company":"costarica"},"sj":{"gaming_company":"costarica","financial_company":"costarica","name":"Svalbard and Jan Mayen"},"cx":{"name":"Christmas Island","financial_company":"costarica","gaming_company":"costarica"},"ir":{"financial_company":"none","gaming_company":"none","name":"Iran, Islamic Republic of"},"la":{"gaming_company":"costarica","financial_company":"costarica","name":"Lao People's Democratic Republic"},"im":{"name":"Isle of Man","gaming_company":"iom","financial_company":"iom"},"aq":{"name":"Antarctica","gaming_company":"costarica","financial_company":"costarica"},"mx":{"name":"Mexico","gaming_company":"costarica","financial_company":"costarica"},"mf":{"name":"Saint-Martin (French part)","gaming_company":"costarica","financial_company":"costarica"},"ag":{"name":"Antigua and Barbuda","gaming_company":"costarica","financial_company":"costarica"},"mp":{"name":"Northern Mariana Islands","financial_company":"costarica","gaming_company":"costarica"},"kr":{"gaming_company":"costarica","financial_company":"costarica","name":"Korea, Republic of"},"ro":{"gaming_company":"malta","financial_company":"maltainvest","name":"Romania"},"pk":{"financial_company":"costarica","gaming_company":"costarica","name":"Pakistan"},"tv":{"name":"Tuvalu","financial_company":"costarica","gaming_company":"costarica"},"hn":{"financial_company":"costarica","gaming_company":"costarica","name":"Honduras"},"io":{"gaming_company":"costarica","financial_company":"costarica","name":"British Indian Ocean Territory"},"bh":{"financial_company":"costarica","gaming_company":"costarica","name":"Bahrain"},"bf":{"name":"Burkina Faso","financial_company":"costarica","gaming_company":"costarica"},"ph":{"financial_company":"costarica","gaming_company":"costarica","name":"Philippines"},"gl":{"financial_company":"costarica","gaming_company":"costarica","name":"Greenland"},"ee":{"name":"Estonia","gaming_company":"malta","financial_company":"maltainvest"},"pe":{"name":"Peru","financial_company":"costarica","gaming_company":"costarica"},"gp":{"gaming_company":"costarica","financial_company":"costarica","name":"Guadeloupe"},"md":{"financial_company":"costarica","gaming_company":"costarica","name":"Moldova, Republic of"},"fm":{"name":"Micronesia, Federated States of","financial_company":"costarica","gaming_company":"costarica"},"mg":{"name":"Madagascar","gaming_company":"costarica","financial_company":"costarica"},"sr":{"gaming_company":"costarica","financial_company":"costarica","name":"Suriname"},"lv":{"gaming_company":"malta","financial_company":"maltainvest","name":"Latvia"}},"image_link":{"calendar_icon":"/binary-static/images/common/calendar_icon_1.png","livechaticon":"/binary-static/images/pages/contact/chat-icon.svg","down":"/binary-static/images/javascript/down_arrow_1.gif","up":"/binary-static/images/javascript/up_arrow_1.gif","hourglass":"/binary-static/images/common/hourglass_1.gif"},"enable_relative_barrier":"true","streaming_server":"www.binary.com"}};
-</script>  <script src='/binary-static/js/binary.js?y88kr7vv' defer async></script>  <script src="https://apis.google.com/js/platform.js" defer async></script>
+    window.page_params = {settings: {"broker":"CR","countries_list":{"ci":{"gaming_company":"costarica","financial_company":"costarica","name":"Cote D'Ivoire"},"gn":{"financial_company":"costarica","gaming_company":"costarica","name":"Guinea"},"gp":{"name":"Guadeloupe","gaming_company":"costarica","financial_company":"costarica"},"eh":{"name":"Western Sahara","gaming_company":"costarica","financial_company":"costarica"},"sg":{"gaming_company":"none","financial_company":"costarica","name":"Singapore"},"to":{"financial_company":"costarica","gaming_company":"costarica","name":"Tonga"},"bs":{"name":"Bahamas","gaming_company":"costarica","financial_company":"costarica"},"ma":{"name":"Morocco","gaming_company":"costarica","financial_company":"costarica"},"pm":{"name":"Saint Pierre and Miquelon","gaming_company":"costarica","financial_company":"costarica"},"mz":{"gaming_company":"costarica","financial_company":"costarica","name":"Mozambique"},"bg":{"name":"Bulgaria","financial_company":"maltainvest","gaming_company":"malta"},"lt":{"financial_company":"maltainvest","gaming_company":"malta","name":"Lithuania"},"se":{"financial_company":"maltainvest","gaming_company":"malta","name":"Sweden"},"zw":{"financial_company":"costarica","gaming_company":"costarica","name":"Zimbabwe"},"cz":{"name":"Czech Republic","financial_company":"maltainvest","gaming_company":"malta"},"bn":{"gaming_company":"costarica","financial_company":"costarica","name":"Brunei Darussalam"},"ve":{"financial_company":"costarica","gaming_company":"costarica","name":"Venezuela"},"al":{"gaming_company":"costarica","financial_company":"costarica","name":"Albania"},"dm":{"name":"Dominica","financial_company":"costarica","gaming_company":"costarica"},"mo":{"gaming_company":"costarica","financial_company":"costarica","name":"Macao"},"tm":{"financial_company":"costarica","gaming_company":"costarica","name":"Turkmenistan"},"sr":{"gaming_company":"costarica","financial_company":"costarica","name":"Suriname"},"yt":{"name":"Mayotte","gaming_company":"costarica","financial_company":"costarica"},"rs":{"gaming_company":"costarica","financial_company":"costarica","name":"Serbia"},"ga":{"name":"Gabon","financial_company":"costarica","gaming_company":"costarica"},"so":{"name":"Somalia","gaming_company":"costarica","financial_company":"costarica"},"my":{"name":"Malaysia","financial_company":"none","gaming_company":"none"},"eg":{"name":"Egypt","gaming_company":"costarica","financial_company":"costarica"},"jo":{"name":"Jordan","financial_company":"costarica","gaming_company":"costarica"},"ad":{"name":"Andorra","financial_company":"costarica","gaming_company":"costarica"},"uy":{"gaming_company":"costarica","financial_company":"costarica","name":"Uruguay"},"gf":{"name":"French Guiana","gaming_company":"costarica","financial_company":"costarica"},"rw":{"financial_company":"costarica","gaming_company":"costarica","name":"Rwanda"},"cd":{"name":"Congo, The Democratic Republic of the","gaming_company":"costarica","financial_company":"costarica"},"nl":{"name":"Netherlands","financial_company":"maltainvest","gaming_company":"malta"},"mf":{"name":"Saint-Martin (French part)","gaming_company":"costarica","financial_company":"costarica"},"si":{"name":"Slovenia","gaming_company":"malta","financial_company":"maltainvest"},"ms":{"name":"Montserrat","financial_company":"costarica","gaming_company":"costarica"},"gs":{"name":"South Georgia and the South Sandwich Islands","gaming_company":"costarica","financial_company":"costarica"},"gi":{"name":"Gibraltar","gaming_company":"costarica","financial_company":"costarica"},"vg":{"name":"Virgin Islands, British","gaming_company":"costarica","financial_company":"costarica"},"tn":{"gaming_company":"costarica","financial_company":"costarica","name":"Tunisia"},"nc":{"name":"New Caledonia","gaming_company":"costarica","financial_company":"costarica"},"pg":{"name":"Papua New Guinea","financial_company":"costarica","gaming_company":"costarica"},"kn":{"gaming_company":"costarica","financial_company":"costarica","name":"Saint Kitts and Nevis"},"do":{"name":"Dominican Republic","gaming_company":"costarica","financial_company":"costarica"},"hk":{"financial_company":"none","gaming_company":"none","name":"Hong Kong"},"tg":{"financial_company":"costarica","gaming_company":"costarica","name":"Togo"},"bf":{"name":"Burkina Faso","financial_company":"costarica","gaming_company":"costarica"},"mg":{"gaming_company":"costarica","financial_company":"costarica","name":"Madagascar"},"vi":{"name":"Virgin Islands, U.S.","financial_company":"none","gaming_company":"none"},"ie":{"name":"Ireland","financial_company":"maltainvest","gaming_company":"malta"},"tr":{"name":"Turkey","financial_company":"costarica","gaming_company":"costarica"},"fk":{"gaming_company":"costarica","financial_company":"costarica","name":"Falkland Islands (Malvinas)"},"ke":{"financial_company":"costarica","gaming_company":"costarica","name":"Kenya"},"gm":{"name":"Gambia","financial_company":"costarica","gaming_company":"costarica"},"pn":{"name":"Pitcairn","financial_company":"costarica","gaming_company":"costarica"},"cn":{"name":"China","financial_company":"costarica","gaming_company":"costarica"},"gt":{"financial_company":"costarica","gaming_company":"costarica","name":"Guatemala"},"gl":{"name":"Greenland","gaming_company":"costarica","financial_company":"costarica"},"vn":{"name":"Vietnam","gaming_company":"costarica","financial_company":"costarica"},"hr":{"name":"Croatia","financial_company":"maltainvest","gaming_company":"malta"},"pw":{"name":"Palau","gaming_company":"costarica","financial_company":"costarica"},"gh":{"name":"Ghana","gaming_company":"costarica","financial_company":"costarica"},"vu":{"gaming_company":"costarica","financial_company":"costarica","name":"Vanuatu"},"gq":{"financial_company":"costarica","gaming_company":"costarica","name":"Equatorial Guinea"},"co":{"gaming_company":"costarica","financial_company":"costarica","name":"Colombia"},"es":{"gaming_company":"none","financial_company":"maltainvest","name":"Spain"},"td":{"name":"Chad","gaming_company":"costarica","financial_company":"costarica"},"re":{"name":"Reunion","gaming_company":"costarica","financial_company":"costarica"},"ee":{"gaming_company":"malta","financial_company":"maltainvest","name":"Estonia"},"la":{"financial_company":"costarica","gaming_company":"costarica","name":"Lao People's Democratic Republic"},"nf":{"gaming_company":"costarica","financial_company":"costarica","name":"Norfolk Island"},"pe":{"gaming_company":"costarica","financial_company":"costarica","name":"Peru"},"cv":{"name":"Cape Verde","financial_company":"costarica","gaming_company":"costarica"},"kr":{"name":"Korea, Republic of","financial_company":"costarica","gaming_company":"costarica"},"gr":{"name":"Greece","gaming_company":"none","financial_company":"maltainvest"},"ar":{"financial_company":"costarica","gaming_company":"costarica","name":"Argentina"},"cc":{"name":"Cocos (Keeling) Islands","financial_company":"costarica","gaming_company":"costarica"},"cx":{"gaming_company":"costarica","financial_company":"costarica","name":"Christmas Island"},"sb":{"gaming_company":"costarica","financial_company":"costarica","name":"Solomon Islands"},"jp":{"financial_company":"japan","virtual_company":"japan-virtual","gaming_company":"none","name":"Japan"},"tk":{"financial_company":"costarica","gaming_company":"costarica","name":"Tokelau"},"dj":{"name":"Djibouti","gaming_company":"costarica","financial_company":"costarica"},"sm":{"financial_company":"costarica","gaming_company":"costarica","name":"San Marino"},"cg":{"financial_company":"costarica","gaming_company":"costarica","name":"Congo"},"bl":{"gaming_company":"costarica","financial_company":"costarica","name":"Saint-Barthélemy"},"bd":{"name":"Bangladesh","financial_company":"costarica","gaming_company":"costarica"},"ly":{"gaming_company":"costarica","financial_company":"costarica","name":"Libyan Arab Jamahiriya"},"mw":{"gaming_company":"costarica","financial_company":"costarica","name":"Malawi"},"in":{"name":"India","gaming_company":"costarica","financial_company":"costarica"},"gy":{"gaming_company":"costarica","financial_company":"costarica","name":"Guyana"},"nz":{"name":"New Zealand","financial_company":"costarica","gaming_company":"costarica"},"ai":{"name":"Anguilla","financial_company":"costarica","gaming_company":"costarica"},"fo":{"financial_company":"costarica","gaming_company":"costarica","name":"Faroe Islands"},"mc":{"name":"Monaco","gaming_company":"costarica","financial_company":"costarica"},"ki":{"financial_company":"costarica","gaming_company":"costarica","name":"Kiribati"},"dk":{"name":"Denmark","gaming_company":"malta","financial_company":"maltainvest"},"aq":{"name":"Antarctica","gaming_company":"costarica","financial_company":"costarica"},"cy":{"name":"Cyprus","financial_company":"maltainvest","gaming_company":"malta"},"ck":{"gaming_company":"costarica","financial_company":"costarica","name":"Cook Islands"},"bo":{"gaming_company":"costarica","financial_company":"costarica","name":"Bolivia"},"kg":{"name":"Kyrgyzstan","financial_company":"costarica","gaming_company":"costarica"},"lu":{"financial_company":"maltainvest","gaming_company":"none","name":"Luxembourg"},"lv":{"financial_company":"maltainvest","gaming_company":"malta","name":"Latvia"},"tt":{"gaming_company":"costarica","financial_company":"costarica","name":"Trinidad and Tobago"},"th":{"financial_company":"costarica","gaming_company":"costarica","name":"Thailand"},"ls":{"name":"Lesotho","financial_company":"costarica","gaming_company":"costarica"},"cm":{"name":"Cameroon","gaming_company":"costarica","financial_company":"costarica"},"ba":{"gaming_company":"costarica","financial_company":"costarica","name":"Bosnia and Herzegovina"},"sc":{"name":"Seychelles","financial_company":"costarica","gaming_company":"costarica"},"bh":{"gaming_company":"costarica","financial_company":"costarica","name":"Bahrain"},"lk":{"gaming_company":"costarica","financial_company":"costarica","name":"Sri Lanka"},"dz":{"financial_company":"costarica","gaming_company":"costarica","name":"Algeria"},"va":{"name":"Holy See (Vatican City State)","financial_company":"costarica","gaming_company":"costarica"},"lr":{"name":"Liberia","financial_company":"costarica","gaming_company":"costarica"},"sv":{"name":"El Salvador","financial_company":"costarica","gaming_company":"costarica"},"qa":{"financial_company":"costarica","gaming_company":"costarica","name":"Qatar"},"bv":{"gaming_company":"costarica","financial_company":"costarica","name":"Bouvet Island"},"kw":{"name":"Kuwait","gaming_company":"costarica","financial_company":"costarica"},"iq":{"name":"Iraq","gaming_company":"none","financial_company":"none"},"am":{"name":"Armenia","financial_company":"costarica","gaming_company":"costarica"},"mp":{"name":"Northern Mariana Islands","gaming_company":"costarica","financial_company":"costarica"},"is":{"name":"Iceland","financial_company":"costarica","gaming_company":"costarica"},"kz":{"financial_company":"costarica","gaming_company":"costarica","name":"Kazakhstan"},"ch":{"financial_company":"costarica","gaming_company":"costarica","name":"Switzerland"},"mx":{"name":"Mexico","financial_company":"costarica","gaming_company":"costarica"},"bj":{"financial_company":"costarica","gaming_company":"costarica","name":"Benin"},"ro":{"name":"Romania","financial_company":"maltainvest","gaming_company":"malta"},"mh":{"name":"Marshall Islands","gaming_company":"costarica","financial_company":"costarica"},"ag":{"name":"Antigua and Barbuda","gaming_company":"costarica","financial_company":"costarica"},"me":{"name":"Montenegro","gaming_company":"costarica","financial_company":"costarica"},"ge":{"name":"Georgia","financial_company":"costarica","gaming_company":"costarica"},"st":{"name":"Sao Tome and Principe","gaming_company":"costarica","financial_company":"costarica"},"at":{"financial_company":"maltainvest","gaming_company":"malta","name":"Austria"},"tc":{"gaming_company":"costarica","financial_company":"costarica","name":"Turks and Caicos Islands"},"ps":{"financial_company":"costarica","gaming_company":"costarica","name":"Palestinian Territory, Occupied"},"ne":{"name":"Niger","gaming_company":"costarica","financial_company":"costarica"},"bb":{"name":"Barbados","financial_company":"costarica","gaming_company":"costarica"},"ua":{"financial_company":"costarica","gaming_company":"costarica","name":"Ukraine"},"fi":{"gaming_company":"malta","financial_company":"maltainvest","name":"Finland"},"fr":{"name":"France","financial_company":"maltainvest","gaming_company":"none"},"gw":{"name":"Guinea-Bissau","financial_company":"costarica","gaming_company":"costarica"},"tz":{"name":"Tanzania, United Republic of","financial_company":"costarica","gaming_company":"costarica"},"np":{"gaming_company":"costarica","financial_company":"costarica","name":"Nepal"},"sd":{"financial_company":"costarica","gaming_company":"costarica","name":"Sudan"},"sa":{"gaming_company":"costarica","financial_company":"costarica","name":"Saudi Arabia"},"py":{"gaming_company":"costarica","financial_company":"costarica","name":"Paraguay"},"gg":{"financial_company":"none","gaming_company":"none","name":"Guernsey"},"io":{"financial_company":"costarica","gaming_company":"costarica","name":"British Indian Ocean Territory"},"kp":{"gaming_company":"none","financial_company":"none","name":"Korea, Democratic People's Republic of"},"wf":{"gaming_company":"costarica","financial_company":"costarica","name":"Wallis and Futuna"},"sj":{"name":"Svalbard and Jan Mayen","financial_company":"costarica","gaming_company":"costarica"},"om":{"name":"Oman","gaming_company":"costarica","financial_company":"costarica"},"um":{"name":"United States Minor Outlying Islands","gaming_company":"none","financial_company":"none"},"er":{"name":"Eritrea","gaming_company":"costarica","financial_company":"costarica"},"ca":{"financial_company":"costarica","gaming_company":"costarica","name":"Canada"},"pf":{"gaming_company":"costarica","financial_company":"costarica","name":"French Polynesia"},"tw":{"financial_company":"costarica","gaming_company":"costarica","name":"Taiwan, Province of China"},"tj":{"name":"Tajikistan","financial_company":"costarica","gaming_company":"costarica"},"mk":{"name":"Macedonia","financial_company":"costarica","gaming_company":"costarica"},"tf":{"name":"French Southern Territories","gaming_company":"costarica","financial_company":"costarica"},"vc":{"financial_company":"costarica","gaming_company":"costarica","name":"Saint Vincent and the Grenadines"},"mm":{"name":"Myanmar","gaming_company":"costarica","financial_company":"costarica"},"br":{"name":"Brazil","gaming_company":"costarica","financial_company":"costarica"},"ht":{"financial_company":"costarica","gaming_company":"costarica","name":"Haiti"},"us":{"financial_company":"none","gaming_company":"none","name":"United States"},"sl":{"financial_company":"costarica","gaming_company":"costarica","name":"Sierra Leone"},"no":{"gaming_company":"costarica","financial_company":"costarica","name":"Norway"},"bz":{"name":"Belize","gaming_company":"costarica","financial_company":"costarica"},"by":{"name":"Belarus","financial_company":"costarica","gaming_company":"costarica"},"sk":{"name":"Slovakia","financial_company":"maltainvest","gaming_company":"malta"},"ir":{"name":"Iran, Islamic Republic of","financial_company":"none","gaming_company":"none"},"md":{"name":"Moldova, Republic of","gaming_company":"costarica","financial_company":"costarica"},"az":{"financial_company":"costarica","gaming_company":"costarica","name":"Azerbaijan"},"mu":{"gaming_company":"costarica","financial_company":"costarica","name":"Mauritius"},"fj":{"name":"Fiji","financial_company":"costarica","gaming_company":"costarica"},"li":{"gaming_company":"costarica","financial_company":"costarica","name":"Liechtenstein"},"sz":{"financial_company":"costarica","gaming_company":"costarica","name":"Swaziland"},"hm":{"name":"Heard Island and McDonald Islands","financial_company":"costarica","gaming_company":"costarica"},"mn":{"financial_company":"costarica","gaming_company":"costarica","name":"Mongolia"},"ng":{"gaming_company":"costarica","financial_company":"costarica","name":"Nigeria"},"ae":{"financial_company":"costarica","gaming_company":"costarica","name":"United Arab Emirates"},"sh":{"gaming_company":"costarica","financial_company":"costarica","name":"Saint Helena"},"je":{"name":"Jersey","gaming_company":"none","financial_company":"none"},"ml":{"name":"Mali","gaming_company":"costarica","financial_company":"costarica"},"ug":{"name":"Uganda","gaming_company":"costarica","financial_company":"costarica"},"id":{"name":"Indonesia","gaming_company":"costarica","financial_company":"costarica"},"ky":{"name":"Cayman Islands","financial_company":"costarica","gaming_company":"costarica"},"pa":{"financial_company":"costarica","gaming_company":"costarica","name":"Panama"},"tl":{"name":"Timor-Leste","gaming_company":"costarica","financial_company":"costarica"},"na":{"gaming_company":"costarica","financial_company":"costarica","name":"Namibia"},"mt":{"financial_company":"none","gaming_company":"none","name":"Malta"},"hu":{"gaming_company":"malta","financial_company":"maltainvest","name":"Hungary"},"lc":{"name":"Saint Lucia","gaming_company":"costarica","financial_company":"costarica"},"as":{"gaming_company":"costarica","financial_company":"costarica","name":"American Samoa"},"mq":{"financial_company":"costarica","gaming_company":"costarica","name":"Martinique"},"be":{"name":"Belgium","financial_company":"maltainvest","gaming_company":"malta"},"za":{"name":"South Africa","financial_company":"costarica","gaming_company":"costarica"},"af":{"name":"Afghanistan","financial_company":"costarica","gaming_company":"costarica"},"sn":{"name":"Senegal","financial_company":"costarica","gaming_company":"costarica"},"pl":{"gaming_company":"malta","financial_company":"maltainvest","name":"Poland"},"ax":{"gaming_company":"costarica","financial_company":"costarica","name":"Aland Islands"},"ru":{"name":"Russian Federation","gaming_company":"costarica","financial_company":"costarica"},"cf":{"name":"Central African Republic","financial_company":"costarica","gaming_company":"costarica"},"aw":{"gaming_company":"costarica","financial_company":"costarica","name":"Aruba"},"lb":{"gaming_company":"costarica","financial_company":"costarica","name":"Lebanon"},"cr":{"name":"Costa Rica","gaming_company":"none","financial_company":"none"},"cu":{"financial_company":"costarica","gaming_company":"costarica","name":"Cuba"},"km":{"name":"Comoros","gaming_company":"costarica","financial_company":"costarica"},"zm":{"name":"Zambia","financial_company":"costarica","gaming_company":"costarica"},"it":{"name":"Italy","gaming_company":"none","financial_company":"maltainvest"},"bt":{"financial_company":"costarica","gaming_company":"costarica","name":"Bhutan"},"fm":{"gaming_company":"costarica","financial_company":"costarica","name":"Micronesia, Federated States of"},"de":{"gaming_company":"none","financial_company":"maltainvest","name":"Germany"},"hn":{"name":"Honduras","financial_company":"costarica","gaming_company":"costarica"},"kh":{"gaming_company":"costarica","financial_company":"costarica","name":"Cambodia"},"ph":{"gaming_company":"costarica","financial_company":"costarica","name":"Philippines"},"gd":{"gaming_company":"costarica","financial_company":"costarica","name":"Grenada"},"ye":{"name":"Yemen","gaming_company":"costarica","financial_company":"costarica"},"il":{"financial_company":"costarica","gaming_company":"costarica","name":"Israel"},"pk":{"financial_company":"costarica","gaming_company":"costarica","name":"Pakistan"},"an":{"financial_company":"costarica","gaming_company":"costarica","name":"Netherlands Antilles"},"bm":{"name":"Bermuda","gaming_company":"costarica","financial_company":"costarica"},"tv":{"name":"Tuvalu","financial_company":"costarica","gaming_company":"costarica"},"nu":{"name":"Niue","gaming_company":"costarica","financial_company":"costarica"},"sy":{"financial_company":"costarica","gaming_company":"costarica","name":"Syrian Arab Republic"},"nr":{"financial_company":"costarica","gaming_company":"costarica","name":"Nauru"},"uz":{"name":"Uzbekistan","gaming_company":"costarica","financial_company":"costarica"},"jm":{"financial_company":"costarica","gaming_company":"costarica","name":"Jamaica"},"pr":{"name":"Puerto Rico","gaming_company":"costarica","financial_company":"costarica"},"ni":{"financial_company":"costarica","gaming_company":"costarica","name":"Nicaragua"},"mr":{"gaming_company":"costarica","financial_company":"costarica","name":"Mauritania"},"ws":{"financial_company":"costarica","gaming_company":"costarica","name":"Samoa"},"mv":{"name":"Maldives","gaming_company":"costarica","financial_company":"costarica"},"cl":{"gaming_company":"costarica","financial_company":"costarica","name":"Chile"},"et":{"financial_company":"costarica","gaming_company":"costarica","name":"Ethiopia"},"ao":{"gaming_company":"costarica","financial_company":"costarica","name":"Angola"},"bi":{"financial_company":"costarica","gaming_company":"costarica","name":"Burundi"},"ec":{"financial_company":"costarica","gaming_company":"costarica","name":"Ecuador"},"pt":{"gaming_company":"malta","financial_company":"maltainvest","name":"Portugal"},"au":{"gaming_company":"costarica","financial_company":"costarica","name":"Australia"},"im":{"name":"Isle of Man","financial_company":"iom","gaming_company":"iom"},"gu":{"gaming_company":"costarica","financial_company":"costarica","name":"Guam"},"bw":{"name":"Botswana","gaming_company":"costarica","financial_company":"costarica"},"gb":{"financial_company":"iom","gaming_company":"iom","name":"United Kingdom"}},"valid_loginids":"MX|MF|VRTC|MLT|CR|FOG|VRTJ|JP","image_link":{"livechaticon":"/binary-static/images/pages/contact/chat-icon.svg","hourglass":"/binary-static/images/common/hourglass_1.gif","down":"/binary-static/images/javascript/down_arrow_1.gif","up":"/binary-static/images/javascript/up_arrow_1.gif","calendar_icon":"/binary-static/images/common/calendar_icon_1.png"},"enable_relative_barrier":"true","streaming_server":"www.binary.com","arr_all_currencies":["USD","EUR","GBP","AUD"]}};
+</script>  <script src='/binary-static/js/binary.js?bpw7z2th' defer async></script>  <script src="https://apis.google.com/js/platform.js" defer async></script>
     </head>
+
+
 <body class="RU">
-      <div id='page-wrapper'>
+    <div id='page-wrapper'>
     <div id="topbar">
-        <div class='grd-container'>
-            <div class='grd-grid-12 grd-parent'>
-                <div id="topbar-msg" class='grd-grid-6 grd-grid-mobile-12 by_client_type client_virtual upgrademessage' style="display: none;">
-                    <span class='grd-hide-mobile'>
+        <div class="container">
+            <div class="gr-row">
+                <div id="topbar-msg" class='gr-6 gr-5-t gr-12-p gr-12-m by_client_type client_virtual invisible upgrademessage'>
+                    <span class='gr-hide-m'>
                         <span id='virtual-text'>Вы находитесь на демо-счету.</span>
                     </span>
                     <a class="pjaxload with_login_cookies pulser virtual-upgrade-link" href="/binary-static/ru/new_account/realws.html">Открыть реальный счет</a>
                     <a class="pjaxload with_login_cookies pulser vr-japan-upgrade-link" href="/binary-static/ru/new_account/japanws.html">Открыть реальный счет</a>
                     <a class="invisible pjaxload with_login_cookies pulser vr-financial-upgrade-link" href="/binary-static/ru/new_account/maltainvestws.html">Обновите до финансового счета</a>
                 </div>
-                <div class='grd-grid-6 grd-grid-mobile-12 by_client_type client_real upgrademessage' style="display: none;">
-                    <a class="invisible pjaxload with_login_cookies pulse financial-upgrade-link" href="/binary-static/ru/new_account/maltainvestws.html">Открыть финансовый счет</a>
+                <div class='gr-6 gr-5-t gr-12-p gr-12-m by_client_type client_real invisible upgrademessage'>
+                    <a class="pjaxload with_login_cookies pulse financial-upgrade-link" href="/binary-static/ru/new_account/maltainvestws.html">Открыть финансовый счет</a>
                 </div>
-                <div class='grd-grid-6 grd-grid-mobile-12 grd-parent' id='topbar-info'>
-                    <div class='grd-grid-5 grd-grid-mobile-7' id="gmt-clock"></div>
-                    <div class='grd-grid-3 grd-hide-mobile' id='contact-us'>
-                        <a class="pjaxload" href="/binary-static/ru/contact.html">Контакты</a>
-                    </div>
-                    <div class='grd-grid-4 grd-grid-mobile-5'>
-                        <div class="RU" id='language_select'>
-                            <select>
+                <div class='gr-6 gr-7-t gr-12-p gr-12-m' id='topbar-info'>
+                    <div class="gr-row">
+                        <div class='gr-5 gr-7-m no-underline' id="gmt-clock" data-balloon-pos="down"></div>
+                        <div class='gr-3 gr-hide-m' id='contact-us'>
+                            <a class="pjaxload" href="/binary-static/ru/contact.html">Контакты</a>
+                        </div>
+                        <div class='gr-4 gr-5-m'>
+                            <div class="RU" id='language_select'>
+                                <select>
             <option class='EN'>English</option>
                 <option class='AR'>Arabic</option>
                 <option class='DE'>Deutsch</option>
@@ -93,6 +105,7 @@
                     <option class='ZH_CN'>简体中文</option>
                 <option class='ZH_TW'>繁體中文</option>
     </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,68 +114,72 @@
     </div>
 
     <div id="header" class="dark-blue">
-        <div class='grd-container'>
-            <div class='grd-row-padding'>
-                <div class='grd-grid-3 grd-grid-mobile-2 grd-grid-phablet-1'>
-                    <a id="logo" href="/binary-static/ru/home.html">
-                        <div class='grd-grid-3 grd-grid-mobile-12 grd-grid-phablet-12 grd-no-gutter'>
-                            <img class='responsive' src="/binary-static/images/pages/binary-symbol-logo.svg"/>
-                        </div>
-                        <div class='grd-grid-9 grd-hide-mobile grd-hide-phablet' id='binary-logo-text'>
-                            <img class='responsive' src="/binary-static/images/pages/binary-type-logo.svg"/>
-                        </div>
-                    </a>
-                </div>
-                <div class='grd-grid-6 grd-hide-mobile grd-hide-phablet'>
-                    <div id='main-navigation'>
-                        <ul class="smaller-font" id="menu-top">
-                            <li>
-                                <a class="smaller-font pjaxload" href="/binary-static/ru/why-us.html">Почему мы?</a>
-                            </li>
-                            <li class="ja-hide">
-                                <a class="smaller-font pjaxload" href="/binary-static/ru/get-started.html">С чего начать</a>
-                            </li>
-                            <li class="all-hide ja-show-block">
-                              <a class="smaller-font pjaxload" href="/binary-static/ru/get-started-jp.html">С чего начать</a>
-                            </li>
-                            <li>
-                                <a class="smaller-font pjaxload" href="/binary-static/ru/tour.html">Тур</a>
-                            </li>
-                            <li>
-                                <a class="smaller-font pjaxload" href="/binary-static/ru/trading.html">Начать работу</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="client-logged-in" class="grd-grid-3 grd-grid-mobile-9 grd-grid-phablet-10 by_client_type client_real client_virtual" style="display: none">
-                  <div id="logout">
-                    <form id="loginid-switch-form">
-                        <div id="login-fields">
-                            <select id="client_loginid" name="client_loginid">
-                            </select>
-                        </div>
-                        <div id="balance"></div>
-                        <a id="btn_logout" class="logout" href="javascript:;">ВЫХОД</a>
-                    </form>
-                  </div>
-                </div>
-                <div id="client-logged-out" class="grd-grid-3 grd-grid-mobile-9 grd-grid-phablet-10 grd-no-gutter-left by_client_type client_logged_out invisible">
-                    <div id="btn_login" class="button">Вход</div>
-                </div>
-                <div class='grd-grid-1 grd-hide grd-show-mobile grd-no-gutter-mobile grd-show-phablet'>
-                    <div id='mobile-menu-icon-container'>
-                        <a href='#mobile-menu' id='mobile-menu-icon'>
-                            <img class='responsive' src="/binary-static/images/pages/binary-mobile-menu.svg"/>
+        <div class='container'>
+            <div class='gr-12'>
+                <div class='gr-padding-10 gr-row'>
+                    <div class='gr-3 gr-2-m gr-2-p'>
+                        <a id="logo" href="/binary-static/ru/home.html">
+                            <div class='gr-row'>
+                                <div class='gr-3 gr-12-m gr-12-p gr-no-gutter'>
+                                    <img class='responsive' src="/binary-static/images/pages/binary-symbol-logo.svg" />
+                                </div>
+                                <div class='gr-9 gr-hide-m gr-hide-p' id='binary-logo-text'>
+                                    <img class='responsive' src="/binary-static/images/pages/binary-type-logo.svg" />
+                                </div>
+                            </div>
                         </a>
+                    </div>
+                    <div class='gr-6 gr-hide-m gr-hide-p'>
+                        <div id='main-navigation'>
+                            <ul class="smaller-font" id="menu-top">
+                                <li>
+                                    <a class="smaller-font pjaxload" href="/binary-static/ru/why-us.html">Почему мы?</a>
+                                </li>
+                                <li class="ja-hide">
+                                    <a class="smaller-font pjaxload" href="/binary-static/ru/get-started.html">С чего начать</a>
+                                </li>
+                                <li class="all-hide ja-show-block">
+                                  <a class="smaller-font pjaxload" href="/binary-static/ru/get-started-jp.html">С чего начать</a>
+                                </li>
+                                <li>
+                                    <a class="smaller-font pjaxload" href="/binary-static/ru/tour.html">Тур</a>
+                                </li>
+                                <li>
+                                    <a class="smaller-font pjaxload" href="/binary-static/ru/trading.html">Начать работу</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="client-logged-in" class="gr-3 gr-8-m gr-8-p gr-no-gutter by_client_type client_real client_virtual align-end" style="display: none">
+                      <div id="logout">
+                        <form id="loginid-switch-form">
+                            <div id="login-fields">
+                                <select id="client_loginid" name="client_loginid">
+                                </select>
+                            </div>
+                            <div id="balance"></div>
+                            <a id="btn_logout" class="logout" href="javascript:;">ВЫХОД</a>
+                        </form>
+                      </div>
+                    </div>
+                    <div id="client-logged-out" class="gr-3 gr-8-m gr-8-p gr-no-gutter by_client_type client_logged_out invisible">
+                        <div id="btn_login" class="button">Вход</div>
+                    </div>
+                    <div class='gr-hide gr-show-m gr-2-m gr-show-p gr-2-p gr-no-gutter-mobile align-end'>
+                        <div id='mobile-menu-icon-container'>
+                            <a href='#mobile-menu' id='mobile-menu-icon'>
+                                <img class='responsive' src="/binary-static/images/pages/binary-mobile-menu.svg"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="content-holder">
-      <div id="main-menu" class="tab-menu">
-    <div class="tab-menu-wrap grd-container grd-hide-mobile grd-hide-phablet">
-        <div class='grd-grid-12'>
+    <div id="main-menu" class="tab-menu">
+    <div class="tab-menu-wrap container gr-hide-m gr-hide-p">
+        <div class="gr-12 gr-no-gutter">
             <ul class="items">  <li id="topMenuBetaInterface" class="item ">
                     <a class="link pjaxload" target="" href="/binary-static/ru/trading.html">Начните торговлю</a>
                     
@@ -181,7 +198,7 @@
                                 <a class="link with_login_cookies pjaxload" target="" href="/binary-static/ru/user/settingsws.html">Настройки</a>
                             </li>  <li id="topMenuBecomeAffiliate" class="sub_item ja-hide">
                                 <a class="link pjaxload" target="" href="/binary-static/ru/affiliate/signup.html">Партнерам</a>
-                            </li>  <li id="topMenuAuthenticateAccount" class="sub_item by_client_type client_real">
+                            </li>  <li id="topMenuAuthenticateAccount" class="sub_item by_client_type client_real ja-hide">
                                 <a class="link with_login_cookies pjaxload" target="" href="/binary-static/ru/user/authenticatews.html">Авторизация</a>
                             </li>  </ul>
                     
@@ -197,15 +214,15 @@
                                 <a class="link pjaxload" target="" href="/binary-static/ru/resources/market_timesws.html">Время открытия рынков</a>
                             </li>  </ul>
                     
-                </li>  <li id="topMenuApplications" class="item ">
-                    <a class="link ja-hide pjaxload" target="" href="/binary-static/ru/applications.html">Приложения</a>
+                </li>  <li id="topMenuShop" class="item ja-hide">
+                    <a class="link" target="_blank" href="https://shop.binary.com">Магазин</a>
                     
                 </li>  </ul>
         </div>
     </div>
 </div>
-      <div class='grd-hide grd-show-mobile grd-show-phablet' id='mobile-menu-container'>
-    <div class='grd-hide' id='mobile-menu'>
+    <div class='gr-hide gr-show-m gr-show-p' id='mobile-menu-container'>
+    <div class='gr-hide' id='mobile-menu'>
         <ul>
             <li>
                 <a class="pjaxload" href="/binary-static/ru/why-us.html">Почему мы?</a>
@@ -236,7 +253,7 @@
                             <a class="pjaxload link with_login_cookies pjaxload" href="/binary-static/ru/user/settingsws.html">Настройки</a>
                         </li>  <li id="topMenuBecomeAffiliate" class="sub_item ja-hide">
                             <a class="pjaxload link pjaxload" href="/binary-static/ru/affiliate/signup.html">Партнерам</a>
-                        </li>  <li id="topMenuAuthenticateAccount" class="sub_item by_client_type client_real">
+                        </li>  <li id="topMenuAuthenticateAccount" class="sub_item by_client_type client_real ja-hide">
                             <a class="pjaxload link with_login_cookies pjaxload" href="/binary-static/ru/user/authenticatews.html">Авторизация</a>
                         </li>  </ul>
                 
@@ -252,16 +269,16 @@
                             <a class="pjaxload link pjaxload" href="/binary-static/ru/resources/market_timesws.html">Время открытия рынков</a>
                         </li>  </ul>
                 
-            </li>  <li id="topMenuApplications" class="item">
-                <a class="pjaxload link ja-hide pjaxload" href="/binary-static/ru/applications.html">Приложения</a>
+            </li>  <li id="topMenuShop" class="item ja-hide">
+                <a class="pjaxload link " href="https://shop.binary.com">Магазин</a>
                 
             </li>  </ul>
     </div>
 </div>
-      <!-- FlushHead -->
+    <!-- FlushHead -->
 
-      <div id="content">
-          <!-- Google Tag Manager -->
+    <div id="content" class="terms-and-conditions-content">
+        <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MZWFF7"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -270,14 +287,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MZWFF7');</script>
 <!-- End Google Tag Manager -->
-          <div id="page_info" style="display:none;">
-              <title>Правила и условия | Binary.com</title>
-          </div>
-          
-          <div class="grd-container">
-<div class="content-tab-container static_full">
+        <div id="page_info" style="display:none;">
+            <title>Правила и условия | Binary.com</title>
+            <div id="content_class">terms-and-conditions-content</div>
+        </div>
+        
+        <div class="container">
+
+
+  <div class="content-tab-container static_full">
   <div class="tab-menu">
-    <div class="tab-menu-wrap grd-container">
+    <div class="tab-menu-wrap container">
       <ul id="legal-menu" class="tm-ul">
         <li id="legal-tab" class="tm-li active first">
           <span class="menu-wrap-a">
@@ -302,10 +322,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </ul>
     </div>
   </div>
-  <div class="tab-content grd-container">
+  <div class="tab-content">
     <div class="tab-content-wrapper menu-has-sub-item">
       <div id="legal-tac-tab-content" class="toggle-content">
-        <div class="grd-grid-12">
+        <div class="gr-12">
     <h2>Правила и условия</h2>
     <p>
         <i>Версия 40. Дата внесения последних изменений: 2016-05-12.</i>
@@ -354,7 +374,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         Законы в отношении финансовых контрактов различаются во всем мире. Понимание и соблюдение законов и других правил применительно к отдельному Клиенту или стране является ответственностью самого человека, пользующегося сайтом. Данный сайт не может быть использован или предлагаться кому-либо в юрисдикции, где это может быть незаконным. Доступ к данному сайту и предложение финансовых контрактов на данном сайте могут быть ограничены в определенных юрисдикциях; соответственно, люди, имеющие доступ к данному сайту, должны быть информированы о таких ограничениях и соблюдать их.
     </p>
     <p>
-        Транзакции, производимые на данном сайте, а также отношения между Клиентами и Компанией регулируются и толкуются в соответствии с законодательством страны регистрации Компании ("Юрисдикции"), которой является остров Мэн, Мальта или Коста-Рика. Вы соглашаетесь, что суды данных стран будут единственными инстанциями, которые имеют право регулировать любые споры и несогласия, которые могут возникнуть между сторонами. С этой целью Вы обязуетесь безоговорочно подчиняться решению суда определенной Юрисдикции относительного любого иска и соглашаетесь, что любая претензия, которую Вы можете иметь к Компании, будет решаться в суде Юрисдикции. Для дальнейшей информации по жалобам и искам смотрите секцию Компании "Жалобы и иски".
+        Транзакции, производимые на данном сайте, а также отношения между Клиентами и Компанией регулируются и толкуются в соответствии с законодательством страны регистрации Компании ("Юрисдикции"), которой является Остров Мэн, Мальта или Коста-Рика. Вы соглашаетесь, что суды данных стран будут единственными инстанциями, которые имеют право регулировать любые споры и несогласия, которые могут возникнуть между сторонами. С этой целью Вы обязуетесь безоговорочно подчиняться решению суда определенной Юрисдикции относительного любого иска и соглашаетесь, что любая претензия, которую Вы можете иметь к Компании, будет решаться в суде Юрисдикции. Для дальнейшей информации по жалобам и искам смотрите секцию Компании "Жалобы и иски".
     </p>
     <h2>E. Контракты</h2>
     <p>
@@ -375,7 +395,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         Наша лицензия требует от нас, чтобы мы информировали Вас о состоянии средств, которые мы держим на Вашем счету, и о степени защиты средств в случае неплатежеспособности  <a href='http://www.gamblingcommission.gov.uk/Consumers/Protection-of-customer-funds.aspx' target='_blank'>http://www.gamblingcommission.gov.uk/Consumers/Protection-of-customer-funds.aspx</a>.
     </p>
     <p>
-        Компания держит средства клиентов на отдельных от рабочих счетов банковских счетах. Данные средства будут возвращены клиентам в случае неплатежеспособности Компании. Это отвечает требованиям Комиссии по азартным играм по сегрегации средств клиентов на следующем уровне: средняя защита.
+        The company holds customer funds in separate bank accounts to the operational accounts; and arrangements have been made to ensure assets in the customer accounts are distributed to customers in the event of insolvency. This meets the Gambling Commission's requirements for the segregation of customer funds at the level: medium protection.
     </p>
     <p>
     Компания предлагает различные методы для пополнения, каждый со своим собственным сроком обработки, некоторые из которых могут не быть доступны для вывода. Полная информация о доступных способах пополнения и вывода, включая время обработки, находится <a href='/binary-static/ru/cashier/payment_methods.html' class='pjaxload'>здесь:</a>
@@ -435,7 +455,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 В случае ошибки в текущих ценах, опубликованных процентах выигрыша или программном обеспечении для торговли.
             </li>
             <li>
-                Во всех случаях, Компания оставляет за собой право вносить изменения в настоящие Правила и Условия. Если Компания решает делать какие-либо существенные изменения в настоящих Условиях, наши клиенты будут уведомлены заранее и смогут либо принять, либо отклонить изменения. Отклонение влечет существенное нарушение этого соглашения, и счет клиента может быть заморожен, приостановлен или закрыт.
+                In all circumstances, the Company reserves the right to make changes to these Terms and Conditions. If the Company elects to make any material changes to these Terms and Conditions, our clients will be notified in advance and shall either accept or decline to agree. Declining to agree shall result in a material breach of this agreement and the client's account maybe frozen, suspended or cancelled.
             </li>
         </ul>
     </p>
@@ -443,10 +463,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         В этом случае Компания может по своему усмотрению (с уведомлением или без) закрыть открытые контракты Клиента по ценам, которые она сочтет справедливыми и правильными в конкретное время; никакие жалобы в данной связи не принимаются Компанией.
     </p>
     <p>
-        Кроме того, Компания, при указанных выше или любых других обстоятельствах оставляет за собой право корректировать учетную запись клиента в случае, если его контракты закончатся срывом, прерыванием или другими неожиданным приостановлением сделки.
+        Further, the Company, under the above circumstances, or any other, reserves the right to adjust a client's account should any trade result in a disruption, miscarry or aborted trade.
     </p>
     <p>
-        Хотя Компания сохраняет за собой право отказать или закрыть счет Клиента, она гарантирует исполнение всех договорных обязательств, уже принятых Компанией.
+        Although the Company has and retains all rights to refuse or to close a Client's account, the Company does warrant that all contractual obligations already made, shall be honoured.
     </p>
     <p>
         Компания сохраняет за собой право ограничить торговую деятельность клиента и/или отменить сделки в случае, если финансовые контракты были приобретены или проданы по ценам, не отражающим реальные рыночные цены, а также куплены или проданы при аномально низком уровне риска, ввиду неустановленной программной ошибки, нарушения или сбоя программного обеспечения, нарушения потока данных или запаздывания цен контрактов, возникновения ошибок в потоке данных, сбоев в котировках, неправильных ценовых параметров, неточного расчёта цен или возникновения иных явных ошибок. Клиенты обязуются уведомлять Компанию о любых проблемах или возможных ошибках в работе системы, с которыми они столкнутся, и не использовать подобные ошибки для извлечения выгоды. Компания предпримет все возможные усилия, чтобы устранить такого рода нарушения в кратчайшие сроки. Лица, имеющие доступ к внутренней информации о финансовых рынках или инструментах, не имеют права торговать на данном сайте.
@@ -455,7 +475,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         Любая информация, предоставленная на этих страницах, посредством электронной почты или информационной рассылки, высылаемой Компанией, не служит финансовым или инвестиционным советом. Компания не несет ответственности в данном отношении, а также не несет ответственности за точность и полноту информации, предоставленной на данном сайте.
     <p>
     <p>
-        Компания также сохраняет за собой право вносить изменения в условия предоставления услуг в любое время и без предварительного уведомления. Любое изменение не будет влиять на уже совершенные контракты и будет применяться лишь по отношению к контрактам, сделанным после внесения изменений. Компания берет на себя обязательство уведомлять Клиента заблаговременно, до вступления каких-либо изменений в силу.
+        The right is also reserved to amend or change the rules and scope of this service from time to time. Any change to the rules made whilst the site is in operation will not apply retrospectively and will only apply to acquisitions of financial contracts made after such change. It is the Company's responsibility to notify Clients before any changes to its terms come into effect.
     </p>
     <h2>J. Неактивные счета</h2>
     <p>
@@ -497,7 +517,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
       </div>
       <div id="betting-rules-tab-content" class="toggle-content invisible">
-        <div class="grd-grid-12">
+        <div class="gr-12">
 
     <h2>
         Правила торговли
@@ -559,7 +579,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
       </div>
       <div id="promo-tac-tab-content" class="toggle-content invisible">
-        <div class="grd-grid-12">
+        <div class="gr-12">
     <h2>
         Бонус на депозит
     </h2>
@@ -625,7 +645,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
       </div>
       <div id="affiliate-tac-tab-content" class="toggle-content invisible">
-        <div class="grd-grid-12">
+        <div>
 
     <h2>Правила и условия партнерской программы Binary.com</h2>
 
@@ -645,7 +665,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </ol>
         </li>
 
-        <li>Обязанности Партнера
+        <li>The Affiliate's Obligations
             <ol class="reset_ol">
                 <li>Соблюдать действующие нормы и законы (включая, но не ограничиваясь нормами в отношении рекламы, защиты данных, конфиденциальности, правилами и правовыми нормами) юрисдикции (юрисдикций), в рамках которой Вы ведёте или планируете вести бизнес.</li>
                 <li>Обеспечивать достоверность и неискаженность исторических данных и результатов, связанных с торговой деятельностью на Binary.com, которые Вы предоставляете своим клиентам.</li>
@@ -658,23 +678,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <ol class="reset_ol">
                 <li>Вы обязуетесь на поощрять своих рефералов брать любые кредиты с целью пополнения счетов и/или размещения сделок.</li>
                 <li>Вы не должны ориентировать свою маркетинговую или рекламную деятельность на лиц младше 18 лет.</li>
-                <li>Не держать и не переводить средства рефералов или третьих лиц на свой счет на Binary.com для управления ими.</li>
+                <li>You shall not hold or pool your referrals' funds or third party funds into your own account held with Binary.com.</li>
                 <li>Вы не должны прибегать к тактике психологического давления и не должны давать ложных обещаний.</li>
-                <li>Вы обязуетесь не поощрять рефералов пополнять счета или размещать сделки, когда целью таких действий является (целиком или частично) повышение партнерских комиссий, а не улучшение торговых результатов и повышение прибыли Ваших рефералов.</li>
-                <li>Вы не должны размещать сделки от имени своих рефералов.</li>
+                <li>You shall not encourage your referrals to make deposits or place any trades where the purpose of that action is (whether in whole or in part) to increase affiliate commissions rather than to benefit your referrals' trading performance and profitability.</li>
+                <li>You shall not place trades on your referrals' behalf.</li>
                 <li>Вы не должны приобретать или регистрировать ключевые слова, поисковые слова или другие идентификаторы для использования на поисковых порталах, в рекламном спонсорском сервисе, на других поисковиках или реферальских сервисах, которые идентичны, схожи с торговыми марками Компании, торговым именем, включают слово "Binary.com" или любую его вариацию.</li>
                 <li>Вы, Ваши прямые родственники и контролируемые Вами люди не могут стать Вашими клиентами. Вы не имеете права получать от Компании комиссии или другие вознаграждения от деятельности Ваших родственников, друзей или контролируемых Вами людей.</li>
                 <li>Вы не должны создавать и проводить маркетинговые и рекламные кампании, нарушающие любые применимые законы, правила, нормы или своды правил, относящиеся к маркетингу, рекламе и продвижению, проводимым в рамках официального или регулирующего органа, действующего в юрисдикции (юрисдикциям), в которых Вы ведёте или планируете вести бизнес.</li>
             </ol>
             <ul>
-                <li>Если Компании станет известно о нарушении Партнёром любых вышеперечисленных положений, Компания оставляет за собой право (в дополнении к любым правам и средствам правовой защиты, предоставленным ей в рамках данного Соглашения или применимого законодательства) незамедлительно заблокировать доступ Партнёра к данной Программе. Настоящим партнёр окончательно отказывается от всех прав, а также обязуется оградить Компанию и любого члена группы компаний Binary Group от подачи любых претензий или исков против Компании или любого другого представителя группы компаний Binary Group, их директоров, сотрудников, акционеров, работников, а также против вебсайта Binary.com (в отношении действий, предпринятых Компанией).</li>
+                <li>In the event that the Company is aware of an Affiliate who is in breach of any of the above provisions, the Company shall have the right, in addition to any other right or remedy available to it under this Agreement or applicable law, to immediately block the Affiliate's access to this Program. The Affiliate hereby irrevocably waives its rights to, and shall indemnify the Company and any member of the Binary group of companies for, any claim or demand made against the Company or any member of the Binary group of companies, their directors, officers, shareholders, employees or against the Binary.com website in respect of such action taken by the Company.</li>
             </ul>
         </li>
 
         <li>Обязательства Компании
             <ol class="reset_ol">
                 <li>Вы и Компания являетесь независимыми контрагентами, и ни один пункт в данном Соглашении не подразумевает создания партнерства, совместного предприятия, агентства, филиала, деятельности торгового агента или установления между нами отношений работодателя и работника. У Вас нет права создавать или принимать предложения от нашего имени, а также представлять нас. Вы обязуетесь не делать на Вашем сайте или других ресурсах утверждений, противоречащих данному положению.</li>
-                <li>Мы оставляем за собой право отклонить заявку Ваших рефералов на открытие (или закрытие) счета с целью соблюдения требований, которые мы можем периодически устанавливать и/или которые могут быть необходимы в рамках применимого законодательства, правил и норм.</li>
+                <li>We reserve the right to refuse your referrals' application to open an account (or to close their accounts), as deemed necessary, to comply with any requirements we may periodically establish and/or that may be required under applicable laws, rules, and regulations.</li>
                 <li>Компания предоставит рекламные материалы со ссылками, содержащими партнерские ID; данные ссылки могут периодически меняться.</li>
                 <li>В отношении отслеживания Ваших рефералов, приходящих на сайт Binary.com через ссылки на Вашем сайте или указавших Ваш партнерский ID-номер в процессе регистрации, Компания предпримет все разумные усилия, чтобы клиент был закреплен за Вашим партнерским счетом (независимо от того, пришел ли он на Binary.com через ссылку или указал ID-номер партнера). Тем не менее, Компания не будет нести перед Вами ответственность, если она не сможет определить, что клиент является пришедшим от Вас рефералом. За Вами будут закреплены лишь те клиенты, которые были должным образом отмечены. Вы обязуетесь следить за тем, чтобы все ссылки работали надлежащим образом.</li>
                 <li>Компания имеет право действовать в соответствии с любыми своими правами и обязанностями, указанными в Соглашении (включая, но не ограничиваясь своими платежными обязательствами), от лица любой организации в составе Binary Group.</li>
@@ -687,7 +707,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <ol class="reset_ol">
                 <li>Сайт Binary.com и его содержание остаются нашей собственностью и не могут быть переданы Вам по причине любых действий или нарушений данного Соглашения.</li>
                 <li>Партнер несет единоличную ответственностью за принадлежность, содержание и работу Партнерского сайта. Партнер несет эксклюзивную ответственность за развитие, работу и поддержку своего сайта, а также все материалы, опубликованные на сайте. Партнер обязуется освободить и оградить Binary Group от всех возможных убытков, претензий, вреда и расходов (включая, но не ограничиваясь юридическими расходами), имеющих отношение к развитию, работе, поддержке и содержанию сайта партнера.</li>
-                <li>Когда клиенты, направленные Партнером, открывают счёт на сайте любого представителя Binary Group, мы будем обладать правом собственности на базу данных, содержащую имена, контактные данные, а также любые другие данные о клиентах, привлеченных Партнером.</li>
+                <li>When the Affiliate's referred clients open an account with any member of the Binary group, we assume ownership of the database of names and contact information and any other data of the Affiliates' referred clients.</li>
             </ol>
         </li>
 
@@ -721,7 +741,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <li>Заявление
             <ol class="reset_ol">
                 <li>Компания не ручается, что вебсайт Binary.com будет всегда функционировать без прерывания связи, не обязуется предоставлять свои услуги без каких-либо ошибок, а также не несет ответственности за последствия любых таких ошибок или проблем со связью.</li>
-                <li>Компания предоставляет вебсайт Binary.com по принципу "как есть" и “по мере доступности”, не давая гарантий отсутствия ошибок на вебсайте Binary.com, своевременного исправления данных ошибок, а также отсутствия вмешательства третьей стороны, например, действий хакеров или иных вредоносных компонентов, находящихся вне контроля Компании.</li>
+                <li>The Company provides the Binary.com website on an “as is” and “as available” basis, and gives no warranty that the Binary.com website will be free of errors, or that errors will be corrected, or that our website is free of any third party interferences such as hackers or any other harmful components that arise outside of the Company's control.</li>
             </ol>
         </li>
 
@@ -765,7 +785,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
       </div>
       <div id="api-tac-tab-content" class="toggle-content invisible">
-        <div class="grd-grid-12">
+        <div class="gr-12">
 
     <h2>Правила и условия <a href="https://developers.binary.com" target="_blank"> Application Program Interface</a> (интерфейса прикладного программирования "API") Binary.com</h2>
 
@@ -796,7 +816,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <ol class="reset_ol">
                                 <li>перепоручать любые права, полученные в рамках данных Правил, за исключением случаев, разрешенных данными Правилами;</li>
                                 <li>использовать или воспроизводить API Binary.com, за исключением случаев, разрешенных данными Правилами, а также</li>
-                                <li>использовать API Binary.com в любых целях, нарушающих любой закон или установленные нормы, права любого лица, включая, но не ограничиваясь правом на интеллектуальную собственность, правом на сохранение конфиденциальности или охрану сфер личной жизни, или в иных целях, противоречащих данным Правилам политики конфиденциальности.</li>
+                                <li>использовать API Binary.com в любых целях, нарушающих любой закон или установленные нормы, права любого лица, включая, но не ограничиваясь правом на интеллектуальную собственность, правом на сохранение конфиденциальности или охрану сфер личной жизни, а также в иных целях, противоречащих данным Правилам политики конфиденциальности.</li>
                             </ol>
                         </li>
                     </ol>
@@ -813,10 +833,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <li><strong>Хранение Контента</strong>
             <ol class="reset_ol">
-                <li>You are not allowed to store any Content (such as feed data).</li>
-                <li>You may store the Application-specific alphanumeric user IDs provided ("API Tokens") or the authentication tokens provided via Open Authorisation Standard ("OAuth Tokens").</li>
-                <li>You may cache the Content for up to 24 hours from a request for that Content through the Binary.com API.</li>
-                <li>If this Agreement is terminated for any reason, you must permanently delete all Content, except when doing so would cause you to violate any law or obligation imposed by a governmental authority.</li>
+                <li>Вам запрещено хранить любой Контент (например, котировки).</li>
+                <li>Вы можете хранить буквенно-цифровой номер пользователя (ID) для конкретного Приложения, который мы предоставляем Вам с целью идентификации пользователей Вашего Приложения ("API код") или коды, которые мы предоставляем Вам, когда Binary.com идентифицирует Ваше Приложение посредством открытого протокола авторизации ("Коды OAuth").</li>
+                <li>Вы можете кэшировать Контент на срок до 24 часов с момента запроса на данный Контент посредством API Binary.com.</li>
+                <li>В случае прекращения действия данного Договора (по любой причине), Вы должны удалить весь Контент без возможности восстановления, за исключением случаев, когда таковые действия приведут к нарушению Вами любых законов или обязательств, возложенных на Вас государственными органами.</li>
             </ol>
         </li>
 
@@ -861,7 +881,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <ol class="reset_ol">
                         <li>В отношениях между Вами и нами мы обладаем всеми правами, правом и долей собственности, включая права на всю интеллектуальную собственность, права в отношении API Binary.com, а также всех элементов, компонентов и выполняемых программ API Binary.com.</li>
                         <li>Использование Вами API Binary.com не даёт Вам никаких прав и доли собственности, а также прав на интеллектуальную собственность, принадлежащую Компании. Наша торговая платформа защищена патентом, а наш вебсайт и его Контент защищены законом об авторском праве и останутся нашей эксклюзивной собственностью, в зависимости от конкретных обстоятельств.</li>
-                        <li>За исключением лицензии, предоставляемой в рамках данного Соглашения, Компания не даёт Вам иных прав, права и доли собственности в API Binary.com. Вы соглашаетесь выполнять действия, которые может обоснованно попросить Компания с целью улучшения прав Компании в отношении API Binary.com.</li>
+                        <li>Except for the license granted in this Agreement, the Company does not grant you any right, title, or interest in the Binary.com API. You agree to take such actions as the Company may reasonably request to perfect the Company's rights to the Binary.com API.</li>
                     </ol>
                 </li>
                 <li>Ваша собственность
@@ -890,13 +910,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </li>
                 <li>Улучшения
                     <ol class="reset_ol">
-                        <li>Вы выражаете согласие с тем, что Binary.com может продолжить вносить изменения и улучшения в API Binary.com, а также с тем, что данные изменения и улучшения будут принадлежать Binary.com. Настоящим Вы передаёте Компании все свои права на внесение любых изменений или компилятивную работу в отношении API Binary.com, созданного Вами ли для Вас, независимо от того, был ли создан интерфейс прикладного программирования согласно данным Правилам. Эта уступка прав вступает в действие после проведения данных работ и включает, но не ограничивается всеми правами в рамках законов об интеллектуальной собственности, в том числе закона об авторском праве. Вы не должны предпринимать каких-либо действий с целью ставить под угрозу, обременять обязательствами, ограничивать или любым образом оспаривать право собственности Binary.com, а также права Компании в отношении API Binary.com, иных компиляционных работ или каких-либо обновлений. Любые компоненты, части или механизмы любой системы API, получаемые из API Binary.com или а результате коммерческой деятельности Binary.com, должны полностью принадлежать Binary.com. Также вы обязуетесь никогда не оспаривать и не содействовать третьей стороне в оспаривании прав Binary.com в отношении API Binary.com или любой другой интеллектуальной собственности Компании, упомянутой в данных Правилах.</li>
+                        <li>You also acknowledge that Binary.com may continue to make changes to and enhance the Binary.com API and that those changes and enhancements will be owned by Binary.com. You hereby assign and transfer to the Company all of your right, title and interest in and to any modifications or derivative works of the Binary.com API created by or for you, regardless of whether they were created in accordance with these Terms; such assignment being effective upon creation of such works, and shall include, without limitation, all rights under any intellectual property laws, including copyright. You shall not take any action to jeopardise, encumber, limit or interface in any manner with Binary.com's ownership of and rights with respect to the Binary.com API, or any derivative works or updates thereof or thereto. Any components, parts, or mechanics of any system or API program derived from the Binary.com API, or Binary.com's business practices shall belong solely to Binary.com. Further, you will not, at any time, contest or assist any other third party in contesting the rights of Binary.com in the Binary.com API or any other intellectual property provided in these Terms.</li>
                     </ol>
                 </li>
                 <li>Внесение исправлений в API Binary.com
                     <ol class="reset_ol">
                         <li>Мы можем выпускать последующие версии API Binary.com и требуем от Вас пользоваться данными последующими версиями. Дальнейшее использование Вами новых API после их выпуска будет означать принятие Вами данных изменений.</li>
-                        <li>Вы должны прекратить использование всех предыдущих версий API Binary.com в пользу новых API от Binary.com. Хотя Компания стремится, чтобы обновлённые API Binary.com были обратно совместимы с более ранними версиями API Binary.com, Компания не даёт никаких гарантий в этом отношении; Компания не должна нести никакой ответственности перед Вами за отсутствие обратной совместимости обновлённых API Binary.com с любой предыдущей версией API Binary.com.</li>
+                        <li>You shall discontinue your use of all prior versions of the Binary.com API in favour of the revised Binary.com API. While it is the Company's intention that the revised Binary.com API shall be backward compatible with the immediately prior version of the Binary.com API, the Company does not guarantee or warrant that this shall be so, and the Company shall have no liability whatsoever to you for any failure of the revised Binary.com API to be backward compatible with any prior version of the Binary.com API.</li>
                         <li>Компания может изменить, приостановить, прервать и прекратить любой аспект работы API Binary.com, в том числе доступность любых услуг, информационных характеристик или функций, предоставляемых через API Binary.com, посредством отправки Вам письменного уведомления не менее чем за семь дней до вступления в силу данных изменений.</li>
                     </ol>
                 </li>
@@ -934,10 +954,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <li><strong>Возмещение ущерба</strong>
             <ol class="reset_ol">
-                <li>Вы должны нести единоличную ответственность, а также освободить и оградить Компанию от любых претензий третьей стороны, убытков или судебных исков (включая, но не ограничиваясь косвенными убытками и потерей прибыли, разумными юридическими издержками Компании, а также расходами, если таковые применимы) в следующих ситуациях:
+                <li>You shall be solely responsible for, and shall indemnify and hold the Company free and harmless from, any and all third party claims, damages or lawsuits (including, but not limited to, consequential losses and loss of profit, the Company's reasonable legal costs and expenses if applicable):
                     <ol class="reset_ol">
-                        <li>Ваши действия или упущения, а также действия и упущения Ваших сотрудников или агентов, включая нарушение или предполагаемое нарушение Вами или ими данных Правил;</li>
-                        <li>нарушение Вами любых прав Binary.com;</li>
+                        <li>You or your employees' or agents' acts or omissions, including yours or their breach or alleged breach of these Terms;</li>
+                        <li>Your breach of any of Binary.com's rights;</li>
                         <li>нарушение Вами любого применимого законодательства, правил или нормативов;</li>
                         <li>Неспособность с Вашей стороны поддерживать безопасность любого устройства защиты или процедур, применимых на сайте или в отношении интерфейса прикладного программирования (API) Binary.com;</li>
                         <li>использование, работа или сочетание API Binary.com с другими интерфейсами прикладного программирования (API), не принадлежащими Binary.com, данными, оборудованием или документами, если можно было бы избежать ответственности за данное использование, работу или сочетание данных действий; или</li>
@@ -1004,7 +1024,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </ol>
                 </li>
                 <li>Если Вы заключаете данное Соглашение от имени Вашего работодателя или другой организации, Вы заявляете и гарантируете, что обладаете всеми необходимыми юридическими полномочиями, чтобы связывать своего работодателя или организацию данным Соглашением.</li>
-                <li>Вы не можете уступать права, предоставленные Вам данным Соглашением, без предварительного письменного разрешения Компании.</li>
+                <li>You may not assign rights granted in this Agreement without the Company's prior written approval.</li>
             </ol>
         </li>
     </ol>
@@ -1012,7 +1032,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
 
       <div id="complaints-disputes-tac-tab-content" class="toggle-content invisible">
-        <div class="grd-grid-12">
+        <div class="gr-12">
     <h2>Жалобы и иски</h2>
     <p>
         Если Вы хотите подать жалобу относительно обслуживания, пожалуйста, свяжитесь с нами, предоставив имеющие отношение к жалобе данные. Мы рассмотрим Ваш запрос и предоставим ответ на него. Обычно окончательный ответ предоставляется в течение 1-2 недель (максимум – в течение 2 месяцев) с момента получения соответствующей информации.
@@ -1024,13 +1044,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     Клиенты, зарегистрированные под юрисдикцией Binary (C.R.) S.A., могут обратиться по нерешенным спорам к руководству компании по адресу complaints@binary.com.
     </p>
     <p>
-    Клиенты, зарегистрированные под юрисдикцией Binary (IOM) Ltd, могут направить свои жалобы в орган альтернативного урегулирования споров, которым является IBAS (независимая организация по разрешению споров, связанных с азартными играми), заполнив форму судебного решения на сайте данного органа <a href="http://www.ibas-uk.com/adjudicationForm.php" target="_blank">вебсайт</a>.
+    Clients registered with Binary (IOM) Ltd can raise their unresolved disputes with the alternative dispute resolution entity IBAS by filling the adjudication form on the ADR entity's <a href="http://www.ibas-uk.com/adjudicationForm.php" target="_blank">вебсайт</a>.
     </p>
     <p>
-    Клиенты, зарегистрированные под юрисдикцией Binary (Europe) Ltd, могут возбудить дела по нерешенным спорам в Управлении по азартным играм Мальты (Malta Gaming Authority) <a href="http://www.mga.org.mt/" target="_blank">(www.mga.org.mt)</a> по адресу  support.mga@mga.org.mt. Клиенты из Великобритании, зарегистрированные под юрисдикцией Binary (Europe) Ltd, могут направить свою жалобу в орган альтернативного урегулирования споров, которым является IBAS (независимая организация по разрешению споров, связанных с азартными играми), заполнив форму судебного решения на сайте данного органа <a href="http://www.ibas-uk.com/adjudicationForm.php" target="_blank">вебсайт</a>.
+    Клиенты, зарегистрированные под юрисдикцией Binary (Europe) Ltd, могут возбудить дела по нерешенным спорам в Управлении по азартным играм Мальты (Malta Gaming Authority) <a href="http://www.mga.org.mt/" target="_blank">(www.mga.org.mt)</a> по адресу  support.mga@mga.org.mt. UK clients registered with Binary (Europe) Ltd can submit their dispute with the alternative dispute resolution entity IBAS by filling the adjudication form on the ADR entity's <a href="http://www.ibas-uk.com/adjudicationForm.php" target="_blank">вебсайт</a>.
     </p>
     <p>
-        Кроме того, вместо того, чтобы выносить споры в Независимый букмекерский арбитражный сервис IBAS, клиенты, зарегистрированные на Binary (IOM) Ltd и Binary (Europe) Ltd, могут воспользоваться платформой Европейской комиссии по разрешению онлайн споров (ODR), доступной <a href='http://ec.europa.eu/odr' target='_blank'>здесь</a>.
+        Alternatively, clients who are registered with both Binary (IOM) Ltd and Binary (Europe) Ltd, instead of submitting their dispute to IBAS, they can make use of the European Commission's Online Dispute Resolution (ODR) platform available <a href='http://ec.europa.eu/odr' target='_blank'>here</a>.
     </p>
     <p>
     Клиенты, зарегистрированные на Binary Investments (Europe) Ltd, могут донести нерешенные споры до внимания менеджера по жалобам клиентов в MFSA (Consumer Complaints Manager). Подробности о подаче жалобы менеджеру по жалобам клиентов в MFSA и контактные данные можно найти здесь: <a href='http://mymoneybox.mfsa.com.mt' target='_blank'>http://mymoneybox.mfsa.com.mt</a>. Жалобы менеджеру по жалобам клиентов в MFSA должны обязательно подаваться в письменном виде.
@@ -1042,7 +1062,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
 
       <div id="conflicts-policy-tac-tab-content" class="toggle-content invisible">
-        <div class="grd-grid-12">
+        <div class="gr-12">
     <h2>Политика по конфликтам</h2>
     <p>
         Здесь мы предоставляем обзор политики по управлению конфликтами интересов, связанной с нашими обязанностями по отношению к нашим клиентам.
@@ -1063,13 +1083,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </p>
     <h2>Раскрытие информации: общие положения</h2>
     <p>
-        В случае, когда наши механизмы по управлению конфликтами не являются или не могут быть достаточными для разумной уверенности в том, что риск ущерба интересов клиента будет предотвращен, мы стремимся раскрыть общий характер или источники конфликтов. Это направлено на то, чтобы позволить клиенту решить, запросить ли дополнительную информацию (отправив эл. письмо по адресу compliance<b></b>@<i></i>binary.com ) или продолжать пользоваться услугой; мы не стремимся предоставлять подробную, чрезвычайно конкретную или исчерпывающую информацию.
+        Where our arrangements to manage conflicts are not or cannot be sufficient to be reasonably confident that risks of damage to a client's interest will be prevented we aim to disclose the general nature or sources of conflicts. This is aimed at allowing the client the opportunity to consider whether to ask for more information by sending an email to compliance<b></b>@<i></i>binary.com, or to continue with the service; we do not aim to provide detailed, highly specific or comprehensive information.
     </p>
 </div>
       </div>
 
       <div id="biel-terms-tac-tab-content" class="toggle-content invisible">
-        <div class="grd-grid-12">
+        <div class="gr-12">
     <h2>Дополнительные Правила и Условия для финансовых продуктов, предлагаемых Binary Investments (Europe) Ltd.</h2>
     <p>
         Данные Дополнительные Правила и Условия (данные "ДПУ") применяются только к клиентам ("Вы") Binary Investments (Europe) Ltd ("BIEL" или "мы") и будут определять отношения между Вами и нами при торговле на финансовых продуктах (как описано ниже) у нас на сайте.
@@ -1145,7 +1165,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         Денежные средства, внесенные Вами у нас на сайте в счет будущей торговли или в ожидании вывода, считаются нами клиентскими средствами. Мы содержим эти деньги на объединенных банковских счетах омнибус, открытых в банках или других финансовых организациях ("Учреждениях"), отдельно от наших собственных средств. Такие банковские счета для средств клиентов могут быть открыты в учреждениях Европейской Экономической Зоны или организациях за пределами ЕЭЗ. В случаях, когда деньги клиентов содержатся не в учреждениях ЕЭЗ, такие счета будут регулироваться иными законами, отличными от законов в государствах-членах ЕЭЗ, а Ваши права могут отличаться, в соответствии с законом.
     </p>
     <p>
-        Финансовые продукты, которые мы предлагаем, являются контрактами между Вами и нами. В этих контрактах, согласно конкретным условиям соответствующего контракта, с учетом комиссии или цены, которую Вы платите нам, мы обещаем платить Вам определенную сумму, если справочные активы или измерения имеют определенные показатели. Эти контракты, соответственно, не являются инструментами, которые мы содержим от Вашего имени или от защиты которых мы извлекаем выгоду в случае нашей несостоятельности. Аналогично, комиссия или цена, которую Вы платите, содержится не как деньги клиентов, а в качестве вознаграждения за наше обязательство выплаты.
+        The Financial Products that we offer to deal in are contracts entered into between you and us. Under these contracts and subject to the specific terms of the relevant contract, in consideration for the premium or price that you pay us, we promise to pay you a certain amount if the reference assets or measurements perform in a particular manner. These contracts accordingly are not instruments that we hold on your behalf and neither benefit from clients' assets protection in the event of our insolvency. Similarly the premium or price that you pay to take out a trade is not held as clients' money but as consideration for our undertaking to pay.
     </p>
     <h2>Схема компенсации инвесторам</h2>
     <p>
@@ -1162,7 +1182,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
 
       <div id="datafeed-tab-content" class="toggle-content invisible">
-        <div class="grd-grid-12">
+        <div class="gr-12">
     <h2>
         Котировки
     </h2>
@@ -1203,7 +1223,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
       </div>
       <div id="privacy-tab-content" class="toggle-content invisible">
-        <div class="grd-grid-12">
+        <div class="gr-12">
     <h2>
         Защита информации
     </h2>
@@ -1244,7 +1264,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
       </div>
       <div id="copyright-tab-content" class="toggle-content invisible">
-        <div class="grd-grid-12">
+        <div class="gr-12">
     <h2>
         Авторское право
     </h2>
@@ -1267,7 +1287,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
       </div>
       <div id="risk-tab-content" class="toggle-content invisible">
-        <div class="grd-grid-12">
+        <div class="gr-12">
     <h2>О рисках</h2>
     <p>
         Данное положение предоставляет информацию относительно рисков, сопряженных с инвестиционными контрактами, которые Вы можете приобретать посредством услуг, предоставленных Binary.com. Binary Group предоставляет широкий спектр продуктов, включая бинарные опционы, связанные с иностранной валютой, индексами, акциями, другие инвестиционные продукты ("Инвестиционные продукты") и бинарные ставки, связанные с такими рынками, как Random ("Игровые продукты").
@@ -1367,13 +1387,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
       </div>
       <div id="order-execution-tab-content" class="toggle-content invisible">
-        <div class="grd-grid-12">
+        <div class="gr-12">
     <h2>Резюме политики лучшего исполнения</h2>
     <p>
         Наш основной долг – честно, справедливо и профессионально вести наш совместный бизнес с Вами, а также действовать в Ваших интересах при открытии и закрытии контрактов на бинарных опционах.
     </p>
     <p>
-        Более конкретно, когда мы заключаем с Вами договор бинарного контракта ("Контракт"), мы обязаны предоставить Вам условия "лучшего исполнения". Лучшее исполнение означает, что мы должны принять разумные меры для получения наилучшего результата при выполнении Вашего ордера. Этот документ содержит резюме нашей политики лучшего исполнения.
+        В частности, когда мы заключим с Вами сделку в рамках торговли бинарными опционами (далее именуемую "Контракт"), мы будем обязаны предоставить Вам следующее: 
     </p>
     <p>
         Обратите внимание, что наша обязанность предоставить Вам лучшее исполнение не распространяется на любые игровые продукты, которые Вы у нас приобретаете, и которые не относятся к финансовому рынку.
@@ -1409,167 +1429,180 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </div>
 </div>
-</div> 
 
-<div class="push"></div>
+
+  </div> 
+
 </div> 
 </div>
 <div id="footer">
     <div id="footer-menu">
-        <div class="grd-container grd-default-container">
-            <div class="grd-grid-6 grd-grid-mobile-12 grd-parent">
-                <div class="grd-grid-4">
-                    <h1>Наша компания</h1>
-                    <ul>
-                        <li>
-                            <a class="pjaxload" href="/binary-static/ru/about-us.html">О нас</a>
-                        </li>
-                        <li>
-                            <a class="pjaxload id-hide ar-hide" href="/binary-static/ru/group-information.html">О компании</a>
-                        </li>
-                        <li>
-                            <a class="pjaxload" href="/binary-static/ru/group-history.html">История компании</a>
-                        </li>
-                        <li class="ja-hide">
-                            <a class="pjaxload" href="/binary-static/ru/careers.html">Карьера</a>
-                        </li>
-                        <li class="ja-hide">
-                            <a href="http://binarycom.statuspage.io" target="_blank">Статус сети</a>
-                        </li>
-                        <li>
-                            <a class="pjaxload" href="/binary-static/ru/contact.html">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grd-grid-4">
-                    <h1>Обучение</h1>
-                    <ul>
-                        <li>
-                            <a class="pjaxload" href="/binary-static/ru/why-us.html">Почему мы?</a>
-                        </li>
-                        <li class="ja-hide">
-                            <a class="pjaxload" href="/binary-static/ru/get-started.html">С чего начать</a>
-                        </li>
-                        <li class="all-hide ja-show-block">
-                            <a class="pjaxload" href="/binary-static/ru/get-started-jp.html">С чего начать</a>
-                        </li>
-                        <li>
-                            <a class="pjaxload" href="/binary-static/ru/tour.html">О платформе</a>
-                        </li>
-                        <li class="ja-hide id-hide">
-                            <a href="http://www.gamcare.org.uk/" target="_blank">GamCare</a>
-                        </li>
-                        <li class="ja-hide blog">
-                            <a href="http://blog.binary.com" target="_blank">Блог</a>
-                        </li>
-                        <li class='ja-hide id-hide'>
-                            <a href="http://blog.binary.com/en/webinar/" target="_blank">Вебинары</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grd-grid-4">
-                    <h1 class="ja-hide">Контракты</h1>
-                    <ul class="ja-hide">
-                        <li class="ja-hide">
-                            <a class="pjaxload" href="/binary-static/ru/resources/asset_indexws.html">Индекс активов</a>
-                        </li>
-                    </ul>
-                    <div class='grd-row-padding ja-no-padding'>
-                        <h1>Финансы</h1>
-                        <ul>
-                            <li>
-                                <a class="pjaxload" href="/binary-static/ru/cashier.html">Касса</a>
-                            </li>
-                            <li class="ja-hide">
-                                <a class="pjaxload" href="/binary-static/ru/cashier/payment_methods.html">Способы оплаты</a>
-                            </li>
-                        </ul>
+        <div class="container">
+            <div class="gr-row gr-padding-10">
+                <div class="gr-6 gr-12-m gr-parent">
+                    <div class="gr-row">
+                        <div class="gr-4">
+                            <h1>Наша компания</h1>
+                            <ul>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/ru/about-us.html">О нас</a>
+                                </li>
+                                <li>
+                                    <a class="pjaxload id-hide ar-hide" href="/binary-static/ru/group-information.html">О компании</a>
+                                </li>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/ru/group-history.html">История компании</a>
+                                </li>
+                                <li class="ja-hide">
+                                    <a class="pjaxload" href="/binary-static/ru/careers.html">Карьера</a>
+                                </li>
+                                <li class="ja-hide">
+                                    <a href="http://binarycom.statuspage.io" target="_blank">Статус сети</a>
+                                </li>
+                                <li class="ja-hide id-hide">
+                                    <a href="/binary-static/ru/legal/us_patents.html" class="us_patent_link pjaxload">Патенты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gr-4">
+                            <h1>Обучение</h1>
+                            <ul>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/ru/why-us.html">Почему мы?</a>
+                                </li>
+                                <li class="ja-hide">
+                                    <a class="pjaxload" href="/binary-static/ru/get-started.html">С чего начать</a>
+                                </li>
+                                <li class="all-hide ja-show-block">
+                                    <a class="pjaxload" href="/binary-static/ru/get-started-jp.html">С чего начать</a>
+                                </li>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/ru/tour.html">О платформе</a>
+                                </li>
+                                <li class="ja-hide id-hide">
+                                    <a href="http://www.gamcare.org.uk/" target="_blank">GamCare</a>
+                                </li>
+                                <li class="ja-hide blog">
+                                    <a href="http://blog.binary.com" target="_blank">Блог</a>
+                                </li>
+                                <li class='ja-hide id-hide'>
+                                    <a href="http://blog.binary.com/en/webinar/" target="_blank">Вебинары</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gr-4">
+                            <h1 class="ja-hide">Контракты</h1>
+                            <ul class="ja-hide">
+                                <li class="ja-hide">
+                                    <a class="pjaxload" href="/binary-static/ru/resources/asset_indexws.html">Индекс активов</a>
+                                </li>
+                            </ul>
+                            <div class='gr-padding-10 gr-no-gutter'>
+                                <h1>Финансы</h1>
+                                <ul>
+                                    <li>
+                                        <a class="pjaxload" href="/binary-static/ru/cashier.html">Касса</a>
+                                    </li>
+                                    <li class="ja-hide">
+                                        <a class="pjaxload" href="/binary-static/ru/cashier/payment_methods.html">Способы оплаты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="grd-grid-6 grd-grid-mobile-12 grd-parent">
-                 <div class="grd-grid-4">
-                    <h1>Условия</h1>
-                    <ul>
-                        <li class='ja-hide'>
-                            <a class="pjaxload" href="/binary-static/ru/terms-and-conditions.html">Правила и условия</a>
-                        </li>
-                        <li class='hidden ja-show-block'>
-                            <a class="pjaxload" href="/binary-static/ru/terms-and-conditions-jp.html">Правила и условия</a>
-                        </li>
-                        <li class='ja-hide'>
-                            <a class="pjaxload"
-                               href="/binary-static/ru/terms-and-conditions.html#privacy-tab">Безопасность</a>
-                        </li>
-                        <li class='hidden ja-show-block'>
-                            <a class="pjaxload"
-                               href="/binary-static/ru/terms-and-conditions-jp.html?selected_tab=privacy-tab">Безопасность</a>
-                        </li>
-                        <li class="ja-hide">
-                            <a class="pjaxload" href="/binary-static/ru/responsible-trading.html">Ответственность</a>
-                        </li>
-                        <li class="ja-hide">
-                        <a class="pjaxload" href="/binary-static/ru/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">Жалобы</a>
-                        </li>
-                        <li class="ja-hide id-hide ru-hide">
-                            <a href="/binary-static/download/BIEL_Prospectus.pdf" target="_blank">Проспект</a>
-                        </li>
-                        <li class="ja-hide id-hide">
-                            <a href="/binary-static/ru/legal/us_patents.html" class="us_patent_link pjaxload">Патенты</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grd-grid-4">
-                    <h1>Графики</h1>
-                    <ul>
-                        <li class="ja-hide">
-                            <a class="pjaxload" href="//webtrader.binary.com" target="_blank">Webtrader</a>
-                        </li>
-                        <li>
-                            <a class="pjaxload" href="//tradingview.binary.com" target="_blank">TradingView</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grd-grid-4">
-                    <h1 class="ja-hide">Партнерство</h1>
-                    <ul class="ja-hide partner">
-                        <li>
-                            <a class="pjaxload" href="/binary-static/ru/partners.html"><img id="iom_icon_footer" class="responsive" src="/binary-static/images/pages/footer/partner-icon.svg"/></a>
-                        </li>
+                <div class="gr-6 gr-12-m gr-parent">
+                    <div class="gr-row">
+                        <div class="gr-4">
+                           <h1>Условия</h1>
+                           <ul>
+                               <li class='ja-hide'>
+                                   <a class="pjaxload" href="/binary-static/ru/terms-and-conditions.html">Правила и условия</a>
+                               </li>
+                               <li class='hidden ja-show-block'>
+                                   <a class="pjaxload" href="/binary-static/ru/terms-and-conditions-jp.html">Правила и условия</a>
+                               </li>
+                               <li class='ja-hide'>
+                                   <a class="pjaxload"
+                                      href="/binary-static/ru/terms-and-conditions.html#privacy-tab">Безопасность</a>
+                               </li>
+                               <li class='hidden ja-show-block'>
+                                   <a class="pjaxload"
+                                      href="/binary-static/ru/terms-and-conditions-jp.html?selected_tab=privacy-tab">Безопасность</a>
+                               </li>
+                               <li class="ja-hide">
+                                   <a class="pjaxload" href="/binary-static/ru/responsible-trading.html">Ответственность</a>
+                               </li>
+                               <li class="ja-hide">
+                               <a class="pjaxload" href="/binary-static/ru/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">Жалобы</a>
+                               </li>
+                               <li class="ja-hide id-hide ru-hide">
+                                   <a href="/binary-static/download/BIEL_Prospectus.pdf" target="_blank">BIEL Prospectus</a>
+                               </li>
+                               <li class="ja-hide id-hide ru-hide">
+                                   <a href="/binary-static/download/BIEL_Pillar_3_Report.pdf" target="_blank">Принципы BIEL III</a>
+                               </li>
+                           </ul>
+                       </div>
+                       <div class="gr-4">
+                           <h1>Charts</h1>
+                           <ul>
+                               <li class="ja-hide">
+                                   <a class="pjaxload" href="//webtrader.binary.com" target="_blank">Webtrader</a>
+                               </li>
+                               <li>
+                                   <a class="pjaxload" href="//tradingview.binary.com" target="_blank">TradingView</a>
+                               </li>
+                           </ul>
+                       </div>
+                       <div class="gr-4">
+                           <h1 class="ja-hide">Партнерство</h1>
+                           <ul class="ja-hide partner">
+                               <li>
+                                   <a class="pjaxload" href="/binary-static/ru/partners.html"><img id="iom_icon_footer" class="responsive" src="/binary-static/images/pages/footer/partner-icon.svg"/></a>
+                               </li>
+                           </ul>
+                       </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="footer-regulatory">
-        <div class="grd-container grd-default-container">
-            <div class="grd-parent grd-grid-12 ja-hide id-hide">
-                <div class="grd-grid-2">
-                    <a href="http://www.gov.im/gambling/" target="_blank">
-                        <img id="iom_icon_footer" class="responsive" src="/binary-static/images/pages/footer/isle-of-man.png"/>
-                    </a>
-                </div>
-                <div class="grd-grid-2 center">
-                    <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40" target="_blank">
-                        <img id="lga_icon_footer" class="responsive" src="/binary-static/images/pages/footer/mga-logo-footer.svg"/>
-                    </a>
-                </div>
-                <div class="grd-grid-6 center">
-                    <a href="http://mfsa.com.mt/" target="_blank">
-                        <img id="mfsa_logo" class="responsive" src="/binary-static/images/pages/footer/mfsa-logo.svg"/>
-                    </a>
-                </div>
-                <div class="grd-grid-2 center">
-                    <a href="http://mfsa.com.mt/" target="_blank">
-                        <img id="mifid_logo" class="responsive" src="/binary-static/images/pages/footer/mifid-logo.svg"/>
-                    </a>
-                </div>
-            </div>
-            <div class="grd-parent grd-grid-12">
-                <div id="regulatory-text" class="grd-grid-9 grd-grid-mobile-12 grd-grid-phablet-7">
-                    Данный сайт действует в Великобритании, на Острове Мэн и находится под управлением компании Binary (IOM) Ltd., расположенной по адресу First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles, лицензируемой и контролируемой (1) Комиссией по надзору за азартными играми Острова Мэн, Британские острова; текущая лицензия для ведения игорной деятельности выдана 31 августа 2012; для британских клиентов – (2) Комиссией по азартным играм Великобритании – <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>просмотрите лицензию</a>. Также данный сайт действует в остальной части Европы, а его инвестиционные продукты находятся под управлением компании Binary Investments (Europe) Ltd., расположенной по адресу Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, лицензированной и контролируемой в качестве поставщика инвестиционных услуг категории 3 Управлением по азартным играм Мальты (лицензия номер IS/70156). Игорные продукты сайта находятся под управлением компании Binary (Europe) Ltd., расположенной по адресу Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Мальта, лицензированной и контролируемой (1) Управлением по азартным играм Мальты, лицензия MGA/CL2/118/2000 от 26 мая 2010 года; для британских клиентов - (2) Комиссией по азартным играм Великобритании – <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495' target='_blank'>просмотрите лицензию</a>; для ирландских клиентов – (3) Государственной налоговой инспекцией  Ирландии; текущая лицензия удаленного букмекера выдана 29 сентября 2015 г. (лицензия номер 1010285). Услуги данного сайта не доступны в США, Японии, Коста-Рике и Гонконге, а также лицам младше 18 лет.
-                </div>
-                <div class="ja-hide grd-grid-3 grd-grid-mobile-12 grd-centered-mobile" id="social-networks">
-                    <div id="fb-root">
+        <div class="container">
+            <div>
+                <div class="gr-padding-10">
+                    <div class="gr-parent">
+                        <div class="gr-row ja-hide id-hide">
+                            <div class="gr-2">
+                                <a href="http://www.gov.im/gambling/" target="_blank">
+                                    <img id="iom_icon_footer" class="responsive" src="/binary-static/images/pages/footer/isle-of-man.png"/>
+                                </a>
+                            </div>
+                            <div class="gr-2 center-text">
+                                <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40" target="_blank">
+                                    <img id="lga_icon_footer" class="responsive" src="/binary-static/images/pages/footer/mga-logo-footer.svg"/>
+                                </a>
+                            </div>
+                            <div class="gr-6 center-text">
+                                <a href="http://mfsa.com.mt/" target="_blank">
+                                    <img id="mfsa_logo" class="responsive" src="/binary-static/images/pages/footer/mfsa-logo.svg"/>
+                                </a>
+                            </div>
+                            <div class="gr-2">
+                                <a href="http://mfsa.com.mt/" target="_blank">
+                                    <img id="mifid_logo" class="responsive" src="/binary-static/images/pages/footer/mifid-logo.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gr-parent">
+                        <div class="gr-row">
+                            <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p">
+                                Данный сайт действует в Великобритании, на Острове Мэн и находится под управлением компании Binary (IOM) Ltd., расположенной по адресу First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles, лицензируемой и контролируемой (1) Комиссией по надзору за азартными играми Острова Мэн, Британские острова; текущая лицензия для ведения игорной деятельности выдана 31 августа 2012; для британских клиентов – (2) Комиссией по азартным играм Великобритании – <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>просмотрите лицензию</a>. Также данный сайт действует в остальной части Европы, а его инвестиционные продукты находятся под управлением компании Binary Investments (Europe) Ltd., расположенной по адресу Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, лицензированной и контролируемой в качестве поставщика инвестиционных услуг категории 3 Управлением по азартным играм Мальты (лицензия номер IS/70156). Игорные продукты сайта находятся под управлением компании Binary (Europe) Ltd., расположенной по адресу Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Мальта, лицензированной и контролируемой (1) Управлением по азартным играм Мальты, лицензия MGA/CL2/118/2000 от 26 мая 2010 года; для британских клиентов - (2) Комиссией по азартным играм Великобритании – <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495' target='_blank'>просмотрите лицензию</a>; для ирландских клиентов – (3) Государственной налоговой инспекцией  Ирландии; текущая лицензия удаленного букмекера выдана 29 сентября 2015 г. (лицензия номер 1010285). Услуги данного сайта не доступны в США, Японии, Коста-Рике и Гонконге, а также лицам младше 18 лет.
+                            </div>
+                            <div class="ja-hide gr-3 gr-12-m gr-5-p" id="social-networks">
+                                <div id="fb-root">
 </div>
 <div class="social-icons">
     <a href="http://www.youtube.com/user/BinaryTradingVideos" target="_blank">
@@ -1589,6 +1622,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <img class="responsive social-network-icon" src="/binary-static/images/pages/footer/linkedin.svg"/>
     </a>
 </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1599,8 +1635,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
     </div>
     <div id="footer-last">
-        <div class="grd-container grd-default-container">
-            <div class="grd-grid-12">
+        <div class="container">
+            <div class="gr-padding-10">
                 <p class="gambling">
                     Торговля бинарными опционами подходит далеко не всем, поэтому, пожалуйста, убедитесь, что Вы полностью осознаёте все риски. Ваши потери могут превысить первоначальный депозит, а Вы не владеете и не получаете никакой доли от базового актива. Помните, что некоторые вариации бинарных опционов являются разновидностью азартных игр и могут вызвать привыкание, поэтому, пожалуйста, играйте ответственно. <span class="ja-hide">Узнайте больше об <a href="/binary-static/ru/responsible-trading.html" class="pjaxload">Ответственной торговле</a>.</span>
                 </p>

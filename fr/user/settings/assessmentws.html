@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+        <style id="antiClickjack">body{display:none !important;}</style>
+        <script type="text/javascript">
+            if (self === top) {
+                var antiClickjack = document.getElementById("antiClickjack");
+                antiClickjack.parentNode.removeChild(antiClickjack);
+            } else {
+                top.location = self.location;
+            }
+        </script>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta http-equiv="Content-Language" content="FR" />
         <meta name="description" content=" Binary.com offre une plateforme de trading simple, permettant à chacun de profiter des nombreuses opportunités qu'offrent les marchés financiers. Négociez les devises, les indices et les matières premières à partir de 1 USD seulement." />
@@ -15,8 +25,6 @@
         <meta property="og:image" content="/binary-static/images/common/og_image.gif" />
 
         <title>Évaluation Financière | Binary.com</title>
-
-        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 
         <link rel="apple-touch-icon" sizes="57x57" href="/binary-static/images/favicons/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="114x114" href="/binary-static/images/favicons/apple-touch-icon-114x114.png">
@@ -48,37 +56,41 @@
           <link rel="alternate" href="/binary-static/zh_cn/user/settings/assessmentws.html" hreflang="ZH_CN" /> 
           <link rel="alternate" href="/binary-static/zh_tw/user/settings/assessmentws.html" hreflang="ZH_TW" /> 
         
-         <link rel="stylesheet" href="/binary-static/css/binary.min.css?y88kr7vv">
+         <link rel="stylesheet" href="/binary-static/css/binary.min.css?bpw7z2th">
         
+        <link rel="stylesheet" href="https://style.binary.com/binary.css">
         <script>
     //A global variable required to initialize Page object.
-    window.page_params = {settings: {"broker":"CR","valid_loginids":"MX|MF|VRTC|MLT|CR|FOG|VRTJ|JP","arr_all_currencies":["USD","EUR","GBP","AUD"],"enable_relative_barrier":"true","streaming_server":"www.binary.com","image_link":{"livechaticon":"/binary-static/images/pages/contact/chat-icon.svg","calendar_icon":"/binary-static/images/common/calendar_icon_1.png","hourglass":"/binary-static/images/common/hourglass_1.gif","up":"/binary-static/images/javascript/up_arrow_1.gif","down":"/binary-static/images/javascript/down_arrow_1.gif"},"countries_list":{"ru":{"gaming_company":"costarica","financial_company":"costarica","name":"Russian Federation"},"my":{"gaming_company":"none","financial_company":"none","name":"Malaysia"},"qa":{"financial_company":"costarica","gaming_company":"costarica","name":"Qatar"},"rs":{"name":"Serbia","gaming_company":"costarica","financial_company":"costarica"},"mu":{"name":"Mauritius","gaming_company":"costarica","financial_company":"costarica"},"tg":{"name":"Togo","financial_company":"costarica","gaming_company":"costarica"},"mw":{"gaming_company":"costarica","financial_company":"costarica","name":"Malawi"},"eh":{"name":"Western Sahara","gaming_company":"costarica","financial_company":"costarica"},"no":{"financial_company":"costarica","gaming_company":"costarica","name":"Norway"},"lb":{"gaming_company":"costarica","financial_company":"costarica","name":"Lebanon"},"vi":{"name":"Virgin Islands, U.S.","financial_company":"none","gaming_company":"none"},"ar":{"name":"Argentina","gaming_company":"costarica","financial_company":"costarica"},"eg":{"name":"Egypt","gaming_company":"costarica","financial_company":"costarica"},"gq":{"name":"Equatorial Guinea","gaming_company":"costarica","financial_company":"costarica"},"es":{"gaming_company":"none","financial_company":"maltainvest","name":"Spain"},"kz":{"financial_company":"costarica","gaming_company":"costarica","name":"Kazakhstan"},"pr":{"name":"Puerto Rico","gaming_company":"costarica","financial_company":"costarica"},"np":{"name":"Nepal","financial_company":"costarica","gaming_company":"costarica"},"tr":{"financial_company":"costarica","gaming_company":"costarica","name":"Turkey"},"by":{"gaming_company":"costarica","financial_company":"costarica","name":"Belarus"},"sn":{"gaming_company":"costarica","financial_company":"costarica","name":"Senegal"},"uz":{"financial_company":"costarica","gaming_company":"costarica","name":"Uzbekistan"},"sy":{"gaming_company":"costarica","financial_company":"costarica","name":"Syrian Arab Republic"},"nu":{"name":"Niue","gaming_company":"costarica","financial_company":"costarica"},"tc":{"gaming_company":"costarica","financial_company":"costarica","name":"Turks and Caicos Islands"},"kn":{"name":"Saint Kitts and Nevis","financial_company":"costarica","gaming_company":"costarica"},"ec":{"name":"Ecuador","financial_company":"costarica","gaming_company":"costarica"},"fr":{"name":"France","financial_company":"maltainvest","gaming_company":"none"},"gt":{"financial_company":"costarica","gaming_company":"costarica","name":"Guatemala"},"zw":{"financial_company":"costarica","gaming_company":"costarica","name":"Zimbabwe"},"az":{"gaming_company":"costarica","financial_company":"costarica","name":"Azerbaijan"},"nf":{"financial_company":"costarica","gaming_company":"costarica","name":"Norfolk Island"},"li":{"financial_company":"costarica","gaming_company":"costarica","name":"Liechtenstein"},"sz":{"gaming_company":"costarica","financial_company":"costarica","name":"Swaziland"},"tk":{"financial_company":"costarica","gaming_company":"costarica","name":"Tokelau"},"lt":{"name":"Lithuania","financial_company":"maltainvest","gaming_company":"malta"},"tl":{"name":"Timor-Leste","financial_company":"costarica","gaming_company":"costarica"},"ge":{"gaming_company":"costarica","financial_company":"costarica","name":"Georgia"},"tf":{"name":"French Southern Territories","gaming_company":"costarica","financial_company":"costarica"},"is":{"gaming_company":"costarica","financial_company":"costarica","name":"Iceland"},"ca":{"name":"Canada","gaming_company":"costarica","financial_company":"costarica"},"bo":{"name":"Bolivia","financial_company":"costarica","gaming_company":"costarica"},"au":{"gaming_company":"costarica","financial_company":"costarica","name":"Australia"},"vn":{"gaming_company":"costarica","financial_company":"costarica","name":"Vietnam"},"bm":{"name":"Bermuda","financial_company":"costarica","gaming_company":"costarica"},"th":{"name":"Thailand","financial_company":"costarica","gaming_company":"costarica"},"bw":{"financial_company":"costarica","gaming_company":"costarica","name":"Botswana"},"ke":{"name":"Kenya","gaming_company":"costarica","financial_company":"costarica"},"ml":{"name":"Mali","financial_company":"costarica","gaming_company":"costarica"},"ao":{"name":"Angola","financial_company":"costarica","gaming_company":"costarica"},"sc":{"name":"Seychelles","gaming_company":"costarica","financial_company":"costarica"},"gh":{"name":"Ghana","gaming_company":"costarica","financial_company":"costarica"},"bs":{"name":"Bahamas","financial_company":"costarica","gaming_company":"costarica"},"vg":{"financial_company":"costarica","gaming_company":"costarica","name":"Virgin Islands, British"},"iq":{"financial_company":"none","gaming_company":"none","name":"Iraq"},"sm":{"name":"San Marino","gaming_company":"costarica","financial_company":"costarica"},"sa":{"gaming_company":"costarica","financial_company":"costarica","name":"Saudi Arabia"},"gd":{"financial_company":"costarica","gaming_company":"costarica","name":"Grenada"},"om":{"name":"Oman","gaming_company":"costarica","financial_company":"costarica"},"lr":{"name":"Liberia","financial_company":"costarica","gaming_company":"costarica"},"cd":{"name":"Congo, The Democratic Republic of the","gaming_company":"costarica","financial_company":"costarica"},"nc":{"financial_company":"costarica","gaming_company":"costarica","name":"New Caledonia"},"af":{"gaming_company":"costarica","financial_company":"costarica","name":"Afghanistan"},"pm":{"financial_company":"costarica","gaming_company":"costarica","name":"Saint Pierre and Miquelon"},"pa":{"financial_company":"costarica","gaming_company":"costarica","name":"Panama"},"dk":{"gaming_company":"malta","financial_company":"maltainvest","name":"Denmark"},"dz":{"financial_company":"costarica","gaming_company":"costarica","name":"Algeria"},"ci":{"name":"Cote D'Ivoire","gaming_company":"costarica","financial_company":"costarica"},"ye":{"name":"Yemen","gaming_company":"costarica","financial_company":"costarica"},"cn":{"gaming_company":"costarica","financial_company":"costarica","name":"China"},"ug":{"gaming_company":"costarica","financial_company":"costarica","name":"Uganda"},"bn":{"gaming_company":"costarica","financial_company":"costarica","name":"Brunei Darussalam"},"hu":{"name":"Hungary","financial_company":"maltainvest","gaming_company":"malta"},"zm":{"gaming_company":"costarica","financial_company":"costarica","name":"Zambia"},"cz":{"name":"Czech Republic","gaming_company":"malta","financial_company":"maltainvest"},"pg":{"gaming_company":"costarica","financial_company":"costarica","name":"Papua New Guinea"},"nl":{"name":"Netherlands","gaming_company":"malta","financial_company":"maltainvest"},"mm":{"name":"Myanmar","financial_company":"costarica","gaming_company":"costarica"},"lk":{"name":"Sri Lanka","financial_company":"costarica","gaming_company":"costarica"},"bv":{"financial_company":"costarica","gaming_company":"costarica","name":"Bouvet Island"},"cf":{"name":"Central African Republic","financial_company":"costarica","gaming_company":"costarica"},"pt":{"financial_company":"maltainvest","gaming_company":"malta","name":"Portugal"},"pw":{"financial_company":"costarica","gaming_company":"costarica","name":"Palau"},"aw":{"name":"Aruba","gaming_company":"costarica","financial_company":"costarica"},"se":{"name":"Sweden","financial_company":"maltainvest","gaming_company":"malta"},"uy":{"financial_company":"costarica","gaming_company":"costarica","name":"Uruguay"},"za":{"financial_company":"costarica","gaming_company":"costarica","name":"South Africa"},"et":{"name":"Ethiopia","financial_company":"costarica","gaming_company":"costarica"},"jo":{"name":"Jordan","financial_company":"costarica","gaming_company":"costarica"},"gg":{"name":"Guernsey","gaming_company":"none","financial_company":"none"},"wf":{"gaming_company":"costarica","financial_company":"costarica","name":"Wallis and Futuna"},"gi":{"gaming_company":"costarica","financial_company":"costarica","name":"Gibraltar"},"nz":{"financial_company":"costarica","gaming_company":"costarica","name":"New Zealand"},"at":{"gaming_company":"malta","financial_company":"maltainvest","name":"Austria"},"ie":{"name":"Ireland","financial_company":"maltainvest","gaming_company":"malta"},"cc":{"name":"Cocos (Keeling) Islands","gaming_company":"costarica","financial_company":"costarica"},"pl":{"gaming_company":"malta","financial_company":"maltainvest","name":"Poland"},"cv":{"name":"Cape Verde","gaming_company":"costarica","financial_company":"costarica"},"vc":{"financial_company":"costarica","gaming_company":"costarica","name":"Saint Vincent and the Grenadines"},"be":{"financial_company":"maltainvest","gaming_company":"malta","name":"Belgium"},"er":{"name":"Eritrea","financial_company":"costarica","gaming_company":"costarica"},"ht":{"name":"Haiti","gaming_company":"costarica","financial_company":"costarica"},"ma":{"name":"Morocco","financial_company":"costarica","gaming_company":"costarica"},"to":{"gaming_company":"costarica","financial_company":"costarica","name":"Tonga"},"gn":{"financial_company":"costarica","gaming_company":"costarica","name":"Guinea"},"bb":{"name":"Barbados","gaming_company":"costarica","financial_company":"costarica"},"dj":{"name":"Djibouti","gaming_company":"costarica","financial_company":"costarica"},"mn":{"gaming_company":"costarica","financial_company":"costarica","name":"Mongolia"},"ne":{"name":"Niger","gaming_company":"costarica","financial_company":"costarica"},"bd":{"name":"Bangladesh","gaming_company":"costarica","financial_company":"costarica"},"ai":{"financial_company":"costarica","gaming_company":"costarica","name":"Anguilla"},"bz":{"name":"Belize","financial_company":"costarica","gaming_company":"costarica"},"gb":{"name":"United Kingdom","gaming_company":"iom","financial_company":"iom"},"lc":{"financial_company":"costarica","gaming_company":"costarica","name":"Saint Lucia"},"mz":{"name":"Mozambique","financial_company":"costarica","gaming_company":"costarica"},"al":{"gaming_company":"costarica","financial_company":"costarica","name":"Albania"},"um":{"name":"United States Minor Outlying Islands","financial_company":"none","gaming_company":"none"},"hk":{"financial_company":"none","gaming_company":"none","name":"Hong Kong"},"pf":{"gaming_company":"costarica","financial_company":"costarica","name":"French Polynesia"},"cu":{"gaming_company":"costarica","financial_company":"costarica","name":"Cuba"},"ps":{"name":"Palestinian Territory, Occupied","gaming_company":"costarica","financial_company":"costarica"},"ws":{"financial_company":"costarica","gaming_company":"costarica","name":"Samoa"},"sl":{"name":"Sierra Leone","financial_company":"costarica","gaming_company":"costarica"},"cy":{"name":"Cyprus","financial_company":"maltainvest","gaming_company":"malta"},"sh":{"name":"Saint Helena","gaming_company":"costarica","financial_company":"costarica"},"sg":{"financial_company":"costarica","gaming_company":"none","name":"Singapore"},"ck":{"name":"Cook Islands","gaming_company":"costarica","financial_company":"costarica"},"gy":{"name":"Guyana","financial_company":"costarica","gaming_company":"costarica"},"cr":{"gaming_company":"none","financial_company":"none","name":"Costa Rica"},"lu":{"gaming_company":"none","financial_company":"maltainvest","name":"Luxembourg"},"co":{"financial_company":"costarica","gaming_company":"costarica","name":"Colombia"},"mt":{"financial_company":"none","gaming_company":"none","name":"Malta"},"sk":{"name":"Slovakia","gaming_company":"malta","financial_company":"maltainvest"},"fk":{"name":"Falkland Islands (Malvinas)","financial_company":"costarica","gaming_company":"costarica"},"mv":{"financial_company":"costarica","gaming_company":"costarica","name":"Maldives"},"tz":{"gaming_company":"costarica","financial_company":"costarica","name":"Tanzania, United Republic of"},"gs":{"financial_company":"costarica","gaming_company":"costarica","name":"South Georgia and the South Sandwich Islands"},"gf":{"name":"French Guiana","gaming_company":"costarica","financial_company":"costarica"},"re":{"financial_company":"costarica","gaming_company":"costarica","name":"Reunion"},"sb":{"name":"Solomon Islands","gaming_company":"costarica","financial_company":"costarica"},"gm":{"name":"Gambia","gaming_company":"costarica","financial_company":"costarica"},"bj":{"financial_company":"costarica","gaming_company":"costarica","name":"Benin"},"bi":{"financial_company":"costarica","gaming_company":"costarica","name":"Burundi"},"br":{"financial_company":"costarica","gaming_company":"costarica","name":"Brazil"},"na":{"gaming_company":"costarica","financial_company":"costarica","name":"Namibia"},"id":{"financial_company":"costarica","gaming_company":"costarica","name":"Indonesia"},"it":{"name":"Italy","gaming_company":"none","financial_company":"maltainvest"},"me":{"name":"Montenegro","gaming_company":"costarica","financial_company":"costarica"},"kp":{"financial_company":"none","gaming_company":"none","name":"Korea, Democratic People's Republic of"},"km":{"name":"Comoros","financial_company":"costarica","gaming_company":"costarica"},"yt":{"financial_company":"costarica","gaming_company":"costarica","name":"Mayotte"},"kg":{"financial_company":"costarica","gaming_company":"costarica","name":"Kyrgyzstan"},"mq":{"financial_company":"costarica","gaming_company":"costarica","name":"Martinique"},"mr":{"gaming_company":"costarica","financial_company":"costarica","name":"Mauritania"},"bl":{"name":"Saint-Barthélemy","gaming_company":"costarica","financial_company":"costarica"},"cg":{"financial_company":"costarica","gaming_company":"costarica","name":"Congo"},"ve":{"name":"Venezuela","gaming_company":"costarica","financial_company":"costarica"},"ms":{"financial_company":"costarica","gaming_company":"costarica","name":"Montserrat"},"va":{"name":"Holy See (Vatican City State)","gaming_company":"costarica","financial_company":"costarica"},"ch":{"gaming_company":"costarica","financial_company":"costarica","name":"Switzerland"},"in":{"gaming_company":"costarica","financial_company":"costarica","name":"India"},"mc":{"name":"Monaco","financial_company":"costarica","gaming_company":"costarica"},"si":{"financial_company":"maltainvest","gaming_company":"malta","name":"Slovenia"},"bt":{"financial_company":"costarica","gaming_company":"costarica","name":"Bhutan"},"gu":{"name":"Guam","gaming_company":"costarica","financial_company":"costarica"},"ls":{"name":"Lesotho","financial_company":"costarica","gaming_company":"costarica"},"fo":{"name":"Faroe Islands","gaming_company":"costarica","financial_company":"costarica"},"ua":{"gaming_company":"costarica","financial_company":"costarica","name":"Ukraine"},"mp":{"gaming_company":"costarica","financial_company":"costarica","name":"Northern Mariana Islands"},"kr":{"financial_company":"costarica","gaming_company":"costarica","name":"Korea, Republic of"},"ro":{"name":"Romania","financial_company":"maltainvest","gaming_company":"malta"},"tv":{"gaming_company":"costarica","financial_company":"costarica","name":"Tuvalu"},"pk":{"name":"Pakistan","gaming_company":"costarica","financial_company":"costarica"},"mf":{"gaming_company":"costarica","financial_company":"costarica","name":"Saint-Martin (French part)"},"ag":{"name":"Antigua and Barbuda","gaming_company":"costarica","financial_company":"costarica"},"aq":{"gaming_company":"costarica","financial_company":"costarica","name":"Antarctica"},"mx":{"name":"Mexico","financial_company":"costarica","gaming_company":"costarica"},"dm":{"name":"Dominica","financial_company":"costarica","gaming_company":"costarica"},"sj":{"gaming_company":"costarica","financial_company":"costarica","name":"Svalbard and Jan Mayen"},"ir":{"name":"Iran, Islamic Republic of","financial_company":"none","gaming_company":"none"},"cx":{"name":"Christmas Island","financial_company":"costarica","gaming_company":"costarica"},"im":{"name":"Isle of Man","financial_company":"iom","gaming_company":"iom"},"la":{"name":"Lao People's Democratic Republic","financial_company":"costarica","gaming_company":"costarica"},"ee":{"financial_company":"maltainvest","gaming_company":"malta","name":"Estonia"},"pe":{"financial_company":"costarica","gaming_company":"costarica","name":"Peru"},"md":{"gaming_company":"costarica","financial_company":"costarica","name":"Moldova, Republic of"},"fm":{"name":"Micronesia, Federated States of","gaming_company":"costarica","financial_company":"costarica"},"gp":{"name":"Guadeloupe","gaming_company":"costarica","financial_company":"costarica"},"sr":{"name":"Suriname","gaming_company":"costarica","financial_company":"costarica"},"lv":{"name":"Latvia","gaming_company":"malta","financial_company":"maltainvest"},"mg":{"financial_company":"costarica","gaming_company":"costarica","name":"Madagascar"},"bf":{"financial_company":"costarica","gaming_company":"costarica","name":"Burkina Faso"},"ph":{"financial_company":"costarica","gaming_company":"costarica","name":"Philippines"},"gl":{"financial_company":"costarica","gaming_company":"costarica","name":"Greenland"},"hn":{"financial_company":"costarica","gaming_company":"costarica","name":"Honduras"},"io":{"financial_company":"costarica","gaming_company":"costarica","name":"British Indian Ocean Territory"},"bh":{"financial_company":"costarica","gaming_company":"costarica","name":"Bahrain"},"us":{"financial_company":"none","gaming_company":"none","name":"United States"},"mk":{"name":"Macedonia","financial_company":"costarica","gaming_company":"costarica"},"de":{"gaming_company":"none","financial_company":"maltainvest","name":"Germany"},"pn":{"name":"Pitcairn","financial_company":"costarica","gaming_company":"costarica"},"so":{"name":"Somalia","financial_company":"costarica","gaming_company":"costarica"},"py":{"name":"Paraguay","gaming_company":"costarica","financial_company":"costarica"},"ax":{"financial_company":"costarica","gaming_company":"costarica","name":"Aland Islands"},"an":{"name":"Netherlands Antilles","financial_company":"costarica","gaming_company":"costarica"},"tt":{"financial_company":"costarica","gaming_company":"costarica","name":"Trinidad and Tobago"},"rw":{"name":"Rwanda","financial_company":"costarica","gaming_company":"costarica"},"kh":{"financial_company":"costarica","gaming_company":"costarica","name":"Cambodia"},"fj":{"name":"Fiji","gaming_company":"costarica","financial_company":"costarica"},"hr":{"gaming_company":"malta","financial_company":"maltainvest","name":"Croatia"},"tw":{"name":"Taiwan, Province of China","financial_company":"costarica","gaming_company":"costarica"},"ni":{"gaming_company":"costarica","financial_company":"costarica","name":"Nicaragua"},"cl":{"gaming_company":"costarica","financial_company":"costarica","name":"Chile"},"sd":{"financial_company":"costarica","gaming_company":"costarica","name":"Sudan"},"tm":{"gaming_company":"costarica","financial_company":"costarica","name":"Turkmenistan"},"nr":{"name":"Nauru","financial_company":"costarica","gaming_company":"costarica"},"mh":{"financial_company":"costarica","gaming_company":"costarica","name":"Marshall Islands"},"ga":{"financial_company":"costarica","gaming_company":"costarica","name":"Gabon"},"bg":{"gaming_company":"malta","financial_company":"maltainvest","name":"Bulgaria"},"vu":{"financial_company":"costarica","gaming_company":"costarica","name":"Vanuatu"},"do":{"name":"Dominican Republic","gaming_company":"costarica","financial_company":"costarica"},"cm":{"financial_company":"costarica","gaming_company":"costarica","name":"Cameroon"},"ng":{"gaming_company":"costarica","financial_company":"costarica","name":"Nigeria"},"tj":{"name":"Tajikistan","financial_company":"costarica","gaming_company":"costarica"},"je":{"gaming_company":"none","financial_company":"none","name":"Jersey"},"tn":{"financial_company":"costarica","gaming_company":"costarica","name":"Tunisia"},"ki":{"name":"Kiribati","gaming_company":"costarica","financial_company":"costarica"},"hm":{"name":"Heard Island and McDonald Islands","gaming_company":"costarica","financial_company":"costarica"},"il":{"name":"Israel","financial_company":"costarica","gaming_company":"costarica"},"ba":{"name":"Bosnia and Herzegovina","financial_company":"costarica","gaming_company":"costarica"},"am":{"financial_company":"costarica","gaming_company":"costarica","name":"Armenia"},"sv":{"name":"El Salvador","financial_company":"costarica","gaming_company":"costarica"},"st":{"name":"Sao Tome and Principe","financial_company":"costarica","gaming_company":"costarica"},"as":{"gaming_company":"costarica","financial_company":"costarica","name":"American Samoa"},"mo":{"financial_company":"costarica","gaming_company":"costarica","name":"Macao"},"fi":{"financial_company":"maltainvest","gaming_company":"malta","name":"Finland"},"ky":{"name":"Cayman Islands","gaming_company":"costarica","financial_company":"costarica"},"td":{"name":"Chad","financial_company":"costarica","gaming_company":"costarica"},"ae":{"name":"United Arab Emirates","financial_company":"costarica","gaming_company":"costarica"},"gw":{"gaming_company":"costarica","financial_company":"costarica","name":"Guinea-Bissau"},"jp":{"gaming_company":"none","financial_company":"japan","virtual_company":"japan-virtual","name":"Japan"},"ly":{"gaming_company":"costarica","financial_company":"costarica","name":"Libyan Arab Jamahiriya"},"ad":{"name":"Andorra","financial_company":"costarica","gaming_company":"costarica"},"jm":{"financial_company":"costarica","gaming_company":"costarica","name":"Jamaica"},"gr":{"name":"Greece","financial_company":"maltainvest","gaming_company":"none"},"kw":{"name":"Kuwait","financial_company":"costarica","gaming_company":"costarica"}}}};
-</script>  <script src='/binary-static/js/binary.js?y88kr7vv' defer async></script>  <script src="https://apis.google.com/js/platform.js" defer async></script>
+    window.page_params = {settings: {"arr_all_currencies":["USD","EUR","GBP","AUD"],"image_link":{"livechaticon":"/binary-static/images/pages/contact/chat-icon.svg","down":"/binary-static/images/javascript/down_arrow_1.gif","hourglass":"/binary-static/images/common/hourglass_1.gif","calendar_icon":"/binary-static/images/common/calendar_icon_1.png","up":"/binary-static/images/javascript/up_arrow_1.gif"},"enable_relative_barrier":"true","streaming_server":"www.binary.com","countries_list":{"et":{"gaming_company":"costarica","financial_company":"costarica","name":"Ethiopia"},"ao":{"name":"Angola","gaming_company":"costarica","financial_company":"costarica"},"im":{"name":"Isle of Man","gaming_company":"iom","financial_company":"iom"},"pt":{"gaming_company":"malta","financial_company":"maltainvest","name":"Portugal"},"au":{"name":"Australia","financial_company":"costarica","gaming_company":"costarica"},"ec":{"financial_company":"costarica","gaming_company":"costarica","name":"Ecuador"},"bi":{"name":"Burundi","gaming_company":"costarica","financial_company":"costarica"},"pr":{"financial_company":"costarica","gaming_company":"costarica","name":"Puerto Rico"},"jm":{"gaming_company":"costarica","financial_company":"costarica","name":"Jamaica"},"ni":{"financial_company":"costarica","gaming_company":"costarica","name":"Nicaragua"},"uz":{"name":"Uzbekistan","financial_company":"costarica","gaming_company":"costarica"},"ws":{"financial_company":"costarica","gaming_company":"costarica","name":"Samoa"},"mv":{"name":"Maldives","gaming_company":"costarica","financial_company":"costarica"},"cl":{"name":"Chile","gaming_company":"costarica","financial_company":"costarica"},"mr":{"name":"Mauritania","financial_company":"costarica","gaming_company":"costarica"},"bw":{"name":"Botswana","gaming_company":"costarica","financial_company":"costarica"},"gb":{"financial_company":"iom","gaming_company":"iom","name":"United Kingdom"},"gu":{"name":"Guam","financial_company":"costarica","gaming_company":"costarica"},"il":{"name":"Israel","financial_company":"costarica","gaming_company":"costarica"},"ye":{"name":"Yemen","gaming_company":"costarica","financial_company":"costarica"},"an":{"name":"Netherlands Antilles","financial_company":"costarica","gaming_company":"costarica"},"pk":{"name":"Pakistan","financial_company":"costarica","gaming_company":"costarica"},"ph":{"name":"Philippines","gaming_company":"costarica","financial_company":"costarica"},"kh":{"name":"Cambodia","gaming_company":"costarica","financial_company":"costarica"},"gd":{"gaming_company":"costarica","financial_company":"costarica","name":"Grenada"},"sy":{"financial_company":"costarica","gaming_company":"costarica","name":"Syrian Arab Republic"},"nr":{"name":"Nauru","gaming_company":"costarica","financial_company":"costarica"},"nu":{"gaming_company":"costarica","financial_company":"costarica","name":"Niue"},"bm":{"gaming_company":"costarica","financial_company":"costarica","name":"Bermuda"},"tv":{"name":"Tuvalu","financial_company":"costarica","gaming_company":"costarica"},"aw":{"financial_company":"costarica","gaming_company":"costarica","name":"Aruba"},"lb":{"name":"Lebanon","financial_company":"costarica","gaming_company":"costarica"},"ru":{"name":"Russian Federation","financial_company":"costarica","gaming_company":"costarica"},"ax":{"financial_company":"costarica","gaming_company":"costarica","name":"Aland Islands"},"cf":{"gaming_company":"costarica","financial_company":"costarica","name":"Central African Republic"},"bt":{"name":"Bhutan","gaming_company":"costarica","financial_company":"costarica"},"fm":{"financial_company":"costarica","gaming_company":"costarica","name":"Micronesia, Federated States of"},"it":{"financial_company":"maltainvest","gaming_company":"none","name":"Italy"},"hn":{"gaming_company":"costarica","financial_company":"costarica","name":"Honduras"},"de":{"name":"Germany","gaming_company":"none","financial_company":"maltainvest"},"cu":{"name":"Cuba","financial_company":"costarica","gaming_company":"costarica"},"km":{"gaming_company":"costarica","financial_company":"costarica","name":"Comoros"},"cr":{"gaming_company":"none","financial_company":"none","name":"Costa Rica"},"zm":{"financial_company":"costarica","gaming_company":"costarica","name":"Zambia"},"lc":{"name":"Saint Lucia","gaming_company":"costarica","financial_company":"costarica"},"as":{"name":"American Samoa","financial_company":"costarica","gaming_company":"costarica"},"hu":{"name":"Hungary","financial_company":"maltainvest","gaming_company":"malta"},"mt":{"name":"Malta","gaming_company":"none","financial_company":"none"},"sn":{"name":"Senegal","financial_company":"costarica","gaming_company":"costarica"},"pl":{"financial_company":"maltainvest","gaming_company":"malta","name":"Poland"},"za":{"financial_company":"costarica","gaming_company":"costarica","name":"South Africa"},"mq":{"financial_company":"costarica","gaming_company":"costarica","name":"Martinique"},"be":{"name":"Belgium","gaming_company":"malta","financial_company":"maltainvest"},"af":{"name":"Afghanistan","financial_company":"costarica","gaming_company":"costarica"},"ae":{"financial_company":"costarica","gaming_company":"costarica","name":"United Arab Emirates"},"sh":{"name":"Saint Helena","financial_company":"costarica","gaming_company":"costarica"},"mn":{"financial_company":"costarica","gaming_company":"costarica","name":"Mongolia"},"hm":{"name":"Heard Island and McDonald Islands","gaming_company":"costarica","financial_company":"costarica"},"sz":{"name":"Swaziland","gaming_company":"costarica","financial_company":"costarica"},"ng":{"name":"Nigeria","gaming_company":"costarica","financial_company":"costarica"},"pa":{"gaming_company":"costarica","financial_company":"costarica","name":"Panama"},"na":{"gaming_company":"costarica","financial_company":"costarica","name":"Namibia"},"tl":{"gaming_company":"costarica","financial_company":"costarica","name":"Timor-Leste"},"ml":{"name":"Mali","gaming_company":"costarica","financial_company":"costarica"},"je":{"financial_company":"none","gaming_company":"none","name":"Jersey"},"ky":{"gaming_company":"costarica","financial_company":"costarica","name":"Cayman Islands"},"ug":{"gaming_company":"costarica","financial_company":"costarica","name":"Uganda"},"id":{"name":"Indonesia","financial_company":"costarica","gaming_company":"costarica"},"by":{"name":"Belarus","gaming_company":"costarica","financial_company":"costarica"},"sk":{"name":"Slovakia","gaming_company":"malta","financial_company":"maltainvest"},"ir":{"name":"Iran, Islamic Republic of","financial_company":"none","gaming_company":"none"},"us":{"name":"United States","financial_company":"none","gaming_company":"none"},"sl":{"financial_company":"costarica","gaming_company":"costarica","name":"Sierra Leone"},"ht":{"gaming_company":"costarica","financial_company":"costarica","name":"Haiti"},"mm":{"financial_company":"costarica","gaming_company":"costarica","name":"Myanmar"},"vc":{"financial_company":"costarica","gaming_company":"costarica","name":"Saint Vincent and the Grenadines"},"br":{"financial_company":"costarica","gaming_company":"costarica","name":"Brazil"},"bz":{"name":"Belize","gaming_company":"costarica","financial_company":"costarica"},"no":{"name":"Norway","gaming_company":"costarica","financial_company":"costarica"},"li":{"name":"Liechtenstein","financial_company":"costarica","gaming_company":"costarica"},"fj":{"name":"Fiji","gaming_company":"costarica","financial_company":"costarica"},"mu":{"gaming_company":"costarica","financial_company":"costarica","name":"Mauritius"},"md":{"name":"Moldova, Republic of","gaming_company":"costarica","financial_company":"costarica"},"az":{"financial_company":"costarica","gaming_company":"costarica","name":"Azerbaijan"},"sj":{"name":"Svalbard and Jan Mayen","financial_company":"costarica","gaming_company":"costarica"},"wf":{"gaming_company":"costarica","financial_company":"costarica","name":"Wallis and Futuna"},"kp":{"name":"Korea, Democratic People's Republic of","financial_company":"none","gaming_company":"none"},"er":{"name":"Eritrea","financial_company":"costarica","gaming_company":"costarica"},"um":{"financial_company":"none","gaming_company":"none","name":"United States Minor Outlying Islands"},"om":{"gaming_company":"costarica","financial_company":"costarica","name":"Oman"},"py":{"name":"Paraguay","gaming_company":"costarica","financial_company":"costarica"},"sd":{"financial_company":"costarica","gaming_company":"costarica","name":"Sudan"},"sa":{"name":"Saudi Arabia","gaming_company":"costarica","financial_company":"costarica"},"tz":{"name":"Tanzania, United Republic of","gaming_company":"costarica","financial_company":"costarica"},"np":{"financial_company":"costarica","gaming_company":"costarica","name":"Nepal"},"io":{"name":"British Indian Ocean Territory","gaming_company":"costarica","financial_company":"costarica"},"gg":{"financial_company":"none","gaming_company":"none","name":"Guernsey"},"tj":{"name":"Tajikistan","gaming_company":"costarica","financial_company":"costarica"},"tf":{"name":"French Southern Territories","financial_company":"costarica","gaming_company":"costarica"},"mk":{"gaming_company":"costarica","financial_company":"costarica","name":"Macedonia"},"ca":{"name":"Canada","gaming_company":"costarica","financial_company":"costarica"},"pf":{"name":"French Polynesia","gaming_company":"costarica","financial_company":"costarica"},"tw":{"name":"Taiwan, Province of China","gaming_company":"costarica","financial_company":"costarica"},"fi":{"name":"Finland","financial_company":"maltainvest","gaming_company":"malta"},"ua":{"name":"Ukraine","gaming_company":"costarica","financial_company":"costarica"},"gw":{"name":"Guinea-Bissau","financial_company":"costarica","gaming_company":"costarica"},"fr":{"financial_company":"maltainvest","gaming_company":"none","name":"France"},"ne":{"gaming_company":"costarica","financial_company":"costarica","name":"Niger"},"bb":{"financial_company":"costarica","gaming_company":"costarica","name":"Barbados"},"iq":{"gaming_company":"none","financial_company":"none","name":"Iraq"},"am":{"name":"Armenia","financial_company":"costarica","gaming_company":"costarica"},"mp":{"financial_company":"costarica","gaming_company":"costarica","name":"Northern Mariana Islands"},"is":{"financial_company":"costarica","gaming_company":"costarica","name":"Iceland"},"bv":{"name":"Bouvet Island","financial_company":"costarica","gaming_company":"costarica"},"kw":{"financial_company":"costarica","gaming_company":"costarica","name":"Kuwait"},"me":{"name":"Montenegro","financial_company":"costarica","gaming_company":"costarica"},"mh":{"gaming_company":"costarica","financial_company":"costarica","name":"Marshall Islands"},"ge":{"name":"Georgia","financial_company":"costarica","gaming_company":"costarica"},"ag":{"financial_company":"costarica","gaming_company":"costarica","name":"Antigua and Barbuda"},"ro":{"name":"Romania","gaming_company":"malta","financial_company":"maltainvest"},"ps":{"name":"Palestinian Territory, Occupied","financial_company":"costarica","gaming_company":"costarica"},"tc":{"gaming_company":"costarica","financial_company":"costarica","name":"Turks and Caicos Islands"},"at":{"financial_company":"maltainvest","gaming_company":"malta","name":"Austria"},"st":{"name":"Sao Tome and Principe","gaming_company":"costarica","financial_company":"costarica"},"ch":{"name":"Switzerland","financial_company":"costarica","gaming_company":"costarica"},"kz":{"name":"Kazakhstan","financial_company":"costarica","gaming_company":"costarica"},"bj":{"financial_company":"costarica","gaming_company":"costarica","name":"Benin"},"mx":{"name":"Mexico","gaming_company":"costarica","financial_company":"costarica"},"tt":{"financial_company":"costarica","gaming_company":"costarica","name":"Trinidad and Tobago"},"th":{"gaming_company":"costarica","financial_company":"costarica","name":"Thailand"},"lu":{"name":"Luxembourg","financial_company":"maltainvest","gaming_company":"none"},"lv":{"name":"Latvia","gaming_company":"malta","financial_company":"maltainvest"},"ls":{"financial_company":"costarica","gaming_company":"costarica","name":"Lesotho"},"bo":{"name":"Bolivia","financial_company":"costarica","gaming_company":"costarica"},"ck":{"name":"Cook Islands","gaming_company":"costarica","financial_company":"costarica"},"cy":{"name":"Cyprus","financial_company":"maltainvest","gaming_company":"malta"},"aq":{"gaming_company":"costarica","financial_company":"costarica","name":"Antarctica"},"kg":{"name":"Kyrgyzstan","gaming_company":"costarica","financial_company":"costarica"},"lr":{"financial_company":"costarica","gaming_company":"costarica","name":"Liberia"},"va":{"gaming_company":"costarica","financial_company":"costarica","name":"Holy See (Vatican City State)"},"dz":{"gaming_company":"costarica","financial_company":"costarica","name":"Algeria"},"qa":{"gaming_company":"costarica","financial_company":"costarica","name":"Qatar"},"sv":{"gaming_company":"costarica","financial_company":"costarica","name":"El Salvador"},"cm":{"name":"Cameroon","gaming_company":"costarica","financial_company":"costarica"},"ba":{"financial_company":"costarica","gaming_company":"costarica","name":"Bosnia and Herzegovina"},"bh":{"gaming_company":"costarica","financial_company":"costarica","name":"Bahrain"},"sc":{"name":"Seychelles","financial_company":"costarica","gaming_company":"costarica"},"lk":{"name":"Sri Lanka","financial_company":"costarica","gaming_company":"costarica"},"bl":{"financial_company":"costarica","gaming_company":"costarica","name":"Saint-Barthélemy"},"sm":{"name":"San Marino","financial_company":"costarica","gaming_company":"costarica"},"cg":{"name":"Congo","financial_company":"costarica","gaming_company":"costarica"},"mw":{"financial_company":"costarica","gaming_company":"costarica","name":"Malawi"},"bd":{"name":"Bangladesh","gaming_company":"costarica","financial_company":"costarica"},"ly":{"financial_company":"costarica","gaming_company":"costarica","name":"Libyan Arab Jamahiriya"},"jp":{"name":"Japan","financial_company":"japan","gaming_company":"none","virtual_company":"japan-virtual"},"sb":{"financial_company":"costarica","gaming_company":"costarica","name":"Solomon Islands"},"cx":{"financial_company":"costarica","gaming_company":"costarica","name":"Christmas Island"},"tk":{"name":"Tokelau","gaming_company":"costarica","financial_company":"costarica"},"dj":{"name":"Djibouti","financial_company":"costarica","gaming_company":"costarica"},"ki":{"gaming_company":"costarica","financial_company":"costarica","name":"Kiribati"},"dk":{"gaming_company":"malta","financial_company":"maltainvest","name":"Denmark"},"mc":{"gaming_company":"costarica","financial_company":"costarica","name":"Monaco"},"nz":{"name":"New Zealand","gaming_company":"costarica","financial_company":"costarica"},"in":{"name":"India","gaming_company":"costarica","financial_company":"costarica"},"gy":{"name":"Guyana","financial_company":"costarica","gaming_company":"costarica"},"fo":{"name":"Faroe Islands","financial_company":"costarica","gaming_company":"costarica"},"ai":{"gaming_company":"costarica","financial_company":"costarica","name":"Anguilla"},"cv":{"name":"Cape Verde","gaming_company":"costarica","financial_company":"costarica"},"pe":{"name":"Peru","gaming_company":"costarica","financial_company":"costarica"},"nf":{"gaming_company":"costarica","financial_company":"costarica","name":"Norfolk Island"},"cc":{"financial_company":"costarica","gaming_company":"costarica","name":"Cocos (Keeling) Islands"},"ar":{"gaming_company":"costarica","financial_company":"costarica","name":"Argentina"},"kr":{"financial_company":"costarica","gaming_company":"costarica","name":"Korea, Republic of"},"gr":{"name":"Greece","financial_company":"maltainvest","gaming_company":"none"},"pn":{"name":"Pitcairn","financial_company":"costarica","gaming_company":"costarica"},"gl":{"financial_company":"costarica","gaming_company":"costarica","name":"Greenland"},"gt":{"name":"Guatemala","financial_company":"costarica","gaming_company":"costarica"},"cn":{"name":"China","financial_company":"costarica","gaming_company":"costarica"},"tr":{"name":"Turkey","financial_company":"costarica","gaming_company":"costarica"},"fk":{"name":"Falkland Islands (Malvinas)","gaming_company":"costarica","financial_company":"costarica"},"gm":{"name":"Gambia","financial_company":"costarica","gaming_company":"costarica"},"ke":{"name":"Kenya","gaming_company":"costarica","financial_company":"costarica"},"ee":{"financial_company":"maltainvest","gaming_company":"malta","name":"Estonia"},"td":{"name":"Chad","financial_company":"costarica","gaming_company":"costarica"},"re":{"name":"Reunion","financial_company":"costarica","gaming_company":"costarica"},"la":{"name":"Lao People's Democratic Republic","financial_company":"costarica","gaming_company":"costarica"},"gq":{"financial_company":"costarica","gaming_company":"costarica","name":"Equatorial Guinea"},"es":{"name":"Spain","financial_company":"maltainvest","gaming_company":"none"},"co":{"gaming_company":"costarica","financial_company":"costarica","name":"Colombia"},"pw":{"financial_company":"costarica","gaming_company":"costarica","name":"Palau"},"vn":{"financial_company":"costarica","gaming_company":"costarica","name":"Vietnam"},"hr":{"financial_company":"maltainvest","gaming_company":"malta","name":"Croatia"},"vu":{"gaming_company":"costarica","financial_company":"costarica","name":"Vanuatu"},"gh":{"financial_company":"costarica","gaming_company":"costarica","name":"Ghana"},"nl":{"name":"Netherlands","gaming_company":"malta","financial_company":"maltainvest"},"tn":{"name":"Tunisia","gaming_company":"costarica","financial_company":"costarica"},"vg":{"financial_company":"costarica","gaming_company":"costarica","name":"Virgin Islands, British"},"nc":{"name":"New Caledonia","financial_company":"costarica","gaming_company":"costarica"},"pg":{"name":"Papua New Guinea","gaming_company":"costarica","financial_company":"costarica"},"si":{"gaming_company":"malta","financial_company":"maltainvest","name":"Slovenia"},"mf":{"gaming_company":"costarica","financial_company":"costarica","name":"Saint-Martin (French part)"},"ms":{"name":"Montserrat","financial_company":"costarica","gaming_company":"costarica"},"gs":{"name":"South Georgia and the South Sandwich Islands","gaming_company":"costarica","financial_company":"costarica"},"gi":{"name":"Gibraltar","gaming_company":"costarica","financial_company":"costarica"},"cd":{"financial_company":"costarica","gaming_company":"costarica","name":"Congo, The Democratic Republic of the"},"bf":{"name":"Burkina Faso","gaming_company":"costarica","financial_company":"costarica"},"tg":{"name":"Togo","financial_company":"costarica","gaming_company":"costarica"},"mg":{"name":"Madagascar","gaming_company":"costarica","financial_company":"costarica"},"vi":{"name":"Virgin Islands, U.S.","financial_company":"none","gaming_company":"none"},"ie":{"name":"Ireland","gaming_company":"malta","financial_company":"maltainvest"},"kn":{"name":"Saint Kitts and Nevis","financial_company":"costarica","gaming_company":"costarica"},"hk":{"gaming_company":"none","financial_company":"none","name":"Hong Kong"},"do":{"name":"Dominican Republic","financial_company":"costarica","gaming_company":"costarica"},"so":{"gaming_company":"costarica","financial_company":"costarica","name":"Somalia"},"ga":{"name":"Gabon","financial_company":"costarica","gaming_company":"costarica"},"rs":{"name":"Serbia","gaming_company":"costarica","financial_company":"costarica"},"yt":{"gaming_company":"costarica","financial_company":"costarica","name":"Mayotte"},"uy":{"name":"Uruguay","financial_company":"costarica","gaming_company":"costarica"},"gf":{"financial_company":"costarica","gaming_company":"costarica","name":"French Guiana"},"rw":{"name":"Rwanda","financial_company":"costarica","gaming_company":"costarica"},"jo":{"financial_company":"costarica","gaming_company":"costarica","name":"Jordan"},"eg":{"financial_company":"costarica","gaming_company":"costarica","name":"Egypt"},"my":{"name":"Malaysia","gaming_company":"none","financial_company":"none"},"ad":{"name":"Andorra","financial_company":"costarica","gaming_company":"costarica"},"bs":{"gaming_company":"costarica","financial_company":"costarica","name":"Bahamas"},"to":{"financial_company":"costarica","gaming_company":"costarica","name":"Tonga"},"sg":{"gaming_company":"none","financial_company":"costarica","name":"Singapore"},"pm":{"financial_company":"costarica","gaming_company":"costarica","name":"Saint Pierre and Miquelon"},"ma":{"name":"Morocco","financial_company":"costarica","gaming_company":"costarica"},"gn":{"financial_company":"costarica","gaming_company":"costarica","name":"Guinea"},"ci":{"name":"Cote D'Ivoire","gaming_company":"costarica","financial_company":"costarica"},"eh":{"gaming_company":"costarica","financial_company":"costarica","name":"Western Sahara"},"gp":{"gaming_company":"costarica","financial_company":"costarica","name":"Guadeloupe"},"dm":{"financial_company":"costarica","gaming_company":"costarica","name":"Dominica"},"al":{"name":"Albania","financial_company":"costarica","gaming_company":"costarica"},"ve":{"gaming_company":"costarica","financial_company":"costarica","name":"Venezuela"},"mo":{"gaming_company":"costarica","financial_company":"costarica","name":"Macao"},"tm":{"name":"Turkmenistan","gaming_company":"costarica","financial_company":"costarica"},"sr":{"name":"Suriname","financial_company":"costarica","gaming_company":"costarica"},"mz":{"gaming_company":"costarica","financial_company":"costarica","name":"Mozambique"},"se":{"name":"Sweden","gaming_company":"malta","financial_company":"maltainvest"},"zw":{"financial_company":"costarica","gaming_company":"costarica","name":"Zimbabwe"},"bn":{"name":"Brunei Darussalam","gaming_company":"costarica","financial_company":"costarica"},"cz":{"gaming_company":"malta","financial_company":"maltainvest","name":"Czech Republic"},"bg":{"name":"Bulgaria","gaming_company":"malta","financial_company":"maltainvest"},"lt":{"name":"Lithuania","financial_company":"maltainvest","gaming_company":"malta"}},"valid_loginids":"MX|MF|VRTC|MLT|CR|FOG|VRTJ|JP","broker":"CR"}};
+</script>  <script src='/binary-static/js/binary.js?bpw7z2th' defer async></script>  <script src="https://apis.google.com/js/platform.js" defer async></script>
     </head>
+
+
 <body class="FR">
-      <div id='page-wrapper'>
+    <div id='page-wrapper'>
     <div id="topbar">
-        <div class='grd-container'>
-            <div class='grd-grid-12 grd-parent'>
-                <div id="topbar-msg" class='grd-grid-6 grd-grid-mobile-12 by_client_type client_virtual upgrademessage' style="display: none;">
-                    <span class='grd-hide-mobile'>
+        <div class="container">
+            <div class="gr-row">
+                <div id="topbar-msg" class='gr-6 gr-5-t gr-12-p gr-12-m by_client_type client_virtual invisible upgrademessage'>
+                    <span class='gr-hide-m'>
                         <span id='virtual-text'>Vous utilisez un compte virtuel.</span>
                     </span>
                     <a class="pjaxload with_login_cookies pulser virtual-upgrade-link" href="/binary-static/fr/new_account/realws.html">Ouvrir un compte réel</a>
                     <a class="pjaxload with_login_cookies pulser vr-japan-upgrade-link" href="/binary-static/fr/new_account/japanws.html">Ouvrir un compte réel</a>
                     <a class="invisible pjaxload with_login_cookies pulser vr-financial-upgrade-link" href="/binary-static/fr/new_account/maltainvestws.html">Ouvrir un compte financier</a>
                 </div>
-                <div class='grd-grid-6 grd-grid-mobile-12 by_client_type client_real upgrademessage' style="display: none;">
-                    <a class="invisible pjaxload with_login_cookies pulse financial-upgrade-link" href="/binary-static/fr/new_account/maltainvestws.html">Ouvrir un compte financier</a>
+                <div class='gr-6 gr-5-t gr-12-p gr-12-m by_client_type client_real invisible upgrademessage'>
+                    <a class="pjaxload with_login_cookies pulse financial-upgrade-link" href="/binary-static/fr/new_account/maltainvestws.html">Ouvrir un compte financier</a>
                 </div>
-                <div class='grd-grid-6 grd-grid-mobile-12 grd-parent' id='topbar-info'>
-                    <div class='grd-grid-5 grd-grid-mobile-7' id="gmt-clock"></div>
-                    <div class='grd-grid-3 grd-hide-mobile' id='contact-us'>
-                        <a class="pjaxload" href="/binary-static/fr/contact.html">Nous contacter</a>
-                    </div>
-                    <div class='grd-grid-4 grd-grid-mobile-5'>
-                        <div class="FR" id='language_select'>
-                            <select>
+                <div class='gr-6 gr-7-t gr-12-p gr-12-m' id='topbar-info'>
+                    <div class="gr-row">
+                        <div class='gr-5 gr-7-m no-underline' id="gmt-clock" data-balloon-pos="down"></div>
+                        <div class='gr-3 gr-hide-m' id='contact-us'>
+                            <a class="pjaxload" href="/binary-static/fr/contact.html">Nous contacter</a>
+                        </div>
+                        <div class='gr-4 gr-5-m'>
+                            <div class="FR" id='language_select'>
+                                <select>
             <option class='EN'>English</option>
                 <option class='AR'>Arabic</option>
                 <option class='DE'>Deutsch</option>
@@ -93,6 +105,7 @@
                     <option class='ZH_CN'>简体中文</option>
                 <option class='ZH_TW'>繁體中文</option>
     </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,68 +114,72 @@
     </div>
 
     <div id="header" class="dark-blue">
-        <div class='grd-container'>
-            <div class='grd-row-padding'>
-                <div class='grd-grid-3 grd-grid-mobile-2 grd-grid-phablet-1'>
-                    <a id="logo" href="/binary-static/fr/home.html">
-                        <div class='grd-grid-3 grd-grid-mobile-12 grd-grid-phablet-12 grd-no-gutter'>
-                            <img class='responsive' src="/binary-static/images/pages/binary-symbol-logo.svg"/>
-                        </div>
-                        <div class='grd-grid-9 grd-hide-mobile grd-hide-phablet' id='binary-logo-text'>
-                            <img class='responsive' src="/binary-static/images/pages/binary-type-logo.svg"/>
-                        </div>
-                    </a>
-                </div>
-                <div class='grd-grid-6 grd-hide-mobile grd-hide-phablet'>
-                    <div id='main-navigation'>
-                        <ul class="smaller-font" id="menu-top">
-                            <li>
-                                <a class="smaller-font pjaxload" href="/binary-static/fr/why-us.html">Pourquoi nous ?</a>
-                            </li>
-                            <li class="ja-hide">
-                                <a class="smaller-font pjaxload" href="/binary-static/fr/get-started.html">Se lancer</a>
-                            </li>
-                            <li class="all-hide ja-show-block">
-                              <a class="smaller-font pjaxload" href="/binary-static/fr/get-started-jp.html">Se lancer</a>
-                            </li>
-                            <li>
-                                <a class="smaller-font pjaxload" href="/binary-static/fr/tour.html">Aperçu</a>
-                            </li>
-                            <li>
-                                <a class="smaller-font pjaxload" href="/binary-static/fr/trading.html">Trading</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="client-logged-in" class="grd-grid-3 grd-grid-mobile-9 grd-grid-phablet-10 by_client_type client_real client_virtual" style="display: none">
-                  <div id="logout">
-                    <form id="loginid-switch-form">
-                        <div id="login-fields">
-                            <select id="client_loginid" name="client_loginid">
-                            </select>
-                        </div>
-                        <div id="balance"></div>
-                        <a id="btn_logout" class="logout" href="javascript:;">DECONNEXION</a>
-                    </form>
-                  </div>
-                </div>
-                <div id="client-logged-out" class="grd-grid-3 grd-grid-mobile-9 grd-grid-phablet-10 grd-no-gutter-left by_client_type client_logged_out invisible">
-                    <div id="btn_login" class="button">Connexion</div>
-                </div>
-                <div class='grd-grid-1 grd-hide grd-show-mobile grd-no-gutter-mobile grd-show-phablet'>
-                    <div id='mobile-menu-icon-container'>
-                        <a href='#mobile-menu' id='mobile-menu-icon'>
-                            <img class='responsive' src="/binary-static/images/pages/binary-mobile-menu.svg"/>
+        <div class='container'>
+            <div class='gr-12'>
+                <div class='gr-padding-10 gr-row'>
+                    <div class='gr-3 gr-2-m gr-2-p'>
+                        <a id="logo" href="/binary-static/fr/home.html">
+                            <div class='gr-row'>
+                                <div class='gr-3 gr-12-m gr-12-p gr-no-gutter'>
+                                    <img class='responsive' src="/binary-static/images/pages/binary-symbol-logo.svg" />
+                                </div>
+                                <div class='gr-9 gr-hide-m gr-hide-p' id='binary-logo-text'>
+                                    <img class='responsive' src="/binary-static/images/pages/binary-type-logo.svg" />
+                                </div>
+                            </div>
                         </a>
+                    </div>
+                    <div class='gr-6 gr-hide-m gr-hide-p'>
+                        <div id='main-navigation'>
+                            <ul class="smaller-font" id="menu-top">
+                                <li>
+                                    <a class="smaller-font pjaxload" href="/binary-static/fr/why-us.html">Pourquoi nous ?</a>
+                                </li>
+                                <li class="ja-hide">
+                                    <a class="smaller-font pjaxload" href="/binary-static/fr/get-started.html">Se lancer</a>
+                                </li>
+                                <li class="all-hide ja-show-block">
+                                  <a class="smaller-font pjaxload" href="/binary-static/fr/get-started-jp.html">Se lancer</a>
+                                </li>
+                                <li>
+                                    <a class="smaller-font pjaxload" href="/binary-static/fr/tour.html">Aperçu</a>
+                                </li>
+                                <li>
+                                    <a class="smaller-font pjaxload" href="/binary-static/fr/trading.html">Trading</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="client-logged-in" class="gr-3 gr-8-m gr-8-p gr-no-gutter by_client_type client_real client_virtual align-end" style="display: none">
+                      <div id="logout">
+                        <form id="loginid-switch-form">
+                            <div id="login-fields">
+                                <select id="client_loginid" name="client_loginid">
+                                </select>
+                            </div>
+                            <div id="balance"></div>
+                            <a id="btn_logout" class="logout" href="javascript:;">DECONNEXION</a>
+                        </form>
+                      </div>
+                    </div>
+                    <div id="client-logged-out" class="gr-3 gr-8-m gr-8-p gr-no-gutter by_client_type client_logged_out invisible">
+                        <div id="btn_login" class="button">Connexion</div>
+                    </div>
+                    <div class='gr-hide gr-show-m gr-2-m gr-show-p gr-2-p gr-no-gutter-mobile align-end'>
+                        <div id='mobile-menu-icon-container'>
+                            <a href='#mobile-menu' id='mobile-menu-icon'>
+                                <img class='responsive' src="/binary-static/images/pages/binary-mobile-menu.svg"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="content-holder">
-      <div id="main-menu" class="tab-menu">
-    <div class="tab-menu-wrap grd-container grd-hide-mobile grd-hide-phablet">
-        <div class='grd-grid-12'>
+    <div id="main-menu" class="tab-menu">
+    <div class="tab-menu-wrap container gr-hide-m gr-hide-p">
+        <div class="gr-12 gr-no-gutter">
             <ul class="items">  <li id="topMenuBetaInterface" class="item ">
                     <a class="link pjaxload" target="" href="/binary-static/fr/trading.html">Commencer le trading</a>
                     
@@ -181,7 +198,7 @@
                                 <a class="link with_login_cookies pjaxload" target="" href="/binary-static/fr/user/settingsws.html">Paramètres</a>
                             </li>  <li id="topMenuBecomeAffiliate" class="sub_item ja-hide">
                                 <a class="link pjaxload" target="" href="/binary-static/fr/affiliate/signup.html">Affilié</a>
-                            </li>  <li id="topMenuAuthenticateAccount" class="sub_item by_client_type client_real">
+                            </li>  <li id="topMenuAuthenticateAccount" class="sub_item by_client_type client_real ja-hide">
                                 <a class="link with_login_cookies pjaxload" target="" href="/binary-static/fr/user/authenticatews.html">Authentification</a>
                             </li>  </ul>
                     
@@ -197,15 +214,15 @@
                                 <a class="link pjaxload" target="" href="/binary-static/fr/resources/market_timesws.html">Horaires de trading</a>
                             </li>  </ul>
                     
-                </li>  <li id="topMenuApplications" class="item ">
-                    <a class="link ja-hide pjaxload" target="" href="/binary-static/fr/applications.html">Applications</a>
+                </li>  <li id="topMenuShop" class="item ja-hide">
+                    <a class="link" target="_blank" href="https://shop.binary.com">Shop</a>
                     
                 </li>  </ul>
         </div>
     </div>
 </div>
-      <div class='grd-hide grd-show-mobile grd-show-phablet' id='mobile-menu-container'>
-    <div class='grd-hide' id='mobile-menu'>
+    <div class='gr-hide gr-show-m gr-show-p' id='mobile-menu-container'>
+    <div class='gr-hide' id='mobile-menu'>
         <ul>
             <li>
                 <a class="pjaxload" href="/binary-static/fr/why-us.html">Pourquoi nous ?</a>
@@ -236,7 +253,7 @@
                             <a class="pjaxload link with_login_cookies pjaxload" href="/binary-static/fr/user/settingsws.html">Paramètres</a>
                         </li>  <li id="topMenuBecomeAffiliate" class="sub_item ja-hide">
                             <a class="pjaxload link pjaxload" href="/binary-static/fr/affiliate/signup.html">Affilié</a>
-                        </li>  <li id="topMenuAuthenticateAccount" class="sub_item by_client_type client_real">
+                        </li>  <li id="topMenuAuthenticateAccount" class="sub_item by_client_type client_real ja-hide">
                             <a class="pjaxload link with_login_cookies pjaxload" href="/binary-static/fr/user/authenticatews.html">Authentification</a>
                         </li>  </ul>
                 
@@ -252,16 +269,16 @@
                             <a class="pjaxload link pjaxload" href="/binary-static/fr/resources/market_timesws.html">Horaires de trading</a>
                         </li>  </ul>
                 
-            </li>  <li id="topMenuApplications" class="item">
-                <a class="pjaxload link ja-hide pjaxload" href="/binary-static/fr/applications.html">Applications</a>
+            </li>  <li id="topMenuShop" class="item ja-hide">
+                <a class="pjaxload link " href="https://shop.binary.com">Shop</a>
                 
             </li>  </ul>
     </div>
 </div>
-      <!-- FlushHead -->
+    <!-- FlushHead -->
 
-      <div id="content">
-          <!-- Google Tag Manager -->
+    <div id="content" class="assessmentws-content">
+        <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MZWFF7"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -270,16 +287,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MZWFF7');</script>
 <!-- End Google Tag Manager -->
-          <div id="page_info" style="display:none;">
-              <title>Évaluation Financière | Binary.com</title>
-          </div>
-          
-          <div class="grd-container">
-<div class="grd-grid-12">
+        <div id="page_info" style="display:none;">
+            <title>Évaluation Financière | Binary.com</title>
+            <div id="content_class">assessmentws-content</div>
+        </div>
+        
+        <div class="container">
 
+
+  <div>
     <h1 id="heading">Financial Assessment</h1>
     <p class = "invisible" id="response_on_success"></p>
-    <form class="formObject grd-row-padding invisible" id="assessment_form" name="assessment_form">
+    <form class="formObject gr-padding-10 invisible" id="assessment_form" name="assessment_form">
         <h1 id="heading_risk" class="invisible">Financial Assessment</h1>
         <p class="invisible" id="high_risk_classification">Due to recent changes in the regulations, we are required to ask our clients to complete the following Financial Assessment. Please note that you will not be able to continue trading until this is completed.</p>
         <div class="rbox form">
@@ -287,11 +306,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <fieldset>
                     <legend>Financial Information</legend>
 
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="forex_trading_experience">Forex trading experience</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="forex_trading_experience" name="forex_trading_experience">
                                 <option value="">Please select</option>
                                 <option value="0-1 year" >0-1 year</option>
@@ -302,11 +321,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </div>
 
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="forex_trading_frequency">Forex trading frequency</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="forex_trading_frequency" name="forex_trading_frequency">
                                 <option value="">Please select</option>
                                 <option value="0-5 transactions in the past 12 months" >0-5 transactions in the past 12 months</option>
@@ -317,11 +336,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </div>
 
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="indices_trading_experience">Indices trading experience</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="indices_trading_experience" name="indices_trading_experience">
                                 <option value="">Please select</option>
                                 <option value="0-1 year" >0-1 year</option>
@@ -332,11 +351,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </div>
 
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="indices_trading_frequency">Indices trading frequency</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="indices_trading_frequency" name="indices_trading_frequency">
                                 <option value="">Please select</option>
                                 <option value="0-5 transactions in the past 12 months">0-5 transactions in the past 12 months</option>
@@ -347,11 +366,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </div>
 
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="commodities_trading_experience">Commodities trading experience</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="commodities_trading_experience" name="commodities_trading_experience">
                                 <option value="">Please select</option>
                                 <option value="0-1 year">0-1 year</option>
@@ -362,11 +381,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </div>
 
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="commodities_trading_frequency">Commodities trading frequency</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="commodities_trading_frequency" name="commodities_trading_frequency">
                                 <option value="">Please select</option>
                                 <option value="0-5 transactions in the past 12 months">0-5 transactions in the past 12 months</option>
@@ -377,11 +396,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </div>
 
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="stocks_trading_experience">Stocks trading experience</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="stocks_trading_experience" name="stocks_trading_experience">
                                 <option value="">Please select</option>
                                 <option value="0-1 year">0-1 year</option>
@@ -392,11 +411,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </div>
 
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="stocks_trading_frequency">Stocks trading frequency</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="stocks_trading_frequency" name="stocks_trading_frequency">
                                 <option value="">Please select</option>
                                 <option value="0-5 transactions in the past 12 months">0-5 transactions in the past 12 months</option>
@@ -406,11 +425,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <p class="errorfield" id="errorstocks_trading_frequency"></p>
                         </div>
                     </div>
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="other_derivatives_trading_experience">Binary options or other financial derivatives trading experience</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="other_derivatives_trading_experience" name="other_derivatives_trading_experience">
                                 <option value="">Please select</option>
                                 <option value="0-1 year">0-1 year</option>
@@ -420,11 +439,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <p class="errorfield" id="errorother_derivatives_trading_experience"></p>
                         </div>
                     </div>
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="other_derivatives_trading_frequency">Binary options or other financial derivatives trading frequency</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="other_derivatives_trading_frequency" name="other_derivatives_trading_frequency">
                                 <option value="">Please select</option>
                                 <option value="0-5 transactions in the past 12 months">0-5 transactions in the past 12 months</option>
@@ -434,11 +453,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <p class="errorfield" id="errorother_derivatives_trading_frequency"></p>
                         </div>
                     </div>
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="other_instruments_trading_experience">Other financial instruments trading experience</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="other_instruments_trading_experience" name="other_instruments_trading_experience">
                                 <option value="">Please select</option>
                                 <option value="0-1 year">0-1 year</option>
@@ -448,11 +467,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <p class="errorfield" id="errorother_instruments_trading_experience"></p>
                         </div>
                     </div>
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="other_instruments_trading_frequency">Other financial instruments trading frequency</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="other_instruments_trading_frequency" name="other_instruments_trading_frequency">
                                 <option value="">Please select</option>
                                 <option value="0-5 transactions in the past 12 months">0-5 transactions in the past 12 months</option>
@@ -462,11 +481,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <p class="errorfield" id="errorother_instruments_trading_frequency"></p>
                         </div>
                     </div>
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="employment_industry">Industry of Employment</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="employment_industry" name="employment_industry">
                                 <option value="">Please select</option>
                                 <option value="Construction">Construction</option>
@@ -479,11 +498,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <p class="errorfield" id="erroremployment_industry"></p>
                         </div>
                     </div>
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="education_level">Level of Education</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="education_level" name="education_level">
                                 <option value="">Please select</option>
                                 <option value="Primary">Primary</option>
@@ -493,11 +512,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <p class="errorfield" id="erroreducation_level"></p>
                         </div>
                     </div>
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="income_source">Income Source</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="income_source" name="income_source">
                                 <option value="">Please select</option>
                                 <option value="Salaried Employee">Salaried Employee</option>
@@ -509,31 +528,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <p class="errorfield" id="errorincome_source"></p>
                         </div>
                     </div>
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="net_income">Net Annual Income</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="net_income" name="net_income">
                                 <option value="">Please select</option>
                                 <option value="Less than &#36;25,000">Less than &#36;25,000</option>
-                                <option value="&#36;25,000 - &#36;100,000" >&#36;25,000 - &#36;100,000</option>
-                                <option value="&#36;100,000 - &#36;500,000">&#36;100,000 - &#36;500,000</option>
+                                <option value="&#36;25,000 - &#36;50,000" >&#36;25,000 - &#36;50,000</option>
+                                <option value="&#36;50,001 - &#36;100,000">&#36;50,001 - &#36;100,000</option>
+                                <option value="&#36;100,001 - &#36;500,000">&#36;100,001 - &#36;500,000</option>
                                 <option value="Over &#36;500,000">Over &#36;500,001</option>
                             </select>
                             <p class="errorfield" id="errornet_income"></p>
                         </div>
                     </div>
-                    <div class="grd-row-padding row clear">
-                        <div class="grd-grid-4  form_label">
+                    <div class="gr-padding-10 gr-row clear">
+                        <div class="gr-4  form_label">
                             <label for="estimated_worth">Estimated Net Worth</label>
                         </div>
-                        <div class="grd-grid-8">
+                        <div class="gr-8">
                             <select id="estimated_worth" name="estimated_worth">
                                 <option value="">Please select</option>
                                 <option value="Less than &#36;100,000">Less than &#36;100,000</option>
                                 <option value="&#36;100,000 - &#36;250,000" >&#36;100,000 - &#36;250,000</option>
-                                <option value="&#36;250,000 - &#36;1,000,000">&#36;250,000 - &#36;1,000,000</option>
+                                <option value="&#36;250,001 - &#36;500,000">&#36;250,001 - &#36;500,000</option>
+                                <option value="&#36;500,001 - &#36;1,000,000">&#36;500,001 - &#36;1,000,000</option>
                                 <option value="Over &#36;1,000,000">Over &#36;1,000,000</option>
                             </select>
                             <p class="errorfield" id="errorestimated_worth"></p>
@@ -546,182 +567,195 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rbox form">
             <div class="rbox-wrap">
                 <fieldset>
-                    <div class="grd-grid-12">
+                    <div class="gr-12">
                         <p id="warning">The financial trading services contained within this site are only suitable for customers who are able to bear the loss of all the money they invest and who understand and have experience of the risk involved in the acquistion of financial contracts. Transactions in financial contracts carry a high degree of risk. If purchased contracts expire worthless, you will suffer a total loss of your investment, which consists of the contract premium.</p>
                     </div>
                 </fieldset>
                 <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span><span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
             </div>
         </div>
-        <fieldset class="center-aligned" id="formlayout">
-            <div class="grd-grid-12"><span class=" grd-hide-mobile form_label"><label></label></span><span class=""><span class=" button"><button class=" button" id="submit">Update</button></span>
+        <fieldset class="center-text" id="formlayout">
+            <div class="gr-12"><span class=" gr-hide-m form_label"><label></label></span><span class=""><span class=" button"><button class=" button" id="submit">Update</button></span>
                 <p class="errorfield" id="invalidinputfound"></p>
                 </span>
             </div>
         </fieldset>
     </form>
 </div>
-</div> 
 
-<div class="push"></div>
+
+  </div> 
+
 </div> 
 </div>
 <div id="footer">
     <div id="footer-menu">
-        <div class="grd-container grd-default-container">
-            <div class="grd-grid-6 grd-grid-mobile-12 grd-parent">
-                <div class="grd-grid-4">
-                    <h1>Notre société</h1>
-                    <ul>
-                        <li>
-                            <a class="pjaxload" href="/binary-static/fr/about-us.html">À propos</a>
-                        </li>
-                        <li>
-                            <a class="pjaxload id-hide ar-hide" href="/binary-static/fr/group-information.html">Informations sur notre groupe</a>
-                        </li>
-                        <li>
-                            <a class="pjaxload" href="/binary-static/fr/group-history.html">Histoire du groupe</a>
-                        </li>
-                        <li class="ja-hide">
-                            <a class="pjaxload" href="/binary-static/fr/careers.html">Opportunités de carrière</a>
-                        </li>
-                        <li class="ja-hide">
-                            <a href="http://binarycom.statuspage.io" target="_blank">Statut réseau</a>
-                        </li>
-                        <li>
-                            <a class="pjaxload" href="/binary-static/fr/contact.html">Nous contacter</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grd-grid-4">
-                    <h1>Formation</h1>
-                    <ul>
-                        <li>
-                            <a class="pjaxload" href="/binary-static/fr/why-us.html">Pourquoi nous ?</a>
-                        </li>
-                        <li class="ja-hide">
-                            <a class="pjaxload" href="/binary-static/fr/get-started.html">Pour débuter</a>
-                        </li>
-                        <li class="all-hide ja-show-block">
-                            <a class="pjaxload" href="/binary-static/fr/get-started-jp.html">Pour débuter</a>
-                        </li>
-                        <li>
-                            <a class="pjaxload" href="/binary-static/fr/tour.html">Aperçu de la plateforme</a>
-                        </li>
-                        <li class="ja-hide id-hide">
-                            <a href="http://www.gamcare.org.uk/" target="_blank">GamCare</a>
-                        </li>
-                        <li class="ja-hide blog">
-                            <a href="http://blog.binary.com" target="_blank">Blog</a>
-                        </li>
-                        <li class='ja-hide id-hide'>
-                            <a href="http://blog.binary.com/en/webinar/" target="_blank">Webinaires</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grd-grid-4">
-                    <h1 class="ja-hide">Trading</h1>
-                    <ul class="ja-hide">
-                        <li class="ja-hide">
-                            <a class="pjaxload" href="/binary-static/fr/resources/asset_indexws.html">Indice des actifs</a>
-                        </li>
-                    </ul>
-                    <div class='grd-row-padding ja-no-padding'>
-                        <h1>Services bancaires</h1>
-                        <ul>
-                            <li>
-                                <a class="pjaxload" href="/binary-static/fr/cashier.html">Caisse</a>
-                            </li>
-                            <li class="ja-hide">
-                                <a class="pjaxload" href="/binary-static/fr/cashier/payment_methods.html">Moyens de paiement</a>
-                            </li>
-                        </ul>
+        <div class="container">
+            <div class="gr-row gr-padding-10">
+                <div class="gr-6 gr-12-m gr-parent">
+                    <div class="gr-row">
+                        <div class="gr-4">
+                            <h1>Notre société</h1>
+                            <ul>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/fr/about-us.html">À propos</a>
+                                </li>
+                                <li>
+                                    <a class="pjaxload id-hide ar-hide" href="/binary-static/fr/group-information.html">Informations sur notre groupe</a>
+                                </li>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/fr/group-history.html">Histoire du groupe</a>
+                                </li>
+                                <li class="ja-hide">
+                                    <a class="pjaxload" href="/binary-static/fr/careers.html">Opportunités de carrière</a>
+                                </li>
+                                <li class="ja-hide">
+                                    <a href="http://binarycom.statuspage.io" target="_blank">Statut réseau</a>
+                                </li>
+                                <li class="ja-hide id-hide">
+                                    <a href="/binary-static/fr/legal/us_patents.html" class="us_patent_link pjaxload">Brevets</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gr-4">
+                            <h1>Formation</h1>
+                            <ul>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/fr/why-us.html">Pourquoi nous ?</a>
+                                </li>
+                                <li class="ja-hide">
+                                    <a class="pjaxload" href="/binary-static/fr/get-started.html">Pour débuter</a>
+                                </li>
+                                <li class="all-hide ja-show-block">
+                                    <a class="pjaxload" href="/binary-static/fr/get-started-jp.html">Pour débuter</a>
+                                </li>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/fr/tour.html">Aperçu de la plateforme</a>
+                                </li>
+                                <li class="ja-hide id-hide">
+                                    <a href="http://www.gamcare.org.uk/" target="_blank">GamCare</a>
+                                </li>
+                                <li class="ja-hide blog">
+                                    <a href="http://blog.binary.com" target="_blank">Blog</a>
+                                </li>
+                                <li class='ja-hide id-hide'>
+                                    <a href="http://blog.binary.com/en/webinar/" target="_blank">Webinaires</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gr-4">
+                            <h1 class="ja-hide">Trading</h1>
+                            <ul class="ja-hide">
+                                <li class="ja-hide">
+                                    <a class="pjaxload" href="/binary-static/fr/resources/asset_indexws.html">Indice des actifs</a>
+                                </li>
+                            </ul>
+                            <div class='gr-padding-10 gr-no-gutter'>
+                                <h1>Services bancaires</h1>
+                                <ul>
+                                    <li>
+                                        <a class="pjaxload" href="/binary-static/fr/cashier.html">Caisse</a>
+                                    </li>
+                                    <li class="ja-hide">
+                                        <a class="pjaxload" href="/binary-static/fr/cashier/payment_methods.html">Moyens de paiement</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="grd-grid-6 grd-grid-mobile-12 grd-parent">
-                 <div class="grd-grid-4">
-                    <h1>Condition</h1>
-                    <ul>
-                        <li class='ja-hide'>
-                            <a class="pjaxload" href="/binary-static/fr/terms-and-conditions.html">Conditions générales</a>
-                        </li>
-                        <li class='hidden ja-show-block'>
-                            <a class="pjaxload" href="/binary-static/fr/terms-and-conditions-jp.html">Conditions générales</a>
-                        </li>
-                        <li class='ja-hide'>
-                            <a class="pjaxload"
-                               href="/binary-static/fr/terms-and-conditions.html#privacy-tab">Confidentialité et sécurité</a>
-                        </li>
-                        <li class='hidden ja-show-block'>
-                            <a class="pjaxload"
-                               href="/binary-static/fr/terms-and-conditions-jp.html?selected_tab=privacy-tab">Confidentialité et sécurité</a>
-                        </li>
-                        <li class="ja-hide">
-                            <a class="pjaxload" href="/binary-static/fr/responsible-trading.html">Trading responsable</a>
-                        </li>
-                        <li class="ja-hide">
-                        <a class="pjaxload" href="/binary-static/fr/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">Complaints</a>
-                        </li>
-                        <li class="ja-hide id-hide ru-hide">
-                            <a href="/binary-static/download/BIEL_Prospectus.pdf" target="_blank">Prospectus</a>
-                        </li>
-                        <li class="ja-hide id-hide">
-                            <a href="/binary-static/fr/legal/us_patents.html" class="us_patent_link pjaxload">Brevets</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grd-grid-4">
-                    <h1>Données de marché</h1>
-                    <ul>
-                        <li class="ja-hide">
-                            <a class="pjaxload" href="//webtrader.binary.com" target="_blank">Webtrader</a>
-                        </li>
-                        <li>
-                            <a class="pjaxload" href="//tradingview.binary.com" target="_blank">TradingView</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grd-grid-4">
-                    <h1 class="ja-hide">Devenez partenaire Binary.com</h1>
-                    <ul class="ja-hide partner">
-                        <li>
-                            <a class="pjaxload" href="/binary-static/fr/partners.html"><img id="iom_icon_footer" class="responsive" src="/binary-static/images/pages/footer/partner-icon.svg"/></a>
-                        </li>
+                <div class="gr-6 gr-12-m gr-parent">
+                    <div class="gr-row">
+                        <div class="gr-4">
+                           <h1>Condition</h1>
+                           <ul>
+                               <li class='ja-hide'>
+                                   <a class="pjaxload" href="/binary-static/fr/terms-and-conditions.html">Conditions générales</a>
+                               </li>
+                               <li class='hidden ja-show-block'>
+                                   <a class="pjaxload" href="/binary-static/fr/terms-and-conditions-jp.html">Conditions générales</a>
+                               </li>
+                               <li class='ja-hide'>
+                                   <a class="pjaxload"
+                                      href="/binary-static/fr/terms-and-conditions.html#privacy-tab">Confidentialité et sécurité</a>
+                               </li>
+                               <li class='hidden ja-show-block'>
+                                   <a class="pjaxload"
+                                      href="/binary-static/fr/terms-and-conditions-jp.html?selected_tab=privacy-tab">Confidentialité et sécurité</a>
+                               </li>
+                               <li class="ja-hide">
+                                   <a class="pjaxload" href="/binary-static/fr/responsible-trading.html">Trading responsable</a>
+                               </li>
+                               <li class="ja-hide">
+                               <a class="pjaxload" href="/binary-static/fr/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">Complaints</a>
+                               </li>
+                               <li class="ja-hide id-hide ru-hide">
+                                   <a href="/binary-static/download/BIEL_Prospectus.pdf" target="_blank">BIEL Prospectus</a>
+                               </li>
+                               <li class="ja-hide id-hide ru-hide">
+                                   <a href="/binary-static/download/BIEL_Pillar_3_Report.pdf" target="_blank">BIEL Pillar III</a>
+                               </li>
+                           </ul>
+                       </div>
+                       <div class="gr-4">
+                           <h1>Charts</h1>
+                           <ul>
+                               <li class="ja-hide">
+                                   <a class="pjaxload" href="//webtrader.binary.com" target="_blank">Webtrader</a>
+                               </li>
+                               <li>
+                                   <a class="pjaxload" href="//tradingview.binary.com" target="_blank">TradingView</a>
+                               </li>
+                           </ul>
+                       </div>
+                       <div class="gr-4">
+                           <h1 class="ja-hide">Devenez partenaire Binary.com</h1>
+                           <ul class="ja-hide partner">
+                               <li>
+                                   <a class="pjaxload" href="/binary-static/fr/partners.html"><img id="iom_icon_footer" class="responsive" src="/binary-static/images/pages/footer/partner-icon.svg"/></a>
+                               </li>
+                           </ul>
+                       </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="footer-regulatory">
-        <div class="grd-container grd-default-container">
-            <div class="grd-parent grd-grid-12 ja-hide id-hide">
-                <div class="grd-grid-2">
-                    <a href="http://www.gov.im/gambling/" target="_blank">
-                        <img id="iom_icon_footer" class="responsive" src="/binary-static/images/pages/footer/isle-of-man.png"/>
-                    </a>
-                </div>
-                <div class="grd-grid-2 center">
-                    <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40" target="_blank">
-                        <img id="lga_icon_footer" class="responsive" src="/binary-static/images/pages/footer/mga-logo-footer.svg"/>
-                    </a>
-                </div>
-                <div class="grd-grid-6 center">
-                    <a href="http://mfsa.com.mt/" target="_blank">
-                        <img id="mfsa_logo" class="responsive" src="/binary-static/images/pages/footer/mfsa-logo.svg"/>
-                    </a>
-                </div>
-                <div class="grd-grid-2 center">
-                    <a href="http://mfsa.com.mt/" target="_blank">
-                        <img id="mifid_logo" class="responsive" src="/binary-static/images/pages/footer/mifid-logo.svg"/>
-                    </a>
-                </div>
-            </div>
-            <div class="grd-parent grd-grid-12">
-                <div id="regulatory-text" class="grd-grid-9 grd-grid-mobile-12 grd-grid-phablet-7">
-                    Pour le Royaume-Uni et l'île de Man, les services proposés via ce site Web sont commercialisés par Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, British Isles, autorisés et réglementés par (1) la Gambling Supervision Commission de l'île de Man, îles britanniques (licence actuelle pour les services de jeux en ligne délivrée le 31 août 2012), et pour les clients du Royaume-Uni par (2) la Commission des jeux du Royaume-Uni <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>afficher la licence</a>.  Pour le reste de l'Europe, les services d'investissement proposés via ce site Web sont commercialisés par Binary Investments (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malte, autorisés et réglementés par l'Autorité maltaise des services financiers conformément à la licence de « fournisseur de services d'investissement » de catégorie 3 (licence n° IS/70156). Les services de jeu en ligne sont commercialisés par Binary (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malte, autorisés et réglementés par (1) l'Autorité maltaise des jeux (licence n° MGA/CL2/118/2000 du 26 mai 2015), pour les clients du Royaume-Uni par (2) la Commission des jeux du Royaume-Uni <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495' target='_blank'>afficher la licence</a>, et pour les clients basés en Irlande par (3) Revenue Commissioners (licence actuelle de bookmaker en ligne délivrée le 29 septembre 2015, licence n° 1010285).  Les services de ce site Web sont indisponibles aux États-Unis, au Japon, au Costa Rica et à Hong-Kong et ne sont pas accessibles aux personnes âgées de moins de 18 ans.
-                </div>
-                <div class="ja-hide grd-grid-3 grd-grid-mobile-12 grd-centered-mobile" id="social-networks">
-                    <div id="fb-root">
+        <div class="container">
+            <div>
+                <div class="gr-padding-10">
+                    <div class="gr-parent">
+                        <div class="gr-row ja-hide id-hide">
+                            <div class="gr-2">
+                                <a href="http://www.gov.im/gambling/" target="_blank">
+                                    <img id="iom_icon_footer" class="responsive" src="/binary-static/images/pages/footer/isle-of-man.png"/>
+                                </a>
+                            </div>
+                            <div class="gr-2 center-text">
+                                <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40" target="_blank">
+                                    <img id="lga_icon_footer" class="responsive" src="/binary-static/images/pages/footer/mga-logo-footer.svg"/>
+                                </a>
+                            </div>
+                            <div class="gr-6 center-text">
+                                <a href="http://mfsa.com.mt/" target="_blank">
+                                    <img id="mfsa_logo" class="responsive" src="/binary-static/images/pages/footer/mfsa-logo.svg"/>
+                                </a>
+                            </div>
+                            <div class="gr-2">
+                                <a href="http://mfsa.com.mt/" target="_blank">
+                                    <img id="mifid_logo" class="responsive" src="/binary-static/images/pages/footer/mifid-logo.svg"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gr-parent">
+                        <div class="gr-row">
+                            <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p">
+                                Pour le Royaume-Uni et l'île de Man, les services proposés via ce site Web sont commercialisés par Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, British Isles, autorisés et réglementés par (1) la Gambling Supervision Commission de l'île de Man, îles britanniques (licence actuelle pour les services de jeux en ligne délivrée le 31 août 2012), et pour les clients du Royaume-Uni par (2) la Commission des jeux du Royaume-Uni <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>afficher la licence</a>. Pour le reste de l'Europe, les services d'investissement proposés via ce site Web sont commercialisés par Binary Investments (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malte, autorisés et réglementés par l'Autorité maltaise des services financiers conformément à la licence de « fournisseur de services d'investissement » de catégorie 3 (licence n° IS/70156). Les services de jeu en ligne sont commercialisés par Binary (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malte, autorisés et réglementés par (1) l'Autorité maltaise des jeux (licence n° MGA/CL2/118/2000 du 26 mai 2015), pour les clients du Royaume-Uni par (2) la Commission des jeux du Royaume-Uni <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495' target='_blank'>afficher la licence</a>, et pour les clients basés en Irlande par (3) Revenue Commissioners (licence actuelle de bookmaker en ligne délivrée le 29 septembre 2015, licence n° 1010285).  Les services de ce site Web sont indisponibles aux États-Unis, au Japon, au Costa Rica et à Hong-Kong et ne sont pas accessibles aux personnes âgées de moins de 18 ans.
+                            </div>
+                            <div class="ja-hide gr-3 gr-12-m gr-5-p" id="social-networks">
+                                <div id="fb-root">
 </div>
 <div class="social-icons">
     <a href="http://www.youtube.com/user/BinaryTradingVideos" target="_blank">
@@ -741,6 +775,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <img class="responsive social-network-icon" src="/binary-static/images/pages/footer/linkedin.svg"/>
     </a>
 </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -751,10 +788,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
     </div>
     <div id="footer-last">
-        <div class="grd-container grd-default-container">
-            <div class="grd-grid-12">
+        <div class="container">
+            <div class="gr-padding-10">
                 <p class="gambling">
-                    Le trading d'options binaires ne convient pas nécessairement à tout le monde et vous devez vous assurer de bien comprendre les risques associés.  Vos pertes peuvent excéder votre dépôt initial et vous ne détenez aucune partie de l'actif sous-jacent.  Les options binaires sont des produits apparentés aux jeux d'argent. N'oubliez pas que ces derniers peuvent s'avérer addictifs : jouez de manière responsable. <span class="ja-hide">Lisez notre article consacré au <a href="/binary-static/fr/responsible-trading.html" class="pjaxload">trading responsable</a>.</span>
+                    Le trading d'options binaires ne convient pas nécessairement à tout le monde et vous devez vous assurer de bien comprendre les risques associés. Vos pertes peuvent excéder votre dépôt initial et vous ne détenez aucune partie de l'actif sous-jacent.  Les options binaires sont des produits apparentés aux jeux d'argent. N'oubliez pas que ces derniers peuvent s'avérer addictifs : jouez de manière responsable. <span class="ja-hide">Lisez notre article consacré au <a href="/binary-static/fr/responsible-trading.html" class="pjaxload">trading responsable</a>.</span>
                 </p>
             </div>
         </div>
