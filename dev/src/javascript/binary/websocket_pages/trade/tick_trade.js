@@ -10,6 +10,8 @@ var TickDisplay = function() {
             $self.contract_start_ms = parseInt(data.contract_start * 1000);
             $self.contract_category = data.contract_category;
             $self.set_barrier = ($self.contract_category.match('digits')) ? false : true;
+            $self.barrier = data.barrier;
+            $self.abs_barrier = data.abs_barrier;
             $self.display_decimals = data.display_decimals || 2;
             $self.show_contract_result = data.show_contract_result;
             var tick_frequency = 5;
@@ -143,6 +145,19 @@ var TickDisplay = function() {
 
             if (barrier_type === 'static') {
                 var barrier_tick = $self.applicable_ticks[0];
+
+                if ( $self.barrier ) {
+                  var final_barrier = barrier_tick.quote + parseFloat($self.barrier);
+                  //sometimes due to rounding issues, result is 1.009999 while it should
+                  //be 1.01
+                  final_barrier = Number(Math.round(final_barrier+'e'+$self.display_decimals)+'e-'+$self.display_decimals);
+
+                  barrier_tick.quote = final_barrier;
+                }
+                else if ( $self.abs_barrier ) {
+                  barrier_tick.quote = parseFloat($self.abs_barrier);
+                }
+
                 $self.chart.yAxis[0].addPlotLine({
                     id: 'tick-barrier',
                     value: barrier_tick.quote,
@@ -176,6 +191,10 @@ var TickDisplay = function() {
                     zIndex: 2,
                 });
                 $self.contract_barrier = calc_barrier;
+            }
+            var barrier = document.getElementById('contract_purchase_barrier');
+            if ($self.contract_barrier && barrier) {
+                barrier.innerHTML = Content.localize().textBarrier + ': ' + $self.contract_barrier;
             }
         },
         add: function(indicator) {
@@ -252,14 +271,14 @@ WSTickDisplay.dispatch = function(data) {
   var $self = this;
   var chart = document.getElementById('tick_chart');
 
+  if (!chart || !isVisible(chart) || !data || (!data.tick && !data.history)) {
+      return;
+  }
+
   if (window.subscribe && data.tick && document.getElementById('sell_content_wrapper')) {
       if (data.echo_req.hasOwnProperty('passthrough') && data.echo_req.passthrough.dispatch_to === 'ViewChartWS') return;
       window.responseID = data.tick.id;
       ViewPopupWS.storeSubscriptionID(window.responseID);
-  }
-
-  if (!chart || !isVisible(chart) || !data || (!data.tick && !data.history)) {
-      return;
   }
 
   var epoches, spots2, display_decimals;
@@ -282,6 +301,7 @@ WSTickDisplay.dispatch = function(data) {
           "longcode"            : window.tick_longcode,
           "display_symbol"      : window.tick_display_name,
           "contract_start"      : window.tick_date_start,
+          "abs_barrier"         : window.abs_barrier,
           "display_decimals"    : display_decimals,
           "show_contract_result": 0
       });
@@ -298,7 +318,7 @@ WSTickDisplay.dispatch = function(data) {
     epoches = data.history.times;
   }
 
-  if ($self.applicable_ticks.length >= $self.ticks_needed) {
+  if ($self.applicable_ticks && $self.ticks_needed && $self.applicable_ticks.length >= $self.ticks_needed) {
       $self.evaluate_contract_outcome();
       if (window.responseID) {
         BinarySocket.send({'forget':window.responseID});
@@ -346,6 +366,7 @@ WSTickDisplay.updateChart = function(data, contract) {
       window.tick_longcode = contract.longcode;
       window.tick_display_name = contract.display_name;
       window.tick_date_start = contract.date_start;
+      window.abs_barrier = contract.barrier;
       window.tick_shortcode = contract.shortcode;
       window.tick_init = '';
       var request = {
