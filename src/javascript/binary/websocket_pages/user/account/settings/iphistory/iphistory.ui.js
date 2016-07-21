@@ -1,80 +1,68 @@
-var IPHistoryUI = (function(){
-    "use strict";
+var IPHistoryUI = (function() {
+    'use strict';
 
-    var tableID = "login-history-table",
-        columns = ["timestamp","action","browser","ip","status"];
+    var containerSelector = '#login_history-ws-container';
+    var no_messages_error = 'Your account has no Login/Logout activity.';
+    var flexTable;
 
-    function createEmptyTable(){
-        var header = [
-            text.localize("Date and Time"),
-            text.localize("Action"),
-            text.localize("Browser"),
-            text.localize("IP Address"),
-            text.localize("Status"),
-        ];
-        var metadata = {
-            id: tableID,
-            cols: columns
-        };
-        var data = [];
-        var $table = Table.createFlexTable(data,metadata,header);
-        return $table;
+    function init() {
+        var $title = $('#login_history-title').children().first();
+        $title.text(text.localize($title.text()));
     }
 
-    function updateTable(history){
-        Table.appendTableBody(tableID, history, createRow);
+    function update(history) {
+        if (flexTable) {
+            return flexTable.replace(history);
+        }
+        var headers = ['Date and Time', 'Action', 'Browser', 'IP Address', 'Status'];
+        var columns = ['timestamp', 'action', 'browser', 'ip', 'status'];
+        flexTable = new FlexTableUI({
+            id:        'login-history-table',
+            container: containerSelector,
+            header:    headers.map(function(s) { return text.localize(s); }),
+            cols:      columns,
+            data:      history,
+            formatter: formatRow,
+            style: function($row) {
+                $row.children('.timestamp').addClass('pre');
+            },
+        });
+        if (!history.length) {
+            return flexTable.displayError(text.localize(no_messages_error), 6);
+        }
         showLocalTimeOnHover('td.timestamp');
     }
 
-    function createRow(data){
-        var userAgent = data['environment'];
-        var history = userAgent.split(' ');
+    function formatRow(data) {
         var timestamp = moment.unix(data.time).utc().format('YYYY-MM-DD HH:mm:ss').replace(' ', '\n') + ' GMT';
-        var ip = history[2].split('=')[1];
-        var browser = "Unknown",
-            ver = "Unknown",
-            verOffset = 0;
-        if (/(msie|trident)/i.test(userAgent)){
-            browser = "Internet Explorer";
-            verOffset = /(msie)/i.test(userAgent) ? userAgent.indexOf("MSIE") : verOffset;
-            verOffset = /(trident)/i.test(userAgent) ? userAgent.indexOf("Trident") : verOffset;
-            if (userAgent.substring(verOffset+13).split(" ")[0].indexOf(':') != -1) {
-              ver = userAgent.substring(verOffset+13).split(" ")[0].split(":")[1].split(")")[0];
-            }
-        } else if ((verOffset = userAgent.indexOf("Edge")) != -1) {
-            browser = "Edge";
-            ver = userAgent.substring(verOffset).split("/")[1].split(" ")[0];
-            if (ver.indexOf(';') != -1) {
-              ver = ver.split(';')[0];
-            }
-        } else if ((verOffset = userAgent.indexOf("OPR")) != -1){
-            browser = "Opera";
-            ver = userAgent.substring(verOffset+4).split(" ")[0];
-        } else if ((verOffset = userAgent.indexOf("Chrome")) != -1){
-            browser = "Chrome";
-            ver = userAgent.substring(verOffset+7).split(" ")[0];
-        } else if ((verOffset = userAgent.indexOf("Safari")) != -1){
-            browser = "Safari";
-            ver = userAgent.substring(verOffset+7).split(" ")[0];
-        } else if ((verOffset = userAgent.indexOf("Firefox")) != -1){
-            browser = "Firefox";
-            ver = userAgent.substring(verOffset+8).split(" ")[0];
-        }
-        var status = data['status'] === 1 ? text.localize('Successful') : text.localize('Failed');
-        var browserString = browser + " v" + ver;
-        var $row = Table.createFlexTableRow([timestamp, data['action'], browserString, ip, status], columns, "data");
-        $row.children(".timestamp").addClass('pre');
-        return $row[0];
+        var status = text.localize(data.success ? 'Successful' : 'Failed');
+        var browser = data.browser;
+        var browserString = browser ?
+            browser.name + ' v' + browser.version :
+            'Unknown';
+        return [
+            timestamp,
+            data.action,
+            browserString,
+            data.ip_addr,
+            status
+        ];
     }
 
-    function clearTableContent(){
-        Table.clearTableBody(tableID);
-        $("#" + tableID +">tfoot").hide();
+    function clean() {
+        $(containerSelector + ' .error-msg').text('');
+        flexTable.clear();
+        flexTable = null;
     }
 
-    return{
-        createEmptyTable: createEmptyTable,
-        updateTable: updateTable,
-        clearTableContent: clearTableContent
+    function displayError(error) {
+        $('#err').text(error);
+    }
+
+    return {
+        init: init,
+        clean: clean,
+        update: update,
+        displayError: displayError,
     };
 }());
