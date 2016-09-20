@@ -26,29 +26,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div id="portfolio-content" class="invisible">
         <div class="gr-parent gr-padding-10">
-            <div class="gr-hide-m gr-hide-p">
-                帳戶餘額： 
-                <span class="loading" id="portfolio-balance"></span>
+            帳戶餘額： 
+            <span class="loading" id="portfolio-balance"></span>
 
-                <!-- If the account balance is zero we show the following button, otherwise we remove it -->
-                <a href="/binary-static/zh_tw/cashier/forwardws.html#deposit" id="if-balance-zero" class="invisible button button_large by_client_type client_real with_login_cookies">
-                    <span>存入資金</span>
-                </a>
-            </div>
+            <!-- If the account balance is zero we show the following button, otherwise we remove it -->
+            <a href="/binary-static/zh_tw/cashier/forwardws.html#deposit" id="if-balance-zero" class="invisible button button_large by_client_type client_real with_login_cookies">
+                <span>存入資金</span>
+            </a>
         </div>
 
         <div id="portfolio-no-contract">
             <p>無未平倉頭寸。</p>
         </div>
 
-        <table class="flex-table" id="portfolio-table">
+        <table id="portfolio-table">
             <thead>
-                <tr class="flex-tr">
-                    <th class="ref flex-tr-child">參考</th>
-                    <th class="payout flex-tr-child">可能的賠付額</th>
-                    <th class="details flex-tr-child">合約詳細資料</th>
-                    <th class="purchase flex-tr-child">買入</th>
-                    <th class="indicative flex-tr-child">指示性</th>
+                <tr>
+                    <th class="ref">參考</th>
+                    <th class="payout">可能的賠付額</th>
+                    <th class="details">合約詳細資料</th>
+                    <th class="purchase">買入</th>
+                    <th class="indicative">指示性</th>
                     <th class="button"></th>
                 </tr>
             </thead>
@@ -56,10 +54,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <tbody id="portfolio-body"></tbody>
 
             <tfoot>
-                <tr class="flex-tr">
-                    <th class="ref flex-tr-child" colspan="3"></th>
-                    <th class="cost flex-tr-child" id="cost-of-open-positions"></th>
-                    <th class="value flex-tr-child" id="value-of-open-positions" colspan="2"></th>
+                <tr>
+                    <th>總計</th>
+                    <th class="ref" colspan="2"></th>
+                    <th class="cost" id="cost-of-open-positions"></th>
+                    <th class="value" id="value-of-open-positions" colspan="2"></th>
                 </tr>
             </tfoot>
         </table>
