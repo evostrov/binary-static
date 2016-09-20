@@ -3,6 +3,7 @@
 /* common styles */
 @import 'reset';
 @import 'mixin';
+@import 'functions';
 @import 'common';
 @import 'animations';
 
@@ -12,6 +13,7 @@
 @import 'common/nav';
 @import 'common/reality-check';
 @import 'common/password-meter';
+@import 'common/accordion';
 
 /* pages */
 @import 'pages/home.scss';
@@ -42,8 +44,8 @@
 
 /* static pages */
 @import 'static/trade.scss';
+@import 'static/trade_beta.scss';
 @import 'static/statement.scss';
-@import 'static/balance.scss';
 @import 'static/flex_table.scss';
 @import 'static/highcharts.scss';
 @import 'static/knowledge_test.scss';
@@ -52,6 +54,7 @@
 @import 'static/reset-password';
 @import 'static/virtual.scss';
 @import 'static/payment_agent.scss';
+@import 'static/404.scss';
 
 /* Language based rules */
 @import 'language_base.scss';

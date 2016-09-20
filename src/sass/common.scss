@@ -71,7 +71,7 @@ acronym, abbr {
     cursor: help;
 }
 
-span.button.button-disabled button.button-disabled {
+span.button.button-disabled button.button-disabled, span a.button-disabled button {
     color: $COLOR_GRAY_SHADE;
     background: $COLOR_LIGHT_GRAY;
     cursor: default;
@@ -84,6 +84,10 @@ span.button.button-disabled button.button-disabled {
     }
 }
 
+a.button:hover {
+    text-decoration: none;
+}
+
 form {
     margin: 0;
     padding: 0;
@@ -93,7 +97,7 @@ fieldset {
     position: relative;
     border: 1px solid $COLOR_GRAY;
     padding: 5px;
-    @include section-background;
+    margin-bottom: 10px;
     &#formlayout {
         background: none;
         border: 0;
@@ -182,10 +186,6 @@ fieldset .error-msg {
     margin: 0;
 }
 
-.hidden {
-    display: none;
-}
-
 .required_asterisk {
     color: $COLOR_ORANGE;
 }
@@ -201,11 +201,6 @@ fieldset .error-msg {
     max-width: 90%;
     .drag-handle {
         cursor: pointer;
-    }
-    a.close {
-        position: relative;
-        top: -10px;
-        right: -10px;
     }
     .inpage_popup_content {
         margin: 10px;
@@ -315,16 +310,8 @@ img.responsive {
     color: $COLOR_WHITE;
 }
 
-.font-weight-700 {
-    font-weight: 700;
-}
-
 .background-gray {
     background-color: $COLOR_LIGHT_GRAY;
-}
-
-.background-orange {
-    background-color: $COLOR_ORANGE;
 }
 
 button.blue-button {
@@ -345,4 +332,8 @@ button.blue-button {
 
 p.no-para-margin {
     margin: 0;
+}
+
+.separator-line-thin-gray {
+    border-top: 1px solid $COLOR_GRAY;
 }

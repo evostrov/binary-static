@@ -25,22 +25,21 @@ var Defaults = (function(){
     };
 
     var setDefault = function(key, value) {
-        if(key) {
-            value = value || '';
-            if(Object.keys(params).length === 0) params = page.url.params_hash();
-            if(params[key] != value) {
-                params[key] = value;
-                // to increase speed, do not set values when form is still loading
-                if(!isVisible(document.getElementById('trading_init_progress'))) {
-                    sessionStorage.setItem(key, value);
-                    updateURL();
-                }
+        if (!key) return;
+        value = value || '';
+        if(!objectNotEmpty(params)) params = page.url.params_hash();
+        if(params[key] != value) {
+            params[key] = value;
+            // to increase speed, do not set values when form is still loading
+            if(!isVisible(document.getElementById('trading_init_progress'))) {
+                sessionStorage.setItem(key, value);
+                updateURL();
             }
         }
     };
 
     var removeDefault = function() {
-        if(Object.keys(params).length === 0) params = page.url.params_hash();
+        if(!objectNotEmpty(params)) params = page.url.params_hash();
         var isUpdated = false;
         for (var i = 0; i < arguments.length; i++) {
             if(params.hasOwnProperty(arguments[i])) {
@@ -74,3 +73,7 @@ var Defaults = (function(){
         clear : function(){params = {};}
     };
 })();
+
+module.exports = {
+    Defaults: Defaults,
+};

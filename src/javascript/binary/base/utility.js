@@ -5,9 +5,8 @@
 //////////////////////////////////////////////////////////////////
 function showLoadingImage(container)
 {
-    var image_link = page.settings.get('image_link');
-
-    container.empty().append('<div id="std_loading_img"><p>'+text.localize('loading...')+'</p><img src="'+image_link['hourglass']+'" /></div>');
+    container.empty().append('<div id="std_loading_img"><p>' + page.text.localize('loading...') + '</p>' +
+        '<img src="' + page.url.url_for_static('images/common/hourglass_1.gif') + '" /></div>');
 }
 
 /**
@@ -127,8 +126,8 @@ function attach_time_picker(element, conf) {
         timeSeparator: ':',
         showLeadingZero: true,
         howMinutesLeadingZero: true,
-        hourText: text.localize("Hour"),
-        minuteText: text.localize("Minute"),
+        hourText: page.text.localize("Hour"),
+        minuteText: page.text.localize("Minute"),
         minTime: {},
         maxTime: {},
     };
@@ -218,18 +217,15 @@ function attach_tabs(element) {
 }
 
 function showLocalTimeOnHover(s) {
-    var selector = s || '.date';
-
-    $(selector).each(function(idx, ele) {
-        var gmtTimeStr = ele.innerHTML.replace('\n', ' ');
-
-        var localTime = moment.utc(gmtTimeStr, 'YYYY-MM-DD HH:mm:ss').local();
+    if (japanese_client()) return;
+    $(s || '.date').each(function(idx, ele) {
+        var gmtTimeStr = ele.textContent.replace('\n', ' ');
+        var localTime  = moment.utc(gmtTimeStr, 'YYYY-MM-DD HH:mm:ss').local();
         if (!localTime.isValid()) {
             return;
         }
 
         var localTimeStr = localTime.format('YYYY-MM-DD HH:mm:ss Z');
-
         $(ele).attr('data-balloon', localTimeStr);
     });
 }
@@ -237,25 +233,27 @@ function showLocalTimeOnHover(s) {
 function toJapanTimeIfNeeded(gmtTimeStr, showTimeZone, longcode, hideSeconds){
     var match;
     if (longcode && longcode !== '') {
-      match = longcode.match(/(\d{4}-\d{2}-\d{2})\s?(\d{2}:\d{2}:\d{2})?/);
+      match = longcode.match(/((?:\d{4}-\d{2}-\d{2})\s?(\d{2}:\d{2}:\d{2})?(?:\sGMT)?)/);
       if (!match) return longcode;
     }
 
-    var curr = localStorage.getItem('client.currencies'),
+    var jp_client = japanese_client(),
         timeStr = gmtTimeStr,
         time;
 
     if(typeof gmtTimeStr === 'number'){
         time = moment.utc(gmtTimeStr*1000);
-    } else {
+    } else if(gmtTimeStr){
         time = moment.utc(gmtTimeStr, 'YYYY-MM-DD HH:mm:ss');
+    } else {
+        time = moment.utc(match[0], 'YYYY-MM-DD HH:mm:ss');
     }
 
     if (!time.isValid()) {
         return;
     }
 
-    timeStr = time.zone(curr === 'JPY' ? '+09:00' : '+00:00').format((hideSeconds ? 'YYYY-MM-DD HH:mm' : 'YYYY-MM-DD HH:mm:ss' ) + (showTimeZone && showTimeZone !== '' ? curr === 'JPY' ? ' zZ' : ' Z' : ''));
+    timeStr = time.zone(jp_client ? '+09:00' : '+00:00').format((hideSeconds ? 'YYYY-MM-DD HH:mm' : 'YYYY-MM-DD HH:mm:ss' ) + (showTimeZone && showTimeZone !== '' ? jp_client ? ' zZ' : ' Z' : ''));
 
     return (longcode ? longcode.replace(match[0], timeStr) : timeStr);
 }
@@ -277,10 +275,40 @@ function template(string, content) {
     });
 }
 
-//used temporarily for mocha test
-if (typeof module !== 'undefined') {
-    module.exports = {
-        toJapanTimeIfNeeded: toJapanTimeIfNeeded,
-        template: template
-    };
+function objectNotEmpty(obj) {
+    if (obj && obj instanceof Object) {
+        for (var key in obj) {
+            if (obj.hasOwnProperty(key)) return true;
+        }
+    }
+    return false;
 }
+
+function parseLoginIDList(string) {
+    if (!string) return [];
+    return string.split('+').sort().map(function(str) {
+        var items = str.split(':');
+        var id = items[0];
+        return {
+            id:        id,
+            real:      items[1] === 'R',
+            disabled:  items[2] === 'D',
+            financial: /^MF/.test(id),
+            non_financial: /^MLT/.test(id),
+        };
+    });
+}
+
+module.exports = {
+    showLoadingImage: showLoadingImage,
+    get_highest_zindex: get_highest_zindex,
+    attach_date_picker: attach_date_picker,
+    attach_time_picker: attach_time_picker,
+    attach_tabs: attach_tabs,
+    showLocalTimeOnHover: showLocalTimeOnHover,
+    toJapanTimeIfNeeded: toJapanTimeIfNeeded,
+    downloadCSV: downloadCSV,
+    template: template,
+    objectNotEmpty: objectNotEmpty,
+    parseLoginIDList: parseLoginIDList,
+};

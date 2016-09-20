@@ -101,19 +101,19 @@ TradingAnalysis.DigitInfoWS.prototype = {
         underlyings = underlyings.sort();
         var elem = '<select class="smallfont" name="underlying">';
         for(i=0;i<underlyings.length;i++){
-            elem = elem + '<option value="'+underlyings[i]+'">'+text.localize(symbols[underlyings[i]])+'</option>';
+            elem = elem + '<option value="'+underlyings[i]+'">'+page.text.localize(symbols[underlyings[i]])+'</option>';
         }
         elem = elem + '</select>';
         var contentId = document.getElementById('tab_last_digit-content'),
             content = '<div class="gr-parent">'+
                         '<div id="last_digit_histo_form" class="gr-8 gr-12-m gr-centered">'+
                         '<form class="smallfont gr-row" action="#" method="post">'+
-                        '<div class="gr-6 gr-12-m">'+ text.localize('Select market')+' : ' + elem +' </div>'+
-                        '<div class="gr-6 gr-12-m">'+ text.localize('Number of ticks')+' : <select class="smallfont" name="tick_count"><option value="25">25</option><option value="50">50</option><option selected="selected" value="100">100</option><option value="500">500</option><option value="1000">1000</option></select></div>'+
+                        '<div class="gr-6 gr-12-m">'+ page.text.localize('Select market')+' : ' + elem +' </div>'+
+                        '<div class="gr-6 gr-12-m">'+ page.text.localize('Number of ticks')+' : <select class="smallfont" name="tick_count"><option value="25">25</option><option value="50">50</option><option selected="selected" value="100">100</option><option value="500">500</option><option value="1000">1000</option></select></div>'+
                         '</form>'+
                         '</div>'+
                         '<div id="last_digit_histo" class="gr-8 gr-12-m gr-centered"></div>'+
-                        '<div id="last_digit_title" class="gr-hide">'+ (domain.charAt(0).toUpperCase() + domain.slice(1)) + ' - ' + text.localize('Last digit stats for the latest [_1] ticks on [_2]') +'</div>'+
+                        '<div id="last_digit_title" class="gr-hide">'+ (domain.charAt(0).toUpperCase() + domain.slice(1)) + ' - ' + page.text.localize('Last digit stats for the latest [_1] ticks on [_2]') +'</div>'+
                         '</div>';
         contentId.innerHTML = content;
         $('[name=underlying]').val(underlying);
@@ -130,17 +130,17 @@ TradingAnalysis.DigitInfoWS.prototype = {
 
         var get_latest = function() {
             var symbol = $('[name=underlying] option:selected').val();
-            var request = JSON.parse('{"ticks_history":"'+ symbol +'",'+
-                                        '"end": "latest",'+
-                                        '"count": '+ $('[name=tick_count]', form).val() +','+
-                                        '"req_id": 2}');
+            var request = {"ticks_history": symbol,
+                           "end": "latest",
+                           "count": $('[name=tick_count]', form).val(),
+                           "req_id": 2};
             if(that.chart.series[0].name !== symbol){
                 if($('#underlying option:selected').val() != $('[name=underlying]', form).val()){
                     request['subscribe'] = 1;
                     request['style'] = "ticks";
                 }
                 if(that.stream_id !== null ){
-                    BinarySocket.send(JSON.parse('{"forget": "'+ that.stream_id +'"}'));
+                    BinarySocket.send({"forget": that.stream_id});
                     that.stream_id = null;
                 }
             }
@@ -160,25 +160,24 @@ TradingAnalysis.DigitInfoWS.prototype = {
             spots[i]=val.substr(val.length-1);
         }
         this.spots = spots;
-        if(this.chart &&  $('#last_digit_histo').html()){
-            this.chart.xAxis[0].update({
-                title:{
-                    text: $('#last_digit_title').html().replace('[_2]', $('[name=underlying] option:selected').text()).replace('[_1]',spots.length),
-                }
-            }, true);
+        if (this.chart && $('#last_digit_histo').html()) {
+            this.chart.xAxis[0].update({title: get_title()}, true);
             this.chart.series[0].name = underlying;
-        }
-        else{
-            this.add_content(underlying);
-            this.chart_config.xAxis.title = {
-                text: $('#last_digit_title').html().replace('[_2]', $('[name=underlying] option:selected').text()).replace('[_1]',spots.length),
-            };
+        } else {
+            this.add_content(underlying); // this creates #last_digit_title
+            this.chart_config.xAxis.title = get_title();
             this.chart = new Highcharts.Chart(this.chart_config);
             this.chart.addSeries({name : underlying, data: []});
             this.on_latest();
             this.stream_id = null;
         }
         this.update();
+
+        function get_title() {
+            return {
+                text: template($('#last_digit_title').html(), [spots.length, $('[name=underlying] option:selected').text()])
+            };
+        }
     },
     update: function(symbol, latest_spot) {
         if(typeof this.chart === "undefined") {
@@ -266,7 +265,7 @@ TradingAnalysis.DigitInfoWS.prototype = {
                 this.stream_id = tick.tick.id || null;
                 this.update(tick.tick.symbol, tick.tick.quote);
             } else{
-                BinarySocket.send(JSON.parse('{"forget":"'+tick.tick.id+'"}'));
+                BinarySocket.send({"forget": tick.tick.id+''});
             }
         } else{
             if(!this.stream_id){

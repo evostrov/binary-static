@@ -2,6 +2,7 @@ var MarketTimesData = (function() {
     "use strict";
 
     var initSocket = function() {
+        if (TradePage_Beta.is_trading_page()) return;
         BinarySocket.init({
             onmessage: function(msg) {
                 var response = JSON.parse(msg.data);
@@ -36,3 +37,7 @@ var MarketTimesData = (function() {
         responseHandler: responseHandler
     };
 }());
+
+module.exports = {
+    MarketTimesData: MarketTimesData,
+};

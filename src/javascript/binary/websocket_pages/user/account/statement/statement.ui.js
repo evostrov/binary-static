@@ -3,12 +3,13 @@ var StatementUI = (function(){
     var tableID = "statement-table";
     var columns = ["date", "ref", "payout", "act", "desc", "credit", "bal", "details"];
     var allData = [];
+    var oauth_apps = {};
 
     function createEmptyStatementTable(){
         var header = [
             Content.localize().textDate,
             Content.localize().textRef,
-            text.localize('Potential Payout'),
+            page.text.localize('Potential Payout'),
             Content.localize().textAction,
             Content.localize().textDescription,
             Content.localize().textCreditDebit,
@@ -16,7 +17,9 @@ var StatementUI = (function(){
             Content.localize().textDetails
         ];
 
-        header[6] = header[6] + (TUser.get().currency ? " (" + TUser.get().currency + ")" : "");
+        var jpClient = japanese_client();
+
+        header[6] = header[6] + (jpClient ? "" : (TUser.get().currency ? " (" + TUser.get().currency + ")" : ""));
 
         var metadata = {
             id: tableID,
@@ -42,7 +45,19 @@ var StatementUI = (function(){
         allData.push(statement_data);
         var creditDebitType = (parseFloat(statement_data.amount) >= 0) ? "profit" : "loss";
 
-        var $statementRow = Table.createFlexTableRow([statement_data.date, statement_data.ref, isNaN(statement_data.payout) ? '-' : statement_data.payout, statement_data.action, '', statement_data.amount, statement_data.balance, ''], columns, "data");
+        var jpClient = japanese_client();
+
+        var $statementRow = Table.createFlexTableRow([
+                (jpClient ? toJapanTimeIfNeeded(transaction.transaction_time) : statement_data.date),
+                '<span' + showTooltip(statement_data.app_id, oauth_apps[statement_data.app_id]) + '>' + statement_data.ref + '</span>',
+                isNaN(statement_data.payout) ? '-' : (jpClient ? format_money_jp(TUser.get().currency, statement_data.payout) : statement_data.payout ),
+                page.text.localize(statement_data.action),
+                '',
+                jpClient ? format_money_jp(TUser.get().currency, statement_data.amount) : statement_data.amount,
+                jpClient ? format_money_jp(TUser.get().currency, statement_data.balance) : statement_data.balance,
+                ''
+            ], columns, "data");
+        
         $statementRow.children(".credit").addClass(creditDebitType);
         $statementRow.children(".date").addClass("pre");
         $statementRow.children(".desc").html(statement_data.desc + "<br>");
@@ -51,7 +66,7 @@ var StatementUI = (function(){
         if (statement_data.action === "Sell" || statement_data.action === "Buy") {
             var $viewButtonSpan = Button.createBinaryStyledButton();
             var $viewButton = $viewButtonSpan.children(".button").first();
-            $viewButton.text(text.localize("View"));
+            $viewButton.text(page.text.localize("View"));
             $viewButton.addClass("open_contract_detailsws");
             $viewButton.attr("contract_id", statement_data.id);
 
@@ -83,6 +98,13 @@ var StatementUI = (function(){
         createEmptyStatementTable: createEmptyStatementTable,
         updateStatementTable: updateStatementTable,
         errorMessage: errorMessage,
-        exportCSV: exportCSV
+        exportCSV: exportCSV,
+        setOauthApps: function(values) {
+            return (oauth_apps = values);
+        }
     };
 }());
+
+module.exports = {
+    StatementUI: StatementUI,
+};

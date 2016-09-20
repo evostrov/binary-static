@@ -8,6 +8,10 @@ body {
     .all-hide {
         display: none !important;
     }
+    ul.checked li {
+        @include BIDIR_VALUE(background-position, left, right);
+        @include BIDIR_PROP(padding-left, padding-right, 35px);
+    }
 }
 
 body.EN {
@@ -35,6 +39,9 @@ body.JA {
     .regulatory-logo {
         display: none !important;
     }
+    .empty-space {
+        margin-top: 40px;
+    }
     #asset-forex div.table-header:nth-of-type(n + 3), #asset-forex div.table-body:nth-of-type(n + 15) {
         display: none !important;
     }
@@ -53,6 +60,11 @@ body.JA {
     #header #menu-top li {
         white-space: nowrap;
     }
+    #profit-table, #statement-table {
+        .buy-price, .sell-price, .payout, .pl.loss, .act {
+            white-space: nowrap;
+        }
+    }
 }
 /*Vietnamese Language */
 body.VI {
@@ -62,6 +74,9 @@ body.VI {
     }
     #trading_socket_container #contract_form_name_nav {
         font-size: 80%;
+    }
+    #trading_socket_container_beta #contract_symbol_container {
+        font-size: 90%;
     }
 }
 
@@ -75,6 +90,9 @@ body.FR {
     }
     #trading_socket_container #contract_form_name_nav {
         font-size: 80%;
+    }
+    #header .account-type {
+        font-size: 85%;
     }
 }
 
@@ -153,6 +171,9 @@ body.RU {
     }
     .ru-hide {
         display: none !important;
+    }
+    #header .account-type {
+        font-size: 90%;
     }
 }
 

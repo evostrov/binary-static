@@ -32,16 +32,39 @@ var APITokenWS = (function() {
 
         showLoadingImage($(tableContainer));
         BinarySocket.send({api_token: 1});
-
-        $('#btnCreate').click(function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            var params = getFormParams();
-            if (!params) {
-                return;
+        bind_validation.simple($('#token_form')[0], {
+            schema: getSchema(),
+            stop: function(info) {
+                ValidationUI.clear();
+                displayErrors(info.errors);
+            },
+            submit: function(e, info) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (info.errors.length > 0) {
+                    return;
+                }
+                createToken(info.values);
             }
-            createToken(params);
         });
+    }
+
+    function getSchema() {
+        var V2 = ValidateV2;
+        var letters = Content.localize().textLetters;
+        var numbers = Content.localize().textNumbers;
+        return {
+            scopes: [
+                function(v) {return dv.ok(v || []); },
+                customError(V2.required, 'Please select at least one scope'),
+            ],
+            name:   [
+                function(v) { return dv.ok(v.trim()); },
+                V2.required,
+                V2.lengthRange(2, 32),
+                V2.regex(/^\w+$/, [letters, numbers, '_']),
+            ],
+        };
     }
 
     function responseHandler(response) {
@@ -58,7 +81,7 @@ var APITokenWS = (function() {
 
         if (tokens.length >= maxTokens) {
             hideForm();
-            showErrorMessage(text.localize('The maximum number of tokens ([_1]) has been reached.', [maxTokens]));
+            showErrorMessage(page.text.localize('The maximum number of tokens ([_1]) has been reached.', [maxTokens]));
         } else {
             showForm();
         }
@@ -99,7 +122,7 @@ var APITokenWS = (function() {
         new FlexTableUI({
             id:        'tokens_table',
             container: tableContainer,
-            header:    headers.map(function(s) { return text.localize(s); }),
+            header:    headers.map(function(s) { return page.text.localize(s); }),
             cols:      columns,
             data:      tokens,
             formatter: formatToken,
@@ -115,8 +138,8 @@ var APITokenWS = (function() {
     }
 
     function createDeleteButton($row, token) {
-        var message = text.localize('Are you sure that you want to permanently delete token');
-        var $button = $('<button/>', {class: 'button btnDelete', text: text.localize('Delete')});
+        var message = page.text.localize('Are you sure that you want to permanently delete token');
+        var $button = $('<button/>', {class: 'button btnDelete', text: page.text.localize('Delete')});
         $button.click(function(e) {
             e.preventDefault();
             e.stopPropagation();
@@ -136,7 +159,7 @@ var APITokenWS = (function() {
     }
 
     function formatToken(token) {
-        var lastUsed = (token.last_used ? token.last_used + ' GMT': text.localize('Never Used'));
+        var lastUsed = (token.last_used ? token.last_used + ' GMT': page.text.localize('Never Used'));
         var scopes = token.scopes.map(capitalise);
         return [
             token.display_name,
@@ -147,51 +170,13 @@ var APITokenWS = (function() {
         ];
     }
 
-    // ---------------------------
-    // ----- Form Validation -----
-    // ---------------------------
-    function getFormParams() {
-        clearMessages();
-        var nameID  = '#txtName';
-        var name = $(nameID).val().trim();
-
-        function err(a, b) {
-            return Content.errorMessage(a, b);
-        }
-
-        var letters = Content.localize().textLetters,
-            numbers = Content.localize().textNumbers,
-            space   = Content.localize().textSpace;
-
-        var error = (
-            (!name.length       && err('req')) ||
-            (!checkBounds(name) && err('range', template('([_1]-[_2])', [2, 32]))) ||
-            (!noSymbols(name)   && err('reg', [letters, numbers, '_'])) ||
-            null
-        );
-
-        if (error) {
-            showError(nameID, error);
-            return null;
-        }
-
-        var scopes = $('input:checkbox[name="scopes[]"]:checked')
-            .map(function() { return this.value; })
-            .get();
-        if (scopes.length === 0) {
-            showError('#scopes', 'Please select at least one scope.');
-            return null;
-        }
-
-        return {name: name, scopes: scopes};
-    }
-
-    function noSymbols(string) {
-        return /^\w+$/.test(string);
-    }
-
-    function checkBounds(string) {
-        return (string.length >= 2) && (string.length <= 32);
+    function displayErrors(errors) {
+        errors.forEach(function(err) {
+            var sel = err.ctx === 'name' ?
+                '#txtName' :
+                '#scopes';
+            ValidationUI.draw(sel, err.err);
+        });
     }
 
     // ---------------------------
@@ -219,25 +204,19 @@ var APITokenWS = (function() {
         $('#token_message').removeClass(hideClass)
             .find('p')
             .attr('class', errorClass)
-            .html(text.localize(msg));
+            .html(page.text.localize(msg));
     }
 
     function showSubmitSuccess(msg) {
         $('#formMessage')
             .attr('class', 'success-msg')
-            .html('<ul class="checked"><li>' + text.localize(msg) + '</li></ul>')
+            .html('<ul class="checked"><li>' + page.text.localize(msg) + '</li></ul>')
             .css('display', 'block')
             .delay(3000)
             .fadeOut(1000);
     }
 
-    function showError(fieldID, err) {
-        $(fieldID).parent()
-            .append($('<p/>', {class: errorClass, text: text.localize(err)}));
-    }
-
     function clearMessages() {
-        $('#frmNewToken .' + errorClass).remove();
         $('#token_message').addClass(hideClass);
         $('#formMessage').html('');
     }
@@ -246,3 +225,7 @@ var APITokenWS = (function() {
         init: init,
     };
 }());
+
+module.exports = {
+    APITokenWS: APITokenWS,
+};

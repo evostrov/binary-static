@@ -81,11 +81,12 @@ var TradingAnalysis = (function() {
                     var underlying = $('[name=underlying] option:selected').val() || $('#underlying option:selected').val();
                     var tick = $('[name=tick_count]').val() || 100;
                     trading_digit_info = TradingAnalysis.tab_last_digitws;
-                    var request = JSON.parse('{"ticks_history":"'+ underlying +'",'+
-                                              '"end": "latest",'+
-                                              '"count": '+ tick +','+
-                                              '"req_id": 1}');
-                    BinarySocket.send(request);
+                    BinarySocket.send({
+                        ticks_history: underlying,
+                        count: tick + '',
+                        end: 'latest',
+                        req_id: 1
+                    });
                 } else{
                     var url = currentLink.getAttribute('href') ;
                     $.ajax({
@@ -209,7 +210,7 @@ var TradingAnalysis = (function() {
         };
 
         if(show_image && images.hasOwnProperty(form_name)) {
-            var image_path = page.url.url_for_static('images/pages/trade-explanation/');
+            var image_path = page.url.url_for_static('images/pages/trade-explanation/' + (page.language() === 'JA' ? 'ja/' : ''));
             $Container.find('#explanation_image_1').attr('src', image_path + images[form_name].image1);
             $Container.find('#explanation_image_2').attr('src', image_path + images[form_name].image2);
             $Container.find('#explanation_image').removeClass(hidden_class);
@@ -233,3 +234,7 @@ var TradingAnalysis = (function() {
     };
 
 })();
+
+module.exports = {
+    TradingAnalysis: TradingAnalysis,
+};

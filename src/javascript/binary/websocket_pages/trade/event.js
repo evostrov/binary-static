@@ -340,50 +340,46 @@ var TradingEvents = (function () {
         /*
          * attach event to purchase buttons to buy the current contract
          */
-        // using function expression form here as it used inside for loop
-        var purchaseContractEvent = function () {
-            var id = this.getAttribute('data-purchase-id'),
-                askPrice = this.getAttribute('data-ask-price');
+        if (page.client_status_detected('unwelcome')) {
+            $.each($('.purchase_button'), function(){
+              $(this).parent().addClass('button-disabled');
+            });
+        } else {
+            $('.purchase_button').on('click dblclick', function () {
+                if (isVisible(document.getElementById('confirmation_message_container'))) return;
+                var id = this.getAttribute('data-purchase-id'),
+                    askPrice = this.getAttribute('data-ask-price');
 
-            var params = {buy: id, price: askPrice, passthrough:{}};
-            for(var attr in this.attributes){
-                if(attr && this.attributes[attr] && this.attributes[attr].name &&
-                    !/data\-balloon/.test(this.attributes[attr].name)){ // do not send tooltip data
-                    var m = this.attributes[attr].name.match(/data\-(.+)/);
+                var params = {buy: id, price: askPrice, passthrough:{}};
+                for(var attr in this.attributes){
+                    if(attr && this.attributes[attr] && this.attributes[attr].name &&
+                        !/data\-balloon/.test(this.attributes[attr].name)){ // do not send tooltip data
+                        var m = this.attributes[attr].name.match(/data\-(.+)/);
 
-                    if(m && m[1] && m[1]!=="purchase-id" && m[1]!=="passthrough"){
-                        params.passthrough[m[1]] = this.attributes[attr].value;
+                        if(m && m[1] && m[1]!=="purchase-id" && m[1]!=="passthrough"){
+                            params.passthrough[m[1]] = this.attributes[attr].value;
+                        }
                     }
                 }
-            }
-            if (id && askPrice) {
-                BinarySocket.send(params);
-                Price.incrFormId();
-                processForgetProposals();
-            }
-        };
-
-        var purchaseButtonElements = document.getElementsByClassName('purchase_button');
-        if (purchaseButtonElements) {
-            for (var j = 0, l = purchaseButtonElements.length; j < l; j++) {
-                purchaseButtonElements[j].addEventListener('click', purchaseContractEvent);
-            }
+                if (id && askPrice) {
+                    BinarySocket.send(params);
+                    Price.incrFormId();
+                    processForgetProposals();
+                }
+            });
         }
 
         /*
          * attach event to close icon for purchase container
          */
-        var closeContainerElement = document.getElementById('close_confirmation_container');
-        if (closeContainerElement) {
-            closeContainerElement.addEventListener('click', function (e) {
-                if (e.target) {
-                    e.preventDefault();
-                    document.getElementById('contract_confirmation_container').style.display = 'none';
-                    document.getElementById('contracts_list').style.display = 'flex';
-                    processPriceRequest();
-                }
-            });
-        }
+        $('#close_confirmation_container').on('click', function (e) {
+            if (e.target) {
+                e.preventDefault();
+                document.getElementById('contract_confirmation_container').style.display = 'none';
+                document.getElementById('contracts_list').style.display = 'flex';
+                processPriceRequest();
+            }
+        });
 
         /*
          * attach an event to change in barrier
@@ -497,7 +493,7 @@ var TradingEvents = (function () {
 
         // For verifying there are 2 digits after decimal
         var isStandardFloat = (function(value){
-            return (value % 1 !== 0 && ((+parseFloat(value)).toFixed(10)).replace(/^-?\d*\.?|0+$/g, '').length>2);
+            return (!isNaN(value) && value % 1 !== 0 && ((+parseFloat(value)).toFixed(10)).replace(/^-?\d*\.?|0+$/g, '').length>2);
         });
 
         var init_logo = document.getElementById('trading_init_progress');
@@ -534,3 +530,7 @@ var TradingEvents = (function () {
         onDurationUnitChange: onDurationUnitChange
     };
 })();
+
+module.exports = {
+    TradingEvents: TradingEvents,
+};

@@ -31,7 +31,7 @@ var PaymentAgentTransferUI = (function () {
         $('#paymentagent_transfer_notes').removeClass(hiddenClass);
     }
     function updateFormView(currency) {
-        $('#paymentagent_transfer label[for="amount"]').text(text.localize('Amount') + ' ' + currency);
+        $('#paymentagent_transfer label[for="amount"]').text(page.text.localize('Amount') + ' ' + currency);
     }
 
     function updateConfirmView(username, loginid, amount, currency) {
@@ -43,17 +43,17 @@ var PaymentAgentTransferUI = (function () {
     function showTransferError(err) {
         $('#pa_confirm_transfer .errorfield')
             .removeClass(hiddenClass)
-            .text(text.localize(err));
+            .text(page.text.localize(err));
     }
 
     function updateDoneView(fromID, toID, amount, currency) {
         var templateString = "Your request to transfer [_1] [_2] from [_3] to [_4] has been successfully processed.";
-        var translated = text.localize(templateString);
-        var confirmMsg = translated
-            .replace('[_1]', amount)
-            .replace('[_2]', currency)
-            .replace('[_3]', fromID)
-            .replace('[_4]', toID);
+        var confirmMsg = page.text.localize(templateString, [
+            amount,
+            currency,
+            fromID,
+            toID,
+        ]);
 
         $('#pa_transfer_done > #confirm-msg').text(confirmMsg);
         $('#pa_transfer_done > #confirm-msg').removeClass(hiddenClass);
@@ -74,3 +74,7 @@ var PaymentAgentTransferUI = (function () {
         updateDoneView: updateDoneView
     };
 }());
+
+module.exports = {
+    PaymentAgentTransferUI: PaymentAgentTransferUI,
+};

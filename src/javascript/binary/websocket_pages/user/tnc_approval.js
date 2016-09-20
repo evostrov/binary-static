@@ -38,16 +38,19 @@ var TNCApproval = (function() {
         $('#tnc-loading').addClass(hiddenClass);
         $('#tnc_image').attr('src', page.url.url_for_static('images/pages/cashier/protection-icon.svg'));
         $('#tnc_approval').removeClass(hiddenClass);
-        var tnc_message = $('#tnc-message').html()
-            .replace('[_1]', page.client.get_storage_value('landing_company_name'));
-        tnc_message = page.client.residence === 'jp' ? tnc_message.replace(/\[_2\]/g, page.url.url_for('terms-and-conditions-jp')) :
-                      tnc_message.replace(/\[_2\]/g, page.url.url_for('terms-and-conditions'));
+        var tnc_message = template($('#tnc-message').html(), [
+            page.client.get_storage_value('landing_company_name'),
+            page.client.residence === 'jp' ?
+                page.url.url_for('terms-and-conditions-jp') :
+                page.url.url_for('terms-and-conditions')
+        ]);
         $('#tnc-message').html(tnc_message).removeClass(hiddenClass);
-        $('#btn-accept').text(text.localize('OK'));
+        $('#btn-accept').text(page.text.localize('OK'));
     };
 
     var responseTNCApproval = function(response) {
         if(!response.hasOwnProperty('error')) {
+            sessionStorage.setItem('check_tnc', sessionStorage.getItem('check_tnc').split(page.client.loginid).join());
             redirectBack();
         }
         else {
@@ -107,3 +110,7 @@ pjax_config_page_require_auth("tnc_approvalws", function() {
         }
     };
 });
+
+module.exports = {
+    TNCApproval: TNCApproval,
+};

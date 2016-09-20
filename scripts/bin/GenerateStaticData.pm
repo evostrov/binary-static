@@ -15,7 +15,13 @@ sub generate_data_files {
 
     _make_nobody_dir($js_path);
     print "\tGenerating $js_path/texts.js\n";
-    File::Slurp::write_file("$js_path/texts.js", {binmode => ':utf8'}, _texts());
+    my $exports = <<'END_EXPORTS';
+
+module.exports = {
+    texts_json: texts_json,
+};
+END_EXPORTS
+    File::Slurp::write_file("$js_path/texts.js", {binmode => ':utf8'}, _texts() . $exports);
 
     return;
 }
@@ -189,6 +195,7 @@ sub _texts {
         push @texts, localize('Jump To');
         push @texts, localize('Date');
         push @texts, localize('Ref.');
+        push @texts, localize('Contract purchased with app ID');
         push @texts, localize('Action');
         push @texts, localize('Sell');
         push @texts, localize('Buy');
@@ -222,6 +229,7 @@ sub _texts {
         push @texts, localize('Touch/No Touch');
         push @texts, localize('Stays In/Goes Out');
         push @texts, localize('Waiting for entry tick.');
+        push @texts, localize('Refresh page');
 
         #strings for limitsws page
         push @texts, localize('Trading and Withdrawal Limits');
@@ -246,6 +254,8 @@ sub _texts {
         push @texts, localize('Therefore your current immediate maximum withdrawal (subject to your account having sufficient funds) is [_1] [_2] (or equivalent in other currency).');
         push @texts, localize('Your [_1] day withdrawal limit is currently [_2] [_3] (or equivalent in other currency).');
         push @texts, localize('You have already withdrawn the equivalent of [_1] [_2] in aggregate over the last [_3] days.');
+        push @texts, localize('Major Pairs');
+        push @texts, localize('Forex');
 
         #strings for detailsws
         push @texts, localize('This field is required.');
@@ -380,19 +390,23 @@ sub _texts {
 
         #strings for change_passwordws
         push @texts, localize('Old password is wrong.');
+        push @texts, localize('New password is same as old password.');
 
         #strings for profittable and statement
         push @texts, localize('Your account has no trading activity.');
+        push @texts, localize('Withdrawal');
 
         #strings for authenticate page
-        push @texts, localize('Your account is fully authenticated. You can view your [_1]trading limits here');
         push @texts, localize('To authenticate your account, kindly email the following to [_1]');
-        push @texts, localize('- A scanned copy of your passport, driving licence (provisional or full) or identity card, showing your name and date of birth.');
-        push @texts, localize('and');
-        push @texts, localize('- A scanned copy of a utility bill or bank statement (no more than 3 months old).');
+        push @texts, localize('A scanned copy of your passport, driving licence (provisional or full) or identity card, showing your name and date of birth. Your document must be valid for at least 6 months after this date.');
+        push @texts, localize('A scanned copy of a utility bill or bank statement (no more than 3 months old).');
         push @texts, localize('This feature is not relevant to virtual-money accounts.');
+        push @texts, localize('Your account is currently suspended. Only withdrawals are now permitted. For further information, please contact [_1].');
+        push @texts, localize('Deposits and withdrawal for your account is not allowed at this moment. Please contact [_1] to unlock it.');
+        push @texts, localize('Withdrawal for your account is not allowed at this moment. Please contact [_1] to unlock it.');
 
         #strings for japanws page
+        push @texts, localize('Japan');
         push @texts, localize('Questions');
         push @texts, localize('True');
         push @texts, localize('False');
@@ -556,21 +570,19 @@ sub _texts {
         push @texts, localize('{JAPAN ONLY}Ends Outside');
         push @texts, localize('{JAPAN ONLY}Stays Between');
         push @texts, localize('{JAPAN ONLY}Goes Outside');
+        push @texts, localize('{JAPAN ONLY}FX Rate');
+        push @texts, localize('{JAPAN ONLY}Option Type');
+        push @texts, localize('{JAPAN ONLY}Trading Period');
+        push @texts, localize('{JAPAN ONLY}Payout Amount');
+        push @texts, localize('{JAPAN ONLY}Remaining time');
         push @texts, localize('You need to finish all 20 questions.');
         push @texts, localize('Weekday');
+        push @texts, localize('This contract can not be traded in the final 2 minutes before settlement');
 
         #strings for digit_infows
         push @texts, localize('Select market');
         push @texts, localize('Number of ticks');
         push @texts, localize('Last digit stats for the latest [_1] ticks on [_2]');
-
-        #strings for my_accountws
-        push @texts, localize('You are currently logged in to your real money account with [_1] ([_2]).');
-        push @texts, localize('You are currently logged in to your virtual money account ([_2]).');
-        push @texts, localize('Deposit [_1] [_2] virtual money into your account [_3]');
-        push @texts, localize('Your [_1] account is unavailable. For any questions please contact [_2].');
-        push @texts, localize('Your [_1] accounts are unavailable. For any questions please contact [_2].');
-        push @texts, localize('Customer Support');
 
         #strings for tnc_approvalws
         push @texts, localize('[_1] has updated its [_2]. By clicking OK, you confirm that you have read and accepted the updated [_2].');
@@ -616,6 +628,7 @@ sub _texts {
         push @texts, localize('Lock Cashier');
         push @texts, localize('An additional password can be used to restrict access to the cashier.');
         push @texts, localize('Update');
+        push @texts, localize('Sorry, you have entered an incorrect cashier password');
 
         #strings for job details page
         push @texts, localize('Information Technology');
@@ -752,6 +765,7 @@ sub _texts {
         push @texts, localize('Revoke access');
         push @texts, localize('Keep track of your authorised applications.');
         push @texts, localize('Are you sure that you want to permanently revoke access to application');
+        push @texts, localize('Transaction performed by [_1] (App ID: [_2])');
 
         # Strings for lostpasswordws
         push @texts, localize('Please check your email to retrieve the token needed to reset your password.');
@@ -772,7 +786,7 @@ sub _texts {
         push @texts, localize('Invalid date of birth.');
         push @texts, localize('Failed to reset password. [_1], please retry.');
 
-        #strings for cashierws page
+        # strings for cashierws page
         push @texts, localize('Your cashier is locked as per your request - to unlock it, please click [_1]here');
         push @texts, localize('For added security, please check your email to retrieve the verification token.');
         push @texts, localize('Please choose which currency you would like to transact in.');
@@ -780,6 +794,7 @@ sub _texts {
         push @texts, localize('If you need assistance feel free to contact our [_1]Customer Support');
         push @texts, localize('Your account is not fully authenticated. Please visit the <a href="[_1]">authentication</a> page for more information.');
         push @texts, localize('details');
+        push @texts, localize('Deposit [_1] [_2] virtual money into your account [_3]');
 
         my %as_hash = @texts;
         $js .= "texts_json['" . $language . "'] = " . JSON::to_json(\%as_hash) . ";\n";

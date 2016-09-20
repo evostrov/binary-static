@@ -3,12 +3,13 @@ var ProfitTableUI = (function(){
 
     var profitTableID = "profit-table";
     var cols = ["buy-date", "ref", "payout", "contract", "buy-price", "sell-date", "sell-price", "pl", "details"];
+    var oauth_apps = {};
 
     function createEmptyTable(){
         var header = [
             Content.localize().textDate,
             Content.localize().textRef,
-            text.localize('Potential Payout'),
+            page.text.localize('Potential Payout'),
             Content.localize().textContract,
             Content.localize().textPurchasePrice,
             Content.localize().textSaleDate,
@@ -17,7 +18,9 @@ var ProfitTableUI = (function(){
             Content.localize().textDetails
         ];
 
-        header[7] = header[7] + (TUser.get().currency ? " (" + TUser.get().currency + ")" : "");
+        var jpClient = japanese_client();
+
+        header[7] = header[7] + (jpClient ? "" : (TUser.get().currency ? " (" + TUser.get().currency + ")" : ""));
 
         var footer = [Content.localize().textTotalProfitLoss, "", "", "", "", "", "", "", ""];
 
@@ -58,7 +61,9 @@ var ProfitTableUI = (function(){
 
         var total = accTotal + currentTotal;
 
-        $("#pl-day-total > .pl").text(addComma(Number(total).toFixed(2)));
+        var jpClient = japanese_client();
+
+        $("#pl-day-total > .pl").text(jpClient ? format_money_jp(TUser.get().currency, total.toString()) : addComma(Number(total).toFixed(2)));
 
         var subTotalType = (total >= 0 ) ? "profit" : "loss";
         $("#pl-day-total > .pl").removeClass("profit").removeClass("loss");
@@ -67,10 +72,11 @@ var ProfitTableUI = (function(){
 
     function createProfitTableRow(transaction){
         var profit_table_data = ProfitTable.getProfitTabletData(transaction);
-
         var plType = (profit_table_data.pl >= 0) ? "profit" : "loss";
 
-        var data = [profit_table_data.buyDate, profit_table_data.ref, profit_table_data.payout, '', profit_table_data.buyPrice, profit_table_data.sellDate, profit_table_data.sellPrice, profit_table_data.pl, ''];
+        var jpClient = japanese_client();
+
+        var data = [jpClient ? toJapanTimeIfNeeded(transaction.purchase_time) : profit_table_data.buyDate, '<span' + showTooltip(profit_table_data.app_id, oauth_apps[profit_table_data.app_id]) + '>' + profit_table_data.ref + '</span>', jpClient ? format_money_jp(TUser.get().currency, profit_table_data.payout) : profit_table_data.payout , '', jpClient ? format_money_jp(TUser.get().currency, profit_table_data.buyPrice) : profit_table_data.buyPrice , (jpClient ? toJapanTimeIfNeeded(transaction.sell_time) : profit_table_data.sellDate), jpClient ? format_money_jp(TUser.get().currency, profit_table_data.sellPrice) : profit_table_data.sellPrice , jpClient ? format_money_jp(TUser.get().currency, profit_table_data.pl) : profit_table_data.pl , ''];
         var $row = Table.createFlexTableRow(data, cols, "data");
 
         $row.children(".buy-date").addClass("pre");
@@ -81,7 +87,7 @@ var ProfitTableUI = (function(){
         //create view button and append
         var $viewButtonSpan = Button.createBinaryStyledButton();
         var $viewButton = $viewButtonSpan.children(".button").first();
-        $viewButton.text(text.localize("View"));
+        $viewButton.text(page.text.localize("View"));
         $viewButton.addClass("open_contract_detailsws");
         $viewButton.attr("contract_id", profit_table_data.id);
 
@@ -113,6 +119,13 @@ var ProfitTableUI = (function(){
         updateProfitTable: updateProfitTable,
         initDatepicker: initDatepicker,
         cleanTableContent: clearTableContent,
-        errorMessage: errorMessage
+        errorMessage: errorMessage,
+        setOauthApps: function(values) {
+            return (oauth_apps = values);
+        }
     };
 }());
+
+module.exports = {
+    ProfitTableUI: ProfitTableUI,
+};

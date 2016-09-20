@@ -4,13 +4,13 @@
 </div> [% # closes div#content %]
 </div>[% #closes div#content-holder %]
 <div id="footer">
-    <div id="footer-menu">
+    <div id="footer-menu" class="primary-bg-color">
         <div class="container">
             <div class="gr-row gr-padding-10">
                 <div class="gr-6 gr-12-m gr-parent gr-no-gutter">
                     <div class="gr-row">
                         <div class="gr-4">
-                            <h4>[% l('Our Company') %]</h4>
+                            <h4 class="secondary-color">[% l('Our Company') %]</h4>
                             <ul>
                                 <li>
                                     <a class="pjaxload" href="[% request.url_for('about-us') %]">[% l('About Us') %]</a>
@@ -33,7 +33,7 @@
                             </ul>
                         </div>
                         <div class="gr-4">
-                            <h4>[% l('Education') %]</h4>
+                            <h4 class="secondary-color">[% l('Education') %]</h4>
                             <ul>
                                 <li>
                                     <a class="pjaxload" href="[% request.url_for('why-us') %]">[% l('Why Us?') %]</a>
@@ -54,19 +54,19 @@
                                     <a href="http://blog.binary.com" target="_blank">[% l('Blog') %]</a>
                                 </li>
                                 <li class='ja-hide id-hide'>
-                                    <a href="http://blog.binary.com/en/webinar/" target="_blank">[% l('Webinars') %]</a>
+                                    <a href="https://blog.binary.com/en/events/" target="_blank">[% l('Webinars') %]</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="gr-4">
-                            <h4 class="ja-hide">[% l('Trading') %]</h4>
+                            <h4 class="ja-hide secondary-color">[% l('Trading') %]</h4>
                             <ul class="ja-hide">
                                 <li class="ja-hide">
                                     <a class="pjaxload" href="[% request.url_for('/resources/asset_indexws') %]">[% l('Asset Index') %]</a>
                                 </li>
                             </ul>
                             <div class='gr-padding-10 gr-no-gutter ja-no-padding'>
-                                <h4>[% l('Banking') %]</h4>
+                                <h4 class="secondary-color">[% l('Banking') %]</h4>
                                 <ul>
                                     <li>
                                         <a class="pjaxload" href="[% request.url_for('/cashier') %]"[% IF
@@ -86,7 +86,7 @@
                 <div class="gr-6 gr-12-m gr-parent gr-no-gutter">
                     <div class="gr-row">
                         <div class="gr-4">
-                           <h4>[% l('Terms') %]</h4>
+                           <h4 class="secondary-color">[% l('Terms') %]</h4>
                            <ul>
                                <li class='ja-hide'>
                                    <a class="pjaxload" href="[% request.url_for('/terms-and-conditions') %]"[%
@@ -125,26 +125,38 @@
                            </ul>
                        </div>
                        <div class="gr-4 ja-hide">
-                           <h4>[% l('Charts') %]</h4>
+                           <h4 class="secondary-color">[% l('Apps') %]</h4>
                            <ul>
                                <li>
-                                   <a class="pjaxload" href="//webtrader.binary.com" target="_blank">[% l('Webtrader') %]</a>
+                                   <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">[% l('TickTrade App') %]</a>
                                </li>
                                <li>
-                                   <a class="pjaxload" href="//tradingview.binary.com" target="_blank">[% l('TradingView') %]</a>
+                                   <a href="https://shop.binary.com/collections/applications/products/webtrader" target="_blank">[% l('Webtrader') %]</a>
+                               </li>
+                               <li>
+                                   <a href="https://shop.binary.com/collections/applications/products/binary-com-tradingview-chart" target="_blank">[% l('TradingView') %]</a>
                                </li>
                            </ul>
                        </div>
                        <div class="gr-4 ja-hide">
-                           <h4>[% l('Partner With Us') %]</h4>
+                           <h4 class="secondary-color">[% l('Partner With Us') %]</h4>
                            <ul class="partner">
                                <li>
-                                   <a class="pjaxload" href="[% request.url_for('/partners') %]"><img id="iom_icon_footer" class="responsive" src="[% request.url_for('images/pages/footer/partner-icon.svg') %]"/></a>
+                                   <a class="pjaxload" href="[% request.url_for('/affiliate/signup') %]">[% l("Affiliate Program") %]</a>
+                               </li>
+                               <li>
+                                   <a href="https://developers.binary.com" target="_blank">[% l("API") %]</a>
+                               </li>
+                               <li>
+                                   <a target="_blank" href="https://shop.binary.com">[% l("Binary Shop") %]</a>
+                               </li>
+                               <li>
+                                   <a class="pjaxload" href="[% request.url_for('/partners') %]">[% l("All Partnership Options") %]</a>
                                </li>
                            </ul>
                        </div>
                        <div class="gr-4 all-hide ja-show">
-                           <h4>[% l('{JAPAN ONLY}Company Profile') %]</h4>
+                           <h4 class="secondary-color">[% l('{JAPAN ONLY}Company Profile') %]</h4>
                            <ul>
                                <li>
                                    <a class="pjaxload" href="[% request.url_for('/company-profile') %]">[% l("{JAPAN ONLY}Company Profile & Disclosure") %]</a>
@@ -156,7 +168,7 @@
             </div>
         </div>
     </div>
-    <div id="footer-regulatory">
+    <div id="footer-regulatory" class="primary-color-dark">
         <div class="container">
             <div>
                 <div class="gr-padding-10">
@@ -203,7 +215,7 @@
             </div>
         </div>
     </div>
-    <div id="footer-last">
+    <div id="footer-last" class="primary-bg-color">
         <div class="container">
             <div class="gr-padding-10">
                 <p class="gambling">

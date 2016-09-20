@@ -50,7 +50,7 @@ var RealityCheck = (function () {
         var intervalMinute = +($('#realityDuration').val());
 
         if (!(Math.floor(intervalMinute) == intervalMinute && $.isNumeric(intervalMinute))) {
-            var shouldBeInteger = text.localize('Interval should be integer.');
+            var shouldBeInteger = page.text.localize('Interval should be integer.');
             $('#rc-err').text(shouldBeInteger);
             $('#rc-err').removeClass(hiddenClass);
             return;
@@ -121,6 +121,11 @@ var RealityCheck = (function () {
         init: init,
         onContinueClick: onContinueClick,
         onLogoutClick: onLogoutClick,
-        realityCheckWSHandler: realityCheckWSHandler
+        realityCheckWSHandler: realityCheckWSHandler,
+        sendAccountStatus: sendAccountStatus
     };
 }());
+
+module.exports = {
+    RealityCheck: RealityCheck,
+};

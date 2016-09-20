@@ -107,7 +107,7 @@ var Contract = (function() {
                 }
 
                 if (!contractType[contractCategory].hasOwnProperty(currentObj['contract_type'])) {
-                    contractType[contractCategory][currentObj['contract_type']] = text.localize(currentObj['contract_display']);
+                    contractType[contractCategory][currentObj['contract_type']] = page.text.localize(currentObj['contract_display']);
                 }
             }
         });
@@ -139,7 +139,7 @@ var Contract = (function() {
                         tradeContractForms['higherlower'] = Content.localize().textFormHigherLower;
                     }
                 } else {
-                    tradeContractForms[contractCategory] = text.localize(currentObj['contract_category_display']);
+                    tradeContractForms[contractCategory] = page.text.localize(currentObj['contract_category_display']);
                     if (contractCategory === 'digits') {
                         tradeContractForms['matchdiff'] = Content.localize().textFormMatchesDiffers;
                         if (page.language() !== 'ID') {
@@ -151,7 +151,7 @@ var Contract = (function() {
             }
         });
 
-        if (Object.keys(tradeContractForms).length === 0) return;
+        if (!objectNotEmpty(tradeContractForms)) return;
 
         if (tradeContractForms.risefall || tradeContractForms.higherlower) {
             tradeContractForms['updown'] = Content.localize().textFormUpDown;
@@ -192,3 +192,7 @@ var Contract = (function() {
     };
 
 })();
+
+module.exports = {
+    Contract: Contract,
+};

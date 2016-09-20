@@ -55,7 +55,7 @@ foreach my $lang (@langs) {
 }
 
 if ($pattern) {
-    @m = grep {index($_->[0], $pattern) > -1} @m;
+    @m = grep {$_->[0] =~ $pattern} @m;
     $force = 1;
     # use the last hash to maintain consistency between current templates with new one
     # since pattern specified, so one or few templates are going to be compiled not all of them
@@ -74,6 +74,10 @@ foreach my $m (@m) {
     $index++;
 
     foreach my $lang (@langs) {
+        if ($m->[4] and index($m->[4], $lang) > -1) {
+            next;
+        }
+
         my $save_as_file = "$dist_path/$lang/pjax/$save_as.html";
         next if -e $save_as_file and not $force;
 

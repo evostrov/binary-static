@@ -1,20 +1,6 @@
 /* Logo and top bar */
-
-.dark-blue {
-    background: $COLOR_DARK_BLUE;
-}
-
-.orange {
-    background: $COLOR_ORANGE;
-}
-
 #topbar {
-    width: 100%;
-    color: $COLOR_WHITE;
-    line-height: 1;
-    font-size: 70%;
     @include BIDIR_VALUE(text-align, right, left);
-    padding: 3px 0;
     #virtual-text {
         font-weight: 700;
     }
@@ -35,6 +21,7 @@
     #language_select {
         select {
             padding: 0px;
+            @include BIDIR_VALUE(float, right, left);
         }
     }
     a {
@@ -45,61 +32,27 @@
 }
 
 #header {
-    background: $COLOR_BLUE;
-    border-top: 2px solid $COLOR_BLUE_SHADE;
-    border-bottom: 4px solid $COLOR_ORANGE;
     height: 75px;
     a {
         color: $COLOR_WHITE;
         text-decoration: none;
         img {
-            max-height: 55px;
+            height: 55px;
         }
     }
     select#client_loginid option[disabled=disabled] {
         background-color: $COLOR_LIGHT_GRAY;
     }
     #binary-logo-text {
-        margin-top: 10px;
+        margin-top: 0 !important;
         img {
             width: 90%;
         }
     }
     #client-logged-out {
-        #btn_login {
-            @include link-button;
-            border: 0;
-            text-transform: uppercase;
-            padding: 0px 10px;
-            white-space: nowrap;
-            font-weight: normal;
-            font-size: 0.8em;
-            line-height: 2em;
-            margin: 0.8em 0;
-        }
-    }
-    #client-logged-out, #loginid-switch-form {
         @include BIDIR_VALUE(text-align, right, left);
-    }
-    #logout {
-        text-align: right;
-        color: $COLOR_WHITE;
-        font-size: 70%;
-        display: inline-block;
-        a, a:visited {
-            &:hover, &:active {
-                text-decoration: underline;
-            }
-            &.logout {
-                @include link-button;
-                background-position: 104.6% 0.3%;
-                background-repeat: no-repeat;
-                padding: 6px;
-                font-weight: normal;
-                @include BIDIR_PROP(margin-left, margin-right, 0.4em);
-                margin-top: 0.5em;
-                text-transform: uppercase;
-            }
+        #btn_login {
+            margin-bottom: 0;
         }
     }
     #mobile-menu-icon {
@@ -146,5 +99,26 @@
                 color: $COLOR_ORANGE;
             }
         }
+    }
+    .main-nav {
+        > li > ul {
+            margin: -20px -1px;
+        }
+        .nav-caret {
+            @include BIDIR_PROP(right, left, -68px);
+            @include BIDIR_PROP(left, right, initial);
+        }
+    }
+    .topMenuBalance {
+        visibility: hidden;
+    }
+    #main-logout {
+        @include BIDIR_VALUE(float, right, left);
+        .main-account > .account-type {
+            white-space: nowrap;
+        }
+    }
+    #all-accounts {
+        z-index: 99;
     }
 }

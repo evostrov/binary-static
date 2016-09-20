@@ -180,7 +180,7 @@
                 display: block;
                 position: absolute;
                 height: 100%;
-                margin-top: -25px;
+                margin-top: -8px;
             }
         }
         border: 1px solid $COLOR_GRAY;
@@ -409,6 +409,10 @@
     #contract_confirmation_container {
         background-color: $COLOR_LIGHT_GRAY;
         text-align: center;
+        a.close {
+            background-color: $COLOR_BLUE;
+            border-radius: 0 0 0 $BORDER_RADIUS;
+        }
         #confirmation_message_container {
             padding-top: 15px;
         }
@@ -418,7 +422,7 @@
         align-items: center;
         width: 100%;
         justify-content: flex-start;
-        padding-left: 30px;
+        @include BIDIR_PROP(padding-left, padding-right, 30px);
         &.small {
             width: 95px;
         }
@@ -458,10 +462,10 @@
         display: none;
     }
     #duration_amount {
-        margin-right: 5px;
+        @include BIDIR_PROP(margin-right, margin-left, 5px);
     }
     #duration_units {
-        margin-right: 10px;
+        @include BIDIR_PROP(margin-right, margin-left, 10px);
     }
     #duration_tooltip_wrapper {
         line-height: 28px;
@@ -475,7 +479,7 @@
     }
     #expiry_date {
         width: 175px;
-        margin-right: 5px;
+        @include BIDIR_PROP(margin-right, margin-left, 5px);
         margin-bottom: 5px;
     }
     #expiry_time {
@@ -486,6 +490,7 @@
     }
     .barrier_class input, #jhigh_barrier_row select, #jlow_barrier_row select, #jbarrier_row select, #period {
         width: 175px;
+        @include BIDIR_PROP(margin-right, margin-left, 5px);
     }
     #period {
         font-size: 80%;
@@ -729,6 +734,9 @@
                 }
             }
         }
+    }
+    #bet_bottom_content {
+        padding-top: 1em;
     }
     #last_digit_histo_form {
         overflow: hidden;

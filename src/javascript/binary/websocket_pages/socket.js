@@ -1,3 +1,5 @@
+var getSocketURL = require('../../config').getSocketURL;
+var getAppId = require('../../config').getAppId;
 /*
  * It provides a abstraction layer over native javascript Websocket.
  *
@@ -30,10 +32,6 @@ function BinarySocketClass() {
                 delete timeouts[k];
             }
         }
-    };
-
-    var status = function () {
-        return binarySocket && binarySocket.readyState;
     };
 
     var isReady = function () {
@@ -79,13 +77,13 @@ function BinarySocketClass() {
     };
 
     var init = function (es) {
-        if(wrongAppId === getAppId()) {
+        if (wrongAppId === getAppId()) {
             return;
         }
-        if(!es){
+        if (!es){
             events = {};
         }
-        if(typeof es === 'object'){
+        if (typeof es === 'object') {
             bufferedSends = [];
             manualClosed = false;
             events = es;
@@ -96,30 +94,25 @@ function BinarySocketClass() {
             binarySocket = new WebSocket(socketUrl);
         }
 
-        binarySocket.onopen = function (){
-            var loginToken = getCookieItem('login');
-            if(loginToken && !authorized && localStorage.getItem('client.tokens')) {
-                binarySocket.send(JSON.stringify({authorize: loginToken}));
-            }
-            else {
+        binarySocket.onopen = function () {
+            var apiToken = CommonData.getLoginToken();
+            if (apiToken && !authorized && localStorage.getItem('client.tokens')) {
+                binarySocket.send(JSON.stringify({authorize: apiToken}));
+            } else {
                 sendBufferedSends();
             }
 
-            if(typeof events.onopen === 'function'){
+            if (typeof events.onopen === 'function') {
                 events.onopen();
             }
 
-            if(isReady()=== true){
-                if(!Login.is_login_pages()) {
-                    page.header.validate_cookies();
-                }
-                if (clock_started === false) {
-                    page.header.start_clock_ws();
-                }
+            if (isReady()) {
+                if (!Login.is_login_pages()) page.header.validate_cookies();
+                if (!getClockStarted()) page.header.start_clock_ws();
             }
         };
 
-        binarySocket.onmessage = function (msg){
+        binarySocket.onmessage = function(msg) {
             var response = JSON.parse(msg.data);
             if (response) {
                 if(response.hasOwnProperty('echo_req') && response.echo_req !== null && response.echo_req.hasOwnProperty('passthrough')) {
@@ -129,13 +122,11 @@ function BinarySocketClass() {
                         delete timeouts[response.echo_req.passthrough.req_number];
                     }
                     else if (passthrough.hasOwnProperty('dispatch_to')) {
-                      if (passthrough.dispatch_to === 'ViewPopupWS') {
-                        ViewPopupWS.dispatch(response);
-                      } else if (passthrough.dispatch_to === 'ViewChartWS') {
-                        Highchart.dispatch(response);
-                      } else if (passthrough.dispatch_to === 'ViewTickDisplayWS') {
-                        WSTickDisplay.dispatch(response);
-                      }
+                        switch (passthrough.dispatch_to) {
+                            case 'ViewPopupWS':       ViewPopupWS.dispatch(response); break;
+                            case 'ViewChartWS':       Highchart.dispatch(response);   break;
+                            case 'ViewTickDisplayWS': WSTickDisplay.dispatch(response); break;
+                        }
                     }
                 }
                 var type = response.msg_type;
@@ -158,10 +149,14 @@ function BinarySocketClass() {
                         if(!Login.is_login_pages()) {
                             page.client.response_authorize(response);
                             send({balance:1, subscribe: 1});
-                            send({landing_company_details: TUser.get().landing_company_name});
+                            if (Cookies.get('residence')) send({landing_company: Cookies.get('residence')});
                             send({get_settings: 1});
+                            send({get_account_status: 1});
+                            send({website_status: 1});
                             if(!page.client.is_virtual()) {
                                 send({get_self_exclusion: 1});
+                            } else {
+                                Cashier.check_virtual_top_up();
                             }
                         }
                         sendBufferedSends();
@@ -174,17 +169,37 @@ function BinarySocketClass() {
                     localStorage.removeItem('jp_test_allowed');
                     RealityCheckData.clear();
                     page.header.do_logout(response);
-                } else if (type === 'landing_company_details') {
-                    page.client.response_landing_company_details(response);
-                    BinarySocket.send({reality_check: 1, passthrough: { for: 'init_rc' }});
+                } else if (type === 'landing_company') {
+                    page.contents.topbar_message_visibility(response.landing_company);
+                    var company;
+                    if (response.hasOwnProperty('error')) return;
+                    for (var key in response.landing_company) {
+                        if (TUser.get().landing_company_name === response.landing_company[key].shortcode) {
+                            company = response.landing_company[key];
+                            break;
+                        }
+                    }
+                    if (company && company.has_reality_check) {
+                        page.client.response_landing_company(company);
+                        var currentData = TUser.get();
+                        var addedLoginTime = $.extend({logintime: window.time.unix()}, currentData);
+                        TUser.set(addedLoginTime);
+                        RealityCheck.init();
+                    }
                 } else if (type === 'get_self_exclusion') {
                     SessionDurationLimit.exclusionResponseHandler(response);
-                } else if (type === 'payout_currencies' && response.echo_req.hasOwnProperty('passthrough') && response.echo_req.passthrough.handler === 'page.client') {
+                } else if (type === 'payout_currencies' && response.hasOwnProperty('echo_req') && response.echo_req.hasOwnProperty('passthrough') && response.echo_req.passthrough.handler === 'page.client') {
                     page.client.response_payout_currencies(response);
                 } else if (type === 'get_settings' && response.get_settings) {
-                    if(!$.cookie('residence') && response.get_settings.country_code) {
+                    if (!Cookies.get('residence') && response.get_settings.country_code) {
                       page.client.set_cookie('residence', response.get_settings.country_code);
                       page.client.residence = response.get_settings.country_code;
+                      send({landing_company: Cookies.get('residence')});
+                    } else if (response.get_settings.country_code === null && response.get_settings.country === null) {
+                        page.contents.topbar_message_visibility('show_residence');
+                    }
+                    if (/realws|maltainvestws|japanws/.test(window.location.href)) {
+                        handle_account_opening_settings(response);
                     }
                     GTM.event_handler(response.get_settings);
                     page.client.set_storage_value('tnc_status', response.get_settings.client_tnc_status || '-');
@@ -208,52 +223,43 @@ function BinarySocketClass() {
                     } else {
                         localStorage.removeItem('jp_test_allowed');
                     }
+                    page.header.menu.check_payment_agent(response.get_settings.is_authenticated_payment_agent);
                 } else if (type === 'website_status') {
                     if(!response.hasOwnProperty('error')) {
                         LocalStore.set('website.tnc_version', response.website_status.terms_conditions_version);
                         if (!localStorage.getItem('risk_classification')) page.client.check_tnc();
+                        if (response.website_status.hasOwnProperty('clients_country')) {
+                            localStorage.setItem('clients_country', response.website_status.clients_country);
+                            if (!$('body').hasClass('BlueTopBack')) {
+                                checkClientsCountry();
+                            }
+                        }
                     }
-                  if (response.website_status.clients_country) {
-                    localStorage.setItem('clients_country', response.website_status.clients_country);
-                    if (!$('body').hasClass('BlueTopBack')) {
-                      checkClientsCountry();
-                    }
-                  }
                 } else if (type === 'reality_check') {
-                    if (response.echo_req.passthrough.for === 'init_rc') {
-                        var currentData = TUser.get();
-                        var addedLoginTime = $.extend({logintime: response.reality_check.start_time}, currentData);
-                        TUser.set(addedLoginTime);
-                        RealityCheck.init();
-                    } else {
-                        RealityCheck.realityCheckWSHandler(response);
-                    }
+                    RealityCheck.realityCheckWSHandler(response);
                 } else if (type === 'get_account_status' && response.get_account_status) {
                   if (response.get_account_status.risk_classification === 'high' && page.header.qualify_for_risk_classification()) {
                     send({get_financial_assessment: 1});
                   } else {
                     localStorage.removeItem('risk_classification');
+                    page.client.check_tnc();
                   }
-                  var withdrawal_locked, i;
-                  for (i = 0; i < response.get_account_status.status.length; i++) {
-                    if (response.get_account_status.status[i] === 'withdrawal_locked') {
-                      withdrawal_locked = 'locked';
-                      break;
-                    }
-                  }
+                  localStorage.setItem('risk_classification.response', response.get_account_status.risk_classification);
+
+                  sessionStorage.setItem('client_status', response.get_account_status.status);
+                  page.show_authenticate_message();
+
                   if (response.echo_req.hasOwnProperty('passthrough') && response.echo_req.passthrough.hasOwnProperty('dispatch_to')) {
                     if (response.echo_req.passthrough.dispatch_to === 'ForwardWS') {
-                        ForwardWS.lock_withdrawal(withdrawal_locked || 'unlocked');
+                        BinarySocket.send({"cashier_password": "1"});
                     } else if (response.echo_req.passthrough.dispatch_to === 'Cashier') {
-                        Cashier.lock_withdrawal(withdrawal_locked || 'unlocked');
+                        Cashier.check_locked();
                     } else if (response.echo_req.passthrough.dispatch_to === 'PaymentAgentWithdrawWS') {
-                      PaymentAgentWithdrawWS.lock_withdrawal(withdrawal_locked || 'unlocked');
+                      PaymentAgentWithdrawWS.lock_withdrawal(page.client_status_detected('withdrawal_locked, cashier_locked', 'any') ? 'locked' : 'unlocked');
                     }
                   }
-                  sessionStorage.setItem('withdrawal_locked', withdrawal_locked || 'unlocked');
-                  localStorage.setItem('risk_classification.response', response.get_account_status.risk_classification);
                 } else if (type === 'get_financial_assessment' && !response.hasOwnProperty('error')) {
-                  if (Object.keys(response.get_financial_assessment).length === 0) {
+                  if (!objectNotEmpty(response.get_financial_assessment)) {
                     if (page.header.qualify_for_risk_classification() && localStorage.getItem('risk_classification.response') === 'high') {
                       localStorage.setItem('risk_classification', 'high');
                       page.header.check_risk_classification();
@@ -266,7 +272,9 @@ function BinarySocketClass() {
                 }
                 if (response.hasOwnProperty('error')) {
                     if(response.error && response.error.code) {
-                      if (response.error.code === 'RateLimit') {
+                      if (response.error.code && (response.error.code === 'WrongResponse' || response.error.code === 'OutputValidationFailed')) {
+                        $('#content').empty().html('<div class="container"><p class="notice-msg center-text">' + (response.error.code === 'WrongResponse' && response.error.message ? response.error.message : page.text.localize('Sorry, an error occurred while processing your request.') )+ '</p></div>');
+                      } else if (response.error.code === 'RateLimit') {
                         $('#ratelimit-error-message')
                             .css('display', 'block')
                             .on('click', '#ratelimit-refresh-link', function () {
@@ -295,7 +303,14 @@ function BinarySocketClass() {
             clearTimeouts();
 
             if(!manualClosed && wrongAppId !== getAppId()) {
-                init(1);
+                if (TradePage.is_trading_page() || TradePage_Beta.is_trading_page()) {
+                    showPriceOverlay();
+                    showFormOverlay();
+                    if (TradePage.is_trading_page()) TradePage.onLoad();
+                    else TradePage_Beta.onLoad();
+                } else {
+                    init(1);
+                }
             }
             if(typeof events.onclose === 'function'){
                 events.onclose();
@@ -334,3 +349,7 @@ function BinarySocketClass() {
 }
 
 var BinarySocket = new BinarySocketClass();
+
+module.exports = {
+    BinarySocket: BinarySocket,
+};

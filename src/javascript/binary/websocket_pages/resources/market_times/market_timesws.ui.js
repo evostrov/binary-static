@@ -5,17 +5,22 @@ var MarketTimesUI = (function() {
         $container;
     var columns,
         activeSymbols,
-        tradingTimes;
+        tradingTimes,
+        isFramed;
 
-    var init = function() {
-        Content.populate();
+    var init = function(config) {
         $date      = $('#trading-date');
         $container = $('#trading-times');
         columns    = ['Asset', 'Opens', 'Closes', 'Settles', 'UpcomingEvents'];
-        activeSymbols = null;
-        tradingTimes = null;
+        activeSymbols = tradingTimes = undefined;
+
+        if ($container.contents().length) return;
+
+        Content.populate();
         showLoadingImage($container);
-        MarketTimesData.sendRequest('today', true);
+
+        isFramed = (config && config.framed);
+        if (!tradingTimes) MarketTimesData.sendRequest('today', !activeSymbols);
 
         $date.val(moment.utc(new Date()).format('YYYY-MM-DD'));
         $date.datepicker({minDate: 0, maxDate: '+1y', dateFormat: 'yy-mm-dd', autoSize: true});
@@ -23,7 +28,7 @@ var MarketTimesUI = (function() {
             $container.empty();
             showLoadingImage($container);
             tradingTimes = null;
-            MarketTimesData.sendRequest($date.val());
+            MarketTimesData.sendRequest($date.val(), !activeSymbols);
         });
     };
 
@@ -60,6 +65,11 @@ var MarketTimesUI = (function() {
             .append($contents.children());
 
         $container.tabs('destroy').tabs();
+
+        if (isFramed) {
+            $container.find('ul').hide();
+            $('<div/>', {class: 'center-text'}).append(jqueryuiTabsToDropdown($container)).prependTo($container);
+        }
     };
 
     var createMarketTables = function(market, isJapanTrading) {
@@ -156,3 +166,7 @@ var MarketTimesUI = (function() {
         }
     };
 }());
+
+module.exports = {
+    MarketTimesUI: MarketTimesUI,
+};

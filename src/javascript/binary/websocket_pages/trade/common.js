@@ -2,6 +2,10 @@
  * This contains common functions we need for processing the response
  */
 
+if (typeof window === 'undefined') {
+    Element = function() {}; // jshint ignore:line
+}
+
  Element.prototype.hide = function(){
      this.style.display = 'none';
  };
@@ -10,10 +14,18 @@
      this.style.display = '';
  };
 
+if (!('remove' in Element.prototype)) {
+    Element.prototype.remove = function() {
+        if (this.parentNode) {
+            this.parentNode.removeChild(this);
+        }
+    };
+}
+
 /*
  * function to display contract form as element of ul
  */
- function displayContractForms(id, elements, selected) {
+function displayContractForms(id, elements, selected) {
      'use strict';
      if (!id || !elements || !selected) return;
      var target = document.getElementById(id),
@@ -124,7 +136,7 @@
  }
 
 
- function displayMarkets(id, elements, selected) {
+function displayMarkets(id, elements, selected) {
      'use strict';
      var target= document.getElementById(id),
          fragment =  document.createDocumentFragment();
@@ -144,7 +156,7 @@
          option.appendChild(content);
          fragment.appendChild(option);
 
-         if(elements[key].submarkets && Object.keys(elements[key].submarkets).length){
+         if(elements[key].submarkets && objectNotEmpty(elements[key].submarkets)){
             var keys2 = Object.keys(elements[key].submarkets).sort(marketSort);
             for (var j=0; j<keys2.length; j++) {
                 var key2 = keys2[j];
@@ -233,7 +245,7 @@ function displayUnderlyings(id, elements, selected) {
         for(var j=0; j<keys2.length; j++){
             for(var k=0; k<submarkets[keys2[j]].length; k++){
                 var key = submarkets[keys2[j]][k];
-                var option = document.createElement('option'), content = document.createTextNode(text.localize(elements[key]['display']));
+                var option = document.createElement('option'), content = document.createTextNode(page.text.localize(elements[key]['display']));
                 option.setAttribute('value', key);
                 if (selected && selected === key) {
                     option.setAttribute('selected', 'selected');
@@ -465,15 +477,6 @@ function getContractCategoryTree(elements){
 }
 
 /*
- * function to get cookie javascript way (use if you don't want to use jquery)
- */
-function getCookieItem(sKey) {
-    'use strict';
-    if (!sKey) { return null; }
-    return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
-}
-
-/*
  * Display price/spot movement variation to depict price moved up or down
  */
 function displayPriceMovement(element, oldValue, currentValue) {
@@ -563,7 +566,7 @@ function displayCommentPrice(node, currency, type, payout) {
     if (node && type && payout) {
         var profit = payout - type,
             return_percent = (profit/type)*100,
-            comment = Content.localize().textNetProfit + ': ' + currency + ' ' + profit.toFixed(2) + ' | ' + Content.localize().textReturn + ' ' + return_percent.toFixed(1) + '%';
+            comment = Content.localize().textNetProfit + ': ' + format_money(currency, profit.toFixed(2)) + ' | ' + Content.localize().textReturn + ' ' + return_percent.toFixed(1) + '%';
 
         if (isNaN(profit) || isNaN(return_percent)) {
             node.hide();
@@ -594,7 +597,7 @@ function displayCommentSpreads(node, currency, point) {
             } else {
                 displayAmount = parseFloat(stopLoss);
             }
-            node.textContent = Content.localize().textSpreadDepositComment + " " + currency + " " + displayAmount.toFixed(2) + " " + Content.localize().textSpreadRequiredComment + ": " + point + " " + Content.localize().textSpreadPointsComment;
+            node.textContent = Content.localize().textSpreadDepositComment + " " + format_money(currency, displayAmount.toFixed(2)) + " " + Content.localize().textSpreadRequiredComment + ": " + point + " " + Content.localize().textSpreadPointsComment;
         }
     }
 }
@@ -775,7 +778,8 @@ function displayTooltip(market, symbol){
     var tip = document.getElementById('symbol_tip'),
         guide = document.getElementById('guideBtn'),
         app = document.getElementById('androidApp'),
-        appstore = document.getElementById('appstore');
+        appstore = document.getElementById('appstore'),
+        markets = document.getElementById('contract_markets').value;
     if (!market || !symbol) return;
     if (market.match(/^volidx/) || symbol.match(/^R/) || market.match(/^random_index/) || market.match(/^random_daily/)){
         if (guide) guide.hide();
@@ -789,7 +793,7 @@ function displayTooltip(market, symbol){
       tip.hide();
       if (guide) guide.show();
     }
-    if (market.match(/^otc_index/) || symbol.match(/^OTC_/) || market.match(/stock/) || (markets.by_symbol(symbol) && markets.by_symbol(symbol).market.name.match(/stocks/))){
+    if (market.match(/^otc_index/) || symbol.match(/^OTC_/) || market.match(/stock/) || markets.match(/stocks/)){
         tip.show();
         tip.setAttribute('target', page.url.url_for('/get-started/otc-indices-stocks'));
     }
@@ -839,7 +843,7 @@ function selectOption(option, select){
 }
 
 function updatePurchaseStatus(final_price, pnl, contract_status){
-    $('#contract_purchase_heading').text(text.localize(contract_status));
+    $('#contract_purchase_heading').text(page.text.localize(contract_status));
     $payout = $('#contract_purchase_payout');
     $cost = $('#contract_purchase_cost');
     $profit = $('#contract_purchase_profit');
@@ -886,9 +890,11 @@ function reloadPage(){
     location.reload();
 }
 
-function addComma(num){
-    num = (num || 0) * 1;
-    return num.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+function addComma(num, decimal_points){
+    num = String(num || 0).replace(/,/g, '') * 1;
+    return num.toFixed(decimal_points || 2).toString().replace(/(^|[^\w.])(\d{4,})/g, function($0, $1, $2) {
+        return $1 + $2.replace(/\d(?=(?:\d\d\d)+(?!\d))/g, "$&,");
+    });
 }
 
 function showHighchart(){
@@ -899,7 +905,7 @@ function showHighchart(){
   } else {
     document.getElementById('chart_frame').src = '';
     $('#trade_live_chart').hide();
-    $('#chart-error').text(text.localize('Chart is not available for this underlying.'))
+    $('#chart-error').text(page.text.localize('Chart is not available for this underlying.'))
                      .show();
     return;
   }
@@ -915,12 +921,244 @@ function chartFrameSource() {
 }
 
 function setChartSource() {
-  document.getElementById('chart_frame').src = 'https://webtrader.binary.com?affiliates=true&instrument=' + document.getElementById('underlying').value + '&timePeriod=1t&gtm=true&lang=' + (page.language() || 'en').toLowerCase();
+    var ja = japanese_client();
+  document.getElementById('chart_frame').src = 'https://webtrader.binary.com?affiliates=true&instrument=' + document.getElementById('underlying').value + '&timePeriod=1t&gtm=true&lang=' + (page.language() || 'en').toLowerCase() +
+  '&hideOverlay=' + (ja ? 'true' : 'false') + '&hideShare=' + (ja ? 'true' : 'false') + '&timezone=GMT+' + (ja ? '9' : '0') +
+  '&hideFooter=' + (ja ? 'true' : 'false');
 }
 
-//used temporarily for mocha test
-if (typeof module !== 'undefined') {
-    module.exports = {
-        addComma: addComma
-    };
+// ============= Functions used in /trading_beta =============
+
+/*
+ * function to toggle active class of menu
+ */
+function toggleActiveNavMenuElement_Beta(nav, eventElement) {
+    'use strict';
+    var liElements = nav.getElementsByTagName("li");
+    var classes = eventElement.classList;
+
+    if (!classes.contains('active')) {
+        for (var i = 0, len = liElements.length; i < len; i++){
+            liElements[i].classList.remove('active');
+        }
+        classes.add('active');
+        var parent = eventElement.parentElement.parentElement;
+        if (parent.tagName === 'LI' && !parent.classList.contains('active')) {
+            parent.classList.add('active');
+        }
+    }
 }
+
+/*
+ * function to set placeholder text based on current form, used for mobile menu
+ */
+function setFormPlaceholderContent_Beta(name) {
+    'use strict';
+    var formPlaceholder = document.getElementById('contract_form_nav_placeholder');
+    if (formPlaceholder) {
+        name = name || Defaults.get('formname');
+        formPlaceholder.textContent = Contract_Beta.contractForms()[name];
+    }
+}
+
+function updatePurchaseStatus_Beta(final_price, pnl, contract_status){
+    final_price = String(final_price).replace(/,/g, '') * 1;
+    pnl = String(pnl).replace(/,/g, '') * 1;
+    $('#contract_purchase_heading').text(page.text.localize(contract_status));
+    var payout  = document.getElementById('contract_purchase_payout'),
+        cost    = document.getElementById('contract_purchase_cost'),
+        profit  = document.getElementById('contract_purchase_profit'),
+        currency = TUser.get().currency;
+
+    label_value(cost  , Content.localize().textStake , addComma(Math.abs(pnl)));
+    label_value(payout, Content.localize().textPayout, addComma(final_price));
+
+    var isWin = (final_price > 0);
+    $('#contract_purchase_profit_value').attr('class', (isWin ? 'profit' : 'loss'));
+    label_value(profit, isWin ? Content.localize().textProfit : Content.localize().textLoss,
+        addComma(isWin ? Math.round((final_price - pnl) * 100) / 100 : - Math.abs(pnl)));
+}
+
+function displayTooltip_Beta(market, symbol){
+    'use strict';
+    var tip = document.getElementById('symbol_tip'),
+        markets = document.getElementById('contract_markets').value;
+    if (!market || !symbol) return;
+    if (market.match(/^volidx/) || symbol.match(/^R/) || market.match(/^random_index/) || market.match(/^random_daily/)){
+        tip.show();
+        tip.setAttribute('target', page.url.url_for('/get-started/volidx-markets'));
+    } else {
+      tip.hide();
+    }
+    if (market.match(/^otc_index/) || symbol.match(/^OTC_/) || market.match(/stock/) || markets.match(/stocks/)){
+        tip.show();
+        tip.setAttribute('target', page.url.url_for('/get-started/otc-indices-stocks'));
+    }
+    if (market.match(/^random_index/) || symbol.match(/^R_/)){
+        tip.setAttribute('target', page.url.url_for('/get-started/volidx-markets', '#volidx-indices'));
+    }
+    if (market.match(/^random_daily/) || symbol.match(/^RDB/) || symbol.match(/^RDMO/) || symbol.match(/^RDS/)){
+        tip.setAttribute('target', page.url.url_for('/get-started/volidx-markets', '#volidx-quotidians'));
+    }
+    if (market.match(/^smart_fx/) || symbol.match(/^WLD/)){
+        tip.show();
+        tip.setAttribute('target', page.url.url_for('/get-started/smart-indices', '#world-fx-indices'));
+    }
+}
+
+function label_value(label_elem, label, value, no_currency) {
+    var currency = TUser.get().currency;
+    label_elem.innerHTML = label;
+    var value_elem = document.getElementById(label_elem.id + '_value');
+    value_elem.innerHTML = no_currency ? value : format_money(currency, value);
+    value_elem.setAttribute('value', String(value).replace(/,/g, ''));
+}
+
+function adjustAnalysisColumnHeight() {
+    var sumHeight = 0;
+    if (window.innerWidth > 767) {
+        $('.col-left').children().each(function() {
+            if ($(this).is(':visible')) sumHeight += $(this).outerHeight(true);
+        });
+    } else {
+        sumHeight = 'auto';
+    }
+    $('#trading_analysis_content').height(sumHeight);
+}
+
+function moreTabsHandler($ul) {
+    if (!$ul) $ul = $('#analysis_tabs');
+    var $visibleTabs  = $ul.find('>li:visible'),
+        seeMoreClass  = 'see-more',
+        moreTabsClass = 'more-tabs',
+        maxWidth      = $ul.outerWidth(),
+        totalWidth    = 0;
+
+    // add seeMore tab
+    var $seeMore = $ul.find('li.' + seeMoreClass);
+    if ($seeMore.length === 0) {
+        $seeMore = $('<li class="tm-li ' + seeMoreClass + '"><a class="tm-a" href="javascript:;"><span class="caret-down"></span></a></li>');
+        $ul.append($seeMore);
+    }
+    $seeMore.removeClass('active');
+
+    // add moreTabs container
+    var $moreTabs = $ul.find('.' + moreTabsClass);
+    if ($moreTabs.length === 0) {
+        $moreTabs = $('<div class="' + moreTabsClass + '" />').appendTo($seeMore);
+    } else {
+        $moreTabs.find('>li').each(function(index, tab) {
+            $(tab).insertBefore($seeMore);
+        });
+    }
+    $moreTabs.css('top', $ul.find('li:visible').outerHeight() - 1).unbind('click').click(function() { hideDropDown('fast'); });
+
+    // move additional tabs to moreTabs
+    $visibleTabs = $ul.find('>li:visible');
+    $visibleTabs.each(function(index, tab) {
+        totalWidth += $(tab).outerWidth(true);
+    });
+    var resultWidth = totalWidth;
+    while (resultWidth >= maxWidth) {
+        var $thisTab = $ul.find('>li:not(.' + seeMoreClass + '):visible').last();
+        resultWidth -= $thisTab.outerWidth(true);
+        $thisTab.prependTo($moreTabs);
+    }
+
+    if ($moreTabs.children().length === 0) {
+        $seeMore.hide();
+        return;
+    }
+
+    $seeMore.show();
+    if ($moreTabs.find('>li.active').length > 0) {
+        $seeMore.addClass('active');
+    }
+
+    // drop down behaviour
+    function showDropDown() {
+        $moreTabs.slideDown();
+        if ($seeMore.find('.over').length === 0) {
+            $('<div/>', {class: 'over'}).insertBefore($seeMore.find('>a'));
+            $seeMore.find('.over').width($seeMore.width());
+        }
+        $seeMore.addClass('open');
+    }
+    function hideDropDown(duration) {
+        $moreTabs.slideUp(duration || 400, function() {
+            $seeMore.removeClass('open');
+        });
+    }
+    var timeout;
+    $seeMore.find('>a').unbind('click').on('click', function(e) {
+        e.stopPropagation();
+        if($moreTabs.is(':visible')) {
+            hideDropDown();
+            clearTimeout(timeout);
+        } else {
+            clearTimeout(timeout);
+            showDropDown();
+            timeout = setTimeout(function() {
+                hideDropDown();
+                clearTimeout(timeout);
+            }, 3000);
+        }
+    });
+    $(document).unbind('click').on('click', function() { hideDropDown(); });
+
+    $moreTabs.mouseenter(function() {
+        clearTimeout(timeout);
+    });
+
+    $moreTabs.mouseleave(function() {
+        clearTimeout(timeout);
+        var $this = $(this);
+        timeout = setTimeout(function() {
+            hideDropDown();
+        }, 1000);
+    });
+}
+
+module.exports = {
+    displayUnderlyings: displayUnderlyings,
+    getFormNameBarrierCategory: getFormNameBarrierCategory,
+    contractTypeDisplayMapping: contractTypeDisplayMapping,
+    isVisible: isVisible,
+    showPriceOverlay: showPriceOverlay,
+    hidePriceOverlay: hidePriceOverlay,
+    hideFormOverlay: hideFormOverlay,
+    showFormOverlay: showFormOverlay,
+    hideOverlayContainer: hideOverlayContainer,
+    getContractCategoryTree: getContractCategoryTree,
+    displayPriceMovement: displayPriceMovement,
+    resetPriceMovement: resetPriceMovement,
+    toggleActiveNavMenuElement: toggleActiveNavMenuElement,
+    toggleActiveCatMenuElement: toggleActiveCatMenuElement,
+    setFormPlaceholderContent: setFormPlaceholderContent,
+    displayCommentPrice: displayCommentPrice,
+    displayCommentSpreads: displayCommentSpreads,
+    debounce: debounce,
+    getDefaultMarket: getDefaultMarket,
+    addEventListenerForm: addEventListenerForm,
+    submitForm: submitForm,
+    displayIndicativeBarrier: displayIndicativeBarrier,
+    durationOrder: durationOrder,
+    displayTooltip: displayTooltip,
+    countDecimalPlaces: countDecimalPlaces,
+    selectOption: selectOption,
+    updatePurchaseStatus: updatePurchaseStatus,
+    updateWarmChart: updateWarmChart,
+    reloadPage: reloadPage,
+    addComma: addComma,
+    showHighchart: showHighchart,
+    chartFrameSource: chartFrameSource,
+    displayContractForms: displayContractForms,
+    displayMarkets: displayMarkets,
+    toggleActiveNavMenuElement_Beta: toggleActiveNavMenuElement_Beta,
+    setFormPlaceholderContent_Beta: setFormPlaceholderContent_Beta,
+    updatePurchaseStatus_Beta: updatePurchaseStatus_Beta,
+    displayTooltip_Beta: displayTooltip_Beta,
+    label_value: label_value,
+    adjustAnalysisColumnHeight: adjustAnalysisColumnHeight,
+    moreTabsHandler: moreTabsHandler,
+};

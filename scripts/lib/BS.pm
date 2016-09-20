@@ -151,6 +151,9 @@ sub css_files {
         push @css, root_url() . "css/binary.min.css?$static_hash";
     }
 
+    # Binary-style
+    push @css, "https://style.binary.com/binary.css?$static_hash";
+
     return @css;
 }
 
@@ -162,122 +165,41 @@ sub js_config {
         push @libs, root_url . "js/binary.min.js?$static_hash";
     }
 
-    my %setting = (
-        enable_relative_barrier => 'true',
-        image_link              => {
-            hourglass     => url_for('images/common/hourglass_1.gif')->to_string,
-            up            => url_for('images/javascript/up_arrow_1.gif')->to_string,
-            down          => url_for('images/javascript/down_arrow_1.gif')->to_string,
-            calendar_icon => url_for('images/common/calendar_icon_1.png')->to_string,
-            livechaticon  => url_for('images/pages/contact/chat-icon.svg')->to_string,
-        },
-        broker           => 'CR',
-        countries_list   => YAML::XS::LoadFile(root_path() . '/scripts/config/countries.yml'),
-        valid_loginids   => 'MX|MF|VRTC|MLT|CR|FOG|VRTJ|JP',
-        streaming_server => 'www.binary.com',
-    );
-
-    # hardcode, require a fix?
-    $setting{arr_all_currencies} = ["USD", "EUR", "GBP", "AUD"];
-
     return {
         libs     => \@libs,
-        settings => JSON::to_json(\%setting),
     };
 }
 
 sub menu {
     my @menu;
 
-    # trade page
-    push @menu,
-        {
-        id         => 'topMenuTrading',
-        class      => 'ja-hide',
-        url        => url_for('/trading'),
-        text       => localize('Start Trading'),
-        link_class => 'pjaxload'
-        };
-
-    # japan's trade page
-    push @menu,
-        {
-        id         => 'topMenuJPTrading',
-        class      => 'all-hide ja-show',
-        url        => url_for('/jptrading'),
-        text       => localize('Start Trading'),
-        link_class => 'pjaxload'
-        };
-
-    # myaccount
-    my $my_account_ref = {
-        id         => 'topMenuMyAccount',
-        url        => url_for('/user/my_accountws'),
-        text       => localize('My Account'),
-        class      => 'by_client_type client_real client_virtual',
-        link_class => 'with_login_cookies pjaxload',
-        sub_items  => [],
-    };
-
     # Portfolio
-    push @{$my_account_ref->{sub_items}},
+    push @menu,
         {
         id         => 'topMenuPortfolio',
         url        => url_for('/user/portfoliows'),
         text       => localize('Portfolio'),
-        link_class => 'with_login_cookies pjaxload',
+        class      => 'client_logged_in invisible',
+        link_class => 'pjaxload',
         };
 
-    push @{$my_account_ref->{sub_items}},
+    push @menu,
         {
         id         => 'topMenuProfitTable',
         url        => url_for('/user/profit_tablews'),
         text       => localize('Profit Table'),
-        link_class => 'with_login_cookies pjaxload',
+        class      => 'client_logged_in invisible',
+        link_class => 'pjaxload',
         };
 
-    push @{$my_account_ref->{sub_items}},
+    push @menu,
         {
         id         => 'topMenuStatement',
         url        => url_for('/user/statementws'),
         text       => localize('Statement'),
-        link_class => 'with_login_cookies pjaxload',
-        };
-
-    push @{$my_account_ref->{sub_items}},
-        {
-        id         => 'topMenuChangePassword',
-        url        => url_for('/user/change_passwordws'),
-        text       => localize('Password'),
-        link_class => 'with_login_cookies pjaxload',
-        };
-
-    push @{$my_account_ref->{sub_items}},
-        {
-        id         => 'topMenuAccountSettings',
-        url        => url_for('/user/settingsws'),
-        text       => localize('Settings'),
-        link_class => 'with_login_cookies pjaxload',
-        };
-
-    push @{$my_account_ref->{sub_items}},
-        {
-        id         => 'topMenuBecomeAffiliate',
-        class      => 'ja-hide',
-        url        => url_for('/affiliate/signup'),
+        class      => 'client_logged_in invisible',
         link_class => 'pjaxload',
-        text       => localize('Affiliate'),
         };
-
-    push @{$my_account_ref->{sub_items}},
-        {
-        id         => 'topMenuAuthenticateAccount',
-        url        => url_for('/user/authenticatews'),
-        text       => localize('Authenticate'),
-        class      => 'by_client_type client_real ja-hide',
-        link_class => 'with_login_cookies pjaxload',
-        };
-    push @menu, $my_account_ref;
 
     # cashier
     push @menu,
@@ -291,6 +213,7 @@ sub menu {
     # resources
     my $resources_items_ref = {
         id         => 'topMenuResources',
+        class      => 'ja-hide',
         url        => url_for('/resources'),
         text       => localize('Resources'),
         link_class => 'pjaxload',
@@ -314,7 +237,6 @@ sub menu {
     $resources_items_ref->{'sub_items'} = [$asset_index_ref, $trading_times_ref];
     push @menu, $resources_items_ref;
 
-    # Portfolio
     push @menu,
         {
         id         => 'topMenuShop',
@@ -322,6 +244,15 @@ sub menu {
         url        => 'https://shop.binary.com',
         text       => localize('Shop'),
         target     => '_blank'
+        };
+
+    push @menu,
+        {
+        id         => 'topMenuPaymentAgent',
+        class      => 'invisible',
+        url        => url_for('/paymentagent/transferws'),
+        text       => localize('Payment Agent'),
+        link_class => 'pjaxload'
         };
 
     # push @{$menu}, $self->_main_menu_trading();
