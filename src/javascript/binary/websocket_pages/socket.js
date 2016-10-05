@@ -179,23 +179,33 @@ function BinarySocketClass() {
                             break;
                         }
                     }
-                    if (company && company.has_reality_check) {
-                        page.client.response_landing_company(company);
-                        var currentData = TUser.get();
-                        var addedLoginTime = $.extend({logintime: window.time.unix()}, currentData);
-                        TUser.set(addedLoginTime);
-                        RealityCheck.init();
+
+                    if (company) {
+                        page.client.set_storage_value('landing_company_name', company.name);
+                        if (/tnc_approvalws/.test(window.location.pathname)) {
+                            TNCApproval.showTNC();
+                        }
+                        if (company.has_reality_check) {
+                            page.client.response_landing_company(company);
+                            var currentData = TUser.get();
+                            var addedLoginTime = $.extend({logintime: window.time.unix()}, currentData);
+                            TUser.set(addedLoginTime);
+                            RealityCheck.init();
+                        }
                     }
                 } else if (type === 'get_self_exclusion') {
                     SessionDurationLimit.exclusionResponseHandler(response);
                 } else if (type === 'payout_currencies' && response.hasOwnProperty('echo_req') && response.echo_req.hasOwnProperty('passthrough') && response.echo_req.passthrough.handler === 'page.client') {
                     page.client.response_payout_currencies(response);
                 } else if (type === 'get_settings' && response.get_settings) {
-                    if (!Cookies.get('residence') && response.get_settings.country_code) {
-                      page.client.set_cookie('residence', response.get_settings.country_code);
-                      page.client.residence = response.get_settings.country_code;
-                      send({landing_company: Cookies.get('residence')});
-                    } else if (response.get_settings.country_code === null && response.get_settings.country === null) {
+                    var country_code = response.get_settings.country_code;
+                    if (country_code) {
+                        page.client.residence = country_code;
+                        if (!Cookies.get('residence')) {
+                            page.client.set_cookie('residence', country_code);
+                            send({landing_company: country_code});
+                        }
+                    } else if (country_code === null && response.get_settings.country === null) {
                         page.contents.topbar_message_visibility('show_residence');
                     }
                     if (/realws|maltainvestws|japanws/.test(window.location.href)) {

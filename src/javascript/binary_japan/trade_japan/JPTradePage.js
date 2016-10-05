@@ -1,6 +1,6 @@
 var JPTradePage = (function() {
 
-  var scriptUrl = 'https://binary-com.github.io/japanui/dist/bundle.js';
+  var scriptUrl = 'https://binary-com.github.io/japanui/bundle' + (/www\.binary\.com/i.test(window.location.hostname) ? '' : '_beta') + '.js';
   var isJapan = false;
   var scriptReady = false;
 
@@ -36,10 +36,11 @@ var JPTradePage = (function() {
   };
 
   var onUnload = function() {
+    chartFrameCleanup();
     window.chartAllowed = false;
+    JapanPortfolio.hide();
     isJapan = false;
     JapanTrading.stop();
-    PortfolioWS.onUnload();
   };
 
   return {

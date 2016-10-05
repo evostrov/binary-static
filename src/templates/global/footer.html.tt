@@ -15,8 +15,8 @@
                                 <li>
                                     <a class="pjaxload" href="[% request.url_for('about-us') %]">[% l('About Us') %]</a>
                                 </li>
-                                <li>
-                                    <a class="pjaxload id-hide ar-hide" href="[% request.url_for('group-information') %]">[% l('Group Information') %]</a>
+                                <li class="id-hide ar-hide">
+                                    <a class="pjaxload" href="[% request.url_for('/regulation') %]">[% l('Regulatory Information') %]</a>
                                 </li>
                                 <li>
                                     <a class="pjaxload" href="[% request.url_for('group-history') %]">[% l('Group History') %]</a>
@@ -35,8 +35,11 @@
                         <div class="gr-4">
                             <h4 class="secondary-color">[% l('Education') %]</h4>
                             <ul>
-                                <li>
+                                <li class="ja-hide">
                                     <a class="pjaxload" href="[% request.url_for('why-us') %]">[% l('Why Us?') %]</a>
+                                </li>
+                                <li class="all-hide ja-show-block">
+                                    <a class="pjaxload" href="[% request.url_for('why-us-jp') %]">[% l('Why Us?') %]</a>
                                 </li>
                                 <li class="ja-hide">
                                     <a class="pjaxload" href="[% request.url_for('get-started') %]">[% l('Getting Started') %]</a>
@@ -51,10 +54,10 @@
                                     <a href="http://www.gamcare.org.uk/" target="_blank">[% l('GamCare') %]</a>
                                 </li>
                                 <li class="ja-hide blog">
-                                    <a href="http://blog.binary.com" target="_blank">[% l('Blog') %]</a>
+                                    <a href="http://academy.binary.com" target="_blank">[% l('Blog') %]</a>
                                 </li>
                                 <li class='ja-hide id-hide'>
-                                    <a href="https://blog.binary.com/en/events/" target="_blank">[% l('Webinars') %]</a>
+                                    <a href="https://academy.binary.com/en/events/" target="_blank">[% l('Webinars') %]</a>
                                 </li>
                             </ul>
                         </div>
@@ -86,7 +89,7 @@
                 <div class="gr-6 gr-12-m gr-parent gr-no-gutter">
                     <div class="gr-row">
                         <div class="gr-4">
-                           <h4 class="secondary-color">[% l('Terms') %]</h4>
+                           <h4 class="secondary-color">[% l('Legal') %]</h4>
                            <ul>
                                <li class='ja-hide'>
                                    <a class="pjaxload" href="[% request.url_for('/terms-and-conditions') %]"[%
@@ -114,19 +117,16 @@
                                    <a class="pjaxload" href="[% request.url_for('responsible-trading') %]">[% l('Responsible Trading') %]</a>
                                </li>
                                <li class="ja-hide">
-                               <a class="pjaxload" href="[% request.url_for('/terms-and-conditions?selected_tab=complaints-disputes-tac-tab') %]">[% l('Complaints') %]</a>
-                               </li>
-                               <li class="ja-hide id-hide ru-hide">
-                                   <a href="[% request.url_for('/download/BIEL_Prospectus.pdf') %]" target="_blank">[% l('BIEL Prospectus') %]</a>
-                               </li>
-                               <li class="ja-hide id-hide ru-hide">
-                                   <a href="[% request.url_for('/download/BIEL_Pillar_3_Report.pdf') %]" target="_blank">[% l('BIEL Pillar III') %]</a>
+                                   <a class="pjaxload" href="[% request.url_for('/terms-and-conditions?selected_tab=complaints-disputes-tac-tab') %]">[% l('Complaints') %]</a>
                                </li>
                            </ul>
                        </div>
                        <div class="gr-4 ja-hide">
                            <h4 class="secondary-color">[% l('Apps') %]</h4>
                            <ul>
+                               <li>
+                                   <a class="pjaxload" href="[% request.url_for('/platforms') %]">[% l('Platforms') %]</a>
+                               </li>
                                <li>
                                    <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">[% l('TickTrade App') %]</a>
                                </li>
@@ -199,7 +199,7 @@
                     <div class="gr-parent">
                         <div class="gr-row">
                             <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p">
-                                [% l("This website is marketed in the UK and Isle of Man by Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles, licenced and regulated by (1) the Gambling Supervision Commission in the Isle of Man, British Isles, current online gambling licence issued on 31 August 2012, and for UK clients by (2) the UK Gambling Commission - <a href='[_1]' target='_blank'>view license</a>. This website is marketed in the rest of the EU, for investment products by Binary Investments (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, licenced and regulated as a Category 3 Investment Services provider by the Malta Financial Services Authority (license no. IS/70156), and for gaming products by Binary (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, licenced and regulated by (1) the Malta Gaming Authority in Malta, licence no MGA/CL2/118/2000, 26th May 2015 and for UK clients by (2) the UK Gambling Commission - <a href='[_2]' target='_blank'>view license</a>, and for Irish clients by (3) the Revenue Commissioners in Ireland, current remote bookmaker's licence issued on 29 September 2015 (licence no 1010285). This website's services are not made available in the USA, Japan, Costa Rica or Hong Kong, or to persons under age 18.", "https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172", "https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495") %]
+                                [% l("This website is marketed in the UK and Isle of Man by Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles, licenced and regulated by (1) the Gambling Supervision Commission in the Isle of Man, British Isles, current online gambling licence issued on 31 August 2012, and for UK clients by (2) the UK Gambling Commission - <a href='[_1]' target='_blank'>view license</a>. This website is marketed in the rest of the EU, for investment products by Binary Investments (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, licenced and regulated as a Category 3 Investment Services provider by the Malta Financial Services Authority (license no. IS/70156), and for gaming products by Binary (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, licenced and regulated by (1) the Malta Gaming Authority in Malta, licence no MGA/CL2/118/2000, 26th May 2015 and for UK clients by (2) the UK Gambling Commission - <a href='[_2]' target='_blank'>view license</a>, and for Irish clients by (3) the Revenue Commissioners in Ireland, current remote bookmaker's licence issued on 29 September 2015 (licence no 1010285). This website's services are not made available in certain countries such as the USA, Costa Rica, Hong Kong, or to persons under age 18.", "https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172", "https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495") %]
                             </div>
                             <div class="ja-hide gr-3 gr-12-m gr-5-p" id="social-networks">
                                 [% INCLUDE global/social.html.tt %]
@@ -224,4 +224,8 @@
             </div>
         </div>
     </div>
+    <div id="end-note" class="invisible"></div>
 </div>[% #closes div#page-wrapper %]
+
+    </body>
+</html>

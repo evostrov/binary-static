@@ -855,7 +855,15 @@ function updatePurchaseStatus(final_price, pnl, contract_status){
     }
     else{
         $profit.html(Content.localize().textProfit + '<p>'+addComma(Math.round((final_price-pnl)*100)/100)+'</p>');
+        updateContractBalance(TUser.get().balance);
     }
+}
+
+function updateContractBalance(balance) {
+    $('#contract_purchase_balance').text(
+        Content.localize().textContractConfirmationBalance + ' ' +
+        format_money(TUser.get().currency, addComma(parseFloat(balance)))
+    );
 }
 
 function updateWarmChart(){
@@ -903,7 +911,7 @@ function showHighchart(){
   if (window.chartAllowed) {
     chartFrameSource();
   } else {
-    document.getElementById('chart_frame').src = '';
+    chartFrameCleanup();
     $('#trade_live_chart').hide();
     $('#chart-error').text(page.text.localize('Chart is not available for this underlying.'))
                      .show();
@@ -911,8 +919,16 @@ function showHighchart(){
   }
 }
 
+function chartFrameCleanup() {
+    /*
+     * Prevent IE memory leak (http://stackoverflow.com/questions/8407946).
+     */
+    document.getElementById('chart_frame').src = 'about:blank';
+}
+
 function chartFrameSource() {
-  if ($('#tab_graph').hasClass('active') && (sessionStorage.getItem('old_underlying') !== sessionStorage.getItem('underlying') || $('#chart_frame').attr('src') === '')) {
+  if ($('#tab_graph').hasClass('active') && (sessionStorage.getItem('old_underlying') !== sessionStorage.getItem('underlying') || /^(|about:blank)$/.test($('#chart_frame').attr('src')))) {
+      chartFrameCleanup();
       setChartSource();
       sessionStorage.setItem('old_underlying', document.getElementById('underlying').value);
   }
@@ -1147,10 +1163,12 @@ module.exports = {
     countDecimalPlaces: countDecimalPlaces,
     selectOption: selectOption,
     updatePurchaseStatus: updatePurchaseStatus,
+    updateContractBalance: updateContractBalance,
     updateWarmChart: updateWarmChart,
     reloadPage: reloadPage,
     addComma: addComma,
     showHighchart: showHighchart,
+    chartFrameCleanup: chartFrameCleanup,
     chartFrameSource: chartFrameSource,
     displayContractForms: displayContractForms,
     displayMarkets: displayMarkets,

@@ -15,6 +15,7 @@ var PortfolioWS =  (function() {
         currency = '';
         oauth_apps = {};
         hidden_class = 'invisible';
+        $("#portfolio-loading").show();
         showLoadingImage($("#portfolio-loading"));
         if (TUser.get().balance) {
             updateBalance();
@@ -122,13 +123,16 @@ var PortfolioWS =  (function() {
         }
 
         var proposal = Portfolio.getProposalOpenContract(data.proposal_open_contract);
+        if(!values.hasOwnProperty(proposal.contract_id)) { // avoid updating 'values' before the new contract row added to the table
+            return;
+        }
+
         // force to sell the expired contract, in order to remove from portfolio
         if(proposal.is_expired == 1 && !proposal.is_sold) {
             BinarySocket.send({"sell_expired": 1});
         }
         var $td = $("#" + proposal.contract_id + " td.indicative");
 
-        if(!values.hasOwnProperty(proposal.contract_id)) values[proposal.contract_id] = {};
         var old_indicative = values[proposal.contract_id].indicative || 0.00;
         values[proposal.contract_id].indicative = proposal.bid_price;
 
@@ -219,6 +223,7 @@ var PortfolioWS =  (function() {
         BinarySocket.send({"forget_all": "proposal_open_contract"});
         BinarySocket.send({"forget_all": "transaction"});
         $('#portfolio-body').empty();
+        $("#portfolio-content").addClass(hidden_class);
         is_initialized = false;
     };
 

@@ -41,26 +41,24 @@ var StatementUI = (function(){
     }
 
     function createStatementRow(transaction){
-        var statement_data = Statement.getStatementData(transaction);
-        allData.push(statement_data);
+        var statement_data = Statement.getStatementData(transaction, TUser.get().currency, japanese_client());
+        allData.push($.extend({}, statement_data, {action: page.text.localize(statement_data.action)}));
         var creditDebitType = (parseFloat(statement_data.amount) >= 0) ? "profit" : "loss";
 
-        var jpClient = japanese_client();
-
         var $statementRow = Table.createFlexTableRow([
-                (jpClient ? toJapanTimeIfNeeded(transaction.transaction_time) : statement_data.date),
+                statement_data.date,
                 '<span' + showTooltip(statement_data.app_id, oauth_apps[statement_data.app_id]) + '>' + statement_data.ref + '</span>',
-                isNaN(statement_data.payout) ? '-' : (jpClient ? format_money_jp(TUser.get().currency, statement_data.payout) : statement_data.payout ),
+                statement_data.payout,
                 page.text.localize(statement_data.action),
                 '',
-                jpClient ? format_money_jp(TUser.get().currency, statement_data.amount) : statement_data.amount,
-                jpClient ? format_money_jp(TUser.get().currency, statement_data.balance) : statement_data.balance,
+                statement_data.amount,
+                statement_data.balance,
                 ''
             ], columns, "data");
-        
+
         $statementRow.children(".credit").addClass(creditDebitType);
         $statementRow.children(".date").addClass("pre");
-        $statementRow.children(".desc").html(statement_data.desc + "<br>");
+        $statementRow.children(".desc").html(page.text.localize(statement_data.desc) + "<br>");
 
         //create view button and append
         if (statement_data.action === "Sell" || statement_data.action === "Buy") {
