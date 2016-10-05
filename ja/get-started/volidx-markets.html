@@ -42,7 +42,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/binary-static/images/favicons/favicon-32x32.png" >
 
           <link rel="alternate" href="/binary-static/en/get-started/volidx-markets.html" hreflang="EN" /> 
-          <link rel="alternate" href="/binary-static/ar/get-started/volidx-markets.html" hreflang="AR" /> 
           <link rel="alternate" href="/binary-static/de/get-started/volidx-markets.html" hreflang="DE" /> 
           <link rel="alternate" href="/binary-static/es/get-started/volidx-markets.html" hreflang="ES" /> 
           <link rel="alternate" href="/binary-static/fr/get-started/volidx-markets.html" hreflang="FR" /> 
@@ -51,15 +50,16 @@
           <link rel="alternate" href="/binary-static/pl/get-started/volidx-markets.html" hreflang="PL" /> 
           <link rel="alternate" href="/binary-static/pt/get-started/volidx-markets.html" hreflang="PT" /> 
           <link rel="alternate" href="/binary-static/ru/get-started/volidx-markets.html" hreflang="RU" /> 
+          <link rel="alternate" href="/binary-static/th/get-started/volidx-markets.html" hreflang="TH" /> 
           <link rel="alternate" href="/binary-static/vi/get-started/volidx-markets.html" hreflang="VI" /> 
          
           <link rel="alternate" href="/binary-static/zh_cn/get-started/volidx-markets.html" hreflang="ZH_CN" /> 
           <link rel="alternate" href="/binary-static/zh_tw/get-started/volidx-markets.html" hreflang="ZH_TW" /> 
         
-         <link rel="stylesheet" href="/binary-static/css/binary.min.css?8azhxm4e">
-         <link rel="stylesheet" href="https://style.binary.com/binary.css?8azhxm4e">
+         <link rel="stylesheet" href="/binary-static/css/binary.min.css?zawp89rx">
+         <link rel="stylesheet" href="https://style.binary.com/binary.css?zawp89rx">
         
-        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?8azhxm4e' defer async></script>
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?zawp89rx' defer async></script>
     </head>
 
 
@@ -84,7 +84,6 @@
                             <div class="JA" id='language_select'>
                                 <select>
             <option class='EN'>English</option>
-                <option class='AR'>Arabic</option>
                 <option class='DE'>Deutsch</option>
                 <option class='ES'>Español</option>
                 <option class='FR'>Français</option>
@@ -93,7 +92,7 @@
                 <option class='PL'>Polish</option>
                 <option class='PT'>Português</option>
                 <option class='RU'>Русский</option>
-                <option class='VI'>Vietnamese</option>
+                    <option class='VI'>Vietnamese</option>
                     <option class='ZH_CN'>简体中文</option>
                 <option class='ZH_TW'>繁體中文</option>
     </select>
@@ -124,13 +123,16 @@
                     <div class='gr-6 gr-hide-m gr-hide-p gr-padding-10'>
                         <div id='main-navigation'>
                             <ul id="menu-top">
-                                <li>
+                                <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/ja/why-us.html">サービス概要</a>
+                                </li>
+                                <li class="all-hide ja-show-inline-block">
+                                    <a class="pjaxload" href="/binary-static/ja/why-us-jp.html">サービス概要</a>
                                 </li>
                                 <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/ja/get-started.html">はじめに</a>
                                 </li>
-                                <li class="all-hide ja-show-block">
+                                <li class="all-hide ja-show-inline-block">
                                   <a class="pjaxload" href="/binary-static/ja/get-started-jp.html">はじめに</a>
                                 </li>
                                 <li>
@@ -139,7 +141,7 @@
                                 <li class="ja-hide" id="main-navigation-trading">
                                     <a class="pjaxload" href="/binary-static/ja/trading.html">トレード</a>
                                 </li>
-                                <li class="all-hide ja-show-block" id="main-navigation-jptrading">
+                                <li class="all-hide ja-show-inline-block" id="main-navigation-jptrading">
                                     <a class="pjaxload" href="/binary-static/ja/jptrading.html">トレード</a>
                                 </li>
                             </ul>
@@ -238,8 +240,11 @@
     <div class='gr-hide gr-show-m gr-show-p' id='mobile-menu-container'>
     <div class='gr-hide' id='mobile-menu'>
         <ul>
-            <li>
+            <li class="ja-hide">
                 <a class="pjaxload" href="/binary-static/ja/why-us.html">サービス概要</a>
+            </li>
+            <li class="all-hide ja-show-block">
+                <a class="pjaxload" href="/binary-static/ja/why-us-jp.html">サービス概要</a>
             </li>
             <li class="ja-hide">
               <a class="pjaxload" href="/binary-static/ja/get-started.html">はじめに</a>
@@ -463,8 +468,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <li>
                                     <a class="pjaxload" href="/binary-static/ja/about-us.html">グループ会社概要</a>
                                 </li>
-                                <li>
-                                    <a class="pjaxload id-hide ar-hide" href="/binary-static/ja/group-information.html">グループ企業情報</a>
+                                <li class="id-hide ar-hide">
+                                    <a class="pjaxload" href="/binary-static/ja/regulation.html">監督機関の情報</a>
                                 </li>
                                 <li>
                                     <a class="pjaxload" href="/binary-static/ja/group-history.html">グループの沿革</a>
@@ -483,8 +488,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="gr-4">
                             <h4 class="secondary-color">お役立ち情報</h4>
                             <ul>
-                                <li>
+                                <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/ja/why-us.html">サービス概要</a>
+                                </li>
+                                <li class="all-hide ja-show-block">
+                                    <a class="pjaxload" href="/binary-static/ja/why-us-jp.html">サービス概要</a>
                                 </li>
                                 <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/ja/get-started.html">はじめに</a>
@@ -499,10 +507,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     <a href="http://www.gamcare.org.uk/" target="_blank">GamCare</a>
                                 </li>
                                 <li class="ja-hide blog">
-                                    <a href="http://blog.binary.com" target="_blank">ブログ</a>
+                                    <a href="http://academy.binary.com" target="_blank">ブログ</a>
                                 </li>
                                 <li class='ja-hide id-hide'>
-                                    <a href="https://blog.binary.com/en/events/" target="_blank">ウェビナー</a>
+                                    <a href="https://academy.binary.com/en/events/" target="_blank">ウェビナー</a>
                                 </li>
                             </ul>
                         </div>
@@ -530,7 +538,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="gr-6 gr-12-m gr-parent gr-no-gutter">
                     <div class="gr-row">
                         <div class="gr-4">
-                           <h4 class="secondary-color">各種規約</h4>
+                           <h4 class="secondary-color">取引規定・約款</h4>
                            <ul>
                                <li class='ja-hide'>
                                    <a class="pjaxload" href="/binary-static/ja/terms-and-conditions.html">店頭バイナリーオプション取引約款</a>
@@ -540,31 +548,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                </li>
                                <li class='ja-hide'>
                                    <a class="pjaxload"
-                                      href="/binary-static/ja/terms-and-conditions.html#privacy-tab">取引規約</a>
+                                      href="/binary-static/ja/terms-and-conditions.html#privacy-tab">口座開設時確認書類</a>
                                </li>
                                <li class='hidden ja-show-block'>
                                    <a class="pjaxload"
-                                      href="/binary-static/ja/terms-and-conditions-jp.html?selected_tab=privacy-tab">取引規約</a>
+                                      href="/binary-static/ja/terms-and-conditions-jp.html?selected_tab=privacy-tab">口座開設時確認書類</a>
                                </li>
                                <li class="ja-hide">
                                    <a class="pjaxload" href="/binary-static/ja/responsible-trading.html">健全なトレードのために</a>
                                </li>
                                <li class="ja-hide">
-                               <a class="pjaxload" href="/binary-static/ja/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">クレーム</a>
-                               </li>
-                               <li class="ja-hide id-hide ru-hide">
-                                   <a href="/binary-static/download/BIEL_Prospectus.pdf" target="_blank">BIEL目論見書</a>
-                               </li>
-                               <li class="ja-hide id-hide ru-hide">
-                                   <a href="/binary-static/download/BIEL_Pillar_3_Report.pdf" target="_blank">BIELの3本柱</a>
+                                   <a class="pjaxload" href="/binary-static/ja/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">クレーム</a>
                                </li>
                            </ul>
                        </div>
                        <div class="gr-4 ja-hide">
-                           <h4 class="secondary-color">App</h4>
+                           <h4 class="secondary-color">アプリケーション</h4>
                            <ul>
                                <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">Tickトレードアプリ</a>
+                                   <a class="pjaxload" href="/binary-static/ja/platforms.html">プラットフォーム</a>
+                               </li>
+                               <li>
+                                   <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">Tickトレードアプリケーション</a>
                                </li>
                                <li>
                                    <a href="https://shop.binary.com/collections/applications/products/webtrader" target="_blank">ウェブトレーダー</a>
@@ -685,4 +690,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
     </div>
+    <div id="end-note" class="invisible"></div>
 </div>
+
+    </body>
+</html>

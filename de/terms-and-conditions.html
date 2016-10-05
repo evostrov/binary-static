@@ -41,7 +41,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/binary-static/images/favicons/favicon-32x32.png" >
 
           <link rel="alternate" href="/binary-static/en/terms-and-conditions.html" hreflang="EN" /> 
-          <link rel="alternate" href="/binary-static/ar/terms-and-conditions.html" hreflang="AR" /> 
           <link rel="alternate" href="/binary-static/de/terms-and-conditions.html?l=de" hreflang="DE" /> 
           <link rel="alternate" href="/binary-static/es/terms-and-conditions.html" hreflang="ES" /> 
           <link rel="alternate" href="/binary-static/fr/terms-and-conditions.html" hreflang="FR" /> 
@@ -50,15 +49,16 @@
           <link rel="alternate" href="/binary-static/pl/terms-and-conditions.html" hreflang="PL" /> 
           <link rel="alternate" href="/binary-static/pt/terms-and-conditions.html" hreflang="PT" /> 
           <link rel="alternate" href="/binary-static/ru/terms-and-conditions.html" hreflang="RU" /> 
+          <link rel="alternate" href="/binary-static/th/terms-and-conditions.html" hreflang="TH" /> 
           <link rel="alternate" href="/binary-static/vi/terms-and-conditions.html" hreflang="VI" /> 
          
           <link rel="alternate" href="/binary-static/zh_cn/terms-and-conditions.html" hreflang="ZH_CN" /> 
           <link rel="alternate" href="/binary-static/zh_tw/terms-and-conditions.html" hreflang="ZH_TW" /> 
         
-         <link rel="stylesheet" href="/binary-static/css/binary.min.css?8azhxm4e">
-         <link rel="stylesheet" href="https://style.binary.com/binary.css?8azhxm4e">
+         <link rel="stylesheet" href="/binary-static/css/binary.min.css?zawp89rx">
+         <link rel="stylesheet" href="https://style.binary.com/binary.css?zawp89rx">
         
-        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?8azhxm4e' defer async></script>
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?zawp89rx' defer async></script>
     </head>
 
 
@@ -83,7 +83,6 @@
                             <div class="DE" id='language_select'>
                                 <select>
             <option class='EN'>English</option>
-                <option class='AR'>Arabic</option>
                 <option class='DE' selected='selected'>Deutsch</option>
                 <option class='ES'>Español</option>
                 <option class='FR'>Français</option>
@@ -92,7 +91,7 @@
                 <option class='PL'>Polish</option>
                 <option class='PT'>Português</option>
                 <option class='RU'>Русский</option>
-                <option class='VI'>Vietnamese</option>
+                    <option class='VI'>Vietnamese</option>
                     <option class='ZH_CN'>简体中文</option>
                 <option class='ZH_TW'>繁體中文</option>
     </select>
@@ -123,13 +122,16 @@
                     <div class='gr-6 gr-hide-m gr-hide-p gr-padding-10'>
                         <div id='main-navigation'>
                             <ul id="menu-top">
-                                <li>
+                                <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/de/why-us.html">Warum uns?</a>
+                                </li>
+                                <li class="all-hide ja-show-inline-block">
+                                    <a class="pjaxload" href="/binary-static/de/why-us-jp.html">Warum uns?</a>
                                 </li>
                                 <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/de/get-started.html">Erste Schritte</a>
                                 </li>
-                                <li class="all-hide ja-show-block">
+                                <li class="all-hide ja-show-inline-block">
                                   <a class="pjaxload" href="/binary-static/de/get-started-jp.html">Erste Schritte</a>
                                 </li>
                                 <li>
@@ -138,7 +140,7 @@
                                 <li class="ja-hide" id="main-navigation-trading">
                                     <a class="pjaxload" href="/binary-static/de/trading.html">Handel</a>
                                 </li>
-                                <li class="all-hide ja-show-block" id="main-navigation-jptrading">
+                                <li class="all-hide ja-show-inline-block" id="main-navigation-jptrading">
                                     <a class="pjaxload" href="/binary-static/de/jptrading.html">Handel</a>
                                 </li>
                             </ul>
@@ -237,8 +239,11 @@
     <div class='gr-hide gr-show-m gr-show-p' id='mobile-menu-container'>
     <div class='gr-hide' id='mobile-menu'>
         <ul>
-            <li>
+            <li class="ja-hide">
                 <a class="pjaxload" href="/binary-static/de/why-us.html">Warum uns?</a>
+            </li>
+            <li class="all-hide ja-show-block">
+                <a class="pjaxload" href="/binary-static/de/why-us-jp.html">Warum uns?</a>
             </li>
             <li class="ja-hide">
               <a class="pjaxload" href="/binary-static/de/get-started.html">Erste Schritte</a>
@@ -324,7 +329,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </ul>
         </li>
         <li id="datafeed-tab" class="tm-li"><a href="#datafeed-tab" class="tm-a">Dateneinspeisung</a></li>
-        <li id="privacy-tab" class="tm-li"><a href="#privacy-tab" class="tm-a">Datenschutz & Sicherheit</a></li>
+        <li id="privacy-tab" class="tm-li"><a href="#privacy-tab" class="tm-a">Sicherheit und Datenschutz</a></li>
         <li id="copyright-tab" class="tm-li"><a href="#copyright-tab" class="tm-a">Copyright</a></li>
         <li id="risk-tab" class="tm-li last"><a href="#risk-tab" class="tm-a">Risikohinweise</a></li>
         <li id="order-execution-tab" class="tm-li last"><a href="#order-execution-tab" class="tm-a">Orderausführung</a></li>
@@ -337,7 +342,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="gr-12">
     <h2>Allgemeine Geschäftsbedingungen</h2>
     <p>
-        <i>Version 41. Letzte Änderung 27. 06. 2016.</i>
+        <i>Version 42. Letzte Änderung 14.09.2016.</i>
     </p>
     <p>
         Es liegt in der Verantwortung jedes einzelnen Kunden, diesen rechtlichen Hinweis und die Allgemeinen Geschäftsbedingungen, nach denen sich der Erwerb von Finanzkontrakten über diese Website richtet, zu lesen und zu verstehen.
@@ -407,7 +412,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         Das Unternehmen unterhält Kundengelder auf von den betrieblichen Konten getrennten Bankkonten und es wurden Vereinbarungen getroffen, die dafür sorgen, dass die Guthaben auf Kundenkonten im Fall einer Insolvenz ausgezahlt werden können. Dies entspricht nach den Vorschriften der Glücksspielbehörde zur Trennung von Kundengeldern mit dem Grad: Mittlerer Schutz.
     </p>
     <p>
-    Das Unternehmen stellt mehrere Einzahlungsmethoden zur Verfügung. Jede hat für Einzahlungen ihr eigenes Timing. Einige davon können nicht für Abhebungen verwendet werden. Die vollständigen Einzelheiten für die vorhandenen Ein- und Auszahlungsmethoden, einschließlich der Bearbeitungszeiten, finden Sie <a href='/binary-static/de/cashier/payment_methods.html' class='pjaxload'>hier:</a>
+    Das Unternehmen stellt mehrere Einzahlungsmethoden zur Verfügung. Jede hat für Einzahlungen ihr eigenes Timing. Einige davon können nicht für Abhebungen verwendet werden. Die vollständigen Einzelheiten für die vorhandenen Ein- und Auszahlungsmethoden, einschließlich der Bearbeitungszeiten, finden Sie <a href='/binary-static/de/cashier/payment_methods.html' class='pjaxload'>hier.</a>
     </p>
     <p>
         Ihr Konto darf nicht als Bankkonto verwendet werden und Einzahlungen dürfen nur im Hinblick auf die Verwendung für den Kauf von Kontrakten erfolgen. Das Unternehmen ist keine Finanzinstitution. Die Kunden erhalten für Ihre Guthaben keine Zinsen. Sollten Sie wiederholt Einzahlungen und Abhebungen vornehmen, ohne dass entsprechende Kontrakte platziert werden, behalten wir uns das Recht vor, ohne vorherige Ankündigung vor Kündigung des Kontos, dieses mit anfallenden Bankgebühren zu belasten.
@@ -520,7 +525,7 @@ Sie willigen ein, dass Ihre persönlichen Daten zum Zwecke der Identitätsprüfu
                 Sie sind über 18 Jahre alt. Wenn Sie in Estland wohnen, müssen Sie über 21 Jahre alt sein;
             </li>
             <li>
-                Sie sind kein Bewohner eines eingeschränkten Landes wie die USA, Japan, Hongkong, Bahamas, Costa Rica, Malaysia, Malta, Iran, Nordkorea, Jersey, oder Irak;
+                Sie sind kein Bewohner eines eingeschränkten Landes wie Afghanistan, Bosnien und Herzegowina, Costa Rica, Guyana, Hongkong, Iran, Irak, Jersey, Laos, Malaisien, Malta, Nordkorea, Syrien, Uganda, USA, Vanuatu oder Jemen;
             </li>
             <li>
                 Sie haben ausreichende Erfahrung und Kenntnisse hinsichtlich des Finanzhandels, um in der Lage zu sein, die Vorzüge und Risiken beim Erwerb von Finanzverträgen auf dieser Site zu beurteilen und haben dies getan, ohne sich dabei auf Informationen zu verlassen, die auf dieser Site enthalten sind.
@@ -807,7 +812,7 @@ Sie willigen ein, dass Ihre persönlichen Daten zum Zwecke der Identitätsprüfu
       <div id="api-tac-tab-content" class="toggle-content invisible">
         <div class="gr-12">
 
-    <h2>Binary.com Application Program Interface ("API") Terms and Conditions</h2>
+    <h2>Binary.com Allgmeine Geschäftsbedingungen des Applikationsprogramms Interface („API”)</h2>
 
     <p>Dieses Dokument (der „Vertrag") legt die Allgemeinen Geschäftsbedingungen (AGB) zwischen "dem Unternehmen", d. h. der Binary Services Ltd. ("wir", "uns" und "unser") und Ihnen (der Person, die sich für das Binary.com Application Program Interface angemeldet hat ("API", "Sie" oder "Ihr") fest.</p>
     <ol class="reset_ol">
@@ -1129,10 +1134,15 @@ Sie willigen ein, dass Ihre persönlichen Daten zum Zwecke der Identitätsprüfu
         BIEL ist ein in Malta unter der Registriernummer C70156 eingetragenes Unternehmen und hat seine angemeldete Hauptniederlassung in Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta.
     </p>
     <p>
-        Wir sind von der Malta Financial Services Authority ("MFSA") zugelassen und werden von ihr nach dem Investment Services Act (Artikel 370, Maltesischen Gesetze) (dem "Gesetz") bei der Ausführung von Anlagegeschäften überwacht. Wir sind von der MFSA nur ausschließlich zum Handel auf eigene Rechnung (z.B. bei Geschäften als Gegenpartei anzubieten oder zu handeln) zugelassen und dies hinsichtlich derivater Finanzprodukte (hauptsächlich binäre Optionen) auf der Grundlage von Devisen, Indizes, Aktien oder weiterer Finanzprodukte oder Anlagen ("Finanzprodukte"). Es ist uns nicht genehmigt, Ihnen eine Anlageberatung oder andere Anlagedienstleistungen außerhalb des Handels von Finanzprodukten auf eigene Rechnung anzubieten oder zu gewähren. Sollten Sie der Ansicht sein, dass Sie eine Anlageberatung oder Anlagedienstleistungen neben den oben beschriebenen benötigen, müssen Sie sich mit einem unabhängigen Finanzberater oder einer Finanzberatungsfirma in Verbindung setzen.
+        We are authorised and regulated by the Malta Financial Services Authority ("MFSA") under the Investment Services Act (Cap. 370, Laws of Malta) (the "Act") to carry on investment business.  We are authorised by the MFSA to deal on own account (i.e. offer and act as counterparty to trades) and to execute orders on behalf of other persons, both services are in relation to financial derivative products (primarily binary options) relating to foreign exchange, indices, stocks and other financial products or assets ("Financial Products"). We are not authorised to and do not offer or provide investment advice or any other investment services other than those described above. Should you feel that you require investment advice or investment services other that those described above then you should contact an independent financial advisor or firm.
     </p>
     <p>
         Bei der Erbringung dieser Dienstleistungen müssen wir uns an das Gesetz, jede einschlägige Vorschrift, Satzungen, Lizenzbedingungen, Richtlinien, Wechselvorschriten und weitere Bestimmungen und Marktpraktiken (die "Regeln") halten. Im Fall einer Unstimmigkeit zwischen diesen ST&Cs und den Regeln, sind die letzteren maßgebend.
+    </p>
+
+    <h2>Beschränkungen</h2>
+    <p>
+        Citizens of Afghanistan, Belgium, Bosnia and Herzegovina, Guyana, Iraq, Lao PDR, Syria, Uganda, Vanuatu or Yemen shall be restricted from opening an account with Binary Investments (Europe) Ltd.
     </p>
 
     <h2>Kundenkategorisierung</h2>
@@ -1468,8 +1478,8 @@ Sie willigen ein, dass Ihre persönlichen Daten zum Zwecke der Identitätsprüfu
                                 <li>
                                     <a class="pjaxload" href="/binary-static/de/about-us.html">Über uns</a>
                                 </li>
-                                <li>
-                                    <a class="pjaxload id-hide ar-hide" href="/binary-static/de/group-information.html">Konzerninformationen</a>
+                                <li class="id-hide ar-hide">
+                                    <a class="pjaxload" href="/binary-static/de/regulation.html">Regulatory Information</a>
                                 </li>
                                 <li>
                                     <a class="pjaxload" href="/binary-static/de/group-history.html">Konzerngeschichte</a>
@@ -1488,8 +1498,11 @@ Sie willigen ein, dass Ihre persönlichen Daten zum Zwecke der Identitätsprüfu
                         <div class="gr-4">
                             <h4 class="secondary-color">Ausbildung</h4>
                             <ul>
-                                <li>
+                                <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/de/why-us.html">Warum uns?</a>
+                                </li>
+                                <li class="all-hide ja-show-block">
+                                    <a class="pjaxload" href="/binary-static/de/why-us-jp.html">Warum uns?</a>
                                 </li>
                                 <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/de/get-started.html">Erste Schritte</a>
@@ -1504,10 +1517,10 @@ Sie willigen ein, dass Ihre persönlichen Daten zum Zwecke der Identitätsprüfu
                                     <a href="http://www.gamcare.org.uk/" target="_blank">GamCare</a>
                                 </li>
                                 <li class="ja-hide blog">
-                                    <a href="http://blog.binary.com" target="_blank">Blog</a>
+                                    <a href="http://academy.binary.com" target="_blank">Blog</a>
                                 </li>
                                 <li class='ja-hide id-hide'>
-                                    <a href="https://blog.binary.com/en/events/" target="_blank">Webinare</a>
+                                    <a href="https://academy.binary.com/en/events/" target="_blank">Webinare</a>
                                 </li>
                             </ul>
                         </div>
@@ -1535,7 +1548,7 @@ Sie willigen ein, dass Ihre persönlichen Daten zum Zwecke der Identitätsprüfu
                 <div class="gr-6 gr-12-m gr-parent gr-no-gutter">
                     <div class="gr-row">
                         <div class="gr-4">
-                           <h4 class="secondary-color">Bedingungen</h4>
+                           <h4 class="secondary-color">Legal</h4>
                            <ul>
                                <li class='ja-hide'>
                                    <a class="pjaxload" href="/binary-static/de/terms-and-conditions.html">Allgemeine Geschäftsbedingungen</a>
@@ -1555,19 +1568,16 @@ Sie willigen ein, dass Ihre persönlichen Daten zum Zwecke der Identitätsprüfu
                                    <a class="pjaxload" href="/binary-static/de/responsible-trading.html">Verantwortungsbewusstes Handeln</a>
                                </li>
                                <li class="ja-hide">
-                               <a class="pjaxload" href="/binary-static/de/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">Reklamationen</a>
-                               </li>
-                               <li class="ja-hide id-hide ru-hide">
-                                   <a href="/binary-static/download/BIEL_Prospectus.pdf" target="_blank">BIEL Prospekte</a>
-                               </li>
-                               <li class="ja-hide id-hide ru-hide">
-                                   <a href="/binary-static/download/BIEL_Pillar_3_Report.pdf" target="_blank">BIEL Pillar III</a>
+                                   <a class="pjaxload" href="/binary-static/de/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">Reklamationen</a>
                                </li>
                            </ul>
                        </div>
                        <div class="gr-4 ja-hide">
                            <h4 class="secondary-color">Apps</h4>
                            <ul>
+                               <li>
+                                   <a class="pjaxload" href="/binary-static/de/platforms.html">Platforms</a>
+                               </li>
                                <li>
                                    <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">TickTrade App</a>
                                </li>
@@ -1640,7 +1650,7 @@ Sie willigen ein, dass Ihre persönlichen Daten zum Zwecke der Identitätsprüfu
                     <div class="gr-parent">
                         <div class="gr-row">
                             <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p">
-                                Diese Website wird in Großbritannien und auf der Isle of Man von Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, Britische Inseln vermarktet und wird von (1) der Gambling Commission (Glücksspielbehörde) der Isle of Man, Britische Inseln zugelassen und überwacht - <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>Lizenz anzeigen</a>. Die vorliegende Online Glücksspielgenehmigung wurde am 31. August 2012 erteilt. Diese Website wird in den anderen Ländern der EU für von Binary Investments (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, angebotene Investmentprodukte vermarktet, die (1) von der Malta Gaming Authority auf Malta zugelassen sind und überwacht werden. Die Lizenznummer lautet MGA/CL2/118/2000, 26. Mai 2015 - <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495' target='_blank'>Lizenz anzeigen</a>. Die Dienstleistungen dieser Website stehen in den USA, Japan oder Hongkong oder Personen unter 18 Jahren nicht zur Verfügung.
+                                Diese Website wird in Großbritannien und auf der Isle of Man von Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, Britische Inseln vermarktet und wird von (1) der Gambling Commission (Glücksspielbehörde) der Isle of Man, Britische Inseln zugelassen und überwacht - <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>Lizenz anzeigen</a>. Die vorliegende Online Glücksspielgenehmigung wurde am 31. August 2012 erteilt. Diese Website wird in den anderen Ländern der EU für von Binary Investments (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, angebotene Investmentprodukte vermarktet, die (1) von der Malta Gaming Authority auf Malta zugelassen sind und überwacht werden. Die Lizenznummer lautet MGA/CL2/118/2000, 26. Mai 2015 - <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495' target='_blank'>Lizenz anzeigen</a>. Die Dienstleistungen dieser Website stehen in manchen Ländern wie den USA, Costa Rica, Hongkong oder Personen unter 18 Jahren nicht zur Verfügung.
                             </div>
                             <div class="ja-hide gr-3 gr-12-m gr-5-p" id="social-networks">
                                 <div id="fb-root">
@@ -1684,4 +1694,8 @@ Sie willigen ein, dass Ihre persönlichen Daten zum Zwecke der Identitätsprüfu
             </div>
         </div>
     </div>
+    <div id="end-note" class="invisible"></div>
 </div>
+
+    </body>
+</html>

@@ -42,7 +42,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/binary-static/images/favicons/favicon-32x32.png" >
 
           <link rel="alternate" href="/binary-static/en/terms-and-conditions.html" hreflang="EN" /> 
-          <link rel="alternate" href="/binary-static/ar/terms-and-conditions.html" hreflang="AR" /> 
           <link rel="alternate" href="/binary-static/de/terms-and-conditions.html" hreflang="DE" /> 
           <link rel="alternate" href="/binary-static/es/terms-and-conditions.html" hreflang="ES" /> 
           <link rel="alternate" href="/binary-static/fr/terms-and-conditions.html" hreflang="FR" /> 
@@ -51,15 +50,16 @@
           <link rel="alternate" href="/binary-static/pl/terms-and-conditions.html" hreflang="PL" /> 
           <link rel="alternate" href="/binary-static/pt/terms-and-conditions.html" hreflang="PT" /> 
           <link rel="alternate" href="/binary-static/ru/terms-and-conditions.html" hreflang="RU" /> 
+          <link rel="alternate" href="/binary-static/th/terms-and-conditions.html" hreflang="TH" /> 
           <link rel="alternate" href="/binary-static/vi/terms-and-conditions.html" hreflang="VI" /> 
          
           <link rel="alternate" href="/binary-static/zh_cn/terms-and-conditions.html" hreflang="ZH_CN" /> 
           <link rel="alternate" href="/binary-static/zh_tw/terms-and-conditions.html" hreflang="ZH_TW" /> 
         
-         <link rel="stylesheet" href="/binary-static/css/binary.min.css?8azhxm4e">
-         <link rel="stylesheet" href="https://style.binary.com/binary.css?8azhxm4e">
+         <link rel="stylesheet" href="/binary-static/css/binary.min.css?zawp89rx">
+         <link rel="stylesheet" href="https://style.binary.com/binary.css?zawp89rx">
         
-        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?8azhxm4e' defer async></script>
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?zawp89rx' defer async></script>
     </head>
 
 
@@ -84,7 +84,6 @@
                             <div class="JA" id='language_select'>
                                 <select>
             <option class='EN'>English</option>
-                <option class='AR'>Arabic</option>
                 <option class='DE'>Deutsch</option>
                 <option class='ES'>Español</option>
                 <option class='FR'>Français</option>
@@ -93,7 +92,7 @@
                 <option class='PL'>Polish</option>
                 <option class='PT'>Português</option>
                 <option class='RU'>Русский</option>
-                <option class='VI'>Vietnamese</option>
+                    <option class='VI'>Vietnamese</option>
                     <option class='ZH_CN'>简体中文</option>
                 <option class='ZH_TW'>繁體中文</option>
     </select>
@@ -124,13 +123,16 @@
                     <div class='gr-6 gr-hide-m gr-hide-p gr-padding-10'>
                         <div id='main-navigation'>
                             <ul id="menu-top">
-                                <li>
+                                <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/ja/why-us.html">サービス概要</a>
+                                </li>
+                                <li class="all-hide ja-show-inline-block">
+                                    <a class="pjaxload" href="/binary-static/ja/why-us-jp.html">サービス概要</a>
                                 </li>
                                 <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/ja/get-started.html">はじめに</a>
                                 </li>
-                                <li class="all-hide ja-show-block">
+                                <li class="all-hide ja-show-inline-block">
                                   <a class="pjaxload" href="/binary-static/ja/get-started-jp.html">はじめに</a>
                                 </li>
                                 <li>
@@ -139,7 +141,7 @@
                                 <li class="ja-hide" id="main-navigation-trading">
                                     <a class="pjaxload" href="/binary-static/ja/trading.html">トレード</a>
                                 </li>
-                                <li class="all-hide ja-show-block" id="main-navigation-jptrading">
+                                <li class="all-hide ja-show-inline-block" id="main-navigation-jptrading">
                                     <a class="pjaxload" href="/binary-static/ja/jptrading.html">トレード</a>
                                 </li>
                             </ul>
@@ -238,8 +240,11 @@
     <div class='gr-hide gr-show-m gr-show-p' id='mobile-menu-container'>
     <div class='gr-hide' id='mobile-menu'>
         <ul>
-            <li>
+            <li class="ja-hide">
                 <a class="pjaxload" href="/binary-static/ja/why-us.html">サービス概要</a>
+            </li>
+            <li class="all-hide ja-show-block">
+                <a class="pjaxload" href="/binary-static/ja/why-us-jp.html">サービス概要</a>
             </li>
             <li class="ja-hide">
               <a class="pjaxload" href="/binary-static/ja/get-started.html">はじめに</a>
@@ -325,7 +330,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </ul>
         </li>
         <li id="datafeed-tab" class="tm-li"><a href="#datafeed-tab" class="tm-a">データフィード</a></li>
-        <li id="privacy-tab" class="tm-li"><a href="#privacy-tab" class="tm-a">個人情報の取り扱いについて</a></li>
+        <li id="privacy-tab" class="tm-li"><a href="#privacy-tab" class="tm-a">口座開設時確認書類</a></li>
         <li id="copyright-tab" class="tm-li"><a href="#copyright-tab" class="tm-a">著作権</a></li>
         <li id="risk-tab" class="tm-li last"><a href="#risk-tab" class="tm-a">免責事項</a></li>
         <li id="order-execution-tab" class="tm-li last"><a href="#order-execution-tab" class="tm-a">オーダー実行</a></li>
@@ -338,7 +343,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="gr-12">
     <h2>店頭バイナリーオプション取引約款</h2>
     <p>
-        <i>バージョン41　最終更新日：2016-06-27</i>
+        <i>第42版・最終編集日：2016年9月14日</i>
     </p>
     <p>
         お客さまはこの店頭通貨バイナリーオプション取引約款を熟読し、その内容に同意し、異議のないことをご確認ください。
@@ -648,7 +653,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 １８歳以上であり、エストニア国民の場合は２１歳以上です。
             </li>
             <li>
-                アメリカ合衆国、日本、香港、バハマ、コスタリカ、マレーシア、マルタ共和国、イラン、北朝鮮、ジャージー島、イラクといった制限のある国に居住されていないこと。
+                お客様はアフガニスタン、ボスニア・ヘルツェゴビナ、コスタリカ、ガイアナ、香港、イラン、イラク、ジャージー、ラオス、マレーシア、マルタ、北朝鮮、シリア、ウガンダ、米国、バヌアツ、イエメンなどの特定の国の居住者ではありません。
             </li>
             <li>
                 当社サービスを通じて金融トレードを購入するメリットとリスクを評価でき、かつ当社サイトに掲載されている情報に依存せずに金融トレードを行ったことのあるような金融トレードにおける十分な経験と知識があります。
@@ -1123,7 +1128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </ol>
         </li>
 
-        <li><strong>セキュリティ情報</strong>
+        <li><strong>信託により区分管理</strong>
             <ol class="reset_ol">
                 <li>Binary.comを発見するあなたのアプリケーションのセキュリティの欠損または侵入をBinary.comに書き込んだり、当社の開発者向けサイトの一部である％2に記入、または<a href="https://binary.vanillacommunity.com" target="_blank">Vanilla Community</a>でディスカッションスレッドを上げることによって報告しなければいけません。セキュリティの欠損を修正するためにあなたはBinary.comと共同し、いかなる侵入や侵入者をすみやかに切断します。セキュリティの欠損またはアプリケーション、API、コンテンツへの侵入が起こった際、いかなる場合においてもBinary.comからの書面による事前の明示的な許可なしに、公式声明を発表しません。（例：報道、ブログ、ソーシャルメディア、掲示板など）</li>
             </ol>
@@ -1260,10 +1265,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         BIELは登録番号C70156の下マルタに設立され、Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Maltaに登録事務所を有しています。
     </p>
     <p>
-        当社は投資事業を行ううえで、投資サービス法(Cap. 370, マルタ法律)の下、マルタ金融サービス庁 ("MFSA")によって承認、規制されています。外国為替、インデックス、株式、その他金融商品または資産（金融商品）に関する金融デリバティブ商品（主にバイナリーオプション）を自身の口座で取り扱うことを（取引相手としてのオファーや行為）MFSAによって独占的に承認されています。投資アドバイスまたは金融商品を自身の口座で取り扱う行為を超えるその他投資サービスの提供は承認されていないため、致しかねます。投資アドバイスまたは上記以外のその他投資サービスが必要だと感じだ際は、独立財務顧問または会社に連絡する必要があります。
+        当社は投資事業を行ううえで、投資サービス法(Cap. 370, マルタ法律)の下、マルタ金融サービス庁 ("MFSA")によって承認、規制されています。外国為替、インデックス、株式、その他金融商品または資産（金融商品）に関する金融デリバティブ商品（主にバイナリーオプション）を自身の口座で取り扱うことを（取引相手としてのオファーや行為）MFSAによって承認されています。投資アドバイスまたは上述の行為を超えるその他投資サービスの提供は承認されていないため、致しかねます。投資アドバイスまたは上記以外のその他投資サービスが必要だと感じだ際は、独立財務顧問または会社に連絡する必要があります。
     </p>
     <p>
         これらのサービスを提供するにあたり、当社は法、適用可能な規則、法律、ライセンス条件、ガイドライン、為替制限、その他既定や市場慣行（規則）に基づいています。これらST＆Csと規則の間に矛盾が生じた場合、後者を優先する必要があります。
+    </p>
+
+    <h2>制限</h2>
+    <p>
+        アフガニスタン、ベルギー、ボスニア・ヘルツェゴビナ、ガイアナ、イラク、ラオス、シリア、ウガンダ、バヌアツ,
+イエメンの方は、Binary Investments (Europe) Ltd.にて口座を開設いただきます。
     </p>
 
     <h2>クライアント区分</h2>
@@ -1603,8 +1614,8 @@ Binary.comでは、回線信号のパワー、インターネット経由での�
                                 <li>
                                     <a class="pjaxload" href="/binary-static/ja/about-us.html">グループ会社概要</a>
                                 </li>
-                                <li>
-                                    <a class="pjaxload id-hide ar-hide" href="/binary-static/ja/group-information.html">グループ企業情報</a>
+                                <li class="id-hide ar-hide">
+                                    <a class="pjaxload" href="/binary-static/ja/regulation.html">監督機関の情報</a>
                                 </li>
                                 <li>
                                     <a class="pjaxload" href="/binary-static/ja/group-history.html">グループの沿革</a>
@@ -1623,8 +1634,11 @@ Binary.comでは、回線信号のパワー、インターネット経由での�
                         <div class="gr-4">
                             <h4 class="secondary-color">お役立ち情報</h4>
                             <ul>
-                                <li>
+                                <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/ja/why-us.html">サービス概要</a>
+                                </li>
+                                <li class="all-hide ja-show-block">
+                                    <a class="pjaxload" href="/binary-static/ja/why-us-jp.html">サービス概要</a>
                                 </li>
                                 <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/ja/get-started.html">はじめに</a>
@@ -1639,10 +1653,10 @@ Binary.comでは、回線信号のパワー、インターネット経由での�
                                     <a href="http://www.gamcare.org.uk/" target="_blank">GamCare</a>
                                 </li>
                                 <li class="ja-hide blog">
-                                    <a href="http://blog.binary.com" target="_blank">ブログ</a>
+                                    <a href="http://academy.binary.com" target="_blank">ブログ</a>
                                 </li>
                                 <li class='ja-hide id-hide'>
-                                    <a href="https://blog.binary.com/en/events/" target="_blank">ウェビナー</a>
+                                    <a href="https://academy.binary.com/en/events/" target="_blank">ウェビナー</a>
                                 </li>
                             </ul>
                         </div>
@@ -1670,7 +1684,7 @@ Binary.comでは、回線信号のパワー、インターネット経由での�
                 <div class="gr-6 gr-12-m gr-parent gr-no-gutter">
                     <div class="gr-row">
                         <div class="gr-4">
-                           <h4 class="secondary-color">各種規約</h4>
+                           <h4 class="secondary-color">取引規定・約款</h4>
                            <ul>
                                <li class='ja-hide'>
                                    <a class="pjaxload" href="/binary-static/ja/terms-and-conditions.html">店頭バイナリーオプション取引約款</a>
@@ -1680,31 +1694,28 @@ Binary.comでは、回線信号のパワー、インターネット経由での�
                                </li>
                                <li class='ja-hide'>
                                    <a class="pjaxload"
-                                      href="/binary-static/ja/terms-and-conditions.html#privacy-tab">取引規約</a>
+                                      href="/binary-static/ja/terms-and-conditions.html#privacy-tab">口座開設時確認書類</a>
                                </li>
                                <li class='hidden ja-show-block'>
                                    <a class="pjaxload"
-                                      href="/binary-static/ja/terms-and-conditions-jp.html?selected_tab=privacy-tab">取引規約</a>
+                                      href="/binary-static/ja/terms-and-conditions-jp.html?selected_tab=privacy-tab">口座開設時確認書類</a>
                                </li>
                                <li class="ja-hide">
                                    <a class="pjaxload" href="/binary-static/ja/responsible-trading.html">健全なトレードのために</a>
                                </li>
                                <li class="ja-hide">
-                               <a class="pjaxload" href="/binary-static/ja/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">クレーム</a>
-                               </li>
-                               <li class="ja-hide id-hide ru-hide">
-                                   <a href="/binary-static/download/BIEL_Prospectus.pdf" target="_blank">BIEL目論見書</a>
-                               </li>
-                               <li class="ja-hide id-hide ru-hide">
-                                   <a href="/binary-static/download/BIEL_Pillar_3_Report.pdf" target="_blank">BIELの3本柱</a>
+                                   <a class="pjaxload" href="/binary-static/ja/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">クレーム</a>
                                </li>
                            </ul>
                        </div>
                        <div class="gr-4 ja-hide">
-                           <h4 class="secondary-color">App</h4>
+                           <h4 class="secondary-color">アプリケーション</h4>
                            <ul>
                                <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">Tickトレードアプリ</a>
+                                   <a class="pjaxload" href="/binary-static/ja/platforms.html">プラットフォーム</a>
+                               </li>
+                               <li>
+                                   <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">Tickトレードアプリケーション</a>
                                </li>
                                <li>
                                    <a href="https://shop.binary.com/collections/applications/products/webtrader" target="_blank">ウェブトレーダー</a>
@@ -1825,4 +1836,8 @@ Binary.comでは、回線信号のパワー、インターネット経由での�
             </div>
         </div>
     </div>
+    <div id="end-note" class="invisible"></div>
 </div>
+
+    </body>
+</html>

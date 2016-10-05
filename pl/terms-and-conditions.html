@@ -41,7 +41,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/binary-static/images/favicons/favicon-32x32.png" >
 
           <link rel="alternate" href="/binary-static/en/terms-and-conditions.html" hreflang="EN" /> 
-          <link rel="alternate" href="/binary-static/ar/terms-and-conditions.html" hreflang="AR" /> 
           <link rel="alternate" href="/binary-static/de/terms-and-conditions.html" hreflang="DE" /> 
           <link rel="alternate" href="/binary-static/es/terms-and-conditions.html" hreflang="ES" /> 
           <link rel="alternate" href="/binary-static/fr/terms-and-conditions.html" hreflang="FR" /> 
@@ -50,15 +49,16 @@
           <link rel="alternate" href="/binary-static/pl/terms-and-conditions.html?l=pl" hreflang="PL" /> 
           <link rel="alternate" href="/binary-static/pt/terms-and-conditions.html" hreflang="PT" /> 
           <link rel="alternate" href="/binary-static/ru/terms-and-conditions.html" hreflang="RU" /> 
+          <link rel="alternate" href="/binary-static/th/terms-and-conditions.html" hreflang="TH" /> 
           <link rel="alternate" href="/binary-static/vi/terms-and-conditions.html" hreflang="VI" /> 
          
           <link rel="alternate" href="/binary-static/zh_cn/terms-and-conditions.html" hreflang="ZH_CN" /> 
           <link rel="alternate" href="/binary-static/zh_tw/terms-and-conditions.html" hreflang="ZH_TW" /> 
         
-         <link rel="stylesheet" href="/binary-static/css/binary.min.css?8azhxm4e">
-         <link rel="stylesheet" href="https://style.binary.com/binary.css?8azhxm4e">
+         <link rel="stylesheet" href="/binary-static/css/binary.min.css?zawp89rx">
+         <link rel="stylesheet" href="https://style.binary.com/binary.css?zawp89rx">
         
-        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?8azhxm4e' defer async></script>
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?zawp89rx' defer async></script>
     </head>
 
 
@@ -83,7 +83,6 @@
                             <div class="PL" id='language_select'>
                                 <select>
             <option class='EN'>English</option>
-                <option class='AR'>Arabic</option>
                 <option class='DE'>Deutsch</option>
                 <option class='ES'>Español</option>
                 <option class='FR'>Français</option>
@@ -92,7 +91,7 @@
                 <option class='PL' selected='selected'>Polish</option>
                 <option class='PT'>Português</option>
                 <option class='RU'>Русский</option>
-                <option class='VI'>Vietnamese</option>
+                    <option class='VI'>Vietnamese</option>
                     <option class='ZH_CN'>简体中文</option>
                 <option class='ZH_TW'>繁體中文</option>
     </select>
@@ -123,13 +122,16 @@
                     <div class='gr-6 gr-hide-m gr-hide-p gr-padding-10'>
                         <div id='main-navigation'>
                             <ul id="menu-top">
-                                <li>
+                                <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/pl/why-us.html">Dlaczego my?</a>
+                                </li>
+                                <li class="all-hide ja-show-inline-block">
+                                    <a class="pjaxload" href="/binary-static/pl/why-us-jp.html">Dlaczego my?</a>
                                 </li>
                                 <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/pl/get-started.html">Start</a>
                                 </li>
-                                <li class="all-hide ja-show-block">
+                                <li class="all-hide ja-show-inline-block">
                                   <a class="pjaxload" href="/binary-static/pl/get-started-jp.html">Start</a>
                                 </li>
                                 <li>
@@ -138,7 +140,7 @@
                                 <li class="ja-hide" id="main-navigation-trading">
                                     <a class="pjaxload" href="/binary-static/pl/trading.html">Handluj</a>
                                 </li>
-                                <li class="all-hide ja-show-block" id="main-navigation-jptrading">
+                                <li class="all-hide ja-show-inline-block" id="main-navigation-jptrading">
                                     <a class="pjaxload" href="/binary-static/pl/jptrading.html">Handluj</a>
                                 </li>
                             </ul>
@@ -237,8 +239,11 @@
     <div class='gr-hide gr-show-m gr-show-p' id='mobile-menu-container'>
     <div class='gr-hide' id='mobile-menu'>
         <ul>
-            <li>
+            <li class="ja-hide">
                 <a class="pjaxload" href="/binary-static/pl/why-us.html">Dlaczego my?</a>
+            </li>
+            <li class="all-hide ja-show-block">
+                <a class="pjaxload" href="/binary-static/pl/why-us-jp.html">Dlaczego my?</a>
             </li>
             <li class="ja-hide">
               <a class="pjaxload" href="/binary-static/pl/get-started.html">Start</a>
@@ -324,7 +329,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </ul>
         </li>
         <li id="datafeed-tab" class="tm-li"><a href="#datafeed-tab" class="tm-a">Dane</a></li>
-        <li id="privacy-tab" class="tm-li"><a href="#privacy-tab" class="tm-a">Prywatność i bezpieczeństwo</a></li>
+        <li id="privacy-tab" class="tm-li"><a href="#privacy-tab" class="tm-a">Bezpieczeństwo i prywatność</a></li>
         <li id="copyright-tab" class="tm-li"><a href="#copyright-tab" class="tm-a">Prawa autorskie</a></li>
         <li id="risk-tab" class="tm-li last"><a href="#risk-tab" class="tm-a">Zastrzeżenie dotyczące ryzyka</a></li>
         <li id="order-execution-tab" class="tm-li last"><a href="#order-execution-tab" class="tm-a">Wykonanie zlecenia</a></li>
@@ -337,7 +342,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="gr-12">
     <h2>Regulamin</h2>
     <p>
-        <i>Wersja 41. Ostatnio zmieniana dnia 27.06.2016 r.</i>
+        <i>Wersja 42. Ostatnio zmieniana dnia 14 września 2016 r.</i>
     </p>
     <p>
         Obowiązkiem każdego Klienta jest przeczytanie i zrozumienie niniejszej informacji prawnej oraz regulaminu, na mocy których regulowane jest pozyskiwanie kontraktów finansowych za pośrednictwem tego portalu.
@@ -407,7 +412,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         Firma przechowuje środki klientów na innych rachunkach bankowych niż rachunek operacyjny Podjęto również działania, aby zapewnić, że aktywa zgromadzone na kontach klientów zostaną zwrócone klientom w przypadku niewypłacalności firmy. Tym samym spełnione zostają wymagania instytucji Gambling Commission dotyczące oddzielenia funduszy klientów na następującym poziomie: średnia ochrona.
     </p>
     <p>
-    Firma oferuje różne metody wpłaty środków. Każda z nich posiada własne godziny dla wpłat i wypłaty mogą nie być dostępne w niektórych z nich. Wszystkie szczegóły dotyczące dostępnych metod dokonywania wpłat i wypłat, w tym godziny rozliczeń są dostępne <a href='/binary-static/pl/cashier/payment_methods.html' class='pjaxload'>tutaj:</a>
+    Firma oferuje różne metody wpłaty środków. Każda z nich posiada własne godziny dla wpłat i wypłaty mogą nie być dostępne w niektórych z nich. Wszystkie szczegóły dotyczące dostępnych metod dokonywania wpłat i wypłat, w tym godziny rozliczeń są dostępne <a href='/binary-static/pl/cashier/payment_methods.html' class='pjaxload'>tutaj.</a>
     </p>
     <p>
         Twoje konto nie powinno być wykorzystywane jako rachunek bankowy i wszelkie wpłaty powinny być dokonywane z zamiarem wykorzystania tych środków na zakup kontraktów. Firma nie jest instytucją finansową i depozyty Klientów nie są oprocentowane. W przypadku powtarzającego się dokonywania wpłat i wypłat środków bez współmiernego do nich zakupu kontraktów, Firma zastrzega sobie prawo do pobrania z Twojego konta środków na pokrycie wszelkich poniesionych przez nią opłat bankowych, bez wcześniejszego powiadomienia.
@@ -515,7 +520,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 masz skończone 18 lat, chyba że jesteś mieszkańcem Estonii – wtedy musisz mieć skończone 21 lat;
             </li>
             <li>
-                nie jesteś mieszkańcem kraju z ograniczonym dostępem, czyli USA, Japonii, Hongkongu, Bahamów, Kostaryki, Malezji, Malty, Iranu, Korei Północnej, Jersey, ani Iraku;
+                nie jesteś mieszkańcem kraju z ograniczonym dostępem, czyli Afganistanu, Bośni i Hercegowiny, Kostaryki, Gujany, Hongkongu, Iranu, Iraku, Jersey, Laosu, Malezji, Malty, Korei Północnej, Syrii, Ugandy, Stanów Zjednoczonych, Republiki Vanuatu ani Jemenu;
             </li>
             <li>
                 posiadasz wystarczającą wiedzę i doświadczenie w kwestii handlu finansowego i jesteś zdolny/a do oceny korzyści i ryzyka związanego z nabywaniem kontraktów za pośrednictwem niniejszego portalu i podejmujesz to działanie, nie polegając na informacjach zawartych na tym portalu.
@@ -1124,10 +1129,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         BIEL to firma założona na Malcie o numerze identyfikacyjnym C70156 z siedzibą pod adresem: Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta.
     </p>
     <p>
-        Na mocy ustawy Malta Investment Services Act (Cap. 370, zbiór ustaw Malty) („Ustawa”) za nadzór nad naszą firmą odpowiada Urząd ds. Usług Finansowych na Malcie: Malta Financial Services Authority („MFSA”), który zezwolił nam na prowadzenie działalności inwestycyjnej. Jesteśmy wyłącznie uprawnieni przez MFSA do realizowania transakcji na własny rachunek (np. występowanie w roli kontrahenta transakcji) i odnosi się to do finansowych produktów pochodnych (przede wszystkim opcji binarnych) opartych na walutach obcych, wskaźnikach, akcjach i innych produktach finansowych lub aktywach („Produkty finansowe”). Nie posiadamy zezwolenia na oferowanie lub zapewnianie doradztwa inwestycyjnego lub jakichkolwiek innych usług inwestycyjnych za wyjątkiem handlowania Produktami finansowymi na własny rachunek i nie oferujemy takich usług. Jeśli wydaje Ci się, że potrzebujesz porady inwestycyjnej lub usług inwestycyjnych innych niż te opisane powyżej, powinieneś/powinnaś skontaktować się z niezależnym doradcą inwestycyjnym lub firmą doradztwa inwestycyjnego.
+        Na mocy ustawy Malta Investment Services Act (Cap. 370, zbiór ustaw Malty) („Ustawa”) za nadzór nad naszą firmą odpowiada Urząd ds. Usług Finansowych na Malcie: Malta Financial Services Authority („MFSA”), który zezwolił nam na prowadzenie działalności inwestycyjnej. Jesteśmy uprawnieni przez MFSA do realizowania transakcji na własny rachunek (np. występowanie w roli kontrahenta transakcji) i realizowania zleceń w imieniu innych osób, co w obu przypadkach odnosi się do finansowych produktów pochodnych (przede wszystkim opcji binarnych) opartych na walutach obcych, wskaźnikach, akcjach i innych produktach finansowych lub aktywach („Produkty finansowe”). Nie posiadamy zezwolenia na oferowanie lub zapewnianie doradztwa inwestycyjnego lub jakichkolwiek innych usług inwestycyjnych za wyjątkiem usług opisanych powyżej i nie oferujemy takich usług. Jeśli wydaje Ci się, że potrzebujesz porady inwestycyjnej lub usług inwestycyjnych innych niż te opisane powyżej, powinieneś/powinnaś skontaktować się z niezależnym doradcą inwestycyjnym lub firmą doradztwa inwestycyjnego.
     </p>
     <p>
         Świadcząc te usługi, musimy przestrzegać Ustawy, wszelkich mających zastosowanie rozporządzeń, przepisów lokalnych, warunków licencyjnych, wytycznych, wymogów wymiany oraz innych przepisów i praktyk rynkowych („Zasady”). W przypadku konfliktu między Regulaminem a Zasadami, za nadrzędne uznaje się Zasady.
+    </p>
+
+    <h2>Ograniczenia</h2>
+    <p>
+        Mieszkańscy Afganistamu, Belgii, Bośni i Hercegowiny, Gujany, Iraku, Laosu, Syrii, Ugandy, Republiki Vanuatu oraz Jemenu nie mogą otwierać konta w Binary Investments (Europe) Ltd.
     </p>
 
     <h2>Klasyfikacja klientów</h2>
@@ -1463,8 +1473,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <li>
                                     <a class="pjaxload" href="/binary-static/pl/about-us.html">O nas</a>
                                 </li>
-                                <li>
-                                    <a class="pjaxload id-hide ar-hide" href="/binary-static/pl/group-information.html">Informacje o grupie</a>
+                                <li class="id-hide ar-hide">
+                                    <a class="pjaxload" href="/binary-static/pl/regulation.html">Informacje o przepisach prawnych</a>
                                 </li>
                                 <li>
                                     <a class="pjaxload" href="/binary-static/pl/group-history.html">Historia grupy</a>
@@ -1483,8 +1493,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="gr-4">
                             <h4 class="secondary-color">Edukacja</h4>
                             <ul>
-                                <li>
+                                <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/pl/why-us.html">Dlaczego my?</a>
+                                </li>
+                                <li class="all-hide ja-show-block">
+                                    <a class="pjaxload" href="/binary-static/pl/why-us-jp.html">Dlaczego my?</a>
                                 </li>
                                 <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/pl/get-started.html">Rozpoczynanie</a>
@@ -1499,10 +1512,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     <a href="http://www.gamcare.org.uk/" target="_blank">GamCare</a>
                                 </li>
                                 <li class="ja-hide blog">
-                                    <a href="http://blog.binary.com" target="_blank">Blog</a>
+                                    <a href="http://academy.binary.com" target="_blank">Blog</a>
                                 </li>
                                 <li class='ja-hide id-hide'>
-                                    <a href="https://blog.binary.com/en/events/" target="_blank">Szkolenia internetowe</a>
+                                    <a href="https://academy.binary.com/en/events/" target="_blank">Szkolenia internetowe</a>
                                 </li>
                             </ul>
                         </div>
@@ -1530,7 +1543,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="gr-6 gr-12-m gr-parent gr-no-gutter">
                     <div class="gr-row">
                         <div class="gr-4">
-                           <h4 class="secondary-color">Warunki</h4>
+                           <h4 class="secondary-color">Legal</h4>
                            <ul>
                                <li class='ja-hide'>
                                    <a class="pjaxload" href="/binary-static/pl/terms-and-conditions.html">Regulamin</a>
@@ -1550,19 +1563,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                    <a class="pjaxload" href="/binary-static/pl/responsible-trading.html">Odpowiedzialny handel</a>
                                </li>
                                <li class="ja-hide">
-                               <a class="pjaxload" href="/binary-static/pl/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">Skargi</a>
-                               </li>
-                               <li class="ja-hide id-hide ru-hide">
-                                   <a href="/binary-static/download/BIEL_Prospectus.pdf" target="_blank">Prospekt BIEL</a>
-                               </li>
-                               <li class="ja-hide id-hide ru-hide">
-                                   <a href="/binary-static/download/BIEL_Pillar_3_Report.pdf" target="_blank">BIEL Filar III</a>
+                                   <a class="pjaxload" href="/binary-static/pl/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">Skargi</a>
                                </li>
                            </ul>
                        </div>
                        <div class="gr-4 ja-hide">
                            <h4 class="secondary-color">Aplikacje</h4>
                            <ul>
+                               <li>
+                                   <a class="pjaxload" href="/binary-static/pl/platforms.html">Platforms</a>
+                               </li>
                                <li>
                                    <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">Aplikacja TickTrade</a>
                                </li>
@@ -1635,7 +1645,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="gr-parent">
                         <div class="gr-row">
                             <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p">
-                                Ten portal jest zarządzany w Wlk. Brytanii i na Wyspie Man przez Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Wyspa Man, Wyspy Brytyjskie; za wydawanie licencji i jego regulację odpowiada (1) Komisja Nadzoru Gier Hazardowych Wyspy Man, na Wyspach Brytyjskich (Gambling Supervision Commission); aktualna licencja na prowadzenie gier hazardowych została wydana dnia 31 sierpnia 2012 r., a w sprawach dotyczących klientów z Wielkiej Brytanii (2) Komisja ds. Gier Hazardowych w Zjednoczonym Królestwie (UK Gambling Commission) – <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>zobacz licencję</a>. W pozostałej części Unii Europejskiej portal jest zarządzany przez Binary Investments (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, podmiot świadczący usługi inwestycyjne kategorii 3, za którego licencję i nadzór odpowiada Urząd ds. Usług Finansowych: Malta Financial Services Authority na Malcie (licencja nr IS/70156), w przypadku produktów inwestycyjnych i przez Binary (Europe) Ltd. w przypadku produktów hazardowych, Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta; za wydawanie licencji i jego regulację odpowiada (1) Urząd ds. Gier Hazardowych na Malcie (Malta Gaming Authority), licencja nr MGA/CL2/118/2000 z dnia 26 maja 2015 r., w sprawach dotyczących klientów ze Zjednoczonego Królestwa (2) Komisja ds. Gier Hazardowych w Zjednoczonym Królestwie (UK Gambling Commission) - <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>zobacz licencję</a>, zaś w sprawach dotyczących klientów z Irlandii (3) irlandzki urząd skarbowy Revenue Commissioners, obecna licencja wydana 29 września 2015 r. (o numerze 1010285). Usługi niniejszego portalu nie są dostępne w Stanach Zjednoczonych, Japonii, Kostaryce ani Hongkongu, ani dla osób poniżej 18 roku życia.
+                                Ten portal jest zarządzany w Wlk. Brytanii i na Wyspie Man przez Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Wyspa Man, Wyspy Brytyjskie; za wydawanie licencji i jego regulację odpowiada (1) Komisja Nadzoru Gier Hazardowych Wyspy Man, na Wyspach Brytyjskich (Gambling Supervision Commission); aktualna licencja na prowadzenie gier hazardowych została wydana dnia 31 sierpnia 2012 r., a w sprawach dotyczących klientów z Wielkiej Brytanii (2) Komisja ds. Gier Hazardowych w Zjednoczonym Królestwie (UK Gambling Commission) – <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>zobacz licencję</a>. W pozostałej części Unii Europejskiej portal jest zarządzany przez Binary Investments (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, podmiot świadczący usługi inwestycyjne kategorii 3, za którego licencję i nadzór odpowiada Urząd ds. Usług Finansowych: Malta Financial Services Authority na Malcie (licencja nr IS/70156), w przypadku produktów inwestycyjnych i przez Binary (Europe) Ltd. w przypadku produktów hazardowych, Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta; za wydawanie licencji i jego regulację odpowiada (1) Urząd ds. Gier Hazardowych na Malcie (Malta Gaming Authority), licencja nr MGA/CL2/118/2000 z dnia 26 maja 2015 r., w sprawach dotyczących klientów ze Zjednoczonego Królestwa (2) Komisja ds. Gier Hazardowych w Zjednoczonym Królestwie (UK Gambling Commission) - <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>zobacz licencję</a>, zaś w sprawach dotyczących klientów z Irlandii (3) irlandzki urząd skarbowy Revenue Commissioners, obecna licencja wydana 29 września 2015 r. (o numerze 1010285). Usługi niniejszego portalu nie są dostępne w niektórych krajach, takich jak Stany Zjednoczone, Kostaryka czy Hongkong, ani dla osób poniżej 18 roku życia.
                             </div>
                             <div class="ja-hide gr-3 gr-12-m gr-5-p" id="social-networks">
                                 <div id="fb-root">
@@ -1679,4 +1689,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
     </div>
+    <div id="end-note" class="invisible"></div>
 </div>
+
+    </body>
+</html>

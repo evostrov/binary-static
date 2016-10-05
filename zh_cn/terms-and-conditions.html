@@ -41,7 +41,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/binary-static/images/favicons/favicon-32x32.png" >
 
           <link rel="alternate" href="/binary-static/en/terms-and-conditions.html" hreflang="EN" /> 
-          <link rel="alternate" href="/binary-static/ar/terms-and-conditions.html" hreflang="AR" /> 
           <link rel="alternate" href="/binary-static/de/terms-and-conditions.html" hreflang="DE" /> 
           <link rel="alternate" href="/binary-static/es/terms-and-conditions.html" hreflang="ES" /> 
           <link rel="alternate" href="/binary-static/fr/terms-and-conditions.html" hreflang="FR" /> 
@@ -50,15 +49,16 @@
           <link rel="alternate" href="/binary-static/pl/terms-and-conditions.html" hreflang="PL" /> 
           <link rel="alternate" href="/binary-static/pt/terms-and-conditions.html" hreflang="PT" /> 
           <link rel="alternate" href="/binary-static/ru/terms-and-conditions.html" hreflang="RU" /> 
+          <link rel="alternate" href="/binary-static/th/terms-and-conditions.html" hreflang="TH" /> 
           <link rel="alternate" href="/binary-static/vi/terms-and-conditions.html" hreflang="VI" /> 
          
           <link rel="alternate" href="/binary-static/zh_cn/terms-and-conditions.html?l=zh_cn" hreflang="ZH_CN" /> 
           <link rel="alternate" href="/binary-static/zh_tw/terms-and-conditions.html" hreflang="ZH_TW" /> 
         
-         <link rel="stylesheet" href="/binary-static/css/binary.min.css?8azhxm4e">
-         <link rel="stylesheet" href="https://style.binary.com/binary.css?8azhxm4e">
+         <link rel="stylesheet" href="/binary-static/css/binary.min.css?zawp89rx">
+         <link rel="stylesheet" href="https://style.binary.com/binary.css?zawp89rx">
         
-        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?8azhxm4e' defer async></script>
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?zawp89rx' defer async></script>
     </head>
 
 
@@ -83,7 +83,6 @@
                             <div class="ZH_CN" id='language_select'>
                                 <select>
             <option class='EN'>English</option>
-                <option class='AR'>Arabic</option>
                 <option class='DE'>Deutsch</option>
                 <option class='ES'>Español</option>
                 <option class='FR'>Français</option>
@@ -92,7 +91,7 @@
                 <option class='PL'>Polish</option>
                 <option class='PT'>Português</option>
                 <option class='RU'>Русский</option>
-                <option class='VI'>Vietnamese</option>
+                    <option class='VI'>Vietnamese</option>
                     <option class='ZH_CN' selected='selected'>简体中文</option>
                 <option class='ZH_TW'>繁體中文</option>
     </select>
@@ -123,13 +122,16 @@
                     <div class='gr-6 gr-hide-m gr-hide-p gr-padding-10'>
                         <div id='main-navigation'>
                             <ul id="menu-top">
-                                <li>
+                                <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/zh_cn/why-us.html">为何选择我们？</a>
+                                </li>
+                                <li class="all-hide ja-show-inline-block">
+                                    <a class="pjaxload" href="/binary-static/zh_cn/why-us-jp.html">为何选择我们？</a>
                                 </li>
                                 <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/zh_cn/get-started.html">开始交易</a>
                                 </li>
-                                <li class="all-hide ja-show-block">
+                                <li class="all-hide ja-show-inline-block">
                                   <a class="pjaxload" href="/binary-static/zh_cn/get-started-jp.html">开始交易</a>
                                 </li>
                                 <li>
@@ -138,7 +140,7 @@
                                 <li class="ja-hide" id="main-navigation-trading">
                                     <a class="pjaxload" href="/binary-static/zh_cn/trading.html">交易</a>
                                 </li>
-                                <li class="all-hide ja-show-block" id="main-navigation-jptrading">
+                                <li class="all-hide ja-show-inline-block" id="main-navigation-jptrading">
                                     <a class="pjaxload" href="/binary-static/zh_cn/jptrading.html">交易</a>
                                 </li>
                             </ul>
@@ -237,8 +239,11 @@
     <div class='gr-hide gr-show-m gr-show-p' id='mobile-menu-container'>
     <div class='gr-hide' id='mobile-menu'>
         <ul>
-            <li>
+            <li class="ja-hide">
                 <a class="pjaxload" href="/binary-static/zh_cn/why-us.html">为何选择我们？</a>
+            </li>
+            <li class="all-hide ja-show-block">
+                <a class="pjaxload" href="/binary-static/zh_cn/why-us-jp.html">为何选择我们？</a>
             </li>
             <li class="ja-hide">
               <a class="pjaxload" href="/binary-static/zh_cn/get-started.html">开始交易</a>
@@ -324,7 +329,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </ul>
         </li>
         <li id="datafeed-tab" class="tm-li"><a href="#datafeed-tab" class="tm-a">数据源</a></li>
-        <li id="privacy-tab" class="tm-li"><a href="#privacy-tab" class="tm-a">隐私和安全</a></li>
+        <li id="privacy-tab" class="tm-li"><a href="#privacy-tab" class="tm-a">安全隐私</a></li>
         <li id="copyright-tab" class="tm-li"><a href="#copyright-tab" class="tm-a">版权</a></li>
         <li id="risk-tab" class="tm-li last"><a href="#risk-tab" class="tm-a">风险免责声明</a></li>
         <li id="order-execution-tab" class="tm-li last"><a href="#order-execution-tab" class="tm-a">执行订单</a></li>
@@ -337,7 +342,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="gr-12">
     <h2>条款和条件</h2>
     <p>
-        <i>版本41。最后修改时间为 2016年06月27日。</i>
+        <i>版本42。最后修改时间2016-09-14。</i>
     </p>
     <p>
         所有客户都有责任阅读并理解该法律通知以及通过本网站买入金融合约需要遵循的条款和条件。
@@ -407,7 +412,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         公司把客户资金存在独立的银行账户并已作好安排，如果公司破产，客户账户资金将分配给客户。这符合博彩委员会关于客户资金独立管理的要求，即：中等级别保护。
     </p>
     <p>
-    本公司支持多种存款方式，每种方式都有不同的存款时序，其中一些可能无法提款。有关存取款方式和结算期的详情，请查看 <a href='/binary-static/zh_cn/cashier/payment_methods.html' class='pjaxload'>此处:</a>
+    本公司支持多种存款方式，每种方式都有不同的存款时序，其中一些可能无法提款。有关存取款方式和结算期的详情，请查看 <a href='/binary-static/zh_cn/cashier/payment_methods.html' class='pjaxload'>此处。</a>
     </p>
     <p>
         您的账户不应被用作银行信贷，其中的存款只应视为交易资金。本公司并不是金融机构，客户存款不会有利息。如果您重复进行存、取款，却没有进行相应的交易，在关闭账户之前，我们保留权利在不事先通知的情况下把相关银行费用转加到您的账户。
@@ -515,7 +520,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 您的年龄在18岁以上，如果您是爱沙尼亚居民，则年龄须在21岁以上；
             </li>
             <li>
-                您不是美国、日本、香港、巴哈马、哥斯达黎加、马来西亚、马耳他、伊朗、朝鲜、泽西岛或伊拉克等受限制国家及地区的居民；
+                您不是阿富汗、波斯尼亚和黑塞哥维那、哥斯达黎加、圭亚那、香港、伊朗、伊拉克、泽西岛、老挝人民民主共和国、马来西亚、马耳他、朝鲜、叙利亚、乌干达、美国、瓦努阿图或也门等受限制国家及地区的居民；
             </li>
             <li>
                 您拥有足够的金融交易经验和知识，能够评估经由本网站购买金融合约的收益与风险，并且不依赖于本网站中包含的任何信息作出购买决定。
@@ -1124,10 +1129,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         BIEL 是在马耳他成立的公司，注册号为 C70156，公司注册地址是 Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta。
     </p>
     <p>
-        我们由马耳他金融服务机构 (“MFSA”）授予许可证和监管，根据投资服务法令 (马耳他法令第370章）（法令）开展投资业务。我们经 MFSA 专属授权，在自己的帐户进行交易（例如：向交易者提供服务，或担任交易对手）。这些交易和金融衍生产品（主要是二元期权）有关，也和外汇、指数、股票及其他金融产品或资产（“金融产品”）有关。我们无权提供投资咨询或在自己账户进行的金融产品交易以外的投资服务。要获得相关投资咨询或服务，您须联系独立的金融顾问或公司。
+        我们由马耳他金融服务机构 (“MFSA”）授予许可证和监管，根据投资服务法令 (马耳他法令第370章）（法令）开展投资业务。我们经 MFSA 授权，在自己的帐户进行交易（例如：向交易者提供服务，或担任交易对手）及代替他人执行订单。这两种服务和金融衍生产品（主要是二元期权）有关，也和外汇、指数、股票及其他金融产品或资产（“金融产品”）有关。除了以上所述，我们无权提供任何其他投资咨询或投资服务。要获得相关投资咨询或服务，您须联系独立的金融顾问或公司。
     </p>
     <p>
         提供此类服务时，我们受法律、一切适用的规则、地方法规、准证条款、纲领、证卷市场细则和其他规定或市场惯例（“规则”）等约束。当这些补充条款和条件跟规则发生冲突时，当以后者为准。
+    </p>
+
+    <h2>限制</h2>
+    <p>
+        阿富汗、比利时、波斯尼亚和黑塞哥维那、圭亚那、伊拉克、老挝人民民主共和国、叙利亚、乌干达、瓦努阿图或也门等国国民将受禁止于Binary Investments (Europe) Ltd开立账户。
     </p>
 
     <h2>客户分类</h2>
@@ -1463,8 +1473,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <li>
                                     <a class="pjaxload" href="/binary-static/zh_cn/about-us.html">关于我们</a>
                                 </li>
-                                <li>
-                                    <a class="pjaxload id-hide ar-hide" href="/binary-static/zh_cn/group-information.html">集团信息</a>
+                                <li class="id-hide ar-hide">
+                                    <a class="pjaxload" href="/binary-static/zh_cn/regulation.html">监管信息</a>
                                 </li>
                                 <li>
                                     <a class="pjaxload" href="/binary-static/zh_cn/group-history.html">集团历史</a>
@@ -1483,8 +1493,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="gr-4">
                             <h4 class="secondary-color">教育</h4>
                             <ul>
-                                <li>
+                                <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/zh_cn/why-us.html">为何选择我们？</a>
+                                </li>
+                                <li class="all-hide ja-show-block">
+                                    <a class="pjaxload" href="/binary-static/zh_cn/why-us-jp.html">为何选择我们？</a>
                                 </li>
                                 <li class="ja-hide">
                                     <a class="pjaxload" href="/binary-static/zh_cn/get-started.html">开始交易</a>
@@ -1499,10 +1512,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     <a href="http://www.gamcare.org.uk/" target="_blank">GamCare赌博关注会</a>
                                 </li>
                                 <li class="ja-hide blog">
-                                    <a href="http://blog.binary.com" target="_blank">博客</a>
+                                    <a href="http://academy.binary.com" target="_blank">博客</a>
                                 </li>
                                 <li class='ja-hide id-hide'>
-                                    <a href="https://blog.binary.com/en/events/" target="_blank">网络研讨会</a>
+                                    <a href="https://academy.binary.com/en/events/" target="_blank">网络研讨会</a>
                                 </li>
                             </ul>
                         </div>
@@ -1530,7 +1543,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="gr-6 gr-12-m gr-parent gr-no-gutter">
                     <div class="gr-row">
                         <div class="gr-4">
-                           <h4 class="secondary-color">条款</h4>
+                           <h4 class="secondary-color">法律</h4>
                            <ul>
                                <li class='ja-hide'>
                                    <a class="pjaxload" href="/binary-static/zh_cn/terms-and-conditions.html">条款和条件</a>
@@ -1550,19 +1563,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                    <a class="pjaxload" href="/binary-static/zh_cn/responsible-trading.html">负责任的交易</a>
                                </li>
                                <li class="ja-hide">
-                               <a class="pjaxload" href="/binary-static/zh_cn/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">投诉</a>
-                               </li>
-                               <li class="ja-hide id-hide ru-hide">
-                                   <a href="/binary-static/download/BIEL_Prospectus.pdf" target="_blank">BIEL 章程</a>
-                               </li>
-                               <li class="ja-hide id-hide ru-hide">
-                                   <a href="/binary-static/download/BIEL_Pillar_3_Report.pdf" target="_blank">BIEL 三大支柱</a>
+                                   <a class="pjaxload" href="/binary-static/zh_cn/terms-and-conditions.html?selected_tab=complaints-disputes-tac-tab">投诉</a>
                                </li>
                            </ul>
                        </div>
                        <div class="gr-4 ja-hide">
                            <h4 class="secondary-color">应用程序</h4>
                            <ul>
+                               <li>
+                                   <a class="pjaxload" href="/binary-static/zh_cn/platforms.html">平台</a>
+                               </li>
                                <li>
                                    <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">跳动交易应用程序</a>
                                </li>
@@ -1635,7 +1645,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="gr-parent">
                         <div class="gr-row">
                             <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p">
-                                本网站由Binary (IOM) Ltd.在英国和马恩岛经营，地址为：First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles；由(1)不列颠群岛马恩岛投资监管委员会授予牌照和监管，当前在线博彩牌照于2012 年8 月31 日颁发；而英国客户由(2)英国博采委员会授予牌照和监管- <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>查看牌照</a>。此网站市场在欧盟其他地区，投资产品由Binary Investments (Europe) Ltd.管理，地址为  Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta，由马耳他金融服务机构授予牌照及监管为3级投资服务提供商（牌照号码为 IS/70156)），而博彩产品由Binary (Europe) Ltd.,管理，地址为：Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta，由(1)位于马耳他的马耳他博彩管理局授予牌照和监管，牌照号码为 MGA/CL2/118/2000（2015年5 月26 日），而英国客户由(2)英国博采委员会授予牌照和监管- <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495' target='_blank'>查看牌照</a>，以及爱尔兰客户由 (3) 爱尔兰税务专员办事处授予牌照和监管，当前远程博彩牌照号码为 1010285（2015年9月29日)。本网站不向美国、日本、哥斯达黎加、香港及18岁以下的用户提供服务。
+                                本网站由Binary (IOM) Ltd.在英国和马恩岛经营，地址为：First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles；由(1)不列颠群岛马恩岛投资监管委员会授予牌照和监管，当前在线博彩牌照于2012 年8 月31 日颁发；而英国客户由(2)英国博采委员会授予牌照和监管- <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>查看牌照</a>。此网站市场在欧盟其他地区，投资产品由Binary Investments (Europe) Ltd.管理，地址为  Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta，由马耳他金融服务机构授予牌照及监管为3级投资服务提供商（牌照号码为 IS/70156)），而博彩产品由Binary (Europe) Ltd.,管理，地址为：Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta，由(1)位于马耳他的马耳他博彩管理局授予牌照和监管，牌照号码为 MGA/CL2/118/2000（2015年5 月26 日），而英国客户由(2)英国博采委员会授予牌照和监管- <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495' target='_blank'>查看牌照</a>，以及爱尔兰客户由 (3) 爱尔兰税务专员办事处授予牌照和监管，当前远程博彩牌照号码为 1010285（2015年9月29日)。本网站不向一些国家如美国、哥斯达黎加、香港及18岁以下的用户提供服务。
                             </div>
                             <div class="ja-hide gr-3 gr-12-m gr-5-p" id="social-networks">
                                 <div id="fb-root">
@@ -1679,4 +1689,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
     </div>
+    <div id="end-note" class="invisible"></div>
 </div>
+
+    </body>
+</html>
