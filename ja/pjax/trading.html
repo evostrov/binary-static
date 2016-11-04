@@ -74,10 +74,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                               <span id="duration_tooltip_wrapper">
                                 <span id="duration_tooltip"></span>
                                 <span id="duration_minimum"></span>
+                                <span id="duration_maximum" class="invisible"></span>
                               </span>
                            </div>
                            <div id="expiry_type_endtime">
-                              <input id="expiry_date" type="text" class="pickadate" autocomplete="off" />
+                              <input id="expiry_date" type="text" readonly="readonly" class="pickadate" autocomplete="off" />
                               <input id="expiry_time" type="text" class="pickatime" autocomplete="off" />
                            </div>
                         </div>
@@ -159,8 +160,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <label for="stop_type" id="stop_type_label"></label>
                             </div>
                             <div class="big-col">
-                                <input type="radio" name="stop_type" id="stop_type_points" value="point" checked/><label id="stop_type_points_label" class="radio_label"></label>
-                                <input type="radio" name="stop_type" id="stop_type_dollar" value="dollar"/><label id="stop_type_dollar_label" class="radio_label"></label>
+                                <input type="radio" name="stop_type" id="stop_type_points" value="point" checked/><label id="stop_type_points_label" class="radio_label" for="stop_type_points"></label>
+                                <input type="radio" name="stop_type" id="stop_type_dollar" value="dollar"/><label id="stop_type_dollar_label" class="radio_label" for="stop_type_dollar"></label>
                             </div>
                         </div>
                         <div class="row">
@@ -186,7 +187,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <h1 class="portfolio-header-margin">ポジション一覧</h1>
 
-    <p class="notice-msg center-text invisible" id="err-msg"></p>
+    <p class="notice-msg center-text invisible" id="error-msg"></p>
 
     <div id="portfolio-loading"></div>
 

@@ -55,16 +55,16 @@
           <link rel="alternate" href="/binary-static/zh_cn/new_account/virtualws.html" hreflang="ZH_CN" /> 
           <link rel="alternate" href="/binary-static/zh_tw/new_account/virtualws.html" hreflang="ZH_TW" /> 
         
-         <link rel="stylesheet" href="/binary-static/css/binary.min.css?qp52ic10">
-         <link rel="stylesheet" href="https://style.binary.com/binary.css?qp52ic10">
+         <link rel="stylesheet" href="/binary-static/css/binary.min.css?2egvtte1">
+         <link rel="stylesheet" href="https://style.binary.com/binary.css?2egvtte1">
         
-        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?qp52ic10' defer async></script>
+        <script src='/binary-static/js/binary.js?2egvtte1' defer async></script>
     </head>
 
 
 <body class="DE">
     <div id='page-wrapper'>
-    <div id="topbar">
+    <div id="topbar" class="no-print">
         <div class="container">
             <div class="gr-row">
                 <div id="topbar-msg" class='gr-6 gr-5-t gr-12-p gr-12-m invisible upgrademessage'>
@@ -80,22 +80,7 @@
                             <a class="pjaxload" href="/binary-static/de/contact.html">Kontaktieren Sie uns</a>
                         </div>
                         <div class='gr-4 gr-5-m'>
-                            <div class="DE" id='language_select'>
-                                <select>
-            <option class='EN'>English</option>
-                <option class='DE' selected='selected'>Deutsch</option>
-                <option class='ES'>Español</option>
-                <option class='FR'>Français</option>
-                <option class='ID'>Bahasa Indonesia</option>
-                <option class='IT'>Italiano</option>
-                <option class='PL'>Polish</option>
-                <option class='PT'>Português</option>
-                <option class='RU'>Русский</option>
-                    <option class='VI'>Vietnamese</option>
-                    <option class='ZH_CN'>简体中文</option>
-                <option class='ZH_TW'>繁體中文</option>
-    </select>
-                            </div>
+                            <select class="DE invisible" id='language_select'></select>
                         </div>
                     </div>
                 </div>
@@ -103,7 +88,7 @@
         </div>
     </div>
 
-    <div id="header">
+    <div id="header" class="no-print">
         <div class='container'>
             <div class='gr-12'>
                 <div class='gr-row gr-row-align-middle'>
@@ -141,10 +126,10 @@
                                     <a class="pjaxload" href="/binary-static/de/tour-jp.html">Tour</a>
                                 </li>
                                 <li class="ja-hide" id="main-navigation-trading">
-                                    <a class="pjaxload" href="/binary-static/de/trading.html">Handel</a>
+                                    <a class="pjaxload" href="/binary-static/de/platforms.html">Plattformen</a>
                                 </li>
                                 <li class="all-hide ja-show-inline-block" id="main-navigation-jptrading">
-                                    <a class="pjaxload" href="/binary-static/de/jptrading.html">Handel</a>
+                                    <a class="pjaxload" href="/binary-static/de/multi_barriers_trading.html">Handel</a>
                                 </li>
                             </ul>
                         </div>
@@ -205,10 +190,16 @@
         </div>
     </div>
     <div id="content-holder">
-    <div id="main-menu" class="tab-menu">
+    <div id="main-menu" class="tab-menu no-print fill-bg-color border-color">
     <div class="tab-menu-wrap container gr-hide-m gr-hide-p">
         <div class="gr-12 gr-no-gutter">
-            <ul class="items">  <li id="topMenuPortfolio" class="item client_logged_in invisible">
+            <ul class="items">  <li id="topMenuTrading" class="item ja-hide hide-tablet-mobile">
+                    <a class="link pjaxload" target="" href="/binary-static/de/trading.html">Handel</a>
+                    
+                </li>  <li id="topMenuJPTrading" class="item all-hide ja-show hide-tablet-mobile">
+                    <a class="link pjaxload" target="" href="/binary-static/de/multi_barriers_trading.html">Handel</a>
+                    
+                </li>  <li id="topMenuPortfolio" class="item client_logged_in invisible">
                     <a class="link pjaxload" target="" href="/binary-static/de/user/portfoliows.html">Portfolio</a>
                     
                 </li>  <li id="topMenuProfitTable" class="item client_logged_in invisible">
@@ -220,7 +211,7 @@
                 </li>  <li id="topMenuCashier" class="item ">
                     <a class="link pjaxload" target="" href="/binary-static/de/cashier.html">Kasse</a>
                     
-                </li>  <li id="topMenuResources" class="item ja-hide">
+                </li>  <li id="topMenuResources" class="item ">
                     <a class="link pjaxload" target="" href="/binary-static/de/resources.html">Quellen</a>
                     
                         <ul class="sub_items">  <li id="topMenuAssetIndex" class="sub_item ja-hide">
@@ -257,8 +248,14 @@
             <li class="ja-hide">
                 <a class="pjaxload" href="/binary-static/de/tour.html">Tour</a>
             </li>
-            <li class="ja-hide ja-show-block">
+            <li class="all-hide ja-show-block">
                 <a class="pjaxload" href="/binary-static/de/tour-jp.html">Tour</a>
+            </li>  <li id="topMenuTrading" class="item ja-hide hide-tablet-mobile">
+                <a class="pjaxload link pjaxload" href="/binary-static/de/trading.html">Handel</a>
+                
+            </li>  <li id="topMenuJPTrading" class="item all-hide ja-show hide-tablet-mobile">
+                <a class="pjaxload link pjaxload" href="/binary-static/de/multi_barriers_trading.html">Handel</a>
+                
             </li>  <li id="topMenuPortfolio" class="item client_logged_in invisible">
                 <a class="pjaxload link pjaxload" href="/binary-static/de/user/portfoliows.html">Portfolio</a>
                 
@@ -271,7 +268,7 @@
             </li>  <li id="topMenuCashier" class="item">
                 <a class="pjaxload link pjaxload" href="/binary-static/de/cashier.html">Kasse</a>
                 
-            </li>  <li id="topMenuResources" class="item ja-hide">
+            </li>  <li id="topMenuResources" class="item">
                 <a class="pjaxload link pjaxload" href="/binary-static/de/resources.html">Quellen</a>
                 
                     <ul class="sub_items">  <li id="topMenuAssetIndex" class="sub_item ja-hide">
@@ -287,10 +284,10 @@
                 <a class="pjaxload link pjaxload" href="/binary-static/de/paymentagent/transferws.html">Zahlungsagent</a>
                 
             </li>  <li class="ja-hide">
-                <a class="pjaxload" href="/binary-static/de/trading.html">Handel</a>
+                <a class="pjaxload" href="/binary-static/de/platforms.html">Plattformen</a>
             </li>
             <li class="all-hide ja-show-block">
-                <a class="pjaxload" href="/binary-static/de/jptrading.html">Handel</a>
+                <a class="pjaxload" href="/binary-static/de/multi_barriers_trading.html">Handel</a>
             </li>
         </ul>
     </div>
@@ -363,8 +360,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <select name="residence" id="residence" class="invisible"></select>
               </div>
             </div>
-            <div class="gr-padding-10 gr-row clear">
-                <div class="gr-4 form_label">
+            <div class="gr-padding-10 gr-row clear invisible">
+                <div class="gr-4 form_label" id="email_consent_label">
                     <label>Erhalten Sie Nachrichten und spezielle Angebote</label>
                 </div>
                 <div class="gr-8">
@@ -389,7 +386,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </div> 
 </div>
-<div id="footer">
+<div id="footer" class="no-print">
     <div id="footer-menu" class="primary-bg-color">
         <div class="container">
             <div class="gr-row gr-padding-10">
@@ -451,23 +448,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </ul>
                         </div>
                         <div class="gr-4">
-                            <h4 class="ja-hide secondary-color">Handeln</h4>
-                            <ul class="ja-hide">
+                            <h4 class="secondary-color">Banking</h4>
+                            <ul>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/de/cashier.html">Kasse</a>
+                                </li>
                                 <li class="ja-hide">
-                                    <a class="pjaxload" href="/binary-static/de/resources/asset_indexws.html">Vermögensindex</a>
+                                    <a class="pjaxload" href="/binary-static/de/cashier/payment_methods.html">Zahlungsarten</a>
                                 </li>
                             </ul>
-                            <div class='gr-padding-10 gr-no-gutter ja-no-padding'>
-                                <h4 class="secondary-color">Banking</h4>
-                                <ul>
-                                    <li>
-                                        <a class="pjaxload" href="/binary-static/de/cashier.html">Kasse</a>
-                                    </li>
-                                    <li class="ja-hide">
-                                        <a class="pjaxload" href="/binary-static/de/cashier/payment_methods.html">Zahlungsarten</a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -499,19 +488,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                            </ul>
                        </div>
                        <div class="gr-4 ja-hide">
-                           <h4 class="secondary-color">Apps</h4>
+                           <h4 class="secondary-color">Handeln</h4>
                            <ul>
                                <li>
                                    <a class="pjaxload" href="/binary-static/de/platforms.html">Plattformen</a>
                                </li>
                                <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">TickTrade App</a>
-                               </li>
-                               <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/webtrader" target="_blank">Webtrader</a>
-                               </li>
-                               <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/binary-com-tradingview-chart" target="_blank">TradingAnsicht (TradingView)</a>
+                                   <a class="pjaxload" href="/binary-static/de/resources/asset_indexws.html">Vermögensindex</a>
                                </li>
                            </ul>
                        </div>
@@ -538,6 +521,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                <li>
                                    <a class="pjaxload" href="/binary-static/de/company-profile.html">{JAPAN ONLY}Company Profile & Disclosure</a>
                                </li>
+                               <li class="invisible">
+                                   <a class="pjaxload" href="/binary-static/de/service-announcements.html">{JAPAN ONLY}Service Announcements</a>
+                               </li>
                            </ul>
                        </div>
                     </div>
@@ -557,7 +543,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </a>
                             </div>
                             <div class="gr-2 center-text">
-                                <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40" target="_blank">
+                                <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=EN&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40&details=1" target="_blank">
                                     <img id="lga_icon_footer" class="responsive" src="/binary-static/images/pages/footer/mga-logo-footer.svg"/>
                                 </a>
                             </div>
@@ -575,7 +561,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     <div class="gr-parent">
                         <div class="gr-row">
-                            <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p">
+                            <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p content-inverse-color">
                                 Diese Website wird in Großbritannien und auf der Isle of Man von Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, Britische Inseln vermarktet und wird von (1) der Gambling Commission (Glücksspielbehörde) der Isle of Man, Britische Inseln zugelassen und überwacht - <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>Lizenz anzeigen</a>. Die vorliegende Online Glücksspielgenehmigung wurde am 31. August 2012 erteilt. Diese Website wird in den anderen Ländern der EU für von Binary Investments (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, angebotene Investmentprodukte vermarktet, die (1) von der Malta Gaming Authority auf Malta zugelassen sind und überwacht werden. Die Lizenznummer lautet MGA/CL2/118/2000, 26. Mai 2015 - <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495' target='_blank'>Lizenz anzeigen</a>. Die Dienstleistungen dieser Website stehen in manchen Ländern wie den USA, Costa Rica, Hongkong oder Personen unter 18 Jahren nicht zur Verfügung.
                             </div>
                             <div class="ja-hide gr-3 gr-12-m gr-5-p" id="social-networks">
@@ -614,7 +600,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="footer-last" class="primary-bg-color">
         <div class="container">
             <div class="gr-padding-10">
-                <p class="gambling">
+                <p class="gambling content-inverse-color">
                     Der Handel von binären Optionen ist nicht für jeden geeignet. Daher müssen Sie dafür sorgen, dass Sie die damit verbundenen Risiken erkennen. Ihre Verluste können Ihre ursprüngliche Einzahlung übersteigen und Sie besitzen die zugrundeliegenden Werte nicht oder haben keinen Anteil daran. Hinsichtlich der binären Optionen, die Glücksspielprodukte sind, müssen Sie beachten, dass Glücksspiel süchtig machen kann - Bitte spielen Sie verantwortungsbewusst. <span class="ja-hide">Hier finden Sie informationen über das <a href="/binary-static/de/responsible-trading.html" class="pjaxload">Verantwortungsbewusste Trading</a>.</span>
                 </p>
             </div>

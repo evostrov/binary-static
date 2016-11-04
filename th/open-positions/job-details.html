@@ -55,16 +55,16 @@
           <link rel="alternate" href="/binary-static/zh_cn/open-positions/job-details.html" hreflang="ZH_CN" /> 
           <link rel="alternate" href="/binary-static/zh_tw/open-positions/job-details.html" hreflang="ZH_TW" /> 
         
-         <link rel="stylesheet" href="/binary-static/css/binary.min.css?qp52ic10">
-         <link rel="stylesheet" href="https://style.binary.com/binary.css?qp52ic10">
+         <link rel="stylesheet" href="/binary-static/css/binary.min.css?2egvtte1">
+         <link rel="stylesheet" href="https://style.binary.com/binary.css?2egvtte1">
         
-        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?qp52ic10' defer async></script>
+        <script src='/binary-static/js/binary.js?2egvtte1' defer async></script>
     </head>
 
 
 <body class="TH">
     <div id='page-wrapper'>
-    <div id="topbar">
+    <div id="topbar" class="no-print">
         <div class="container">
             <div class="gr-row">
                 <div id="topbar-msg" class='gr-6 gr-5-t gr-12-p gr-12-m invisible upgrademessage'>
@@ -80,22 +80,7 @@
                             <a class="pjaxload" href="/binary-static/th/contact.html">ติดต่อเรา</a>
                         </div>
                         <div class='gr-4 gr-5-m'>
-                            <div class="TH" id='language_select'>
-                                <select>
-            <option class='EN'>English</option>
-                <option class='DE'>Deutsch</option>
-                <option class='ES'>Español</option>
-                <option class='FR'>Français</option>
-                <option class='ID'>Bahasa Indonesia</option>
-                <option class='IT'>Italiano</option>
-                <option class='PL'>Polish</option>
-                <option class='PT'>Português</option>
-                <option class='RU'>Русский</option>
-                    <option class='VI'>Vietnamese</option>
-                    <option class='ZH_CN'>简体中文</option>
-                <option class='ZH_TW'>繁體中文</option>
-    </select>
-                            </div>
+                            <select class="TH invisible" id='language_select'></select>
                         </div>
                     </div>
                 </div>
@@ -103,7 +88,7 @@
         </div>
     </div>
 
-    <div id="header">
+    <div id="header" class="no-print">
         <div class='container'>
             <div class='gr-12'>
                 <div class='gr-row gr-row-align-middle'>
@@ -141,10 +126,10 @@
                                     <a class="pjaxload" href="/binary-static/th/tour-jp.html">เยี่ยมชม</a>
                                 </li>
                                 <li class="ja-hide" id="main-navigation-trading">
-                                    <a class="pjaxload" href="/binary-static/th/trading.html">เทรด</a>
+                                    <a class="pjaxload" href="/binary-static/th/platforms.html">แพลตฟอร์ม</a>
                                 </li>
                                 <li class="all-hide ja-show-inline-block" id="main-navigation-jptrading">
-                                    <a class="pjaxload" href="/binary-static/th/jptrading.html">เทรด</a>
+                                    <a class="pjaxload" href="/binary-static/th/multi_barriers_trading.html">เทรด</a>
                                 </li>
                             </ul>
                         </div>
@@ -205,10 +190,16 @@
         </div>
     </div>
     <div id="content-holder">
-    <div id="main-menu" class="tab-menu">
+    <div id="main-menu" class="tab-menu no-print fill-bg-color border-color">
     <div class="tab-menu-wrap container gr-hide-m gr-hide-p">
         <div class="gr-12 gr-no-gutter">
-            <ul class="items">  <li id="topMenuPortfolio" class="item client_logged_in invisible">
+            <ul class="items">  <li id="topMenuTrading" class="item ja-hide hide-tablet-mobile">
+                    <a class="link pjaxload" target="" href="/binary-static/th/trading.html">เทรด</a>
+                    
+                </li>  <li id="topMenuJPTrading" class="item all-hide ja-show hide-tablet-mobile">
+                    <a class="link pjaxload" target="" href="/binary-static/th/multi_barriers_trading.html">เทรด</a>
+                    
+                </li>  <li id="topMenuPortfolio" class="item client_logged_in invisible">
                     <a class="link pjaxload" target="" href="/binary-static/th/user/portfoliows.html">พอร์ตโฟลิโอ</a>
                     
                 </li>  <li id="topMenuProfitTable" class="item client_logged_in invisible">
@@ -220,7 +211,7 @@
                 </li>  <li id="topMenuCashier" class="item ">
                     <a class="link pjaxload" target="" href="/binary-static/th/cashier.html">แคชเชียร์</a>
                     
-                </li>  <li id="topMenuResources" class="item ja-hide">
+                </li>  <li id="topMenuResources" class="item ">
                     <a class="link pjaxload" target="" href="/binary-static/th/resources.html">แหล่งข้อมูล</a>
                     
                         <ul class="sub_items">  <li id="topMenuAssetIndex" class="sub_item ja-hide">
@@ -257,8 +248,14 @@
             <li class="ja-hide">
                 <a class="pjaxload" href="/binary-static/th/tour.html">เยี่ยมชม</a>
             </li>
-            <li class="ja-hide ja-show-block">
+            <li class="all-hide ja-show-block">
                 <a class="pjaxload" href="/binary-static/th/tour-jp.html">เยี่ยมชม</a>
+            </li>  <li id="topMenuTrading" class="item ja-hide hide-tablet-mobile">
+                <a class="pjaxload link pjaxload" href="/binary-static/th/trading.html">เทรด</a>
+                
+            </li>  <li id="topMenuJPTrading" class="item all-hide ja-show hide-tablet-mobile">
+                <a class="pjaxload link pjaxload" href="/binary-static/th/multi_barriers_trading.html">เทรด</a>
+                
             </li>  <li id="topMenuPortfolio" class="item client_logged_in invisible">
                 <a class="pjaxload link pjaxload" href="/binary-static/th/user/portfoliows.html">พอร์ตโฟลิโอ</a>
                 
@@ -271,7 +268,7 @@
             </li>  <li id="topMenuCashier" class="item">
                 <a class="pjaxload link pjaxload" href="/binary-static/th/cashier.html">แคชเชียร์</a>
                 
-            </li>  <li id="topMenuResources" class="item ja-hide">
+            </li>  <li id="topMenuResources" class="item">
                 <a class="pjaxload link pjaxload" href="/binary-static/th/resources.html">แหล่งข้อมูล</a>
                 
                     <ul class="sub_items">  <li id="topMenuAssetIndex" class="sub_item ja-hide">
@@ -287,10 +284,10 @@
                 <a class="pjaxload link pjaxload" href="/binary-static/th/paymentagent/transferws.html">ตัวแทนรับชำระเงิน</a>
                 
             </li>  <li class="ja-hide">
-                <a class="pjaxload" href="/binary-static/th/trading.html">เทรด</a>
+                <a class="pjaxload" href="/binary-static/th/platforms.html">แพลตฟอร์ม</a>
             </li>
             <li class="all-hide ja-show-block">
-                <a class="pjaxload" href="/binary-static/th/jptrading.html">เทรด</a>
+                <a class="pjaxload" href="/binary-static/th/multi_barriers_trading.html">เทรด</a>
             </li>
         </ul>
     </div>
@@ -461,7 +458,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           ประสบการณ์ในการพัฒนาโปรแกรมประเภท JavaScript และมีความรู้ในการพัฒนา Client Side Script โดยใช้เทคโนโลยี เช่น jQuery, ReactJS และ/หรือ AngularJS
         </li>
         <li>
-          มีความรู้ความเชียวชาญในการพัฒนาระบบหรือแอพพลิเคชั่นข้ามแพลตฟอร์ม ต่างเบราเซอร์ สำหรับเว็บไซต์และแอพพลิเคชั่นที่รองรับอุปกรณ์เคลื่อนที่
+          มีความรู้ความเชียวชาญในการพัฒนาระบบหรือแอพพลิเคชั่นข้ามแพลตฟอร์ม ต่างเบราเซอร์ สำหรับเว็บไซต์และแอพพลิเคชั่นที่รองรับอุปกรณ์สื่อสารไร้สาย
         </li>
         <li>
           มีความสนใจและความมุ่งมั่นในระบบปฏิบัติการลินุกซ์และโอเพ่นซอส
@@ -470,7 +467,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
     <div class="Senior_Perl_Developer" id="Information_Technology-section-three">
       <p>
-        Binary Group Services กำลังสรรหานักพัฒนาโปรแกรม Perl ผู้มีความสามารถและมุ่งมั่นสำหรับโอกาสและความท้าทาย หากคุณมาคุณสมบัติที่เรากำลังมองหา คุณจะเป็นบุคลากรที่มีคุณค่าในทีมพัฒนาระบบเบื้องหลังที่มีความสามารถในการขับเคลื่อนระบบซื้อขายไบนารีออปชั่นของเราในระยะยาว
+        Binary Group Services กำลังสรรหานักพัฒนาโปรแกรม Perl ผู้มีความสามารถและมุ่งมั่นสำหรับโอกาสและความท้าทาย หากท่านมีคุณสมบัติที่เรากำลังมองหา ท่านจะเป็นบุคลากรที่มีคุณค่าในทีมพัฒนาระบบเบื้องหลังที่มีความสามารถในการขับเคลื่อนระบบซื้อขายไบนารีออปชั่นของเราในระยะยาว
       </p>
       <p><strong>หน้าที่และความรับผิดชอบ:</strong></p>
       <p>
@@ -507,7 +504,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           รับผิดชอบในการปรับปรุงแก้ไขคู่มือและแผนการทดสอบระบบแบบอัตโนมัติ
         </li>
         <li>
-          ทำงานร่วมกับสมาชิกของทีม QA เพื่อเพิ่มคุณภาพของแต่ละชุดการส่งมอบ
+          ปฏิบัติงานร่วมกับสมาชิกของทีม QA เพื่อเพิ่มคุณภาพของแต่ละชุดการส่งมอบ
         </li>
         <li>
           ตรวจสอบวินิจฉัยและจำลองปัญหาที่ได้รับแจ้งจากลูกค้า
@@ -534,7 +531,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           มีทักษะในการสื่อสารทางคำพูดและการเขียนดีเยี่ยม
         </li>
         <li>
-          มีความสามารถและทักษะการวิเคราะห์และการแก้ปัญหาที่เชี่ยวชาญ
+          มีทักษะในการวิเคราะห์และมีความเชี่ยวชาญในการแก้ปัญหา
         </li>
         <li>
           ประสบการณ์ในฐานข้อมูล Postgres และฐานข้อมูล RDBMS อื่นๆ
@@ -562,7 +559,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <p><strong>หน้าที่และความรับผิดชอบ:</strong></p>
       <ul class="bullet">
         <li>
-          ทำงานร่วมกับบุคลากรอื่นๆ ในทีมเพื่อพัฒนาซอฟต์แวร์เกี่ยวกับการนำเสนอราคาที่ใช้ในแพลตฟอร์มการซื้อขายของเรา
+          ปฏิบัติงานร่วมกับบุคลากรอื่นๆ ในทีมเพื่อพัฒนาซอฟต์แวร์เกี่ยวกับการนำเสนอราคาที่ใช้ในแพลตฟอร์มการซื้อขายของเรา
         </li>
         <li>
           ทวนสอบ พัฒนา และปรับปรุงชุดคำสั่งที่ใช้ในราคาออปชั่นและโปรแกรมการบริหารความเสี่ยงแบบเรียลไทม์
@@ -762,7 +759,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         Binary.com ขณะนี้กำลังสรรหาผู้ดูแลสมาชิกพันธมิตรเพื่อขับเคลื่อนและเติบโตอย่างรวดเร็ว และดำเนินการพัฒนาธุรกิจในสำนักงานหลักๆ ของเรา ผู้ที่ได้รับคัดเลือกในการปฏิบัติหน้าที่นี้จะดำเนินงานอย่างแข็งขันเพื่อเพิ่มจำนวนพันธมิตรของ Binary.com ขยายเครือข่ายพันธมิตรจากประเทศใดประเทศหนึ่ง ไปยังภูมิภาค และ/หรือ ภาษาที่ต้องการ
       </p>
       <p>
-        We are currently accepting applications from skilled, ambitious affiliate marketers based virtually all over the globe. Each applicant's skills and experience will be evaluated against the company's potential for growth in a particular segment, to determine the best-fit business cases for engagement.
+        ในขณะนี้ พวกเราพิจารณารับใบสมัครจากนักการตลาดที่มีประสบการณ์ นักการตลาดพันธมิตรที่มีความปรารถนาอย่างแรงกล้า จากทั่วทุกมุมโลก ผู้สมัครแต่ละรายจะมีการถูกพิจารณาทักษะและประสบการณ์ต่อศักยภาพที่จะทำให้ฐานลูกค้าเติบโตได้ เพื่อกำหนดกลุ่มธุรกิจที่เหมาะสมในการดำเนินการ
       </p>
       <p>
         ขยายเครือข่ายพันธมิตรที่แข็งขันของเราในตลาดท้องถิ่นของท่าน เสริมสร้างกำลัง ทักษะ และความรู้ของกิจการในท้องถิ่นเพื่อทำให้องค์กรมีการเติบโตอย่างรวดเร็วในระดับโลก
@@ -829,7 +826,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <p><strong>หน้าที่และความรับผิดชอบ:</strong></p>
       <ul class="bullet">
         <li>
-          Work directly with members of our marketing and IT teams to produce graphics for the company website, blog, social media outlets, and marketing materials
+          ปฏิบัติงานร่วมกับสมาชิกทีมการตลาดและไอทีของพวกเรา เพื่อผลิตงานกราฟิกที่นำเสนอในเว็บไซต์ขององค์กร บล็อก สื่อสังคมออนไลน์ และเอกสารการตลาด
         </li>
         <li>
           ผลิตเนื้อหาเพื่อสนับสนุนการส่งเสริมการตลาดของส่วนกลางในรูปแบบที่หลากหลายและในภาษาต่างๆ
@@ -1080,7 +1077,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           มั่นใจว่าบริษัทในเครือ Binary ปฏิบัติตามระเบียบปฏิบัติตามระบอบของแต่ละท้องที่
         </li>
         <li>
-          ทำงานอย่างใกล้ชิดร่วมกับหัวหน้าฝ่าย Compliance เพื่อดำเนินการตามหลักเกณฑ์ทั่วไปเกี่ยวกับการรู้จักลูกค้า (Know your Client: KYC), การฟอกเงิน (Anti-Money Laundering: AML) และกฏการป้องกันข้อมูล
+          ปฏิบัติงานอย่างใกล้ชิดร่วมกับหัวหน้าฝ่าย Compliance เพื่อดำเนินการตามหลักเกณฑ์ทั่วไปเกี่ยวกับการรู้จักลูกค้า (Know your Client: KYC), การฟอกเงิน (Anti-Money Laundering: AML) และกฏการป้องกันข้อมูล
         </li>
         <li>
           เตรียมรายงานตามงวดเวลาและรายงานพิเศษตามกฎหมายและข้อบัญญัติในทางนิติบัญญัติที่เกี่ยวข้อง
@@ -1237,7 +1234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           ดำเนินการในกระบวนการประเมินผลงานขององค์กรทุกๆ 6 เดือน
         </li>
         <li>
-          มีประสบการณ์ในงานบริหารบุคคลที่หลากหลาย
+          มีประสบการณ์ในงานบริหารทรัพยากรบุคคลที่หลากหลาย
         </li>
       </ul>
       <p>
@@ -1308,7 +1305,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   </div> 
 </div>
-<div id="footer">
+<div id="footer" class="no-print">
     <div id="footer-menu" class="primary-bg-color">
         <div class="container">
             <div class="gr-row gr-padding-10">
@@ -1370,23 +1367,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </ul>
                         </div>
                         <div class="gr-4">
-                            <h4 class="ja-hide secondary-color">การซื้อขาย</h4>
-                            <ul class="ja-hide">
+                            <h4 class="secondary-color">การธนาคาร</h4>
+                            <ul>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/th/cashier.html">แคชเชียร์</a>
+                                </li>
                                 <li class="ja-hide">
-                                    <a class="pjaxload" href="/binary-static/th/resources/asset_indexws.html">ดัชนีสินทรัพย์</a>
+                                    <a class="pjaxload" href="/binary-static/th/cashier/payment_methods.html">วิธีการชำระเงิน</a>
                                 </li>
                             </ul>
-                            <div class='gr-padding-10 gr-no-gutter ja-no-padding'>
-                                <h4 class="secondary-color">การธนาคาร</h4>
-                                <ul>
-                                    <li>
-                                        <a class="pjaxload" href="/binary-static/th/cashier.html">แคชเชียร์</a>
-                                    </li>
-                                    <li class="ja-hide">
-                                        <a class="pjaxload" href="/binary-static/th/cashier/payment_methods.html">วิธีการชำระเงิน</a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -1418,19 +1407,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                            </ul>
                        </div>
                        <div class="gr-4 ja-hide">
-                           <h4 class="secondary-color">แอพ</h4>
+                           <h4 class="secondary-color">การซื้อขาย</h4>
                            <ul>
                                <li>
                                    <a class="pjaxload" href="/binary-static/th/platforms.html">แพลตฟอร์ม</a>
                                </li>
                                <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">แอพ Tick Trade</a>
-                               </li>
-                               <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/webtrader" target="_blank">เว็บเทรดเดอร์</a>
-                               </li>
-                               <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/binary-com-tradingview-chart" target="_blank">มุมมองการซื้อขาย</a>
+                                   <a class="pjaxload" href="/binary-static/th/resources/asset_indexws.html">ดัชนีสินทรัพย์</a>
                                </li>
                            </ul>
                        </div>
@@ -1457,6 +1440,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                <li>
                                    <a class="pjaxload" href="/binary-static/th/company-profile.html">{JAPAN ONLY}Company Profile & Disclosure</a>
                                </li>
+                               <li class="invisible">
+                                   <a class="pjaxload" href="/binary-static/th/service-announcements.html">{JAPAN ONLY}Service Announcements</a>
+                               </li>
                            </ul>
                        </div>
                     </div>
@@ -1476,7 +1462,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </a>
                             </div>
                             <div class="gr-2 center-text">
-                                <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40" target="_blank">
+                                <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=EN&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40&details=1" target="_blank">
                                     <img id="lga_icon_footer" class="responsive" src="/binary-static/images/pages/footer/mga-logo-footer.svg"/>
                                 </a>
                             </div>
@@ -1494,7 +1480,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     <div class="gr-parent">
                         <div class="gr-row">
-                            <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p">
+                            <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p content-inverse-color">
                                 เว็บไซต์นี้ใช้สำหรับประเทศสหราชอาณาจักรและเกาะ  Isle of Man โดยบริษัท Binary (IOM) Ltd. ตั้งอยู่ที่ ชั้น 1 อาคาร Millennium House ถนน Victoria เขต Douglas IM2 4RW บนเกาะ Isle of Man ในบริติชไอลส์ โดยได้รับใบอนุญาตและผ่านหลักเกณฑ์ต่อไปนี้ (1) Gambling Supervision Commission บนเกาะ Isle of Man ในบริติชไอลส์ ใบอนุญาตสำหรับผลิตภัณฑ์การเสี่ยงโชคออนไลน์ได้รับเมื่อ 31 สิงหาคม 2555 และสำหรับลูกค้าในสหราชอาณาจักรได้รับใบอนุญาตจาก (2) UK Gambling Commission - <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172' target='_blank'>คลิกดูใบอนุญาต</a> เว็บไซต์นี้ใช้สำหรับประเทศในกลุ่มยุโรป สำหรับผลิตภัณฑ์การลงทุนต่างๆ โดยบริษัท  Binary Investments (Europe) Ltd. ตั้งอยู่ที่ อาคาร Mompalao Suite 2 ถนน Tower เมือง Msida MSD1825 ประเทศมอลตา โดยได้รับใบอนุญาตและผ่านหลักเกณฑ์ในหมวดที่ 3 ของผู้ให้บริการการลงทุนโดยหน่วยงาน Malta Financial Services Authority (ใบอนุญาตเลขที่ IS/70156) และสำหรับผลิตภัณฑ์การพนัน โดยบริษัท Binary (Europe) Ltd. ตั้งอยู่ที่ อาคาร Mompalao Suite 2 ถนน Tower เมือง Msida MSD1825 ประเทศมอลตา ได้รับใบอนุญาตและผ่านหลักเกณฑ์ต่อไปนี้ (1) Malta Gaming Authority ประเทศมอลตา ใบอนุญาตเลขที่ MGA/CL2/118/2000 ได้รับเมื่อ 26 พฤษภาคม 2553 และสำหรับลูกค้าในสหราชอาณาจักรได้รับใบอนุญาตจาก (2) UK Gambling Commission - <a href='https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495' target='_blank'>คลิกดูใบอนุญาต</a> และสำหรับลูกค้าในประเทศไอร์แลนด์ได้รับใบอนุญาตจาก (3) Revenue Commissioners ประเทศไอร์แลนด์ ได้รับใบอนุญาตเมื่อ 29 กันยายน 2558 (ใบอนุญาตเลขที่ 1010285) อนึ่ง เว็บไซต์นี้ไม่เปิดให้บริการในประเทศต่อไปนี้ สหรัฐอเมริกา คอสตาริกา ฮ่องกง และรวมถึงบุคคลที่อายุต่ำกว่า 18 ปี
                             </div>
                             <div class="ja-hide gr-3 gr-12-m gr-5-p" id="social-networks">
@@ -1533,8 +1519,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="footer-last" class="primary-bg-color">
         <div class="container">
             <div class="gr-padding-10">
-                <p class="gambling">
-                    Trading binary options may not be suitable for everyone, so please ensure that you fully understand the risks involved. Your losses can exceed your initial deposit and you do not own or have any interest in the underlying asset. In regards to binary options which are gambling products, remember that gambling can be addictive - please play responsibly. <span class="ja-hide">Read about <a href="/binary-static/th/responsible-trading.html" class="pjaxload">Responsible Trading</a>.</span>
+                <p class="gambling content-inverse-color">
+                    การซื้อขายไบนารีออปชั่นอาจจะไม่เหมาะสมกับทุกคน ดังนั้นโปรดแน่ใจว่า ท่านมีความเข้าใจที่สมบูรณ์ในเรื่องความเสี่ยงที่เกี่ยวข้อง การขาดทุนของท่านสามารถมีค่ามากกว่าเงินที่ท่านฝากเริ่มต้น และท่านจะไม่ได้รับผลตอบแทนใดๆ จากสินทรัพย์ผลิตภัณฑ์อ้างอิงนั้น อนึ่ง ไบนารีออปชั่น เป็นผลิตภัณฑ์เพื่อการเสี่ยงโชค โปรดทราบว่า การเสี่ยงโชคอาจทำให้เป็นพฤติกรรมเสพติด โปรดใช้ความระมัดระวังในการซื้อขาย <span class="ja-hide">ศึกษาเพิ่มเติมเกี่ยวกับ <a href="/binary-static/th/responsible-trading.html" class="pjaxload">ความรับผิดชอบต่อการซื้อขาย</a></span>
                 </p>
             </div>
         </div>

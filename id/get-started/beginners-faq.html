@@ -55,16 +55,16 @@
           <link rel="alternate" href="/binary-static/zh_cn/get-started/beginners-faq.html" hreflang="ZH_CN" /> 
           <link rel="alternate" href="/binary-static/zh_tw/get-started/beginners-faq.html" hreflang="ZH_TW" /> 
         
-         <link rel="stylesheet" href="/binary-static/css/binary.min.css?qp52ic10">
-         <link rel="stylesheet" href="https://style.binary.com/binary.css?qp52ic10">
+         <link rel="stylesheet" href="/binary-static/css/binary.min.css?2egvtte1">
+         <link rel="stylesheet" href="https://style.binary.com/binary.css?2egvtte1">
         
-        <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.prototype.includes,String.prototype.includes,Symbol,Promise,Object.assign&flags=gated&unknown=polyfill"></script>  <script src='/binary-static/js/binary.js?qp52ic10' defer async></script>
+        <script src='/binary-static/js/binary.js?2egvtte1' defer async></script>
     </head>
 
 
 <body class="ID">
     <div id='page-wrapper'>
-    <div id="topbar">
+    <div id="topbar" class="no-print">
         <div class="container">
             <div class="gr-row">
                 <div id="topbar-msg" class='gr-6 gr-5-t gr-12-p gr-12-m invisible upgrademessage'>
@@ -80,22 +80,7 @@
                             <a class="pjaxload" href="/binary-static/id/contact.html">Hubungi Kami</a>
                         </div>
                         <div class='gr-4 gr-5-m'>
-                            <div class="ID" id='language_select'>
-                                <select>
-            <option class='EN'>English</option>
-                <option class='DE'>Deutsch</option>
-                <option class='ES'>Español</option>
-                <option class='FR'>Français</option>
-                <option class='ID' selected='selected'>Bahasa Indonesia</option>
-                <option class='IT'>Italiano</option>
-                <option class='PL'>Polish</option>
-                <option class='PT'>Português</option>
-                <option class='RU'>Русский</option>
-                    <option class='VI'>Vietnamese</option>
-                    <option class='ZH_CN'>简体中文</option>
-                <option class='ZH_TW'>繁體中文</option>
-    </select>
-                            </div>
+                            <select class="ID invisible" id='language_select'></select>
                         </div>
                     </div>
                 </div>
@@ -103,7 +88,7 @@
         </div>
     </div>
 
-    <div id="header">
+    <div id="header" class="no-print">
         <div class='container'>
             <div class='gr-12'>
                 <div class='gr-row gr-row-align-middle'>
@@ -141,10 +126,10 @@
                                     <a class="pjaxload" href="/binary-static/id/tour-jp.html">Panduan</a>
                                 </li>
                                 <li class="ja-hide" id="main-navigation-trading">
-                                    <a class="pjaxload" href="/binary-static/id/trading.html">Trade</a>
+                                    <a class="pjaxload" href="/binary-static/id/platforms.html">Berbagai Platform</a>
                                 </li>
                                 <li class="all-hide ja-show-inline-block" id="main-navigation-jptrading">
-                                    <a class="pjaxload" href="/binary-static/id/jptrading.html">Trade</a>
+                                    <a class="pjaxload" href="/binary-static/id/multi_barriers_trading.html">Trade</a>
                                 </li>
                             </ul>
                         </div>
@@ -205,10 +190,16 @@
         </div>
     </div>
     <div id="content-holder">
-    <div id="main-menu" class="tab-menu">
+    <div id="main-menu" class="tab-menu no-print fill-bg-color border-color">
     <div class="tab-menu-wrap container gr-hide-m gr-hide-p">
         <div class="gr-12 gr-no-gutter">
-            <ul class="items">  <li id="topMenuPortfolio" class="item client_logged_in invisible">
+            <ul class="items">  <li id="topMenuTrading" class="item ja-hide hide-tablet-mobile">
+                    <a class="link pjaxload" target="" href="/binary-static/id/trading.html">Trade</a>
+                    
+                </li>  <li id="topMenuJPTrading" class="item all-hide ja-show hide-tablet-mobile">
+                    <a class="link pjaxload" target="" href="/binary-static/id/multi_barriers_trading.html">Trade</a>
+                    
+                </li>  <li id="topMenuPortfolio" class="item client_logged_in invisible">
                     <a class="link pjaxload" target="" href="/binary-static/id/user/portfoliows.html">Portopolio</a>
                     
                 </li>  <li id="topMenuProfitTable" class="item client_logged_in invisible">
@@ -220,7 +211,7 @@
                 </li>  <li id="topMenuCashier" class="item ">
                     <a class="link pjaxload" target="" href="/binary-static/id/cashier.html">Kasir</a>
                     
-                </li>  <li id="topMenuResources" class="item ja-hide">
+                </li>  <li id="topMenuResources" class="item ">
                     <a class="link pjaxload" target="" href="/binary-static/id/resources.html">Sumber</a>
                     
                         <ul class="sub_items">  <li id="topMenuAssetIndex" class="sub_item ja-hide">
@@ -257,8 +248,14 @@
             <li class="ja-hide">
                 <a class="pjaxload" href="/binary-static/id/tour.html">Panduan</a>
             </li>
-            <li class="ja-hide ja-show-block">
+            <li class="all-hide ja-show-block">
                 <a class="pjaxload" href="/binary-static/id/tour-jp.html">Panduan</a>
+            </li>  <li id="topMenuTrading" class="item ja-hide hide-tablet-mobile">
+                <a class="pjaxload link pjaxload" href="/binary-static/id/trading.html">Trade</a>
+                
+            </li>  <li id="topMenuJPTrading" class="item all-hide ja-show hide-tablet-mobile">
+                <a class="pjaxload link pjaxload" href="/binary-static/id/multi_barriers_trading.html">Trade</a>
+                
             </li>  <li id="topMenuPortfolio" class="item client_logged_in invisible">
                 <a class="pjaxload link pjaxload" href="/binary-static/id/user/portfoliows.html">Portopolio</a>
                 
@@ -271,7 +268,7 @@
             </li>  <li id="topMenuCashier" class="item">
                 <a class="pjaxload link pjaxload" href="/binary-static/id/cashier.html">Kasir</a>
                 
-            </li>  <li id="topMenuResources" class="item ja-hide">
+            </li>  <li id="topMenuResources" class="item">
                 <a class="pjaxload link pjaxload" href="/binary-static/id/resources.html">Sumber</a>
                 
                     <ul class="sub_items">  <li id="topMenuAssetIndex" class="sub_item ja-hide">
@@ -287,10 +284,10 @@
                 <a class="pjaxload link pjaxload" href="/binary-static/id/paymentagent/transferws.html">Agen Pembayaran</a>
                 
             </li>  <li class="ja-hide">
-                <a class="pjaxload" href="/binary-static/id/trading.html">Trade</a>
+                <a class="pjaxload" href="/binary-static/id/platforms.html">Berbagai Platform</a>
             </li>
             <li class="all-hide ja-show-block">
-                <a class="pjaxload" href="/binary-static/id/jptrading.html">Trade</a>
+                <a class="pjaxload" href="/binary-static/id/multi_barriers_trading.html">Trade</a>
             </li>
         </ul>
     </div>
@@ -426,7 +423,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class="gr-3 gr-hide-m">
     <div class="sidebar-right">
-      <div class="by_client_type client_logged_out">
+      <div class="by_client_type client_logged_out fill-bg-color">
         <p>
           <a class="pjaxload" href="/binary-static/id/home.html">
             Coba sekarang
@@ -435,7 +432,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           Bebas risiko, $10K akun uang virtual
         </p>
       </div>
-      <div>
+      <div class="fill-bg-color">
         <p>
           Ingin mempelajari lebih lanjut?
           <br/>
@@ -457,7 +454,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </div> 
 </div>
-<div id="footer">
+<div id="footer" class="no-print">
     <div id="footer-menu" class="primary-bg-color">
         <div class="container">
             <div class="gr-row gr-padding-10">
@@ -519,23 +516,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </ul>
                         </div>
                         <div class="gr-4">
-                            <h4 class="ja-hide secondary-color">Trading</h4>
-                            <ul class="ja-hide">
+                            <h4 class="secondary-color">Perbankan</h4>
+                            <ul>
+                                <li>
+                                    <a class="pjaxload" href="/binary-static/id/cashier.html">Kasir</a>
+                                </li>
                                 <li class="ja-hide">
-                                    <a class="pjaxload" href="/binary-static/id/resources/asset_indexws.html">Indeks Aset</a>
+                                    <a class="pjaxload" href="/binary-static/id/cashier/payment_methods.html">Metode Pembayaran</a>
                                 </li>
                             </ul>
-                            <div class='gr-padding-10 gr-no-gutter ja-no-padding'>
-                                <h4 class="secondary-color">Perbankan</h4>
-                                <ul>
-                                    <li>
-                                        <a class="pjaxload" href="/binary-static/id/cashier.html">Kasir</a>
-                                    </li>
-                                    <li class="ja-hide">
-                                        <a class="pjaxload" href="/binary-static/id/cashier/payment_methods.html">Metode Pembayaran</a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -567,19 +556,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                            </ul>
                        </div>
                        <div class="gr-4 ja-hide">
-                           <h4 class="secondary-color">Applikasi</h4>
+                           <h4 class="secondary-color">Trading</h4>
                            <ul>
                                <li>
                                    <a class="pjaxload" href="/binary-static/id/platforms.html">Berbagai Platform</a>
                                </li>
                                <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">Applikasi Trading Tik</a>
-                               </li>
-                               <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/webtrader" target="_blank">Webtrader</a>
-                               </li>
-                               <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/binary-com-tradingview-chart" target="_blank">TradingView</a>
+                                   <a class="pjaxload" href="/binary-static/id/resources/asset_indexws.html">Indeks Aset</a>
                                </li>
                            </ul>
                        </div>
@@ -606,6 +589,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                <li>
                                    <a class="pjaxload" href="/binary-static/id/company-profile.html">{JAPAN ONLY}Company Profile & Disclosure</a>
                                </li>
+                               <li class="invisible">
+                                   <a class="pjaxload" href="/binary-static/id/service-announcements.html">{JAPAN ONLY}Service Announcements</a>
+                               </li>
                            </ul>
                        </div>
                     </div>
@@ -625,7 +611,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </a>
                             </div>
                             <div class="gr-2 center-text">
-                                <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40" target="_blank">
+                                <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=EN&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40&details=1" target="_blank">
                                     <img id="lga_icon_footer" class="responsive" src="/binary-static/images/pages/footer/mga-logo-footer.svg"/>
                                 </a>
                             </div>
@@ -643,7 +629,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     <div class="gr-parent">
                         <div class="gr-row">
-                            <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p">
+                            <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p content-inverse-color">
                                 Website ini dipasarkan di negara Inggris dan Isle of Man melalui Binary (IOM) Ltd. Untuk Uni Eropa (kecuali Inggris) melalui Binary (Europe) Ltd dan Binary Investments (Europe) Ltd. Sedangkan untuk negara lain di seluruh dunia melalui Binary (C.R.) S.A. Layanan website ini tidak tersedia untuk di bawah usia 18.
                             </div>
                             <div class="ja-hide gr-3 gr-12-m gr-5-p" id="social-networks">
@@ -682,7 +668,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="footer-last" class="primary-bg-color">
         <div class="container">
             <div class="gr-padding-10">
-                <p class="gambling">
+                <p class="gambling content-inverse-color">
                     Trading opsi Binary memiliki resiko tinggi dan mungkin tidak cocok untuk semua investor. Pastikan untuk memahami berbagai resiko yang terlibat termasuk mempertimbangkan tujuan, situasi keuangan, kebutuhan dan tingkat pengalaman trading Anda.
                 </p>
             </div>

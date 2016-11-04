@@ -393,8 +393,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                           <div class="gr-8">
                             <select id="trading-purpose">
                               <option value="">選択して下さい</option>
-                              <option value="Targeting short-term profits">短期利益を目標にする</option>
-                              <option value="Targeting medium-term / long-term profits">中期利益/長期利益を目標にする</option>
+                              <option value="Targeting short-term profits">短期保有が目的</option>
+                              <option value="Targeting medium-term / long-term profits">中期保有/長期保有が目的</option>
                               <option value="Both the above">上記の両方</option>
                               <option value="Hedging">ヘッジ</option>
                             </select>
@@ -403,7 +403,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       </div>
                       <div class="gr-padding-10 gr-row clear hedging-assets invisible">
                         <div class="gr-4 form_label">
-                          <label for="hedge-asset">ヘッジファンドを必要とする資産の分類</label>
+                          <label for="hedge-asset">ヘッジを必要とする資産の種類</label>
                         </div>
                         <div class="gr-8">
                           <select id="hedge-asset">
@@ -505,7 +505,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </div>
                                 <div class="gr-11">
                                   <span>
-                                    電子文書のみで発行される契約締結前文書や全ての利用規約、取引報告書、その他法的に必要な書類などの文書についてここに理解し、同意します。
+                                    電子交付への同意：契約締結前交付書面、取引約款等の書類が電子交付されることに同意します。
                                   </span>
                                 </div>
                             </div>
@@ -539,7 +539,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         </a>
                                       </li>
                                       <li>
-                                        <a href="/binary-static/ja/get-started.html" target="_blank">
+                                        <a href="/binary-static/ja/get-started-jp.html" target="_blank">
                                           取引マニュアル
                                         </a>
                                       </li>
@@ -649,7 +649,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                               </div>
                               <div class="gr-11">
                                 <span>
-                                  購入したバイナリーオプションについて、判定時刻において、予測が外れた場合には、投資元本がゼロになること。また、同オプションを判定時刻前に売却（または解約）した場合には、売却金額が購入金額を下回り、損失が生じるおそれがあること（契約締結前交付書面「店頭バイナリーオプション取引のリスク等重要事項について」-2及び8参照）
+                                  購入したバイナリーオプションについて、判定時刻において、予測が外れた場合には、投資元本がゼロになること。（契約締結前交付書面「店頭バイナリーオプション取引のリスク等重要事項について」-2参照）
                                 </span>
                               </div>
                             </div>
@@ -664,7 +664,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                               </div>
                               <div class="gr-11">
                                 <span>
-                                  売付したバイナリーオプションについて、判定時刻において、予測が外れた場合にはペイアウト額を支払うこと、および支払うペイアウト額が受け取るオプション料以上の額になること。また、同オプションを判定時刻前に買戻し（または解約）した場合には、買戻し額が売付時に受け取るオプション料を上回り、損失が生じるおそれがあること。（参照先を後日、入力予定）
+                                  購入したバイナリーオプションを判定時刻前に売却（または解約）した場合には、売却金額が購入金額を下回り、損失が生じるおそれがあること（契約締結交付前書面「店頭バイナリーオプション取引のリスク等重要事項について」-8参照）
                                 </span>
                               </div>
                             </div>
@@ -707,6 +707,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <span class="button ">
                             <button class="button " id="btn_submit" type="submit">口座開設</button>
                         </span>
+                        <p id="submit-message"></p>
                     </fieldset>
                 </form>
                 <div class="errorbox rbox" id="client_message" style="display:none">
