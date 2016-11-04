@@ -1,5 +1,7 @@
+var buildOauthApps = require('../../../../common_functions/get_app_details').buildOauthApps;
+var addTooltip = require('../../../../common_functions/get_app_details').addTooltip;
+
 var StatementData = (function(){
-    var hasOlder = true;
 
     function initSocket(){
         BinarySocket.init({
@@ -23,8 +25,10 @@ var StatementData = (function(){
         if(opts){
             $.extend(true, req, opts);
         }
-        if ($('#jump-to').val() !== '') {
-            req.date_to = Math.floor((moment.utc($('#jump-to').val()).valueOf() / 1000)) + (24*60*60);
+        var jump_to = $('#jump-to').val();
+        if (jump_to !== '' && jump_to !== page.text.localize('Today')) {
+            req.date_to = Math.floor((moment.utc(jump_to).valueOf() / 1000)) +
+                          ((japanese_client() ? 15 : 24) * (60*60));
             req.date_from = 0;
         }
 
@@ -34,7 +38,6 @@ var StatementData = (function(){
     return {
         initSocket: initSocket,
         getStatement: getStatement,
-        hasOlder: hasOlder
     };
 }());
 

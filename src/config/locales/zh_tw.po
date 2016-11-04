@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Chinese (Taiwan) (Binary)\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2016-10-07 02:14+0000\n"
+"PO-Revision-Date: 2016-11-02 07:42+0000\n"
 "Last-Translator: Freddy Hew <hewfreddy@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) <https://hosted.weblate.org/projects/binary/static/zh_TW/>\n"
 "Language: zh_tw\n"
@@ -41,6 +41,9 @@ msgstr "$250,000 - $1,000,000"
 
 msgid "%1 %2 has been credited to your Virtual money account %3"
 msgstr " %1 %2已記入您的虛擬資金帳戶 %3"
+
+msgid "%1 (Toll Free)"
+msgstr "%1(免費電話)"
 
 msgid "%1 Affiliate Program Terms and Conditions"
 msgstr "%1 聯盟計劃的條款和條件"
@@ -219,8 +222,8 @@ msgstr "%1在久負盛名的倫敦EGR操作員頒獎儀式中榮獲2015年金融
 msgid "%1 would like to team up with potential payment agents worldwide so we can offer local payment processing services to our clients in their respective regions."
 msgstr "%1 希望與世界各地的潛在支付代理合作，以便我們可以為各區域客戶提供當地支付處理服務。"
 
-msgid "%1's Continuous Indices are the Volatility 25 Index, Volatility 50 Index, Volatility 75 Index and Volatility 100 Index. These indices correspond to simulated markets with constant volatilities of 25%, 50%, 75% and 100%."
-msgstr "%1 的連續指數包括波動率25指數、波動率50指數、波動率75指數及波動率100指數。這些指數跟具25%、50%、 75%和100%持續波動率的類比市場對應。"
+msgid "%1's Continuous Indices are the Volatility 10 Index, Volatility 25 Index, Volatility 50 Index, Volatility 75 Index and Volatility 100 Index. These indices correspond to simulated markets with constant volatilities of 10%, 25%, 50%, 75% and 100%."
+msgstr "%1 的連續指數包括波動率10指數、波動率25指數、波動率50指數、波動率75指數及波動率100指數。這些指數跟具10%、25%、50%、75%和100%持續波動率的類比市場對應。"
 
 msgid "%1's IT Operations Group is responsible for the design, development and operation of the company's high-traffic networks. Its responsibilities include hardware and software deployment, up-time and reliability testing, incident response reporting, network security, intrusion detection, and load balancing."
 msgstr "1％的資訊技術運作組負責公司高流量網絡的設計、開發和運作。其職責範圍包括硬體和軟體佈署、運作時間和可靠性測試、事件反應報告、網絡安全、入侵檢測和負載平衡。"
@@ -254,9 +257,6 @@ msgstr ""
 msgid "%1's Volatility Indices are based on a cryptographically secure random number generator audited for fairness by an independent third party."
 msgstr "1％的波動率指數由經過加密的安全隨機數字生成器生成，並由獨立的第三方審計其公平度。"
 
-msgid "%1's headquarters are in Malta, a favoured tourist destination with a warm climate, beautiful recreational areas and World Heritage sites. We also have an Operational Headquarters office in Cyberjaya, a high-tech precinct south of Kuala Lumpur, the capital of Malaysia, an equally exciting destination at the heart of Asia."
-msgstr "%1的總部設在馬爾他，是個擁有溫暖氣候、美麗休閒區和世界遺產地的旅遊勝地。我們在馬來西亞首都吉隆坡的南部高科技特區 Cyberjaya 還設有運營總部辦事處，這裡同樣是個令人嚮往的亞洲旅遊勝地。"
-
 msgid "%1's patented pricing technology allows you to benefit from the same rates of return as traders in the interbank market."
 msgstr "利用 %1 受專利保護的報價技術，您可獲得與銀行間市場交易員同樣的回報率。"
 
@@ -268,6 +268,9 @@ msgstr "%1的輝煌發展歷程"
 
 msgid "%1's systems are now processing in excess of 1 million transactions/day (including virtual accounts)."
 msgstr "%1 每天處理超過百萬筆交易(包括虛擬帳戶)。"
+
+msgid "%1’s charitable initiative focuses on small charities and nonprofits around the world that are making a positive difference in their local communities. Our donations have a direct impact, free from the burden of overheads seen in larger charities."
+msgstr ""
 
 msgid "%ctx(minimum duration, for example minimum 15 seconds)min"
 msgstr "%ctx(minimum duration, for example minimum 15 seconds)分鐘"
@@ -322,6 +325,9 @@ msgstr "一觸即付交易"
 
 msgid "* Tax Free: Profits from trading are tax free in many countries but you should always consult a qualified tax advisor."
 msgstr "*免稅：交易所獲之盈利在很多國家免稅，但請務必諮詢專業稅務顧問。"
+
+msgid ",000"
+msgstr ",000"
 
 msgid "- A scanned copy of a utility bill or bank statement (no more than 3 months old)."
 msgstr "水電煤帳單或銀行月結單掃描件（日期不得超過3個月）。"
@@ -684,9 +690,6 @@ msgstr "<ul><li><strong>打開選單</strong>並選取<strong>最愛</strong>。
 msgid "<ul><li>Go to \"<strong>Chrome Menu (Customize and control Google Chrome)</strong>\" dropdown and select <strong>Settings</strong>.</li><li>Click on the <strong>Show advanced settings</strong>.</li><li>Click on the <strong>Content settings</strong> button under <strong>Privacy</strong> menu.</li><li>Select <strong>Allow local data to be set (recommended)</strong>.</li><li>Click on the <strong>Done</strong> button to save your settings.</li></ul>"
 msgstr "<ul><li>前往\"<strong>Chrome菜單(自訂與管理Google Chrome瀏覽器)</strong>\" 下拉列表並選擇<strong>設定</strong>。 </li><li>點選<strong>顯示高階設定</strong>標籤。 </li><li>點選<strong>隱私</strong> 菜單下方的<strong>內容設定</strong>按鈕。 </li><li>選擇<strong>允許設定本地資料（推薦）</strong>。 </li><li>點選<strong>完成</strong> 按鈕儲存您的設定。 </li></ul>"
 
-msgid "== Toll Free =="
-msgstr "== 免費電話 =="
-
 msgid "A Bachelor's degree in Computer Science, or an equivalent combination of technical education, training and work experience"
 msgstr "電腦科學系學士，或具備同等技術教育、培訓背景及工作經驗的人員"
 
@@ -916,11 +919,14 @@ msgstr "進階差價合約交易平台"
 msgid "Advanced Platforms"
 msgstr "進階平台"
 
-msgid "Advanced binary options trading platform"
-msgstr "進階二元期權交易平台"
+msgid "Advanced binary options trading interface"
+msgstr "進階二元期權交易介面"
 
 msgid "Advanced knowledge of software design principles"
 msgstr "先進的軟體設計原則知識"
+
+msgid "Advanced trading app for web and mobile"
+msgstr "進階網站與行動電話交易應用程式"
 
 msgid "Advising senior managers regarding salary negotiations and job offers"
 msgstr "向高級管理人員提供關於薪金協商和錄取人員的建議"
@@ -1084,9 +1090,6 @@ msgstr "合適性"
 
 msgid "Appropriateness Test"
 msgstr "合適性測試"
-
-msgid "Apps"
-msgstr "應用程式"
 
 msgid "Apr"
 msgstr "四月"
@@ -1270,6 +1273,9 @@ msgstr "銀行、對沖基金及專業投資者經常在衍生品場外市場交
 
 msgid "Barrier"
 msgstr "障礙"
+
+msgid "Barrier (%1)"
+msgstr "障礙 (%1)"
 
 msgid "Barrier Change"
 msgstr "障礙變更"
@@ -1524,6 +1530,9 @@ msgstr "但是我們也很挑剔。我們只選擇有特殊技能且認真負責
 msgid "Buy"
 msgstr "買入"
 
+msgid "Buy Price"
+msgstr "買入價"
+
 msgid "Buy an App, or Build Your Own"
 msgstr "購買或自己製作應用程式"
 
@@ -1695,6 +1704,9 @@ msgstr "選擇標的資產市場"
 msgid "Choose your own strike."
 msgstr "選擇您自己的履約價格。"
 
+msgid "Christmas Day"
+msgstr "聖誕節"
+
 msgid "Citizens of Afghanistan, Belgium, Bosnia and Herzegovina, Guyana, Iraq, Lao PDR, Syria, Uganda, Vanuatu or Yemen shall be restricted from opening an account with Binary Investments (Europe) Ltd."
 msgstr "阿富汗、比利時、波士尼亞和黑塞哥維那、蓋亞納、伊拉克、老撾人民民主共和國、敘利亞、烏干達、瓦努阿圖或葉門等國國民將受禁止于Binary 投資（歐洲）Ltd開立帳戶。"
 
@@ -1757,6 +1769,12 @@ msgstr "已收盤"
 
 msgid "Closes"
 msgstr "收盤"
+
+msgid "Closes early (at 18:00)"
+msgstr "收盤提前（至18:00）"
+
+msgid "Closes early (at 21:00)"
+msgstr "收盤提前（至21:00）"
 
 msgid "Collaborate with members of our IT Group to identify innovative ways to improve our website's capability and performance"
 msgstr "與我們資訊技術組成員協作，尋求提高網站功能和效率的創新方法"
@@ -2397,6 +2415,9 @@ msgstr "結束時間"
 msgid "End time"
 msgstr "結束時間"
 
+msgid "End time must be after start time."
+msgstr "結束時間必須開始時間之後。"
+
 msgid "Ends Between/Ends Outside trades"
 msgstr "「收於範圍之內/之外」的交易"
 
@@ -2451,14 +2472,17 @@ msgstr "入市現價"
 msgid "Environment"
 msgstr "環境"
 
+msgid "Equals"
+msgstr "等於"
+
 msgid "Equities"
-msgstr "Equities"
+msgstr "權益"
 
 msgid "Estimated Net Worth"
 msgstr "估計淨值"
 
 msgid "Ethics Code"
-msgstr "Ethics Code"
+msgstr "道德標準"
 
 msgid "European Union residents with the exception of the UK, who wish to trade gambling products, will have their account opened with Binary (Europe) Ltd."
 msgstr "想要進行產品博彩交易的除英國外的歐盟居民將在 Binary (Europe) Ltd 開設帳戶。"
@@ -2562,9 +2586,6 @@ msgstr "擁有奇異性期權訂價、波動性預測、高頻交易與低效率
 msgid "Experience in the financial services industry is preferred"
 msgstr "有金融服務業工作經驗者優先考慮"
 
-msgid "Experience the future of our trading platform with the Next-Gen app."
-msgstr "使用「下一代」應用程式，體驗我們未來的交易平台。"
-
 msgid "Experience with Git"
 msgstr "有Git 經驗"
 
@@ -2598,6 +2619,9 @@ msgstr "到期價格"
 msgid "Explanation"
 msgstr "說明"
 
+msgid "Explore advanced trading features with the Next-Gen app for web and mobile."
+msgstr "使用「下一代」網站與行動電話應用程式，探索進階交易功能。"
+
 msgid "Extensive experience in the application of advanced coding principles and standards"
 msgstr "有豐富的高階編碼原則和標準應用經驗"
 
@@ -2609,6 +2633,9 @@ msgstr "有豐富的Javascript、HTML、CSS、AJAX、JSON編程經驗"
 
 msgid "FAQ"
 msgstr "常見問題集"
+
+msgid "FX Rate"
+msgstr "外匯兌換率"
 
 msgid "Facility that allows you to set limits on your account."
 msgstr "可讓您對帳戶設定限制的設施。"
@@ -2796,6 +2823,9 @@ msgstr "歡迎符合我們基本要求並熱衷於追求行政服務為專業的
 msgid "Friday"
 msgstr "星期五"
 
+msgid "Fridays"
+msgstr "星期五"
+
 msgid "From"
 msgstr "來自"
 
@@ -2813,9 +2843,6 @@ msgstr "此外，在以上或其它任何情況下，如果發生交易中斷、
 
 msgid "Furthermore, the Company disclaims all liability for any malfunctioning, impossibility of access, or poor use conditions of the %1 API due to inappropriate equipment, disturbances related to internet service providers, to the saturation of the internet network, and for any other reason."
 msgstr "此外，%1 API 由於不適當的設備、網路服務提供者干擾、網路飽和以及任何其他理由所造成的所有的任何故障、無法訪問、或不良的使用條件，本公司概不負責。"
-
-msgid "Future of trading on Binary.com"
-msgstr "Binary.com交易功能"
 
 msgid "GBP"
 msgstr "英鎊"
@@ -3360,6 +3387,9 @@ msgstr "任何標的工具或資產前次的效能資訊不可用於保證其目
 
 msgid "Insufficient balance"
 msgstr "餘額不足"
+
+msgid "Insufficient balance."
+msgstr "餘額不足。"
 
 msgid "Interested, so what's next? If you can offer our Clients a specific e-cash method or a local payment option that is not already provided by %1, and you have a good track record in the market, then we would love to <a href='mailto:%2'>hear from you!</a>"
 msgstr "感興趣，接下來該怎麼做？如您可向我們的客戶提供特別電子貨幣支付方式或 %1目前還未提供之本地付款選項，且您在市場上有良好的紀錄，那麼我們非常樂意通過<a href='mailto:%2'>收到您的聯繫!</a>"
@@ -3940,9 +3970,6 @@ msgstr "七月"
 msgid "Jump To"
 msgstr "跳至"
 
-msgid "Jump to date:"
-msgstr "跳至日期:"
-
 msgid "Jun"
 msgstr "六月"
 
@@ -4005,6 +4032,9 @@ msgstr "我們將協助您提高交易技能"
 
 msgid "Learn more"
 msgstr "瞭解更多資訊"
+
+msgid "Learn more about how we think and how we work. Read <a href='https://blog.binary.com/' target='_blank'>our blog</a> for the stories and ideas that inspire us."
+msgstr "了解更多關於我們的想法和運作方式詳情。參閱<a href='https://blog.binary.com/' target='_blank'>我們的部落格</a>，以便了解我們的概念來源和背景故事。"
 
 msgid "Learn more about our corporate culture"
 msgstr "查看關於我們企業文化的詳細資料"
@@ -4153,6 +4183,9 @@ msgstr "存入資金"
 msgid "Make your trade"
 msgstr "執行交易"
 
+msgid "Making a Positive Impact in Local Communities"
+msgstr ""
+
 msgid "Malaysia"
 msgstr "馬來西亞"
 
@@ -4188,6 +4221,9 @@ msgstr "市場專業人士"
 
 msgid "Market exit price"
 msgstr "平倉價"
+
+msgid "Market is closed. Please try again later."
+msgstr "市場已關閉。請稍後重試。"
 
 msgid "Market prices are updated at most once per second.  For any given second, the market price will be updated to the first tick, if any, received in that particular second on the company datafeed."
 msgstr "市場價格最快每秒更新一次。對於任何給定的某一秒鐘，市場價格都將更新至該秒從公司資料源接收到的第一價位（如有）。"
@@ -4396,6 +4432,9 @@ msgstr "新密碼"
 msgid "New Trade"
 msgstr "新交易"
 
+msgid "New Year's Day"
+msgstr "新年"
+
 msgid "New password"
 msgstr "新密碼"
 
@@ -4458,6 +4497,9 @@ msgstr "無任何風險，獲得一萬美元虛擬資金帳戶"
 
 msgid "No. There's no cost to sign up to the affiliate program."
 msgstr "沒有，加入聯盟計劃無需任何費用。"
+
+msgid "Not"
+msgstr "不"
 
 msgid "Not FATCA*"
 msgstr "Not FATCA*"
@@ -4606,6 +4648,9 @@ msgstr "開戶"
 msgid "Opens"
 msgstr "開盤"
 
+msgid "Option Type"
+msgstr "期權類型"
+
 msgid "Options trading can become a real addiction, as can any other activity pushed to its limits. To avoid the danger of such an addiction, we provide a reality-check that gives you a summary of your trades and accounts on a regular basis."
 msgstr "二元期權交易就像任何其他活動一樣，過於沉迷可能會上癮。為了避免發生此種過於入迷的風險，我們定期向您提供交易和財務的實況簡報。"
 
@@ -4665,6 +4710,9 @@ msgstr "我們的資料源可能與網際網路上其它資料源不一致（各
 
 msgid "Our fast organic growth is supplemented by the acquisition of the client base of BetsForTraders, one of our main competitors."
 msgstr "我們獲取了主要競爭對手之一 BetsForTraders 的客戶群，補充了公司快速的有機增長。"
+
+msgid "Our headquarters are in Malta, a favoured tourist destination with a warm climate, beautiful recreational areas, and World Heritage sites. We also have two offices in Malaysia: our operational headquarters in the high-tech township of Cyberjaya, and a branch office at KL Sentral in the heart of the country’s capital, Kuala Lumpur."
+msgstr "我們總部設在馬爾他，是個擁有溫暖氣候、美麗休閒區和世界遺產地的旅遊勝地。我們也在馬來西亞設了兩個辦事處，運營總部設於高科技特區 Cyberjaya，並在首都吉隆坡市中心KL Sentral設了分部辦事處。"
 
 msgid "Our information security policies are based on industry best practices in access control and business continuity."
 msgstr "我們的資訊安全政策基於存取控制和業務持續性的業內最佳實踐。"
@@ -4804,6 +4852,9 @@ msgstr "支付"
 msgid "Payout"
 msgstr "賠付"
 
+msgid "Payout Amount"
+msgstr "收益金額"
+
 msgid "Pension"
 msgstr "退休金"
 
@@ -4849,6 +4900,9 @@ msgstr "平台"
 msgid "Please %1 to view this page"
 msgstr "要查看此頁面，請 %1 t"
 
+msgid "Please check the above form for pending errors."
+msgstr "請檢查以上表格是否有待定錯誤。"
+
 msgid "Please check your email for the value of this token"
 msgstr "請檢查您的電郵領取此權杖編號"
 
@@ -4867,8 +4921,8 @@ msgstr "繼續操作前，請在您的聲明上確認此項交易。"
 msgid "Please confirm the transaction details in order to complete the transfer:"
 msgstr "請確認交易詳細資料以完成轉帳："
 
-msgid "Please contact us with whatever is on your mind at <a href=\"mailto:%1\">%1</a>. We'd be happy to hear from you and willing to assist you. So, feel free to share your ideas and suggestions with us."
-msgstr "無論您有什麼想法，請傳送郵件至 <a href=\"mailto:%1\">%1</a> 與我們聯繫。我們十分樂意聽取您的意見反應並且提供協助。請隨時與我們分享您的意見和建議。"
+msgid "Please contact us with whatever is on your mind at <a href='mailto:%1'>%1</a>. We'd be happy to hear from you and willing to assist you. So, feel free to share your ideas and suggestions with us."
+msgstr "無論您有什麼想法，請傳送郵件至<a href='mailto:%1'>%1</a>與我們聯繫。我們十分樂意聽取您的意見反應並且提供協助。請隨時與我們分享您的意見和建議。"
 
 msgid "Please deposit before transfer to client."
 msgstr "給客戶轉帳前請先存款。"
@@ -4914,6 +4968,9 @@ msgstr "請依照此模式:3個數字，一破折號，接着是4個數字。"
 
 msgid "Please input a valid date"
 msgstr "請輸入有效日期"
+
+msgid "Please log in."
+msgstr "請登入。"
 
 msgid "Please make sure that you first agree with the Agent on the terms of payment before submitting your request."
 msgstr "在送出要求前，請確保您首先同意代理的支付條款。"
@@ -5088,6 +5145,9 @@ msgstr "在全職譯員無法工作時翻譯網站內容"
 
 msgid "Processing Time"
 msgstr "處理時間"
+
+msgid "Processing your request..."
+msgstr "您的要求在處理中..."
 
 msgid "Produce content for the company's website, blog, social media outlets, and marketing materials"
 msgstr "為公司網站、部落格、社交媒體管道和行銷材料新增內容"
@@ -5302,6 +5362,9 @@ msgstr "具有相關領域工作經驗 (金融服務業優先錄取)"
 msgid "Remaining Time"
 msgstr "剩餘時間"
 
+msgid "Remaining time"
+msgstr "剩餘時間"
+
 msgid "Represents the maximum amount of cash that you may hold in your account.  If the maximum is reached, you will be asked to withdraw funds."
 msgstr "表示您的帳戶中可持有的最高現金額。如果達到該最高額，將會要求您提取資金。"
 
@@ -5509,6 +5572,9 @@ msgstr "Self-employed"
 msgid "Sell"
 msgstr "賣出"
 
+msgid "Sell Price"
+msgstr "賣出價格"
+
 msgid "Sell at market"
 msgstr "按市價賣出"
 
@@ -5704,6 +5770,9 @@ msgstr "開始時間"
 msgid "Start Trading"
 msgstr "開始交易"
 
+msgid "Start from:"
+msgstr "開始時間:"
+
 msgid "Start learning"
 msgstr "開始學習"
 
@@ -5838,6 +5907,9 @@ msgstr "支持集團的全球招聘和人才管理需求"
 
 msgid "Talk to us"
 msgstr "聯繫我們"
+
+msgid "Target"
+msgstr "目標"
 
 msgid "Targeting medium-term / long-term profits"
 msgstr "Targeting medium-term / long-term profits"
@@ -6462,6 +6534,9 @@ msgstr "本優惠不能和其他任何優惠一起使用。"
 msgid "This promotion is only available to new Clients. Existing or former Clients do not qualify. It is only available once to each Client."
 msgstr "本促銷活動僅適用於新客戶。目前或以往客戶不符合條件。每一客戶僅能獲得一次。"
 
+msgid "This symbol is not active. Please try another symbol."
+msgstr "這是個非活躍符號。請試用另一符號。"
+
 msgid "This website contains links to other websites and may contain banner or icon advertisements related to third-party websites. These websites and the advertisements thereof may submit cookies onto your web browser and as such are beyond our control. We are not responsible for the privacy practices or the content of such websites. We encourage you to read the privacy policies of these websites, because their practices may differ from ours."
 msgstr "本網站含有其他網站連結，且可能含有第三方網站的橫幅或圖示廣告。這些網站及廣告可能會向您的網頁瀏覽器寫入 cookies，因此不在我們所能控制的範圍內。我們並不對這些網站的隱私規範和內容負責。由於他們的隱私政策可能與我們並不相同，所以我們建議您了解他們的隱私政策。"
 
@@ -6482,9 +6557,6 @@ msgstr "跳動點"
 
 msgid "Tick Trade"
 msgstr "跳動交易"
-
-msgid "TickTrade App"
-msgstr "跳動交易應用程式"
 
 msgid "Tier"
 msgstr "階層"
@@ -6531,8 +6603,13 @@ msgstr "To open a trading account, our customers must confirm they fully underst
 msgid "To qualify, you'll need an advanced university degree in Physics, Financial Engineering or Mathematics"
 msgstr "要獲得錄取資格，您必須擁有物理、金融工程或數學專業的大學學位"
 
-msgid "To reset your password, enter the e-mail address you registered in the field below and click "
+#, fuzzy
+#| msgid "To reset your password, enter the e-mail address you registered in the field below and click "
+msgid "To reset your password, enter the e-mail address you registered in the field below and click 'RESET PASSWORD'."
 msgstr "如要重新設定密碼，在下面的欄位中輸入您註冊的電子郵件地址並點選 "
+
+msgid "Today"
+msgstr "今天"
 
 msgid "Token"
 msgstr "權杖"
@@ -6612,6 +6689,9 @@ msgstr "Trading Experience"
 msgid "Trading Limits"
 msgstr "交易限制"
 
+msgid "Trading Period"
+msgstr "交易期限"
+
 msgid "Trading Platforms"
 msgstr "交易平台"
 
@@ -6638,9 +6718,6 @@ msgstr "Trading manual"
 
 msgid "Trading the financial markets can become addictive. Fill in the form below to limit your participation on the website or send a signed letter or fax to our customer support team. Once set, you can only tighten your limits. Limits will only be removed or loosened after 7 days with the exception of the self-exclusion date, which cannot be removed or altered once you have confirmed it. To remove or increase your limits, please contact <a href=\"%1\">customer support</a>."
 msgstr "金融市場交易可能使人上癮。請填寫下表以限制您對本網站的參與，或傳送簽名信或傳真到我們的客服團隊。一旦設定好後，您只能收緊限制。限制只能在7天后取消或放寬，而自我禁止期在您確認後就不能取消或更改。若要解除或增加您的限制，請聯繫<a href=\"%1\">客服部</a>。"
-
-msgid "TradingView"
-msgstr "交易檢視(TradingView)"
 
 msgid "TradingView for Binary.com"
 msgstr "Binary.com提供的TradingView"
@@ -6731,6 +6808,9 @@ msgstr "美元"
 
 msgid "UX / UI experience"
 msgstr "UX / UI 經驗"
+
+msgid "Ukraine"
+msgstr ""
 
 msgid "Ultra fast on-the-go trading"
 msgstr "超快旅途中交易服務"
@@ -7218,11 +7298,11 @@ msgstr "我為什麼要成為%1的聯盟會員？"
 msgid "Will I need to install any software?"
 msgstr "我需要安裝任何軟體嗎？"
 
-msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing "
-msgstr "如果您預測正確，即可獲得投注額10%-1000% 的回報。要獲得較高回報，可選擇 "
+msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing 'Stays In' with a narrow price target."
+msgstr "如果您預測正確，即可獲得投注額10%-1000% 的回報。要獲得較高回報，可選擇目標價差距較小的'範圍內'投注。"
 
-msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing a "
-msgstr "如果您預測正確，即可獲得投注額10%-1000% 的回報。要獲得較高回報，可選擇 "
+msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing a 'Touch' trade, with a price target farther away from the current price."
+msgstr "如果您預測正確，即可獲得投注額10%-1000% 的回報。選擇目標價與當前價格距離比較遠的'觸及'交易，可提高回報率。"
 
 msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing a price target farther away from the current price."
 msgstr "如果您預測正確，即可獲得投注額10%-1000% 的回報。選擇與當前價格距離比較遠的目標價，可提高回報率。"
@@ -7575,6 +7655,9 @@ msgstr "您正在使用虛擬帳戶。"
 msgid "Your %1 day withdrawal limit is currently %2 %3 (or equivalent in other currency)."
 msgstr "您的 %1 天取款限額目前為 %2 %3（或其他貨幣的等值）。"
 
+msgid "Your Application is Being Processed."
+msgstr "您的申請已經處理完成。"
+
 msgid "Your Client will receive an email notification informing him/her that the transfer has been processed."
 msgstr "您的客戶將收到電子郵件通知，告知其轉帳交易已處理。"
 
@@ -7767,6 +7850,9 @@ msgstr "詳細資料"
 msgid "e.g. blue.binaryws.com"
 msgstr "例如blue.binaryws.com"
 
+msgid "email address"
+msgstr "電子郵件地址"
+
 msgid "f"
 msgstr "f"
 
@@ -7887,6 +7973,12 @@ msgstr "驗證權杖"
 msgid "website"
 msgstr "網站"
 
+msgid "week"
+msgstr "週"
+
+msgid "weeks"
+msgstr "週"
+
 msgid "year"
 msgstr "年"
 
@@ -7908,17 +8000,20 @@ msgstr "您已經完整閱讀此法律條款及條件頁面，並明白您將在
 msgid "you have sufficient experience and knowledge in matters of financial trading to be capable of evaluating the merits and risks of acquiring financial contracts via this site and have done so without relying on any information contained in this site."
 msgstr "您擁有足夠的金融交易經驗和知識，有能力評估經由本網站購買金融合約的收益與風險，並且不依賴於本網站包含的任何資訊作出購買決定。"
 
+msgid "{JAPAN ONLY}#1 Sales Division"
+msgstr "{JAPAN ONLY}#1 Sales Division"
+
 msgid "{JAPAN ONLY}%1 %2 payout if %3 does not touch Exercise price through close on %4."
 msgstr "{JAPAN ONLY}%1 %2 payout if %3 does not touch Exercise price through close on %4."
 
 msgid "{JAPAN ONLY}%1 %2 payout if %3 ends on or between low and high values of Exercise price at close on %4."
 msgstr "{JAPAN ONLY}%1 %2 payout if %3 ends on or between low and high values of Exercise price at close on %4."
 
-msgid "{JAPAN ONLY}%1 %2 payout if %3 ends otside low and high values of Exercise price at close on %4."
-msgstr "{JAPAN ONLY}%1 %2 payout if %3 ends otside low and high values of Exercise price at close on %4."
+msgid "{JAPAN ONLY}%1 %2 payout if %3 ends outside low and high values of Exercise price at close on %4."
+msgstr "{JAPAN ONLY}%1 %2 payout if %3 ends outside low and high values of Exercise price at close on %4."
 
-msgid "{JAPAN ONLY}%1 %2 payout if %3 goes ouside of low and high values of Exercise price through close on %4."
-msgstr "{JAPAN ONLY}%1 %2 payout if %3 goes ouside of low and high values of Exercise price through close on %4."
+msgid "{JAPAN ONLY}%1 %2 payout if %3 goes outside of low and high values of Exercise price through close on %4."
+msgstr "{JAPAN ONLY}%1 %2 payout if %3 goes outside of low and high values of Exercise price through close on %4."
 
 msgid "{JAPAN ONLY}%1 %2 payout if %3 is strictly higher or equal than Exercise price at close  on %4."
 msgstr "{JAPAN ONLY}%1 %2 payout if %3 is strictly higher or equal than Exercise price at close  on %4."
@@ -7938,8 +8033,17 @@ msgstr "{JAPAN ONLY}%1 is fully licensed and regulated by the FFAJ, which requir
 msgid "{JAPAN ONLY}%1 was one of the first active Binary Options brokers and has a proven track record of delivering first class service and maintaining an award winning trading platform, while delivering strong financial performance to our shareholders, for more than 15 years worldwide."
 msgstr "{JAPAN ONLY}%1 was one of the first active Binary Options brokers and has a proven track record of delivering first class service and maintaining an award winning trading platform, while delivering strong financial performance to our shareholders, for more than 15 years worldwide."
 
-msgid "{JAPAN ONLY}60,100,000 JPY (as of July 1, 2016)"
-msgstr "{JAPAN ONLY}60,100,000 JPY (as of July 1, 2016)"
+msgid "{JAPAN ONLY},000"
+msgstr "{JAPAN ONLY},000"
+
+msgid "{JAPAN ONLY}251"
+msgstr "{JAPAN ONLY}251"
+
+msgid "{JAPAN ONLY}7546677"
+msgstr "{JAPAN ONLY}7546677"
+
+msgid "{JAPAN ONLY}80,100,000 JPY (as of September 20, 2016)"
+msgstr "{JAPAN ONLY}80,100,000 JPY (as of September 20, 2016)"
 
 msgid "{JAPAN ONLY}A  Net Settlement type of option is one where the underlying asset does not include yen, but the option fee and settlement are paid in yen; it therefore requires some definition of how the settlement amounts will be calculated and converted to yen."
 msgstr "{JAPAN ONLY}A  Net Settlement type of option is one where the underlying asset does not include yen, but the option fee and settlement are paid in yen; it therefore requires some definition of how the settlement amounts will be calculated and converted to yen."
@@ -7992,6 +8096,18 @@ msgstr "{JAPAN ONLY}A modified version of the Black-Scholes model is widely used
 msgid "{JAPAN ONLY}About OTC currency for binary options trading, summarizes the profit and loss result of all transactions that have been made between the customer, to publish the information in the company's home page, at any time while the customer is doing the transaction before the start, or the transaction, the information Make sure, for that you're willing to trade under the calm judgment, we are committed to a variety of environmental improvement."
 msgstr "{JAPAN ONLY}About OTC currency for binary options trading, summarizes the profit and loss result of all transactions that have been made between the customer, to publish the information in the company's home page, at any time while the customer is doing the transaction before the start, or the transaction, the information Make sure, for that you're willing to trade under the calm judgment, we are committed to a variety of environmental improvement."
 
+msgid "{JAPAN ONLY}Account Name"
+msgstr "{JAPAN ONLY}Account Name"
+
+msgid "{JAPAN ONLY}Account Number"
+msgstr "{JAPAN ONLY}Account Number"
+
+msgid "{JAPAN ONLY}Account Type"
+msgstr "{JAPAN ONLY}Account Type"
+
+msgid "{JAPAN ONLY}Acknowledgment"
+msgstr "{JAPAN ONLY}Acknowledgment"
+
 msgid "{JAPAN ONLY}Activate your account by confirming your authorisation code which we will post to your registered address."
 msgstr "{JAPAN ONLY}Activate your account by confirming your authorisation code which we will post to your registered address."
 
@@ -8025,14 +8141,26 @@ msgstr "{JAPAN ONLY}As well as our Japanese financial licence, we also operate i
 msgid "{JAPAN ONLY}Association of join"
 msgstr "{JAPAN ONLY}Association of join"
 
+msgid "{JAPAN ONLY}Bank"
+msgstr "{JAPAN ONLY}Bank"
+
 msgid "{JAPAN ONLY}Because option prices are determined by the probability of being exercised, it cannot be said that cheaper options have any natural advantage over expensive options."
 msgstr "{JAPAN ONLY}Because option prices are determined by the probability of being exercised, it cannot be said that cheaper options have any natural advantage over expensive options."
 
 msgid "{JAPAN ONLY}Binary K. K."
 msgstr "{JAPAN ONLY}Binary K. K."
 
+msgid "{JAPAN ONLY}Binary K.K. Customer Account"
+msgstr "{JAPAN ONLY}Binary K.K. Customer Account"
+
 msgid "{JAPAN ONLY}Binary options have lower risk than vanilla options for option sellers, because with binary options the maximum loss is fixed."
 msgstr "{JAPAN ONLY}Binary options have lower risk than vanilla options for option sellers, because with binary options the maximum loss is fixed."
+
+msgid "{JAPAN ONLY}Branch"
+msgstr "{JAPAN ONLY}Branch"
+
+msgid "{JAPAN ONLY}Branch Code"
+msgstr "{JAPAN ONLY}Branch Code"
 
 msgid "{JAPAN ONLY}By law we are required to manage the assets of our customers and our company separately"
 msgstr "{JAPAN ONLY}By law we are required to manage the assets of our customers and our company separately"
@@ -8060,6 +8188,9 @@ msgstr "{JAPAN ONLY}Company name in English"
 
 msgid "{JAPAN ONLY}Congratulations, you have pass the test, our Customer Support will contact you shortly."
 msgstr "{JAPAN ONLY}Congratulations, you have pass the test, our Customer Support will contact you shortly."
+
+msgid "{JAPAN ONLY}Continue Trading"
+msgstr "{JAPAN ONLY}Continue Trading"
 
 msgid "{JAPAN ONLY}Current or former member of category 1) or 2)"
 msgstr "{JAPAN ONLY}Current or former member of category 1) or 2)"
@@ -8271,6 +8402,12 @@ msgstr "{JAPAN ONLY}If you buy a currency binary option at a price of 500 yen, a
 msgid "{JAPAN ONLY}If you buy a currency binary put option at a price of 500 yen, with an underlying of dollar against yen, the payout is 1,000 yen, and the strike price is 100, then if the judgment price at exercise time is 99, you will receive a payout 1,000 yen from the seller of the option."
 msgstr "{JAPAN ONLY}If you buy a currency binary put option at a price of 500 yen, with an underlying of dollar against yen, the payout is 1,000 yen, and the strike price is 100, then if the judgment price at exercise time is 99, you will receive a payout 1,000 yen from the seller of the option."
 
+msgid "{JAPAN ONLY}If you have any queries or wish to cancel the request, please contact <a href='mailto:%1'>Customer Support</a>."
+msgstr "{JAPAN ONLY}If you have any queries or wish to cancel the request, please contact <a href='mailto:%1'>Customer Support</a>."
+
+msgid "{JAPAN ONLY}If you need more information then please contact Customer Support at <a href='mailto:%1'>%1</a>)."
+msgstr "{JAPAN ONLY}If you need more information then please contact Customer Support at <a href='mailto:%1'>%1</a>)."
+
 msgid "{JAPAN ONLY}If you sell a currency binary call option at a price of 500 yen, with an underlying of dollar against yen, the payout is 1,000 yen, and the strike price is 100, then if the judgment price at exercise time is 99, you will need to payout 1,000 yen to the buyer of the option."
 msgstr "{JAPAN ONLY}If you sell a currency binary call option at a price of 500 yen, with an underlying of dollar against yen, the payout is 1,000 yen, and the strike price is 100, then if the judgment price at exercise time is 99, you will need to payout 1,000 yen to the buyer of the option."
 
@@ -8279,6 +8416,12 @@ msgstr "{JAPAN ONLY}If you sell a currency binary option at a price of 500 yen, 
 
 msgid "{JAPAN ONLY}If you sell a currency binary put option at a price of 500 yen, with an underlying of dollar against yen, the payout is 1,000 yen, and the strike price is 100, then if the judgment price at exercise time is 99, you will need to payout 1,000 yen to the buyer of the option."
 msgstr "{JAPAN ONLY}If you sell a currency binary put option at a price of 500 yen, with an underlying of dollar against yen, the payout is 1,000 yen, and the strike price is 100, then if the judgment price at exercise time is 99, you will need to payout 1,000 yen to the buyer of the option."
+
+msgid "{JAPAN ONLY}If you wish to change your designated account or you have any other queries, then please contact Customer Support."
+msgstr "{JAPAN ONLY}If you wish to change your designated account or you have any other queries, then please contact Customer Support."
+
+msgid "{JAPAN ONLY}If your bank account details have changed, please contact Customer Support in order to verify your ID and new account details."
+msgstr "{JAPAN ONLY}If your bank account details have changed, please contact Customer Support in order to verify your ID and new account details."
 
 msgid "{JAPAN ONLY}Implied volatility is a prediction of the future rate of change in the underlying asset."
 msgstr "{JAPAN ONLY}Implied volatility is a prediction of the future rate of change in the underlying asset."
@@ -8336,6 +8479,54 @@ msgstr "{JAPAN ONLY}It is possible to use two binary options to make a profit if
 
 msgid "{JAPAN ONLY}It prohibits the copying of the questions . In addition , You agree that you will not leak to third party"
 msgstr "{JAPAN ONLY}It prohibits the copying of the questions . In addition , You agree that you will not leak to third party"
+
+msgid "{JAPAN ONLY}JSA_Date_1"
+msgstr "{JAPAN ONLY}JSA_Date_1"
+
+msgid "{JAPAN ONLY}JSA_Date_2"
+msgstr "{JAPAN ONLY}JSA_Date_2"
+
+msgid "{JAPAN ONLY}JSA_Date_3"
+msgstr "{JAPAN ONLY}JSA_Date_3"
+
+msgid "{JAPAN ONLY}JSA_Explanation_1_1)"
+msgstr "{JAPAN ONLY}JSA_Explanation_1_1)"
+
+msgid "{JAPAN ONLY}JSA_Explanation_1_2)"
+msgstr "{JAPAN ONLY}JSA_Explanation_1_2)"
+
+msgid "{JAPAN ONLY}JSA_Explanation_1_3)"
+msgstr "{JAPAN ONLY}JSA_Explanation_1_3)"
+
+msgid "{JAPAN ONLY}JSA_Explanation_2_1)"
+msgstr "{JAPAN ONLY}JSA_Explanation_2_1)"
+
+msgid "{JAPAN ONLY}JSA_Explanation_2_2)"
+msgstr "{JAPAN ONLY}JSA_Explanation_2_2)"
+
+msgid "{JAPAN ONLY}JSA_Explanation_2_3)"
+msgstr "{JAPAN ONLY}JSA_Explanation_2_3)"
+
+msgid "{JAPAN ONLY}JSA_Explanation_3_1)"
+msgstr "{JAPAN ONLY}JSA_Explanation_3_1)"
+
+msgid "{JAPAN ONLY}JSA_Explanation_3_2)"
+msgstr "{JAPAN ONLY}JSA_Explanation_3_2)"
+
+msgid "{JAPAN ONLY}JSA_Explanation_3_3)"
+msgstr "{JAPAN ONLY}JSA_Explanation_3_3)"
+
+msgid "{JAPAN ONLY}JSA_Title_1"
+msgstr "{JAPAN ONLY}JSA_Title_1"
+
+msgid "{JAPAN ONLY}JSA_Title_2"
+msgstr "{JAPAN ONLY}JSA_Title_2"
+
+msgid "{JAPAN ONLY}JSA_Title_3"
+msgstr "{JAPAN ONLY}JSA_Title_3"
+
+msgid "{JAPAN ONLY}Japan Service Announcements"
+msgstr "{JAPAN ONLY}Japan Service Announcements"
 
 msgid "{JAPAN ONLY}Knowledge Test"
 msgstr "{JAPAN ONLY}Knowledge Test"
@@ -8412,8 +8603,8 @@ msgstr "{JAPAN ONLY}Our Customer Support staff will contact you at each stage to
 msgid "{JAPAN ONLY}Our Real Money Account opening procedure has 4 steps:"
 msgstr "{JAPAN ONLY}Our Real Money Account opening procedure has 4 steps:"
 
-msgid "{JAPAN ONLY}Our customer support are available to help you if you are unsure about how to use our trading tools. Please email them at <a href=\"mailto:%1\">%1</a>"
-msgstr "{JAPAN ONLY}Our customer support are available to help you if you are unsure about how to use our trading tools. Please email them at <a href=\"mailto:%1\">%1</a>"
+msgid "{JAPAN ONLY}Our customer support are available to help you if you are unsure about how to use our trading tools. Please email them at <a href='mailto:%1'>%1</a>"
+msgstr "{JAPAN ONLY}Our customer support are available to help you if you are unsure about how to use our trading tools. Please email them at <a href='mailto:%1'>%1</a>"
 
 msgid "{JAPAN ONLY}Our internal management control officer and beneficiary representative is required to confirm the amount of funds that must be held in the trust bank count every day"
 msgstr "{JAPAN ONLY}Our internal management control officer and beneficiary representative is required to confirm the amount of funds that must be held in the trust bank count every day"
@@ -8424,11 +8615,20 @@ msgstr "{JAPAN ONLY}Our trading page provides an overall view of all the option 
 msgid "{JAPAN ONLY}Payout Amount"
 msgstr "{JAPAN ONLY}Payout Amount"
 
+msgid "{JAPAN ONLY}Please allow up to 3 business days for the funds to be credited to your trading account."
+msgstr "{JAPAN ONLY}Please allow up to 3 business days for the funds to be credited to your trading account."
+
+msgid "{JAPAN ONLY}Please allow up to 5 business days for the funds to be credited to your designated bank account."
+msgstr "{JAPAN ONLY}Please allow up to 5 business days for the funds to be credited to your designated bank account."
+
 msgid "{JAPAN ONLY}Please click <a class=\"pjaxload\" href=\"#identification-documents\">here</a> for further information."
 msgstr "{JAPAN ONLY}Please click <a class=\"pjaxload\" href=\"#identification-documents\">here</a> for further information."
 
 msgid "{JAPAN ONLY}Please complete the following questions."
 msgstr "{JAPAN ONLY}Please complete the following questions."
+
+msgid "{JAPAN ONLY}Please contact <a href='mailto:%1'>%1</a> if you need to withdraw more than the maximum amount, as further ID verification is required."
+msgstr "{JAPAN ONLY}Please contact <a href='mailto:%1'>%1</a> if you need to withdraw more than the maximum amount, as further ID verification is required."
 
 msgid "{JAPAN ONLY}Please download our Full Trading Guide which describes in detail how to use our trading screens and other features of our website:"
 msgstr "{JAPAN ONLY}Please download our Full Trading Guide which describes in detail how to use our trading screens and other features of our website:"
@@ -8441,6 +8641,27 @@ msgstr "{JAPAN ONLY}Please download our Pre-Contract Documents which you must co
 
 msgid "{JAPAN ONLY}Please download our Summary of Specifications which lists all the details of our trade types, rules and conditions for trading etc."
 msgstr "{JAPAN ONLY}Please download our Summary of Specifications which lists all the details of our trade types, rules and conditions for trading etc."
+
+msgid "{JAPAN ONLY}Please ensure you maintain sufficient balance in your trading account."
+msgstr "{JAPAN ONLY}Please ensure you maintain sufficient balance in your trading account."
+
+msgid "{JAPAN ONLY}Please input the amount you would like to withdraw and press the Request button."
+msgstr "{JAPAN ONLY}Please input the amount you would like to withdraw and press the Request button."
+
+msgid "{JAPAN ONLY}Please make a bank transfer from your designated bank account to:"
+msgstr "{JAPAN ONLY}Please make a bank transfer from your designated bank account to:"
+
+msgid "{JAPAN ONLY}Please make sure you add your Binary.com account ID to the Remitter's account name, or it will delay crediting the funds to your account:"
+msgstr "{JAPAN ONLY}Please make sure you add your Binary.com account ID to the Remitter's account name, or it will delay crediting the funds to your account:"
+
+msgid "{JAPAN ONLY}Please note our maximum deposit limit for a single transaction is ¥1,000,000."
+msgstr "{JAPAN ONLY}Please note our maximum deposit limit for a single transaction is ¥1,000,000."
+
+msgid "{JAPAN ONLY}Please note the maximum regular withdrawal amount is ¥1,000,000."
+msgstr "{JAPAN ONLY}Please note the maximum regular withdrawal amount is ¥1,000,000."
+
+msgid "{JAPAN ONLY}Please note we can only accept payments from your designated bank account and no other account in your name."
+msgstr "{JAPAN ONLY}Please note we can only accept payments from your designated bank account and no other account in your name."
 
 msgid "{JAPAN ONLY}Please note:"
 msgstr "{JAPAN ONLY}Please note:"
@@ -8463,6 +8684,9 @@ msgstr "{JAPAN ONLY}Prices for currency options are calculated relative the valu
 msgid "{JAPAN ONLY}Purchase, Settlement & Resale"
 msgstr "{JAPAN ONLY}Purchase, Settlement & Resale"
 
+msgid "{JAPAN ONLY}Rakuten Bank"
+msgstr "{JAPAN ONLY}Rakuten Bank"
+
 msgid "{JAPAN ONLY}Regarding to the OTC price of financial instruments, in case that financial instruments business operator suggests both of  bid and ask price (or trading price and cancellation price), generally there is a difference of them. This option will be wider as the expiration approaches."
 msgstr "{JAPAN ONLY}Regarding to the OTC price of financial instruments, in case that financial instruments business operator suggests both of  bid and ask price (or trading price and cancellation price), generally there is a difference of them. This option will be wider as the expiration approaches."
 
@@ -8472,11 +8696,14 @@ msgstr "{JAPAN ONLY}Registration"
 msgid "{JAPAN ONLY}Regulation & Tax"
 msgstr "{JAPAN ONLY}Regulation & Tax"
 
-msgid "{JAPAN ONLY}Remaining time"
-msgstr "{JAPAN ONLY}Remaining time"
+msgid "{JAPAN ONLY}Remitter's Name:"
+msgstr "{JAPAN ONLY}Remitter's Name:"
 
 msgid "{JAPAN ONLY}STAY-IN/BREAK-OUT"
 msgstr "{JAPAN ONLY}STAY-IN/BREAK-OUT"
+
+msgid "{JAPAN ONLY}Savings"
+msgstr "{JAPAN ONLY}Savings"
 
 msgid "{JAPAN ONLY}Section 1: Structure"
 msgstr "{JAPAN ONLY}Section 1: Structure"
@@ -8508,6 +8735,9 @@ msgstr "{JAPAN ONLY}Select an option type"
 msgid "{JAPAN ONLY}Select payout size"
 msgstr "{JAPAN ONLY}Select payout size"
 
+msgid "{JAPAN ONLY}Service Announcements"
+msgstr "{JAPAN ONLY}Service Announcements"
+
 msgid "{JAPAN ONLY}Short positions in FX Binary Options must be covered by initial margin and any further losses must be covered by further margin deposits."
 msgstr "{JAPAN ONLY}Short positions in FX Binary Options must be covered by initial margin and any further losses must be covered by further margin deposits."
 
@@ -8528,6 +8758,9 @@ msgstr "{JAPAN ONLY}Take knowledge test"
 
 msgid "{JAPAN ONLY}Take our Knowledge Test to confirm your understanding of options."
 msgstr "{JAPAN ONLY}Take our Knowledge Test to confirm your understanding of options."
+
+msgid "{JAPAN ONLY}Thank you for your withdrawal request."
+msgstr "{JAPAN ONLY}Thank you for your withdrawal request."
 
 msgid "{JAPAN ONLY}The Black-Scholes model is widely used to calculate theoretical option prices."
 msgstr "{JAPAN ONLY}The Black-Scholes model is widely used to calculate theoretical option prices."
@@ -8670,6 +8903,9 @@ msgstr "{JAPAN ONLY}We pride ourselves on our responsible trading and high ethic
 msgid "{JAPAN ONLY}We will pass on any possible price improvements for orders in fast moving markets."
 msgstr "{JAPAN ONLY}We will pass on any possible price improvements for orders in fast moving markets."
 
+msgid "{JAPAN ONLY}We will process your request and transfer the funds to your designated bank account within 5 business days."
+msgstr "{JAPAN ONLY}We will process your request and transfer the funds to your designated bank account within 5 business days."
+
 msgid "{JAPAN ONLY}When buying a vanilla call option, the break-even price at the exercise point is the strike price plus the option price paid in units of the underlying."
 msgstr "{JAPAN ONLY}When buying a vanilla call option, the break-even price at the exercise point is the strike price plus the option price paid in units of the underlying."
 
@@ -8688,6 +8924,9 @@ msgstr "{JAPAN ONLY}You can apply to open an account online. Simply click <a cla
 msgid "{JAPAN ONLY}You can protect your account value further by setting other limits to encourage trading discipline"
 msgstr "{JAPAN ONLY}You can protect your account value further by setting other limits to encourage trading discipline"
 
+msgid "{JAPAN ONLY}You can request a funds transfer to your designated bank account at any time."
+msgstr "{JAPAN ONLY}You can request a funds transfer to your designated bank account at any time."
+
 msgid "{JAPAN ONLY}You can see the real-time value of your portfolio and access the trade view and analysis screen from which you can then choose to close the position:"
 msgstr "{JAPAN ONLY}You can see the real-time value of your portfolio and access the trade view and analysis screen from which you can then choose to close the position:"
 
@@ -8697,11 +8936,17 @@ msgstr "{JAPAN ONLY}You can sell-back your position at any time until 2 minutes 
 msgid "{JAPAN ONLY}You can then review the performance of the trade and then sell-back to close the position if you wish, by clicking the sell-back button."
 msgstr "{JAPAN ONLY}You can then review the performance of the trade and then sell-back to close the position if you wish, by clicking the sell-back button."
 
+msgid "{JAPAN ONLY}You must have sufficient balance in your trading account at the time of transfer."
+msgstr "{JAPAN ONLY}You must have sufficient balance in your trading account at the time of transfer."
+
 msgid "{JAPAN ONLY}You set your own personal daily loss limit"
 msgstr "{JAPAN ONLY}You set your own personal daily loss limit"
 
 msgid "{JAPAN ONLY}You will always know your maximum loss, as it is limited to the amount that you have paid"
 msgstr "{JAPAN ONLY}You will always know your maximum loss, as it is limited to the amount that you have paid"
+
+msgid "{JAPAN ONLY}Your Funds"
+msgstr "{JAPAN ONLY}Your Funds"
 
 msgid "{JAPAN ONLY}Your funds are safe"
 msgstr "{JAPAN ONLY}Your funds are safe"
@@ -8709,41 +8954,8 @@ msgstr "{JAPAN ONLY}Your funds are safe"
 msgid "{JAPAN ONLY}Your investments are immediately reflected in your account balance, so there is no further risk"
 msgstr "{JAPAN ONLY}Your investments are immediately reflected in your account balance, so there is no further risk"
 
-msgid "{JAPAN ONLY}day"
-msgstr "{JAPAN ONLY}day"
-
-msgid "{JAPAN ONLY}days"
-msgstr "{JAPAN ONLY}days"
-
-msgid "{JAPAN ONLY}hour"
-msgstr "{JAPAN ONLY}hour"
-
-msgid "{JAPAN ONLY}hours"
-msgstr "{JAPAN ONLY}hours"
-
-msgid "{JAPAN ONLY}minute"
-msgstr "{JAPAN ONLY}minute"
-
-msgid "{JAPAN ONLY}minutes"
-msgstr "{JAPAN ONLY}minutes"
-
-msgid "{JAPAN ONLY}month"
-msgstr "{JAPAN ONLY}month"
-
-msgid "{JAPAN ONLY}months"
-msgstr "{JAPAN ONLY}months"
-
-msgid "{JAPAN ONLY}week"
-msgstr "{JAPAN ONLY}week"
-
-msgid "{JAPAN ONLY}weeks"
-msgstr "{JAPAN ONLY}weeks"
-
-msgid "{JAPAN ONLY}year"
-msgstr "{JAPAN ONLY}year"
-
-msgid "{JAPAN ONLY}years"
-msgstr "{JAPAN ONLY}years"
+msgid "{JAPAN ONLY}¥"
+msgstr "{JAPAN ONLY}¥"
 
 msgid "{Japan Only} Download Terms and Conditions Document file"
 msgstr "{Japan Only} Download Terms and Conditions Document file"
@@ -8799,6 +9011,14 @@ msgstr "工作詳細資料"
 msgid "Company Profile"
 msgstr "公司資料"
 
+msgid "Service Announcements"
+msgstr "服務佈告"
+
+#, fuzzy
+#| msgid "Chart"
+msgid "Charity"
+msgstr "圖表"
+
 msgid "Open-Source Projects"
 msgstr "開源專案"
 
@@ -8813,6 +9033,9 @@ msgstr "二元期權如何交易?"
 
 msgid "What Are OTC Indices and Stocks?"
 msgstr "場外交易指數和股票有哪些？"
+
+msgid "Acknowledgement"
+msgstr "確認"
 
 msgid "Account Limits"
 msgstr "帳戶限額"
@@ -8831,6 +9054,63 @@ msgstr "帳戶詳細資料"
 
 msgid "Terms and Conditions Approval"
 msgstr "條款和條件審批"
+
+#~ msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing "
+#~ msgstr "如果您預測正確，即可獲得投注額10%-1000% 的回報。要獲得較高回報，可選擇 "
+
+#~ msgid "{JAPAN ONLY}Remaining time"
+#~ msgstr "{JAPAN ONLY}Remaining time"
+
+#~ msgid "{JAPAN ONLY}day"
+#~ msgstr "{JAPAN ONLY}day"
+
+#~ msgid "{JAPAN ONLY}days"
+#~ msgstr "{JAPAN ONLY}days"
+
+#~ msgid "{JAPAN ONLY}hour"
+#~ msgstr "{JAPAN ONLY}hour"
+
+#~ msgid "{JAPAN ONLY}hours"
+#~ msgstr "{JAPAN ONLY}hours"
+
+#~ msgid "{JAPAN ONLY}minute"
+#~ msgstr "{JAPAN ONLY}minute"
+
+#~ msgid "{JAPAN ONLY}minutes"
+#~ msgstr "{JAPAN ONLY}minutes"
+
+#~ msgid "{JAPAN ONLY}month"
+#~ msgstr "{JAPAN ONLY}month"
+
+#~ msgid "{JAPAN ONLY}months"
+#~ msgstr "{JAPAN ONLY}months"
+
+#~ msgid "{JAPAN ONLY}week"
+#~ msgstr "{JAPAN ONLY}week"
+
+#~ msgid "{JAPAN ONLY}weeks"
+#~ msgstr "{JAPAN ONLY}weeks"
+
+#~ msgid "{JAPAN ONLY}year"
+#~ msgstr "{JAPAN ONLY}year"
+
+#~ msgid "{JAPAN ONLY}years"
+#~ msgstr "{JAPAN ONLY}years"
+
+#~ msgid "Jump to date:"
+#~ msgstr "跳至日期:"
+
+#~ msgid "Future of trading on Binary.com"
+#~ msgstr "Binary.com交易功能"
+
+#~ msgid "Apps"
+#~ msgstr "應用程式"
+
+#~ msgid "TickTrade App"
+#~ msgstr "跳動交易應用程式"
+
+#~ msgid "TradingView"
+#~ msgstr "交易檢視(TradingView)"
 
 #~ msgid "{JAPAN ONLY}March 2016"
 #~ msgstr "{JAPAN ONLY}March 2016"
@@ -9091,9 +9371,6 @@ msgstr "條款和條件審批"
 #~ msgid "{JAPAN ONLY}February 2016"
 #~ msgstr "{JAPAN ONLY}February 2016"
 
-#~ msgid "{JAPAN ONLY}January 2016"
-#~ msgstr "{JAPAN ONLY}January 2016"
-
 #~ msgid "{JAPAN ONLY}March 2014"
 #~ msgstr "{JAPAN ONLY}March 2014"
 
@@ -9343,14 +9620,8 @@ msgstr "條款和條件審批"
 #~ msgid "To continue using our cashier system, please try accessing it again:"
 #~ msgstr "如需繼續使用我們的收銀台系統，請嘗試再次存取："
 
-#~ msgid "Unable to process your request"
-#~ msgstr "無法處理您的要求"
-
 #~ msgid "Why us?"
 #~ msgstr "為何選擇我們？"
-
-#~ msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing a \"Touch\" trade, with a price target farther away from the current price."
-#~ msgstr "如果您預測正確，即可獲得投注額10%-1000% 的回報。選擇目標價與當前價格距離比較遠的「觸及」交易，可提高回報率。"
 
 #~ msgid "You have reached the rate limit of requests per second. To continue, please <a href='javascript:;' id='ratelimit-refresh-link'>refresh</a> the page."
 #~ msgstr "您已達每秒最大請求極限。請<a href='javascript:;' id='ratelimit-refresh-link'>重新整理</a>頁面繼續操作。"
@@ -9454,9 +9725,6 @@ msgstr "條款和條件審批"
 
 #~ msgid "Accumulation/Distribution"
 #~ msgstr "累積/發佈"
-
-#~ msgid "Acknowledgement of Money Transfer"
-#~ msgstr "確認轉帳"
 
 #~ msgid "Acknowledgement of Withdrawal Request"
 #~ msgstr "確認提款要求"
@@ -9607,9 +9875,6 @@ msgstr "條款和條件審批"
 
 #~ msgid "Close Location Value"
 #~ msgstr "關閉位置值"
-
-#~ msgid "Closes early (at %1)"
-#~ msgstr "收盤提前（至%1）"
 
 #~ msgid "Comment must not exceed %1 characters. Please resubmit."
 #~ msgstr "註解不能超過%1個字元。請重新提交。"
@@ -10261,9 +10526,6 @@ msgstr "條款和條件審批"
 #~ msgid "Please enter your email address."
 #~ msgstr "請輸入您的電郵地址。"
 
-#~ msgid "Please log in."
-#~ msgstr "請登入。"
-
 #~ msgid "Please note that your settings have been updated as follows:"
 #~ msgstr "請注意，您的設定已完成以下更新："
 
@@ -10536,9 +10798,6 @@ msgstr "條款和條件審批"
 
 #~ msgid "TRIX"
 #~ msgstr "三重指數平滑移動平均線"
-
-#~ msgid "Target"
-#~ msgstr "目標"
 
 #~ msgid "Technical Indicator derived from subtracting Aroon Down from Aroon Up. As Aroon Up and Aroon Down oscillate between 0 and 100, the Aroon Oscillator oscillates between -100 and 100 with zero as the centre crossover line."
 #~ msgstr "技術指標由阿隆上升線減去阿隆下行線得出。阿隆上升線和下行線在0 到100 之間擺動，而阿隆擺動指標在-100 和100 之間擺動，以零作為中間跨界線。"
@@ -10828,9 +11087,6 @@ msgstr "條款和條件審批"
 #~ msgid "Week"
 #~ msgstr "週"
 
-#~ msgid "Weeks"
-#~ msgstr "週數"
-
 #~ msgid "Weighted Moving Average"
 #~ msgstr "加權移動平均線"
 
@@ -11034,9 +11290,6 @@ msgstr "條款和條件審批"
 
 #~ msgid "plus"
 #~ msgstr "加"
-
-#~ msgid "today"
-#~ msgstr "今天"
 
 #~ msgid "USDZAR"
 #~ msgstr "美元兌南非蘭特"
@@ -12819,9 +13072,6 @@ msgstr "條款和條件審批"
 #~ msgid "Amount must be a positive number."
 #~ msgstr "金額須為正數。"
 
-#~ msgid "Buy Price"
-#~ msgstr "買入價"
-
 #~ msgid "Caching Content for Performance"
 #~ msgstr "表現的緩存內容"
 
@@ -13088,9 +13338,6 @@ msgstr "條款和條件審批"
 
 #~ msgid "Purchase Spot"
 #~ msgstr "買入現價"
-
-#~ msgid "Sell Price"
-#~ msgstr "賣出價格"
 
 #~ msgid "Sell Spot"
 #~ msgstr "賣出現價"
@@ -13552,9 +13799,6 @@ msgstr "條款和條件審批"
 
 #~ msgid "You shall indemnify on demand and hold the Company harmless from and against any and all losses, demands, claims, damages, costs, expenses (including, but not limited to, consequential losses and loss of profit, reasonable legal costs and expenses and VAT thereon if applicable) and liabilities suffered or incurred, directly or indirectly, by the Company in consequence of any breach by you of clause 3.3 or 3.4."
 #~ msgstr "如果由於您違反第3.3條或第3.4條，導致公司直接或間接產生任何損失、要求、索賠、損害賠償、費用、開支（包括但不限於間接損失和利潤損失、合理的法律費用和開支及可能的增值稅）和法律責任，則您應當應要求對公司進行賠償，使其免受損害。"
-
-#~ msgid "Your verification link has expired."
-#~ msgstr "您的驗證連結已經過期。"
 
 #~ msgid "%1 is seeking several highly skilled Marketing Executives to join its team of talented professionals."
 #~ msgstr "%1 正尋找多位能力特強的營銷高級主管加入專業人才團隊。"
@@ -14099,10 +14343,6 @@ msgstr "條款和條件審批"
 #, fuzzy
 #~ msgid "contact us"
 #~ msgstr "聯繫我們"
-
-#, fuzzy
-#~ msgid "email address"
-#~ msgstr "電子郵件地址"
 
 #, fuzzy
 #~ msgid "%1 %2 payout if %3 is higher than or equal to %6 at %5."
@@ -14755,9 +14995,6 @@ msgstr "條款和條件審批"
 #~ msgid "This page is unavailable."
 #~ msgstr "此頁面不可使用。"
 
-#~ msgid "To change your name, date of birth, country of residence, or email, please contact Customer Support."
-#~ msgstr "如需更改姓名、生日、居住國或電子郵件地址，請與客服人員聯繫。"
-
 #~ msgid "To:"
 #~ msgstr "致:"
 
@@ -14979,9 +15216,6 @@ msgstr "條款和條件審批"
 
 #~ msgid "Currency quotes are truncated to 5 digits and all contracts are purchased and settled based on 5-digit currency quotes."
 #~ msgstr "外匯報價截斷到5位數，所有的合約均以5位數外匯報價進行購買和結算。"
-
-#~ msgid "Fridays"
-#~ msgstr "星期五"
 
 #~ msgid "Notice: please only share your API token with third-parties which you trust."
 #~ msgstr "通知：請僅將API權杖與您信賴的第三方共享。"

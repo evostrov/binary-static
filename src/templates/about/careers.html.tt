@@ -38,11 +38,14 @@
           <p>
             [% l("Who love working with people from different cultures, and are keen to contribute to a dynamic and unique workplace, and not merely pass on through.") %]
           </p>
+          <p>
+            [% l("Learn more about how we think and how we work. Read <a href='https://blog.binary.com/' target='_blank'>our blog</a> for the stories and ideas that inspire us.") %]
+          </p>
         </div>
     </div>
   </div>
   <div class="gr-12 gr-hide-m">
-    <div class="separator-line"></div>
+    <div class="separator-line border-bottom"></div>
   </div>
   <div class="gr-12 gr-parent">
       <div class="gr-row">
@@ -51,7 +54,7 @@
               [% l("Where we are") %]
             </h1>
             <p>
-              [% l("[_1]'s headquarters are in Malta, a favoured tourist destination with a warm climate, beautiful recreational areas and World Heritage sites. We also have an Operational Headquarters office in Cyberjaya, a high-tech precinct south of Kuala Lumpur, the capital of Malaysia, an equally exciting destination at the heart of Asia.", website_name) %]
+              [% l("Our headquarters are in Malta, a favoured tourist destination with a warm climate, beautiful recreational areas, and World Heritage sites. We also have two offices in Malaysia: our operational headquarters in the high-tech township of Cyberjaya, and a branch office at KL Sentral in the heart of the country’s capital, Kuala Lumpur.") %]
             </p>
           </div>
           <div class="gr-6 gr-12-m">
@@ -117,7 +120,7 @@
       </div>
   </div>
   <div class="gr-12 gr-hide-m">
-    <div class="separator-line"></div>
+    <div class="separator-line border-bottom"></div>
   </div>
   <div class="gr-12">
       <div class="gr-row">
@@ -152,7 +155,7 @@
       </div>
   </div>
   <div class="gr-12 gr-hide-m">
-    <div class="separator-line"></div>
+    <div class="separator-line border-bottom"></div>
   </div>
   <div class="gr-12 gr-padding-10">
     <h1>
@@ -225,7 +228,7 @@
     </div>
   </div>
   <div class="gr-12 gr-hide-m">
-    <div class="separator-line"></div>
+    <div class="separator-line border-bottom"></div>
   </div>
   <div class="gr-12 gr-padding-10">
     <h1>

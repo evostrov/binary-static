@@ -1,3 +1,7 @@
+var Login = require('../base/login').Login;
+var objectNotEmpty = require('../base/utility').objectNotEmpty;
+var Validate = require('../common_functions/validation').Validate;
+
 var sidebar_scroll = function(elm_selector) {
     elm_selector.on('click', '#sidebar-nav li', function() {
         var clicked_li = $(this);
@@ -127,8 +131,8 @@ var email_rot13 = function(str) {
 
 var display_cs_contacts = function () {
     $('.contact-content').on("change", '#cs_telephone_number', function () {
-        var val = $(this).val();
-        $('#display_cs_telephone').text(val);
+        var val = $(this).val().split(',');
+        $('#display_cs_telephone').html(val[0] + (val.length > 1 ? '<br />' + val[1] : ''));
     });
     $('#cs_contact_eaddress').html(email_rot13("<n uers=\"znvygb:fhccbeg@ovanel.pbz\" ery=\"absbyybj\">fhccbeg@ovanel.pbz</n>"));
 };
@@ -237,12 +241,17 @@ function hide_if_logged_in() {
 
 // use function to generate elements and append them
 // e.g. element is select and element to append is option
-function appendTextValueChild(element, text, value, disabled){
+function appendTextValueChild(element, text, value, disabled, el_class){
     var option = document.createElement("option");
     option.text = text;
-    option.value = value;
+    if (value) {
+        option.value = value;
+    }
     if (disabled === 'disabled') {
       option.setAttribute('disabled', 'disabled');
+    }
+    if (el_class) {
+      option.className = el_class;
     }
     element.appendChild(option);
     return;
@@ -590,6 +599,30 @@ function show_residence_form() {
     });
 }
 
+function create_language_drop_down(languages) {
+    var language_select_element = document.getElementById('language_select');
+    if (!language_select_element) return;
+    languages.sort(function(a, b) {
+        if (a === 'EN' || a < b) {
+            return -1;
+        } else {
+            return 1;
+        }
+    });
+    for (var i = 0; i < languages.length; i++) {
+        if (languages[i] !== 'JA') {
+            appendTextValueChild(language_select_element, map_code_to_language(languages[i]), '', '', languages[i]);
+        }
+    }
+    $('#language_select .' + page.language()).attr('selected', 'selected');
+    $('#language_select').removeClass('invisible');
+}
+
+function map_code_to_language(code) {
+    var map = page.all_languages();
+    return map[code];
+}
+
 var $buoop = {
   vs: {i:10, f:39, o:30, s:5, c:39},
   l: page.language().toLowerCase(),
@@ -625,4 +658,5 @@ module.exports = {
     detect_hedging: detect_hedging,
     jqueryuiTabsToDropdown: jqueryuiTabsToDropdown,
     handle_account_opening_settings: handle_account_opening_settings,
+    create_language_drop_down: create_language_drop_down
 };

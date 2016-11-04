@@ -1,5 +1,12 @@
 var getSocketURL = require('../../config').getSocketURL;
 var getAppId = require('../../config').getAppId;
+var Login = require('../base/login').Login;
+var objectNotEmpty = require('../base/utility').objectNotEmpty;
+var CommonData = require('../common_functions/common_data').CommonData;
+var SessionDurationLimit = require('../common_functions/session_duration_limit').SessionDurationLimit;
+var Cashier = require('../websocket_pages/cashier/cashier').Cashier;
+var PaymentAgentWithdrawWS = require('../websocket_pages/cashier/payment_agent_withdrawws').PaymentAgentWithdrawWS;
+
 /*
  * It provides a abstraction layer over native javascript Websocket.
  *
@@ -57,7 +64,7 @@ function BinarySocketClass() {
                 data.passthrough = {};
             }
             // temporary check
-            if((data.contracts_for || data.proposal) && !data.passthrough.hasOwnProperty('dispatch_to')){
+            if((data.contracts_for || data.proposal) && !data.passthrough.hasOwnProperty('dispatch_to') && !/multi_barriers_trading/.test(window.location.pathname)){
                 data.passthrough.req_number = ++req_number;
                 timeouts[req_number] = setTimeout(function(){
                     if(typeof reloadPage === 'function' && data.contracts_for){
@@ -107,7 +114,10 @@ function BinarySocketClass() {
             }
 
             if (isReady()) {
-                if (!Login.is_login_pages()) page.header.validate_cookies();
+                if (!Login.is_login_pages()) {
+                    page.header.validate_cookies();
+                    binarySocket.send(JSON.stringify({website_status: 1}));
+                }
                 if (!getClockStarted()) page.header.start_clock_ws();
             }
         };
@@ -141,22 +151,27 @@ function BinarySocketClass() {
                         page.client.send_logout_request(isActiveTab);
                     } else if (response.authorize.loginid !== page.client.loginid) {
                         page.client.send_logout_request(true);
-                    } else {
+                    } else if (!(response.hasOwnProperty('echo_req') && response.echo_req.hasOwnProperty('passthrough') &&
+                        response.echo_req.passthrough.hasOwnProperty('dispatch_to') &&
+                        response.echo_req.passthrough.dispatch_to === 'cashier_password')) {
                         authorized = true;
                         if(typeof events.onauth === 'function'){
                             events.onauth();
                         }
-                        if(!Login.is_login_pages()) {
+                        if (!Login.is_login_pages()) {
                             page.client.response_authorize(response);
                             send({balance:1, subscribe: 1});
-                            if (Cookies.get('residence')) send({landing_company: Cookies.get('residence')});
                             send({get_settings: 1});
                             send({get_account_status: 1});
-                            send({website_status: 1});
+                            if (Cookies.get('residence')) send({landing_company: Cookies.get('residence')});
                             if(!page.client.is_virtual()) {
                                 send({get_self_exclusion: 1});
                             } else {
                                 Cashier.check_virtual_top_up();
+                            }
+                            page.client.set_storage_value('landing_company_name', response.authorize.landing_company_fullname);
+                            if (/tnc_approvalws/.test(window.location.pathname)) {
+                                TNCApproval.showTNC();
                             }
                         }
                         sendBufferedSends();
@@ -173,6 +188,7 @@ function BinarySocketClass() {
                     page.contents.topbar_message_visibility(response.landing_company);
                     var company;
                     if (response.hasOwnProperty('error')) return;
+                    TUser.extend({'landing_company': response.landing_company});
                     for (var key in response.landing_company) {
                         if (TUser.get().landing_company_name === response.landing_company[key].shortcode) {
                             company = response.landing_company[key];
@@ -181,10 +197,6 @@ function BinarySocketClass() {
                     }
 
                     if (company) {
-                        page.client.set_storage_value('landing_company_name', company.name);
-                        if (/tnc_approvalws/.test(window.location.pathname)) {
-                            TNCApproval.showTNC();
-                        }
                         if (company.has_reality_check) {
                             page.client.response_landing_company(company);
                             var currentData = TUser.get();
@@ -217,25 +229,21 @@ function BinarySocketClass() {
                     var jpStatus = response.get_settings.jp_account_status;
                     if (jpStatus) {
                         switch (jpStatus.status) {
-                            case 'jp_knowledge_test_pending': localStorage.setItem('jp_test_allowed', 1);
-                                break;
+                            case 'jp_knowledge_test_pending':
                             case 'jp_knowledge_test_fail':
-                                if (Date.now() >= (jpStatus.next_test_epoch * 1000)) {
-                                    localStorage.setItem('jp_test_allowed', 1);
-                                } else {
-                                    localStorage.setItem('jp_test_allowed', 0);
-                                }
+                                localStorage.setItem('jp_test_allowed', 1);
                                 break;
                             default: localStorage.setItem('jp_test_allowed', 0);
                         }
-
                         KnowledgeTest.showKnowledgeTestTopBarIfValid(jpStatus);
                     } else {
                         localStorage.removeItem('jp_test_allowed');
                     }
                     page.header.menu.check_payment_agent(response.get_settings.is_authenticated_payment_agent);
+                    page.client.response_get_settings(response);
                 } else if (type === 'website_status') {
                     if(!response.hasOwnProperty('error')) {
+                        create_language_drop_down(response.website_status.supported_languages);
                         LocalStore.set('website.tnc_version', response.website_status.terms_conditions_version);
                         if (!localStorage.getItem('risk_classification')) page.client.check_tnc();
                         if (response.website_status.hasOwnProperty('clients_country')) {

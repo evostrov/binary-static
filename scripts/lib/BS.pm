@@ -14,7 +14,7 @@ use Format::Util::Numbers;
 
 our @EXPORT_OK = qw/
     root_path is_dev set_is_dev branch set_branch
-    localize set_lang all_languages lang_display_name
+    localize set_lang all_languages
     get_static_hash set_static_hash
 
     root_url
@@ -64,30 +64,6 @@ sub all_languages {
 sub rtl_languages {
 #    return ('AR');
     return ();
-}
-
-sub lang_display_name {
-    my $iso_code = shift;
-
-    my %lang_code_name = (
-        DE    => 'Deutsch',
-        ES    => 'Español',
-        FR    => 'Français',
-        EN    => 'English',
-        ID    => 'Bahasa Indonesia',
-        JA    => '日本語',
-        PL    => 'Polish',
-        PT    => 'Português',
-        RU    => 'Русский',
-        TH    => 'Thai',
-        VI    => 'Vietnamese',
-        ZH_CN => '简体中文',
-        ZH_TW => '繁體中文',
-        IT    => 'Italiano'
-    );
-
-    $iso_code = defined($iso_code) ? uc $iso_code : '';
-    return $lang_code_name{$iso_code} || $iso_code;
 }
 
 ## url_for
@@ -174,6 +150,24 @@ sub js_config {
 sub menu {
     my @menu;
 
+    push @menu,
+        {
+        id         => 'topMenuTrading',
+        class      => 'ja-hide hide-tablet-mobile',
+        url        => url_for('/trading'),
+        text       => localize('Trade'),
+        link_class => 'pjaxload',
+        };
+
+    push @menu,
+        {
+        id         => 'topMenuJPTrading',
+        class      => 'all-hide ja-show hide-tablet-mobile',
+        url        => url_for('/multi_barriers_trading'),
+        text       => localize('Trade'),
+        link_class => 'pjaxload'
+        };
+
     # Portfolio
     push @menu,
         {
@@ -214,7 +208,6 @@ sub menu {
     # resources
     my $resources_items_ref = {
         id         => 'topMenuResources',
-        class      => 'ja-hide',
         url        => url_for('/resources'),
         text       => localize('Resources'),
         link_class => 'pjaxload',

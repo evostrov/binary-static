@@ -1,3 +1,6 @@
+var ValidAccountOpening = require('../../../../common_functions/valid_account_opening').ValidAccountOpening;
+var Validate = require('../../../../common_functions/validation').Validate;
+
 var JapanAccOpeningUI = function () {
   "use strict";
 
@@ -167,9 +170,12 @@ var JapanAccOpeningUI = function () {
           errorObj[key].setAttribute('style', 'display:none');
         }
       }
+      $('#submit-message').removeClass('errorfield').text(page.text.localize('Processing your request...'));
       return 1;
+    } else {
+        $('#submit-message').addClass('errorfield').text(page.text.localize('Please check the above form for pending errors.'));
+        return 0;
     }
-    return 0;
   }
 
     function fireRequest() {

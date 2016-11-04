@@ -27,7 +27,8 @@ var Cashier = (function() {
 
     var check_virtual_top_up = function() {
         if (TUser.get().is_virtual || page.client.is_virtual()) {
-            if ((TUser.get().residence !== 'jp' && TUser.get().balance > 1000) || (TUser.get().residence === 'jp' && TUser.get().balance > 100000)) {
+            if ((TUser.get().currency !== 'JPY' && TUser.get().balance > 1000) ||
+                (TUser.get().currency === 'JPY' && TUser.get().balance > 100000)) {
                 replace_with_disabled_button('#VRT_topup_link');
             }
         }
@@ -41,39 +42,10 @@ var Cashier = (function() {
     };
 
     return {
-        lock_cashier: lock_cashier,
         check_locked: check_locked,
         check_virtual_top_up: check_virtual_top_up
     };
 }());
-
-pjax_config_page("/cashier", function(){
-    return {
-        onLoad: function() {
-          if (!/\/cashier\.html/.test(window.location.pathname) || !page.client.is_logged_in) {
-              return;
-          } else {
-              Cashier.check_locked();
-              Cashier.check_virtual_top_up();
-          }
-        }
-    };
-});
-
-pjax_config_page("/cashier/payment_methods", function(){
-    return {
-        onLoad: function() {
-            if (japanese_client()) {
-                window.location.href = page.url.url_for('/');
-            }
-            if (!page.client.is_logged_in || page.client.is_virtual()) {
-                return;
-            } else {
-                Cashier.check_locked();
-            }
-        }
-    };
-});
 
 module.exports = {
     Cashier: Cashier,

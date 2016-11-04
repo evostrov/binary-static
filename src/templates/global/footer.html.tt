@@ -3,7 +3,7 @@
 [% END %]
 </div> [% # closes div#content %]
 </div>[% #closes div#content-holder %]
-<div id="footer">
+<div id="footer" class="no-print">
     <div id="footer-menu" class="primary-bg-color">
         <div class="container">
             <div class="gr-row gr-padding-10">
@@ -65,27 +65,19 @@
                             </ul>
                         </div>
                         <div class="gr-4">
-                            <h4 class="ja-hide secondary-color">[% l('Trading') %]</h4>
-                            <ul class="ja-hide">
+                            <h4 class="secondary-color">[% l('Banking') %]</h4>
+                            <ul>
+                                <li>
+                                    <a class="pjaxload" href="[% request.url_for('/cashier') %]"[% IF
+                                    target %]
+                                    target="[% target %]"[% END %]>[% l('Cashier') %]</a>
+                                </li>
                                 <li class="ja-hide">
-                                    <a class="pjaxload" href="[% request.url_for('/resources/asset_indexws') %]">[% l('Asset Index') %]</a>
+                                    <a class="pjaxload" href="[% request.url_for('/cashier/payment_methods') %]"[% IF
+                                    target %]
+                                    target="[% target %]"[% END %]>[% l('Payment Methods') %]</a>
                                 </li>
                             </ul>
-                            <div class='gr-padding-10 gr-no-gutter ja-no-padding'>
-                                <h4 class="secondary-color">[% l('Banking') %]</h4>
-                                <ul>
-                                    <li>
-                                        <a class="pjaxload" href="[% request.url_for('/cashier') %]"[% IF
-                                        target %]
-                                        target="[% target %]"[% END %]>[% l('Cashier') %]</a>
-                                    </li>
-                                    <li class="ja-hide">
-                                        <a class="pjaxload" href="[% request.url_for('/cashier/payment_methods') %]"[% IF
-                                        target %]
-                                        target="[% target %]"[% END %]>[% l('Payment Methods') %]</a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -125,19 +117,13 @@
                            </ul>
                        </div>
                        <div class="gr-4 ja-hide">
-                           <h4 class="secondary-color">[% l('Apps') %]</h4>
+                           <h4 class="secondary-color">[% l('Trading') %]</h4>
                            <ul>
                                <li>
                                    <a class="pjaxload" href="[% request.url_for('/platforms') %]">[% l('Platforms') %]</a>
                                </li>
                                <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/tick-trade-mobile-application" target="_blank">[% l('TickTrade App') %]</a>
-                               </li>
-                               <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/webtrader" target="_blank">[% l('Webtrader') %]</a>
-                               </li>
-                               <li>
-                                   <a href="https://shop.binary.com/collections/applications/products/binary-com-tradingview-chart" target="_blank">[% l('TradingView') %]</a>
+                                   <a class="pjaxload" href="[% request.url_for('/resources/asset_indexws') %]">[% l('Asset Index') %]</a>
                                </li>
                            </ul>
                        </div>
@@ -164,6 +150,9 @@
                                <li>
                                    <a class="pjaxload" href="[% request.url_for('/company-profile') %]">[% l("{JAPAN ONLY}Company Profile & Disclosure") %]</a>
                                </li>
+                               <li class="invisible">
+                                   <a class="pjaxload" href="[% request.url_for('/service-announcements') %]">[% l("{JAPAN ONLY}Service Announcements") %]</a>
+                               </li>
                            </ul>
                        </div>
                     </div>
@@ -183,7 +172,7 @@
                                 </a>
                             </div>
                             <div class="gr-2 center-text">
-                                <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40" target="_blank">
+                                <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=EN&company=a5fd1edc-d072-4c26-b0cd-ab3fa0f0cc40&details=1" target="_blank">
                                     <img id="lga_icon_footer" class="responsive" src="[% request.url_for('images/pages/footer/mga-logo-footer.svg') %]"/>
                                 </a>
                             </div>
@@ -201,7 +190,7 @@
                     </div>
                     <div class="gr-parent">
                         <div class="gr-row">
-                            <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p">
+                            <div id="regulatory-text" class="gr-9 gr-12-m gr-7-p content-inverse-color">
                                 [% l("This website is marketed in the UK and Isle of Man by Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles, licenced and regulated by (1) the Gambling Supervision Commission in the Isle of Man, British Isles, current online gambling licence issued on 31 August 2012, and for UK clients by (2) the UK Gambling Commission - <a href='[_1]' target='_blank'>view license</a>. This website is marketed in the rest of the EU, for investment products by Binary Investments (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, licenced and regulated as a Category 3 Investment Services provider by the Malta Financial Services Authority (license no. IS/70156), and for gaming products by Binary (Europe) Ltd., Mompalao Building, Suite 2, Tower Road, Msida MSD1825, Malta, licenced and regulated by (1) the Malta Gaming Authority in Malta, licence no MGA/CL2/118/2000, 26th May 2015 and for UK clients by (2) the UK Gambling Commission - <a href='[_2]' target='_blank'>view license</a>, and for Irish clients by (3) the Revenue Commissioners in Ireland, current remote bookmaker's licence issued on 29 September 2015 (licence no 1010285). This website's services are not made available in certain countries such as the USA, Costa Rica, Hong Kong, or to persons under age 18.", "https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39172", "https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39495") %]
                             </div>
                             <div class="ja-hide gr-3 gr-12-m gr-5-p" id="social-networks">
@@ -221,7 +210,7 @@
     <div id="footer-last" class="primary-bg-color">
         <div class="container">
             <div class="gr-padding-10">
-                <p class="gambling">
+                <p class="gambling content-inverse-color">
                     [% l('Trading binary options may not be suitable for everyone, so please ensure that you fully understand the risks involved. Your losses can exceed your initial deposit and you do not own or have any interest in the underlying asset. In regards to binary options which are gambling products, remember that gambling can be addictive - please play responsibly. <span class="ja-hide">Read about <a href="[_1]" class="pjaxload">Responsible Trading</a>.</span>', request.url_for('responsible-trading')) %]
                 </p>
             </div>

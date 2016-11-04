@@ -1,3 +1,11 @@
+var showLocalTimeOnHover = require('../../../base/utility').showLocalTimeOnHover;
+var toJapanTimeIfNeeded = require('../../../base/utility').toJapanTimeIfNeeded;
+var objectNotEmpty = require('../../../base/utility').objectNotEmpty;
+var format_money = require('../../../common_functions/currency_to_symbol').format_money;
+var format_money_jp = require('../../../common_functions/currency_to_symbol').format_money_jp;
+var MBPrice = require('../../mb_trade/mb_price').MBPrice;
+var MBTradePage = require('../../mb_trade/mb_tradepage').MBTradePage;
+
 var ViewPopupWS = (function() {
     "use strict";
 
@@ -189,6 +197,7 @@ var ViewPopupWS = (function() {
         normalUpdateTimers();
         normalUpdate();
         ViewPopupUI.reposition_confirmation();
+        if (MBTradePage.is_trading_page()) MBPrice.hidePriceOverlay();
     };
 
     var normalUpdate = function() {
@@ -202,7 +211,11 @@ var ViewPopupWS = (function() {
             containerSetText('trade_details_barrier'    , contract.high_barrier , '', true);
             containerSetText('trade_details_barrier_low', contract.low_barrier  , '', true);
         } else if(contract.barrier) {
-            containerSetText('trade_details_barrier'    , contract.entry_tick_time ? contract.barrier : '-', '', true);
+            containerSetText('trade_details_barrier'    , contract.entry_tick_time ?
+                            (contract.contract_type === 'DIGITMATCH' ? page.text.localize('Equals') + ' ' + contract.barrier :
+                            contract.contract_type === 'DIGITDIFF'  ? page.text.localize('Not') + ' ' + contract.barrier :
+                            contract.barrier) : '-',
+                            '', true);
         }
 
         var currentSpot     = !is_ended ? contract.current_spot      : (user_sold ? contract.sell_spot      : contract.exit_tick);
@@ -271,6 +284,10 @@ var ViewPopupWS = (function() {
             if (!contract.tick_count) Highchart.show_chart(contract, 'update');
         }
 
+        if (!contract.is_valid_to_sell) {
+            $Container.find('#errMsg').addClass(hiddenClass);
+        }
+
         sellSetVisibility(!isSellClicked && !isSold && !is_ended && +contract.is_valid_to_sell === 1);
         contract.chart_validation_error = contract.validation_error;
         contract.validation_error = '';
@@ -316,6 +333,7 @@ var ViewPopupWS = (function() {
         if (!(contract.is_settleable && !contract.is_sold)) {
             containerSetText('trade_details_message'         , '&nbsp;');
         }
+        $Container.find('#errMsg').addClass(hiddenClass);
         sellSetVisibility(false);
         // showWinLossStatus(is_win);
     };
@@ -396,7 +414,8 @@ var ViewPopupWS = (function() {
                     (!contract.tick_count ? normalRow('End Time',       '', 'trade_details_end_date') +
                                             normalRow('Remaining Time', '', 'trade_details_live_remaining') : '') +
                     normalRow('Entry Spot',     '', 'trade_details_entry_spot') +
-                    normalRow(contract.barrier_count > 1 ? 'High Barrier' : 'Barrier', '', 'trade_details_barrier'    , true) +
+                    normalRow(contract.barrier_count > 1 ? 'High Barrier' :
+                              /^DIGIT(MATCH|DIFF)$/.test(contract.contract_type) ? 'Target' : 'Barrier', '', 'trade_details_barrier', true) +
                     (contract.barrier_count > 1 ? normalRow('Low Barrier',             '', 'trade_details_barrier_low', true) : '') +
                     normalRow('Potential Payout', '', 'trade_details_payout') +
                     normalRow('Purchase Price', '', 'trade_details_purchase_price') +
@@ -516,7 +535,6 @@ var ViewPopupWS = (function() {
             $Container.find('#' + sellButtonID).unbind('click').click(function(e) {
                 e.preventDefault();
                 e.stopPropagation();
-                ViewPopupUI.forget_streams();
                 isSellClicked = true;
                 sellSetVisibility(false);
                 sellContract();
@@ -566,7 +584,7 @@ var ViewPopupWS = (function() {
 
     // ----- Sell Contract -----
     var sellContract = function() {
-        socketSend({"sell": contractID, "price": 0, passthrough: {}});
+        socketSend({"sell": contractID, "price": contract.bid_price, passthrough: {}});
     };
 
     var responseSell = function(response) {
@@ -577,14 +595,17 @@ var ViewPopupWS = (function() {
             else {
                 $Container.find('#errMsg').text(response.error.message).removeClass(hiddenClass);
             }
+            sellSetVisibility(true);
+            isSellClicked = false;
             return;
         }
+        ViewPopupUI.forget_streams();
+        $Container.find('#errMsg').addClass(hiddenClass);
+        sellSetVisibility(false);
         if(contractType === 'spread') {
-            sellSetVisibility(false);
             getContract();
         }
         else if(contractType === 'normal') {
-            sellSetVisibility(false);
             if(isSellClicked) {
                 containerSetText('contract_sell_message',
                     page.text.localize('You have sold this contract at [_1] [_2]', [contract.currency, response.sell.sold_for]) +

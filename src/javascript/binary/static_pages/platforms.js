@@ -1,33 +1,45 @@
 var Platforms = (function () {
     var sections = [];
-    function showLoadingImage(container) {
-        container.append('<div id="std_loading_img"><p>' + page.text.localize('loading...') + '</p>' +
-            '<img src="' + page.url.url_for_static('images/common/hourglass_1.gif') + '" /></div>');
-    }
-    function hideLoadingImg() {
-        $('#std_loading_img').remove();
-    }
     function init() {
-        showLoadingImage($('.platforms-section'));
+        sections = ['more-tools', 'trading-platforms', 'platforms-comparison'];
+        var sidebarListItem = $('.sidebar-nav li');
+        sidebarListItem.click(function(e) {
+            sidebarListItem.removeClass('selected');
+            $(this).addClass('selected');
+        });
+        $(window).on('hashchange', function(){
+            showSelectedDiv();
+        });
         checkWidth();
         $(window).resize(checkWidth);
+        $('.inner').scroll(checkScroll);
+        setHeights();
+    }
+    function setHeights() {
+        $('.inner tr').each(function() {
+            var $td = $(this).find('td:first'), $th = $(this).find('th');
+            if ($th.height() > $td.height()) {
+                $(this).find('td').height($th.height());
+            }
+        });
+    }
+    function checkScroll() {
+        var $elem = $('.inner'),
+            $fadeL = $('.fade-to-left'),
+            $fadeR = $('.fade-to-right');
+        var newScrollLeft = $elem.scrollLeft(),
+            width = $elem.width(),
+            scrollWidth = $elem.get(0).scrollWidth;
+        $fadeL.css('opacity', newScrollLeft === 0 ? '0' : '100');
+        $fadeR.css('opacity', scrollWidth === newScrollLeft + width ? '0' : '100');
     }
     function checkWidth() {
         if ($('.sidebar-left').is(':visible')) {
-            sections = ['more-tools', 'trading-platforms', 'platforms-comparison'];
-            var sidebarListItem = $('.sidebar-nav li');
-            sidebarListItem.click(function(e) {
-                sidebarListItem.removeClass('selected');
-                $(this).addClass('selected');
-            });
-            $(window).on('hashchange', function(){
-                showSelectedDiv();
-            });
             showSelectedDiv();
         } else {
-            hideLoadingImg();
             $('.sections').removeClass('invisible');
         }
+        $('.inner th').hide().fadeIn(1); // force to refresh in order to maintain correct positions
     }
     function get_hash() {
         return (
@@ -36,8 +48,9 @@ var Platforms = (function () {
         );
     }
     function showSelectedDiv() {
+        if ($('.sections[id="' + get_hash().substring(1) + '"]').is(':visible') &&
+            $('.sections:visible').length === 1) return;
         $('.sections').addClass('invisible');
-        hideLoadingImg();
         $('.sections[id="' + get_hash().substring(1) + '"]').removeClass('invisible');
         $('.sidebar-nav a[href="' + get_hash() + '"]').parent().addClass('selected');
     }

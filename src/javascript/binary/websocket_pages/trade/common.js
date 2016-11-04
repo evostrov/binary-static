@@ -1,3 +1,6 @@
+var objectNotEmpty = require('../../base/utility').objectNotEmpty;
+var format_money = require('../../common_functions/currency_to_symbol').format_money;
+
 /*
  * This contains common functions we need for processing the response
  */
@@ -880,7 +883,7 @@ function updateWarmChart(){
         highlightLineColor: '#000000',
         spotRadius: 1.25
     };
-    if($chart){
+    if ($chart && typeof $chart.sparkline === 'function') {
         $chart.sparkline(spots, chart_config);
         if(spots.length){
             $chart.show();
@@ -923,7 +926,10 @@ function chartFrameCleanup() {
     /*
      * Prevent IE memory leak (http://stackoverflow.com/questions/8407946).
      */
-    document.getElementById('chart_frame').src = 'about:blank';
+    var chart_frame = document.getElementById('chart_frame');
+    if (chart_frame) {
+        chart_frame.src = 'about:blank';
+    }
 }
 
 function chartFrameSource() {
@@ -1135,6 +1141,25 @@ function moreTabsHandler($ul) {
     });
 }
 
+function timeIsValid($element) {
+    var endDateValue = document.getElementById('expiry_date').value,
+        startDateValue = document.getElementById('date_start').value,
+        endTimeValue = document.getElementById('expiry_time').value || "23:59:59";
+
+    startDateValue = startDateValue === 'now' ? Math.floor(window.time._i/1000) : startDateValue;
+    if (moment.utc(endDateValue + " " + endTimeValue).unix() <= startDateValue) {
+        $element.addClass('error-field');
+        if (!document.getElementById('end_time_validation')) {
+            $('#expiry_type_endtime').append('<p class="error-msg" id="end_time_validation">' + page.text.localize('End time must be after start time.') + '</p>');
+        }
+        return false;
+    } else {
+        $element.removeClass('error-field');
+        $('#end_time_validation').remove();
+        return true;
+    }
+}
+
 module.exports = {
     displayUnderlyings: displayUnderlyings,
     getFormNameBarrierCategory: getFormNameBarrierCategory,
@@ -1179,4 +1204,5 @@ module.exports = {
     label_value: label_value,
     adjustAnalysisColumnHeight: adjustAnalysisColumnHeight,
     moreTabsHandler: moreTabsHandler,
+    timeIsValid: timeIsValid
 };

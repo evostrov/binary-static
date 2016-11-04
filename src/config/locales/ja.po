@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2016-10-07 01:50+0000\n"
-"Last-Translator: Fumio Miyama <miyama@regentmarkets.com>\n"
+"PO-Revision-Date: 2016-11-03 03:12+0000\n"
+"Last-Translator: Mark Tanser <mark@regentmarkets.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/binary/static/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -49,6 +49,9 @@ msgstr "$250,000 - $1,000,000"
 msgid "%1 %2 has been credited to your Virtual money account %3"
 msgstr "%1 %2がデモ口座%3に付与されました"
 
+msgid "%1 (Toll Free)"
+msgstr "==フリーダイヤル=="
+
 msgid "%1 Affiliate Program Terms and Conditions"
 msgstr "当社アフィリエイトプログラム・ご利用規約"
 
@@ -86,7 +89,7 @@ msgid "%1 earns a return from the difference between the total amount of all cus
 msgstr "バイナリーオプション取引について、当社と取引する顧客全体が当社に支払う金額と顧客全体が当社から受け取る金額の差額が当社の収益の源泉となっていること。（契約締結前交付書面「店頭バイナリーオプション取引のリスク等重要事項について」-9参照）"
 
 msgid "%1 gives everyone an easy way to participate in the financial markets. Trade with as little as $1 USD on major currencies, stocks, indices, and commodities."
-msgstr "当社では、皆様に簡単かつ効果的なトレードの機会を提供します。主要通貨ペアを1,000円からお取引頂けます。"
+msgstr "当社では、皆様に多様なトレードの機会を提供します。主要通貨ペアを1,000円からお取引頂けます。"
 
 msgid "%1 has created Volatility Indices that you can trade 24/7. You can trade these on all types of contract:"
 msgstr "当社では平日24時間お取引いただけるボラティリティインデックスを作成しました。全タイプのトレードでお取引が可能です。"
@@ -116,7 +119,7 @@ msgid "%1 hits 1 million users, reaching a historic milestone. The company conti
 msgstr "口座数が100万口座を超え、社史に残る実績を達成、業界トップのポジションを確実なものにしました。"
 
 msgid "%1 introduces an <a href='%2' target='_blank' class='ja-hide'>auto-trader programming tool</a><span class='all-hide ja-show'>auto-trader programming tool</span>, allowing clients to develop their own automated trading robots with “drag-and-drop” simplicity."
-msgstr "「ドラッグ&ドロップ」操作で簡単に自動売買ロボットを作成し、システムトレードを可能にする自動トレーダープログラミングツール<a href='%2' target='_blank' class='ja-hide'></a>を導入しました。"
+msgstr "「ドラッグ&ドロップ」操作で自動売買ロボットを作成し、システムトレードを可能にする自動トレーダープログラミングツール<a href='%2' target='_blank' class='ja-hide'></a>を導入しました。"
 
 msgid "%1 is a flexible place. As well as our offices, we have staff who choose to telecommute from their home offices in countries around the world. If that suits you, we're open to it."
 msgstr "Binary.comでは柔軟なワークスタイルが可能です。世界中のホームオフィスからの在宅勤務の機会もご希望に応じて許可しています。"
@@ -228,8 +231,8 @@ msgstr "ロンドンで開催された名誉あるEGRオペレーター賞授賞
 msgid "%1 would like to team up with potential payment agents worldwide so we can offer local payment processing services to our clients in their respective regions."
 msgstr "当社はそれぞれの地域のお客さまに現地決済処理サービスを提供するために、世界中の潜在的な決済サービス会社と提携をしたいと考えています。"
 
-msgid "%1's Continuous Indices are the Volatility 25 Index, Volatility 50 Index, Volatility 75 Index and Volatility 100 Index. These indices correspond to simulated markets with constant volatilities of 25%, 50%, 75% and 100%."
-msgstr "当社の連続インデックスには、ボラティリティ25指数、ボラティリティ75指数、ボラティリティ100指数があります。これらのインデックスは25%、50%、75%、100%の一定のボラティリティがシミュレートされた市場に対応しています。"
+msgid "%1's Continuous Indices are the Volatility 10 Index, Volatility 25 Index, Volatility 50 Index, Volatility 75 Index and Volatility 100 Index. These indices correspond to simulated markets with constant volatilities of 10%, 25%, 50%, 75% and 100%."
+msgstr "当社の連続インデックスには、ボラティリティ10指数、ボラティリティ25指数、ボラティリティ75指数、ボラティリティ100指数があります。これらのインデックスは10%、25%、50%、75%、100%の一定のボラティリティがシミュレートされた市場に対応しています。"
 
 msgid "%1's IT Operations Group is responsible for the design, development and operation of the company's high-traffic networks. Its responsibilities include hardware and software deployment, up-time and reliability testing, incident response reporting, network security, intrusion detection, and load balancing."
 msgstr "IT運用グループでは当社の高トラフィックネットワークの設計、開発、運用を担当していただきます。ハードウェアとソフトウェアの導入、アップタイムと信頼性試験、インシデント対応の報告、ネットワークセキュリティ、侵入検知、ロードバランシングの作業を含みます。"
@@ -263,9 +266,6 @@ msgstr ""
 msgid "%1's Volatility Indices are based on a cryptographically secure random number generator audited for fairness by an independent third party."
 msgstr "当社のボラティリティ インデックスは、独立したサードパーティーによる公平性の監査のうえ、暗号化された安全な乱数ジェネレーターをベースにしています。"
 
-msgid "%1's headquarters are in Malta, a favoured tourist destination with a warm climate, beautiful recreational areas and World Heritage sites. We also have an Operational Headquarters office in Cyberjaya, a high-tech precinct south of Kuala Lumpur, the capital of Malaysia, an equally exciting destination at the heart of Asia."
-msgstr "Binary.comの本社は、温暖な気候、美しい保養地区、そして世界遺産といった環境に恵まれた観光地であるマルタ共和国に存在します。また、エキサイティングなアジアの中心部であるマレーシアの首都クアラルンプールの南部に位置する、ハイテク産業で有名なCyberjayaに業務部門を統括する本社が存在します。"
-
 msgid "%1's patented pricing technology allows you to benefit from the same rates of return as traders in the interbank market."
 msgstr "%1の特許取得済みの価格設定テクノロジーにより、インターバンク市場でのトレードと同等のリターン率を提供します。"
 
@@ -277,6 +277,9 @@ msgstr "Binary.comの沿革"
 
 msgid "%1's systems are now processing in excess of 1 million transactions/day (including virtual accounts)."
 msgstr "当システムは1日に100万件を超える取引（仮想アカウントを含む）を処理しています。"
+
+msgid "%1’s charitable initiative focuses on small charities and nonprofits around the world that are making a positive difference in their local communities. Our donations have a direct impact, free from the burden of overheads seen in larger charities."
+msgstr ""
 
 msgid "%ctx(minimum duration, for example minimum 15 seconds)min"
 msgstr "%ctx(最短期間, 例： 最短 15 秒）分"
@@ -331,6 +334,9 @@ msgstr "Touchトレード"
 
 msgid "* Tax Free: Profits from trading are tax free in many countries but you should always consult a qualified tax advisor."
 msgstr "* 非課税対象：多くの国では、当社でのお取引から得た利益は非課税対象となりますが、居住国の税理士とご相談下さい。"
+
+msgid ",000"
+msgstr "ロット"
 
 msgid "- A scanned copy of a utility bill or bank statement (no more than 3 months old)."
 msgstr "公共料金の請求書または銀行明細書をスキャンしたコピー（発行３ヶ月以内のものに限ります）。"
@@ -549,10 +555,10 @@ msgid "<strong>Falling markets</strong> - choose the falls trade, lower trade, o
 msgstr "<strong>相場下落時</strong>：「ダウン」または「ラダー低」取引を試してみましょう。タッチトレードを低めのバリアで実行する、ノータッチトレードを高めのバリアで実行するのも効果的なトレード戦略です。"
 
 msgid "<strong>Higher/Lower</strong> - predict if the market will end higher or lower than a price target."
-msgstr "<strong>HIGH/LOW</strong>：設定価格より終了時の価格が上がるか、下がるかを予想してください。"
+msgstr "<strong>HIGH/LOW</strong>：設定価格より終了時の価格が上がるか、下がるかを予測してください。"
 
 msgid "<strong>Higher/Lower</strong> - where you can profit from the market ending higher or lower than a target price."
-msgstr "<strong>HIGH/LOW</strong>：バリア設定をした価格より値上がりするか？値下がりするか？を予想してください。"
+msgstr "<strong>HIGH/LOW</strong>：バリア設定をした価格より値上がりするか？値下がりするか？を予測してください。"
 
 msgid "<strong>IMPORTANT DISCLAIMER</strong> - %1 is not affiliated with any of the Payment Agents listed above. Each Payment Agent operates as an independent service provider and is not endorsed, guaranteed or otherwise approved by %1. CUSTOMERS DEAL WITH PAYMENT AGENTS AT THEIR SOLE RISK AND PERIL. Customers are advised to check the credentials of Payment Agents before sending them any money. %1 shall not in any circumstance be held responsible for transactions made between customers and Payment Agents."
 msgstr "<strong>重要な免責事項</strong> -%1は、上記の決済サービスとは提携していません。各決済サービスは、独立したサービスプロバイダーとして動作し、%1による承認、保証またはその他の許可がなされていません。お客さまは危険を承知で自信の責任をもって決済サービスに処断します。送金をされる前に、決済サービス会社の資格情報を確認されることをお勧めいたします。%1はいかなる状況下においても、お客さまと決済サービス会社の間で生じた処理への責任は負いません。"
@@ -561,10 +567,10 @@ msgid "<strong>IMPORTANT DISCLAIMER</strong> - %1 is not affiliated with any of 
 msgstr "<strong>重要な免責事項</strong> -%1は、上記の決済サービス会社と提携していません。各決済サービスは、独立したサービスプロバイダーとして動作し、%1による承認、保証またはその他の許可がなされていません。お客さまは危険を承知で自信の責任をもって決済サービスに処断します。送金をされる前に、決済サービス会社の資格情報を確認されることをお勧めいたします。%1はいかなる状況下においても、お客さまと決済サービス会社の間で生じた処理への責任は負いません。"
 
 msgid "<strong>In/Out</strong> - predict if the market will stay inside two price targets, or end between or outside them."
-msgstr "<strong>END-IN/END-OUT</strong>：上下にバリアを設定した価格内に留まるか、留まらないかを予想してください。"
+msgstr "<strong>END-IN/END-OUT</strong>：上下にバリアを設定した価格内に留まるか、留まらないかを予測してください。"
 
 msgid "<strong>In/Out</strong> - where you can profit from the market staying inside, or going outside, two price targets."
-msgstr "<strong>STAY-IN/BREAK-OUT</strong>：上下にバリアを設定した価格内に留まるか？留まらないか？を予想して利益を得ましょう。"
+msgstr "<strong>STAY-IN/BREAK-OUT</strong>：上下にバリアを設定した価格内に留まるか？留まらないか？を予測して利益を得ましょう。"
 
 msgid "<strong>Instant access</strong> - open an account in minutes."
 msgstr "<strong>インスタントアクセス</strong> - 数分で口座を開設"
@@ -609,10 +615,10 @@ msgid "<strong>Requirements:</strong>"
 msgstr "<strong>要件：</strong>"
 
 msgid "<strong>Rise/Fall</strong> - predict if the market will rise or fall from its current level."
-msgstr "<strong>ラダー</strong>：権利行使価格より上か、下かを予想してください。"
+msgstr "<strong>ラダー</strong>：権利行使価格より上か、下かを予測してください。"
 
 msgid "<strong>Rise/Fall</strong> - where you can profit from the market rising or falling from its current level."
-msgstr "<strong>ラダー</strong>：権利行使価格より上か、下かを予想してください。"
+msgstr "<strong>ラダー</strong>：権利行使価格より上か、下かを予測してください。"
 
 msgid "<strong>Rising markets</strong> - choose the rise trade, higher trade, one-touch trade with a high barrier, or no-touch trade with a low barrier."
 msgstr "<strong>相場上昇時</strong>：「ハイ」または「ラダー高」で取引してみましょう。タッチトレードを高めのバリアで実行する、ノータッチトレードを低めのバリアで実行するのも効果的な戦略です。"
@@ -645,10 +651,10 @@ msgid "<strong>Tax-free</strong> - binaries are licensed as a betting activity i
 msgstr "<strong>税金</strong> -  バイナリーオプション取引の収益は他の金融商品取引と通算して申告できます。"
 
 msgid "<strong>Touch/No Touch</strong> - predict if the market will touch or not touch a price target."
-msgstr "<strong>TOUCH/NO-TOUCH</strong>：バリア設定をした価格に達するか、達しないかを予想"
+msgstr "<strong>TOUCH/NO-TOUCH</strong>：バリア設定をした価格に達するか、達しないかを予測"
 
 msgid "<strong>Touch/No Touch</strong> - where you can profit from the market touching or not touching a target price."
-msgstr "<strong>TOUCH/NO-TOUCH</strong>：バリア設定をした価格に達するか、達しないかを予想"
+msgstr "<strong>TOUCH/NO-TOUCH</strong>：バリア設定をした価格に達するか、達しないかを予測"
 
 msgid "<strong>Trade to your budget</strong> - dip a toe in the water with $2 or go all out for $50,000."
 msgstr "<strong>ご予算に気兼ねなくトレード</strong>：お客さまの資産状況に合わせて、1,000円からお取引頂けます。"
@@ -695,9 +701,6 @@ msgstr "<ul><li><strong> メニューを開いて</strong> <strong>Preferences</
 msgid "<ul><li>Go to \"<strong>Chrome Menu (Customize and control Google Chrome)</strong>\" dropdown and select <strong>Settings</strong>.</li><li>Click on the <strong>Show advanced settings</strong>.</li><li>Click on the <strong>Content settings</strong> button under <strong>Privacy</strong> menu.</li><li>Select <strong>Allow local data to be set (recommended)</strong>.</li><li>Click on the <strong>Done</strong> button to save your settings.</li></ul>"
 msgstr "<ul><li>ブラウザの\"<strong>クロムメニュー</strong>\" のドロップダウンメニューから<strong>設定</strong>を選択して下さい。</li><li>そして<strong>詳細設定を表示</strong>をクリックして下さい。</li><li>次に<strong>プライバシー</strong> セクションの<strong>コンテンツ設定</strong>ボタンをクリックして下さい。</li><li><strong>ローカルへのデータ設定を許可する(推奨)</strong>を選択して下さい。</li><li>最後に<strong>終了</strong>ボタンをクリックし、設定を保存して下さい。</li></ul>"
 
-msgid "== Toll Free =="
-msgstr "==フリーダイヤル=="
-
 msgid "A Bachelor's degree in Computer Science, or an equivalent combination of technical education, training and work experience"
 msgstr "情報工学の学位または同種の技術教育、技術訓練、実務経験"
 
@@ -724,7 +727,7 @@ msgid "A binary option is a contract purchased by a trader, which pays a pre-det
 msgstr "バイナリーオプションとは、購入したトレードが勝った際に得られる事前に決定済みの金額のことです。"
 
 msgid "A binary option is an option with a fixed payout that is determined at the start of the trade. If your prediction is correct, you receive an agreed payout. If not, you lose your initial stake, and no more. The options are called 'binary' because there can be only two outcomes - win or lose."
-msgstr "バイナリーオプションは、事前に定められたリターンを提供するオプション取引です。もし予想が正しければ、事前に定められたペイアウトを得ることが出来ます。予想が外れた場合は購入価格のみを失います。このオプション取引は、条件を満たすか、満たさないかのみ結果としてもたらされるので、「バイナリー」と呼ばれています。"
+msgstr "バイナリーオプションは、事前に定められたリターンを提供するオプション取引です。もし予測が正しければ、事前に定められたペイアウトを得ることが出来ます。予測が外れた場合は購入価格のみを失います。このオプション取引は、条件を満たすか、満たさないかのみ結果としてもたらされるので、「バイナリー」と呼ばれています。"
 
 msgid "A broad array of HR-related administrative tasks"
 msgstr "幅広いHR関連の管理作業"
@@ -739,7 +742,7 @@ msgid "A degree major in Accounting or other relevant professional qualification
 msgstr "会計を専攻とする学位またはその他関連した専門的な資格"
 
 msgid "A derivative is a financial instrument whose value is determined by reference to an underlying market. Derivatives are commonly traded in the inter-bank market, and binaries are one of the simplest forms of derivatives."
-msgstr "デリバティブとは金融市場で任意の取引対象にて予想される価値のことです。デリバティブはインターバンク市場にて盛んに取引されており、バイナリーはシンプルなデリバティブの一形態です。"
+msgstr "デリバティブとは金融市場で任意の取引対象にて予測される価値のことです。デリバティブはインターバンク市場にて盛んに取引されており、バイナリーはシンプルなデリバティブの一形態です。"
 
 msgid "A detail orientation with the ability to detect patterns"
 msgstr "パターン検出能力を用いた細かい作業"
@@ -929,11 +932,14 @@ msgstr "高度なCFD取引プラットフォーム"
 msgid "Advanced Platforms"
 msgstr "最高水準のプラットフォーム"
 
-msgid "Advanced binary options trading platform"
+msgid "Advanced binary options trading interface"
 msgstr "最高水準のバイナリーオプション取引プラットフォーム"
 
 msgid "Advanced knowledge of software design principles"
 msgstr "ソフトウェア設計原則の高度な知識"
+
+msgid "Advanced trading app for web and mobile"
+msgstr "高度なCFD取引プラットフォーム"
 
 msgid "Advising senior managers regarding salary negotiations and job offers"
 msgstr "給料交渉や求人に関する上級管理者へのアドバイス"
@@ -960,7 +966,7 @@ msgid "All affiliate activities must be conducted in a professional and proper m
 msgstr "アフィリエイト活動は、専門的且つ適切な方法で実施するようにしてください。アフィリエイト会員は、獲得会員と信頼と誠意に基づく良好な関係を築かれることが期待されています。獲得会員に対し、販売行為や口約束を強要する行為は禁じられています。"
 
 msgid "All barriers in this trading window are expired"
-msgstr "この取引期間内のすべてのバリア価格は権利行使済みです"
+msgstr "すべてのバリア価格は権利行使済みです"
 
 msgid "All calls are recorded for training and monitoring purposes"
 msgstr "全ての呼び出しはトレーニングと監視目的のため記録されます。"
@@ -975,7 +981,7 @@ msgid "All opinions, news, research, analysis, prices or other information conta
 msgstr "当社サイトに掲載されているご意見、ニュース、リサーチ、分析、価格などの情報は、一般的な市場に関するコメントであり、投資に関する助言ではありません。％1ではそのような情報の使用または依存から直接または間接的に生じる可能性がある利益の損失、損害についての責任を一切負いません。"
 
 msgid "All times are in GMT (Greenwich Mean Time)."
-msgstr "当社サイトの時間表示は全て、GMT（グリニッジ標準時）に基づきます。また、下記すべての通貨ペアを取り扱っておりませんので参考情報としてご利用ください。"
+msgstr "当社サイトの時間表示は全て、GMT（グリニッジ標準時）に基づきます。"
 
 msgid "Allow Clients to deposit with lower amounts (via local currency)"
 msgstr "クライアントへ低い金額（現地通貨）での入金を許可する"
@@ -1097,9 +1103,6 @@ msgstr "適正"
 
 msgid "Appropriateness Test"
 msgstr "適正テスト"
-
-msgid "Apps"
-msgstr "アプリケーション"
 
 msgid "Apr"
 msgstr "4"
@@ -1286,6 +1289,9 @@ msgstr "銀行、ヘッジファンド、プロ投資家の皆様はデリバテ
 msgid "Barrier"
 msgstr "バリア価格"
 
+msgid "Barrier (%1)"
+msgstr "バリア価格"
+
 msgid "Barrier Change"
 msgstr "バリア値の変更"
 
@@ -1413,9 +1419,7 @@ msgid "Binary K.K."
 msgstr "Binary K.K."
 
 msgid "Binary K.K., 3F Hiroo Miyata Building, 1-9-16 Hiroo, Shibuya-ku, Tokyo 150-0012. Licensed and regulated as a Type 1 Financial Instruments Business by the KLFB (license no. 2949) and a member of FFAJ (membership no. 1590)."
-msgstr ""
-"バイナリー株式会社：〒150-0012 東京都 渋谷区 広尾 1−9−16 広尾宮田ビル 3F\n"
-"第一種金融商品取引業者として登録完了（関東財務局長(金商)第2949号）金融先物取引業協会に加入（会員番号1590号）"
+msgstr "バイナリー株式会社：〒150-0012 東京都 渋谷区 広尾 1−9−16 広尾宮田ビル 3F<br>第一種金融商品取引業者として登録完了（関東財務局長(金商)第2949号）金融先物取引業協会に加入（会員番号1590号）"
 
 msgid "Binary KK granted Japan license"
 msgstr "第一種金融商品取引業者として登録"
@@ -1423,7 +1427,7 @@ msgstr "第一種金融商品取引業者として登録"
 msgid "Binary KK, Hiroo Miyata Bldg 3F, 9-16, Hiroo 1-chome, Shibuya-ku, Tokyo 150-0012, Japan"
 msgstr ""
 "Binary株式会社\n"
-"所在地：150-0012　東京渋谷区広尾一丁目9-16　広尾宮田ビル3F"
+"所在地：150-0012　東京都渋谷区広尾1-9-16　広尾宮田ビル3F"
 
 msgid "Binary Ltd"
 msgstr "Binary Ltd"
@@ -1464,9 +1468,7 @@ msgstr "バイナリーオプション"
 msgid ""
 "Binary options are easy to understand. They're called 'binary' because there can be only two outcomes - win or lose. If your prediction is correct, you receive a payout that is determined at the start of the trade. If not, you just lose your\n"
 "            initial stake."
-msgstr ""
-"バイナリーオプションはある条件を「満たす」か「満たさないか」の２種類の結果のみもたらすことから「バイナリー」と呼ばれています。予想が正しい場合、事前に定められたペイアウトをお受け取りいただけます。予想が正しく無い場合は、\n"
-"　　　　購入価格を失います。"
+msgstr "バイナリーオプションはある条件を「満たす」か「満たさないか」の２種類の結果のみもたらすことから「バイナリー」と呼ばれています。予測が正しい場合、事前に定められたペイアウトをお受け取りいただけます。予測が正しく無い場合は、購入価格を失います。"
 
 msgid "Binary options basics"
 msgstr "バイナリー取引の基礎"
@@ -1554,6 +1556,9 @@ msgstr "しかしながら、当社の人財に対する要求水準は高いで
 
 msgid "Buy"
 msgstr "購入"
+
+msgid "Buy Price"
+msgstr "購入金額（単価）"
 
 msgid "Buy an App, or Build Your Own"
 msgstr "アプリケーションを購入、または自作のものを構築することも"
@@ -1657,10 +1662,10 @@ msgid "Choose Asian Rise/Fall when you want to profit from the market ending hig
 msgstr "平均価格よりも終値が上か下かを予測されたい場合は「Asianアップ/ダウン」をご選択ください。"
 
 msgid "Choose Ends In/Out to profit from the market stopping inside or outside two price targets at the end of the time period."
-msgstr "取引期間終了時の判定価格が、設定された上下バリア価格の「レンジ内」か「レンジ外」にあるかを予想して取引をされたい場合は「END-IN/END-OUT」を選択して下さい。"
+msgstr "取引期間終了時の判定価格が、設定された上下バリア価格の「レンジ内」か「レンジ外」にあるかを予測して取引をされたい場合は「END-IN/END-OUT」を選択して下さい。"
 
 msgid "Choose Higher/Lower when you want to profit from the market ending higher or lower than a price target."
-msgstr "「目標価格」が判定価格より上か下かを予想し、取引をしたい場合は「ハイ/ロー」を選択してください。"
+msgstr "「目標価格」が判定価格より上か下かを予測し、取引をしたい場合は「ハイ/ロー」を選択してください。"
 
 msgid "Choose Rise/Fall when you want to profit from the market rising or falling from its current level."
 msgstr "This paragraph should be deleted with Japan website"
@@ -1669,10 +1674,10 @@ msgid "Choose Scopes:"
 msgstr "範囲選択："
 
 msgid "Choose Stays In/Out to profit from the market staying inside or going outside two price targets any time during the contract period."
-msgstr "設定した上下バリア価格が取引期間中に「レンジ内にとどまり続ける」か「レンジ外へ出る」かを予想して取引をされたい場合は「STAY-IN/BREAK-OUT」を選択して下さい。"
+msgstr "設定した上下バリア価格が取引期間中に「レンジ内にとどまり続ける」か「レンジ外へ出る」かを予測して取引をされたい場合は「STAY-IN/BREAK-OUT」を選択して下さい。"
 
 msgid "Choose Touch / No Touch when you want to profit from the market touching or not touching a target any time during the contract period."
-msgstr "取引期間中に設定したバリア価格に「達するか」「達しないか」を予想し、取引をしたい場合は「TOUCH/NO-TOUCH」を選択して下さい。"
+msgstr "取引期間中に設定したバリア価格に「達するか」「達しないか」を予測し、取引をしたい場合は「TOUCH/NO-TOUCH」を選択して下さい。"
 
 msgid "Choose a Name:"
 msgstr "名前を選択："
@@ -1728,13 +1733,16 @@ msgstr "取引対象を選択"
 msgid "Choose your own strike."
 msgstr "バリア価格を設定"
 
+msgid "Christmas Day"
+msgstr "クリスマス"
+
 msgid "Citizens of Afghanistan, Belgium, Bosnia and Herzegovina, Guyana, Iraq, Lao PDR, Syria, Uganda, Vanuatu or Yemen shall be restricted from opening an account with Binary Investments (Europe) Ltd."
 msgstr ""
 "アフガニスタン、ベルギー、ボスニア・ヘルツェゴビナ、ガイアナ、イラク、ラオス、シリア、ウガンダ、バヌアツ,\n"
 "イエメンの方は、Binary Investments (Europe) Ltd.にて口座を開設いただきます。"
 
 msgid "Classification of assets requiring hedge"
-msgstr "ヘッジファンドを必要とする資産の分類"
+msgstr "ヘッジを必要とする資産の種類"
 
 msgid "Click here to retry"
 msgstr "再試行するにはこちらをクリックしてください"
@@ -1800,6 +1808,12 @@ msgstr "終了"
 
 msgid "Closes"
 msgstr "取引終了時間"
+
+msgid "Closes early (at 18:00)"
+msgstr "判定時刻:18:00"
+
+msgid "Closes early (at 21:00)"
+msgstr "判定時刻:21:00"
 
 msgid "Collaborate with members of our IT Group to identify innovative ways to improve our website's capability and performance"
 msgstr "ウェブサイトの機能とパフォーマンスを向上させる革新的な方法を特定するために、ITグループのメンバーと共同で作業を行います"
@@ -1949,7 +1963,7 @@ msgid "Contract purchased with app ID"
 msgstr "アプリケーションIDで購入されたトレード"
 
 msgid "Contract will be sold at the prevailing market price when the request is received by our servers. This price may differ from the indicated price."
-msgstr "当社のサーバがリクエストを受理した時点での市場価格で売却取引が成立します。実際の約定価格と発注時の表示価格と異なる場合があります。"
+msgstr "当社のサーバがリクエストを受理した時点での市場価格で売却取引が成立します。実際の約定価格と注文時の表示価格と異なる場合があります。"
 
 msgid "Contracts"
 msgstr "当社との関係"
@@ -2360,7 +2374,7 @@ msgid "Each binary option contract runs for a set time - with %1 you can choose 
 msgstr "通貨バイナリーオプション取引は、期間を設定して取引頂けます。"
 
 msgid "Each binary option is a prediction on the future movement of an underlying market."
-msgstr "バイナリーオプションは、原資産の将来の値動きを予想する取引です。"
+msgstr "バイナリーオプションは、原資産の将来の値動きを予測する取引です。"
 
 msgid "Each binary trade is for a pre-determined payout amount. You win the payout if your prediction is correct."
 msgstr "各バイナリーでのお取引は事前にペイアウトが確定しています。条件が満たされるとこの金額を獲得いただけます。"
@@ -2440,6 +2454,9 @@ msgstr "判定時刻"
 msgid "End time"
 msgstr "終了時間"
 
+msgid "End time must be after start time."
+msgstr "取引終了時間は明日以降として設定して下さい。"
+
 msgid "Ends Between/Ends Outside trades"
 msgstr "END-IN/END-OUT トレード"
 
@@ -2447,7 +2464,7 @@ msgid "Ends In/Out"
 msgstr "END-IN/END-OUT"
 
 msgid "Ends In/Out contracts will be refunded at the purchase price if there are less than 2 ticks between the start and end times."
-msgstr "ご不明点等ありましたら、カスタマーサポートまでご連絡ください。"
+msgstr "ご不明な点等ありましたら、カスタマーサポートまでご連絡ください。"
 
 msgid "Engage in data mining using SQL databases, R/S-Plus, OLAP and other analytical tools"
 msgstr "SQLデータベース、R/ S-Plus、OLAP、その他分析ツールを使用してデータマイニングに従事"
@@ -2483,16 +2500,19 @@ msgid "Entry Level"
 msgstr "エントリーレベル"
 
 msgid "Entry Spot"
-msgstr "取引時レート"
+msgstr "取引時刻直後のテック"
 
 msgid "Entry spot"
-msgstr "取引時レート"
+msgstr "取引時刻直後のテック"
 
 msgid "Entry spot price"
 msgstr "取引時レート"
 
 msgid "Environment"
 msgstr "環境"
+
+msgid "Equals"
+msgstr "等しい"
 
 msgid "Equities"
 msgstr "株式"
@@ -2588,7 +2608,7 @@ msgid "Exit Spot"
 msgstr "判定レート"
 
 msgid "Exit Spot Time"
-msgstr "判定時間"
+msgstr "売却時間"
 
 msgid "Exit spot"
 msgstr "判定レート"
@@ -2604,9 +2624,6 @@ msgstr "エキゾチックオプションの価格設定、ボラティリティ
 
 msgid "Experience in the financial services industry is preferred"
 msgstr "金融サービス業界での経験があれば望ましい"
-
-msgid "Experience the future of our trading platform with the Next-Gen app."
-msgstr "Next-Gen アプリで取引プラットフォームの未来を経験しましょう"
 
 msgid "Experience with Git"
 msgstr "Gitの経験"
@@ -2641,6 +2658,9 @@ msgstr "終値"
 msgid "Explanation"
 msgstr "取引概要"
 
+msgid "Explore advanced trading features with the Next-Gen app for web and mobile."
+msgstr "Next-Gen アプリで取引プラットフォームの未来を経験しましょう"
+
 msgid "Extensive experience in the application of advanced coding principles and standards"
 msgstr "高度なコーディングの原則と標準の適用における豊富な経験"
 
@@ -2652,6 +2672,9 @@ msgstr "Javascript・HTML・CSS・AJAX・JSONの幅広い知識"
 
 msgid "FAQ"
 msgstr "FAQ"
+
+msgid "FX Rate"
+msgstr "為替レート"
 
 msgid "Facility that allows you to set limits on your account."
 msgstr "アカウントの制限をユーザー自身で設定していただける機能。"
@@ -2839,6 +2862,9 @@ msgstr "当社の基本要件を満たし、管理事務でのプロフェッシ
 msgid "Friday"
 msgstr "金曜日"
 
+msgid "Fridays"
+msgstr "金曜日"
+
 msgid "From"
 msgstr "開始"
 
@@ -2856,9 +2882,6 @@ msgstr "また、当社ではそのような状況、またはその他状況下
 
 msgid "Furthermore, the Company disclaims all liability for any malfunctioning, impossibility of access, or poor use conditions of the %1 API due to inappropriate equipment, disturbances related to internet service providers, to the saturation of the internet network, and for any other reason."
 msgstr "また、いかなる誤動作、アクセス不能、不適切な装置の使用による%1 API使用への悪条件、またはインターネットサービスプロバイダーとインターネットネットワークの飽和、及びその他の理由が原因での障害において当社は一切の責任を負いません。"
-
-msgid "Future of trading on Binary.com"
-msgstr "%1での今後のお取引"
 
 msgid "GBP"
 msgstr "GBP"
@@ -2993,7 +3016,7 @@ msgid "Higher/Lower"
 msgstr "ラダーHIGH/ラダーLOW"
 
 msgid "Higher/Lower contracts will be refunded at the purchase price if there are less than 2 ticks between the start and end times."
-msgstr "ご不明点等ありましたら、カスタマーサポートまでご連絡ください。"
+msgstr "ご不明な点等ありましたら、カスタマーサポートまでご連絡ください。"
 
 msgid "Higher/Lower trades"
 msgstr "HIGH/LOW・トレード"
@@ -3070,7 +3093,7 @@ msgid "I have read and agree to the"
 msgstr "私は一読したうえで、同意します。"
 
 msgid "I hereby agree and accept that all documents such as pre-contract forms, all terms and conditions, trade reports and other legally required materials will be issued in electronic format only."
-msgstr "電子文書のみで発行される契約締結前文書や全ての利用規約、取引報告書、その他法的に必要な書類などの文書についてここに理解し、同意します。"
+msgstr "電子交付への同意：契約締結前交付書面、取引約款等の書類が電子交付されることに同意します。"
 
 msgid "I understand and agree that, with regard to over-the-counter binary option trading, I have read and understand the general conditions and mechanisms for trading the contract, including details of the underlying financial index, before committing to a transaction."
 msgstr "本取引により想定される損失額（中途売却または解約した場合の解約清算金（試算額）を含む。）を踏まえ、お客さまが許容できる損失額及びお客さまの資産の状況への影響に照らして、お客さま自身が取引できる契約内容であることを確認したこと。（契約締結前交付書面「序文」参照）"
@@ -3094,10 +3117,10 @@ msgid "If a customer holds a long position and the prediction goes wrong as of t
 msgstr "取引期間中のオプション価格は変動すること。（契約締結前交付書面「店頭バイナリーオプション取引のリスクについての説明」-④オプションの価格変動リスク参照）"
 
 msgid "If a customer holds a short position and the prediction is incorrect as of the judgment time, the customer is required to pay the payout amount, and as that will be greater than the trade price that the customer originally received, this will cause a net loss."
-msgstr "売付したバイナリーオプションについて、判定時刻において、予測が外れた場合にはペイアウト額を支払うこと、および支払うペイアウト額が受け取るオプション料以上の額になること。また、同オプションを判定時刻前に買戻し（または解約）した場合には、買戻し額が売付時に受け取るオプション料を上回り、損失が生じるおそれがあること。（参照先を後日、入力予定）"
+msgstr "購入したバイナリーオプションを判定時刻前に売却（または解約）した場合には、売却金額が購入金額を下回り、損失が生じるおそれがあること（契約締結交付前書面「店頭バイナリーオプション取引のリスク等重要事項について」-8参照）"
 
 msgid "If a customer sells back a long option position before the determination time, then the sale price may be lower than the original purchase price, so there is a possibility of a net loss."
-msgstr "購入したバイナリーオプションについて、判定時刻において、予測が外れた場合には、投資元本がゼロになること。また、同オプションを判定時刻前に売却（または解約）した場合には、売却金額が購入金額を下回り、損失が生じるおそれがあること（契約締結前交付書面「店頭バイナリーオプション取引のリスク等重要事項について」-2及び8参照）"
+msgstr "購入したバイナリーオプションについて、判定時刻において、予測が外れた場合には、投資元本がゼロになること。（契約締結前交付書面「店頭バイナリーオプション取引のリスク等重要事項について」-2参照）"
 
 msgid "If all that sounds a bit daunting, you're right. But it's how we make sure we get the best people for our team."
 msgstr "当社の要求水準に厳しい印象を持たれるかもしれませんが、人財を厳選するためにこれらのステップを採用しております。"
@@ -3169,7 +3192,7 @@ msgid "If you select \"Asian Rise\", you will win the payout if the <strong>last
 msgstr "「Asian アップ」を選択された場合、<strong>最後のTick</strong>が平均のTickよりも<strong>高い</strong>とペイアウトを獲得いただけます。"
 
 msgid "If you select \"Differs\", you will win the payout if the <strong>last digit</strong> of the last tick is <strong>not the same</strong> as your <strong>prediction</strong>."
-msgstr "「アンマッチ」を選択された場合、最後のtickの<strong>下一桁</strong>がお客さまの<strong>予想</strong>と違うとペイアウトを獲得いただけます。"
+msgstr "「アンマッチ」を選択された場合、最後のtickの<strong>下一桁</strong>がお客さまの<strong>予測</strong>と違うとペイアウトを獲得いただけます。"
 
 msgid "If you select \"Does Not Touch\", you win the payout if the market never touches the <strong>barrier</strong> at any time during the <strong>contract period</strong>."
 msgstr "「NO-TOUCH」を選択された場合、<strong>取引期間が終了</strong>まで市場価格が<strong>バリア</strong>設定した価格にタッチしなければペイアウトを受け取れます。"
@@ -3304,8 +3327,8 @@ msgid ""
 "In foreign exchange markets, traders can enter contracts based on the change in price of one currency as it relates to another currency. For example if a trader selects Rise in the EUR/USD market, they are predicting that the value of the Euro\n"
 "            will rise in relation to the value of the US dollar."
 msgstr ""
-"外国為替市場では、任意の通貨が特定の通貨に対する価格の変化の予想に基づくトレードを実施できます。例えば、EUR/USD市場が上\n"
-"　　　昇すると予測した場合は、米ドルに対してユーロの価値が上がると予想したことになります。"
+"外国為替市場では、任意の通貨が特定の通貨に対する価格の変化の予測に基づくトレードを実施できます。例えば、EUR/USD市場が上\n"
+"　　　昇すると予測した場合は、米ドルに対してユーロの価値が上がると予測したことになります。"
 
 msgid "In order to access our mobile apps and other third-party applications, you'll first need to generate an API Token."
 msgstr "当社のモバイルアプリケーションまたは第三者開発アプリケーションへアクセスするには、はじめにAPIトークンの作成が必要です。"
@@ -3406,6 +3429,9 @@ msgid "Information of the previous performance of any underlying instrument or a
 msgstr "商品または原資産の以前の実績情報は現在および/または将来の業績を保証するものではありません。過去の実績は将来の成果を示すものではありません。"
 
 msgid "Insufficient balance"
+msgstr "口座残高が不足しています"
+
+msgid "Insufficient balance."
 msgstr "口座残高が不足しています"
 
 msgid "Interested, so what's next? If you can offer our Clients a specific e-cash method or a local payment option that is not already provided by %1, and you have a good track record in the market, then we would love to <a href='mailto:%2'>hear from you!</a>"
@@ -3602,13 +3628,13 @@ msgid "Japan website Ethics Code Explanation of item 7.1"
 msgstr "顧客に対して投資に関する助言行為を行う場合、中立的立場から、事実と見解を明確に区別した上で、専門的な能力を活かし助言をする。"
 
 msgid "Japan website Ethics Code Explanation of item 7.2"
-msgstr "関連する法令や規則等のもとで、投資によってもたらされる価値に影響を与えることが予想される内部情報等の公開されていない情報を基に、顧客に対して助言行為を行うことはしない。"
+msgstr "関連する法令や規則等のもとで、投資によってもたらされる価値に影響を与えることが予測される内部情報等の公開されていない情報を基に、顧客に対して助言行為を行うことはしない。"
 
 msgid "Japan website Ethics Code Explanation of item 8.1"
 msgstr "法令や規則等に定めのないものであっても、社会通念や市場仲介者として求められるものに照らして疑義を生じる可能性のある行為については、本倫理コードと照らし、その是非について判断する。"
 
 msgid "Japan website Ethics Code Explanation of item 8.2"
-msgstr "関連する法令や規則等のもとで、投資によってもたらされる価値に重要な影響を与えることが予想される内部情報等の公開されていない情報を適切に管理する。"
+msgstr "関連する法令や規則等のもとで、投資によってもたらされる価値に重要な影響を与えることが予測される内部情報等の公開されていない情報を適切に管理する。"
 
 msgid "Japan website Ethics Code Explanation of item 9.1"
 msgstr "資本市場に関する公正性及び健全性について正しく理解し、資本市場の健全な発展を妨げる行為をしない。また、資本市場の健全性維持を通して、果たすべき社会的使命を自覚して行動する。"
@@ -4005,9 +4031,6 @@ msgstr "７月"
 msgid "Jump To"
 msgstr "Xへ移動する"
 
-msgid "Jump to date:"
-msgstr "参照日："
-
 msgid "Jun"
 msgstr "6"
 
@@ -4045,7 +4068,7 @@ msgid "Languages"
 msgstr "言語"
 
 msgid "Last Digit Prediction"
-msgstr "下一桁の数字を予想"
+msgstr "下一桁の数字を予測"
 
 msgid "Last Digit Stats"
 msgstr "下一桁ステータス"
@@ -4072,6 +4095,9 @@ msgstr "トレードを学ぶ"
 
 msgid "Learn more"
 msgstr "詳細はこちら"
+
+msgid "Learn more about how we think and how we work. Read <a href='https://blog.binary.com/' target='_blank'>our blog</a> for the stories and ideas that inspire us."
+msgstr "当社の企業理念や仕組みを見てみませんか。<a href='https://blog.binary.com/' target='_blank'>当社のブログ</a>から刺激あるストーリーやアイディアをご覧ください。"
 
 msgid "Learn more about our corporate culture"
 msgstr "当社の企業文化について詳しく見る"
@@ -4220,6 +4246,9 @@ msgstr "入金"
 msgid "Make your trade"
 msgstr "取引を実行しましょう。"
 
+msgid "Making a Positive Impact in Local Communities"
+msgstr ""
+
 msgid "Malaysia"
 msgstr "マレーシア"
 
@@ -4255,6 +4284,9 @@ msgstr "マーケットのプロ投資家"
 
 msgid "Market exit price"
 msgstr "市場出口価格"
+
+msgid "Market is closed. Please try again later."
+msgstr "市場は現在閉鎖しています。後ほどお試しください。"
 
 msgid "Market prices are updated at most once per second.  For any given second, the market price will be updated to the first tick, if any, received in that particular second on the company datafeed."
 msgstr "市場価格は最高で１秒に１回の頻度で更新されます。どの任意の秒数でも市場価格にはその最初のTickの値、または特定の秒数に当社のデータフィードに受信された値が更新されます。"
@@ -4465,6 +4497,9 @@ msgstr "新しいパスワード"
 msgid "New Trade"
 msgstr "新しいトレード"
 
+msgid "New Year's Day"
+msgstr "元旦"
+
 msgid "New password"
 msgstr "新しいパスワード"
 
@@ -4529,6 +4564,9 @@ msgstr "100万円分のデモ口座をお試しいただけます"
 
 msgid "No. There's no cost to sign up to the affiliate program."
 msgstr "アフィリエイトプログラムへのご参加費用は一切発生しません。"
+
+msgid "Not"
+msgstr "ない"
 
 msgid "Not FATCA*"
 msgstr "外国口座税務コンプライアンス法（米国FATCA）に該当しない"
@@ -4681,6 +4719,9 @@ msgstr "口座開設"
 msgid "Opens"
 msgstr "取引開始時間"
 
+msgid "Option Type"
+msgstr "オプションタイプ"
+
 msgid "Options trading can become a real addiction, as can any other activity pushed to its limits. To avoid the danger of such an addiction, we provide a reality-check that gives you a summary of your trades and accounts on a regular basis."
 msgstr "どのお取引も制限が拡大できるため、実際に中毒になる場合があります。そのような中毒性への危険性を避けるために、当社ではお取引と口座の概要を定期的にお渡しするリアリティチェックを提供しています。"
 
@@ -4740,6 +4781,9 @@ msgstr "当社が提供するデータフィードと他社がインターネッ
 
 msgid "Our fast organic growth is supplemented by the acquisition of the client base of BetsForTraders, one of our main competitors."
 msgstr "当社の競合相手であったBetsForTraders社の顧客を獲得し、組織として成長していきます。"
+
+msgid "Our headquarters are in Malta, a favoured tourist destination with a warm climate, beautiful recreational areas, and World Heritage sites. We also have two offices in Malaysia: our operational headquarters in the high-tech township of Cyberjaya, and a branch office at KL Sentral in the heart of the country’s capital, Kuala Lumpur."
+msgstr "Binary.comの本社は、温暖な気候、美しい保養地区、そして世界遺産といった環境に恵まれた観光地であるマルタ共和国に存在します。また、エキサイティングなアジアの中心部であるマレーシアの首都クアラルンプールの南部に位置する、ハイテク産業で有名なCyberjayaに業務部門を統括する本社が存在します。"
 
 msgid "Our information security policies are based on industry best practices in access control and business continuity."
 msgstr "当社の情報秘匿に関する取り決めは、アクセス管理とビジネスの継続性を考慮した業界にて最良の慣行に基づいております。"
@@ -4879,6 +4923,9 @@ msgstr "アフィリエイト報酬の支払いについて"
 msgid "Payout"
 msgstr "ペイアウト"
 
+msgid "Payout Amount"
+msgstr "取引数量(ロット x ¥1,000)"
+
 msgid "Pension"
 msgstr "年金"
 
@@ -4901,10 +4948,10 @@ msgid "Persons with insider knowledge of any financial market or instrument are 
 msgstr "金融市場や金融商品の内部情報を知る方による当ウェブサイトでのお取引は禁止されています。"
 
 msgid "Pillar 3 Disclosures"
-msgstr "第三の柱"
+msgstr "開示（第3の柱)"
 
 msgid "Pillar 3 disclosure report"
-msgstr "第三の柱に基づく報告"
+msgstr "開示レポート（第3の柱に基づく報告)"
 
 msgid "Pip"
 msgstr "Pip"
@@ -4922,7 +4969,10 @@ msgid "Platforms"
 msgstr "プラットフォーム"
 
 msgid "Please %1 to view this page"
-msgstr "ご利用頂くためには%1が必要です"
+msgstr "現在、ログアウトの状態です。ご利用頂くためには再度%1が必要です。"
+
+msgid "Please check the above form for pending errors."
+msgstr "未入力の項目がありますのでご確認ください"
 
 msgid "Please check your email for the value of this token"
 msgstr "Eメールアドレスをご確認ください"
@@ -4942,8 +4992,8 @@ msgstr "続行する前に、お客さまの取引明細書をご確認くださ
 msgid "Please confirm the transaction details in order to complete the transfer:"
 msgstr "送金を完了するために、取引明細をご確認ください。"
 
-msgid "Please contact us with whatever is on your mind at <a href=\"mailto:%1\">%1</a>. We'd be happy to hear from you and willing to assist you. So, feel free to share your ideas and suggestions with us."
-msgstr "ご不明な点がございましたら、<a href=\"mailto:%1\">%1</a>までお問い合わせください。喜んでサポートさせていただきます。ご希望、ご要望等ございましたらお気軽にご連絡ください。"
+msgid "Please contact us with whatever is on your mind at <a href='mailto:%1'>%1</a>. We'd be happy to hear from you and willing to assist you. So, feel free to share your ideas and suggestions with us."
+msgstr "ご不明な点がございましたら、<a href='mailto:%1'>%1</a>までお問い合わせください。喜んでサポートさせていただきます。ご希望、ご要望等ございましたらお気軽にご連絡ください。"
 
 msgid "Please deposit before transfer to client."
 msgstr "お客さまへ送金される前にご入金をしてください。"
@@ -4989,6 +5039,9 @@ msgstr "ハイフンを入れて半角で入力してください"
 
 msgid "Please input a valid date"
 msgstr "有効な日にちを入力して下さい。"
+
+msgid "Please log in."
+msgstr "ログインをしてください。"
 
 msgid "Please make sure that you first agree with the Agent on the terms of payment before submitting your request."
 msgstr "リクエストを送信される前に、お支払い条件に関してエージェントに同意をいただく必要があります。"
@@ -5164,6 +5217,9 @@ msgstr "フルタイムの翻訳者が不在の時にもウェブサイトのコ
 msgid "Processing Time"
 msgstr "決済所要時間"
 
+msgid "Processing your request..."
+msgstr "ただいま処理中です。しばらくお待ち下さい。"
+
 msgid "Produce content for the company's website, blog, social media outlets, and marketing materials"
 msgstr "当社のブログ、ソーシャルメディア、マーケティング資料のコンテンツ作成"
 
@@ -5302,7 +5358,7 @@ msgid "Reap the rewards of trading binaries, knowing your funds are always safe.
 msgstr "バイナリー取引を行うことで得られる様々なメリットがあり、お客さまの資金は万全の体制で守られています。"
 
 msgid "Receive news and special offers"
-msgstr "各種キャンペーン等に関するお知らせを受け取る"
+msgstr "各種キャンペーン等に関する<br>お知らせを受け取る"
 
 msgid "Ref."
 msgstr "約定番号"
@@ -5377,6 +5433,9 @@ msgid "Relevant work experience in a related field (financial services preferred
 msgstr "関連分野（金融サービスが好ましい）での実務経験"
 
 msgid "Remaining Time"
+msgstr "残り時間"
+
+msgid "Remaining time"
 msgstr "残り時間"
 
 msgid "Represents the maximum amount of cash that you may hold in your account.  If the maximum is reached, you will be asked to withdraw funds."
@@ -5590,6 +5649,9 @@ msgstr "自営業"
 msgid "Sell"
 msgstr "売却"
 
+msgid "Sell Price"
+msgstr "売却金額（単価）"
+
 msgid "Sell at market"
 msgstr "売却"
 
@@ -5785,6 +5847,9 @@ msgstr "取引時刻"
 msgid "Start Trading"
 msgstr "トレード開始"
 
+msgid "Start from:"
+msgstr "検索期間"
+
 msgid "Start learning"
 msgstr "学習をはじめる"
 
@@ -5795,7 +5860,7 @@ msgid "State/Province"
 msgstr "都道府県"
 
 msgid "Stated limits are subject to change without prior notice."
-msgstr "上記の1日取引数量限度額を変更する場合、当社のホームページ上でお知らせいたします。"
+msgstr "上記の1日取引限度額を変更する場合、当社のホームページ上でお知らせいたします。"
 
 msgid "Statement"
 msgstr "口座残高"
@@ -5816,7 +5881,7 @@ msgid "Stays In/Goes Out"
 msgstr "STAY-IN/BREAK-OUT"
 
 msgid "Stays In/Goes Out Contracts will be refunded at the purchase price if there are less than 2 ticks between the start and end times."
-msgstr "ご不明点等ありましたら、カスタマーサポートまでご連絡ください。"
+msgstr "ご不明な点等ありましたら、カスタマーサポートまでご連絡ください。"
 
 msgid "Step"
 msgstr "ステップ"
@@ -5920,11 +5985,14 @@ msgstr "グループのグローバルな人材募集や人材管理のニーズ
 msgid "Talk to us"
 msgstr "お問い合わせ"
 
+msgid "Target"
+msgstr "ターゲット"
+
 msgid "Targeting medium-term / long-term profits"
-msgstr "中期利益/長期利益を目標にする"
+msgstr "中期保有/長期保有が目的"
 
 msgid "Targeting short-term profits"
-msgstr "短期利益を目標にする"
+msgstr "短期保有が目的"
 
 msgid "Tasked with writing robust, high-quality, production-ready code and contributing to the architecture that drives our high-traffic global website."
 msgstr "堅牢で高品質、量産可能なコードを書く役割を担い、当社の高トラフィックなサイトを駆動するアーキテクチャに貢献していただきます。"
@@ -6011,13 +6079,13 @@ msgid "The <strong>contract period</strong> is the period between the <strong>ne
 msgstr "<strong>取引期間</strong>は、<strong>取引開始時間直後</strong>の<strong>ティック</strong>から<strong>取引終了時間</strong>までとなります。"
 
 msgid "The <strong>end time</strong> is the selected number of minutes/hours after the <strong>start time</strong> (if less than one day in duration), or at the end of the trading day (if one day or more in duration)."
-msgstr "<strong>取引期間</strong>は、取引期間開始時から判定時刻までとなります。新規購入が可能な時間は<strong>判定時刻2分前</strong>までで、取引可能時間を過ぎると新規購入注文＆売却取引は行えません。"
+msgstr "<strong>取引期間</strong>は、取引期間開始時から判定時刻までとなります。購入・売却は<strong>判定時刻2分前</strong>まで可能です。判定時刻2分前から新規購入＆売却注文は行なえません。"
 
 msgid "The <strong>end time</strong> is the selected number of seconds/minutes/hours after the <strong>start time</strong> (if less than one day in duration), or at the end of the trading day (if one day or more in duration)."
-msgstr "<strong>取引期間</strong>は、取引期間開始時から判定時刻までとなります。新規購入が可能な時間は<strong>判定時刻2分前</strong>までで、取引可能時間を過ぎると新規購入注文＆売却取引は行えません。"
+msgstr "<strong>取引期間</strong>は、取引期間開始時から判定時刻までとなります。購入・売却は<strong>判定時刻2分前</strong>まで可能です。判定時刻2分前から新規購入＆売却注文は行えません。"
 
 msgid "The <strong>exit spot</strong> is the spot at the <strong>end time</strong>."
-msgstr "<strong>判定レート</strong>とは<strong>判定時刻時</strong>のスポット価格のことです。"
+msgstr "<strong>判定レート</strong>とは<strong>判定時刻時</strong>の市場価格のことです。"
 
 msgid "The <strong>start time</strong> is when the contract is processed by our servers."
 msgstr "<strong>取引開始時間</strong>とは回号の取引開始時刻のことです。各回号の詳細につきまして契約締結前交付書面をご確認ください。"
@@ -6119,7 +6187,7 @@ msgid "The Company shall have no liability arising from orders, investment decis
 msgstr "%1 APIで公開または設置された情報に基づいたサードパーティまたはサービス（金融商品および通貨を含む）の注文、投資判断、購入から生じた問題について当社は一切の責任を負いません。"
 
 msgid "The Company shall not be liable to you in contract, or otherwise (including liability for negligence) for any loss, whether direct or indirect, of the Affiliate's business, revenue or profits, anticipated savings, or wasted expenditure, corruption, or destruction of data or for any indirect or consequential loss whatsoever."
-msgstr "当社はアフィリエイト会員のトレード、間接的でも直接的であろうともアフィリエイトビジネス上の損失（不注意による損失も含む）、収入や利益、予想される預貯金、または浪費された経費、データの破壊、及び他のいかなる間接的または損失の結果に対して責任を負うことはありません。"
+msgstr "当社はアフィリエイト会員のトレード、間接的でも直接的であろうともアフィリエイトビジネス上の損失（不注意による損失も含む）、収入や利益、予測される預貯金、または浪費された経費、データの破壊、及び他のいかなる間接的または損失の結果に対して責任を負うことはありません。"
 
 msgid "The Company shall pay you the currently published percentage of net revenues (as detailed on the commission page of your affiliate account) received during the term of the Agreement. The affiliate commission payments due shall only be for bona fide client referrals and the Company reserves the right to disregard duplicate accounts or nominee accounts that the Company sees as non-bona fide clients, at its sole discretion."
 msgstr "契約期間中は、アフィリエイト口座に記述されている報酬率に基づいた報酬をアフィリエイト会員に支払います。アフィリエイト報酬は誠実な会員獲得行為にのみ支払われ、重複口座や不誠実な行動が検知されたアフィリエイト会員に対し、当社の判断で当社はそのような口座に対する支払いを停止する権利を有します。"
@@ -6256,7 +6324,7 @@ msgid "The bonus will be added to the account when the required minimum deposit 
 msgstr "このボーナスは、ボーナスの付与条件となる入金金額を１回のご入金で完了した場合に付与されます。複数のボーナスの獲得を目的として、入金金額を不必要に増やされた場合はこのボーナスは適用されません。"
 
 msgid "The calculation of the price to be paid (or the payout to be received) for financial contracts on this site at the time the financial contract is purchased or sold will be based on the Company's best estimate of market price movements and the expected level of interest rates, implied volatilities and other market conditions during the life of the financial contract, and is based on complex mathematics. The calculation will include a bias in favour of the Company. The financial contract prices (or the payout amounts) offered to Clients speculating on market or index prices may differ substantially from prices available in the primary markets where stock indices or commodities or contracts thereupon are traded, due to the bias favouring the Company in the price calculation system referred to above."
-msgstr "当社サービスが提供する金融トレードを購入又は購入済みトレードを転売される際に適用される金額の算出根拠は、当社の最良な市場価格の動向予想、予想されうる金利レベル、変動率、該当金融トレードの取引期間での他の市場の状態、及び複雑な数学モデルに基づきます。算出結果には、当社が採用するバイアスも適用されます。市場価格や指数価格を予想するお客さまに提供される金融トレードの購入価格や払い戻し金額は、前述した当社が管理するバイアスの適用により、株式指数、コモディティ、トレード開始直後での初期の市場価格と実質上異なる場合があります。"
+msgstr "当社サービスが提供する金融トレードを購入又は購入済みトレードを転売される際に適用される金額の算出根拠は、当社の最良な市場価格の動向予測、予測されうる金利レベル、変動率、該当金融トレードの取引期間での他の市場の状態、及び複雑な数学モデルに基づきます。算出結果には、当社が採用するバイアスも適用されます。市場価格や指数価格を予測するお客さまに提供される金融トレードの購入価格や払い戻し金額は、前述した当社が管理するバイアスの適用により、株式指数、コモディティ、トレード開始直後での初期の市場価格と実質上異なる場合があります。"
 
 msgid "The charting data made available to Clients by the Company is indicative only and may at times differ from the real market values. The Company's decision as to the calculation of a financial contract price will be final and binding. The Company allows the option to sell contracts before expiry time of some contracts but will not be obliged to do so and can suspend this option depending on the current market conditions. Contracts may be amended when the underlying asset value is adjusted by corporate actions during the contract period."
 msgstr "当社がお客さまに提供するチャートデータは、価格の目安として表示されるに留まり、実際の市場価格とは異なる可能性があります。尚、当社が算出し決定した金融トレード価格は、当社の決定が最終的かつ決定的なものになります。当社はオープン中のトレードの転売を許可する場合がありますが、転売の権利を付与するか否かは当社の義務ではなく、またこの権利は市場の状況によって提供されない場合があります。トレード期間中に当社にて商品の資産価値を調整した場合、トレードは修正される可能性があります。"
@@ -6424,7 +6492,7 @@ msgid "The resale price indicates a contract's current market price. Resale pric
 msgstr "期限前の契約転売の詳細は「オプションの転売」からご覧いただけます。"
 
 msgid "The return is the money realized when the contract expires (see 'Payout')."
-msgstr "ペイアウトとは、トレードの予想が正しかった際に得る金額のことです。（「払い戻し価格」の項目をご確認下さい）"
+msgstr "ペイアウトとは、トレードの予測が正しかった際に得る金額のことです。（「払い戻し価格」の項目をご確認下さい）"
 
 msgid "The right is also reserved to amend or change the rules and scope of this service from time to time. Any change to the rules made whilst the site is in operation will not apply retrospectively and will only apply to acquisitions of financial contracts made after such change. It is the Company's responsibility to notify Clients before any changes to its terms come into effect."
 msgstr "当社はルールや範囲を適切に修正または変更する権利を有します。修正点や変更点はそれらが作成された以前の状況にさかのぼって適用されることはありませんが、作成後に取得された金融トレードに対して適用されます。お客さまにはご利用規約での全ての変更点を確認する義務があります。"
@@ -6448,7 +6516,7 @@ msgstr ""
 "\n"
 "（リスクの確認と自己責任の原則）\n"
 "第２条　お客さまは本取引を行うにあたり、取引説明書および本約款の内容、本取引の仕組み等を十分理解し、またその内容を承諾し、次の各号に掲げる本取引のリスク等を十分に理解したうえで、自己の判断と責任において取引を行っていただくものとします。\n"
-"(1)　原資産である外国為替相場の変動リスク及び金利変動リスクがあり、お客さまの予想がはずれた場合は、投資した金額を失うこと。（為替変動リスク、金利変動リスク）\n"
+"(1)　原資産である外国為替相場の変動リスク及び金利変動リスクがあり、お客さまの予測がはずれた場合は、投資した金額を失うこと。（為替変動リスク、金利変動リスク）\n"
 "(2)　主要外国為替市場の休場日、経済指標の発表前、ニューヨーク市場の金曜午後等は流動性が低下するため、価格提示が拡大または困難になり購入または売却ができなくなるリスクがあること。（流動性リスク）\n"
 "(3)　システム関連機器、通信関連機器等の障害・故障等のトラブルにより取引に制限が生じたり、お客さまが意図した取引ができなくなる可能性があること。（システムリスク）\n"
 "(4)　当社の経営・財務状況等の変化、または当社のカバー先及び取引先金融機関の破綻等による信用リスクが伴うこと。（信用リスク）\n"
@@ -6517,7 +6585,7 @@ msgid "Therefore your current immediate maximum withdrawal (subject to your acco
 msgstr "そのため、現在即座にご出金いただける限度金額（ただし、ご口座残高が不足していない場合）は%1 %2までです。"
 
 msgid "Therefore your current immediate maximum withdrawal (subject to your account having sufficient funds) is %1 %2."
-msgstr "そのため、現在即座にご出金いただける限度額（口座残高が不足していない場合）は%1 %2までとなります。"
+msgstr "現在、出金可能な限度額（口座残高が不足していない場合）は¥ %2となります。"
 
 msgid "These ST&Cs are to be governed by and construed in accordance with Maltese law and the parties hereto agree to submit to the non exclusive jurisdiction of the Maltese courts."
 msgstr "これらST＆Cs（特別条件と事業条件）は、マルタ裁判所の非専属管轄権に服することに同意し、マルタの法律や当事者によって規制されることを解します。"
@@ -6543,13 +6611,13 @@ msgstr ""
 "3.　本システムの規格変更あるいはその他の理由により、お客さまが使用しているPCもしくは携帯端末等、インターネット回線、その他設備が本システムに対応することが不可能になった場合は、お客さまの費用負担と責任において本システムに対応したものを準備するものとします。"
 
 msgid "These are trades where the trader predicts if a market will finish higher or lower than a specified price target."
-msgstr "定めた価格バリアーよりも、終値が高いか低いかを予想するトレードです。"
+msgstr "定めた価格バリアーよりも、終値が高いか低いかを予測するトレードです。"
 
 msgid "These are trades where the trader predicts if a market will rise or fall at the end of a selected time period."
-msgstr "ご指定して頂いた取引期間終了時に市場価格が上昇するか下降するかを予想するトレードです。"
+msgstr "ご指定して頂いた取引期間終了時に市場価格が上昇するか下降するかを予測するトレードです。"
 
 msgid "These are trades where the trader selects a low and high barrier, and predicts if the market will stay within these barriers or go outside them (see also 'Stays Between/Goes Outside trades')."
-msgstr "上下に設定した価格バリアー内に市場価格が収まるか否かを予想するトレードタイプです。（「STAY-IN/BREAK-OUT」の項目もご参照ください）"
+msgstr "上下に設定した価格バリアー内に市場価格が収まるか否かを予測するトレードタイプです。（「STAY-IN/BREAK-OUT」の項目もご参照ください）"
 
 msgid "These are trades where the trader selects a price target, and predicts that the market will never touch the target before the expiry of the trade."
 msgstr "ターゲット価格を設定し、取引対象の価格が取引終了時までにターゲット価格に一度も触れないことを予測するトレードタイプのことです。"
@@ -6582,7 +6650,7 @@ msgid "This bonus will be processed and credited to a client's account when:"
 msgstr "このボーナスは下記の条件を満たした場合に付与されます："
 
 msgid "This contract can not be traded in the final 2 minutes before settlement"
-msgstr "判定時刻2分を過ぎると新規購入注文＆売却取引を行えません"
+msgstr "判定時刻の2分前から判定時刻までは、新規購入注文＆売却取引を行えません"
 
 msgid "This contract has LOST"
 msgstr "このトレードは負け判定です"
@@ -6641,6 +6709,9 @@ msgstr "このボーナス特典は他の特典との併用は不可能です。
 msgid "This promotion is only available to new Clients. Existing or former Clients do not qualify. It is only available once to each Client."
 msgstr "このプロモーションは、新たなお客さまに限り有効です。すでにご口座をお持ちのお客さまには適用されません。"
 
+msgid "This symbol is not active. Please try another symbol."
+msgstr "このシンボルは現在ご利用いただけません。他のシンボルでお試しください。"
+
 msgid "This website contains links to other websites and may contain banner or icon advertisements related to third-party websites. These websites and the advertisements thereof may submit cookies onto your web browser and as such are beyond our control. We are not responsible for the privacy practices or the content of such websites. We encourage you to read the privacy policies of these websites, because their practices may differ from ours."
 msgstr "当社サイトには他のウェブサイトへのリンクが含まれています。そのようなウェブサイトには、第三者のウェブサイトに関係するバナーや広告が含まれている可能性があります。そのようなウェブサイトや広告にはCookie（クッキー）をご利用中のブラウザーに送信する可能性がありますが、それから生じる損害に関しては当社では一切、責任を負うことができません。また、そのようなウェブサイトにおけるプライバシポリシーやコンテンツに関する責任を負うことは致しかねます。尚、そのようなウェブサイトのプライバシーポリシーを当社の取り決めとは異なる可能性がありますので、該当するウェブサイトのプライバシーポリシーをご確認されることをお勧めいたします。"
 
@@ -6667,9 +6738,6 @@ msgstr "Tick"
 
 msgid "Tick Trade"
 msgstr "Tickトレード"
-
-msgid "TickTrade App"
-msgstr "Tickトレードアプリケーション"
 
 msgid "Tier"
 msgstr "レベル"
@@ -6705,7 +6773,7 @@ msgid "To begin Binary option trading, you will first need to read all these doc
 msgstr "店頭バイナリーオプション取引の口座開設前に、取引の特徴、仕組みおよびリスクについて交付書面等の内容を熟読し、十分に理解し、これらに異議なく承諾した上で、お客さまの判断と責任において口座開設を行うことをご理解いただけましたら下記ボックスにチェックを入れてください。ご不明な点等ございましたらカスタマーサポートまでご連絡ください。"
 
 msgid "To change your name, date of birth, country of residence, or email, please contact <a href=\"%1\">Customer Support</a>."
-msgstr "上記のお客さま基本情報の変更をご希望される場合は<a href=\"%1\">カスタマーサポート</a>までご連絡ください。また、変更が生じた際は速やかにご連絡いただきますようお願いします。"
+msgstr "お名前及び現住所の変更が生じた場合は速やかに<a href=\"%1\">カスタマーサポート</a>までご連絡ください。"
 
 msgid "To enable cookies, follow the instructions below for the browser version that you are using."
 msgstr "ご利用中のブラウザのバージョンの指示に従ってクッキーを有効化して下さい。"
@@ -6716,8 +6784,13 @@ msgstr "お客さまが当社とバイナリーオプション取引口座を開
 msgid "To qualify, you'll need an advanced university degree in Physics, Financial Engineering or Mathematics"
 msgstr "物理学、金融工学、数学の大学上級学位が必要となります。"
 
-msgid "To reset your password, enter the e-mail address you registered in the field below and click "
+#, fuzzy
+#| msgid "To reset your password, enter the e-mail address you registered in the field below and click "
+msgid "To reset your password, enter the e-mail address you registered in the field below and click 'RESET PASSWORD'."
 msgstr "パスワードを再設定される場合は下記の入力欄に登録されたメールアドレスを入力し、「パスワード再設定」をクリックしてください。 "
+
+msgid "Today"
+msgstr "本日"
 
 msgid "Token"
 msgstr "トークン"
@@ -6738,7 +6811,7 @@ msgid "Touch/No Touch"
 msgstr "TOUCH/NO-TOUCH"
 
 msgid "Touch/No Touch contracts will be refunded at the purchase price if there are less than 2 ticks between the start and end times."
-msgstr "ご不明点等ありましたら、カスタマーサポートまでご連絡ください。"
+msgstr "ご不明な点等ありましたら、カスタマーサポートまでご連絡ください。"
 
 msgid "Touch/No touch trades"
 msgstr "TOUCH/NO-TOUCH トレード"
@@ -6797,6 +6870,9 @@ msgstr "投資経験"
 msgid "Trading Limits"
 msgstr "取引上限について"
 
+msgid "Trading Period"
+msgstr "取引期間"
+
 msgid "Trading Platforms"
 msgstr "取引プラットフォーム"
 
@@ -6827,9 +6903,6 @@ msgid "Trading the financial markets can become addictive. Fill in the form belo
 msgstr ""
 "お客さまの過度な取引を防止するため、お客さま自身で下記の該当する取引上限設定を行えます。\n"
 "自動ログアウトと任意でログインしない以外の項目は1度設定されますと、次回からは設定した数値より低い数値以外は変更ができませんのでご注意下さい。制限の解除または緩和をご希望の場合は、<a href=\"%1\">カスタマーサポート</a>までご連絡ください。"
-
-msgid "TradingView"
-msgstr "TradingView"
 
 msgid "TradingView for Binary.com"
 msgstr "Binary.comのTradingView"
@@ -6921,6 +6994,9 @@ msgstr "USD"
 msgid "UX / UI experience"
 msgstr "UX / UI の経験"
 
+msgid "Ukraine"
+msgstr ""
+
 msgid "Ultra fast on-the-go trading"
 msgstr "出先でも超高速取引を"
 
@@ -6967,7 +7043,7 @@ msgid "Up/Down trades"
 msgstr "ラダー トレード"
 
 msgid "Upcoming Events"
-msgstr "取引時間短縮日"
+msgstr "取引時間短縮日及び祝日"
 
 msgid "Update"
 msgstr "更新"
@@ -7308,7 +7384,7 @@ msgid "What our clients are saying"
 msgstr "お客さまの声"
 
 msgid "Whatever your market view or strategy, %1 provides you with the right trade to profit from your prediction. Choose from five ways to trade:"
-msgstr "お客さまがいかなる相場予想や取引戦略を立てられても対応できる環境を当社では提供しています。3種類の取引スタイルからご選択ください。"
+msgstr "お客さまがいかなる相場予測や取引戦略を立てられても対応できる環境を当社では提供しています。3種類の取引スタイルからご選択ください。"
 
 msgid "When it's time to kick back, you'll find beautiful beaches, islands and mountains to explore, just a short flight away. From Malta, you'll have Europe, the Mediterranean and North Africa on your doorstep. And from Malaysia, you'll be within easy reach of some of Asia's most spectacular scenery."
 msgstr "余暇を楽しむ際には、短時間のフライトで美しいビーチ、島、そして山へアクセスできます。マルタ共和国では、地中海や北アフリカを容易に訪問でき、マレーシアからは、アジアの様々な印象的な場所に行くことができます。"
@@ -7427,11 +7503,11 @@ msgstr "%1のアフィリエイトになるメリットを教えて下さい。"
 msgid "Will I need to install any software?"
 msgstr "何か特別なソフトウェアをインストールする必要はありますか？"
 
-msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing "
-msgstr "条件を満たすことで利益を確保することができます。設定によってはより高い利益を期待することができます。 "
+msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing 'Stays In' with a narrow price target."
+msgstr "条件を満たすことで利益を確保することができます。「STAY-IN」で狭い価格ターゲットを利用することで、より高い利益を期待することができます。"
 
-msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing a "
-msgstr "条件を満たすことで利益を確保することができます。xxxを設定することで、より高い利益を期待することができます。 "
+msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing a 'Touch' trade, with a price target farther away from the current price."
+msgstr "条件を満たすことで利益を確保することができます。現在の市場価格からより離れたバリア価格を設定することにより、より高い利益を期待することができます。"
 
 msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing a price target farther away from the current price."
 msgstr "条件を満たすことで利益を確保することができます。現在の市場価格からより離れた目標価格を設定することにより、より高い利益を期待することができます。"
@@ -7588,13 +7664,13 @@ msgid "You can choose payouts from $1 to $50,000. This wide payout range is idea
 msgstr "ペイアウトは1,000円から100,000円の間で指定できます。トレードが小額でも高額でも満足のいくお取引が可能です。"
 
 msgid "You can close your trade before expiry to lock in profits."
-msgstr "お客さまの予想通りに相場が動いた場合、判定時刻前にポジションを売却をすることにより利益を確定ができます。"
+msgstr "お客さまの予測通りに相場が動いた場合、判定時刻前にポジションを売却をすることにより利益を確定ができます。"
 
 msgid "You can even build your own online trading sites, apps, and bots with our <a href=\"https://developers.binary.com\" target=\"_blank\">API and developer tools</a>."
 msgstr "ご自身の取引サイト、アプリケーション、ボットを当社の<a href=\"https://developers.binary.com\" target=\"_blank\">APIと開発ツール</a>で構築いただけます。"
 
 msgid "You can request more virtual money if your virtual balance falls below JPY 100,000."
-msgstr "お客様のバーチャルマネー残高が100,000円を下回る場合、バーチャルマネーの追加リクエストが可能です。"
+msgstr "バーチャルマネーの残高が100,000円を下回る場合、バーチャルマネーを追加することが可能です。"
 
 msgid "You can request more virtual money if your virtual balance falls below USD 1,000.00."
 msgstr "お客様のバーチャルマネー残高がUSD 1,000.00を下回る場合、バーチャルマネーの追加リクエストが可能です。"
@@ -7692,7 +7768,7 @@ msgid "You must promptly report any security deficiencies in, or intrusions to, 
 msgstr "%1を発見するあなたのアプリケーションのセキュリティの欠損または侵入を%1に書き込んだり、当社の開発者向けサイトの一部である％2に記入、または%3でディスカッションスレッドを上げることによって報告しなければいけません。セキュリティの欠損を修正するためにあなたは%1と共同し、いかなる侵入や侵入者をすみやかに切断します。セキュリティの欠損またはアプリケーション、API、コンテンツへの侵入が起こった際、いかなる場合においても%1からの書面による事前の明示的な許可なしに、公式声明を発表しません。（例：報道、ブログ、ソーシャルメディア、掲示板など）"
 
 msgid "You need to finish all 20 questions."
-msgstr "まだ、未回答の問題があります。"
+msgstr "まだ、無解答の問題があります。"
 
 msgid "You only need to make four decisions to execute a binary contract."
 msgstr "バイナリー取引に必要なことは上記の４ステップだけです。"
@@ -7791,6 +7867,9 @@ msgstr "現在デモ口座を使用されています。"
 
 msgid "Your %1 day withdrawal limit is currently %2 %3 (or equivalent in other currency)."
 msgstr "お客さまの%1日の出金限度額は現在%2 %3です。限度額以上の出金額をご希望される場合、本人確認が必要となります。"
+
+msgid "Your Application is Being Processed."
+msgstr "お客さまの口座開設申込書類の処理中です。"
 
 msgid "Your Client will receive an email notification informing him/her that the transfer has been processed."
 msgstr "あなたのクライアントに送金が処理されたことをお知らせする通知メールが届きます。"
@@ -7926,7 +8005,7 @@ msgid "Your website request.url (if you have one)"
 msgstr "ウェブサイトリクエストURL（お持ちの場合）"
 
 msgid "Your withdrawal limit is %1 %2 (or equivalent in other currency)."
-msgstr "お客さまの出金限度額は %1 %2 です。限度額以上の出金額をご希望される場合は、本人確認が必要となりますのでカスタマーサポートへご連絡ください。"
+msgstr "お客さまの出金限度額は ¥ %2 です。限度額以上の出金額をご希望される場合は、本人確認が必要となりますのでカスタマーサポートへご連絡ください。"
 
 msgid "Your withdrawal limit is %1 %2."
 msgstr ""
@@ -8006,6 +8085,9 @@ msgstr "詳細"
 msgid "e.g. blue.binaryws.com"
 msgstr "例：blue.binaryws.com"
 
+msgid "email address"
+msgstr "メールアドレス"
+
 msgid "f"
 msgstr "女性"
 
@@ -8043,10 +8125,10 @@ msgid "m"
 msgstr "男性"
 
 msgid "max: 100,000"
-msgstr "上限：¥100,000"
+msgstr "上限ロット: x100"
 
 msgid "min: 1,000"
-msgstr "下限：¥1,000"
+msgstr "ペイアウト: ¥1,000"
 
 msgid "minimum available duration"
 msgstr "最短取引期間"
@@ -8061,7 +8143,7 @@ msgid "month"
 msgstr "月"
 
 msgid "months"
-msgstr "月"
+msgstr "ヶ月"
 
 msgid "not available"
 msgstr "利用不可"
@@ -8126,6 +8208,12 @@ msgstr "ワンタイムパスワード"
 msgid "website"
 msgstr "ウェブサイト"
 
+msgid "week"
+msgstr "週"
+
+msgid "weeks"
+msgstr "週"
+
 msgid "year"
 msgstr "年"
 
@@ -8147,41 +8235,53 @@ msgstr "ご利用規約を通読し同意し、金融トレードの売買をご
 msgid "you have sufficient experience and knowledge in matters of financial trading to be capable of evaluating the merits and risks of acquiring financial contracts via this site and have done so without relying on any information contained in this site."
 msgstr "当社サービスを通じて金融トレードを購入するメリットとリスクを評価でき、かつ当社サイトに掲載されている情報に依存せずに金融トレードを行ったことのあるような金融トレードにおける十分な経験と知識があります。"
 
+msgid "{JAPAN ONLY}#1 Sales Division"
+msgstr "第一営業支店"
+
 msgid "{JAPAN ONLY}%1 %2 payout if %3 does not touch Exercise price through close on %4."
-msgstr "%3のNO-TOUCHは、取引期間(%4)が終了するまでにバリア価格にタッチしないを予想"
+msgstr "%3のNO-TOUCHは、取引期間(%4)が終了するまでにバリア価格にタッチしないを予測"
 
 msgid "{JAPAN ONLY}%1 %2 payout if %3 ends on or between low and high values of Exercise price at close on %4."
-msgstr "%3のEND-INは、判定時刻(%4)の時点で上限バリア未満かつ下限バリア以上を予想"
+msgstr "%3のEND-INは、判定時刻(%4)の時点で上限バリア未満かつ下限バリア以上を予測"
 
-msgid "{JAPAN ONLY}%1 %2 payout if %3 ends otside low and high values of Exercise price at close on %4."
-msgstr "%3のEND-OUTは、判定時刻(%4)の時点で上限バリア以上もしくは下限バリア未満を予想"
+msgid "{JAPAN ONLY}%1 %2 payout if %3 ends outside low and high values of Exercise price at close on %4."
+msgstr "%3のEND-OUTは、判定時刻(%4)の時点で上限バリア以上もしくは下限バリア未満を予測"
 
-msgid "{JAPAN ONLY}%1 %2 payout if %3 goes ouside of low and high values of Exercise price through close on %4."
-msgstr "%3のBREAK-OUTは、取引期間中(%4)に上限バリア以上もしくは下限バリア以下を予想"
+msgid "{JAPAN ONLY}%1 %2 payout if %3 goes outside of low and high values of Exercise price through close on %4."
+msgstr "%3のBREAK-OUTは、取引期間中(%4)に上限バリア以上もしくは下限バリア以下になったと予測"
 
 msgid "{JAPAN ONLY}%1 %2 payout if %3 is strictly higher or equal than Exercise price at close  on %4."
-msgstr "%3のラダーHIGHは、判定時刻(%4)の時点でバリア価格以上を予想"
+msgstr "%3のラダーHIGHは、判定時刻(%4)の時点でバリア価格以上を予測"
 
 msgid "{JAPAN ONLY}%1 %2 payout if %3 is strictly lower than Exercise price at close on %4."
-msgstr "%3のラダーLOWは、判定時刻(%4)の時点でバリア価格未満を予想"
+msgstr "%3のラダーLOWは、判定時刻(%4)の時点でバリア価格未満を予測"
 
 msgid "{JAPAN ONLY}%1 %2 payout if %3 stays between low and high values of Exercise price through close on %4."
-msgstr "%3のSTAY-INは取引期間中(%4)に上限バリア未満かつ下限バリア超過を維持を予想"
+msgstr "%3のSTAY-INは取引期間中(%4)に上限バリア未満かつ下限バリア超過を維持すると予測"
 
 msgid "{JAPAN ONLY}%1 %2 payout if %3 touches Exercise price through close on %4."
-msgstr "%3のTOUCHは、取引期間(%4)が終了するまでバリア価格にタッチを予想"
+msgstr "%3のTOUCHは、取引期間(%4)が終了するまでバリア価格にタッチを予測"
 
 msgid "{JAPAN ONLY}%1 is fully licensed and regulated by the FFAJ, which requires us to maintain and report a safe level of operating capital."
 msgstr ""
-"店頭バイナリーオプション取引は、法令によりお客様から預託を受けた資産と会社の資産を区分して管理することが義務付けられております。弊社では、日証金信託銀行へ全額信託を実施しております。\n"
+"店頭バイナリーオプション取引は、法令によりお客様から預託を受けた資産と会社の資産を区分して管理することが義務付けられております。弊社では、関係法令に則り、日証金信託銀行へ全額信託を実施しております。\n"
 "もし、弊社が破綻した場合、日証金信託銀行に信託保全されているお客様の資産は保全されます。この場合、日証金信託銀行から受益者代理人（乙）へ信託財産が交付され、当該財産の範囲内でお客様に帰属すべき預託金等の金銭が返還されます。\n"
 "弊社では、内部管理統括責任者を受益者代理人（甲）とし、毎営業日、区分管理必要額の確認を行っております。また、外部弁護士を受益者代理人（乙）とし、弊社が破綻した場合に日証金信託銀行からお客様の資産の返還にあたります。"
 
 msgid "{JAPAN ONLY}%1 was one of the first active Binary Options brokers and has a proven track record of delivering first class service and maintaining an award winning trading platform, while delivering strong financial performance to our shareholders, for more than 15 years worldwide."
 msgstr "%1はオンライン上のオプション取引業界でのパイオニアであり世界中の個人投資家からサービスの評価を受けています。また、数々の受賞歴も保持し15年以上にわたり強い財務業績を維持しています。"
 
-msgid "{JAPAN ONLY}60,100,000 JPY (as of July 1, 2016)"
-msgstr "60,100,000円（2016年7月1日現在）"
+msgid "{JAPAN ONLY},000"
+msgstr "ロット"
+
+msgid "{JAPAN ONLY}251"
+msgstr "251"
+
+msgid "{JAPAN ONLY}7546677"
+msgstr "7546677"
+
+msgid "{JAPAN ONLY}80,100,000 JPY (as of September 20, 2016)"
+msgstr "80,100,000円（2016年9月20日現在）"
 
 msgid "{JAPAN ONLY}A  Net Settlement type of option is one where the underlying asset does not include yen, but the option fee and settlement are paid in yen; it therefore requires some definition of how the settlement amounts will be calculated and converted to yen."
 msgstr "円以外の通貨ペアを原資産とする差金決済型の通貨オプションであって、オプション料や権利行使時の決済が円により行われるものは、対象とする通貨ペアによる決済額を算出し、円転のための計算をして金額を確定する仕組みとなっている。"
@@ -8234,6 +8334,18 @@ msgstr "バイナリーオプションの理論価格計算には、ブラック
 msgid "{JAPAN ONLY}About OTC currency for binary options trading, summarizes the profit and loss result of all transactions that have been made between the customer, to publish the information in the company's home page, at any time while the customer is doing the transaction before the start, or the transaction, the information Make sure, for that you're willing to trade under the calm judgment, we are committed to a variety of environmental improvement."
 msgstr "店頭通貨バイナリーオプション取引については、顧客との間で行われた全取引の損益結果をまとめ、自社のホームページにおいて情報を公開し、顧客が取引開始前、あるいは取引を行っている間いつでも、その情報を確認し、冷静な判断の下にお取引いただけるための、様々な環境整備に努めている。"
 
+msgid "{JAPAN ONLY}Account Name"
+msgstr "口座名"
+
+msgid "{JAPAN ONLY}Account Number"
+msgstr "口座番号"
+
+msgid "{JAPAN ONLY}Account Type"
+msgstr "口座種類"
+
+msgid "{JAPAN ONLY}Acknowledgment"
+msgstr "出金依頼の確認書"
+
 msgid "{JAPAN ONLY}Activate your account by confirming your authorisation code which we will post to your registered address."
 msgstr "リアル口座開設完了後にお客さまへ簡易書留郵便で口座認証コードを郵送いたします。当社から送信したメールに口座認証コードを記載のうえ返信してください。"
 
@@ -8267,14 +8379,26 @@ msgstr "当社は日本で第一種金融商品取引業者として登録して
 msgid "{JAPAN ONLY}Association of join"
 msgstr "加入する協会"
 
+msgid "{JAPAN ONLY}Bank"
+msgstr "金融機関名"
+
 msgid "{JAPAN ONLY}Because option prices are determined by the probability of being exercised, it cannot be said that cheaper options have any natural advantage over expensive options."
 msgstr "権利行使により利益が得られる確率を踏まえれば、一概にオプション価格が安いものが有利とはいえない。"
 
 msgid "{JAPAN ONLY}Binary K. K."
 msgstr "Binary株式会社"
 
+msgid "{JAPAN ONLY}Binary K.K. Customer Account"
+msgstr "バイナリー（カ）コキャクグチ"
+
 msgid "{JAPAN ONLY}Binary options have lower risk than vanilla options for option sellers, because with binary options the maximum loss is fixed."
 msgstr "バイナリーオプションは、売り手の損失が限定されており、バニラオプションに比べ、ローリスクハイリターンな取引といえる。"
+
+msgid "{JAPAN ONLY}Branch"
+msgstr "支店名"
+
+msgid "{JAPAN ONLY}Branch Code"
+msgstr "支店番号"
 
 msgid "{JAPAN ONLY}By law we are required to manage the assets of our customers and our company separately"
 msgstr "信託保全は、当社が取り扱う店頭バイナリーオプション取引の元本を保証するものではありません。"
@@ -8286,7 +8410,7 @@ msgid "{JAPAN ONLY}Capital Adequacy Ratio (CAR)"
 msgstr "自己資本規制比率(CAR)"
 
 msgid "{JAPAN ONLY}Choose direction of the market and the exercise price you wish to target, and hit the green buy button to instantly trade"
-msgstr "相場の見通しを立ててバリア価格を決めて緑の購入金額のボタンをクリック(注意：ワンクリック注文)"
+msgstr "相場の見通しを立ててバリア価格を決めて緑の購入金額のボタンをクリック<br>(注意：ワンクリック注文)"
 
 msgid "{JAPAN ONLY}Company Profile"
 msgstr "会社概要"
@@ -8302,6 +8426,9 @@ msgstr "英語表記"
 
 msgid "{JAPAN ONLY}Congratulations, you have pass the test, our Customer Support will contact you shortly."
 msgstr "おめでとうございます。テストに合格されましたので、カスタマーサポートよりメールにて口座開設の次のステップについてご連絡させていただきます。"
+
+msgid "{JAPAN ONLY}Continue Trading"
+msgstr "取引画面へ戻る"
 
 msgid "{JAPAN ONLY}Current or former member of category 1) or 2)"
 msgstr "過去に1又2であった者"
@@ -8334,7 +8461,7 @@ msgid "{JAPAN ONLY}Disclosure of win loss ratio by No. xx in the FIEA"
 msgstr "当社のバイナリーオプション取引の月次取引実績をお知らせします。"
 
 msgid "{JAPAN ONLY}Distributed back to you by the direction of the beneficiary agent (B)"
-msgstr "区分管理必要額は当社が毎日算出し、算出日から2営業日までに信託をします。この間も金融庁長官の指定する金融機関において、当社の資産とはして管理します。"
+msgstr "区分管理必要額は当社が毎日算出し、算出日から2営業日までに信託をします。この2営業日の間も金融庁長官の指定する金融機関において、当社の資産とは分別して管理します。"
 
 msgid "{JAPAN ONLY}Does Not Touch"
 msgstr "NO-TOUCH"
@@ -8454,7 +8581,7 @@ msgid "{JAPAN ONLY}Foreign PEP Declaration"
 msgstr "外国PEPs（重要な公的地位にある者（Politically Exposed Persons）との取引）"
 
 msgid "{JAPAN ONLY}Full details of the confirmed trade will then be shown, alongside a live updating graph showing the spot FX rate relative to the barrier(s) chosen. A sell-back price is available should you wish to close-out the trade."
-msgstr "緑の購入ボタンをクリック後、約定済み通知画面が表示されます。約定済み通知画面上には、バリア価格を含んだリアルタイムタイムのチャートなど詳細な取引情報が表示されています。売却ボタンも表示されているので、売却取引を行うこともできます。"
+msgstr "緑の購入ボタンをクリック後、約定済み通知画面が表示されます。約定済み通知画面上には、バリア価格を含んだリアルタイムのチャートなど詳細な取引情報が表示されています。売却ボタンも表示されているので、売却取引を行うこともできます。"
 
 msgid "{JAPAN ONLY}Goes Outside"
 msgstr "BREAK-OUT"
@@ -8466,7 +8593,7 @@ msgid "{JAPAN ONLY}Higher"
 msgstr "HIGH"
 
 msgid "{JAPAN ONLY}HirooMiyaya 3F, 1-9-16 Hiroo, Shibuya, Tokyo, 150-0012"
-msgstr "〒150-0012　東京渋谷区広尾一丁目9-16　広尾宮田ビル3F"
+msgstr "〒150-0012　東京都渋谷区広尾1-9-16　広尾宮田ビル3F"
 
 msgid "{JAPAN ONLY}Historical volatility is a prediction of the future rate of change in the underlying asset."
 msgstr "ヒストリカルボラティリティとは、原資産に対する将来の変動率を予測したボラティリティのことである。"
@@ -8496,7 +8623,7 @@ msgid "{JAPAN ONLY}If the exercise prices and exercise times are the same for an
 msgstr "権利行使価格、権利行使期間が同一のヨーロピアンタイプとアメリカンタイプのオプションでは、アメリカンタイプの方がオプション価格は高い。"
 
 msgid "{JAPAN ONLY}If the market price has changed significantly it may not be possible to execute a trade at a delayed price displayed in a customer's browser. Alternatively you may pay a lower price for the option if the price has moved quickly in that direction. Please see our summary of specifications document for full details of our 'slippage' rules."
-msgstr "万が一、市場価格が急激に変動した際は、お客様のブラウザ上で表示されている発注価格では約定しない場合があります。その逆として、市場価格が急激に変動したことにより、発注価格より有利な価格で購入できる場合があります。詳しくは取引概要の「スリッページ」をご覧ください。"
+msgstr "万が一、市場価格が急激に変動した際は、お客様のブラウザ上で表示されている注文価格では約定しない場合があります。その逆として、市場価格が急激に変動したことにより、注文価格より有利な価格で購入できる場合があります。詳しくは契約締結前交付正面をご覧ください。"
 
 msgid "{JAPAN ONLY}If the probablility of a payout is 50% then when the potential payout is less than 100% of the price paid for the option, the expected return on the investment will be less than 100%."
 msgstr "ペイアウトを受け取る確率が50％、投資額に対するペイアウトの倍率が2倍を下回る場合の期待収益率は1倍を下回り、予測回収額は投資額を下回る。"
@@ -8519,6 +8646,12 @@ msgstr "ペイアウト1,000円のバイナリーコールオプションを500�
 msgid "{JAPAN ONLY}If you buy a currency binary put option at a price of 500 yen, with an underlying of dollar against yen, the payout is 1,000 yen, and the strike price is 100, then if the judgment price at exercise time is 99, you will receive a payout 1,000 yen from the seller of the option."
 msgstr "権利行使価格１ドル100円、ペイアウト1,000円のドル円のプットバイナリーオプションを500円で購入し、判定レートが１ドル９９円となり権利行使が行われ、1,000円のペイアウトを受け取った。"
 
+msgid "{JAPAN ONLY}If you have any queries or wish to cancel the request, please contact <a href='mailto:%1'>Customer Support</a>."
+msgstr "出金依頼の取り消し、または出金に関するご質問等ありましたら、<a href=\"%1\">カスタマーサポート</a>までご連絡ください。"
+
+msgid "{JAPAN ONLY}If you need more information then please contact Customer Support at <a href='mailto:%1'>%1</a>)."
+msgstr "詳細につきまして、カスタマーサポート<a href='mailto:%1'>%1</a>までご連絡ください"
+
 msgid "{JAPAN ONLY}If you sell a currency binary call option at a price of 500 yen, with an underlying of dollar against yen, the payout is 1,000 yen, and the strike price is 100, then if the judgment price at exercise time is 99, you will need to payout 1,000 yen to the buyer of the option."
 msgstr "権利行使価格１ドル100円、ペイアウト1,000円のドル円のコールバイナリーオプションの購入代金500円を受け取り、判定レートが１ドル９９円となり権利行使が行われ、1,000円のペイアウトを支払った。"
 
@@ -8527,6 +8660,12 @@ msgstr "ペイアウト1,000円のバイナリーコールオプションを500�
 
 msgid "{JAPAN ONLY}If you sell a currency binary put option at a price of 500 yen, with an underlying of dollar against yen, the payout is 1,000 yen, and the strike price is 100, then if the judgment price at exercise time is 99, you will need to payout 1,000 yen to the buyer of the option."
 msgstr "権利行使価格１ドル100円、ペイアウト1,000円のドル円のプットバイナリーオプションの購入代金500円を受け取り、判定レートが１ドル９９円となり権利行使が行われ、1,000円のペイアウトを支払った。"
+
+msgid "{JAPAN ONLY}If you wish to change your designated account or you have any other queries, then please contact Customer Support."
+msgstr "出金先口座情報の変更をご希望の場合、カスタマーサポートまでご連絡ください。"
+
+msgid "{JAPAN ONLY}If your bank account details have changed, please contact Customer Support in order to verify your ID and new account details."
+msgstr "出金先口座情報に変更がある場合には、お客さまのIDと新規登録したい口座情報を確認する必要がありますので、カスタマーサポートまでご連絡ください。"
 
 msgid "{JAPAN ONLY}Implied volatility is a prediction of the future rate of change in the underlying asset."
 msgstr "インプライドボラティリティとは、原資産に対する将来の変動率を予測したボラティリティのことである。"
@@ -8562,7 +8701,7 @@ msgid "{JAPAN ONLY}In the event of our bankruptcy, your assets will be safeguard
 msgstr "区分管理必要額の算出は当社が行い、信託銀行は行いません。"
 
 msgid "{JAPAN ONLY}In the lower panel you can also choose to see your current portfolio with live valuations and quick access to sell-back. Alternatively you can view a live, customizable chart with many add-on features; or see more detailed explanations of the type of option selected; or examine recent settlement prices for expired options."
-msgstr "下部のポジション一覧のタブでは、お客さまの保有ポジションに対する評価価格の表示と売却取引が行える緑の「表示」を表示します。チャートのタブでは、テクニカル分析をしたりチャートのカスタマイズが可能です。（テクニカル分析の指標は英語標記のみです）また、取引概要のタブでは取引しているオプションの判定基準の説明、判定レートのタブでは過去の判定レートの一覧表を表示します。"
+msgstr "下部のポジション一覧のタブでは、お客さまの保有ポジションに対する評価価格が表示され、売却取引を行う場合は緑の「表示」ボタンをクリックしてください。チャートのタブでは、テクニカル分析をしたりチャートのカスタマイズが可能です。（テクニカル分析の指標は英語標記のみです）また、取引概要のタブでは取引しているオプションの判定基準の説明、判定レートのタブでは過去の判定レートの一覧表を表示します。"
 
 msgid "{JAPAN ONLY}Instant sell-back of position available until 2 minutes prior to judgement time"
 msgstr "判定時刻2分前までならいつでも売却取引によりロスカットや利益確定をすることができます"
@@ -8584,6 +8723,54 @@ msgstr "２つのオプションを用い、権利行使価格の高いバイナ
 
 msgid "{JAPAN ONLY}It prohibits the copying of the questions . In addition , You agree that you will not leak to third party"
 msgstr "問題の複写を禁止します。また、第三者に漏えいしないことに同意いただくものとします。"
+
+msgid "{JAPAN ONLY}JSA_Date_1"
+msgstr "2016/10/20"
+
+msgid "{JAPAN ONLY}JSA_Date_2"
+msgstr "-"
+
+msgid "{JAPAN ONLY}JSA_Date_3"
+msgstr "-"
+
+msgid "{JAPAN ONLY}JSA_Explanation_1_1)"
+msgstr "11月1日(水)に日銀政策発表が予定されており、政策発表前後の11:30〜13:30の間は、急激なマーケットの変動が想定されるため取引注文(新規購入及び売却)の受付を一時停止させて頂きます。"
+
+msgid "{JAPAN ONLY}JSA_Explanation_1_2)"
+msgstr "万が一、取引注文の受付が予定停止時間より延長される場合、ホームページ上にバーナーを載せてお知らせ致します。"
+
+msgid "{JAPAN ONLY}JSA_Explanation_1_3)"
+msgstr "-"
+
+msgid "{JAPAN ONLY}JSA_Explanation_2_1)"
+msgstr "-"
+
+msgid "{JAPAN ONLY}JSA_Explanation_2_2)"
+msgstr "-"
+
+msgid "{JAPAN ONLY}JSA_Explanation_2_3)"
+msgstr "-"
+
+msgid "{JAPAN ONLY}JSA_Explanation_3_1)"
+msgstr "-"
+
+msgid "{JAPAN ONLY}JSA_Explanation_3_2)"
+msgstr "-"
+
+msgid "{JAPAN ONLY}JSA_Explanation_3_3)"
+msgstr "-"
+
+msgid "{JAPAN ONLY}JSA_Title_1"
+msgstr "重要： 日銀政策発表に伴い11:30〜13:30は取引注文の受付停止"
+
+msgid "{JAPAN ONLY}JSA_Title_2"
+msgstr "-"
+
+msgid "{JAPAN ONLY}JSA_Title_3"
+msgstr "-"
+
+msgid "{JAPAN ONLY}Japan Service Announcements"
+msgstr "お知らせ"
 
 msgid "{JAPAN ONLY}Knowledge Test"
 msgstr "知識確認テスト"
@@ -8629,7 +8816,7 @@ msgid "{JAPAN ONLY}No space between last name and first name"
 msgstr "姓と名の間にスペースは不要"
 
 msgid "{JAPAN ONLY}November 7, 2014"
-msgstr "平成26年11月7日"
+msgstr "2014年11月7日"
 
 msgid "{JAPAN ONLY}Option Pricing"
 msgstr "オプション価格"
@@ -8664,8 +8851,8 @@ msgstr "リアル口座開設の手続きを進める上で、ご不明な点等
 msgid "{JAPAN ONLY}Our Real Money Account opening procedure has 4 steps:"
 msgstr "リアル口座開設完了までの４ステップ:"
 
-msgid "{JAPAN ONLY}Our customer support are available to help you if you are unsure about how to use our trading tools. Please email them at <a href=\"mailto:%1\">%1</a>"
-msgstr "当社のカスタマーサポートでは取引画面の操作方法がご不明な場合、丁寧にご説明させて頂きます。サポートが必要な場合は%1までお問い合わせください。"
+msgid "{JAPAN ONLY}Our customer support are available to help you if you are unsure about how to use our trading tools. Please email them at <a href='mailto:%1'>%1</a>"
+msgstr "当社のカスタマーサポートでは取引画面の操作方法がご不明な場合、丁寧にご説明させて頂きます。<br>サポートが必要な場合は%1までお問い合わせください。"
 
 msgid "{JAPAN ONLY}Our internal management control officer and beneficiary representative is required to confirm the amount of funds that must be held in the trust bank count every day"
 msgstr "当社は、区分管理の実施のため、または区分管理された金銭を配分するために必要があるとみなされた時は、お客様の個人情報を受益者代理人（乙）に提供することがあります。"
@@ -8674,13 +8861,22 @@ msgid "{JAPAN ONLY}Our trading page provides an overall view of all the option c
 msgstr "当社の取引画面は、オプション取引条件の選択、取引価格（購入・売却）、取引ボタン等をシンプルに表示した取引プラットホームとなっております。"
 
 msgid "{JAPAN ONLY}Payout Amount"
-msgstr "ペイアウト金額"
+msgstr "取引数量(ロットx¥1,000)"
+
+msgid "{JAPAN ONLY}Please allow up to 3 business days for the funds to be credited to your trading account."
+msgstr "お客さまから入金を確認後、当社のお客さま取引口座には3営業日以内に反映させて頂きます。"
+
+msgid "{JAPAN ONLY}Please allow up to 5 business days for the funds to be credited to your designated bank account."
+msgstr "支払処理は出金依頼日、または出金承認日から最大5営業日かかります。"
 
 msgid "{JAPAN ONLY}Please click <a class=\"pjaxload\" href=\"#identification-documents\">here</a> for further information."
 msgstr "本人確認およびマイナンバー「個人番号カード」書類に関する詳細につきましては<a class=\"pjaxload\" href=\"#identification-documents\">こちらを</a> クリックしてください。"
 
 msgid "{JAPAN ONLY}Please complete the following questions."
 msgstr "知識確認テスト用ディスクレーマー"
+
+msgid "{JAPAN ONLY}Please contact <a href='mailto:%1'>%1</a> if you need to withdraw more than the maximum amount, as further ID verification is required."
+msgstr "100万円以上の出金をご希望の場合、IDチェックが必要となりますのでお手数ですがカスタマーサポートまでご連絡してください。"
 
 msgid "{JAPAN ONLY}Please download our Full Trading Guide which describes in detail how to use our trading screens and other features of our website:"
 msgstr "取引画面の見方、購入方法や入出金方法など詳しい操作方法をご確認できます。ご利用の際は、操作マニュアルをダウンロードしてください。"
@@ -8693,6 +8889,27 @@ msgstr "リアル口座開設前に、契約締結前交付書面を十分読ん
 
 msgid "{JAPAN ONLY}Please download our Summary of Specifications which lists all the details of our trade types, rules and conditions for trading etc."
 msgstr "当社の取引タイプ、ルール、条件の全詳細が記載されている取引概要を十分読んでご理解の上ご利用ください。"
+
+msgid "{JAPAN ONLY}Please ensure you maintain sufficient balance in your trading account."
+msgstr "取引を行う際には、取引残高が十分あることを確認してください。"
+
+msgid "{JAPAN ONLY}Please input the amount you would like to withdraw and press the Request button."
+msgstr "出金依頼額を入力して送信ボタンを押してください。"
+
+msgid "{JAPAN ONLY}Please make a bank transfer from your designated bank account to:"
+msgstr "当社の指定口座へ振込を行ってください。"
+
+msgid "{JAPAN ONLY}Please make sure you add your Binary.com account ID to the Remitter's account name, or it will delay crediting the funds to your account:"
+msgstr "JPで始まる取引口座番号を振込名義の前に必ず記載してください。記載がない場合、取引口座への反映が遅延が起こる可能性があります。"
+
+msgid "{JAPAN ONLY}Please note our maximum deposit limit for a single transaction is ¥1,000,000."
+msgstr "1回あたりの入金限度額は100万円となっております。"
+
+msgid "{JAPAN ONLY}Please note the maximum regular withdrawal amount is ¥1,000,000."
+msgstr "1日の出金可能額は100万円となっております。"
+
+msgid "{JAPAN ONLY}Please note we can only accept payments from your designated bank account and no other account in your name."
+msgstr "振込名義が取引口座名義と相違がある場合は、お客さまの取引口座へ振込が行えません。"
 
 msgid "{JAPAN ONLY}Please note:"
 msgstr "注意"
@@ -8715,6 +8932,9 @@ msgstr "店頭通貨オプションの価格は、複数の要素に基づく計
 msgid "{JAPAN ONLY}Purchase, Settlement & Resale"
 msgstr "取引期間・バリア・決済"
 
+msgid "{JAPAN ONLY}Rakuten Bank"
+msgstr "楽天銀行"
+
 msgid "{JAPAN ONLY}Regarding to the OTC price of financial instruments, in case that financial instruments business operator suggests both of  bid and ask price (or trading price and cancellation price), generally there is a difference of them. This option will be wider as the expiration approaches."
 msgstr "次の文章のうち、金融商品の店頭取引の価格について、金融商品取引業者が買値と売値（又は買戻取価格、解約価格）の２つの価格をお客さまに提示する場合、一般的には２つの価格には差（スプレッド）がある。このスプレッドはオプションの期限が近付くと広がる傾向がある。"
 
@@ -8724,11 +8944,14 @@ msgstr "登録"
 msgid "{JAPAN ONLY}Regulation & Tax"
 msgstr "規制と税金"
 
-msgid "{JAPAN ONLY}Remaining time"
-msgstr "残り時間"
+msgid "{JAPAN ONLY}Remitter's Name:"
+msgstr "振込名義"
 
 msgid "{JAPAN ONLY}STAY-IN/BREAK-OUT"
 msgstr "STAY-IN/BREAK-OUT"
+
+msgid "{JAPAN ONLY}Savings"
+msgstr "普通"
 
 msgid "{JAPAN ONLY}Section 1: Structure"
 msgstr "第1章：構成"
@@ -8758,7 +8981,10 @@ msgid "{JAPAN ONLY}Select an option type"
 msgstr "オプションタイプの選択"
 
 msgid "{JAPAN ONLY}Select payout size"
-msgstr "ペイアウト金額を入力"
+msgstr "ロット数を入力　※マウスカーソルで合わせてからクリックして数量を入力"
+
+msgid "{JAPAN ONLY}Service Announcements"
+msgstr "お知らせ"
 
 msgid "{JAPAN ONLY}Short positions in FX Binary Options must be covered by initial margin and any further losses must be covered by further margin deposits."
 msgstr "通貨関連バイナリーオプションのショートポジションは、あらかじめ必要証拠金を業者に預託して取引を行い、取引成立後に証拠金が不足した場合には追加証拠金を業者に預託する必要がある。"
@@ -8780,6 +9006,9 @@ msgstr "知識確認テストを受ける"
 
 msgid "{JAPAN ONLY}Take our Knowledge Test to confirm your understanding of options."
 msgstr "バイナリーオプションへの理解をチェックするため知識確認テストを受けてください。"
+
+msgid "{JAPAN ONLY}Thank you for your withdrawal request."
+msgstr "ご出金依頼を承りました。"
 
 msgid "{JAPAN ONLY}The Black-Scholes model is widely used to calculate theoretical option prices."
 msgstr "オプション価格の理論式として、ブラック・ショールズ・モデルが広く用いられている。"
@@ -8824,7 +9053,7 @@ msgid "{JAPAN ONLY}The price of an option can be affected by the underlying asse
 msgstr "オプションの価格は、原資産の価格、原資産の価格変動率、権利行使期限までの時間、金利のいずれの影響を受ける。"
 
 msgid "{JAPAN ONLY}The sell-back execution level will then be confirmed and the position will be closed."
-msgstr "「売却」ボタンをクリックすると、売却約定価格の通知が表示されます。"
+msgstr "「売却」ボタンをクリックすると約定済み通知画面上に決済の参照番号が表示されます。"
 
 msgid "{JAPAN ONLY}The seller of a vanilla option can not choose whether to exercise the option or not. His profit is limited to the price received for the option, whereas his potential loss is unlimited and could be substantial."
 msgstr "バニラオプションの売り手は、利益額はオプション料に限定される一方、原資産価格と権利行使価格の差が損失となるので、原資産価格が無限大とすれば、その損失額も無限大となる。"
@@ -8860,7 +9089,7 @@ msgid "{JAPAN ONLY}To avoid or hedge the future price of an underlying asset whi
 msgstr "保有する原資産の今後の価格下落を回避（ヘッジ）するため、原資産のコールオプションを取得した。"
 
 msgid "{JAPAN ONLY}To buy an option, simply click on the price button to execute the trade."
-msgstr "オプションを購入するには、緑の購入ボタンををクリック（注意：ワンクリック注文）"
+msgstr "オプションを購入するには、緑の購入ボタンをクリック（注意：ワンクリック注文）"
 
 msgid "{JAPAN ONLY}To compensate for any rise in the price of an underlying asset that you intend to buy in future, you should buy a call option."
 msgstr "将来取得する予定の原資産の値上がりを補うため、原資産のコールオプションを取得した。"
@@ -8926,6 +9155,9 @@ msgstr "当社は、責任ある取引環境を提供するとともに高い倫
 msgid "{JAPAN ONLY}We will pass on any possible price improvements for orders in fast moving markets."
 msgstr "判定時刻2分前までならいつでも決済取引を行うことができます"
 
+msgid "{JAPAN ONLY}We will process your request and transfer the funds to your designated bank account within 5 business days."
+msgstr "支払処理は出金依頼日、または出金承認日から最大5営業日をかかります。"
+
 msgid "{JAPAN ONLY}When buying a vanilla call option, the break-even price at the exercise point is the strike price plus the option price paid in units of the underlying."
 msgstr "コールオプションの買いでは、権利行使価格に原資産１単位当たりのオプション料を加算した価格が損益分岐点である。"
 
@@ -8944,6 +9176,9 @@ msgstr "リアル口座開設の流れについてご案内致します。まず
 msgid "{JAPAN ONLY}You can protect your account value further by setting other limits to encourage trading discipline"
 msgstr "お客さまご自身で過度の取引を防止するため設定機能があります"
 
+msgid "{JAPAN ONLY}You can request a funds transfer to your designated bank account at any time."
+msgstr "出金先口座へ出金依頼はいつでも行えます。"
+
 msgid "{JAPAN ONLY}You can see the real-time value of your portfolio and access the trade view and analysis screen from which you can then choose to close the position:"
 msgstr "保有ポジションの損益がリアルタイムで確認ができます。また、売却取引画面にアクセスし必要に応じてポジションを決済することもできます。"
 
@@ -8953,11 +9188,17 @@ msgstr "判定時刻2分前までならいつでも売却取引によりロス�
 msgid "{JAPAN ONLY}You can then review the performance of the trade and then sell-back to close the position if you wish, by clicking the sell-back button."
 msgstr "約定済み通知画面上では、保有ポジションの損益が確認でき、「売却」ボタンをクリックして決済をすることができます。"
 
+msgid "{JAPAN ONLY}You must have sufficient balance in your trading account at the time of transfer."
+msgstr "出金依頼を行う際、取引残高が十分あることをご確認して下さい。"
+
 msgid "{JAPAN ONLY}You set your own personal daily loss limit"
 msgstr "1日損失限度額を設定できます"
 
 msgid "{JAPAN ONLY}You will always know your maximum loss, as it is limited to the amount that you have paid"
-msgstr "お客さまは、権利行使できなければ1取引あたりの最大損失額は購入金額に限定されます。"
+msgstr "お客さまのバイナリーオプション取引では、購入金額を超えて損失が生じる可能性はありませんが、損失を限定するためのロスカットではありませんのご注意してください。"
+
+msgid "{JAPAN ONLY}Your Funds"
+msgstr "信託により区分管理"
 
 msgid "{JAPAN ONLY}Your funds are safe"
 msgstr "信託により区分管理"
@@ -8965,41 +9206,8 @@ msgstr "信託により区分管理"
 msgid "{JAPAN ONLY}Your investments are immediately reflected in your account balance, so there is no further risk"
 msgstr "お客さまからの入金を確認後にお取引口座にすぐに反映いたします"
 
-msgid "{JAPAN ONLY}day"
-msgstr "日"
-
-msgid "{JAPAN ONLY}days"
-msgstr "日"
-
-msgid "{JAPAN ONLY}hour"
-msgstr "時間"
-
-msgid "{JAPAN ONLY}hours"
-msgstr "時間"
-
-msgid "{JAPAN ONLY}minute"
-msgstr "分"
-
-msgid "{JAPAN ONLY}minutes"
-msgstr "分"
-
-msgid "{JAPAN ONLY}month"
-msgstr "月"
-
-msgid "{JAPAN ONLY}months"
-msgstr "ヶ月"
-
-msgid "{JAPAN ONLY}week"
-msgstr "週間"
-
-msgid "{JAPAN ONLY}weeks"
-msgstr "週間"
-
-msgid "{JAPAN ONLY}year"
-msgstr "年"
-
-msgid "{JAPAN ONLY}years"
-msgstr "年"
+msgid "{JAPAN ONLY}¥"
+msgstr "✕"
 
 msgid "{Japan Only} Download Terms and Conditions Document file"
 msgstr "店頭バイナリーオプション取引約款"
@@ -9014,7 +9222,7 @@ msgid "{Japan Only}Live chart tools"
 msgstr "ライブチャート"
 
 msgid "{Japan Only}Payout from 1 to 10"
-msgstr "ペイアウト：1,000円〜100,000円"
+msgstr "ペイアウト: ¥1,000〜¥100,000"
 
 msgid "{Japan Only}Segregated Customer Account Balances are 100% Safe"
 msgstr "日証金信託銀行にて全額信託されています"
@@ -9055,6 +9263,14 @@ msgstr "職務内容"
 msgid "Company Profile"
 msgstr "会社概要"
 
+msgid "Service Announcements"
+msgstr "サービス情報"
+
+#, fuzzy
+#| msgid "Chart"
+msgid "Charity"
+msgstr "チャート"
+
 msgid "Open-Source Projects"
 msgstr "オープンソースプロジェクト"
 
@@ -9069,6 +9285,9 @@ msgstr "バイナリーの取引方法とは？"
 
 msgid "What Are OTC Indices and Stocks?"
 msgstr "店頭インデックス・店頭株とは？"
+
+msgid "Acknowledgement"
+msgstr "受取確認"
 
 msgid "Account Limits"
 msgstr "ご利用制限額"
@@ -9087,6 +9306,63 @@ msgstr "ご口座の詳細情報"
 
 msgid "Terms and Conditions Approval"
 msgstr "利用規約の承認"
+
+#~ msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing "
+#~ msgstr "条件を満たすことで利益を確保することができます。設定によってはより高い利益を期待することができます。 "
+
+#~ msgid "{JAPAN ONLY}Remaining time"
+#~ msgstr "残り時間"
+
+#~ msgid "{JAPAN ONLY}day"
+#~ msgstr "日"
+
+#~ msgid "{JAPAN ONLY}days"
+#~ msgstr "日"
+
+#~ msgid "{JAPAN ONLY}hour"
+#~ msgstr "時間"
+
+#~ msgid "{JAPAN ONLY}hours"
+#~ msgstr "時間"
+
+#~ msgid "{JAPAN ONLY}minute"
+#~ msgstr "分"
+
+#~ msgid "{JAPAN ONLY}minutes"
+#~ msgstr "分"
+
+#~ msgid "{JAPAN ONLY}month"
+#~ msgstr "月"
+
+#~ msgid "{JAPAN ONLY}months"
+#~ msgstr "ヶ月"
+
+#~ msgid "{JAPAN ONLY}week"
+#~ msgstr "週間"
+
+#~ msgid "{JAPAN ONLY}weeks"
+#~ msgstr "週間"
+
+#~ msgid "{JAPAN ONLY}year"
+#~ msgstr "年"
+
+#~ msgid "{JAPAN ONLY}years"
+#~ msgstr "年"
+
+#~ msgid "Jump to date:"
+#~ msgstr "参照日："
+
+#~ msgid "Future of trading on Binary.com"
+#~ msgstr "%1での今後のお取引"
+
+#~ msgid "Apps"
+#~ msgstr "アプリケーション"
+
+#~ msgid "TickTrade App"
+#~ msgstr "Tickトレードアプリケーション"
+
+#~ msgid "TradingView"
+#~ msgstr "TradingView"
 
 #~ msgid "{JAPAN ONLY}March 2016"
 #~ msgstr "平成28年3月末"
@@ -9351,10 +9627,6 @@ msgstr "利用規約の承認"
 #~ msgstr "平成28年2月"
 
 #~| msgid "{JAPAN ONLY}Download"
-#~ msgid "{JAPAN ONLY}January 2016"
-#~ msgstr "平成28年1月"
-
-#~| msgid "{JAPAN ONLY}Download"
 #~ msgid "{JAPAN ONLY}March 2014"
 #~ msgstr "平成26年3月"
 
@@ -9606,14 +9878,8 @@ msgstr "利用規約の承認"
 #~ msgid "To continue using our cashier system, please try accessing it again:"
 #~ msgstr "入出金を引き続きご利用するには、また改めてアクセスして下さい："
 
-#~ msgid "Unable to process your request"
-#~ msgstr "お客さまのリクエストは受け付けられません"
-
 #~ msgid "Why us?"
 #~ msgstr "サービス概要"
-
-#~ msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing a \"Touch\" trade, with a price target farther away from the current price."
-#~ msgstr "条件を満たすことで利益を確保することができます。現在の市場価格からより離れたバリア価格を設定することにより、より高い利益を期待することができます。"
 
 #~ msgid "You have reached the rate limit of requests per second. To continue, please <a href='javascript:;' id='ratelimit-refresh-link'>refresh</a> the page."
 #~ msgstr "秒単位のレート制限に達しました。続行されるにはページを <a href='javascript:;' id='ratelimit-refresh-link'>更新</a> してください。"
@@ -9735,9 +10001,6 @@ msgstr "利用規約の承認"
 
 #~ msgid "Accumulation/Distribution"
 #~ msgstr "Accumulation/Distribution：A/D"
-
-#~ msgid "Acknowledgement of Money Transfer"
-#~ msgstr "送金確認"
 
 #~ msgid "Acknowledgement of Withdrawal Request"
 #~ msgstr "ご出金リクエストを承りました。"
@@ -9892,9 +10155,6 @@ msgstr "利用規約の承認"
 
 #~ msgid "Close Location Value"
 #~ msgstr "Location Valueを閉じる"
-
-#~ msgid "Closes early (at %1)"
-#~ msgstr "早めに閉場（%1）"
 
 #~ msgid "Comment must not exceed %1 characters. Please resubmit."
 #~ msgstr "コメントは%1文字以内で送信して下さい。"
@@ -10552,9 +10812,6 @@ msgstr "利用規約の承認"
 #~ msgid "Please enter your email address."
 #~ msgstr "メールアドレスをご入力して下さい。"
 
-#~ msgid "Please log in."
-#~ msgstr "ログインをしてください"
-
 #~ msgid "Please note that your settings have been updated as follows:"
 #~ msgstr "下記の内容で設定内容の更新を承りました。"
 
@@ -10829,9 +11086,6 @@ msgstr "利用規約の承認"
 
 #~ msgid "TRIX"
 #~ msgstr "トリックス"
-
-#~ msgid "Target"
-#~ msgstr "ターゲット"
 
 #~ msgid "Technical Indicator derived from subtracting Aroon Down from Aroon Up. As Aroon Up and Aroon Down oscillate between 0 and 100, the Aroon Oscillator oscillates between -100 and 100 with zero as the centre crossover line."
 #~ msgstr "アルーンアップからアルーンダウンの値を差し引いた値を提供する指標です。アルーンアップとアルーンダウンは0から100の値を示すので、アルーンオシレーターの値は0を軸として-100から+100の値を示します。"
@@ -11121,9 +11375,6 @@ msgstr "利用規約の承認"
 #~ msgid "Week"
 #~ msgstr "週"
 
-#~ msgid "Weeks"
-#~ msgstr "集"
-
 #~ msgid "Weighted Moving Average"
 #~ msgstr "加重移動平均線"
 
@@ -11330,9 +11581,6 @@ msgstr "利用規約の承認"
 
 #~ msgid "plus"
 #~ msgstr "プラス"
-
-#~ msgid "today"
-#~ msgstr "本日"
 
 #~ msgid "USDZAR"
 #~ msgstr "USDZAR"
@@ -13119,9 +13367,6 @@ msgstr "利用規約の承認"
 #~ msgid "Amount must be a positive number."
 #~ msgstr "ご入力値は正の値である必要があります。"
 
-#~ msgid "Buy Price"
-#~ msgstr "購入価格"
-
 #~ msgid "Caching Content for Performance"
 #~ msgstr "パフォーマンス向上のためコンテンツをキャッシュする"
 
@@ -13391,9 +13636,6 @@ msgstr "利用規約の承認"
 
 #~ msgid "Purchase Spot"
 #~ msgstr "購入スポット"
-
-#~ msgid "Sell Price"
-#~ msgstr "決済価格"
 
 #~ msgid "Sell Spot"
 #~ msgstr "売却スポット"
@@ -13858,9 +14100,6 @@ msgstr "利用規約の承認"
 
 #~ msgid "You shall indemnify on demand and hold the Company harmless from and against any and all losses, demands, claims, damages, costs, expenses (including, but not limited to, consequential losses and loss of profit, reasonable legal costs and expenses and VAT thereon if applicable) and liabilities suffered or incurred, directly or indirectly, by the Company in consequence of any breach by you of clause 3.3 or 3.4."
 #~ msgstr "アフィリエイト会員は要求に応じた賠償を行う必要があり、当社に対してあらゆる損失、要求、苦情、損害賠償や費用（重大な損失、利益の損失、法的対応の費用やそれにまつわる付加価値税）を求めることはありません。また、直接的であれ間接的であれ、3.3条または3.4条の違反行為の結果として生じた責任はアフィリエイト会員が負います。"
-
-#~ msgid "Your verification link has expired."
-#~ msgstr "認証コードの有効期限が切れています。"
 
 #~ msgid "%1 is seeking several highly skilled Marketing Executives to join its team of talented professionals."
 #~ msgstr "当社では才能あふれるプロフェッショナルなチームに参加していただく非常に熟練したマーケティング担当者を募集しています。"
@@ -14416,9 +14655,6 @@ msgstr "利用規約の承認"
 
 #~ msgid "contact us"
 #~ msgstr "お問い合わせ"
-
-#~ msgid "email address"
-#~ msgstr "メールアドレス"
 
 #~ msgid "%1 %2 payout if %3 is higher than or equal to %6 at %5."
 #~ msgstr "%3が%5の時点で%6よりも高いかまたは同じ場合に%1 %2のペイアウトをお受け取りいただけます。"
@@ -15073,9 +15309,6 @@ msgstr "利用規約の承認"
 #~ msgid "This page is unavailable."
 #~ msgstr "このページはご利用いただけません。"
 
-#~ msgid "To change your name, date of birth, country of residence, or email, please contact Customer Support."
-#~ msgstr "お客さま情報の変更をご希望される場合はカスタマーサポートまでご連絡下さい。また、変更が生じた際は速やかにご連絡願います。"
-
 #~ msgid "To:"
 #~ msgstr "終了："
 
@@ -15306,9 +15539,6 @@ msgstr "利用規約の承認"
 
 #~ msgid "Currency quotes are truncated to 5 digits and all contracts are purchased and settled based on 5-digit currency quotes."
 #~ msgstr "当社では、最大で少数第５位までの価格データを採用しており、全てのトレードの最大で少数第５位までのデータに基づいて購入が可能であり、約定されます。"
-
-#~ msgid "Fridays"
-#~ msgstr "金曜日"
 
 #~ msgid "Notice: please only share your API token with third-parties which you trust."
 #~ msgstr "注意：信頼できる第三者にのみAPIトークンを共有するようにしてください。"

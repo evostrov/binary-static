@@ -1,3 +1,8 @@
+var showLoadingImage = require('../../../base/utility').showLoadingImage;
+var Table = require('../../../common_functions/attach_dom/table').Table;
+var MarketTimesData = require('./market_timesws.data').MarketTimesData;
+var MarketTimes = require('../market_timesws').MarketTimes;
+
 var MarketTimesUI = (function() {
     "use strict";
 
@@ -20,7 +25,10 @@ var MarketTimesUI = (function() {
         showLoadingImage($container);
 
         isFramed = (config && config.framed);
-        if (!tradingTimes) MarketTimesData.sendRequest('today', !activeSymbols);
+        if (!tradingTimes) {
+            initSocket();
+            MarketTimesData.sendRequest('today', !activeSymbols);
+        }
 
         $date.val(moment.utc(new Date()).format('YYYY-MM-DD'));
         $date.datepicker({minDate: 0, maxDate: '+1y', dateFormat: 'yy-mm-dd', autoSize: true});
@@ -90,11 +98,13 @@ var MarketTimesUI = (function() {
             var $submarketTable = createEmptyTable(market.name + '-' + s);
 
             // submarket name
-            $submarketTable.find('thead').prepend(createSubmarketHeader(submarkets[s].name));
+            $submarketTable.find('thead').prepend(createSubmarketHeader(submarkets[s].name))
+                           .find('th.opens, th.closes').addClass('nowrap');
 
             // symbols of this submarket
             var symbols = submarkets[s].symbols;
             for(var sy = 0; sy < symbols.length; sy++) {
+                if (Object.keys(MarketTimes.getSymbolInfo(symbols[sy].symbol, activeSymbols)).length === 0) continue;
                 $submarketTable.find('tbody').append(createSubmarketTableRow(market.name, submarkets[s].name, symbols[sy]));
             }
 
@@ -121,7 +131,6 @@ var MarketTimesUI = (function() {
             columns,
             "data"
         );
-
         $tableRow.children('.opens').html(symbol.times.open.join('<br />'));
         $tableRow.children('.closes').html(symbol.times.close.join('<br />'));
         $tableRow.children('.upcomingevents').html(createEventsText(symbol.events));
@@ -132,7 +141,7 @@ var MarketTimesUI = (function() {
     var createEventsText = function(events) {
         var result = '';
         for(var i = 0; i < events.length; i++) {
-            result += (i > 0 ? '<br />' : '') + events[i].descrip + ': ' + events[i].dates;
+            result += (i > 0 ? '<br />' : '') + page.text.localize(events[i].descrip) + ': ' + page.text.localize(events[i].dates);
         }
         return result.length > 0 ? result : '--';
     };
@@ -152,6 +161,28 @@ var MarketTimesUI = (function() {
         };
 
         return Table.createFlexTable([], metadata, header);
+    };
+
+    var initSocket = function() {
+        if (TradePage_Beta.is_trading_page()) return;
+        BinarySocket.init({
+            onmessage: function(msg) {
+                var response = JSON.parse(msg.data);
+                if (response) {
+                    responseHandler(response);
+                }
+            }
+        });
+    };
+
+    var responseHandler = function(response) {
+        var msg_type = response.msg_type;
+        if (msg_type === "trading_times") {
+            MarketTimesUI.setTradingTimes(response);
+        }
+        else if (msg_type === "active_symbols") {
+            MarketTimesUI.setActiveSymbols(response);
+        }
     };
 
     return {

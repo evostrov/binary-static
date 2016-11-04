@@ -1,3 +1,11 @@
+var showLoadingImage = require('../../../../base/utility').showLoadingImage;
+var toJapanTimeIfNeeded = require('../../../../base/utility').toJapanTimeIfNeeded;
+var format_money = require('../../../../common_functions/currency_to_symbol').format_money;
+var buildOauthApps = require('../../../../common_functions/get_app_details').buildOauthApps;
+var addTooltip = require('../../../../common_functions/get_app_details').addTooltip;
+var showTooltip = require('../../../../common_functions/get_app_details').showTooltip;
+var MBTradePage = require('../../../../websocket_pages/mb_trade/mb_tradepage').MBTradePage;
+
 var PortfolioWS =  (function() {
     'use strict';
 
@@ -36,12 +44,12 @@ var PortfolioWS =  (function() {
         var new_class = is_first ? '' : 'new';
         $('#portfolio-body').prepend(
             $('<tr class="tr-first ' + new_class + ' ' + data.contract_id + '" id="' + data.contract_id + '">' +
-                '<td class="ref"><span' + showTooltip(data.app_id, oauth_apps[data.app_id]) + '>' + data.transaction_id + '</span></td>' +
+                '<td class="ref"><span' + showTooltip(data.app_id, oauth_apps[data.app_id]) + ' data-balloon-pos="right">' + data.transaction_id + '</span></td>' +
                 '<td class="payout"><strong>' + format_money(data.currency, data.payout) + '</strong></td>' +
                 '<td class="details">' + longCode + '</td>' +
                 '<td class="purchase"><strong>' + format_money(data.currency, data.buy_price) + '</strong></td>' +
                 '<td class="indicative"><strong class="indicative_price">' + format_money(data.currency, '--.--') + '</strong></td>' +
-                '<td class="button"><button class="button open_contract_detailsws" contract_id="' + data.contract_id + '">' + page.text.localize('View') + '</button></td>' +
+                '<td class="button"><button class="button open_contract_detailsws nowrap" contract_id="' + data.contract_id + '">' + page.text.localize('View') + '</button></td>' +
             '</tr>' +
             '<tr class="tr-desc ' + new_class + ' ' + data.contract_id + '">' +
                 '<td colspan="6">' + longCode + '</td>' +
@@ -182,7 +190,7 @@ var PortfolioWS =  (function() {
     };
 
     var errorMessage = function(msg) {
-        var $err = $('#portfolio #err-msg');
+        var $err = $('#portfolio #error-msg');
         if(msg) {
             $err.removeClass(hidden_class).text(msg);
         } else {
@@ -191,7 +199,7 @@ var PortfolioWS =  (function() {
     };
 
     var onLoad = function() {
-        if (!TradePage.is_trading_page() && !TradePage_Beta.is_trading_page()) {
+        if (!TradePage.is_trading_page() && !TradePage_Beta.is_trading_page() && !MBTradePage.is_trading_page()) {
             BinarySocket.init({
                 onmessage: function(msg){
                     var response = JSON.parse(msg.data),

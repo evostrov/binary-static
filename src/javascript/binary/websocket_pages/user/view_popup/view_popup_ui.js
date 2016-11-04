@@ -1,3 +1,5 @@
+var get_highest_zindex = require('../../../base/utility').get_highest_zindex;
+
 var ViewPopupUI = (function() {
     var _container = null;
     return {
@@ -93,7 +95,7 @@ var ViewPopupUI = (function() {
             body.append(con);
             con.show();
             $(document.body).append($('<div/>', {class: 'popup_page_overlay'}));
-            $('.popup_page_overlay').click(function(){con.find('a.close').click();});
+            $('.popup_page_overlay').click(function(){ViewPopupUI.container().find('a.close').click();});
             con.draggable({
                 stop: function() {
                     that.reposition_confirmation_ondrag();

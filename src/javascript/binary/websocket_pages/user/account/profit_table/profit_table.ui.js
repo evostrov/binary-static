@@ -1,3 +1,10 @@
+var toJapanTimeIfNeeded = require('../../../../base/utility').toJapanTimeIfNeeded;
+var Button = require('../../../../common_functions/attach_dom/button').Button;
+var Table = require('../../../../common_functions/attach_dom/table').Table;
+var format_money = require('../../../../common_functions/currency_to_symbol').format_money;
+var format_money_jp = require('../../../../common_functions/currency_to_symbol').format_money_jp;
+var showTooltip = require('../../../../common_functions/get_app_details').showTooltip;
+
 var ProfitTableUI = (function(){
     "use strict";
 
@@ -110,7 +117,7 @@ var ProfitTableUI = (function(){
     }
 
     function errorMessage(msg) {
-        var $err = $('#profit-table-ws-container #err-msg');
+        var $err = $('#profit-table-ws-container #error-msg');
         if(msg) {
             $err.removeClass('invisible').text(msg);
         } else {
