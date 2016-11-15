@@ -58,7 +58,7 @@ sub all_pages {
         ## ws
         ['user/authenticatews',          'user/authenticatews',                       'default', 'Authenticate',    'ja'],
         ['cashier/forwardws',            'cashier/deposit_withdraw_ws',               'default', 'Cashier',         'ja'],
-        ['cashier/epg_forwardws',        'cashier/deposit_withdraw_ws',               'default', 'Cashier',         'ja'],
+        ['cashier/epg_forwardws',        'cashier/deposit_withdraw_ws',               'default', 'Cashier'],
         ['cashier/deposit-jp',           'japan/cashier/deposit',                     'default', 'Deposit',         'NOT-ja,en'],
         ['cashier/withdraw-jp',          'japan/cashier/withdraw',                    'default', 'Withdraw',        'NOT-ja,en'],
         ['cashier/submit-withdraw-jp',   'japan/cashier/submit',                      'default', 'Acknowledgement', 'NOT-ja,en'],
@@ -69,7 +69,7 @@ sub all_pages {
         ['paymentagent/transferws',      'cashier/paymentagent_transferws',           'default', 'Payment Agent Transfer'],
         ['paymentagent/withdrawws',      'cashier/paymentagent_withdrawws',           'default', 'Payment Agent Withdrawal'],
 
-        ['jptrading',              'bet/japan',       'default', 'Sharp Prices. Smart Trading.', 'NOT-ja,en'],
+        ['jp_trading',             'bet/japan',       'default', 'Sharp Prices. Smart Trading.', 'NOT-ja,en'],
         ['trading',                'bet/static',      'default', 'Sharp Prices. Smart Trading.'],
         ['trading_beta',           'bet/beta/static', 'default', 'Sharp Prices. Smart Trading.', 'ja'],
         ['multi_barriers_trading', 'bet/mb_trading',  'default', 'Sharp Prices. Smart Trading.'],

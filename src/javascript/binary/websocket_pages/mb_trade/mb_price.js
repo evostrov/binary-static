@@ -1,6 +1,8 @@
 var MBContract = require('./mb_contract').MBContract;
 var objectNotEmpty = require('../../base/utility').objectNotEmpty;
 var MBDefaults = require('./mb_defaults').MBDefaults;
+var MBNotifications = require('./mb_notifications').MBNotifications;
+var japanese_client = require('../../common_functions/country_base').japanese_client;
 
 /*
  * Price object handles all the functions we need to display prices
@@ -81,7 +83,7 @@ var MBPrice = (function() {
         });
 
         MBPrice.hidePriceOverlay();
-        hideSpinnerShowTrading();
+        MBNotifications.hideSpinnerShowTrading();
         is_displayed = true;
     };
 
@@ -124,7 +126,7 @@ var MBPrice = (function() {
     };
 
     var getMovementDirection = function(prev, current) {
-        return current > prev ? '⬆' : current < prev ? '⬇' : '';
+        return current > prev ? 'up' : current < prev ? 'down' : '';
     };
 
     var makePriceRow = function(values, is_update) {
@@ -137,7 +139,7 @@ var MBPrice = (function() {
                         (values.id ? ' onclick="MBPrice.processBuy(\'' + values.barrier + '\', \'' + values.contract_type + '\')"' : '') +
                         (values.message ? ' data-balloon="' + values.message + '"' : '') + '>' +
                             '<span class="value-wrapper">' +
-                                '<span class="dynamics">' + (values.ask_price_movement || '') + '</span>' +
+                                '<span class="dynamics ' + (values.ask_price_movement || '') + '"></span>' +
                                 formatPrice(values.ask_price) +
                             '</span>' +
                             (is_japan ? '<span class="base-value">(' + formatPrice(values.ask_price / payout) + ')</span>' : '') +
@@ -145,7 +147,7 @@ var MBPrice = (function() {
                 '</div>' +
                 '<div class="gr-4 sell-price">' +
                     '<span class="price-wrapper' + (!values.sell_price ? ' inactive' : '') + '">' +
-                        '<span class="dynamics">' + (values.sell_price_movement || '') + '</span>' +
+                        '<span class="dynamics ' + (values.sell_price_movement || '') + '"></span>' +
                         formatPrice(values.sell_price) +
                         (is_japan ? '<span class="base-value">(' + formatPrice(values.sell_price / payout) + ')</span>' : '') +
                     '</span>' +
@@ -215,11 +217,6 @@ var MBPrice = (function() {
         $('#disable-overlay, #loading-overlay').addClass('invisible');
     };
 
-    var hideSpinnerShowTrading = function() {
-        $('.spinner').addClass('invisible');
-        $('.mb-trading-wrapper').removeClass('invisible');
-    };
-
     return {
         display                : display,
         addPriceObj            : addPriceObj,
@@ -230,7 +227,6 @@ var MBPrice = (function() {
         hidePriceOverlay       : hidePriceOverlay,
         getReqId               : function() { return req_id; },
         increaseReqId          : function() { req_id++; cleanup(); },
-        hideSpinnerShowTrading : hideSpinnerShowTrading,
         getPrices              : function() { return prices; },
         onUnload               : function() { cleanup(); req_id = 0; proposal_response = {}; $tables = undefined; },
     };

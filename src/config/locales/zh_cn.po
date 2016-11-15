@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Chinese (China) (Binary)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2016-11-02 07:43+0000\n"
+"PO-Revision-Date: 2016-11-08 03:40+0000\n"
 "Last-Translator: Freddy Hew <hewfreddy@gmail.com>\n"
 "Language-Team: Chinese (China) <https://hosted.weblate.org/projects/binary/static/zh_CN/>\n"
 "Language: zh_cn\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.9-dev\n"
+"X-Generator: Weblate 2.9\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 msgid "\"%1 API\" means the %1 proprietary set of programmatic routines, protocols, tools and resources created and maintained by %1 that allows you to use a registered Application to interface with the %1 trading platform."
@@ -272,7 +272,7 @@ msgid "%1's systems are now processing in excess of 1 million transactions/day (
 msgstr "%1 系统每天处理超过百万笔交易（包括虚拟账户）。"
 
 msgid "%1’s charitable initiative focuses on small charities and nonprofits around the world that are making a positive difference in their local communities. Our donations have a direct impact, free from the burden of overheads seen in larger charities."
-msgstr ""
+msgstr "%1的慈善活动侧重于捐助世界各地在当地社区有重大影响力的小型慈善机构和非营利组织。 我们的捐款使他们直接受惠，也不须像一些大型慈善机构那样支付庞大开销。"
 
 msgid "%ctx(minimum duration, for example minimum 15 seconds)min"
 msgstr "%ctx(minimum duration, for example minimum 15 seconds)分钟"
@@ -1727,6 +1727,9 @@ msgstr "客户的责任"
 msgid "Clients agree to be fully and personally liable for the due settlement of every transaction entered into under their account with the Company. This includes any transactions entered into by members of the Client's family or entourage who have gained access to the account. Clients are responsible for ensuring that they alone control access to the account, and that no minors are granted access to trading on the website. In any case, Clients remains fully liable for any and all positions traded on their account, and for any credit card transactions entered into the site for their account. Each Client also indemnifies the Company in respect to all costs and losses of any kind, whatsoever as may be incurred by the Company as a result, direct or indirect, of the Client's failure to perform or settle such a transaction. Online Gambling debts are enforceable in law in the Isle of Man."
 msgstr "客户同意对其在本公司开立账户内所有交易的结算承担全部个人责任，包括有权访问该客户账户的家人或他人进行的交易。客户有责任确保他们对于账户访问权限的控制，不能向未成年人提供在网站上交易的权限。在任何情况下，客户对其账户上的任何头寸以及网站账户的任何信用卡交易承担全部责任。所有客户都应保护公司免受因客户未能执行或结算该交易而对公司造成的所有直接或间接成本或损失。根据马恩岛法律，在线博彩债务可强制执行。"
 
+msgid "Clients agree to comply with the reasonable requests made by the Company for the purpose of verifying compliance with this term."
+msgstr ""
+
 msgid "Clients from the rest of the world (excluding certain countries such as the USA, Costa Rica, Hong Kong) will have their FX and CFD Metatrader 5 account opened with Binary (V) Ltd. Binary.com is not available in the Republic of Vanuatu."
 msgstr "全球其他地区的客户 (不包括某些国家如美国、哥斯达黎加、香港)可在 Binary (V) Ltd.开设外汇和差价合约Metatrader 5账户。Binary.com 在瓦努阿图不能使用。"
 
@@ -2488,6 +2491,9 @@ msgstr "估计净值"
 msgid "Ethics Code"
 msgstr "道德标准"
 
+msgid "Eurobasket Wolves"
+msgstr "Eurobasket Wolves"
+
 msgid "European Union residents with the exception of the UK, who wish to trade gambling products, will have their account opened with Binary (Europe) Ltd."
 msgstr "想要进行产品博彩交易的除英国外的欧盟居民将在 Binary (Europe) Ltd 开设账户。"
 
@@ -3097,6 +3103,9 @@ msgstr "如果这些条款的任何规定被发现非法、无效或无法执行
 msgid "If any provision of this Agreement is held to be void or unenforceable in whole or part, the impugned provision (or part thereof) shall be deemed to be deleted from this Agreement and the remaining provisions (including the remainder of the affected provision) shall continue to be valid and applicable."
 msgstr "如果本协议的任何条款被认定完全或部分无效，或无法执行，该条款（或其部分）应视为从本协议中删除，其余条款（包括受影响条款的剩余部分）仍然有效并适用。"
 
+msgid "If the Company (in its sole discretion) is not satisfied that a Client is complying with these terms, or if a Client does not comply with a reasonable request for information made by the Company, the Company may cancel the Client’s account and withhold any funds accumulated therein."
+msgstr ""
+
 msgid "If the Company is legally required to disclose your personal or financial information by law, regulation or pursuant to the order of a court of competent jurisdiction or a governmental agency, the Company  shall, unless legally prohibited, promptly notify you to that effect, in order to give you the opportunity to seek such protection for the information as it deems appropriate. Such required disclosure shall not be construed as a breach of this Terms and Conditions Agreement."
 msgstr "如果公司因法律法规或具有司法管辖权的法庭或政府机构的规定，必须公布您的个人或财务信息，公司须在法律允许范围内及时通知您，使您有机会对相关数据采取恰当的保护措施。该必要的公布行为不可解释为违反此协议条款和条件。"
 
@@ -3469,6 +3478,9 @@ msgstr "加入需要任何费用吗？"
 
 msgid "Isle of Man"
 msgstr "马恩岛"
+
+msgid "It is a condition of using the website that:"
+msgstr ""
 
 msgid "It is important that you monitor all of your positions closely. It is your responsibility to monitor your positions and during the period that you have any open Contracts, you should always have the ability to access your Accounts."
 msgstr "至关重要的是，您必须紧密监控所有头寸。监控头寸是您的责任，在您拥有任何未平仓合约期间，您必须能够随时访问您的账户。"
@@ -4037,9 +4049,6 @@ msgstr "我们将协助您提高交易技能"
 msgid "Learn more"
 msgstr "了解更多"
 
-msgid "Learn more about how we think and how we work. Read <a href='https://blog.binary.com/' target='_blank'>our blog</a> for the stories and ideas that inspire us."
-msgstr "了解更多关于我们的想法和运作方式详情。参阅<a href='https://blog.binary.com/' target='_blank'>我们的博客</a>，以便了解我们的概念来源和背景故事。"
-
 msgid "Learn more about our corporate culture"
 msgstr "查看关于我们企业文化的详情"
 
@@ -4188,7 +4197,7 @@ msgid "Make your trade"
 msgstr "执行交易"
 
 msgid "Making a Positive Impact in Local Communities"
-msgstr ""
+msgstr "直接影响当地社区"
 
 msgid "Malaysia"
 msgstr "马来西亚"
@@ -5185,6 +5194,11 @@ msgstr "利润/亏损"
 msgid "Profit/Loss (points)"
 msgstr "利润/亏损（点）"
 
+#, fuzzy
+#| msgid "Experienced Traders"
+msgid "Prohibited Trades"
+msgstr "熟练交易者"
+
 msgid "Proofread and correct the content appearing on the company's website, blog, social media outlets, and marketing materials, from English to the regional language and vice versa"
 msgstr "公司网站、博客、社交媒体网站和营销材料内容翻译的校对和更正（从英语翻译成区域语言，或反向）"
 
@@ -5268,6 +5282,9 @@ msgstr "请参阅以下Binary Investments (Europe) Limited 说明书中关于二
 
 msgid "Read about the five types of trade offered by %1."
 msgstr "查看 %1 提供的 5 种交易。"
+
+msgid "Read our blog for the stories and ideas that inspire us"
+msgstr ""
 
 msgid "Read the answers to some common questions."
 msgstr "查看一些常见问题的回答。"
@@ -5644,6 +5661,9 @@ msgstr "可分割性"
 msgid "Sharp prices"
 msgstr "精准报价"
 
+msgid "Shelter Home’s Shelter Community Learning Centre 3"
+msgstr "庇护所社区第3学习中心"
+
 msgid "Shop"
 msgstr "商店"
 
@@ -6015,6 +6035,11 @@ msgstr "合约<strong>结束时间</strong>是指合约<strong>开始时间</str
 msgid "The <strong>end time</strong> is the selected number of seconds/minutes/hours after the <strong>start time</strong> (if less than one day in duration), or at the end of the trading day (if one day or more in duration)."
 msgstr "<strong>结束时间</strong>是在<strong>开始时间</strong>（如果期限小于一天）之后选定的秒数/分钟数/小时数，或是交易日结束（如果期限为一天或更长）。"
 
+#, fuzzy
+#| msgid "The <strong>exit spot</strong> is the spot at the <strong>end time</strong>."
+msgid "The <strong>exit spot</strong> is the latest tick at or before the <strong>end time</strong>."
+msgstr "<strong>退市现价</strong>为合约<strong>结束时间</strong>的现价。"
+
 msgid "The <strong>exit spot</strong> is the spot at the <strong>end time</strong>."
 msgstr "<strong>退市现价</strong>为合约<strong>结束时间</strong>的现价。"
 
@@ -6048,6 +6073,9 @@ msgstr "公司不提供客户之间进行投资、证券、衍生品或投机的
 msgid "The Company has and retains the right, to terminate any event or trade, including but not limited to the occurrence of any of the above events."
 msgstr "公司有权停止任何活动或交易，包括但不限于上述任何事件。"
 
+msgid "The Company has the discretion to seek information from Clients to verify compliance with these terms."
+msgstr ""
+
 msgid "The Company is not liable for loss or damage of any kind whatsoever arising as a result of information or prices published on or furnished through the %1 API, or any errors or omissions of the %1 API;"
 msgstr "由%1 API所提供或发布的任何信息或价格所造成的任何类型的损失或损害，或其所造成的任何错误或遗漏，公司概不负责;"
 
@@ -6075,6 +6103,9 @@ msgstr "本公司可自行对客户账户进行交易额限制。现行的开户
 msgid "The Company may use or disclose (or choose not to use or disclose) such Contributions for any purpose, in any way, in any media worldwide;"
 msgstr "公司可基于任何用途通过世界各地任何媒体以任何方式使用或披露 （或选择不使用或披露）该贡献 ;"
 
+msgid "The Company may withhold payment of funds accumulated in a Client’s account while it takes steps to verify compliance with these terms."
+msgstr ""
+
 msgid "The Company may, from time to time, at its sole discretion, or as required by regulations in place to conduct appropriate \"Know Your Customer\" procedures and require a Client to provide proof of identity (such as notarized copy of passport or other means of identity verification as the Company deems required under the circumstances) and may at its sole discretion suspend an account until satisfactory identification information, evidence of identity and address, source of funds and/or source of wealth have been provided. Know Your Customer documentation will be required when a Client deposits money in the account. In the case of a client opening an account with Binary (Europe) Ltd, the threshold for verifying clients is on cumulative withdrawals of EUR 2,300."
 msgstr "公司有权不定时自行或根据“了解你的客户”法则要求客户提供身份证明（如经公证的护照复印件或其他公司在相关情形下认为必要的身份证明），也有权在得到充分的身份证明信息、身份与地址证明、基金来源和/或财富来源之前自行中止账户。客户将资金存入账户时，必须提交“了解你的客户”文件。如果客户在 Binary（欧洲）有限公司开立账户，客户验证累计提款额的门槛为2,300欧元。"
 
@@ -6095,6 +6126,9 @@ msgstr "如果由于我们网站软件没有检测出的编程错误、病毒或
 
 msgid "The Company reserves the right to change any part of this Agreement at any time. We will endeavour to ensure affiliates are notified when changes have been made to this Agreement, but it is ultimately your responsibility to check these terms and conditions regularly. Your continued participation in our affiliate program after we have posted the changes will constitute binding acceptance of such changes."
 msgstr "公司有权随时修改本协议的任何内容。我们会尽量把协议修改详情通知联盟成员，但您有责任定期检查相应条款和条件。在修改正式公布后，您继续参加联盟计划的行为表示您接收该修改内容的约束。"
+
+msgid "The Company reserves the right to refuse to do business with, to discontinue to do business with, and to reverse the transactions of, Clients who engage in any trading activity:"
+msgstr ""
 
 msgid "The Company reserves the right to suspend the operation of this site or sections thereof:"
 msgstr "公司有权中止网站或其中某些版块的运营："
@@ -6141,6 +6175,9 @@ msgstr "数据保护法律和法规规定了个人信息使用者应承担的义
 msgid "The EUR Index is a weighted Index, measuring the Euro's value against a basket of 5 global currencies (USD, AUD, GBP, JPY, CAD), each weighted by 20%."
 msgstr "欧元指数是加权指数，衡量欧元相对5种全球货币（美元、澳元、英镑、日元、加元）的价值，每种货币的权重均为 20%。"
 
+msgid "The Eurobasket Wolves is a local basketball club founded in 2002. It teaches youth basketball through its club and school programmes. Its U8’s and U10’s boys and girls teams, plus its U14’s and U16’s girls teams compete nationally. It is the first basketball club in Malta to establish an after-school basketball training programme where the training sessions are conducted on school grounds."
+msgstr "Eurobasket Wolves 本地篮球俱乐部成立于2002年。它通过俱乐部和学校项目教导青年打篮球。它的U8、U10男女球队和U14、U16女子球队曾经参加国家级竞赛。它也是马耳他首家在学校场地成立课余篮球训练项目的篮球俱乐部。"
+
 msgid "The Financial Products that we offer to deal in are contracts entered into between you and us. Under these contracts and subject to the specific terms of the relevant contract, in consideration for the premium or price that you pay us, we promise to pay you a certain amount if the reference assets or measurements perform in a particular manner. These contracts accordingly are not instruments that we hold on your behalf and neither benefit from clients' assets protection in the event of our insolvency. Similarly the premium or price that you pay to take out a trade is not held as clients' money but as consideration for our undertaking to pay."
 msgstr "我们所提供的金融产品交易为您我之间的合约。在这些合约和相关的特定条款约束下，由于您向我们支付了费用或价格，当相关资产或测量具备某些特定指标时，我们也承诺向您支付相应的金额。我们不会代替您拥有这些合约，如果我们破产，也不会从提供给客户的资产保护中获利。同样的，你所支付的交易费用或价格并不属于客户，而是对我们承诺支付的报酬。"
 
@@ -6158,6 +6195,9 @@ msgstr "Binary Investments (Europe) Limited 的第3支柱资料披露报告根�
 
 msgid "The Program"
 msgstr "计划"
+
+msgid "The Shelter Community Learning Centre 3 is a community school for Myanmar refugee children who are awaiting repatriation with their families to a third country. The school aims to provide these children –– who are at their most vulnerable age –– with an education which will prepare them for the future."
+msgstr "庇护所社区第3学习中心是为正在缅甸等待与家人被遣至第三国的难民儿童成立的社区学校。 该学校旨在为这些处于最脆弱年龄的儿童提供教育，为他们的未来做好准备。"
 
 msgid "The USD Index is a weighted Index, measuring the US Dollar's value against a basket of 5 global currencies (EUR, GBP, JPY, CAD, AUD), each weighted by 20%."
 msgstr "美元指数是加权指数，衡量美元相对于5种全球货币（欧元、英镑、日元、加元、澳元）的价值，每种货币的权重均为20%。"
@@ -6611,10 +6651,8 @@ msgstr "To open a trading account, our customers must confirm they fully underst
 msgid "To qualify, you'll need an advanced university degree in Physics, Financial Engineering or Mathematics"
 msgstr "要获得录取资格，您必须拥有物理、金融工程或数学专业的本科学历"
 
-#, fuzzy
-#| msgid "To reset your password, enter the e-mail address you registered in the field below and click "
-msgid "To reset your password, enter the e-mail address you registered in the field below and click 'RESET PASSWORD'."
-msgstr "如要重新设置密码，在下面输入您注册的电子邮件并点击 "
+msgid "To reset your password, enter the e-mail address you registered in the field below and click 'Reset Password'."
+msgstr "如要重新设置密码，在下面输入您注册的电子邮件并点击“重设密码”。"
 
 msgid "Today"
 msgstr "今天"
@@ -6808,6 +6846,9 @@ msgstr "英国和马恩岛居民将在Binary (IOM) Ltd开户。"
 msgid "UK clients registered with Binary (Europe) Ltd can submit their dispute with the alternative dispute resolution entity IBAS by filling the adjudication form on the ADR entity's"
 msgstr "在 Binary (Europe) Ltd 注册的英国客户可以在替代性纠纷解决机构 IBAS 填写仲裁表格并提交申诉"
 
+msgid "URL"
+msgstr "网址"
+
 msgid "US Patents"
 msgstr "美国专利"
 
@@ -6818,7 +6859,7 @@ msgid "UX / UI experience"
 msgstr "UX / UI 经验"
 
 msgid "Ukraine"
-msgstr ""
+msgstr "乌克兰"
 
 msgid "Ultra fast on-the-go trading"
 msgstr "超快旅途中交易服务"
@@ -6928,7 +6969,9 @@ msgstr "验证令牌"
 msgid "Verify new password"
 msgstr "验证新密码"
 
-msgid "Version 42. Last modified 2016-09-14."
+#, fuzzy
+#| msgid "Version 42. Last modified 2016-09-14."
+msgid "Version 43. Last modified 2016-11-09."
 msgstr "版本42。最后修改时间2016-09-14。"
 
 msgid "View"
@@ -7821,6 +7864,9 @@ msgstr "在指定时间期限内，您可能遭受的损失限额；"
 msgid "and"
 msgstr "以及"
 
+msgid "any Client that is employed in the banking and/or finance sector must only conduct trades through the website with the knowledge of his/her employer and in accordance with the employer’s policies; and that"
+msgstr ""
+
 msgid "any instance where the Company believes that person's activities at this site may be illegal in that person's country or state;"
 msgstr "本公司认为此人的本网站活动在其居住国或州可能是非法的；"
 
@@ -7957,6 +8003,9 @@ msgstr "转让这些條款所授予（除非条款允许）的任何权利;"
 msgid "terms and conditions"
 msgstr "条款与条件"
 
+msgid "that contravenes any laws, regulations, instruments, ordinances or rules that govern the operation of any exchange, financial market, or financial regulatory environment; or"
+msgstr ""
+
 msgid "the %1 affiliate program is competitive and adaptive to your unique requirements."
 msgstr "%1 联盟计划具有竞争力，可适应您的独特需求。"
 
@@ -7989,6 +8038,11 @@ msgstr "周"
 
 msgid "weeks"
 msgstr "周"
+
+#, fuzzy
+#| msgid "Persons with insider knowledge of any financial market or instrument are prohibited from trading at this website."
+msgid "with insider knowledge of any financial market or instrument."
+msgstr "本网站禁止对任何金融市场或工具具有内幕知识的人士进行交易。"
 
 msgid "year"
 msgstr "年"
@@ -9025,10 +9079,8 @@ msgstr "公司详细信息"
 msgid "Service Announcements"
 msgstr "服务公告"
 
-#, fuzzy
-#| msgid "Chart"
 msgid "Charity"
-msgstr "图表"
+msgstr "慈善活动"
 
 msgid "Open-Source Projects"
 msgstr "开源项目"
@@ -9065,6 +9117,9 @@ msgstr "账户详情"
 
 msgid "Terms and Conditions Approval"
 msgstr "条款和条件审批"
+
+#~ msgid "Learn more about how we think and how we work. Read <a href='https://blog.binary.com/' target='_blank'>our blog</a> for the stories and ideas that inspire us."
+#~ msgstr "了解更多关于我们的想法和运作方式详情。参阅<a href='https://blog.binary.com/' target='_blank'>我们的博客</a>，以便了解我们的概念来源和背景故事。"
 
 #~ msgid "Win 10-1000% on your stake if you are correct. Increase your winning return by choosing "
 #~ msgstr "如果您预测正确，即可获得投注额 10%-1000% 的回报。要获得较高回报，可选择 "
@@ -16785,9 +16840,6 @@ msgstr "条款和条件审批"
 
 #~ msgid "10 seconds to 365 days..."
 #~ msgstr "从10 秒到 365 天..."
-
-#~ msgid "Experienced Traders"
-#~ msgstr "熟练交易者"
 
 #~ msgid "New To Trading?"
 #~ msgstr "交易新手？"

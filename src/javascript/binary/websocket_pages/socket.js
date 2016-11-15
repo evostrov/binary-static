@@ -2,10 +2,16 @@ var getSocketURL = require('../../config').getSocketURL;
 var getAppId = require('../../config').getAppId;
 var Login = require('../base/login').Login;
 var objectNotEmpty = require('../base/utility').objectNotEmpty;
-var CommonData = require('../common_functions/common_data').CommonData;
+var CommonFunctions = require('../common_functions/common_functions').CommonFunctions;
+var AccountOpening = require('../common_functions/account_opening').AccountOpening;
 var SessionDurationLimit = require('../common_functions/session_duration_limit').SessionDurationLimit;
+var checkClientsCountry = require('../common_functions/country_base').checkClientsCountry;
 var Cashier = require('../websocket_pages/cashier/cashier').Cashier;
 var PaymentAgentWithdrawWS = require('../websocket_pages/cashier/payment_agent_withdrawws').PaymentAgentWithdrawWS;
+var create_language_drop_down = require('../common_functions/attach_dom/language_dropdown').create_language_drop_down;
+var TNCApproval = require('../websocket_pages/user/tnc_approval').TNCApproval;
+var ViewPopupWS = require('../websocket_pages/user/view_popup/view_popupws').ViewPopupWS;
+var ViewBalanceUI = require('../websocket_pages/user/viewbalance/viewbalance.ui').ViewBalanceUI;
 
 /*
  * It provides a abstraction layer over native javascript Websocket.
@@ -102,7 +108,7 @@ function BinarySocketClass() {
         }
 
         binarySocket.onopen = function () {
-            var apiToken = CommonData.getLoginToken();
+            var apiToken = CommonFunctions.getLoginToken();
             if (apiToken && !authorized && localStorage.getItem('client.tokens')) {
                 binarySocket.send(JSON.stringify({authorize: apiToken}));
             } else {
@@ -221,7 +227,7 @@ function BinarySocketClass() {
                         page.contents.topbar_message_visibility('show_residence');
                     }
                     if (/realws|maltainvestws|japanws/.test(window.location.href)) {
-                        handle_account_opening_settings(response);
+                        AccountOpening.handle_account_opening_settings(response);
                     }
                     GTM.event_handler(response.get_settings);
                     page.client.set_storage_value('tnc_status', response.get_settings.client_tnc_status || '-');
@@ -292,7 +298,7 @@ function BinarySocketClass() {
                     if(response.error && response.error.code) {
                       if (response.error.code && (response.error.code === 'WrongResponse' || response.error.code === 'OutputValidationFailed')) {
                         $('#content').empty().html('<div class="container"><p class="notice-msg center-text">' + (response.error.code === 'WrongResponse' && response.error.message ? response.error.message : page.text.localize('Sorry, an error occurred while processing your request.') )+ '</p></div>');
-                      } else if (response.error.code === 'RateLimit' && !/jptrading/i.test(window.location.pathname)) {
+                      } else if (response.error.code === 'RateLimit' && !/jp_trading/i.test(window.location.pathname)) {
                         $('#ratelimit-error-message')
                             .css('display', 'block')
                             .on('click', '#ratelimit-refresh-link', function () {
