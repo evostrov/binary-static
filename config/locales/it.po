@@ -1729,6 +1729,9 @@ msgstr "Responsabilità del cliente"
 msgid "Clients agree to be fully and personally liable for the due settlement of every transaction entered into under their account with the Company. This includes any transactions entered into by members of the Client's family or entourage who have gained access to the account. Clients are responsible for ensuring that they alone control access to the account, and that no minors are granted access to trading on the website. In any case, Clients remains fully liable for any and all positions traded on their account, and for any credit card transactions entered into the site for their account. Each Client also indemnifies the Company in respect to all costs and losses of any kind, whatsoever as may be incurred by the Company as a result, direct or indirect, of the Client's failure to perform or settle such a transaction. Online Gambling debts are enforceable in law in the Isle of Man."
 msgstr "I clienti accettano di essere completamente e personalmente responsabili per la dovuta liquidazione di ciascuna transazione prevista nel proprio account con la Società. Ciò comprende qualsiasi transazione stipulata dai membri della famiglia del Cliente o dal suo entourage che hanno avuto accesso all'account. I Clienti sono responsabili per il controllo dell'accesso al proprio account, e affinché nessun minore possa accedere al trading sul sito internet. In ogni caso, i Clienti rimangono pienamente responsabili per qualsiasi posizione negoziata sul proprio account e per qualsiasi transazione effettuata con carta di credito sul sito per il proprio account. Ogni Cliente indennizzerà inoltre la Società per tutti i costi e le perdite di qualsiasi natura, in qualunque modo sostenute dalla Società quale conseguenza, diretta o indiretta, di una mancanza del Cliente nell'esecuzione o liquidazione di una transazione. I debiti del Gioco d'azzardo online sono per legge esecutivi nell'Isola di Man."
 
+msgid "Clients agree to comply with the reasonable requests made by the Company for the purpose of verifying compliance with this term."
+msgstr ""
+
 msgid "Clients from the rest of the world (excluding certain countries such as the USA, Costa Rica, Hong Kong) will have their FX and CFD Metatrader 5 account opened with Binary (V) Ltd. Binary.com is not available in the Republic of Vanuatu."
 msgstr "I clienti provenienti dal resto del mondo (ad esclusione di alcuni paesi come Stati Uniti, Costa Rica, Hong Kong) potranno aprire il proprio account FX e CFD Metatrader 5 tramite Binary (V) Ltd. Binary.com non è disponibile nella Repubblica di Vanuatu."
 
@@ -2498,6 +2501,9 @@ msgstr "Valore netto stimato"
 msgid "Ethics Code"
 msgstr "Ethics Code"
 
+msgid "Eurobasket Wolves"
+msgstr ""
+
 msgid "European Union residents with the exception of the UK, who wish to trade gambling products, will have their account opened with Binary (Europe) Ltd."
 msgstr "I soggetti residenti nell'Unione Europea, ad eccezione del Regno Unito, che desiderano fare trading con i prodotti del gioco d'azzardo, apriranno il proprio account con Binary (Europe) Ltd."
 
@@ -3109,6 +3115,9 @@ msgstr "Nel caso in cui qualsiasi disposizione dei presenti Termini venga ritenu
 msgid "If any provision of this Agreement is held to be void or unenforceable in whole or part, the impugned provision (or part thereof) shall be deemed to be deleted from this Agreement and the remaining provisions (including the remainder of the affected provision) shall continue to be valid and applicable."
 msgstr "Nel caso in cui una qualsiasi disposizione del presente Accordo dovesse essere considerata in tutto o in parte nulla o inapplicabile, la disposizione impugnata (o parte della stessa) sarà considerata eliminata dal presente Accordo e le disposizioni rimanenti (inclusa la parte restante della disposizione interessata) continueranno ad essere valide e applicabili."
 
+msgid "If the Company (in its sole discretion) is not satisfied that a Client is complying with these terms, or if a Client does not comply with a reasonable request for information made by the Company, the Company may cancel the Client’s account and withhold any funds accumulated therein."
+msgstr ""
+
 msgid "If the Company is legally required to disclose your personal or financial information by law, regulation or pursuant to the order of a court of competent jurisdiction or a governmental agency, the Company  shall, unless legally prohibited, promptly notify you to that effect, in order to give you the opportunity to seek such protection for the information as it deems appropriate. Such required disclosure shall not be construed as a breach of this Terms and Conditions Agreement."
 msgstr "Nel caso in cui alla Società dovesse essere legalmente richiesta la divulgazione delle tue informazioni personali e finanziarie da parte della legge, regolamento o in virtù di un ordine del tribunale competente o di un'agenzia governativa, la Società  dovrà, se non vietato dalla legge, notificartelo prontamente per darti la possibilità di cercare protezione per le informazioni, come ritenuto appropriato. Tale divulgazione non dovrà intendersi quale violazione dei Termini e Condizioni del presente Accordo."
 
@@ -3485,6 +3494,9 @@ msgstr "È previsto un costo per l'adesione?"
 
 msgid "Isle of Man"
 msgstr "Isola di Man"
+
+msgid "It is a condition of using the website that:"
+msgstr ""
 
 msgid "It is important that you monitor all of your positions closely. It is your responsibility to monitor your positions and during the period that you have any open Contracts, you should always have the ability to access your Accounts."
 msgstr "È importante monitorare da vicino le proprie posizioni. Sei responsabile del controllo delle tue posizioni e nel periodo in cui disponi di qualsiasi Contratto aperto, dovresti sempre avere la possibilità di accedere ai tuoi Account."
@@ -4052,9 +4064,6 @@ msgstr "Impara da noi"
 
 msgid "Learn more"
 msgstr "Per saperne di più"
-
-msgid "Learn more about how we think and how we work. Read <a href='https://blog.binary.com/' target='_blank'>our blog</a> for the stories and ideas that inspire us."
-msgstr ""
 
 msgid "Learn more about our corporate culture"
 msgstr "Ulteriori informazioni sulla nostra cultura aziendale"
@@ -5221,6 +5230,11 @@ msgstr "Profitto/Perdita"
 msgid "Profit/Loss (points)"
 msgstr "Profitto/Perdita (punti)"
 
+#, fuzzy
+#| msgid "Price the trade."
+msgid "Prohibited Trades"
+msgstr "Stabilisci il prezzo del trade."
+
 msgid "Proofread and correct the content appearing on the company's website, blog, social media outlets, and marketing materials, from English to the regional language and vice versa"
 msgstr "Revisionare e correggere il contenuto presente sul sito internet, blog, social media e sui materiali commerciali della società, dall'inglese alla lingua locale e vice versa"
 
@@ -5304,6 +5318,9 @@ msgstr ""
 
 msgid "Read about the five types of trade offered by %1."
 msgstr "Ulteriori informazioni sulle cinque tipologie di trade offerte da %1."
+
+msgid "Read our blog for the stories and ideas that inspire us"
+msgstr ""
 
 msgid "Read the answers to some common questions."
 msgstr "Leggi le risposte di alcune domande comuni."
@@ -5684,6 +5701,9 @@ msgstr "Separabilità"
 msgid "Sharp prices"
 msgstr "Prezzi ottimi"
 
+msgid "Shelter Home’s Shelter Community Learning Centre 3"
+msgstr ""
+
 msgid "Shop"
 msgstr "Shop"
 
@@ -6055,6 +6075,11 @@ msgstr "L'<strong>orario di fine</strong> è il numero di minuti/ore selezionati
 msgid "The <strong>end time</strong> is the selected number of seconds/minutes/hours after the <strong>start time</strong> (if less than one day in duration), or at the end of the trading day (if one day or more in duration)."
 msgstr "L'<strong>orario di fine</strong> è il numero di secondi/minuti/ore selezionati successivi all'<strong>orario d'inizio</strong> (se inferiore a un giorno di durata), oppure alla fine del giorno di trading (nel caso di uno o più giorni di durata)."
 
+#, fuzzy
+#| msgid "The <strong>exit spot</strong> is the spot at the <strong>end time</strong>."
+msgid "The <strong>exit spot</strong> is the latest tick at or before the <strong>end time</strong>."
+msgstr "Lo <strong>spot d'uscita</strong> è lo spot all'<strong>orario di fine</strong>."
+
 msgid "The <strong>exit spot</strong> is the spot at the <strong>end time</strong>."
 msgstr "Lo <strong>spot d'uscita</strong> è lo spot all'<strong>orario di fine</strong>."
 
@@ -6088,6 +6113,9 @@ msgstr "La Società non fornisce un mercato tra Clienti per investimenti, titoli
 msgid "The Company has and retains the right, to terminate any event or trade, including but not limited to the occurrence of any of the above events."
 msgstr "La Società ha e conserva il diritto di cessare qualsiasi azione o trade, incluso, ma senza limitazione, qualsiasi evento di cui sopra."
 
+msgid "The Company has the discretion to seek information from Clients to verify compliance with these terms."
+msgstr ""
+
 msgid "The Company is not liable for loss or damage of any kind whatsoever arising as a result of information or prices published on or furnished through the %1 API, or any errors or omissions of the %1 API;"
 msgstr "La Società non è responsabile per perdite o danni di alcun tipo, quale risultato delle informazioni o dei prezzi pubblicati o forniti tramite l'API di %1, o qualsiasi errore o omissione dell'API di %1;"
 
@@ -6115,6 +6143,9 @@ msgstr "La Società può imporre a sua esclusiva discrezione dei limiti per il v
 msgid "The Company may use or disclose (or choose not to use or disclose) such Contributions for any purpose, in any way, in any media worldwide;"
 msgstr "La Società può usare o divulgare (o scegliere di non usare o non divulgare) tali Contributi per alcuno scopo, in nessun modo, su nessun mezzo multimediale a livello mondiale;"
 
+msgid "The Company may withhold payment of funds accumulated in a Client’s account while it takes steps to verify compliance with these terms."
+msgstr ""
+
 msgid "The Company may, from time to time, at its sole discretion, or as required by regulations in place to conduct appropriate \"Know Your Customer\" procedures and require a Client to provide proof of identity (such as notarized copy of passport or other means of identity verification as the Company deems required under the circumstances) and may at its sole discretion suspend an account until satisfactory identification information, evidence of identity and address, source of funds and/or source of wealth have been provided. Know Your Customer documentation will be required when a Client deposits money in the account. In the case of a client opening an account with Binary (Europe) Ltd, the threshold for verifying clients is on cumulative withdrawals of EUR 2,300."
 msgstr "La Società può, di volta in volta, a sua esclusiva discrezione, oppure come richiesto dai regolamenti in atto, eseguire idonee procedure per \"Conoscere i tuoi clienti\" e chiedere a un Cliente di fornire l'attestazione dell'identità (ad esempio una copia autenticata del passaporto o di altro strumento di verifica dell'identità come ritenuto necessario dalla Società in tali circostanze) e può a sua esclusiva discrezione sospendere un account fino a quando soddisfacenti informazioni d'identificazione, prova dell'identità e dell'indirizzo, fonte dei fondi e/o fonte di ricchezza non vengano fornite. I documenti per Conoscere i tuoi clienti saranno richiesti quando un Cliente deposita fondi nell'account. Nel caso in cui un cliente apra un account con Binary (Europe) Ltd, la soglia per la verifica dei clienti è pari a 2.300 EUR per i prelievi cumulativi."
 
@@ -6135,6 +6166,9 @@ msgstr "La Società si riserva il diritto di annullare/opporre transazioni o mod
 
 msgid "The Company reserves the right to change any part of this Agreement at any time. We will endeavour to ensure affiliates are notified when changes have been made to this Agreement, but it is ultimately your responsibility to check these terms and conditions regularly. Your continued participation in our affiliate program after we have posted the changes will constitute binding acceptance of such changes."
 msgstr "La Società si riserva il diritto di modificare qualsiasi parte del presente Accordo in qualsiasi momento. Facciamo di tutto per garantire che agli affiliati vengano notificate eventuali variazioni del presente Accordo, ma in definitiva la responsabilità per la verifica regolare dei presenti termini e condizioni è tua. La tua continua partecipazione al nostro programma di affiliazione in seguito a tale pubblicazione verrà considerata quale accettazione di tali modifiche."
+
+msgid "The Company reserves the right to refuse to do business with, to discontinue to do business with, and to reverse the transactions of, Clients who engage in any trading activity:"
+msgstr ""
 
 msgid "The Company reserves the right to suspend the operation of this site or sections thereof:"
 msgstr "La Società si riserva il diritto di sospendere il funzionamento del presente sito o di sue sezioni:"
@@ -6181,6 +6215,9 @@ msgstr "Le leggi e i regolamenti sulla Protezione dei dati impongono degli obbli
 msgid "The EUR Index is a weighted Index, measuring the Euro's value against a basket of 5 global currencies (USD, AUD, GBP, JPY, CAD), each weighted by 20%."
 msgstr "L'indice EUR è un indice ponderato che misura il valore dell'Euro rispetto a un paniere di 5 valute globali (USD, AUD, GBP, JPY e CAD), ognuna ponderata del 20%."
 
+msgid "The Eurobasket Wolves is a local basketball club founded in 2002. It teaches youth basketball through its club and school programmes. Its U8’s and U10’s boys and girls teams, plus its U14’s and U16’s girls teams compete nationally. It is the first basketball club in Malta to establish an after-school basketball training programme where the training sessions are conducted on school grounds."
+msgstr ""
+
 msgid "The Financial Products that we offer to deal in are contracts entered into between you and us. Under these contracts and subject to the specific terms of the relevant contract, in consideration for the premium or price that you pay us, we promise to pay you a certain amount if the reference assets or measurements perform in a particular manner. These contracts accordingly are not instruments that we hold on your behalf and neither benefit from clients' assets protection in the event of our insolvency. Similarly the premium or price that you pay to take out a trade is not held as clients' money but as consideration for our undertaking to pay."
 msgstr "I Prodotti finanziari che offriamo sono contratti stipulati tra te e noi. In base a tali contratti e soggetti a specifici termini dei relativi contratti, in considerazione del premio o prezzo pagato, ci impegniamo a pagarti un dato importo nel caso in cui gli asset di riferimento o le misurazioni procedano in un modo particolare. Questi contratti di conseguenza non sono strumenti che noi deteniamo per tuo conto, né sfruttiamo la protezione degli asset dei clienti in caso di nostra insolvenza. Allo stesso modo il premio o prezzo da te pagato per l'esecuzione di un trade non è trattenuto come denaro del cliente ma come contropartita per la nostra attività."
 
@@ -6198,6 +6235,9 @@ msgstr ""
 
 msgid "The Program"
 msgstr "Il programma"
+
+msgid "The Shelter Community Learning Centre 3 is a community school for Myanmar refugee children who are awaiting repatriation with their families to a third country. The school aims to provide these children –– who are at their most vulnerable age –– with an education which will prepare them for the future."
+msgstr ""
 
 msgid "The USD Index is a weighted Index, measuring the US Dollar's value against a basket of 5 global currencies (EUR, GBP, JPY, CAD, AUD), each weighted by 20%."
 msgstr "L'Indice USD è un indice ponderato che misura il valore del Dollaro americano rispetto a un paniere di 5 valute globali (EUR, GBP, JPY, CAD e AUD), ognuna ponderata del 20%."
@@ -6653,7 +6693,7 @@ msgstr "Per essere idoneo, dovrai avere una laurea in Fisica, Ingegneria finanzi
 
 #, fuzzy
 #| msgid "To reset your password, enter the e-mail address you registered in the field below and click "
-msgid "To reset your password, enter the e-mail address you registered in the field below and click 'RESET PASSWORD'."
+msgid "To reset your password, enter the e-mail address you registered in the field below and click 'Reset Password'."
 msgstr "Per ripristinare la tua password, inserisci l'indirizzo email indicato in fase di registrazione nel campo sottostante e clicca "
 
 #, fuzzy
@@ -6858,6 +6898,11 @@ msgstr "I residenti del Regno Unito e dell'Isola di Man apriranno i loro account
 msgid "UK clients registered with Binary (Europe) Ltd can submit their dispute with the alternative dispute resolution entity IBAS by filling the adjudication form on the ADR entity's"
 msgstr "I clienti del Regno Unito registrati con Binary (Europe) Ltd possono presentare eventuali controversie all'IBAS, un altro organo per la risoluzione delle controversie, compilando il modulo di attribuzione sull'ADR"
 
+#, fuzzy
+#| msgid "EUR"
+msgid "URL"
+msgstr "EUR"
+
 msgid "US Patents"
 msgstr "Brevetti americani"
 
@@ -6978,7 +7023,9 @@ msgstr "Token di verifica"
 msgid "Verify new password"
 msgstr "Verifica la nuova password"
 
-msgid "Version 42. Last modified 2016-09-14."
+#, fuzzy
+#| msgid "Version 42. Last modified 2016-09-14."
+msgid "Version 43. Last modified 2016-11-09."
 msgstr "Versione 42. Ultima modifica 14-09-2016."
 
 msgid "View"
@@ -7875,6 +7922,9 @@ msgstr "un limite sulle perdite che puoi subire in un dato periodo di tempo;"
 msgid "and"
 msgstr "e"
 
+msgid "any Client that is employed in the banking and/or finance sector must only conduct trades through the website with the knowledge of his/her employer and in accordance with the employer’s policies; and that"
+msgstr ""
+
 msgid "any instance where the Company believes that person's activities at this site may be illegal in that person's country or state;"
 msgstr "qualsiasi caso in cui la Società ritenga che le attività della persona su questo sito siano considerate illegali nel paese o stato della persona;"
 
@@ -8010,6 +8060,9 @@ msgstr "dai in licenza qualsiasi diritto concesso secondo i presenti Termini, di
 msgid "terms and conditions"
 msgstr "terms and conditions"
 
+msgid "that contravenes any laws, regulations, instruments, ordinances or rules that govern the operation of any exchange, financial market, or financial regulatory environment; or"
+msgstr ""
+
 msgid "the %1 affiliate program is competitive and adaptive to your unique requirements."
 msgstr "il programma di affiliazione di %1 è competitivo e si adatta ai tuoi requisiti esclusivi."
 
@@ -8044,6 +8097,11 @@ msgstr ""
 #| msgid "Weeks"
 msgid "weeks"
 msgstr "Settimane"
+
+#, fuzzy
+#| msgid "Persons with insider knowledge of any financial market or instrument are prohibited from trading at this website."
+msgid "with insider knowledge of any financial market or instrument."
+msgstr "È proibito fare trading su questo sito internet a persone con informazioni privilegiate riguardanti qualsiasi mercato o strumento finanziario."
 
 msgid "year"
 msgstr "anno"
